@@ -137,6 +137,18 @@ make devserver
 </code></pre></div>
 
 <p>Thanks @pelican-devs. Awesome job.</p>
+<p>Following the push flow for git</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> output
+make clean
+make html
+git init
+git add .
+git commit -m <span class="s2">&quot;msg&quot;</span>
+git branch -M main
+git remote add origin https://github.com/maconrad/pelicanblog.git
+git push -u origin main
+</code></pre></div>
+
 <h3>References</h3>
 <ul>
 <li>See: <a href="https://www.thedigitalcatonline.com/blog/2019/06/07/run-a-pelican-blog/">Pelican Setup</a></li>
