@@ -173,20 +173,20 @@
 <ul>
 <li>Parameter is annotated indicating what kind of input is assumed</li>
 <li>Function now does not show anymore that the backend is GitHub but rather describes the problem it solves</li>
-<li>It uses the requests "codes.ok" instead of HTTP 200.</li>
+<li>It uses the requests <code>codes.ok</code> instead of HTTP 200.</li>
 <li>We got rid of using dict access method by using square brackets and strings, which our IDE cannot validate nor auto-complete. </li>
 <li>It uses tuples to return not only a single value but multiple, indicating wheter the request was successful or not. </li>
 <li>Tuple can now be used to access the values decoupling the API call from the consumer application part. A change from the github API to e.g. Gitlab API works as long as the same tuple is returned.</li>
 </ul>
 <p>We still have some issues. Let's look at those in the next section. </p>
 <h2 id="improving-further">Improving further...</h2>
-<p>You might say well, i get the decoupling part but would about readability. You are absolutely right. Reading "{userinfo['login']}" vs "{val[1]}" is a lot easier for the programmer. But what if we had both? A clear interface that decouples the API call and still get readability. There are various approaches:</p>
+<p>You might say well, i get the decoupling part but would about readability. You are absolutely right. Reading <code>{userinfo['login']}</code> vs <code>{val[1]}</code> is a lot easier for the programmer. But what if we had both? A clear interface that decouples the API call and still get readability. There are various approaches:</p>
 <ul>
 <li>We can implement our own class </li>
 <li>We can make use of dataClasses</li>
 <li>We can use NamedTuples</li>
 </ul>
-<p>The problem with the own class is that it does not implement several operators (e.g. equality ==) or methods (e.g. repr()) by default. The approach we are going to take here is NamedTuples, which have the advantage (or disadvantage) of being immutable and add several functionality out of the box like repr() and equality testing. They are part of the std-lib, lightweight and are available in python versions earlier than 3.6/3.7 (unlike data Classes). On top of that they support intellisense in IDEs. </p>
+<p>The problem with the own class is that it does not implement several operators (e.g. equality <code>==</code>) or methods (e.g. <code>repr()</code>) by default. The approach we are going to take here is NamedTuples, which have the advantage (or disadvantage) of being immutable and add several functionality out of the box like <code>repr()</code> and equality testing. They are part of the std-lib, lightweight and are available in python versions earlier than 3.6/3.7 (unlike data Classes). On top of that they support intellisense in IDEs. </p>
 <p>So let's look at the code.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
 <span class="kn">import</span> <span class="nn">requests</span>
