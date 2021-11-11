@@ -394,6 +394,9 @@ ps -ef
 ps -C bash
 ps -up <span class="m">3040</span>
 
+pstree -p
+pidof bash
+
 <span class="c1"># Process grep, -u=user, -l=list name</span>
 pgrep -u mario -l bash
 pkill bash --ns <span class="m">11730</span>
