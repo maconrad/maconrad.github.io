@@ -33,13 +33,13 @@
  
 
 <meta name="author" content="Mario" />
-<meta name="description" content="Table of contents: Intro Before After Base classes Combinator Could be in base Class, but more extendable like this Intro Open Closed principle states that new functionality should be added via extension, ot via modification. So what does that mean? Benefits: - Scales well - Does not change interface how class is …" />
+<meta name="description" content="Table of contents: Intro Before After Intro Open Closed principle states that new functionality should be added via extension, ot via modification. So what does that mean? Benefits: - Scales well - Does not change interface how class is used - Prevents state/space explosion and code replication Key: - New functionality is added …" />
 <meta name="keywords" content="python, patterns">
 
 
   <meta property="og:site_name" content="PeliBlog"/>
   <meta property="og:title" content="Open Closed Principle"/>
-  <meta property="og:description" content="Table of contents: Intro Before After Base classes Combinator Could be in base Class, but more extendable like this Intro Open Closed principle states that new functionality should be added via extension, ot via modification. So what does that mean? Benefits: - Scales well - Does not change interface how class is …"/>
+  <meta property="og:description" content="Table of contents: Intro Before After Intro Open Closed principle states that new functionality should be added via extension, ot via modification. So what does that mean? Benefits: - Scales well - Does not change interface how class is used - Prevents state/space explosion and code replication Key: - New functionality is added …"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:url" content="/open-closed-principle.html"/>
   <meta property="og:type" content="article"/>
@@ -124,9 +124,6 @@
 <li><a href="#intro">Intro</a></li>
 <li><a href="#before">Before</a></li>
 <li><a href="#after">After</a></li>
-<li><a href="#base-classes">Base classes</a></li>
-<li><a href="#combinator">Combinator</a></li>
-<li><a href="#could-be-in-base-class-but-more-extendable-like-this">Could be in base Class, but more extendable like this</a></li>
 </ul>
 </div>
 <h2 id="intro">Intro</h2>
@@ -205,84 +202,90 @@
 <li>If there is need for e.g. a HouseSearch(), same specifications can be reused, e.g. ColorSpecification. Just create a new Search Class be inheriting from Search.</li>
 <li>Note: No error handling is on purpose to keep code as lean as possible and still understand pattern. </li>
 </ul>
-<p>```python
-from enum import Enum</p>
-<p>class Color(Enum):
-    RED = 1
-    GREEN = 2
-    BLUE = 3</p>
-<p>class Make(Enum):
-    VOLVO = 1
-    FIAT = 2
-    AUDI = 3</p>
-<p>class Car:
-    def <strong>init</strong>(self, name, color, make) -&gt; None:
-        self.name = name
-        self.color = color
-        self.make = make</p>
-<h1 id="base-classes">Base classes</h1>
-<p>class Specification:
-    def is_satisfied(self, item):
-        pass</p>
-<p>class Search:
-    def filter(self, items, spec):
-        pass</p>
-<p>class ColorSpecification(Specification):
-    def <strong>init</strong>(self, color) -&gt; None:
-        self.color = color</p>
-<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">is_satisfied</span><span class="ss">(</span><span class="nv">self</span>, <span class="nv">item</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">item</span>.<span class="nv">color</span> <span class="o">==</span> <span class="nv">self</span>.<span class="nv">color</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+
+<span class="k">class</span> <span class="nc">Color</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="n">RED</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">GREEN</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">BLUE</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="k">class</span> <span class="nc">Make</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="n">VOLVO</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">FIAT</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">AUDI</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">make</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">make</span> <span class="o">=</span> <span class="n">make</span>
+
+<span class="c1"># Base classes</span>
+<span class="k">class</span> <span class="nc">Specification</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">is_satisfied</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">Search</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">filter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">items</span><span class="p">,</span> <span class="n">spec</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">ColorSpecification</span><span class="p">(</span><span class="n">Specification</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
+
+    <span class="k">def</span> <span class="nf">is_satisfied</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">item</span><span class="o">.</span><span class="n">color</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">color</span>
+
+<span class="k">class</span> <span class="nc">MakeSpecification</span><span class="p">(</span><span class="n">Specification</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">make</span> <span class="o">=</span> <span class="n">make</span>
+
+    <span class="k">def</span> <span class="nf">is_satisfied</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">item</span><span class="o">.</span><span class="n">make</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">make</span>
+
+<span class="c1"># Combinator</span>
+<span class="k">class</span> <span class="nc">AndSpecification</span><span class="p">(</span><span class="n">Specification</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">specs</span> <span class="o">=</span> <span class="n">args</span>
+
+    <span class="k">def</span> <span class="nf">is_satisfied</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+            <span class="k">lambda</span> <span class="n">spec</span><span class="p">:</span> <span class="n">spec</span><span class="o">.</span><span class="n">is_satisfied</span><span class="p">(</span><span class="n">item</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">specs</span>
+        <span class="p">))</span>
+
+<span class="c1"># Could be in base Class, but more extendable like this</span>
+<span class="k">class</span> <span class="nc">CarSearch</span><span class="p">(</span><span class="n">Search</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">filter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cars</span><span class="p">,</span> <span class="n">spec</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">car</span> <span class="ow">in</span> <span class="n">cars</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">spec</span><span class="o">.</span><span class="n">is_satisfied</span><span class="p">(</span><span class="n">car</span><span class="p">):</span>
+                <span class="k">yield</span> <span class="n">car</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">car1</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s1">&#39;DailyDriver500&#39;</span><span class="p">,</span> <span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="p">,</span> <span class="n">Make</span><span class="o">.</span><span class="n">FIAT</span><span class="p">)</span>
+    <span class="n">car2</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s1">&#39;WinterCar&#39;</span><span class="p">,</span> <span class="n">Color</span><span class="o">.</span><span class="n">BLUE</span><span class="p">,</span> <span class="n">Make</span><span class="o">.</span><span class="n">VOLVO</span><span class="p">)</span>
+    <span class="n">car3</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s1">&#39;NiceWeather&#39;</span><span class="p">,</span> <span class="n">Color</span><span class="o">.</span><span class="n">BLUE</span><span class="p">,</span> <span class="n">Make</span><span class="o">.</span><span class="n">AUDI</span><span class="p">)</span>
+    <span class="n">car4</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s1">&#39;DucatoCamper&#39;</span><span class="p">,</span> <span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="p">,</span> <span class="n">Make</span><span class="o">.</span><span class="n">FIAT</span><span class="p">)</span>
+
+    <span class="n">cars</span> <span class="o">=</span> <span class="p">[</span><span class="n">car1</span><span class="p">,</span> <span class="n">car2</span><span class="p">,</span> <span class="n">car3</span><span class="p">,</span> <span class="n">car4</span><span class="p">]</span>
+
+    <span class="n">searcher</span> <span class="o">=</span> <span class="n">CarSearch</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Blue cars:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">car</span> <span class="ow">in</span> <span class="n">searcher</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">cars</span><span class="p">,</span> <span class="n">ColorSpecification</span><span class="p">(</span><span class="n">Color</span><span class="o">.</span><span class="n">BLUE</span><span class="p">)):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">car</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Volvos cars:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">car</span> <span class="ow">in</span> <span class="n">searcher</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">cars</span><span class="p">,</span> <span class="n">MakeSpecification</span><span class="p">(</span><span class="n">Make</span><span class="o">.</span><span class="n">VOLVO</span><span class="p">)):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">car</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RED Fiat cars:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">car</span> <span class="ow">in</span> <span class="n">searcher</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">cars</span><span class="p">,</span> <span class="n">AndSpecification</span><span class="p">(</span>
+        <span class="n">ColorSpecification</span><span class="p">(</span><span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="p">),</span>
+        <span class="n">MakeSpecification</span><span class="p">(</span><span class="n">Make</span><span class="o">.</span><span class="n">FIAT</span><span class="p">)</span>
+        <span class="c1"># Could be 20 specs...</span>
+    <span class="p">)):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">car</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
-
-<p>class MakeSpecification(Specification):
-    def <strong>init</strong>(self, make) -&gt; None:
-        self.make = make</p>
-<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">is_satisfied</span><span class="ss">(</span><span class="nv">self</span>, <span class="nv">item</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">item</span>.<span class="nv">make</span> <span class="o">==</span> <span class="nv">self</span>.<span class="nv">make</span>
-</code></pre></div>
-
-<h1 id="combinator">Combinator</h1>
-<p>class AndSpecification(Specification):
-    def <strong>init</strong>(self, *args) -&gt; None:
-        self.specs = args</p>
-<div class="highlight"><pre><span></span><code><span class="nv">def</span> <span class="nv">is_satisfied</span><span class="ss">(</span><span class="nv">self</span>, <span class="nv">item</span><span class="ss">)</span>:
-    <span class="k">return</span> <span class="nv">all</span><span class="ss">(</span><span class="nv">map</span><span class="ss">(</span>
-        <span class="nv">lambda</span> <span class="nv">spec</span>: <span class="nv">spec</span>.<span class="nv">is_satisfied</span><span class="ss">(</span><span class="nv">item</span><span class="ss">)</span>, <span class="nv">self</span>.<span class="nv">specs</span>
-    <span class="ss">))</span>
-</code></pre></div>
-
-<h1 id="could-be-in-base-class-but-more-extendable-like-this">Could be in base Class, but more extendable like this</h1>
-<p>class CarSearch(Search):
-    def filter(self, cars, spec):
-        for car in cars:
-            if spec.is_satisfied(car):
-                yield car</p>
-<p>if <strong>name</strong> == '<strong>main</strong>':
-    car1 = Car('DailyDriver500', Color.RED, Make.FIAT)
-    car2 = Car('WinterCar', Color.BLUE, Make.VOLVO)
-    car3 = Car('NiceWeather', Color.BLUE, Make.AUDI)
-    car4 = Car('DucatoCamper', Color.RED, Make.FIAT)</p>
-<div class="highlight"><pre><span></span><code><span class="nv">cars</span> <span class="o">=</span> [<span class="nv">car1</span>, <span class="nv">car2</span>, <span class="nv">car3</span>, <span class="nv">car4</span>]
-
-<span class="nv">searcher</span> <span class="o">=</span> <span class="nv">CarSearch</span><span class="ss">()</span>
-<span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s2">&quot;</span><span class="s">Blue cars:</span><span class="s2">&quot;</span><span class="ss">)</span>
-<span class="k">for</span> <span class="nv">car</span> <span class="nv">in</span> <span class="nv">searcher</span>.<span class="nv">filter</span><span class="ss">(</span><span class="nv">cars</span>, <span class="nv">ColorSpecification</span><span class="ss">(</span><span class="nv">Color</span>.<span class="nv">BLUE</span><span class="ss">))</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s2">&quot;</span><span class="s">{car.name}</span><span class="s2">&quot;</span><span class="ss">)</span>
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s2">&quot;</span><span class="s">Volvos cars:</span><span class="s2">&quot;</span><span class="ss">)</span>
-<span class="k">for</span> <span class="nv">car</span> <span class="nv">in</span> <span class="nv">searcher</span>.<span class="nv">filter</span><span class="ss">(</span><span class="nv">cars</span>, <span class="nv">MakeSpecification</span><span class="ss">(</span><span class="nv">Make</span>.<span class="nv">VOLVO</span><span class="ss">))</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s2">&quot;</span><span class="s">{car.name}</span><span class="s2">&quot;</span><span class="ss">)</span>
-
-<span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s2">&quot;</span><span class="s">RED Fiat cars:</span><span class="s2">&quot;</span><span class="ss">)</span>
-<span class="k">for</span> <span class="nv">car</span> <span class="nv">in</span> <span class="nv">searcher</span>.<span class="nv">filter</span><span class="ss">(</span><span class="nv">cars</span>, <span class="nv">AndSpecification</span><span class="ss">(</span>
-    <span class="nv">ColorSpecification</span><span class="ss">(</span><span class="nv">Color</span>.<span class="nv">RED</span><span class="ss">)</span>,
-    <span class="nv">MakeSpecification</span><span class="ss">(</span><span class="nv">Make</span>.<span class="nv">FIAT</span><span class="ss">)</span>
-    # <span class="nv">Could</span> <span class="nv">be</span> <span class="mi">20</span> <span class="nv">specs</span>...
-<span class="ss">))</span>:
-    <span class="nv">print</span><span class="ss">(</span><span class="nv">f</span><span class="s2">&quot;</span><span class="s">{car.name}</span><span class="s2">&quot;</span><span class="ss">)</span>
-</code></pre></div>
-
-<p>````</p>
   </div>
   <div class="tag-cloud">
     <p>
