@@ -190,9 +190,11 @@
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">car</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<p>The problem is that each new filter adds new combinations resulting in a explosion of combinations. For example:
-  - 2 Filters: byColor, byMake, byColorMake = 3 Combinations
-  - 3 Filters, byColor, byMake, ByEngine, byCM, byCE, byME, byCME = 7 Combos</p>
+<p>The problem is that each new filter adds new combinations resulting in a explosion of combinations. For example:</p>
+<ul>
+<li>2 Filters: byColor, byMake, byColorMake = 3 Combinations</li>
+<li>3 Filters, byColor, byMake, ByEngine, byCM, byCE, byME, byCME = 7 Combos</li>
+</ul>
 <h2 id="after">After</h2>
 <ul>
 <li>Uses specification Enterprise pattern</li>
