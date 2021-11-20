@@ -103,6 +103,39 @@
 
 <article>
   <header>
+    <h2><a href="/namedtuple-to-the-rescue.html#namedtuple-to-the-rescue">NamedTuple to the rescue</a></h2>
+    <p>
+      Posted on So 31 Oktober 2021 in <a href="/category/python.html">Python</a>
+
+          &#8226; Tagged with
+              <a href="/tag/python.html">python</a>,              <a href="/tag/ide.html">IDE</a>,              <a href="/tag/smart.html">smart</a>,              <a href="/tag/stdlib.html">stdlib</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#a-working-approach-the-problem">A working approach - the problem</a></li>
+<li><a href="#improving">Improving</a></li>
+<li><a href="#improving-further">Improving further...</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h2 id="a-working-approach-the-problem">A working approach - the problem</h2>
+<p>If you are not an experienced python programmer. You might right something like this: </p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">apiCallGitHub</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;https://api.github.com/users/</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code …</span></code></pre></div></div>
+        <br>
+        <a class="btn"
+           href="/namedtuple-to-the-rescue.html#namedtuple-to-the-rescue">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
     <h2><a href="/open-closed-principle.html#open-closed-principle">Open Closed Principle</a></h2>
     <p>
       Posted on So 31 Oktober 2021 in <a href="/category/patterns.html">Patterns</a>
@@ -238,36 +271,12 @@
 <li>See: <a href="https://opensource.com/article/19/5/python-3-default-mac">Pyenv on Opensource.com</a> </li>
 </ul></div>
   </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="/use-python-on-osx-the-right-way.html#use-python-on-osx-the-right-way">Use python on OSX the right way</a></h2>
-    <p>
-      Posted on So 24 Oktober 2021 in <a href="/category/osx.html">OSX</a>
-
-          &#8226; Tagged with
-              <a href="/tag/osx.html">osx</a>,              <a href="/tag/python.html">python</a>,              <a href="/tag/virtualenvwrapper.html">virtualenvwrapper</a>,              <a href="/tag/pyenv.html">pyenv</a>,              <a href="/tag/venv.html">venv</a>,              <a href="/tag/pipenv.html">pipenv</a>
-    </p>
-  </header>
-  <div>
-      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
-<li><a href="#installing-and-using-pyenv-and-virtualenvwrapper">Installing and using pyenv and virtualenvwrapper</a></li>
-<li><a href="#references">References</a></li>
-</ul>
-</div>
-<h2 id="installing-and-using-pyenv-and-virtualenvwrapper">Installing and using pyenv and virtualenvwrapper</h2>
-<p>Installation python3 on OSX direcrtly and/or trying to make default python point to python3 on OSX is not a good idea. Worst case, it can break your OSX python installation. </p>
-<p>In addition, what …</p></div>
-        <br>
-        <a class="btn"
-           href="/use-python-on-osx-the-right-way.html#use-python-on-osx-the-right-way">
-          Continue reading
-        </a>
-  </div>
 </article>
 
   <div class="pagination">
+    <a class="btn float-left" href="/tag/python3.html">
+      <i class="fa fa-angle-left"></i> Older Posts
+    </a>
     <a class="btn float-right" href="/tag/python.html">
       Newer Posts <i class="fa fa-angle-right"></i>
     </a>
