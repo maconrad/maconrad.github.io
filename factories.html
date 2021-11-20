@@ -143,39 +143,46 @@
 <li>Abstract Factory: Used for Type Hierarchies, type hierarchy for factory classes correspond with type hierarchy for concrete classes. Example:</li>
 <li>Concret type hirarchy Car(abstract), SUV(Car), Race(Car)</li>
 <li>Corresponding Factory CarFactory(Abstract), SUVFactory(CarFactory), RaceFactory(CarFactory) </li>
+<li>Abstract base class defines interface for concrete Factories (not mandatory in python due to ducktyping)</li>
 </ul>
 <p>Benefits:</p>
 <ul>
 <li>More descriptive (not init), more userfriendly (only params that are needed)</li>
 <li>Can use prototypes to template certain objects that are often used (easier to consume)</li>
 </ul>
+<p>Use Cases / Examples:</p>
+<ul>
+<li>Replace complex code logic</li>
+<li>Construct related objects from external data</li>
+<li>support multiple implementations of same feature</li>
+<li>combine similar features</li>
+</ul>
 <p>Antipattern:</p>
 <ul>
 <li>Constructor with Enum or sth similar that decides which can of object is built</li>
 <li>Init() with optional parameter hell</li>
 <li>Godobject for Initializers</li>
+<li>Long and complex if/elif/else statements to determine concrete objects</li>
 </ul>
 <p>Key:</p>
 <ul>
 <li>Difference to Builder: not piecewise/stepwise but whole object created</li>
+<li>Menas fully initialized object!</li>
 <li>Really anything that manufactures objects. Could also be a lambda</li>
+<li>Look for a common interface/goal of multiple methods/implementations</li>
+<li><code>Client, Product and Creator</code> terminology often used with this pattern</li>
+<li>client = depends on an interface</li>
+<li>product = implements the interface</li>
+<li>creator = factory that returns concrete product (that implements interface)</li>
 </ul>
 <h2 id="before-factory-method">Before Factory Method</h2>
 <ul>
-<li>
-<p>Problems:</p>
-</li>
-<li>
-<p>Breaks Open-Close Prinicple</p>
-</li>
+<li>Problems:</li>
+<li>Breaks Open-Close Prinicple</li>
 <li>Have to figure out that a matches R, b matches G, c matches B in case of RGB</li>
 <li>Have to figure out that a matches C, b matches M, c matches Y and d matches K in case of CMYK</li>
-<li>
-<p>Inconvenient, non descriptive!</p>
-</li>
-<li>
-<p>Can be inner class, can be static</p>
-</li>
+<li>Inconvenient, non descriptive!</li>
+<li>Can be inner class, can be static</li>
 <li>Note: No error handling is on purpose to keep code as lean as possible and still understand pattern. </li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
@@ -403,6 +410,9 @@
 <h2 id="reference">Reference</h2>
 <ul>
 <li>See: <a href="https://refactoring.guru/design-patterns/abstract-factory">Refactoring Guru Example Furniture</a></li>
+<li>See: <a href="https://sourcemaking.com/design_patterns/factory_method#:~:text=Example,molds%20of%20the%20desired%20shapes.">Source Making</a></li>
+<li>See: <a href="https://realpython.com/factory-method-python/">Real Python</a></li>
+<li>Very good example</li>
 </ul>
   </div>
   <div class="tag-cloud">
