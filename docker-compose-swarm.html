@@ -271,19 +271,19 @@
 <td>show config details for contai. (volumes, network...)</td>
 </tr>
 <tr>
-<td>docker container inspect --format "{{ .NetworkSettings.IPAddress }}" <id></td>
+<td>docker container inspect --format "{{ .NetworkSettings.IPAddress }}" &lt;id></td>
 <td>Uses GO template format, .=root</td>
 </tr>
 <tr>
-<td>docker container inspect --format "{{ json .NetworkSettings }}" <id> | jq</td>
+<td>docker container inspect --format "{{ json .NetworkSettings }}" &lt;id> | jq</td>
 <td>Using json output and JQ to format nicely on terminal</td>
 </tr>
 <tr>
-<td>docker container stats <id></td>
+<td>docker container stats &lt;id></td>
 <td>shows stats for all (net I/O, block i/O cpu, mem)</td>
 </tr>
 <tr>
-<td>docker container rm <id></td>
+<td>docker container rm &lt;id></td>
 <td>Remove container (-f for force=running container)</td>
 </tr>
 <tr>
@@ -295,11 +295,11 @@
 <td>logs shows pw (-e == --env)</td>
 </tr>
 <tr>
-<td>docker container port <id/name></td>
+<td>docker container port &lt;id/name></td>
 <td>Check what ports are open &amp; mapped for a container</td>
 </tr>
 <tr>
-<td>docker container update <id/name> --memory <bytes></td>
+<td>docker container update &lt;id/name> --memory &lt;bytes></td>
 <td>set Memory in bytes of container</td>
 </tr>
 </tbody>
@@ -318,8 +318,8 @@
 <li>image consists of layers, each layer only stored once on host and has a unique SHA hash</li>
 <li>Container = single r/w layer on of image</li>
 <li>Dockerhub</li>
-<li>Official immages format <name> e.g. nginx whereas </li>
-<li>Non-official images format <account/name> e.g. conrad/nginx</li>
+<li>Official immages format &lt;name> e.g. nginx whereas </li>
+<li>Non-official images format &lt;account/name> e.g. conrad/nginx</li>
 <li>Union File System</li>
 <li>Basically presents all layers as a single fileystem (merges layer transparently)</li>
 <li>Each layer has its own unqie SHA sum (caching)<ul>
@@ -351,7 +351,7 @@
 </thead>
 <tbody>
 <tr>
-<td>docker image pull <image or image:tag></td>
+<td>docker image pull &lt;image or image:tag></td>
 <td>pulls an image from repo</td>
 </tr>
 <tr>
@@ -359,19 +359,19 @@
 <td>list installed images and size</td>
 </tr>
 <tr>
-<td>docker image inspect <name></td>
+<td>docker image inspect &lt;name></td>
 <td>list installed images and size, metadata (ENV vars, exposed ports, CMD)</td>
 </tr>
 <tr>
-<td>docker image history <name></td>
+<td>docker image history &lt;name></td>
 <td>History of image layers, some might be file, some just metdata</td>
 </tr>
 <tr>
-<td>docker image tag <srcimage:tag> <dstimage:tag></td>
+<td>docker image tag &lt;srcimage:tag> &lt;dstimage:tag></td>
 <td>assign one or more tags to an image</td>
 </tr>
 <tr>
-<td>docker image tag <image> <image:newtag></td>
+<td>docker image tag &lt;image> &lt;image:newtag></td>
 <td>can also retag existing images</td>
 </tr>
 <tr>
@@ -402,11 +402,11 @@
 <td>Lists network drivers</td>
 </tr>
 <tr>
-<td>docker network inspect <name></td>
+<td>docker network inspect &lt;name></td>
 <td>Lots of info, e.g. connected containers, mtu etc.</td>
 </tr>
 <tr>
-<td>docker network create --driver <driver> <name></td>
+<td>docker network create --driver &lt;driver> &lt;name></td>
 <td>Create new network</td>
 </tr>
 <tr>
@@ -414,11 +414,11 @@
 <td>by default type bridge</td>
 </tr>
 <tr>
-<td>docker network connect <name></td>
+<td>docker network connect &lt;name></td>
 <td>Attach container to network</td>
 </tr>
 <tr>
-<td>docker network disconnect <name></td>
+<td>docker network disconnect &lt;name></td>
 <td>Disconnect container from network</td>
 </tr>
 <tr>
@@ -442,7 +442,7 @@
 <td>show adapter name on host</td>
 </tr>
 <tr>
-<td>docker exec <container> ping <othercontainername></td>
+<td>docker exec &lt;container> ping &lt;othercontainername></td>
 <td>Ping container A to B</td>
 </tr>
 </tbody>
@@ -537,7 +537,7 @@ docker container run --rm --network net_elastic centos curl -s elastic:9200
 </thead>
 <tbody>
 <tr>
-<td>docker build -f <filename></td>
+<td>docker build -f &lt;filename></td>
 <td>If not named Dockerfile</td>
 </tr>
 <tr>
@@ -556,19 +556,19 @@ docker container run --rm --network net_elastic centos curl -s elastic:9200
 </thead>
 <tbody>
 <tr>
-<td>FROM <baseimage></td>
+<td>FROM &lt;baseimage></td>
 <td>Defines base image</td>
 </tr>
 <tr>
-<td>LABEL <key>=<value></td>
+<td>LABEL &lt;key>=&lt;value></td>
 <td>Add labels to container</td>
 </tr>
 <tr>
-<td>ENV <var_name> <var_value></td>
+<td>ENV &lt;var_name> &lt;var_value></td>
 <td>Defines env variables</td>
 </tr>
 <tr>
-<td>RUN <cmd1> &amp;&amp; <cmd2></td>
+<td>RUN &lt;cmd1> &amp;&amp; &lt;cmd2></td>
 <td>Creates a layer</td>
 </tr>
 <tr>
@@ -576,23 +576,23 @@ docker container run --rm --network net_elastic centos curl -s elastic:9200
 <td>= CD inside container</td>
 </tr>
 <tr>
-<td>COPY <local_path> <container_path></td>
+<td>COPY &lt;local_path> &lt;container_path></td>
 <td>Copy from local to container</td>
 </tr>
 <tr>
-<td>VOLUME </path></td>
+<td>VOLUME /path/to/dir</td>
 <td>Create a volume**</td>
 </tr>
 <tr>
-<td>EXPOSE <port1> <port2></td>
+<td>EXPOSE &lt;port1> &lt;port2></td>
 <td>Exposes the ports</td>
 </tr>
 <tr>
-<td>CMD ["<cmd1>", "<arg1>", "<arg2>"]</td>
+<td>CMD ["&lt;cmd1>", "&lt;arg1>", "&lt;arg2>"]</td>
 <td>Defines default cmd, can be overwritten by cli*, executed if nothing else defined</td>
 </tr>
 <tr>
-<td>ENTRYPOINT <todo></td>
+<td>ENTRYPOINT ["&lt;cmd1>", "&lt;arg1>", "&lt;arg2>"]</td>
 <td>Configures container*</td>
 </tr>
 <tr>
@@ -600,7 +600,7 @@ docker container run --rm --network net_elastic centos curl -s elastic:9200
 <td></td>
 </tr>
 <tr>
-<td>USER <user_name></td>
+<td>USER &lt;user_name></td>
 <td>Switch to user xy for subsequent cmds </td>
 </tr>
 <tr>
@@ -723,7 +723,7 @@ CMD <span class="o">[</span><span class="s2">&quot;nginx&quot;</span>, <span cla
 <td>ID from docker container inspect maps</td>
 </tr>
 <tr>
-<td>docker volume inspect <id></td>
+<td>docker volume inspect &lt;id></td>
 <td>More info on volume</td>
 </tr>
 <tr>
@@ -1036,7 +1036,7 @@ server <span class="o">{</span>
 <td>Initialize single node swarm</td>
 </tr>
 <tr>
-<td>docker swarm join --token <token> <ip>:2377</td>
+<td>docker swarm join --token &lt;token> &lt;ip>:2377</td>
 <td>Add node to swarm</td>
 </tr>
 <tr>
@@ -1048,7 +1048,7 @@ server <span class="o">{</span>
 <td>List nodes and swarm manager</td>
 </tr>
 <tr>
-<td>docker service <cmd></td>
+<td>docker service &lt;cmd></td>
 <td>replaces docker run (single host) to swarm</td>
 </tr>
 <tr>
@@ -1056,11 +1056,11 @@ server <span class="o">{</span>
 <td>Creates service</td>
 </tr>
 <tr>
-<td>docker service ps <id_name></td>
+<td>docker service ps &lt;id_name></td>
 <td>shows on which node it runs</td>
 </tr>
 <tr>
-<td>docker service scale <service>=<numreplicas></td>
+<td>docker service scale &lt;service>=&lt;numreplicas></td>
 <td>Example to scale out a service</td>
 </tr>
 <tr>
@@ -1068,7 +1068,7 @@ server <span class="o">{</span>
 <td>Example to scale out to 2</td>
 </tr>
 <tr>
-<td>docker service update <name> --replicas 3</td>
+<td>docker service update &lt;name> --replicas 3</td>
 <td>Scale up option 2</td>
 </tr>
 <tr>
@@ -1076,15 +1076,15 @@ server <span class="o">{</span>
 <td>still works</td>
 </tr>
 <tr>
-<td>docker container inspect --format '{{json .Config.Labels }}' <name> | jq</td>
+<td>docker container inspect --format '{{json .Config.Labels }}' &lt;name> | jq</td>
 <td>Shows the labels associated with the container = info for swarm</td>
 </tr>
 <tr>
-<td>docker container rm -f <name>.1.<id></td>
+<td>docker container rm -f &lt;name>.1.&lt;id></td>
 <td>Swarm will detect failure and start a new container</td>
 </tr>
 <tr>
-<td>docker service rm <name></td>
+<td>docker service rm &lt;name></td>
 <td>remove service (shut containers etc.)</td>
 </tr>
 <tr>
@@ -1104,11 +1104,11 @@ server <span class="o">{</span>
 <td>Gets distributed in swarm across nodes</td>
 </tr>
 <tr>
-<td>docker service ps <servicename></td>
+<td>docker service ps &lt;servicename></td>
 <td>Shows distribution of containers across swarm</td>
 </tr>
 <tr>
-<td>docker node ps <nodename></td>
+<td>docker node ps &lt;nodename></td>
 <td>Shows services running on s speciic node</td>
 </tr>
 <tr>
@@ -1136,11 +1136,11 @@ server <span class="o">{</span>
 <td>SHows env vars &amp; points docker cli to specific node</td>
 </tr>
 <tr>
-<td>docker service logs <servicename></td>
+<td>docker service logs &lt;servicename></td>
 <td>Serivce Logs from all nodes</td>
 </tr>
 <tr>
-<td>docker container logs <container-name></td>
+<td>docker container logs &lt;container-name></td>
 <td>See logs from a container</td>
 </tr>
 </tbody>
@@ -1169,7 +1169,7 @@ server <span class="o">{</span>
 </thead>
 <tbody>
 <tr>
-<td>docker network create --driver overlay <name></td>
+<td>docker network create --driver overlay &lt;name></td>
 <td>New overlay network across swarm</td>
 </tr>
 <tr>
@@ -1335,7 +1335,7 @@ docker container logs &lt;container-name&gt;
 </thead>
 <tbody>
 <tr>
-<td>docker stack deploy -c <yml> name</td>
+<td>docker stack deploy -c &lt;yml> name</td>
 <td>Uses compose files. Instead of docker service create</td>
 </tr>
 <tr>
@@ -1343,15 +1343,15 @@ docker container logs &lt;container-name&gt;
 <td>List stuff</td>
 </tr>
 <tr>
-<td>docker stack ps <stackname></td>
+<td>docker stack ps &lt;stackname></td>
 <td>list node state etc</td>
 </tr>
 <tr>
-<td>docker stack services <stackname></td>
+<td>docker stack services &lt;stackname></td>
 <td>list ports replicas etc</td>
 </tr>
 <tr>
-<td>docker stack rm <name></td>
+<td>docker stack rm &lt;name></td>
 <td>remove a stack</td>
 </tr>
 <tr>
@@ -1359,15 +1359,15 @@ docker container logs &lt;container-name&gt;
 <td>shows networks that were created for stack</td>
 </tr>
 <tr>
-<td>docker stack deploy -c <yml> name</td>
+<td>docker stack deploy -c &lt;yml> name</td>
 <td>No update on stack cmd, just change yml and run again</td>
 </tr>
 <tr>
-<td>docker secret create <name_in_swarm_db> <file_or_cmd></td>
+<td>docker secret create &lt;name_in_swarm_db> &lt;file_or_cmd></td>
 <td>Create secret in Swarm DB**</td>
 </tr>
 <tr>
-<td>echo "pw" | docker secret create <name_in_swarm_db> -</td>
+<td>echo "pw" | docker secret create &lt;name_in_swarm_db> -</td>
 <td>Create from CLI<strong><em>,</em></strong>*</td>
 </tr>
 <tr>
@@ -1375,7 +1375,7 @@ docker container logs &lt;container-name&gt;
 <td>Show secrets in Swarm DB</td>
 </tr>
 <tr>
-<td>docker secret inspect <name></td>
+<td>docker secret inspect &lt;name></td>
 <td>Does NOT show pw, but can when created</td>
 </tr>
 <tr>
@@ -1383,7 +1383,7 @@ docker container logs &lt;container-name&gt;
 <td>Example using secrets</td>
 </tr>
 <tr>
-<td>docker exec -it <container_name> bash</td>
+<td>docker exec -it &lt;container_name> bash</td>
 <td>Login to container and check <code>/run/secrets/...</code></td>
 </tr>
 <tr>
@@ -1535,7 +1535,7 @@ docker container logs &lt;container-name&gt;
 <td>Combine two files and output the resulting config</td>
 </tr>
 <tr>
-<td>docker stack deploy -c <yml> name</td>
+<td>docker stack deploy -c &lt;yml> name</td>
 <td>Uses compose files. Instead of docker service create</td>
 </tr>
 </tbody>
@@ -1584,11 +1584,11 @@ docker container logs &lt;container-name&gt;
 </thead>
 <tbody>
 <tr>
-<td>docker service update --image appxy:1.5.1 <svc_name></td>
+<td>docker service update --image appxy:1.5.1 &lt;svc_name></td>
 <td>Update an image</td>
 </tr>
 <tr>
-<td>docker service update --env-add VAR1=prod --publish-rm 8080 <svc_name></td>
+<td>docker service update --env-add VAR1=prod --publish-rm 8080 &lt;svc_name></td>
 <td>Remove port, add env var</td>
 </tr>
 <tr>
@@ -1608,7 +1608,7 @@ docker container logs &lt;container-name&gt;
 <td>Rollback</td>
 </tr>
 <tr>
-<td>docker stack deploy -c file.yml <stack_name></td>
+<td>docker stack deploy -c file.yml &lt;stack_name></td>
 <td>Stack cmd will issue necessary api calls to match definition</td>
 </tr>
 </tbody>
@@ -1660,7 +1660,7 @@ docker container logs &lt;container-name&gt;
 <td>shows last 5 health check results</td>
 </tr>
 <tr>
-<td>docker container inspect -f "{{ json .State.Health }}" <name></td>
+<td>docker container inspect -f "{{ json .State.Health }}" &lt;name></td>
 <td>Example Query output</td>
 </tr>
 </tbody>
