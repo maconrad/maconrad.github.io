@@ -190,7 +190,7 @@
 <ul>
 <li>Outsources the construction of building an Element</li>
 <li>returning the builder via <code>self</code> allows for chaining (fluent/fluidity)</li>
-<li>Note: Exposing builder from element itself via <code>staticmethod</code> breaks the Open-Close principle. But depending on high tight they are coupled is okey (cyclic referency)</li>
+<li>Note: Exposing builder from element itself via <code>staticmethod</code> breaks the Open-Close principle. But depending on how tight they are coupled is okey (cyclic referency)</li>
 <li>Note: No error handling is on purpose to keep code as lean as possible and still understand pattern. </li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">XMLElement</span><span class="p">:</span>
