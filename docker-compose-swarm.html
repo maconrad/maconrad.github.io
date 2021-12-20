@@ -164,9 +164,11 @@
 </div>
 <h2 id="overview">Overview</h2>
 <ul>
-<li>docker container run</li>
+<li>docker container run<ul>
 <li>Manual cleanup needed (networks, volumes)</li>
-<li>docker-compose</li>
+</ul>
+</li>
+<li>docker-compose<ul>
 <li>Local development: Single node<ul>
 <li>interprets <code>build:</code> section in yml but not <code>deploy:</code></li>
 </ul>
@@ -174,7 +176,9 @@
 <li>Auto-Cleanup done on removal (networks, volumes)</li>
 <li>"DNS Server" included so container can see each other and do not depend on IP</li>
 <li>Can use <code>docker-compose.override.yml</code> for local dev and inheritance from file</li>
-<li>docker service</li>
+</ul>
+</li>
+<li>docker service<ul>
 <li>Swarm: Multi Node (manager &amp; worker)<ul>
 <li>Support for secrets (via in-memory tmpfs)</li>
 <li>Overlay network driver</li>
@@ -183,21 +187,29 @@
 </li>
 <li>Manual Cleanup needed (networks, volumes, secrets)</li>
 <li>service/task instead of container, as a service could have e.g. 3 replica</li>
-<li>docker stack</li>
+</ul>
+</li>
+<li>docker stack<ul>
 <li>Swarm: Multi Node with compose file<ul>
 <li>minimum version of <code>3.1</code> required</li>
 <li>interprets <code>deploy:</code> section in yml but not <code>build:</code></li>
 <li><code>deploy</code> section supports for replicas, labels, placement constraints etc.</li>
-<li>Support for secrets (via in-memory tmpfs)</li>
+<li>Support for secrets (via in-memory tmpfs)<ul>
 <li>via file (local development - supported via docker-compose</li>
 <li>or external (production) - not supported via docker-compsoe</li>
+</ul>
+</li>
 <li>Overlay network driver</li>
 <li>Some Load-balancing features included via Routing Mesh</li>
 </ul>
 </li>
 <li>Auto-Cleanup done on removal (networks, volumes, secrets)</li>
-<li>K8s</li>
+</ul>
+</li>
+<li>K8s<ul>
 <li>See K8s Blog Entry</li>
+</ul>
+</li>
 <li>Container vs VM</li>
 </ul>
 <p><img src="../../images/docker/2_ContainerVsVM.png" alt="Container vs VM" width="500"/></p>
@@ -313,14 +325,18 @@
 <h2 id="image-clis">Image CLIs</h2>
 <ul>
 <li>Image = "Ordered Collection of root filesystem changes and corresponding execution parameters for use within a container runtime"</li>
-<li>Image = App binaries, dependencies &amp; metadata about the image and how to run it</li>
+<li>Image = App binaries, dependencies &amp; metadata about the image and how to run it<ul>
 <li>Not a complete OS, no kernle, no drivers, can be really small therefore</li>
 <li>image consists of layers, each layer only stored once on host and has a unique SHA hash</li>
 <li>Container = single r/w layer on of image</li>
-<li>Dockerhub</li>
+</ul>
+</li>
+<li>Dockerhub<ul>
 <li>Official immages format &lt;name> e.g. nginx whereas </li>
 <li>Non-official images format &lt;account/name> e.g. conrad/nginx</li>
-<li>Union File System</li>
+</ul>
+</li>
+<li>Union File System<ul>
 <li>Basically presents all layers as a single fileystem (merges layer transparently)</li>
 <li>Each layer has its own unqie SHA sum (caching)<ul>
 <li>For example two images that both use ubuntu as base, ubuntu only downloaded once</li>
@@ -328,10 +344,14 @@
 </li>
 <li>A container adds a writeable layer on top</li>
 <li>Storagedriver stacks the layers on top of each other </li>
-<li>Copy on Write</li>
+</ul>
+</li>
+<li>Copy on Write<ul>
 <li>If container started and file that was coming from the container changes what happens is that the file is copied to the writable layer (top layer)</li>
 <li>= Copy on write from some base read-only layer to top layer</li>
 <li>= top layer holds changes</li>
+</ul>
+</li>
 </ul>
 <h3 id="tags">Tags</h3>
 <ul>
@@ -339,8 +359,10 @@
 <li>Default tag is <code>latest</code></li>
 <li>Tag pointer to a specific image commit</li>
 <li>ImageID = only real distinguisher as multiple tags can point to the same iamge</li>
-<li>By default when login done pw stored in cleartext under /root/.docker/config.json</li>
+<li>By default when login done pw stored in cleartext under /root/.docker/config.json<ul>
 <li>See: <a href="https://docs.docker.com/engine/reference/commandline/login/#credentials-store">URL to configure credentialhelper</a></li>
+</ul>
+</li>
 </ul>
 <table>
 <thead>
@@ -461,18 +483,22 @@ docker container run --rm --network net_elastic centos curl -s elastic:9200
 <h2 id="general">General</h2>
 <ul>
 <li>Docker Server also called Engine</li>
-<li><code>docker</code>shows two sections (old format) and new format. New formats are under management commands.</li>
+<li><code>docker</code>shows two sections (old format) and new format. New formats are under management commands.<ul>
 <li>docker run = all cmd style</li>
 <li>docker container run = new command (cmd subcommand)</li>
-<li>image vs container</li>
+</ul>
+</li>
+<li>image vs container<ul>
 <li>image: binary/src/libs code that make up app<ul>
 <li>images are pulled from registries</li>
 </ul>
 </li>
 <li>container: running instance of that image</li>
+</ul>
+</li>
 <li><code>Publish &lt;host port&gt;:&lt;container port&gt;</code> or <code>-p</code> opens local port on local machine and forwards to conainer on port xy</li>
 <li><code>run</code> always starts a new container. <code>start</code> can start a stopped container</li>
-<li><code>run</code> command does the following (not just start container)</li>
+<li><code>run</code> command does the following (not just start container)<ul>
 <li>checks local image cache</li>
 <li>checks remote image repo (default dockerhub) if not found locally</li>
 <li>downloads latest version (e.g. nginx:latest) if no other specified</li>
@@ -480,12 +506,18 @@ docker container run --rm --network net_elastic centos curl -s elastic:9200
 <li>gives virtual ip on private network inside docker engine</li>
 <li>opens port on host and forwards to port on container (check iptables)</li>
 <li>starts container via CMD defined in Dockerfile</li>
-<li>Docker container just a process running on host</li>
+</ul>
+</li>
+<li>Docker container just a process running on host<ul>
 <li>yes with restrictions (cgroups/namespaces), but can use ps -aux and see proc</li>
 <li>but process (e.g. mongo db process from mongo container) can be seen on host,not running inside a VM!</li>
-<li>Linux Alpine ~5MB in size and focused on security (ubuntu ~72MB)</li>
+</ul>
+</li>
+<li>Linux Alpine ~5MB in size and focused on security (ubuntu ~72MB)<ul>
 <li>But e.g. has no bash installed. <code>docker container run -it alpine sh</code> instead</li>
 <li>apk for package mgmt in alpine</li>
+</ul>
+</li>
 <li><code>docker container exec</code> runs an additional process, so when exiting out this additional command, the "main" container will not be stopped</li>
 <li>Configuration file at <code>/etc/docker/daemon.json</code></li>
 </ul>
@@ -494,39 +526,57 @@ docker container run --rm --network net_elastic centos curl -s elastic:9200
 <li>By default container connects to a virtual private network called "bridge"</li>
 <li>By default each virtual network (VN) routes via NAT on host</li>
 <li><code>-p</code> not needed to expose host ports if multiple containers need to talk to each other within the host. But then new network adapter (VN) should be created</li>
-<li>Best practice: New Network per App</li>
+<li>Best practice: New Network per App<ul>
 <li>1xVN: Webapp consisting of PHP/Apache Container + Mysql Container</li>
 <li>1xVN: Webapp consisting of nodejs container + mongodb container</li>
+</ul>
+</li>
 <li>Container connected to same Network Adapter (e.g. bridge or docker0 by default) can talk amonst each other without restriction!</li>
-<li>Container can be attached to 0, one or more networks</li>
+<li>Container can be attached to 0, one or more networks<ul>
 <li><code>--net=host</code> use host ip instead of VN (to improve performance in special cases)</li>
 <li>Impact on security! Attaches container directly to host interface. No more security boundary for containerization (namespace for net)</li>
+</ul>
+</li>
 <li>Docker network drivers extend functionality</li>
-<li>Docker does NOT rely on IP (dynamically created/started/stopped)!</li>
+<li>Docker does NOT rely on IP (dynamically created/started/stopped)!<ul>
 <li>static ip possible, but anti-pattern</li>
-<li>Docker Deamon has a built-in DNS Server that container use by default</li>
+</ul>
+</li>
+<li>Docker Deamon has a built-in DNS Server that container use by default<ul>
 <li>container name = what is registred in docker</li>
 <li>Default bridge network does NOT have DNS built into it by default<ul>
 <li>Manually linking necessary via <code>docker container create --link nginx1: --name nginx2 nginx</code></li>
 </ul>
 </li>
 <li>docker-compose spins up a new network per app automatically = comunication okey</li>
-<li>RR DNS built-in </li>
+</ul>
+</li>
+<li>RR DNS built-in <ul>
 <li>Can have multiple containers that respond to the same DNS address<ul>
 <li><code>--network-alias</code></li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <h2 id="dockerfile">Dockerfile</h2>
 <ul>
-<li>Env Vars are the main ways to set keys and values</li>
+<li>Env Vars are the main ways to set keys and values<ul>
 <li>work everywhere, no matter what OS is the base</li>
-<li>Order matters of dockerfile, as each one presents a layer</li>
+</ul>
+</li>
+<li>Order matters of dockerfile, as each one presents a layer<ul>
 <li>E.g. 1 layer per RUN command = main reason why often <code>&amp;&amp;</code> used to chin commands</li>
-<li>Very important to point logfile to stdout (12 Factor App best practice)</li>
+</ul>
+</li>
+<li>Very important to point logfile to stdout (12 Factor App best practice)<ul>
 <li>Proper way to log inside container is NOT to log into a logfile but to STDOUT/STDERR</li>
-<li>Built uses cached layers. BUT as soon as it hits a layer that has to be rebuilt, every layer afterwards has to be rebuilt!</li>
+</ul>
+</li>
+<li>Built uses cached layers. BUT as soon as it hits a layer that has to be rebuilt, every layer afterwards has to be rebuilt!<ul>
 <li>That means for example copy source code last! / towards the very end</li>
+</ul>
+</li>
 </ul>
 <table>
 <thead>
@@ -674,19 +724,27 @@ CMD <span class="o">[</span><span class="s2">&quot;nginx&quot;</span>, <span cla
 
 <h2 id="persistent-data">Persistent Data</h2>
 <ul>
-<li>Container is Immutable</li>
+<li>Container is Immutable<ul>
 <li>Never change running things, if change needed -&gt; redeploy</li>
-<li>Container is Ephemeral </li>
+</ul>
+</li>
+<li>Container is Ephemeral <ul>
 <li>Disposable </li>
-<li>Unique data needs to be stored somewhere</li>
+</ul>
+</li>
+<li>Unique data needs to be stored somewhere<ul>
 <li>Volumes &amp; Bind mounts</li>
-<li><code>Volumes: special location outside UFS</code></li>
+</ul>
+</li>
+<li><code>Volumes: special location outside UFS</code><ul>
 <li>For example <code>VOLUME /var/lib/mysql</code></li>
 <li>Tells container to create new volume and assign to that directory in the container</li>
 <li>Volume stays even if container deleted! Needs to be manually deleted</li>
 <li>For example Database outlives container lifetime</li>
 <li><code>named volumes</code>: Otherwise just an ID, more userfirendly!</li>
-<li><code>Bind Mounts: link container path to host path</code></li>
+</ul>
+</li>
+<li><code>Bind Mounts: link container path to host path</code><ul>
 <li>maps host file or directory into container file/directory</li>
 <li>can NOT be used in Dockerfile, only at runtime</li>
 <li><code>.. run -v /Users/conrad/proj/src:/path/container</code></li>
@@ -694,6 +752,8 @@ CMD <span class="o">[</span><span class="s2">&quot;nginx&quot;</span>, <span cla
 <li>Bind mount starts with a slash vs volume</li>
 <li>Local development use case<ul>
 <li>container detects changes and runs updates, no tools have to be installed locally</li>
+</ul>
+</li>
 </ul>
 </li>
 <li></li>
@@ -770,26 +830,34 @@ CMD <span class="o">[</span><span class="s2">&quot;nginx&quot;</span>, <span cla
 </table>
 <h2 id="compose">Compose</h2>
 <ul>
-<li>Command Line Tool &amp; Configuration file</li>
+<li>Command Line Tool &amp; Configuration file<ul>
 <li>Configures relation between containers</li>
 <li>"Saves" docker container run commands</li>
 <li>one-liner to start/stop (dev testing = local)</li>
 <li>Docker-compose still talks to Docker API!</li>
-<li>YAML File containing:</li>
+</ul>
+</li>
+<li>YAML File containing:<ul>
 <li>Containers</li>
 <li>Volumes</li>
 <li>Networks</li>
-<li><code>docker-compose.yml</code> </li>
+</ul>
+</li>
+<li><code>docker-compose.yml</code> <ul>
 <li>has its own version (defines features in the file)<ul>
 <li>v1 / v2 / v.2.1 / v.3 / v3.1</li>
 </ul>
 </li>
 <li>can be used directly with docker Swarm or K8s</li>
+</ul>
+</li>
 <li><code>git clone https://... &amp;&amp; docker-compose up</code> </li>
-<li>Docker-compose can build images</li>
+<li>Docker-compose can build images<ul>
 <li>Builds with lots of vars and build args (env vars that are just available during build)</li>
 <li>docker-compose up first checks if image is in cache, if not will build it</li>
 <li>can trigger rebuild if running docker-compose build</li>
+</ul>
+</li>
 </ul>
 <table>
 <thead>
@@ -867,9 +935,9 @@ networks: <span class="c1"># Optional, same as docker network create</span>
   <span class="nt">ngiii</span><span class="p">:</span>
     <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx:latest</span>
     <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.:/usr/share/nginx/html</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.:/usr/share/nginx/html</span>
     <span class="nt">ports</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&#39;8080:80&#39;</span>
+            <span class="p p-Indicator">-</span> <span class="s">&#39;8080:80&#39;</span>
 </code></pre></div>
 
 <ul>
@@ -882,9 +950,9 @@ networks: <span class="c1"># Optional, same as docker network create</span>
   <span class="nt">proxy</span><span class="p">:</span>
     <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx:1.13</span> <span class="c1"># this will use the latest version of 1.13.x</span>
     <span class="nt">ports</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&#39;80:80&#39;</span> <span class="c1"># expose 80 on host and sent to 80 in container</span>
+            <span class="p p-Indicator">-</span> <span class="s">&#39;80:80&#39;</span> <span class="c1"># expose 80 on host and sent to 80 in container</span>
     <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./nginx.conf:/etc/nginx/conf.d/default.conf:ro</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./nginx.conf:/etc/nginx/conf.d/default.conf:ro</span>
   <span class="nt">web</span><span class="p">:</span>
     <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">httpd</span>  <span class="c1"># this will use httpd:latest</span>
 </code></pre></div>
@@ -907,9 +975,11 @@ server <span class="o">{</span>
 <h3 id="bigger-example">Bigger example</h3>
 <ul>
 <li><code>depends_on</code> option would help compose to understand relationship = which container to start first</li>
-<li>environment vars can be specified in 2 ways:</li>
+<li>environment vars can be specified in 2 ways:<ul>
 <li><code>VAR: value</code> no dash</li>
 <li><code>- VAR=value</code> with dash</li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&#39;2&#39;</span>
 
@@ -918,16 +988,16 @@ server <span class="o">{</span>
   <span class="nt">wordpress</span><span class="p">:</span>
     <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">wordpress</span>
     <span class="nt">ports</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8080:80</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8080:80</span>
     <span class="nt">environment</span><span class="p">:</span>
       <span class="nt">WORDPRESS_DB_HOST</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mysql</span>
       <span class="nt">WORDPRESS_DB_NAME</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">wordpress</span>
       <span class="nt">WORDPRESS_DB_USER</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">example</span>
       <span class="nt">WORDPRESS_DB_PASSWORD</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examplePW</span>
     <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./wordpress-data:/var/www/html</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./wordpress-data:/var/www/html</span>
     <span class="nt">depends_on</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">db</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">db</span>
 
   <span class="nt">db</span><span class="p">:</span>
     <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mariadb</span>
@@ -937,7 +1007,7 @@ server <span class="o">{</span>
       <span class="nt">MYSQL_USER</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">example</span>
       <span class="nt">MYSQL_PASSWORD</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examplePW</span>
     <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mysql-data:/var/lib/mysql</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mysql-data:/var/lib/mysql</span>
 
 <span class="nt">volumes</span><span class="p">:</span>
   <span class="nt">mysql-data</span><span class="p">:</span>
@@ -962,11 +1032,11 @@ server <span class="o">{</span>
       <span class="nt">dockerfile</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx.Dockerfile</span>
     <span class="c1">#Optional -- image: nginx-custom</span>
     <span class="nt">ports</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&#39;80:80&#39;</span>
+            <span class="p p-Indicator">-</span> <span class="s">&#39;80:80&#39;</span>
   <span class="nt">web</span><span class="p">:</span>
     <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">httpd</span>
     <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./html:/usr/local/apache2/htdocs/</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./html:/usr/local/apache2/htdocs/</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">FROM</span> <span class="s">nginx:1.13</span>
@@ -980,19 +1050,25 @@ server <span class="o">{</span>
 <li>How to scale out/in/up/down?</li>
 <li>How to automate container lifecycle?</li>
 <li>How to ensure they are recreated if they fail?</li>
-<li>How to replace conatainers without downtime (blue/green deploy)?</li>
+<li>How to replace conatainers without downtime (blue/green deploy)?<ul>
 <li>= Rolling update</li>
+</ul>
+</li>
 <li>How to control/track where containers get started?</li>
 <li>How to create cross-node virtual networks?</li>
 <li>How to ensure only trusted servers run containers?</li>
 <li>How can secrets, passwords, keys be stored and only visible to the correct container?</li>
-<li>Swarm = Clustering/Orchestration solution built into docker</li>
+<li>Swarm = Clustering/Orchestration solution built into docker<ul>
 <li>bring together different OS/nodes into a single managable unit</li>
 <li>Swarm Mode added in 1.12 (2016) (SwarmKit)</li>
 <li>Enhanced in 1.13 via Stacks and Secrets (2017)</li>
-<li>Not enabled by default</li>
+</ul>
+</li>
+<li>Not enabled by default<ul>
 <li><code>docker swarm</code> &amp;&amp; <code>docker node</code> &amp;&amp; <code>docker service</code> &amp;&amp; <code>docker stack</code> &amp;&amp; <code>docker secret</code></li>
-<li>Concepts</li>
+</ul>
+</li>
+<li>Concepts<ul>
 <li>Manager nodes have <code>raft database</code>  </li>
 <li>Worker nodes, e.g. linux server running dockerd<ul>
 <li><code>docker node ls</code> fails: Workers are not priviliged to control swarm, only managers</li>
@@ -1001,7 +1077,9 @@ server <span class="o">{</span>
 <li>Manager can also be worker</li>
 <li>Single <code>service</code> can have multiple <code>tasks</code>, and each task will launch a <code>container</code></li>
 <li><code>docker service</code> replaces <code>docker run</code> command to spin up a service (1 or more containers)</li>
-<li><code>docker swarm init</code> starts swarm mode</li>
+</ul>
+</li>
+<li><code>docker swarm init</code> starts swarm mode<ul>
 <li>PKI and security automation (Root Signing Certs, certs issued to 1st manager, join tokens)</li>
 <li>Raft DB created to store root CA, configs and secrets<ul>
 <li>encrypted on disk (1.13+)</li>
@@ -1010,14 +1088,18 @@ server <span class="o">{</span>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <p><img src="../../images/docker/4_SwarmArchitecture1.png" alt="Docker Swarm Arch1" width="500"/>
 <img src="../../images/docker/5_SwarmArchitecture2.png" alt="Docker Swarm Arch1" width="500"/>
 <img src="../../images/docker/6_SwarmTaskService.png" alt="Docker Swarm Arch1" width="500"/>
 <img src="../../images/docker/7_SwarmCommunicationToMgr.png" alt="Docker Swarm Arch1" width="500"/></p>
 <ul>
-<li>Swarm Concepts</li>
+<li>Swarm Concepts<ul>
 <li>Overlay Multi-Host Network</li>
 <li>Routing Mesh</li>
+</ul>
+</li>
 </ul>
 <table>
 <thead>
@@ -1146,19 +1228,23 @@ server <span class="o">{</span>
 </tbody>
 </table>
 <p>Other options for Swarm setup
-  - Play with Docker
-    - https://play-with-docker.com - 4h wiped
-    - https://training.play-with-docker.com
-  - Digital Ocean
-    - Create 3 Droplets (=Servers)</p>
+    - Play with Docker
+        - https://play-with-docker.com - 4h wiped
+        - https://training.play-with-docker.com
+    - Digital Ocean
+        - Create 3 Droplets (=Servers)</p>
 <h3 id="swarm-feature-overlay-network">Swarm Feature - Overlay Network</h3>
 <ul>
 <li>Creates a swarm wide bridge network</li>
 <li>containers on different hosts behave like on a single VLAN</li>
-<li>Optional IPSec (AES) encryption on the network</li>
+<li>Optional IPSec (AES) encryption on the network<ul>
 <li>tunnels between each 2 hosts</li>
-<li>Service can be added to 0, 1 or 2+ overlay networks</li>
+</ul>
+</li>
+<li>Service can be added to 0, 1 or 2+ overlay networks<ul>
 <li>e.g. front-end and backend</li>
+</ul>
+</li>
 </ul>
 <table>
 <thead>
@@ -1208,11 +1294,13 @@ server <span class="o">{</span>
 </table>
 <h3 id="swarm-feature-routing-mesh">Swarm Feature - Routing Mesh</h3>
 <ul>
-<li>Routes Ingress packets for a service to proper Task</li>
+<li>Routes Ingress packets for a service to proper Task<ul>
 <li>E.g. even if Frontend runs on NodeX, it is reachable via all Node IP Addresses on that particual port (e.g. 8080)</li>
+</ul>
+</li>
 <li>Spans ALL nodes in swarm</li>
 <li>Uses <code>IPVS</code> from Linux Kernel</li>
-<li>Load balances (and listens) swarm services across their tasks</li>
+<li>Load balances (and listens) swarm services across their tasks<ul>
 <li>Container-to-container: In overlay network via VIP<ul>
 <li>E.g. Frontend-to-backend communicates via VIP if backend has multiple DBs</li>
 <li>No load balancer needed, swarm does that</li>
@@ -1223,15 +1311,21 @@ server <span class="o">{</span>
 </ul>
 </li>
 <li>Load balancer actually built-in to the <code>overlay</code> network driver</li>
-<li>Not DNS-RR (which would pose a problem to real load-balancing due to caching)</li>
+</ul>
+</li>
+<li>Not DNS-RR (which would pose a problem to real load-balancing due to caching)<ul>
 <li>VIP in front</li>
-<li>Features Notes</li>
+</ul>
+</li>
+<li>Features Notes<ul>
 <li>17.03: Stateless load balancing (session cookies &amp; hit specific container for a session)<ul>
 <li>Nginx or HA Proxy container that sit in front</li>
 <li>Docker enterprise wich has a built-in L4 web proxy</li>
 </ul>
 </li>
 <li>LB is at OSI Layer 4 (TCP), not Layer 5 (DNS)</li>
+</ul>
+</li>
 </ul>
 <p><img src="../../images/docker/8_SwarmVIP.png" alt="Docker Swarm Arch1" width="500"/>
 <img src="../../images/docker/9_swarmMeshIngressLB.png" alt="Docker Swarm Arch1" width="500"/></p>
@@ -1259,8 +1353,10 @@ server <span class="o">{</span>
 </table>
 <h3 id="service-example">Service Example</h3>
 <ul>
-<li>Example app using Swarm</li>
+<li>Example app using Swarm<ul>
 <li>Note: <code>-v</code> not available in swarm, have to use <code>--mount type=volume,source=xy,target=yz</code></li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><pre><span></span><code>docker network create --driver overlay frontend
 docker network create --driver overlay backend
@@ -1279,40 +1375,52 @@ docker container logs &lt;container-name&gt;
 
 <h3 id="swarm-stacks">Swarm Stacks</h3>
 <ul>
-<li>= something like Production grade compose</li>
+<li>= something like Production grade compose<ul>
 <li>docker-compose used for local development</li>
 <li>service commands used bash scripts, now possibility to use compose file to define/declar service description</li>
+</ul>
+</li>
 <li>Version 1.13 stacks accepts <code>docker-compose.yml</code> files</li>
 <li>Includes: Networks, services, volumes, secrets</li>
-<li><code>build:</code> not supported in compse file, </li>
+<li><code>build:</code> not supported in compse file, <ul>
 <li>Build should happen somehwere else, e.g. CI and push to repo</li>
 <li>Stack pulls images from repository</li>
-<li><code>deploy:</code> dict instead for defining swarm-specific stuff</li>
+</ul>
+</li>
+<li><code>deploy:</code> dict instead for defining swarm-specific stuff<ul>
 <li>Replicas, fail over, rolling updates</li>
-<li>Can use same docker-compose file</li>
+</ul>
+</li>
+<li>Can use same docker-compose file<ul>
 <li>Compose ignores <code>deploy:</code> --&gt; Local machine</li>
-<li>Swarm ignores <code>build:</code>    --&gt; Production machine</li>
+<li>Swarm ignores <code>build:</code>        --&gt; Production machine</li>
+</ul>
+</li>
 <li><code>docker-compose</code> cli not needed on swarm</li>
 <li>Labels put in to control metadata</li>
 <li>Version <code>3</code> or higher needed in order to use Stacks!</li>
-<li>Update procedure</li>
+<li>Update procedure<ul>
 <li><code>deploy</code> command acts also as update, just change the yml file and deploy again</li>
 <li>yml file = SoT = Source of Truth</li>
-<li>Secrets</li>
+</ul>
+</li>
+<li>Secrets<ul>
 <li>Built into since Version 1.13<ul>
 <li>Swarm Raft DB Encrypted on disk, encrypted in transit</li>
 <li>Only stored on disk of manager node</li>
 <li>Keys provided to worker node via control plane (encrypted TLS channel)</li>
 <li>Secrets 1st stored in swarm, then assigned to services</li>
-<li>Only container in assigned service can see them (other container no access)</li>
+<li>Only container in assigned service can see them (other container no access)<ul>
 <li>docker engine keep it in memory and only allows access for certain containers</li>
-<li>looks like file on harddrive to container. Uses <code>in-memory fs</code> or <code>ram fs</code><ul>
+<li>looks like file on harddrive to container. Uses <code>in-memory fs</code> or <code>ram fs</code></li>
 <li><code>/run/secrets/&lt;secret-name&gt;</code></li>
 <li><code>/run/secrets/&lt;secret-alias&gt;</code></li>
 </ul>
 </li>
-<li>Local development can use file-based secrets, but this is unsecure!</li>
+<li>Local development can use file-based secrets, but this is unsecure!<ul>
 <li>Faked so can use same docker-compose file locally.</li>
+</ul>
+</li>
 <li>Secrets depend on swarm = only available in swarm</li>
 </ul>
 </li>
@@ -1324,6 +1432,8 @@ docker container logs &lt;container-name&gt;
 </ul>
 </li>
 <li>Support generic strings or binary up to 500Kb in size</li>
+</ul>
+</li>
 </ul>
 <p><img src="../../images/docker/10_SwarmStack.png" alt="Docker Swarm Arch1" width="500"/></p>
 <table>
@@ -1407,7 +1517,7 @@ docker container logs &lt;container-name&gt;
   <span class="n">redis</span><span class="p">:</span>
     <span class="n">image</span><span class="p">:</span> <span class="n">redis</span><span class="p">:</span><span class="n">alpine</span>
     <span class="n">networks</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">frontend</span>
+            <span class="o">-</span> <span class="n">frontend</span>
     <span class="n">deploy</span><span class="p">:</span>
       <span class="n">replicas</span><span class="p">:</span> <span class="mi">1</span>
       <span class="n">update_config</span><span class="p">:</span>
@@ -1418,22 +1528,22 @@ docker container logs &lt;container-name&gt;
   <span class="n">db</span><span class="p">:</span>
     <span class="n">image</span><span class="p">:</span> <span class="n">postgres</span><span class="p">:</span><span class="mf">9.4</span>
     <span class="n">volumes</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">db</span><span class="o">-</span><span class="n">data</span><span class="p">:</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">postgresql</span><span class="o">/</span><span class="n">data</span>
+            <span class="o">-</span> <span class="n">db</span><span class="o">-</span><span class="n">data</span><span class="p">:</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">postgresql</span><span class="o">/</span><span class="n">data</span>
     <span class="n">networks</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">backend</span>
+            <span class="o">-</span> <span class="n">backend</span>
     <span class="n">environment</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">POSTGRES_HOST_AUTH_METHOD</span><span class="o">=</span><span class="n">trust</span>
+            <span class="o">-</span> <span class="n">POSTGRES_HOST_AUTH_METHOD</span><span class="o">=</span><span class="n">trust</span>
     <span class="n">deploy</span><span class="p">:</span>
       <span class="n">placement</span><span class="p">:</span>
         <span class="n">constraints</span><span class="p">:</span> <span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">role</span> <span class="o">==</span> <span class="n">manager</span><span class="p">]</span>
   <span class="n">vote</span><span class="p">:</span>
     <span class="n">image</span><span class="p">:</span> <span class="n">mconrad</span><span class="o">/</span><span class="n">examplevotingapp_vote</span>
     <span class="n">ports</span><span class="p">:</span>
-      <span class="o">-</span> <span class="mi">5000</span><span class="p">:</span><span class="mi">80</span>
+            <span class="o">-</span> <span class="mi">5000</span><span class="p">:</span><span class="mi">80</span>
     <span class="n">networks</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">frontend</span>
+            <span class="o">-</span> <span class="n">frontend</span>
     <span class="n">depends_on</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">redis</span>
+            <span class="o">-</span> <span class="n">redis</span>
     <span class="n">deploy</span><span class="p">:</span>
       <span class="n">replicas</span><span class="p">:</span> <span class="mi">2</span>
       <span class="n">update_config</span><span class="p">:</span>
@@ -1443,11 +1553,11 @@ docker container logs &lt;container-name&gt;
   <span class="n">result</span><span class="p">:</span>
     <span class="n">image</span><span class="p">:</span> <span class="n">mconrad</span><span class="o">/</span><span class="n">examplevotingapp_result</span>
     <span class="n">ports</span><span class="p">:</span>
-      <span class="o">-</span> <span class="mi">5001</span><span class="p">:</span><span class="mi">80</span>
+            <span class="o">-</span> <span class="mi">5001</span><span class="p">:</span><span class="mi">80</span>
     <span class="n">networks</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">backend</span>
+            <span class="o">-</span> <span class="n">backend</span>
     <span class="n">depends_on</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">db</span>
+            <span class="o">-</span> <span class="n">db</span>
     <span class="n">deploy</span><span class="p">:</span>
       <span class="n">replicas</span><span class="p">:</span> <span class="mi">1</span>
       <span class="n">update_config</span><span class="p">:</span>
@@ -1459,11 +1569,11 @@ docker container logs &lt;container-name&gt;
   <span class="n">worker</span><span class="p">:</span>
     <span class="n">image</span><span class="p">:</span> <span class="n">mconrad</span><span class="o">/</span><span class="n">examplevotingapp_worker</span>
     <span class="n">networks</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">frontend</span>
-      <span class="o">-</span> <span class="n">backend</span>
+            <span class="o">-</span> <span class="n">frontend</span>
+            <span class="o">-</span> <span class="n">backend</span>
     <span class="n">depends_on</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">db</span>
-      <span class="o">-</span> <span class="n">redis</span>
+            <span class="o">-</span> <span class="n">db</span>
+            <span class="o">-</span> <span class="n">redis</span>
     <span class="n">deploy</span><span class="p">:</span>
       <span class="n">mode</span><span class="p">:</span> <span class="n">replicated</span>
       <span class="n">replicas</span><span class="p">:</span> <span class="mi">1</span>
@@ -1479,12 +1589,12 @@ docker container logs &lt;container-name&gt;
   <span class="n">visualizer</span><span class="p">:</span>
     <span class="n">image</span><span class="p">:</span> <span class="n">mconrad</span><span class="o">/</span><span class="n">visualizer</span>
     <span class="n">ports</span><span class="p">:</span>
-      <span class="o">-</span> <span class="mi">8080</span><span class="p">:</span><span class="mi">8080</span>
+            <span class="o">-</span> <span class="mi">8080</span><span class="p">:</span><span class="mi">8080</span>
     <span class="n">stop_grace_period</span><span class="p">:</span> <span class="mi">1</span><span class="n">m30s</span>
     <span class="n">networks</span><span class="p">:</span>
-      <span class="o">-</span> <span class="n">frontend</span>
+            <span class="o">-</span> <span class="n">frontend</span>
     <span class="n">volumes</span><span class="p">:</span>
-      <span class="o">-</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">docker</span><span class="o">.</span><span class="n">sock</span><span class="p">:</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">docker</span><span class="o">.</span><span class="n">sock</span>
+            <span class="o">-</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">docker</span><span class="o">.</span><span class="n">sock</span><span class="p">:</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">docker</span><span class="o">.</span><span class="n">sock</span>
     <span class="n">deploy</span><span class="p">:</span>
       <span class="n">placement</span><span class="p">:</span>
         <span class="n">constraints</span><span class="p">:</span> <span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">role</span> <span class="o">==</span> <span class="n">manager</span><span class="p">]</span>
@@ -1499,21 +1609,21 @@ docker container logs &lt;container-name&gt;
 
 <h3 id="inheritance-secrets-and-local-development">Inheritance, Secrets and Local Development</h3>
 <p>For secrets the yaml would be extended as follows. Requires <code>version 3.1</code>:
-  - File means that secret is located in a file, not secure (testing only)
-  - External means the secret is already in the raft DB, however it was added
-    - Can be used in production (e.g. add via CLI and remove history)
-  - Real World might have 3 Docker-compose files
-    - 1 for Local Development <code>docker-compose up</code> with secret file
-    - 1 for CI Testing <code>docker-compose up</code> with secret file
-    - 1 for Prod <code>docker stack deploy</code> with secret external
-  - Inheritance
-    - <code>docker-compose.yml</code> - defines base for all images
-    - <code>docker-compose.override.yml</code>
-      - automatically executed when using local docker-compose up command!
-    - <code>docker-compose.test.yml</code> and <code>docker-compose.prod.yml</code>
-      - need <code>-f</code> and <code>docker-compose config</code> to combine multiple files
-      - <code>extends:</code> option to override compose files from base
-    - See <code>swarm-stack-3</code> examples!</p>
+    - File means that secret is located in a file, not secure (testing only)
+    - External means the secret is already in the raft DB, however it was added
+        - Can be used in production (e.g. add via CLI and remove history)
+    - Real World might have 3 Docker-compose files
+        - 1 for Local Development <code>docker-compose up</code> with secret file
+        - 1 for CI Testing <code>docker-compose up</code> with secret file
+        - 1 for Prod <code>docker stack deploy</code> with secret external
+    - Inheritance
+        - <code>docker-compose.yml</code> - defines base for all images
+        - <code>docker-compose.override.yml</code>
+            - automatically executed when using local docker-compose up command!
+        - <code>docker-compose.test.yml</code> and <code>docker-compose.prod.yml</code>
+            - need <code>-f</code> and <code>docker-compose config</code> to combine multiple files
+            - <code>extends:</code> option to override compose files from base
+        - See <code>swarm-stack-3</code> examples!</p>
 <table>
 <thead>
 <tr>
@@ -1548,8 +1658,8 @@ docker container logs &lt;container-name&gt;
     <span class="p">#</span> <span class="n">Defined</span> <span class="n">secrets</span> <span class="n">are</span> <span class="n">only</span> <span class="n">assigned</span> <span class="n">to</span> <span class="n">this</span> <span class="n">container</span>
     <span class="p">#</span> <span class="n">Longer</span> <span class="n">cmd</span> <span class="n">availble</span> <span class="k">for</span> <span class="n">non</span><span class="o">-</span><span class="n">root</span> <span class="n">user</span> <span class="n">to</span> <span class="k">specify</span> <span class="n">exact</span> <span class="n">permissions</span>
     <span class="nl">secrets:</span>
-      <span class="o">-</span> <span class="n">psql_user</span>
-      <span class="o">-</span> <span class="n">psql_password</span>
+            <span class="o">-</span> <span class="n">psql_user</span>
+            <span class="o">-</span> <span class="n">psql_password</span>
     <span class="nl">environment:</span>
       <span class="nl">POSTGRES_PASSWORD_FILE:</span> <span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">secrets</span><span class="o">/</span><span class="n">psql_password</span>
       <span class="nl">POSTGRES_USER_FILE:</span> <span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">secrets</span><span class="o">/</span><span class="n">psql_user</span>
@@ -1571,8 +1681,10 @@ docker container logs &lt;container-name&gt;
 <li>Rolling updates of tasks/containers by default</li>
 <li>Usually replaces container (with new ones)</li>
 <li>Rollback and healthcheck options</li>
-<li>Scale and rollback most often used = quick format</li>
+<li>Scale and rollback most often used = quick format<ul>
 <li><code>docker service scale web=4</code> and <code>docker service rollback web</code></li>
+</ul>
+</li>
 <li>Stack <code>deploy</code> on a already running stack =update</li>
 </ul>
 <table>
@@ -1616,29 +1728,39 @@ docker container logs &lt;container-name&gt;
 <h3 id="labels-constraints">Labels &amp; Constraints</h3>
 <ul>
 <li>Control container placement with labels &amp; constraints.</li>
-<li>Examples:</li>
+<li>Examples:<ul>
 <li>VPN should run on nodes in a DMZ</li>
 <li>Calculations stuff shoul run on nodes with an SSD</li>
 <li>Different availability zones/subnets</li>
 <li>Windows on windows worker nodes</li>
 </ul>
+</li>
+</ul>
 <h2 id="healthcheck">HEALTHCHECK</h2>
 <ul>
 <li>Feature added in 1.12, before only check if container still running</li>
 <li>Works in Dockerfile, Compose YAML, docker run, Swarm</li>
-<li>Will <code>exec</code> the command INSIDE the container</li>
+<li>Will <code>exec</code> the command INSIDE the container<ul>
 <li>For example <code>curl localhost</code></li>
 <li>Works even without exposed ports</li>
-<li>Expects <code>exit 0=OK</code> or <code>exit 1=ERROR</code></li>
+</ul>
+</li>
+<li>Expects <code>exit 0=OK</code> or <code>exit 1=ERROR</code><ul>
 <li>Needs exit 1, not other exit codes </li>
 <li>Often uses <code>|| false</code> to get around other codes or e.g. http query</li>
-<li>Container states:</li>
+</ul>
+</li>
+<li>Container states:<ul>
 <li><code>starting</code> (30sec) or <code>healthy</code> (runs every 30sec by default) or <code>unhealthy</code></li>
-<li>Defaults</li>
+</ul>
+</li>
+<li>Defaults<ul>
 <li>Interval: 30sec by default</li>
 <li>Timeout: 30sec by default</li>
 <li>start period: 0sec by default (sth that takes e.g long to start)</li>
 <li>retries: 3 by default</li>
+</ul>
+</li>
 <li>Not a monitoring replacement</li>
 <li>Docker run does NOT take action</li>
 <li>Swarm stack&amp;services DO take action if healthcheck fails</li>
@@ -1707,13 +1829,15 @@ services:
 <ul>
 <li>Public image available called <code>registry</code></li>
 <li>UI Catalog accessible via <code>https://name:5000/v2/_catalog/</code></li>
-<li>Swarm needs to push/pull from central repository (local build might not be an option)</li>
+<li>Swarm needs to push/pull from central repository (local build might not be an option)<ul>
 <li>Therefore local registry might be a good option</li>
 <li>Routing mesh steers towards correct container</li>
+</ul>
+</li>
 <li>Private registries need to store data somehwere! volumes!</li>
 <li>Docker hub option to trigger webhook to start other build stuff like travis, jenkins</li>
 <li>https communication only for registries (except localhost)</li>
-<li>Public registries</li>
+<li>Public registries<ul>
 <li>Docker Hub</li>
 <li>Quay.io</li>
 <li>Docker Registry</li>
@@ -1722,6 +1846,8 @@ services:
 <li>Quay Enterprise (self-hosted)</li>
 <li>Docker Enterprise Edition (DTR) = Docker trusted registry</li>
 <li>See: <a href="https://github.com/veggiemonk/awesome-docker#hosting-images-registries">Awesome docker</a></li>
+</ul>
+</li>
 </ul>
 <table>
 <thead>
@@ -1798,9 +1924,11 @@ services:
 </ul>
 <h2 id="random-stuff">Random Stuff</h2>
 <ul>
-<li>Tools that might be missing inside the container</li>
+<li>Tools that might be missing inside the container<ul>
 <li><code>ip address show &amp;&amp; ip link show</code> - provided by iproute2 pkt (ubuntu)</li>
 <li><code>ps aux</code> - provided by procps pkt</li>
+</ul>
+</li>
 <li>Use <code>apt install apt-file &amp;&amp; apt-file search --regexp 'bin/ip$'</code> to identify packet</li>
 <li>Use <code>$(pwd)</code> on Unix-like systems (mac, linux) and <code>${pwd}</code> on Powershell and <code>%cd%</code> on CMD in windows</li>
 <li>Iptables:</li>

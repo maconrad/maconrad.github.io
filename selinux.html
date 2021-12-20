@@ -33,13 +33,13 @@
  
 
 <meta name="author" content="Mario" />
-<meta name="description" content="Table of contents: Basics Key Points Files CLI References Basics Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year 2000 by NSA to open source community. While talking to one of my …" />
+<meta name="description" content="Table of contents: Basics - If bool or re-labeling does NOT fix a problem, might need a policy Key Points Files CLI References Basics Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year …" />
 <meta name="keywords" content="linux">
 
 
   <meta property="og:site_name" content="PeliBlog"/>
   <meta property="og:title" content="SELinux"/>
-  <meta property="og:description" content="Table of contents: Basics Key Points Files CLI References Basics Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year 2000 by NSA to open source community. While talking to one of my …"/>
+  <meta property="og:description" content="Table of contents: Basics - If bool or re-labeling does NOT fix a problem, might need a policy Key Points Files CLI References Basics Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year …"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:url" content="/selinux.html"/>
   <meta property="og:type" content="article"/>
@@ -120,7 +120,8 @@
 
   <div>
     <div class="toc"><span class="toctitle">Table of contents:</span><ul>
-<li><a href="#basics">Basics</a><ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#-if-bool-or-re-labeling-does-not-fix-a-problem-might-need-a-policy">- If bool or re-labeling does NOT fix a problem, might need a policy</a><ul>
 <li><a href="#key-points">Key Points</a></li>
 <li><a href="#files">Files</a></li>
 <li><a href="#cli">CLI</a></li>
@@ -133,20 +134,16 @@
 <p>Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year 2000 by NSA to open source community. While talking to one of my fellow engineers about some customer projects, he mentioned SELinux several times. Not knowing how stuff actually works, sucks... So time to get my hands on at least the basics of SELinux.</p>
 <ul>
 <li>Runs a module in the linux kernel</li>
-<li>MAC vs. AC<ul>
-<li>DAC: Discretionary access control</li>
-<li>Ownership (user, group, other) + permissions (rwx)</li>
-<li>Users have ability (discretion) to change permissions</li>
-<li>User can do chmod +rwx on his home directory, no way to stop that<ul>
-<li>Problem: Execute anything he wants in his home dir!</li>
-</ul>
-</li>
-<li>MAC: Mandatory access control</li>
-<li>Policy that is administratively set and fixed</li>
-<li>Even if DAC is changed on home dir, nothing happens, as if there is a policy that prevents users and processes from accessing it</li>
-</ul>
-</li>
-<li>Policy very precise and can protect all types of communication between:</li>
+<li>MAC vs. AC
+        - DAC: Discretionary access control
+            - Ownership (user, group, other) + permissions (rwx)
+            - Users have ability (discretion) to change permissions
+            - User can do chmod +rwx on his home directory, no way to stop that
+              - Problem: Execute anything he wants in his home dir!
+        - MAC: Mandatory access control
+            - Policy that is administratively set and fixed
+            - Even if DAC is changed on home dir, nothing happens, as if there is a policy that prevents users and processes from accessing it</li>
+<li>Policy very precise and can protect all types of communication between:<ul>
 <li>users / files / dirs / memories / sockets / tcp,udp ports / etc.</li>
 <li><code>targeted</code> (default policy type) vs <code>mls</code> (multi-layer)</li>
 <li>targeted: Policy for targeted processes (hundreds defined by default), everything else unrestricted/unconfied. Examples of targed procceses are httpd &amp; network, but also web-browser and email-client.<ul>
@@ -154,53 +151,76 @@
 </ul>
 </li>
 <li>mls: Multi-level, multi-category, can get very complex</li>
-<li>Two major concepts</li>
+</ul>
+</li>
+<li>Two major concepts<ul>
 <li><code>Label</code> (also referrred to as context)<ul>
-<li>Files, procs, ports etc. are all labeled with a SELinux <code>context</code></li>
+<li>Files, procs, ports etc. are all labeled with a SELinux <code>context</code><ul>
 <li>Files &amp; dirs store them as extended attributes on the filesystem</li>
 <li>proccesses, ports etc, the kernel manages the labels</li>
+</ul>
+</li>
 <li>Remember: Context set when files created (based on parent dir unless file transition policy). RPM can set context as part of installation. Login process sets default context (e.g. targeted)</li>
-<li>Format: <code>user:role:type:level(optional)</code></li>
+<li>Format: <code>user:role:type:level(optional)</code><ul>
 <li>MLS uses user &amp; role </li>
 <li>level refers to multi-level, multi-category</li>
 </ul>
 </li>
+</ul>
+</li>
 <li>Type Enforcement (remember type part of the label)<ul>
-<li>2 Modes</li>
+<li>2 Modes<ul>
 <li><code>enforced</code> or <code>permissive</code> (still monitoring)</li>
-<li>Example </li>
+</ul>
+</li>
+<li>Example <ul>
 <li>process running in httpd_t context to interact with a file in httpd_config_t context/label = OK</li>
 <li>process running in httpd_t context to interact with shadow_t label = NOK. </li>
+</ul>
+</li>
 <li>Policy (SELinux policy) defined on system defines interaction between types even if e.g. chmod 777 on file /etc/shadow</li>
 </ul>
 </li>
+</ul>
+</li>
 <li><code>-Z</code> for many commands to view context</li>
-<li>Other similar tools:</li>
+<li>Other similar tools:<ul>
 <li>Ubuntu uses AppArmor as an alternative. SELinux installation probably breaks ubuntu if not configured</li>
-<li>Exception to inheritance for context from parent dir: File transitions policy</li>
+</ul>
+</li>
+<li>Exception to inheritance for context from parent dir: File transitions policy<ul>
 <li>Example:<ul>
 <li>Real Behaviour: dhclient (dhclient_t) creates a file /etc/resolv.conf (net_conf_t) in director /etc (etc_t). </li>
 <li>Without file transition policy: /etc/resolv.conf would have inherited (etc_t)</li>
 </ul>
 </li>
+</ul>
+</li>
 <li><code>semanage</code> to manage SELinux settings for nodes, file context, boolean, permissive state, dontaudit</li>
-<li>Booleans Examples, defaults </li>
+<li>Booleans Examples, defaults <ul>
 <li>"Allow ftp server to access users home-dir"</li>
 <li>"Allow httpd to to use mod_auth_ntlm_winbind"</li>
-<li>Tips &amp; Tricks</li>
+</ul>
+</li>
+<li>Tips &amp; Tricks<ul>
 <li>Install <code>setroubleshoot</code> and <code>setroubleshoot-server</code> in dev environment = lots of tools for debugging. Restart auditd after that</li>
-<li>Moving &amp; Copying</li>
+</ul>
+</li>
+<li>Moving &amp; Copying<ul>
 <li>Remember: Moving file keeps context! Copy copies context over from parent dir.</li>
 <li>Example: <code>move /home/maconrad/content/* /var/www/html/</code> &amp; <code>chown httpd:httpd /var/www/html/*</code></li>
 <li><code>journalctl</code> for error and <code>ls -ldZ /var/www/html/</code> for target type and <code>chcon</code> to change the context of the file</li>
 <li>Can use <code>chcon</code> to set manually or reference known good or use <code>restorecon</code> that relies on predefined defintions. See files.</li>
-<li>Policy Module</li>
-<li>If bool or re-labeling does NOT fix a problem, might need a policy</li>
-<li></li>
-<li>Example</li>
+</ul>
+</li>
+<li>Policy Module<h2 id="-if-bool-or-re-labeling-does-not-fix-a-problem-might-need-a-policy">- If bool or re-labeling does NOT fix a problem, might need a policy</h2>
+</li>
+<li>Example<ul>
 <li>User fred with home-dir /home/fred/public_html, UserDir public_html in /etc/httpd/conf.d/userdir.conf is enabled &amp; systemctl restart httpd</li>
 <li>Nothing works and /var/log/httpd/access_log &amp; /var/log/httpd/error_log only show forbidden (http 403)</li>
 <li><code>journalctl</code> shows systemlogs including SELinux stuff</li>
+</ul>
+</li>
 </ul>
 <h3 id="key-points">Key Points</h3>
 <ul>
@@ -218,8 +238,10 @@
 <ul>
 <li>What policy: <code>/etc/selinux/config</code> or <code>/etc/sysconfig/selinux</code></li>
 <li>What booleans: <code>/etc/selinux/targeted/modules/active/booleans.local</code></li>
-<li>Restorecon default contexts: <code>/etc/selinux/targeted/contexts/files/file_contexts</code></li>
+<li>Restorecon default contexts: <code>/etc/selinux/targeted/contexts/files/file_contexts</code><ul>
 <li>Good reference for REGEX of files</li>
+</ul>
+</li>
 </ul>
 <h3 id="cli">CLI</h3>
 <div class="highlight"><pre><span></span><code>dnf provides /usr/sbin/semanage

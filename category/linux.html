@@ -123,9 +123,11 @@
 </div>
 <h2 id="intro">Intro</h2>
 <ul>
-<li>Control Group: Limit what a resource can use. Resource mgmt for individual processes (prioritize, enforce, account)</li>
+<li>Control Group: Limit what a resource can use. Resource mgmt for individual processes (prioritize, enforce, account)<ul>
 <li>Limits: CPU,I/O,Memory,Network</li>
 <li>Access control to Devices: /dev/*</li>
+</ul>
+</li>
 <li>Namespace: Limits what resources a process can see …</li></ul></div>
         <br>
         <a class="btn"
@@ -147,7 +149,8 @@
   </header>
   <div>
       <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
-<li><a href="#basics">Basics</a><ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#-if-bool-or-re-labeling-does-not-fix-a-problem-might-need-a-policy">- If bool or re-labeling does NOT fix a problem, might need a policy</a><ul>
 <li><a href="#key-points">Key Points</a></li>
 <li><a href="#files">Files</a></li>
 <li><a href="#cli">CLI</a></li>
@@ -157,7 +160,7 @@
 </ul>
 </div>
 <h2 id="basics">Basics</h2>
-<p>Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year 2000 by NSA to open source community. While talking to one of my …</p></div>
+<p>Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year …</p></div>
         <br>
         <a class="btn"
            href="/selinux.html#selinux">
@@ -235,9 +238,9 @@
 <p>Shell parses and interprets cmds and passes it to kernel for execution, usually in interactive mode, but can be scripted.</p>
 <h3 id="regex">Regex</h3>
 <ul>
-<li>Definition</li>
+<li>Definition<ul>
 <li>Pattern: Sequence of Characters, can use [], {} or ()</li>
-<li>Literal: String that represents itself, e.g. Hello matches Hello …</li></ul></div>
+<li>Literal: String that represents itself, e.g. Hello matches Hello …</li></ul></li></ul></div>
         <br>
         <a class="btn"
            href="/linux-scripting-basics.html#linux-scripting-basics">

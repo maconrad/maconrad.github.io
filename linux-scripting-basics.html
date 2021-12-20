@@ -135,13 +135,15 @@
 <p>Shell parses and interprets cmds and passes it to kernel for execution, usually in interactive mode, but can be scripted.</p>
 <h3 id="regex">Regex</h3>
 <ul>
-<li>Definition</li>
+<li>Definition<ul>
 <li>Pattern: Sequence of Characters, can use [], {} or ()</li>
 <li>Literal: String that represents itself, e.g. Hello matches Hello ;)</li>
 <li>Metacharacter: Speical chars<ul>
 <li>Repetiton meta-chars: e.g. + (one or more occurrences of preceding char)</li>
 <li><code>\</code> Escape Char</li>
 <li><code>{2,}</code> leaving out upper range means infinity</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -286,8 +288,10 @@ grep -E -A5 <span class="s1">&#39;line vty&#39;</span> router.cfg <span class="c
 <ul>
 <li>Programming Language, but mostly used for text processing</li>
 <li>Find pattern, then perform action</li>
-<li>Supports spreadsheet styles (rows and columns) and value extraction</li>
+<li>Supports spreadsheet styles (rows and columns) and value extraction<ul>
 <li>Typical use case: Grep used to match, awk used to print a certain row.</li>
+</ul>
+</li>
 <li>Default field separator/delimitir = Whitespace</li>
 <li>Column numbers need to be identical, otherwise different output</li>
 </ul>
@@ -325,13 +329,17 @@ awk <span class="s1">&#39;/^Fast/ { print $5,$6 }&#39;</span> show-ip-int-brief.
 
 <h3 id="sed">Sed</h3>
 <ul>
-<li>Stream editor</li>
+<li>Stream editor<ul>
 <li>Stream -&gt; reads, buffers and operates on a <code>line-by-line</code> base</li>
 <li>Each line is safed in a pattern buffer. Emptied when processed</li>
 <li>By default pattern buffer is emptied = printed out</li>
 <li><code>-n</code>to NOT print content of pattern buffer, only the action done</li>
-<li>Regex, specify line or range of lines</li>
+</ul>
+</li>
+<li>Regex, specify line or range of lines<ul>
 <li>E.g. $ for Last line of file</li>
+</ul>
+</li>
 <li>Sed also procceses whole line (like grep and awk) that matches!</li>
 <li>No {} for action as with awk</li>
 </ul>

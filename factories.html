@@ -134,16 +134,22 @@
 <p>Factory basically is any entity that takes care of creating objects. Similar to builder, but with the difference that it is not piecewise/step-by-step but wholesale. Why and when is that needed? When the <code>__init__()</code> gets longer and more sophisticated, plus the init method is not really descriptive (name always init). init() cannot be overloaded. E.g. I want to create </p>
 <p>Types:</p>
 <ul>
-<li>Factory method(s): Separate &amp; central component with repsonsibility to decide which concrete implementation to use</li>
+<li>Factory method(s): Separate &amp; central component with repsonsibility to decide which concrete implementation to use<ul>
 <li>typically <code>@staticmethod</code></li>
 <li>Factory method = Alternative to <code>__init__()</code> with good naming and not overloaded/convoluted with many unneeded params</li>
-<li>Factory class: Class XYZ has a Class XYZFactory which is used to create objects of type XYZ</li>
+</ul>
+</li>
+<li>Factory class: Class XYZ has a Class XYZFactory which is used to create objects of type XYZ<ul>
 <li>Adheres to <code>Single Repsonsibility Principle</code> in that its sole responsibility is to create objects</li>
 <li>If we have too many Fatory methods within a class, might make sense to move them out of a class / group them</li>
-<li>Abstract Factory: Used for Type Hierarchies, type hierarchy for factory classes correspond with type hierarchy for concrete classes. Example:</li>
+</ul>
+</li>
+<li>Abstract Factory: Used for Type Hierarchies, type hierarchy for factory classes correspond with type hierarchy for concrete classes. Example:<ul>
 <li>Concret type hirarchy Car(abstract), SUV(Car), Race(Car)</li>
 <li>Corresponding Factory CarFactory(Abstract), SUVFactory(CarFactory), RaceFactory(CarFactory) </li>
 <li>Abstract base class defines interface for concrete Factories (not mandatory in python due to ducktyping)</li>
+</ul>
+</li>
 </ul>
 <p>Benefits:</p>
 <ul>
@@ -166,22 +172,28 @@
 </ul>
 <p>Key:</p>
 <ul>
-<li>Difference to Builder: not piecewise/stepwise but whole object created</li>
+<li>Difference to Builder: not piecewise/stepwise but whole object created<ul>
 <li>Menas fully initialized object!</li>
+</ul>
+</li>
 <li>Really anything that manufactures objects. Could also be a lambda</li>
 <li>Look for a common interface/goal of multiple methods/implementations</li>
-<li><code>Client, Product and Creator</code> terminology often used with this pattern</li>
+<li><code>Client, Product and Creator</code> terminology often used with this pattern<ul>
 <li>client = depends on an interface</li>
 <li>product = implements the interface</li>
 <li>creator = factory that returns concrete product (that implements interface)</li>
 </ul>
+</li>
+</ul>
 <h2 id="before-factory-method">Before Factory Method</h2>
 <ul>
-<li>Problems:</li>
+<li>Problems:<ul>
 <li>Breaks Open-Close Prinicple</li>
 <li>Have to figure out that a matches R, b matches G, c matches B in case of RGB</li>
 <li>Have to figure out that a matches C, b matches M, c matches Y and d matches K in case of CMYK</li>
 <li>Inconvenient, non descriptive!</li>
+</ul>
+</li>
 <li>Can be inner class, can be static</li>
 <li>Note: No error handling is on purpose to keep code as lean as possible and still understand pattern. </li>
 </ul>
@@ -261,22 +273,32 @@
 
 <h2 id="factory-class">Factory Class</h2>
 <ul>
-<li>Single Responsibility</li>
+<li>Single Responsibility<ul>
 <li>Once we have many FactoriesMethods might make sense to outsource them to a separate entity</li>
 <li>Grouping of same repsonsibility functions</li>
+</ul>
+</li>
 <li>Not static anymore</li>
-<li>Can be inner Class of Color with an instance, a class member or a separate class with static methods</li>
+<li>Can be inner Class of Color with an instance, a class member or a separate class with static methods<ul>
 <li>Here inner class as example</li>
+</ul>
+</li>
 <li>Intrinsic relationship between Factory and Class</li>
-<li>Client has to know that there is a factory, nothing prevents him from assining values or using init()</li>
+<li>Client has to know that there is a factory, nothing prevents him from assining values or using init()<ul>
 <li>Can only give a hint by making init unparameterized.</li>
 <li>No such concept as private constructor as with other languages</li>
 <li>Therefore inner class not very often used in python</li>
-<li>Factory Static or Not Static does not really matter usually</li>
+</ul>
+</li>
+<li>Factory Static or Not Static does not really matter usually<ul>
 <li>But if factory wants to store some state, than helpful not to make it static</li>
 <li>E.g. randomization or so.</li>
-<li>Combination with singleton</li>
+</ul>
+</li>
+<li>Combination with singleton<ul>
 <li>use a single static factory inside the XYClass for convenience (that can also store state)</li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
 
@@ -411,8 +433,10 @@
 <ul>
 <li>See: <a href="https://refactoring.guru/design-patterns/abstract-factory">Refactoring Guru Example Furniture</a></li>
 <li>See: <a href="https://sourcemaking.com/design_patterns/factory_method#:~:text=Example,molds%20of%20the%20desired%20shapes.">Source Making</a></li>
-<li>See: <a href="https://realpython.com/factory-method-python/">Real Python</a></li>
+<li>See: <a href="https://realpython.com/factory-method-python/">Real Python</a><ul>
 <li>Very good example</li>
+</ul>
+</li>
 </ul>
   </div>
   <div class="tag-cloud">

@@ -149,44 +149,60 @@
 <h2 id="intro">Intro</h2>
 <ul>
 <li>K8s = Container orchestrator = make many servers act like a single</li>
-<li>Runs on top of container runtime as a set of APIs/CLI to manage contrainers across servers</li>
+<li>Runs on top of container runtime as a set of APIs/CLI to manage contrainers across servers<ul>
 <li>docker (by default)</li>
 <li>containerd</li>
-<li>Options/Distributions </li>
+</ul>
+</li>
+<li>Options/Distributions <ul>
 <li>KaaS (K8s as a service) in the cloud</li>
 <li>miniKube</li>
-<li>Orchestration not everywhere needed. Other cloud options available</li>
+</ul>
+</li>
+<li>Orchestration not everywhere needed. Other cloud options available<ul>
 <li>autoscaling groups</li>
 <li>elastic load balancing</li>
 <li>heroku</li>
-<li>Formula</li>
+</ul>
+</li>
+<li>Formula<ul>
 <li>Servers + Change Rate = Benefit of Orchestration</li>
 <li>Designed to automate change &amp; monitor state (take action if needed)</li>
-<li>Orchestrators</li>
+</ul>
+</li>
+<li>Orchestrators<ul>
 <li>Swarm (hybrid, DC and cloud)</li>
 <li>K8s (hybrid, DC and cloud)</li>
 <li>ECS (Cloud specific to AWS, "legacy")</li>
 <li>CloudFoundry</li>
-<li>K8s distributions</li>
+</ul>
+</li>
+<li>K8s distributions<ul>
 <li>Docker enterprise</li>
 <li>Rancher</li>
 <li>OpenShift</li>
 <li>Canonical (Ubuntu)</li>
 <li>VMWare PKS</li>
 <li>...</li>
-<li>Use a certified K8s offer</li>
+</ul>
+</li>
+<li>Use a certified K8s offer<ul>
 <li>Can take yml files and move from one vendor to another</li>
 <li>See: <a href="https://kubernetes.io/partners/">K8s Partners</a></li>
+</ul>
+</li>
 </ul>
 <h2 id="k8s-vs-swarm">K8s vs Swarm</h2>
 <ul>
 <li>(Review: Swarm Mode: Built-in Orchestration)</li>
-<li>Both</li>
+<li>Both<ul>
 <li>Container orchestrators that run on top of container runtime<ul>
 <li>Docker, containerd, crio</li>
 </ul>
 </li>
-<li>K8s</li>
+</ul>
+</li>
+<li>K8s<ul>
 <li>General: More features and flexibility</li>
 <li>Detail:<ul>
 <li>Clouds deploy &amp; manage K8s for you</li>
@@ -195,11 +211,15 @@
 <li>"Safe way"</li>
 </ul>
 </li>
-<li>Swarm</li>
+</ul>
+</li>
+<li>Swarm<ul>
 <li>General: Easier to deploy/manage</li>
 <li>Detail:<ul>
-<li>Comes with Docker, single vendor (less resource)</li>
+<li>Comes with Docker, single vendor (less resource)<ul>
 <li>runs everywhere docker runs (local, cloud, DC, ARM (embedded, Raspy), Windows, 32Bit)</li>
+</ul>
+</li>
 <li>Developer workflow in mind </li>
 <li>"80/20 rule" (networking, ingress, encryption, db, etc.)</li>
 <li>Secure by default (TLS between Managers (control plane), encrypts DB to store secrets)</li>
@@ -207,17 +227,21 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <h2 id="architecture-terms">Architecture &amp; Terms</h2>
 <ul>
 <li>K8s: orchestration system</li>
 <li><code>kubectl</code>: CLI to configure k8s and manage apps (talks to k8s api)</li>
-<li>node: server in a k8s cluster</li>
+<li>node: server in a k8s cluster<ul>
 <li><code>docker</code>: Or other container engine (containerd) to run containers</li>
 <li><code>kubelet</code>: k8s agent running on node (communication k8s master-node)</li>
 <li><code>kube-proxy</code>: control networking</li>
 <li>docker has swarm built in docker engine, but for k8s not built in</li>
 <li>own engine api that talks to local docker/runtime + upstream</li>
-<li>Control Plane: set of containers that manage the cluster</li>
+</ul>
+</li>
+<li>Control Plane: set of containers that manage the cluster<ul>
 <li>in swarm = manager</li>
 <li>includes API, scheduler, controller manager, etcd (db), dns ...<ul>
 <li>docker/containerd: runs containers (on nodes &amp; masters) as etcd etc (all functions) are containers themselves</li>
@@ -231,7 +255,9 @@
 </li>
 <li>sometimes called "master"</li>
 <li>raft protocol used like swarm = odd number of masters (e.g. 3)</li>
-<li>Terminology &amp;  abstraction</li>
+</ul>
+</li>
+<li>Terminology &amp;  abstraction<ul>
 <li><code>Pod</code>: One or more container running together on a Node<ul>
 <li>Basic unit of deployment. Container always inside a pod</li>
 <li>Technically containers are not deployed directly in k8s, only pods are deplyoed</li>
@@ -240,8 +266,10 @@
 </li>
 <li><code>Controller</code>: Creating/Updating pods and other objects<ul>
 <li>Validates state inside k8s</li>
-<li>Many types of controllers available</li>
+<li>Many types of controllers available<ul>
 <li><code>Deyploment</code>, <code>ReplicaSet</code>, <code>StatefulSet</code>, <code>DaemonSet</code>, <code>Job</code>, <code>CronJob</code> etc.</li>
+</ul>
+</li>
 <li>Similar to services in swarm</li>
 </ul>
 </li>
@@ -251,13 +279,17 @@
 </li>
 <li><code>Namespace</code>: Filtered Group of objects in a cluster (filter on view at cli)<ul>
 <li>NOT a security feature (like namespace in docker, NOT the same thing!)</li>
-<li>Example: </li>
+<li>Example: <ul>
 <li><code>kubectl get all --all-namespaces</code> will show resources (pods/deployments/replicasts) from all namespaces including <code>kube-system</code></li>
 <li><code>kubectl get all</code> will not show <code>kube-system</code> resources  </li>
 </ul>
 </li>
+</ul>
+</li>
 <li><code>Secrets</code>, <code>ConfigMaps</code> etc. etc.</li>
-<li><code>POD</code> --&gt; <code>ReplicaSet</code>  --&gt; <code>Deployment</code></li>
+</ul>
+</li>
+<li><code>POD</code> --&gt; <code>ReplicaSet</code>    --&gt; <code>Deployment</code><ul>
 <li>single <code>kubectl create deployment &lt;name&gt; --image &lt;imagename&gt;</code> created multiple resources</li>
 <li>Pod: Contains container, volume, NIC for pod</li>
 <li><code>Deployment</code> controller <ul>
@@ -270,15 +302,23 @@
 <li>scale command in swarm service, here with pods rather than tasks</li>
 </ul>
 </li>
-<li><code>spec</code></li>
+</ul>
+</li>
+<li><code>spec</code><ul>
 <li>In k8s everything has a spec</li>
 <li><code>kubectl scal --replicas 2</code> technically updates the spec</li>
-<li><code>selector</code></li>
+</ul>
+</li>
+<li><code>selector</code><ul>
 <li>technique to "catch" multiple things based (e.g. pods) based on some selector (e.g. label)</li>
-<li>App "types"</li>
+</ul>
+</li>
+<li>App "types"<ul>
 <li><code>Deployment</code> (default) / an app</li>
 <li><code>Job</code>: Set of pods that should run once (no-restart option)</li>
 <li><code>CronJob</code>: Reocurring job (format like linux cronjob "<em>/1 * </em> * *")</li>
+</ul>
+</li>
 </ul>
 <p><img src="../../images/k8s/101_K8s_SelfHostedTechStack.png" alt="SelfHosted" width="500"/>
 <img src="../../images/k8s/102_K8s_DockerEntHostedTechStack.png" alt="Docker Enterprise Hosted" width="500"/>
@@ -288,18 +328,24 @@
 <img src="../../images/k8s/106_K8s_Architecture4.png" alt="Architecture Overview4" width="500"/></p>
 <h2 id="local-install">Local Install</h2>
 <ul>
-<li>If running Docker Desktop (OSX, Windows)</li>
+<li>If running Docker Desktop (OSX, Windows)<ul>
 <li>Checkbox to enable k8s</li>
 <li>Installs kubectl and certs</li>
-<li>MicroK8s (Linux host OS)</li>
+</ul>
+</li>
+<li>MicroK8s (Linux host OS)<ul>
 <li>from Canonical</li>
 <li>uses snap ()</li>
 <li>See: <a href="https://microk8s.io">Mircok8s</a></li>
 <li><code>microk8s.</code> clis to manage system. E.g. <code>microk8s.enable</code></li>
-<li>MiniKube (if running docker toolbox)</li>
+</ul>
+</li>
+<li>MiniKube (if running docker toolbox)<ul>
 <li>requires virtualbox (minikube-installer.exe) as it create virtualboxVM</li>
 <li><code>minikube start</code></li>
 <li>does NOT install kubectl</li>
+</ul>
+</li>
 </ul>
 <table>
 <thead>
@@ -470,11 +516,13 @@
 Note: Stern for better log tailing</p>
 <h2 id="services">Services</h2>
 <ul>
-<li>Service = stable address for pod(s) = consistent endpoint</li>
+<li>Service = stable address for pod(s) = consistent endpoint<ul>
 <li>so that the service can be accessed from inside/outside the cluster</li>
 <li>connecting pods hence requires a service</li>
+</ul>
+</li>
 <li>CoreDNS allows to resolve services by name</li>
-<li>Basic service types</li>
+<li>Basic service types<ul>
 <li><code>ClusterIP</code> (default)<ul>
 <li>inside the cluster only</li>
 <li>single, internal VIP</li>
@@ -492,9 +540,11 @@ Note: Stern for better log tailing</p>
 </li>
 <li><code>LoadBalancer</code><ul>
 <li>Controls a LB endpoint external to the cluster</li>
-<li>clsuterIP + node port created + configure external LB </li>
+<li>clsuterIP + node port created + configure external LB <ul>
 <li>For example e.g. AWS ELB, (also Docker Desktop)</li>
 <li>= tell ext. LB to send to node port</li>
+</ul>
+</li>
 <li>= only available if infra provider gives an LB</li>
 <li>(Also creates a cluster-IP + a node port under the hood)</li>
 </ul>
@@ -510,24 +560,36 @@ Note: Stern for better log tailing</p>
 <li>Specifically for HTTP traffic</li>
 </ul>
 </li>
-<li>Service Name added to coreDNS is deployment name </li>
+</ul>
+</li>
+<li>Service Name added to coreDNS is deployment name <ul>
 <li><code>kubectl create deployment my-http</code> my-http can be queried inside the cluster via DNS</li>
-<li><code>Certain ServiceTypes are additive</code>, i.e. create the one below it</li>
+</ul>
+</li>
+<li><code>Certain ServiceTypes are additive</code>, i.e. create the one below it<ul>
 <li>LoadBalancer<ul>
-<li>NodePort</li>
+<li>NodePort<ul>
 <li>ClusterIP</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>For example creating a NodePort (--type NodePort) also creats a ClusterIP</li>
 <li>Packet going down the hole. Accepted on Loadbalancer, passed to NodePort, passed to ClusterIP</li>
-<li>Docker Desktop has a built in LoadBalancer Service</li>
+</ul>
+</li>
+<li>Docker Desktop has a built in LoadBalancer Service<ul>
 <li>For testing K8s LB (can use non high-range port!)</li>
-<li>K8s Service DNS</li>
+</ul>
+</li>
+<li>K8s Service DNS<ul>
 <li><code>CoreDNS</code> default/standard</li>
 <li>Like swarm, DNS-based service discovery</li>
 <li>Create service = host name that matches service</li>
 <li>Only works for services in the same Namespace (<code>kubectl get namespaces</code>)</li>
 <li>Namespace turns into FQDN (<code>service.namepsace.svc.cluster.local</code>)</li>
+</ul>
+</li>
 </ul>
 <table>
 <thead>
@@ -581,13 +643,13 @@ Note: Stern for better log tailing</p>
 </table>
 <p>Note:
 - If HostOS Windows or MAC, Docker runs in a mini-VM
-  - So for Cluster-IP need to create a pod inside the VM to "curl" it
-  - <code>kubectl run tmp-shell --rm -it --image=bretfisher/netshoot -- bash</code> &amp;&amp; <code>curl httpenv:8888</code>
-    - Generator (only want to run pod tempalte, not a full deployment with replica set etc.)
-    - netshoot = linux utils &amp; network stuff
-    - <code>--</code> applicable for run command, stop looking/interpreting options (like -it --rm) and define command to run afterwards 
+    - So for Cluster-IP need to create a pod inside the VM to "curl" it
+    - <code>kubectl run tmp-shell --rm -it --image=bretfisher/netshoot -- bash</code> &amp;&amp; <code>curl httpenv:8888</code>
+        - Generator (only want to run pod tempalte, not a full deployment with replica set etc.)
+        - netshoot = linux utils &amp; network stuff
+        - <code>--</code> applicable for run command, stop looking/interpreting options (like -it --rm) and define command to run afterwards 
 - If hostOS is linux can curl directly 
-  - <code>curl [ip of servce]:8888</code></p>
+    - <code>curl [ip of servce]:8888</code></p>
 <p>Note 2 - Port mapping
 - Other way around as in docker (8888 = port inside the cluster) and 30694=outside the cluster
 - example <code>curl localhost:30694</code></p>
@@ -600,7 +662,7 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 
 <h2 id="k8s-management-techniques">K8s Management Techniques</h2>
 <ul>
-<li>Generators</li>
+<li>Generators<ul>
 <li>Are like templates that create specification <code>spec</code> that is applied to k8s</li>
 <li>Every resource in k8s has a spec. </li>
 <li>Generators behind create fields/defaults etc. (different per type, e.g. Deployment, Service, Job etc.). </li>
@@ -617,19 +679,25 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 <li>Today kubectl run main usage is to start container on the fly (e.g. debugging) if docker container run not available. For example if another container engine is used (containerd, cry-o)</li>
 </ul>
 </li>
-<li>Imperative: Focus on how a program operates</li>
+</ul>
+</li>
+<li>Imperative: Focus on how a program operates<ul>
 <li>User KNOWS current STATE</li>
 <li><code>kubectl create deployment</code> &amp;&amp; <code>kubectl expose</code></li>
 <li>Start from scratch, create deployment, create service etc., we type in the correct order</li>
 <li>Not easy to automate</li>
-<li>Declarative: Focus on what the program should accomplish</li>
+</ul>
+</li>
+<li>Declarative: Focus on what the program should accomplish<ul>
 <li>Current STATE UNKNOWN, only endresult</li>
 <li>Better for automation</li>
 <li><code>yaml</code>-way &amp;&amp; <code>kubectl apply -f resource.yaml</code></li>
 <li>Same command regardless if creating/updating/deleting</li>
 <li>Requires understanding YAML keys and values, more complex</li>
 <li>GitOps</li>
-<li>Three mgmt approaches</li>
+</ul>
+</li>
+<li>Three mgmt approaches<ul>
 <li>Imperative commands: <code>run, expose, scale, edit, create</code><ul>
 <li>Best for learning/dev/personal</li>
 <li>Easy to learn, hard to manage</li>
@@ -644,6 +712,8 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 <li>Declarative objects: <code>apply -f file.yml &amp;&amp; diff</code> <ul>
 <li>Best for prod</li>
 <li>easier to automate</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -668,8 +738,8 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
         <span class="nt">app</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-nginx</span>
     <span class="nt">spec</span><span class="p">:</span> <span class="c1"># nested Spec for POD within replicaste</span>
       <span class="nt">containers</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx</span>
-        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx</span>
+            <span class="p p-Indicator">-</span> <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx</span>
+      <span class=" -Error">  </span><span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx</span>
         <span class="nt">resources</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
 <span class="nt">status</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
 </code></pre></div>
@@ -685,8 +755,8 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
       <span class="nt">creationTimestamp</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">null</span>
     <span class="nt">spec</span><span class="p">:</span> <span class="c1"># Spec for POD</span>
       <span class="nt">containers</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx</span>
-        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-nginx</span>
+            <span class="p p-Indicator">-</span> <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx</span>
+      <span class=" -Error">  </span><span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-nginx</span>
         <span class="nt">resources</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
       <span class="nt">restartPolicy</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Never</span> <span class="c1"># Job no-restart</span>
 <span class="nt">status</span><span class="p">:</span> <span class="p p-Indicator">{}</span>
@@ -701,7 +771,7 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
   <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-nginx</span>
 <span class="nt">spec</span><span class="p">:</span>
   <span class="nt">ports</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
+    <span class="p p-Indicator">-</span> <span class="nt">port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
     <span class="nt">protocol</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">TCP</span>
     <span class="nt">targetPort</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
   <span class="nt">selector</span><span class="p">:</span>
@@ -714,21 +784,29 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 <ul>
 <li>Each file contains one or more manifests</li>
 <li>each manifest describes an API object (deployment, job, secret, etc)</li>
-<li>each manifest needs 4 parts</li>
+<li>each manifest needs 4 parts<ul>
 <li><code>apiVersion</code>: related to the kind, version of the API for that kind</li>
 <li><code>kind</code></li>
 <li><code>metadata</code>: only name is required, rest optional, e.g. label</li>
 <li><code>spec</code>: different based on resource type</li>
-<li>combining multiple yaml files via <code>---</code></li>
+</ul>
+</li>
+<li>combining multiple yaml files via <code>---</code><ul>
 <li>E.g combine a Service &amp; a Deplyoment</li>
 <li>= Multiple manifests in a single file</li>
+</ul>
+</li>
 <li>3rd Party modules extend Resource Objects (extend api)</li>
-<li>See: <a href="https://kubernetes.io/docs/reference/">API Reference</a></li>
+<li>See: <a href="https://kubernetes.io/docs/reference/">API Reference</a><ul>
 <li>Also contains examples, e.g. Workload API / Deployment / Example button</li>
-<li>Dry Run Option</li>
+</ul>
+</li>
+<li>Dry Run Option<ul>
 <li><code>kubectl apply -f xy.yml --dry-run=client</code> client side only</li>
 <li><code>kubectl apply -f xy.yml --dry-run=server</code> server side</li>
-<li><code>Labels</code></li>
+</ul>
+</li>
+<li><code>Labels</code><ul>
 <li>Simple <code>Key: Value</code> pair for identifying resource later on</li>
 <li>Can be used for selecting, grouping, filtering</li>
 <li>Can be used to identify which pods go where (e.g. onto DMZ nodes)</li>
@@ -737,15 +815,21 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 <li><code>kubectl get pods -l app=my-nginx</code></li>
 </ul>
 </li>
-<li><code>Label Selectors</code></li>
+</ul>
+</li>
+<li><code>Label Selectors</code><ul>
 <li>Links together (dependent) resources</li>
 <li>Glues together certain resources<ul>
 <li>E.g. Services &amp; Deployments selecting pods</li>
 </ul>
 </li>
-<li><code>Annotations</code></li>
+</ul>
+</li>
+<li><code>Annotations</code><ul>
 <li>Complex, large, non-identifying info</li>
 <li>Store data</li>
+</ul>
+</li>
 </ul>
 <table>
 <thead>
@@ -824,7 +908,7 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 <span class="nt">spec</span><span class="p">:</span>
   <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">NodePort</span>
   <span class="nt">ports</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
+    <span class="p p-Indicator">-</span> <span class="nt">port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
   <span class="nt">selector</span><span class="p">:</span> <span class="c1"># Key: Value of a label for pods (see below)</span>
     <span class="nt">app</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">app-nginx</span>
 <span class="nn">---</span>
@@ -843,10 +927,10 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
         <span class="nt">app</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">app-nginx</span>
     <span class="nt">spec</span><span class="p">:</span>
       <span class="nt">containers</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx</span>
-        <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx:1.17.3</span>
+            <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx</span>
+      <span class=" -Error">  </span><span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx:1.17.3</span>
         <span class="nt">ports</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="nt">containerPort</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
+              <span class="p p-Indicator">-</span> <span class="nt">containerPort</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
 </code></pre></div>
 
 <h2 id="storage-ingress-crds-helm-dashboard-namespaces">Storage, Ingress, CRDs, Helm, Dashboard, Namespaces</h2>
@@ -856,13 +940,11 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 <li>Same name, same ip etc.</li>
 <li>2 Types of Volumes</li>
 <li><code>Volumes</code>: Volume tied to Pod, not container</li>
-<li><code>PersistentVolume</code>: Lives outside the Pod/created at cluster level<ul>
-<li>Separtes starge config from Pod using it</li>
-<li>Multiple Pods can share it (make a claim against resource)</li>
-<li>e.g. 3rd party storage team responsible for Persistent Voluem</li>
-<li>Claim of SSD,RAM,NFS etc.</li>
-</ul>
-</li>
+<li><code>PersistentVolume</code>: Lives outside the Pod/created at cluster level
+        - Separtes starge config from Pod using it
+        - Multiple Pods can share it (make a claim against resource)
+        - e.g. 3rd party storage team responsible for Persistent Voluem
+        - Claim of SSD,RAM,NFS etc.</li>
 <li><code>CSI</code> plugins are the "new" way to connect storage</li>
 <li>CSI = Container storage interface = Industry standard</li>
 <li>Storage vendor creates plugin</li>
@@ -873,11 +955,13 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 <li>How is incoming traffic being routed to the correct container?</li>
 <li>L7 control of HTTP, HTTP Name routing, DNS Routing, </li>
 <li>E.g. website1 and website2 running inside k8s, both on 443</li>
-<li>Ingress controllers use 3rd party proxies</li>
+<li>Ingress controllers use 3rd party proxies<ul>
 <li>need to be enabled in the cluster</li>
 <li>Nginx/Traefik/HAProxy/F5/Envoy/Istio</li>
 <li>Implementation controller specific<ul>
 <li>E.g. F5 Controller helps to program HW F5 LB sitting outside K8s</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>See: <a href="https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/">Ingress Example NGINX</a></li>
@@ -891,11 +975,11 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
     <span class="nt">nginx.ingress.kubernetes.io/rewrite-target</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/$1</span>
 <span class="nt">spec</span><span class="p">:</span>
   <span class="nt">rules</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="nt">host</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hello-world.info</span>
-      <span class="nt">http</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="nt">host</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">hello-world.info</span>
+  <span class=" -Error">    </span><span class="nt">http</span><span class="p">:</span>
         <span class="nt">paths</span><span class="p">:</span>
-          <span class="p p-Indicator">-</span> <span class="nt">path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/</span>
-            <span class="nt">pathType</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Prefix</span>
+                <span class="p p-Indicator">-</span> <span class="nt">path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/</span>
+        <span class=" -Error">    </span><span class="nt">pathType</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Prefix</span>
             <span class="nt">backend</span><span class="p">:</span>
               <span class="nt">service</span><span class="p">:</span>
                 <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">web</span>
@@ -906,16 +990,20 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 <h3 id="crd">CRD</h3>
 <ul>
 <li>Custom Resource Definition = 3rd Party tools</li>
-<li>Extends Kubernetes API and CLI</li>
+<li>Extends Kubernetes API and CLI<ul>
 <li>kubectl then has new resourceTypes und commands</li>
-<li>Operator Pattern</li>
+</ul>
+</li>
+<li>Operator Pattern<ul>
 <li>= automate deployment and management of complex apps</li>
 <li>= method of packacking, deploying &amp; managing k8s apps</li>
 <li>= K8s native applications</li>
 <li>e.g. DB, monitoring tools, backup, custom ingress</li>
 <li>= Extend k8s so that it seems as if they were part of k8s itself</li>
 <li>= complex yaml files (extend cmd + api)</li>
-<li>OLM (Operator Lifecycle Manager) on Microk8s</li>
+</ul>
+</li>
+<li>OLM (Operator Lifecycle Manager) on Microk8s<ul>
 <li><code>microk8s enable rbac</code></li>
 <li>Install OLM<ul>
 <li><code>curl -sL https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.19.1/install.sh | bash -s v0.19.1</code></li>
@@ -928,6 +1016,8 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 <li><code>kubectl get csv</code> </li>
 <li><code>kubectl get pod -n operators</code></li>
 <li><code>kubectl get csv -n operators</code></li>
+</ul>
+</li>
 <li>See: <a href="https://operatorhub.io/">OperatorHub</a></li>
 <li>See: <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/operator/">Operator Pattern</a></li>
 <li>See: <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/">CRD</a></li>
@@ -949,8 +1039,8 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
         <span class="nt">foo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bar</span>
     <span class="nt">spec</span><span class="p">:</span>
       <span class="nt">containers</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kibana</span>
-          <span class="nt">resources</span><span class="p">:</span>
+              <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kibana</span>
+      <span class=" -Error">    </span><span class="nt">resources</span><span class="p">:</span>
             <span class="nt">requests</span><span class="p">:</span>
               <span class="nt">memory</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1Gi</span>
               <span class="nt">cpu</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.5</span>
@@ -964,21 +1054,27 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 <li>K8s is unopionated by default</li>
 <li>K8s has limited built-in templating, versioning, tracking, and mgmt of apps</li>
 <li>50+ 3rd party tools that do this (in an opinionated way)</li>
-<li>Examples: Jenkins X, Helm, Compose on K8s, Kustomize</li>
+<li>Examples: Jenkins X, Helm, Compose on K8s, Kustomize<ul>
 <li>Helm Leader in this area, calls templates charts = essentially templated YAML</li>
 <li>Compose on K8s &gt; does not support all K8s features but can use compose.yaml for the whole worklfow isntead of having a separate yml for deployment on k8s + docker app command. </li>
 <li>Kustomize: K8s native templating engine  </li>
 </ul>
+</li>
+</ul>
 <h3 id="gui">GUI</h3>
 <ul>
-<li>Upstrema UI: <a href="https://github.com/kubernetes/dashboard">K8s Upsteram UI</a></li>
+<li>Upstrema UI: <a href="https://github.com/kubernetes/dashboard">K8s Upsteram UI</a><ul>
 <li>official native webgui, but not enabled by default</li>
-<li>Distros might have their own</li>
+</ul>
+</li>
+<li>Distros might have their own<ul>
 <li>Examples: OpenShift, Rancher, Docker Ent</li>
+</ul>
+</li>
 </ul>
 <h3 id="namespaces-and-context">Namespaces and Context</h3>
 <ul>
-<li>Namespaces = views = virtual cluster</li>
+<li>Namespaces = views = virtual cluster<ul>
 <li>Limit scope/visibility inside a cluster</li>
 <li>Swarm by default network was private (new one created)</li>
 <li>K8s network "visibility" depends on the network plugin<ul>
@@ -987,11 +1083,15 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 </li>
 <li>Namespace = filter cli (view + networking)</li>
 <li>NOT related docker namespaces / linux subsystem namespaces</li>
+</ul>
+</li>
 <li><code>kubectl get namespaces</code> and <code>kubectl get all --all-namespaces</code></li>
-<li>Context changes <code>kubectl</code> cluster and namespaces</li>
+<li>Context changes <code>kubectl</code> cluster and namespaces<ul>
 <li><code>~/.kube/config</code></li>
 <li><code>kubectl config get-contexts</code> &amp;&amp; <code>kubectl config set...</code><ul>
 <li>E.g. change user/cluster/namespace</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1006,9 +1106,11 @@ httpenv-np   NodePort    <span class="m">10</span>.152.183.71    &lt;none&gt;   
 <ul>
 <li>Generate config using <code>kubectl config view</code></li>
 <li>Save to <code>&lt;user&gt;/.kube/config</code></li>
-<li>Add token</li>
+<li>Add token<ul>
 <li><code>token=$(microk8s kubectl -n kube-system get secret | grep default-token | cut -d " " -f1)</code></li>
 <li><code>microk8s kubectl -n kube-system describe secret $token</code></li>
+</ul>
+</li>
 <li>Local dev set <code>insecure-skip-tls-verify: true</code></li>
 <li>Use other tools that rely on config e.g. <code>stern -l app=my-apache</code></li>
 </ul>
@@ -1036,10 +1138,14 @@ users:
 
 <h2 id="refs">Refs</h2>
 <ul>
-<li>See: <a href="https://labs.play-with-k8s.com/">Play with K8s</a></li>
+<li>See: <a href="https://labs.play-with-k8s.com/">Play with K8s</a><ul>
 <li>Needs installation of cluster</li>
-<li>See: <a href="https://www.katacoda.com">Katacoda</a></li>
+</ul>
+</li>
+<li>See: <a href="https://www.katacoda.com">Katacoda</a><ul>
 <li>Already setup k8s cluster</li>
+</ul>
+</li>
 <li>See: <a href="https://www.redhat.com/de/topics/containers/kubernetes-architecture">K8s Architecture by RedHat</a></li>
 <li>See: <a href="https://github.com/cncf/landscape">CNCF Landscape</a></li>
 <li>See: <a href="https://github.com/veggiemonk/awesome-docker#hosting-images-registries">Awesome Docker</a></li>

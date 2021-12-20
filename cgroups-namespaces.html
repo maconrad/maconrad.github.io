@@ -130,13 +130,17 @@
 </div>
 <h2 id="intro">Intro</h2>
 <ul>
-<li>Control Group: Limit what a resource can use. Resource mgmt for individual processes (prioritize, enforce, account)</li>
+<li>Control Group: Limit what a resource can use. Resource mgmt for individual processes (prioritize, enforce, account)<ul>
 <li>Limits: CPU,I/O,Memory,Network</li>
 <li>Access control to Devices: /dev/*</li>
-<li>Namespace: Limits what resources a process can see. And therfore access (process isolation)</li>
+</ul>
+</li>
+<li>Namespace: Limits what resources a process can see. And therfore access (process isolation)<ul>
 <li>Provide processes with own view of the system</li>
 <li>net, pid, mnt, utc and ipc most important</li>
 <li>Each process is in ONE namespace of each type! not more</li>
+</ul>
+</li>
 <li>Both constructs especially useful for example with containers.</li>
 </ul>
 <h2 id="demo-env">Demo Env</h2>
@@ -156,15 +160,21 @@ sudo systemctl reload httpd
 <p>With cgroups, processes run in their own kernel space and memory space. </p>
 <ul>
 <li>One cgroup per process by default</li>
-<li>Features of cgroups</li>
+<li>Features of cgroups<ul>
 <li>Set resource limits (e.g. CPU, I/O, mem) - none by default</li>
 <li>Accounting</li>
 <li>Prioritize</li>
 <li>Freeze, Checkpoint (snapshot) &amp; restart</li>
-<li>Files</li>
+</ul>
+</li>
+<li>Files<ul>
 <li><code>/etc/systemd/system.control</code></li>
-<li>Example Docker</li>
+</ul>
+</li>
+<li>Example Docker<ul>
 <li>Limit resources that container can use on the host</li>
+</ul>
+</li>
 </ul>
 <p><img src="../../images/cgroups.png" alt="cgroups" width="400"/></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Enable Accounting</span>
@@ -182,22 +192,22 @@ sudo systemctl set-property user-1001.slice <span class="nv">CPUQuota</span><spa
 <h2 id="namespaces">Namespaces</h2>
 <p>A namespace allows a process to have its own set of resources that other processes can't see. A namespace limits what resources a process can see and access
 Main Types:
-  - Mount (mnt): each process to have its own root filesystem that no other processes can see
-  - UTS: each process to have its own unique hostname and domain name.
-  - PID: Every running process can have its own set of PID number (childs cant see parents). Node = Group of processes.
-  - Network (net): virtual network for each process. Each virtual network can have its own subnets, virtual network interfaces, routing tables, and firewalls
-  - Interprocess Communication (ipc): This also prevents data leakage by preventing two processes from sharing the same memory space
-  - control group (cgroup): This namespace hides the identity of the cgroup that a process is a member of
-  - User: The User namespace allows a user to have different levels of privilege on different processes. For example, a user could have root-level privileges on one process, but only normal-user privileges on another process.
+    - Mount (mnt): each process to have its own root filesystem that no other processes can see
+    - UTS: each process to have its own unique hostname and domain name.
+    - PID: Every running process can have its own set of PID number (childs cant see parents). Node = Group of processes.
+    - Network (net): virtual network for each process. Each virtual network can have its own subnets, virtual network interfaces, routing tables, and firewalls
+    - Interprocess Communication (ipc): This also prevents data leakage by preventing two processes from sharing the same memory space
+    - control group (cgroup): This namespace hides the identity of the cgroup that a process is a member of
+    - User: The User namespace allows a user to have different levels of privilege on different processes. For example, a user could have root-level privileges on one process, but only normal-user privileges on another process.
 - Examples
-  - Docker uses namespaces to isolate containers from each other and from host os
-    - PID: E.g. each container could have the same PID (or different). Each Process only sees the other processes it launches. So container cannot see any other processes of the system.
-    - NET: give different network access to different containers
-    - mnt: Give different file access to differetn containers
-    - uts: each container has individual name &amp; domai name system
-    - ipc: define which container can talk to whom
-    - user: isolate user &amp; group id
-  - Firejail uses namespace per Tab</p>
+    - Docker uses namespaces to isolate containers from each other and from host os
+        - PID: E.g. each container could have the same PID (or different). Each Process only sees the other processes it launches. So container cannot see any other processes of the system.
+        - NET: give different network access to different containers
+        - mnt: Give different file access to differetn containers
+        - uts: each container has individual name &amp; domai name system
+        - ipc: define which container can talk to whom
+        - user: isolate user &amp; group id
+    - Firejail uses namespace per Tab</p>
 <p><img src="../../images/namespaces.png" alt="Containers using Namespaces" width="400"/></p>
 <p>```bash
   ls -al /proc/{pid}/ns
@@ -208,10 +218,12 @@ Main Types:
 <li>Way to combine multiple directories into a new virtual one</li>
 <li>Different parts of the new FS can be either read-only or read/write f. Writes to the new virtual are then directed to specific location on the real file system. This allows a file system to appear as writable, but without actually allowing writes to change the some part of the file system, also known as copy-on-write. E.g. r/o CDROM + /home/user/cdrom-write combined into /media/cdrom that is writable for container.</li>
 <li>When mounting different locations, last mounted has priority</li>
-<li>Example applictions</li>
+<li>Example applictions<ul>
 <li>Knoppix Live-CD + USB Drive saves changes to USB</li>
 <li>Docker layers with same /path/to/file + Top level writable container, + only layer updates populated for different images</li>
 <li>Base layer can be read-only. Next-layer read-write. If file from base-layer (read-only) changed inside container it will be saved to write-layer. Write-layer only keeps diff. Different containers can share same base-layers and still have individual changes. Even kept among start &amp; stop of container.</li>
+</ul>
+</li>
 </ul>
 <p><img src="../../images/docker-layers.png" alt="Docker Layers" width="400"/></p>
 <h2 id="references">References</h2>

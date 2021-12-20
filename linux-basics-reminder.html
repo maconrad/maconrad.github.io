@@ -155,11 +155,15 @@
 <h3 id="boot-process">Boot Process</h3>
 <ul>
 <li>Load OS components into memory</li>
-<li>Step 1: Firmware/BIOS loaded from NVRAM </li>
+<li>Step 1: Firmware/BIOS loaded from NVRAM <ul>
 <li>POST</li>
 <li>Searches boot sector on devices (marked with boot sector signature)</li>
-<li>Step 2: BIOS hands over control to software sitting in boot sector</li>
+</ul>
+</li>
+<li>Step 2: BIOS hands over control to software sitting in boot sector<ul>
 <li>Called boot loader (e.g. GRUB/SYSLINUX)</li>
+</ul>
+</li>
 <li>Step 3: Boot Loader loads kernel image into memory (compressed) + load init RAM disk (initrd/initramfs) which provides temporary file system in memory + pass control to kernel</li>
 <li>Step 4: Kernel creates root file system in memory and decompresses into RAM</li>
 <li>Step 5: Kernel loads device drivers, mounts physical device + unloads initramfs</li>
@@ -283,11 +287,15 @@ vi /etc/fstab
 <ul>
 <li>Goal: filter input/output of programs/utils and apply control </li>
 <li>File handle: Number assigned to a file by the OS when that file is opened, usually dynamic, static for certain files. Remember everything is a file in linux. Also called FD (File descriptor)</li>
-<li>Stdin: file handle #0 (keyboard by default), FD0</li>
+<li>Stdin: file handle #0 (keyboard by default), FD0<ul>
 <li>Input redirection:  { command }  &lt; { file }</li>
+</ul>
+</li>
 <li>Stdout: file handle #1 (default screen), FD1</li>
-<li>Stderr: file handle #2 (default screen), FD2</li>
+<li>Stderr: file handle #2 (default screen), FD2<ul>
 <li>/dev/null can be used if not wanted</li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># Input redirection (default to keyboard) -  {command} &lt; {file}</span>
 sort &lt; abc.txt
@@ -357,7 +365,7 @@ tar -Jxvf xy.tar.xz
 <h3 id="proc-co">/proc &amp; co</h3>
 <ul>
 <li>Thread: Seq of instructions that are executed by the CPU. Cannot be broken up.</li>
-<li>Process: Group of threads. Has its own address space in memory.</li>
+<li>Process: Group of threads. Has its own address space in memory.<ul>
 <li>PID: Process ID<ul>
 <li>PID 0 = kernel</li>
 <li>PID 1 = systemd (init)</li>
@@ -370,11 +378,17 @@ tar -Jxvf xy.tar.xz
 <li>SIGSTOP </li>
 </ul>
 </li>
-<li>Job: 2+ processes.</li>
+</ul>
+</li>
+<li>Job: 2+ processes.<ul>
 <li>Example: Piping creats jobs, ls | less</li>
+</ul>
+</li>
 <li>Service: 1+ process to achieve a function. If runs in background called daemon</li>
-<li>TTY: Terminal number, e.g. pts/0 = Terminal 0, pts/1 = Terminal 1</li>
+<li>TTY: Terminal number, e.g. pts/0 = Terminal 0, pts/1 = Terminal 1<ul>
 <li>? in ps output = not associated with a terminal</li>
+</ul>
+</li>
 <li>VSZ: Virtual memory</li>
 <li>RSS: Main Memory (RAM)</li>
 </ul>
@@ -449,9 +463,11 @@ lspci -tv
 <li><code>/var/log/messages</code>: General system info</li>
 <li><code>/var/log/secure</code>: Failed user logon attempts</li>
 <li><code>/var/log/yum.log</code>: YUM Logs</li>
-<li>rsyslogd and journald</li>
+<li>rsyslogd and journald<ul>
 <li>Syslog: Define which facility msg goes where</li>
 <li>Jounal: Single binary file <code>/run/log/journal/system.journal</code></li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># Interprets binary file</span>
 lastlog
@@ -474,7 +490,7 @@ journalctl -b -0
 
 <h3 id="yum-and-friends">yum and friends</h3>
 <ul>
-<li>Manual compilation</li>
+<li>Manual compilation<ul>
 <li>Process:<ul>
 <li><code>configure</code> to detect and configure HW and SW on local system. Generates make file</li>
 <li><code>make</code> compiles the src, generate new libs, link existing shared libraries (.so files)</li>
@@ -482,24 +498,34 @@ journalctl -b -0
 </ul>
 </li>
 <li>Problems:</li>
-<li>RPM</li>
+</ul>
+</li>
+<li>RPM<ul>
 <li>pre-compiled (unsless src-rpm) binaries (save time)</li>
 <li>checksum to validate</li>
 <li>metadata that point out dependencies and notifies user</li>
 <li>Non Repo Based (files installed)</li>
-<li>YUM Based on RPM file format but uses Repos</li>
+</ul>
+</li>
+<li>YUM Based on RPM file format but uses Repos<ul>
 <li>RPM includes dependencies, but does not resolve them</li>
 <li>YUM detects and resolved deps recursevely</li>
-<li>DNS enhancements to YUM</li>
+</ul>
+</li>
+<li>DNS enhancements to YUM<ul>
 <li>Faster &amp; Dependenciy resolve better</li>
-<li>Local Repos under <code>/etc/yum.repos.d/</code></li>
+</ul>
+</li>
+<li>Local Repos under <code>/etc/yum.repos.d/</code><ul>
 <li>Can be enabled oro disabled there  </li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># -q=query, -V=verify, -i install, -U=upgrade, -F=freshen, -e=uninstall</span>
 <span class="c1"># -qp=Query not installed package (rpm file), -ql=list, -qR=dependencies</span>
 <span class="c1"># 1st Mode decides: </span>
-<span class="c1">#  - rpm -qi { package_name } = Query Mode (nothing installed)</span>
-<span class="c1">#  - rpm -iV { package_name } = Install Mode</span>
+<span class="c1">#    - rpm -qi { package_name } = Query Mode (nothing installed)</span>
+<span class="c1">#    - rpm -iV { package_name } = Install Mode</span>
 rpm -qi gedit
 rpm -qpi xy.rpm
 rpm -ql gedit

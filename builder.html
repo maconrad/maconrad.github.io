@@ -142,33 +142,37 @@
 </ul>
 <p>Example:</p>
 <ul>
-<li>House with optional (Swimming Pool, Garage, Garden etc.)</li>
+<li>House with optional (Swimming Pool, Garage, Garden etc.)<ul>
 <li>Instead of House(num_windows, num_doors, num_rooms, has_garden, has_pool, has garage) make a HouseBuilder with buildWalls(), buildRooms(), addGarden() etc.</li>
-<li>Firewall Policy set</li>
+</ul>
+</li>
+<li>Firewall Policy set<ul>
 <li>Optional src, dst, port, application, zone, sgt etc. etc.</li>
+</ul>
+</li>
 </ul>
 <p>Key:</p>
 <ul>
 <li>Piecewise/step-by-step construction of an object</li>
 <li>Builder takes care of constructing the object, instead of the object itself</li>
 <li>A builder can be made fluid/chainable by making each method return self</li>
-<li>Base Class and inheritance allow for co-work of multiple builders (facade)</li>
+<li>Base Class and inheritance allow for co-work of multiple builders (facade)<ul>
 <li>jumping from one builder to another via base class</li>
 <li>using "deep" inheritance B(A), C(B), D(C) etc</li>
+</ul>
+</li>
 <li>Director often used with builder, director knows the steps (step-1 until X) to create certain pre-defined Objects that are often used, instead of individual builder steps.</li>
 </ul>
 <h2 id="before">Before</h2>
 <ul>
 <li>
 <p>Problems:</p>
-</li>
-<li>
-<p>What if anyone forgets the closing tag?</p>
-</li>
+<ul>
+<li>What if anyone forgets the closing tag?</li>
 <li>What if element needs to change from child to sth? Need sth more generic</li>
 <li>What if element should have an optional attribute?</li>
-<li>
-<p>Very manual process for each of the use cases</p>
+<li>Very manual process for each of the use cases</li>
+</ul>
 </li>
 <li>
 <p>Note: No error handling is on purpose to keep code as lean as possible and still understand pattern. </p>
