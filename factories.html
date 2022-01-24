@@ -197,34 +197,41 @@
 <li>Can be inner class, can be static</li>
 <li>Note: No error handling is on purpose to keep code as lean as possible and still understand pattern. </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+<details>
+  <summary>Before Factory Method Code...</summary>
 
-<span class="k">class</span> <span class="nc">ColorType</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
-    <span class="n">CMYK</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">RGB</span> <span class="o">=</span> <span class="mi">2</span>
+  ```python
 
-<span class="k">class</span> <span class="nc">Color</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">ColorType</span><span class="o">.</span><span class="n">RGB</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+  from enum import Enum
 
-        <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="n">ColorType</span><span class="o">.</span><span class="n">RGB</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="n">a</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">b</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">c</span>
-        <span class="k">elif</span> <span class="nb">type</span> <span class="o">==</span> <span class="n">ColorType</span><span class="o">.</span><span class="n">CMYK</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">d</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">d</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">d</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+  class ColorType(Enum):
+      CMYK = 1
+      RGB = 2
 
-    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Colorcode RGB: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="si">}</span><span class="s1">&#39;</span>
+  class Color:
+      def __init__(self, a, b, c, d=None, type=ColorType.RGB) -> None:
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">red1</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-    <span class="n">red2</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">ColorType</span><span class="o">.</span><span class="n">CMYK</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">red1</span><span class="p">,</span> <span class="s1">&#39; -- &#39;</span><span class="p">,</span> <span class="n">red2</span><span class="p">)</span>
-</code></pre></div>
+          if type == ColorType.RGB:
+              self.r = a
+              self.g = b
+              self.b = c
+          elif type == ColorType.CMYK:
+              self.r = 255 * (1-a) * (1-d)
+              self.g = 255 * (1-b) * (1-d)
+              self.b = 255 * (1-c) * (1-d)
+          else:
+              raise NotImplementedError
+
+      def __str__(self) -> str:
+          return f'Colorcode RGB: {self.r}/{self.g}/{self.b}'
+
+  if __name__ == '__main__':
+      red1 = Color(255, 0, 0)
+      red2 = Color(0, 1, 1, 0, ColorType.CMYK)
+      print(red1, ' -- ', red2)
+
+  ```
+</details>
 
 <h2 id="with-factory-method">With Factory Method</h2>
 <ul>

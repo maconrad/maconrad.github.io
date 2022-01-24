@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  
+
+
+ 
+
+    <meta name="author" content="Mario Conrad" />
+    <meta name="description" content="" />
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:type" content="blog"/>
+  <meta property="og:title" content="PeliBlog"/>
+  <meta property="og:description" content=""/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content=""/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Tag Git</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="/">
+        <img src="/images/Logo.png" alt="" title="">
+      </a>
+
+      <h1>
+        <a href="/"></a>
+      </h1>
+
+
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/about.html#about">
+                  About
+                </a>
+              </li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="/">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+
+
+<article>
+  <header>
+    <h2><a href="/git-beginner-tutorial.html#git-beginner-tutorial">Git Beginner Tutorial</a></h2>
+    <p>
+      Posted on So 05 Dezember 2021 in <a href="/category/cicd.html">cicd</a>
+
+          &#8226; Tagged with
+              <a href="/tag/git.html">Git</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#git">Git</a><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#install-and-config">Install and config</a></li>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#commit-details">Commit Details</a></li>
+<li><a href="#branching">Branching</a></li>
+<li><a href="#merging">Merging</a></li>
+<li><a href="#diff">Diff</a></li>
+<li><a href="#intro_1">Intro</a></li>
+<li><a href="#this-and-that">This and that</a></li>
+<li><a href="#refs">Refs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>Important cmds<ul>
+<li>git <code>init / commit / status / add</code></li>
+</ul>
+</li>
+<li>Important files<ul>
+<li><code>.git</code> folder<ul>
+<li><code>.git/HEAD</code> file just points to whatever is active (e.g. ref: refs/heads/master)</li>
+<li><code>.git/refs/heads …</code></li></ul></li></ul></li></ul></div>
+        <br>
+        <a class="btn"
+           href="/git-beginner-tutorial.html#git-beginner-tutorial">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="/play-with-git.html#play-with-git">Play with Git</a></h2>
+    <p>
+      Posted on So 05 Dezember 2021 in <a href="/category/cicd.html">cicd</a>
+
+          &#8226; Tagged with
+              <a href="/tag/git.html">Git</a>,              <a href="/tag/cicd-tools.html">cicd tools</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#git-daily-examples">Git - Daily Examples</a></li>
+<li><a href="#git-resetting">Git Resetting</a></li>
+<li><a href="#git-log-pointers-example">Git Log &amp; Pointers Example</a></li>
+<li><a href="#git-diff-example">Git Diff Example</a></li>
+<li><a href="#git-stash-example">Git Stash Example</a></li>
+<li><a href="#git-conflicts-fast-forward">Git Conflicts &amp; Fast Forward</a></li>
+<li><a href="#git-branches">Git Branches</a></li>
+<li><a href="#git-merge-vs-rebase">Git Merge vs Rebase</a></li>
+<li><a href="#git-tags">Git Tags</a></li>
+<li><a href="#github-gitlab-and-co">GitHub, GitLab and Co</a><ul>
+<li><a href="#todo">TODO</a></li>
+<li><a href="#git-config">Git config</a></li>
+<li><a href="#git-syntax">Git Syntax</a></li>
+<li><a href="#git-xy">Git xy</a></li>
+<li><a href="#xy">XY</a></li>
+<li><a href="#refs">Refs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>3 Stages</li>
+<li>Working directory …</li></ul></div>
+        <br>
+        <a class="btn"
+           href="/play-with-git.html#play-with-git">
+          Continue reading
+        </a>
+  </div>
+</article>
+
+  <div class="pagination">
+  </div>
+
+
+
+    <footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+
+</body>
+</html>
