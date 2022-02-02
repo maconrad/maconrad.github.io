@@ -1,0 +1,921 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 13 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Outlines 9 0 R /PageLabels 14 0 R /PageMode /UseNone /Pages 12 0 R /Type /Catalog
+>>
+endobj
+8 0 obj
+<<
+/Author () /CreationDate (D:20220202145319-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202145319-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Personal I Like list of Python Articles in the web. Many thanks to realpython.) /Trapped /False
+>>
+endobj
+9 0 obj
+<<
+/Count 2 /First 10 0 R /Last 11 0 R /Type /Outlines
+>>
+endobj
+10 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 11 0 R /Parent 9 0 R /Title (Realpython Articles)
+>>
+endobj
+11 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Parent 9 0 R /Prev 10 0 R /Title (Markdown Test\266)
+>>
+endobj
+12 0 obj
+<<
+/Count 1 /Kids [ 6 0 R ] /Type /Pages
+>>
+endobj
+13 0 obj
+<<
+/Length 12023
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 717.0236 cm
+q
+BT 1 0 0 1 0 28 Tm 16.46417 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Personal I Like list of Python Articles in the web. Many) Tj T* 139.99 0 Td (thanks to realpython.) Tj T* -156.4542 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 666.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2022-02-02 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 656.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 646.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 53.0985 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Realpython Articles) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 646.2736 cm
+Q
+q
+1 0 0 1 57.02362 626.0955 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Realpython Articles) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 437.6993 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 173.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 107.9092 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (command) Tj T* -107.9092 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 173.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 108.639 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (comment) Tj T* -108.639 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 165.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/dependency-management-python-poetry/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 165.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Poetry) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 157.5 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/factory-method-python/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 157.5 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Factory Method) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 149.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-defaultdict/#using-the-python-defaultdict-type) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 149.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Default Dict) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 141.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-xml-parser/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 141.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (XML Parser) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 133.875 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/django-nginx-gunicorn/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 133.875 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Django NGINX Unicorn) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 126 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/courses/host-your-django-project-on-heroku/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 126 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Django Heroku) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 118.125 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/django-social-network-1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 118.125 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Django Project 1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 110.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/django-social-front-end-2/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 110.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Django Project 2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 102.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/django-social-post-3/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 102.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Django Project 3) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 94.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/django-social-forms-4/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 94.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Django Project 4) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 86.62499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-pretty-print/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 86.62499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (PPrint) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 78.74999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/courses/build-neural-network-python-ai/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 78.74999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Neuronal Networks) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 70.87499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/courses/working-with-pipenv/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 70.87499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (PIPenv) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 62.99999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/courses/deploy-python-script-web-flask) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 62.99999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Flask App) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 55.12499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/courses/data-viz-with-dash) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 55.12499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Dash Data visualization) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 47.24999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/courses/looping-with-python-enumerate) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 47.24999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (enumerate\(\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-modulo-string-formatting) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (String formatting) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/advanced-visual-studio-code-python/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (VSCode for python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-zip-import/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (zip) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/intro-to-python-threading/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Threading intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-concurrency/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Concurrency) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/async-io-python/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Concurrency with asyncio) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 427.8243 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+0 0 1 RG
+n 151.4363 5.121125 m 173.9062 5.121125 l S
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Abstract Base Class Example) Tj (abstract_base_class.py) Tj ([Lines 1-10]) Tj 0 0 1 rg (download) Tj 0 0 0 rg  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 341.8243 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 77.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (from) Tj ( ) Tj (abc) Tj ( ) Tj (import) Tj ( ) Tj (ABC) Tj  T* (from) Tj ( ) Tj (enum) Tj ( ) Tj (import) Tj ( ) Tj (Enum) Tj (,) Tj ( ) Tj (auto) Tj  T*  T* (class) Tj ( ) Tj (HotDrink) Tj (\() Tj (ABC) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (consume) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj  T*  T* (class) Tj ( ) Tj (Tea) Tj (\() Tj (HotDrink) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (consume) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (') Tj (This) Tj ( ) Tj (tea) Tj ( ) Tj (is) Tj ( ) Tj (delicious) Tj (') Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 321.6461 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+0 0 1 RG
+n 52.92743 6.322758 m 56.97024 6.322758 l S
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Markdown Test) Tj 0 0 1 rg (\266) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 304.4999 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In) Tj ( ) Tj ([3]:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 289.3749 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (print) Tj (\() Tj (') Tj (Test) Tj (') Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 274.2499 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (Test) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 259.1249 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In) Tj ( ) Tj ([2]:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 236.1249 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 14.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (<) Tj (!--) Tj ( ) Tj (collapse=False) Tj ( ) Tj (--) Tj (>) Tj  T* (print) Tj (\() Tj (") Tj (Test) Tj (") Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 220.9999 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (Test) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 205.8749 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In) Tj ( ) Tj ([3]:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 182.8749 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 14.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (<) Tj (!--) Tj ( ) Tj (collapse=True) Tj ( ) Tj (--) Tj (>) Tj  T* (print) Tj (\() Tj (") Tj (Collapsed) Tj ( ) Tj (new) Tj (") Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 167.7499 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (Collapsed) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 152.6249 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In) Tj ( ) Tj ([) Tj ( ) Tj (]:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+14 0 obj
+<<
+/Nums [ 0 15 0 R ]
+>>
+endobj
+15 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000772 00000 n 
+0000000876 00000 n 
+0000001211 00000 n 
+0000001284 00000 n 
+0000001383 00000 n 
+0000001480 00000 n 
+0000001540 00000 n 
+0000013616 00000 n 
+0000013657 00000 n 
+trailer
+<<
+/ID 
+[<112516e3ff9d7b6b7b54c7e818266ce9><112516e3ff9d7b6b7b54c7e818266ce9>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 8 0 R
+/Root 7 0 R
+/Size 16
+>>
+startxref
+13691
+%%EOF
