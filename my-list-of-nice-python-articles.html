@@ -143,27 +143,24 @@ jQuery(document).ready(function($) {
 <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
 <meta content="Mario" name="author"/>
-<meta content="Table of contents: Installing and using pyenv and virtualenvwrapper References Installing and using pyenv and virtualenvwrapper Installation python3 on OSX direcrtly and/or trying to make default python point to python3 on OSX is not a good idea. Worst case, it can break your OSX python installation. In addition, what …" name="description"/>
-<meta content="osx, python, virtualenvwrapper, pyenv, venv, pipenv" name="keywords"/>
+<meta content="List of very nice python articles posted in the web." name="description"/>
+<meta content="Python, Reference, RealPython" name="keywords"/>
 <meta content="PeliBlog" property="og:site_name">
-<meta content="Use python on OSX the right way" property="og:title"/>
-<meta content="Table of contents: Installing and using pyenv and virtualenvwrapper References Installing and using pyenv and virtualenvwrapper Installation python3 on OSX direcrtly and/or trying to make default python point to python3 on OSX is not a good idea. Worst case, it can break your OSX python installation. In addition, what …" property="og:description"/>
+<meta content="Liste of nice Python Articles in the web." property="og:title"/>
+<meta content="List of very nice python articles posted in the web." property="og:description"/>
 <meta content="en_US" property="og:locale"/>
-<meta content="https://maconrad.github.io/use-python-on-osx-the-right-way.html" property="og:url"/>
+<meta content="https://maconrad.github.io/my-list-of-nice-python-articles.html" property="og:url"/>
 <meta content="article" property="og:type"/>
-<meta content="2021-10-24 11:51:00+02:00" property="article:published_time"/>
-<meta content="" property="article:modified_time"/>
+<meta content="2022-02-02 11:51:00+01:00" property="article:published_time"/>
+<meta content="2022-02-02 14:30:00+01:00" property="article:modified_time"/>
 <meta content="https://maconrad.github.io/author/mario.html" property="article:author"/>
-<meta content="OSX" property="article:section">
-<meta content="osx" property="article:tag"/>
-<meta content="python" property="article:tag"/>
-<meta content="virtualenvwrapper" property="article:tag"/>
-<meta content="pyenv" property="article:tag"/>
-<meta content="venv" property="article:tag"/>
-<meta content="pipenv" property="article:tag"/>
+<meta content="Python" property="article:section">
+<meta content="Python" property="article:tag"/>
+<meta content="Reference" property="article:tag"/>
+<meta content="RealPython" property="article:tag"/>
 <meta content="/images/Logo.png" property="og:image"/>
-<title>PeliBlog – Use python on OSX the right way</title>
-</meta></meta><link href="https://maconrad.github.io/use-python-on-osx-the-right-way.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "PeliBlog", "item": "https://maconrad.github.io"}, {"@type": "ListItem", "position": 2, "name": "Use python on osx the right way", "item": "https://maconrad.github.io/use-python-on-osx-the-right-way.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Mario"}, "publisher": {"@type": "Organization", "name": "PeliBlog"}, "headline": "Use python on OSX the right way", "about": "OSX", "datePublished": "2021-10-24 11:51"}</script></head>
+<title>PeliBlog – Liste of nice Python Articles in the web.</title>
+</meta></meta><link href="https://maconrad.github.io/my-list-of-nice-python-articles.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "PeliBlog", "item": "https://maconrad.github.io"}, {"@type": "ListItem", "position": 2, "name": "My list of nice python articles", "item": "https://maconrad.github.io/my-list-of-nice-python-articles.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Mario"}, "publisher": {"@type": "Organization", "name": "PeliBlog"}, "headline": "Liste of nice Python Articles in the web.", "about": "Python", "datePublished": "2022-02-02 11:51"}</script></head>
 <body class="light-theme">
 <aside>
 <div>
@@ -205,79 +202,131 @@ jQuery(document).ready(function($) {
 </nav>
 <article class="single">
 <header>
-<h1 id="use-python-on-osx-the-right-way">Use python on OSX the right way</h1>
+<h1 id="my-list-of-nice-python-articles">Liste of nice Python Articles in the web.</h1>
 <p>
-      Posted on So 24 Oktober 2021 in <a href="https://maconrad.github.io/category/osx.html">OSX</a>
+      Posted on Mi 02 Februar 2022 in <a href="https://maconrad.github.io/category/python.html">Python</a>
 </p>
 </header>
 <div>
 <div class="toc"><span class="toctitle">Table of contents:</span><ul>
-<li><a href="#installing-and-using-pyenv-and-virtualenvwrapper">Installing and using pyenv and virtualenvwrapper</a></li>
-<li><a href="#references">References</a></li>
+<li><a href="#realpython-articles">Realpython Articles</a></li>
 </ul>
 </div>
-<h2 id="installing-and-using-pyenv-and-virtualenvwrapper">Installing and using pyenv and virtualenvwrapper</h2>
-<p>Installation python3 on OSX direcrtly and/or trying to make default python point to python3 on OSX is not a good idea. Worst case, it can break your OSX python installation. </p>
-<p>In addition, what happens when you have to update from let's say python 3.7.3 to 3.9.7? Pyenv in combination with virtualenwrapper solves this issue by providing a python version manager (pyenv) as well as a python virtualenv manager (venv module could be used.) </p>
-<p>In addition if working amonsgst a team pipenv which fixes dependencies in a lock file could be helpful. See references for more details.</p>
-<div class="highlight"><pre><span></span><code>brew install pyenv 
-pyenv install <span class="m">3</span>.9.7
-pyenv install <span class="m">3</span>.10.0
-pyenv global <span class="m">3</span>.10.0
-pyenv versions
-<span class="k">$(</span>pyenv which python3<span class="k">)</span> -m pip install virtualenvwrapper
-<span class="k">$(</span>pyenv which python3<span class="k">)</span> -m pip install --upgrade pip
-<span class="nb">source</span> ~/.zshrc
-</code></pre></div>
-<p>Then adding the following to <code>~/.zprofile</code></p>
-<div class="highlight"><pre><span></span><code><span class="c1"># pyenv specific config</span>
-<span class="nb">eval</span> <span class="s2">"</span><span class="k">$(</span>pyenv init --path<span class="k">)</span><span class="s2">"</span>
-</code></pre></div>
-<p>and the following to <code>~/.zshrc</code></p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Virtualenvwrapper specific config</span>
-<span class="nb">export</span> <span class="nv">WORKON_HOME</span><span class="o">=</span>~/.virtualenvs
-mkdir -p <span class="nv">$WORKON_HOME</span>
-. ~/.pyenv/versions/3.10.0/bin/virtualenvwrapper.sh
-</code></pre></div>
-<p>Afterwards we can use virtualenvwrapper like so:</p>
-<div class="highlight"><pre><span></span><code>mkvirtualenv &lt;name&gt;
-workon &lt;name&gt;
-<span class="c1"># If project dir name and venv name are equal</span>
-workon . 
-deactivate
-rmvirtualenv &lt;name&gt;
-lsvirtualenv
-</code></pre></div>
-<p>That's it. For more details see links below.</p>
-<h2 id="references">References</h2>
-<ul>
-<li>See: <a href="https://opensource.com/article/19/5/python-3-default-mac">Pyenv on Opensource.com</a> </li>
-<li>See: <a href="https://opensource.com/article/19/6/python-virtual-environments-mac">Virtualenvwrapper on Opensource.com</a></li>
-<li>See: <a href="https://towardsdatascience.com/python-environment-101-1d68bda3094d">Graph about pyenv, pipenv and virtualenv</a></li>
-<li>See: [ZSH Setup on OSX(https://sourabhbajaj.com/mac-setup/iTerm/zsh.html)</li>
-<li>See: <a href="https://bobcares.com/blog/virtualbox-ssh-nat/">Virtualbox Port Fwd</a></li>
-<li>See: <a href="https://www.dev2qa.com/how-to-resolve-virtualbox-guest-additions-kernel-headers-not-found-for-target-kernel-error/#:~:text=2.,list%20current%20linux%20kernel%20version.&amp;text=Then%20you%20should%20run%20command,install%20your%20CentOS%20linux%20kernel.">Virtualbox CentOS Kernel Headers</a></li>
-<li>See: <a href="https://docs.rockylinux.org/guides/desktop/mate_installation/">Rockylinux Docs</a></li>
-</ul>
+<h1 id="realpython-articles">Realpython Articles</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>https://realpython.com/dependency-management-python-poetry/</td>
+<td>Poetry</td>
+</tr>
+<tr>
+<td>https://realpython.com/factory-method-python/</td>
+<td>Factory Method</td>
+</tr>
+<tr>
+<td>https://realpython.com/python-defaultdict/#using-the-python-defaultdict-type</td>
+<td>Default Dict</td>
+</tr>
+<tr>
+<td>https://realpython.com/python-xml-parser/</td>
+<td>XML Parser</td>
+</tr>
+<tr>
+<td>https://realpython.com/django-nginx-gunicorn/</td>
+<td>Django NGINX Unicorn</td>
+</tr>
+<tr>
+<td>https://realpython.com/courses/host-your-django-project-on-heroku/</td>
+<td>Django Heroku</td>
+</tr>
+<tr>
+<td>https://realpython.com/django-social-network-1</td>
+<td>Django Project 1</td>
+</tr>
+<tr>
+<td>https://realpython.com/django-social-front-end-2/</td>
+<td>Django Project 2</td>
+</tr>
+<tr>
+<td>https://realpython.com/django-social-post-3/</td>
+<td>Django Project 3</td>
+</tr>
+<tr>
+<td>https://realpython.com/django-social-forms-4/</td>
+<td>Django Project 4</td>
+</tr>
+<tr>
+<td>https://realpython.com/python-pretty-print/</td>
+<td>PPrint</td>
+</tr>
+<tr>
+<td>https://realpython.com/courses/build-neural-network-python-ai/</td>
+<td>Neuronal Networks</td>
+</tr>
+<tr>
+<td>https://realpython.com/courses/working-with-pipenv/</td>
+<td>PIPenv</td>
+</tr>
+<tr>
+<td>https://realpython.com/courses/deploy-python-script-web-flask</td>
+<td>Flask App</td>
+</tr>
+<tr>
+<td>https://realpython.com/courses/data-viz-with-dash</td>
+<td>Dash Data visualization</td>
+</tr>
+<tr>
+<td>https://realpython.com/courses/looping-with-python-enumerate</td>
+<td>enumerate()</td>
+</tr>
+<tr>
+<td>https://realpython.com/python-modulo-string-formatting</td>
+<td>String formatting</td>
+</tr>
+<tr>
+<td>https://realpython.com/advanced-visual-studio-code-python/</td>
+<td>VSCode for python</td>
+</tr>
+<tr>
+<td>https://realpython.com/python-zip-import/</td>
+<td>zip</td>
+</tr>
+<tr>
+<td>https://realpython.com/intro-to-python-threading/</td>
+<td>Threading intro</td>
+</tr>
+<tr>
+<td>https://realpython.com/python-concurrency/</td>
+<td>Concurrency</td>
+</tr>
+<tr>
+<td>https://realpython.com/async-io-python/</td>
+<td>Concurrency with asyncio</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="tag-cloud">
 <p>
-<a href="https://maconrad.github.io/tag/osx.html">osx</a>
-<a href="https://maconrad.github.io/tag/python.html">python</a>
-<a href="https://maconrad.github.io/tag/virtualenvwrapper.html">virtualenvwrapper</a>
-<a href="https://maconrad.github.io/tag/pyenv.html">pyenv</a>
-<a href="https://maconrad.github.io/tag/venv.html">venv</a>
-<a href="https://maconrad.github.io/tag/pipenv.html">pipenv</a>
+<a href="https://maconrad.github.io/tag/python.html">Python</a>
+<a href="https://maconrad.github.io/tag/reference.html">Reference</a>
+<a href="https://maconrad.github.io/tag/realpython.html">RealPython</a>
 </p>
 </div>
 <div class="related-posts">
 <h4>You might enjoy</h4>
 <ul class="related-posts">
-<li><a href="https://maconrad.github.io/my-list-of-nice-python-articles.html">Liste of nice Python Articles in the web.</a></li>
 <li><a href="https://maconrad.github.io/python-libraries.html">Python Libraries</a></li>
 <li><a href="https://maconrad.github.io/prototype.html">Prototype</a></li>
 <li><a href="https://maconrad.github.io/pattern-creational-factory.html">Factories</a></li>
 <li><a href="https://maconrad.github.io/builder.html">Builder</a></li>
+<li><a href="https://maconrad.github.io/dependency-inversion.html">Dependency Inversion</a></li>
 </ul>
 </div>
 </article>
