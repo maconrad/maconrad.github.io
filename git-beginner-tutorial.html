@@ -33,13 +33,13 @@
  
 
 <meta name="author" content="Mario" />
-<meta name="description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Stashing Undoing GitHub SSH Config Intro This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever …" />
+<meta name="description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Stashing Undoing GitHub SSH Config General This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever …" />
 <meta name="keywords" content="Git">
 
 
   <meta property="og:site_name" content="PeliBlog"/>
   <meta property="og:title" content="Git Beginner Tutorial"/>
-  <meta property="og:description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Stashing Undoing GitHub SSH Config Intro This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever …"/>
+  <meta property="og:description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Stashing Undoing GitHub SSH Config General This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever …"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:url" content="/git-beginner-tutorial.html"/>
   <meta property="og:type" content="article"/>
@@ -135,7 +135,7 @@
 </li>
 <li><a href="#github">GitHub</a><ul>
 <li><a href="#ssh-config">SSH Config</a></li>
-<li><a href="#intro_1">Intro</a></li>
+<li><a href="#general">General</a></li>
 <li><a href="#this-and-that">This and that</a></li>
 </ul>
 </li>
@@ -624,7 +624,7 @@ Date:   Fri Dec <span class="m">24</span> <span class="m">09</span>:28:38 <span 
 </tbody>
 </table>
 <p>*three dots compares the top of the right branch (the HEAD) with the common ancestor of the two branches</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Test</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Line numbers do not work in pelican...</span>
 diff --git a/bootstrap/templates/bootstrap/macros.html b/bootstrap/templates/bootstrap/macros.html
 index 54ca763..a130563 <span class="m">100644</span>
 --- a/bootstrap/templates/bootstrap/macros.html
@@ -648,17 +648,23 @@ index 54ca763..a130563 <span class="m">100644</span>
           &lt;/div&gt;
 </code></pre></div>
 
-<p>Comments:
-- Line#1: Shows which files are being compared
-- Line#2: Metadata, Hashes of the files being compares followed by a mode
-- Line#3-4: Markers for file A (usually old version) and B (usually new version)
-    - Can be differnt version if e.g. working on 2 branches with same parent (then A/B, not old/new or added/deleted)
-- Line#x-y: Chunks/Portions of changes, each chunk separated by @@, + context (3 lines before and after by default)
-- Line#x-y: @@-24,6 = From file A, 6 lines are extracted starting from line 24 (does NOT mean negative 24, - just refers to file A)
-- Line#x-y: +24,7@@ = From file B, 7 lines are extracted starting from line 24 (does NOT mean plus 24, + just refers to file B)
-    - Note: Skip the line(s) marked with - for counting number of lines for second part
-- Ling#17: Line that begins with - comes from File A (red color does NOT equal deleted in all situations)
-- Line#18: Line that begins with + comes from File B (green color does NOT equal added in all situations)</p>
+<p>Comments:</p>
+<ul>
+<li>Line#1: Shows which files are being compared</li>
+<li>Line#2: Metadata, Hashes of the files being compares followed by a mode</li>
+<li>Line#3-4: Markers for file A (usually old version) and B (usually new version)<ul>
+<li>Can be differnt version if e.g. working on 2 branches with same parent (then A/B, not old/new or added/deleted)</li>
+</ul>
+</li>
+<li>Line#x-y: Chunks/Portions of changes, each chunk separated by @@, + context (3 lines before and after by default)</li>
+<li>Line#x-y: @@-24,6 = From file A, 6 lines are extracted starting from line 24 (does NOT mean negative 24, - just refers to file A)</li>
+<li>Line#x-y: +24,7@@ = From file B, 7 lines are extracted starting from line 24 (does NOT mean plus 24, + just refers to file B)<ul>
+<li>Note: Skip the line(s) marked with - for counting number of lines for second part</li>
+</ul>
+</li>
+<li>Ling#17: Line that begins with - comes from File A (red color does NOT equal deleted in all situations)</li>
+<li>Line#18: Line that begins with + comes from File B (green color does NOT equal added in all situations)</li>
+</ul>
 <p><img src="../../images/git/18_diff_1.png" alt="Diff files" width="500"/>
 <img src="../../images/git/19_diff_2.png" alt="Diff simplified output" width="500"/>
 <img src="../../images/git/20_diff_3.png" alt="Diff at at read" width="500"/>
@@ -967,7 +973,7 @@ Host github.com
  IdentityFile ~/.ssh/id_github
 </code></pre></div>
 
-<h2 id="intro_1">Intro</h2>
+<h2 id="general">General</h2>
 <ul>
 <li><code>git clone</code>, <code>git fetch</code>, <code>git pull</code>, remote Tracking Branches</li>
 <li>Remote = fancy name for destination URL + a label</li>
