@@ -33,13 +33,13 @@
  
 
 <meta name="author" content="Mario" />
-<meta name="description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Intro This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever is active (e.g. ref …" />
+<meta name="description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Stashing Undoing GitHub SSH Config Intro This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever …" />
 <meta name="keywords" content="Git">
 
 
   <meta property="og:site_name" content="PeliBlog"/>
   <meta property="og:title" content="Git Beginner Tutorial"/>
-  <meta property="og:description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Intro This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever is active (e.g. ref …"/>
+  <meta property="og:description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Stashing Undoing GitHub SSH Config Intro This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever …"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:url" content="/git-beginner-tutorial.html"/>
   <meta property="og:type" content="article"/>
@@ -129,6 +129,12 @@
 <li><a href="#branching">Branching</a></li>
 <li><a href="#merging">Merging</a></li>
 <li><a href="#diff">Diff</a></li>
+<li><a href="#stashing">Stashing</a></li>
+<li><a href="#undoing">Undoing</a></li>
+</ul>
+</li>
+<li><a href="#github">GitHub</a><ul>
+<li><a href="#ssh-config">SSH Config</a></li>
 <li><a href="#intro_1">Intro</a></li>
 <li><a href="#this-and-that">This and that</a></li>
 </ul>
@@ -618,180 +624,347 @@ Date:   Fri Dec <span class="m">24</span> <span class="m">09</span>:28:38 <span 
 </tbody>
 </table>
 <p>*three dots compares the top of the right branch (the HEAD) with the common ancestor of the two branches</p>
-<p _="%" _-="%-" endmacro>```bash {.line-numbers}
+<div class="highlight"><pre><span></span><code><span class="c1"># Test</span>
 diff --git a/bootstrap/templates/bootstrap/macros.html b/bootstrap/templates/bootstrap/macros.html
-index 54ca763..a130563 100644
+index 54ca763..a130563 <span class="m">100644</span>
 --- a/bootstrap/templates/bootstrap/macros.html
 +++ b/bootstrap/templates/bootstrap/macros.html
 @@ -24,6 +24,7 @@
-     </div></p>
-<p>+{# Some comment line 27#}
- {% macro label(content, type='warning') -%}
-     <span class="label label-{{ type }}">{{ content|safe }}</span>
- {%- endmacro %}
+     &lt;/div&gt;
+ <span class="o">{</span>%- endmacro %<span class="o">}</span>
+
++<span class="o">{</span><span class="c1"># Some comment line 27#}</span>
+ <span class="o">{</span>% macro label<span class="o">(</span>content, <span class="nv">type</span><span class="o">=</span><span class="s1">&#39;warning&#39;</span><span class="o">)</span> -%<span class="o">}</span>
+     &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;label label-{{ type }}&quot;</span>&gt;<span class="o">{{</span> content<span class="p">|</span>safe <span class="o">}}</span>&lt;/span&gt;
+ <span class="o">{</span>%- endmacro %<span class="o">}</span>
 @@ -122,7 +123,7 @@
-            {{ include_if('data-src="%s"'|format(data_src),data_src) }}
-            {{ include_if('src="%s"'|format(src),src) }}&gt;
-          </a>
--         <div class="media-body">
-+         <div class="media-body-new">
-            <h4 class="media-heading">{{ heading }}</h4>
-            {{ description }}
-          </div></p>
-<div class="highlight"><pre><span></span><code><span class="n">Comments</span><span class="p">:</span>
-<span class="o">-</span> <span class="n">Line</span><span class="c1">#1: Shows which files are being compared</span>
-<span class="o">-</span> <span class="n">Line</span><span class="c1">#2: Metadata, Hashes of the files being compares followed by a mode</span>
-<span class="o">-</span> <span class="n">Line</span><span class="c1">#3-4: Markers for file A (usually old version) and B (usually new version)</span>
-    <span class="o">-</span> <span class="n">Can</span> <span class="n">be</span> <span class="n">differnt</span> <span class="n">version</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">working</span> <span class="n">on</span> <span class="mi">2</span> <span class="n">branches</span> <span class="n">with</span> <span class="n">same</span> <span class="n">parent</span> <span class="p">(</span><span class="n">then</span> <span class="n">A</span><span class="o">/</span><span class="n">B</span><span class="p">,</span> <span class="ow">not</span> <span class="n">old</span><span class="o">/</span><span class="n">new</span> <span class="ow">or</span> <span class="n">added</span><span class="o">/</span><span class="n">deleted</span><span class="p">)</span>
-<span class="o">-</span> <span class="n">Line</span><span class="c1">#x-y: Chunks/Portions of changes, each chunk separated by @@, + context (3 lines before and after by default)</span>
-<span class="o">-</span> <span class="n">Line</span><span class="c1">#x-y: @@-24,6 = From file A, 6 lines are extracted starting from line 24 (does NOT mean negative 24, - just refers to file A)</span>
-<span class="o">-</span> <span class="n">Line</span><span class="c1">#x-y: +24,7@@ = From file B, 7 lines are extracted starting from line 24 (does NOT mean plus 24, + just refers to file B)</span>
-    <span class="o">-</span> <span class="n">Note</span><span class="p">:</span> <span class="n">Skip</span> <span class="n">the</span> <span class="n">line</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">marked</span> <span class="n">with</span> <span class="o">-</span> <span class="k">for</span> <span class="n">counting</span> <span class="n">number</span> <span class="n">of</span> <span class="n">lines</span> <span class="k">for</span> <span class="n">second</span> <span class="n">part</span>
-<span class="o">-</span> <span class="n">Ling</span><span class="c1">#17: Line that begins with - comes from File A (red color does NOT equal deleted in all situations)</span>
-<span class="o">-</span> <span class="n">Line</span><span class="c1">#18: Line that begins with + comes from File B (green color does NOT equal added in all situations)</span>
+            <span class="o">{{</span> include_if<span class="o">(</span><span class="s1">&#39;data-src=&quot;%s&quot;&#39;</span><span class="p">|</span>format<span class="o">(</span>data_src<span class="o">)</span>,data_src<span class="o">)</span> <span class="o">}}</span>
+            <span class="o">{{</span> include_if<span class="o">(</span><span class="s1">&#39;src=&quot;%s&quot;&#39;</span><span class="p">|</span>format<span class="o">(</span>src<span class="o">)</span>,src<span class="o">)</span> <span class="o">}}</span>&gt;
+          &lt;/a&gt;
+-         &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;media-body&quot;</span>&gt;
++         &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;media-body-new&quot;</span>&gt;
+            &lt;h4 <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;media-heading&quot;</span>&gt;<span class="o">{{</span> heading <span class="o">}}</span>&lt;/h4&gt;
+            <span class="o">{{</span> description <span class="o">}}</span>
+          &lt;/div&gt;
+</code></pre></div>
 
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/18_diff_1.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Diff files&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/19_diff_2.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Diff simplified output&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/20_diff_3.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Diff at at read&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/21_diff_branches.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Diff branches&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/22_diff_common_ancestor.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Diff branches to common ancestor&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-
-<span class="c1">## Stashing</span>
-<span class="o">-</span> <span class="n">General</span>
-    <span class="o">-</span> <span class="n">Usage</span> <span class="n">Example</span><span class="p">:</span> <span class="n">Swtich</span> <span class="n">to</span> <span class="n">Branch</span> <span class="n">XY</span> <span class="ow">and</span> <span class="n">have</span> <span class="n">some</span> <span class="n">uncommited</span><span class="o">/</span><span class="n">unfinished</span> <span class="n">work</span><span class="p">,</span> <span class="n">need</span> <span class="n">to</span> <span class="n">switch</span> <span class="n">back</span> <span class="n">to</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="k">master</span> <span class="k">for</span> <span class="n">some</span> <span class="n">reason</span><span class="o">.</span>
-    <span class="o">-</span> <span class="n">In</span> <span class="n">General</span><span class="p">,</span> <span class="n">uncommited</span> <span class="n">changes</span> <span class="n">on</span> <span class="n">one</span> <span class="n">branch</span> <span class="ow">and</span> <span class="n">switching</span> <span class="n">to</span> <span class="n">another</span> <span class="n">branch</span><span class="o">.</span> <span class="mi">2</span> <span class="n">Options</span> <span class="k">for</span> <span class="n">a</span> <span class="n">result</span>
-        <span class="o">-</span> <span class="n">Uncommited</span> <span class="n">changes</span> <span class="n">get</span> <span class="n">moved</span> <span class="n">to</span> <span class="n">destination</span> <span class="n">branch</span> <span class="p">(</span><span class="n">assuming</span> <span class="n">they</span> <span class="n">do</span> <span class="n">NOT</span> <span class="n">conflict</span><span class="p">)</span>
-        <span class="o">-</span> <span class="n">Git</span> <span class="n">does</span> <span class="n">NOT</span> <span class="n">let</span> <span class="n">one</span> <span class="n">switch</span> <span class="n">to</span> <span class="n">destination</span> <span class="n">branch</span> <span class="k">if</span> <span class="n">it</span> <span class="n">detects</span> <span class="n">a</span> <span class="n">conflict</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">same</span> <span class="n">lines</span> <span class="n">modified</span><span class="p">)</span>
-    <span class="o">-</span> <span class="n">Save</span><span class="p">,</span> <span class="n">Pop</span><span class="p">,</span> <span class="n">Apply</span>
-    <span class="o">-</span> <span class="n">Similar</span> <span class="n">like</span> <span class="n">a</span> <span class="n">Pause</span><span class="p">:</span> <span class="n">Save</span> <span class="n">changes</span> <span class="n">without</span> <span class="n">commiting</span> <span class="n">them</span> <span class="o">==</span> <span class="n">stash</span> <span class="n">uncommited</span> <span class="n">changes</span> <span class="n">avoids</span> <span class="n">unnessary</span> <span class="n">commits</span>
-        <span class="o">-</span> <span class="n">Stashing</span> <span class="n">helps</span> <span class="ow">in</span> <span class="ow">not</span> <span class="n">destroying</span> <span class="n">commit</span> <span class="n">history</span><span class="o">.</span>
-    <span class="o">-</span> <span class="n">Git</span> <span class="n">stash</span> <span class="n">will</span> <span class="n">take</span> <span class="o">**</span><span class="n">ALL</span> <span class="n">uncommited</span> <span class="n">changes</span> <span class="p">(</span><span class="n">staged</span> <span class="o">&amp;</span> <span class="n">unstaged</span> <span class="o">=</span> <span class="n">Working</span> <span class="n">Dir</span> <span class="o">&amp;</span> <span class="n">Staging</span> <span class="n">Area</span><span class="p">)</span><span class="o">**</span><span class="p">,</span> <span class="n">save</span> <span class="n">them</span> <span class="o">**</span><span class="ow">and</span> <span class="n">revert</span> <span class="n">changes</span> <span class="ow">in</span> <span class="n">working</span> <span class="n">copy</span><span class="o">**</span>
-<span class="o">-</span> <span class="n">Multiple</span> <span class="n">Stashes</span> <span class="n">Possible</span>
-<span class="o">-</span> <span class="n">WIP</span> <span class="o">=</span> <span class="n">Work</span> <span class="ow">in</span> <span class="n">Progress</span>
-<span class="o">-</span> <span class="n">Other</span> <span class="n">Options</span>
-    <span class="o">-</span> <span class="n">Can</span> <span class="n">also</span> <span class="n">stash</span> <span class="ow">in</span> <span class="n">one</span> <span class="n">branch</span><span class="p">,</span> <span class="ow">and</span> <span class="n">reapply</span> <span class="n">to</span> <span class="n">another</span> <span class="n">branch</span><span class="o">.</span>
-
-<span class="o">|</span><span class="n">command</span>                                            <span class="o">|</span> <span class="n">comment</span>                                                  <span class="o">|</span>
-<span class="o">|---------------------------------------------------|----------------------------------------------------------|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">stash</span> <span class="p">[</span><span class="n">save</span><span class="p">]</span>                                   <span class="o">|</span> <span class="n">Save</span> <span class="n">ALL</span> <span class="n">uncommited</span> <span class="n">changes</span> <span class="ow">and</span> <span class="n">stash</span> <span class="n">them</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">stash</span> <span class="n">pop</span>                                      <span class="o">|</span> <span class="n">Reapply</span> <span class="n">changes</span> <span class="n">to</span> <span class="n">working</span> <span class="n">copy</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">status</span>                                         <span class="o">|</span> <span class="n">Shows</span> <span class="n">that</span> <span class="n">working</span> <span class="n">tree</span> <span class="k">is</span> <span class="n">clean</span> <span class="n">after</span> <span class="n">stashing</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">stash</span> <span class="n">list</span>                                     <span class="o">|</span> <span class="n">Show</span> <span class="n">all</span> <span class="n">different</span> <span class="n">stashes</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">stash</span> <span class="n">show</span>                                     <span class="o">|</span> <span class="n">Shows</span> <span class="n">stash</span> <span class="n">at</span> <span class="n">top</span> <span class="o">=</span> <span class="n">git</span> <span class="n">stash</span> <span class="n">show</span> <span class="n">stash</span><span class="err">@</span><span class="p">{</span><span class="mi">0</span><span class="p">}</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">stash</span> <span class="n">show</span> <span class="n">stash</span><span class="err">@</span><span class="p">{</span><span class="mi">1</span><span class="p">}</span>                           <span class="o">|</span> <span class="n">Show</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">stash</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">stash</span> <span class="n">pop</span> <span class="n">stash</span><span class="err">@</span><span class="p">{</span><span class="mi">1</span><span class="p">}</span>                            <span class="o">|</span> <span class="n">Reapply</span> <span class="n">changes</span> <span class="n">from</span> <span class="n">different</span> <span class="n">stash</span> <span class="n">id</span> <span class="n">to</span> <span class="n">working</span> <span class="n">copy</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">stash</span> <span class="n">apply</span>                                    <span class="o">|</span> <span class="n">Reapply</span> <span class="n">changes</span> <span class="n">wihtout</span> <span class="n">removing</span> <span class="n">from</span> <span class="n">stash</span><span class="o">*</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">stash</span> <span class="n">drop</span>                                     <span class="o">|</span> <span class="n">Deletes</span> <span class="n">last</span> <span class="n">stash</span> <span class="p">(</span><span class="o">=</span><span class="n">reference</span> <span class="n">stash</span><span class="err">@</span><span class="p">{</span><span class="mi">0</span><span class="p">})</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">stash</span> <span class="n">drop</span> <span class="n">stash</span><span class="err">@</span><span class="p">{</span><span class="mi">2</span><span class="p">}</span>                           <span class="o">|</span> <span class="n">Deletes</span> <span class="n">stash</span> <span class="n">with</span> <span class="n">particular</span> <span class="n">stash</span> <span class="n">ref</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">stash</span> <span class="n">clear</span>                                    <span class="o">|</span> <span class="n">Delete</span> <span class="n">all</span> <span class="n">stored</span> <span class="n">stashes</span> <span class="o">|</span>
-
-<span class="o">*</span><span class="n">useful</span> <span class="n">when</span> <span class="n">applying</span> <span class="n">to</span> <span class="n">multiple</span> <span class="n">branches</span>
-
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/23_stashing_1.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Before Stashing&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/24_stashing_2.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Stashing away before switching branch&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/25_stashing_pop.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Undo stashes after swtiching back&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-
-<span class="c1">## Undoing</span>
-<span class="o">-</span> <span class="n">General</span>
-    <span class="o">-</span> <span class="n">Reset</span> <span class="n">undos</span> <span class="n">commit</span> <span class="o">=</span> <span class="n">moves</span> <span class="n">the</span> <span class="n">branch</span> <span class="n">pointer</span> <span class="p">(</span><span class="ow">not</span> <span class="n">the</span> <span class="n">HEAD</span> <span class="n">pointer</span><span class="p">)</span> <span class="n">to</span> <span class="n">a</span> <span class="n">different</span> <span class="n">commit</span> <span class="p">(</span><span class="o">.</span><span class="n">e</span><span class="o">.</span><span class="n">g</span> <span class="o">.</span><span class="n">git</span><span class="o">/</span><span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="n">develop</span><span class="p">)</span>
-        <span class="o">-</span> <span class="o">=</span> <span class="n">Modify</span> <span class="n">git</span> <span class="n">history</span> <span class="ow">and</span> <span class="n">decide</span> <span class="n">whether</span> <span class="n">to</span> <span class="n">keep</span> <span class="n">the</span> <span class="n">changes</span> <span class="n">locally</span> <span class="ow">in</span> <span class="n">working</span> <span class="n">dir</span> <span class="p">(</span><span class="n">soft</span><span class="o">/</span><span class="n">mixed</span><span class="p">)</span> <span class="ow">or</span> <span class="n">discard</span> <span class="n">the</span> <span class="n">diff</span> <span class="p">(</span><span class="n">hard</span><span class="p">)</span>
-        <span class="o">-</span> <span class="o">**</span><span class="n">per</span> <span class="n">branch</span><span class="o">**</span> <span class="n">basis</span> <span class="o">=</span> <span class="k">if</span> <span class="n">reset</span> <span class="n">on</span> <span class="n">feature</span> <span class="o">=</span> <span class="n">no</span> <span class="n">impact</span> <span class="n">on</span> <span class="k">master</span><span class="p">,</span> <span class="n">even</span> <span class="k">if</span> <span class="n">shared</span> <span class="n">history</span>
-    <span class="o">-</span> <span class="n">Restore</span> <span class="n">restores</span> <span class="n">file</span> <span class="n">content</span> <span class="p">(</span><span class="n">without</span> <span class="n">moving</span> <span class="n">HEAD</span><span class="p">)</span> <span class="n">to</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">state</span> <span class="p">(</span><span class="o">=</span><span class="n">content</span> <span class="n">at</span> <span class="n">a</span> <span class="n">certain</span> <span class="n">commit</span><span class="p">),</span> <span class="n">default</span> <span class="k">is</span> <span class="n">restore</span> <span class="n">to</span> <span class="n">HEAD</span>
-        <span class="o">-</span> <span class="n">Restore</span> <span class="n">unstages</span> <span class="n">changes</span> <span class="n">from</span> <span class="n">staging</span> <span class="n">area</span><span class="o">/</span><span class="n">index</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">passwords</span><span class="o">.</span><span class="n">txt</span> <span class="n">was</span> <span class="n">added</span> <span class="n">to</span> <span class="n">staging</span> <span class="n">area</span> <span class="n">which</span> <span class="n">should</span> <span class="ow">not</span> <span class="n">ahve</span> <span class="n">been</span> <span class="n">done</span><span class="p">)</span>
-    <span class="o">-</span> <span class="n">Checkout</span> <span class="n">can</span> <span class="n">do</span> <span class="n">many</span> <span class="n">things</span> <span class="p">(</span><span class="n">create</span> <span class="n">branch</span><span class="p">,</span> <span class="n">switch</span> <span class="n">to</span> <span class="n">branch</span><span class="p">,</span> <span class="n">restore</span> <span class="n">files</span><span class="p">,</span> <span class="n">undo</span> <span class="n">history</span><span class="p">)</span>
-        <span class="o">-</span> <span class="n">Checkout</span> <span class="n">kind</span> <span class="n">of</span> <span class="n">overloaded</span><span class="p">,</span> <span class="n">then</span> <span class="n">git</span> <span class="n">switch</span> <span class="ow">and</span> <span class="n">git</span> <span class="n">restore</span> <span class="n">cmds</span> <span class="n">where</span> <span class="n">added</span><span class="o">.</span> <span class="n">Whit</span> <span class="n">these</span> <span class="n">commands</span> <span class="n">its</span> <span class="n">clearer</span> <span class="n">when</span> <span class="n">HEAD</span> <span class="n">pointer</span> <span class="k">is</span> <span class="n">moved</span> <span class="p">(</span><span class="n">git</span> <span class="n">switch</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="p">(</span><span class="n">git</span> <span class="n">restore</span><span class="p">)</span><span class="o">.</span> <span class="n">With</span> <span class="n">git</span> <span class="n">checkout</span> <span class="n">it</span> <span class="n">sometimes</span> <span class="k">is</span> <span class="n">moved</span> <span class="p">(</span><span class="n">checkout</span> <span class="n">whole</span> <span class="n">branch</span> <span class="ow">or</span> <span class="n">commit</span><span class="o">-</span><span class="n">id</span><span class="p">)</span> <span class="ow">and</span> <span class="n">sometimes</span> <span class="ow">not</span> <span class="p">(</span><span class="n">checkout</span> <span class="n">particular</span> <span class="n">file</span><span class="p">)</span>
-    <span class="o">-</span> <span class="n">revert</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">new</span> <span class="n">commit</span> <span class="n">which</span> <span class="n">undos</span><span class="o">/</span><span class="n">reverses</span> <span class="n">the</span> <span class="n">changes</span> <span class="n">from</span> <span class="n">a</span> <span class="n">commit</span>
-        <span class="o">-</span> <span class="n">Can</span> <span class="n">be</span> <span class="n">helpful</span> <span class="n">because</span> <span class="n">can</span> <span class="n">time</span><span class="o">-</span><span class="n">travel</span> <span class="n">back</span> <span class="ow">and</span> <span class="n">forth</span><span class="o">!</span> <span class="n">With</span> <span class="n">reset</span> <span class="n">commit</span> <span class="k">is</span> <span class="n">lost</span> <span class="n">forever</span><span class="o">.</span>
-        <span class="o">-</span> <span class="n">Better</span> <span class="n">when</span> <span class="o">**</span><span class="n">team</span> <span class="n">colaboration</span><span class="o">**</span> <span class="n">because</span> <span class="n">of</span> <span class="n">commit</span> <span class="n">history</span> <span class="n">on</span> <span class="n">other</span> <span class="n">machines</span>
-<span class="o">-</span> <span class="o">**</span><span class="n">Detached</span> <span class="n">HEAD</span><span class="o">**</span>
-    <span class="o">-</span> <span class="n">Normally</span> <span class="n">HEAD</span> <span class="n">points</span> <span class="n">to</span> <span class="n">a</span> <span class="n">branch</span> <span class="n">reference</span> <span class="p">(</span><span class="ow">not</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">commmit</span><span class="p">)</span><span class="o">.</span> <span class="n">Branch</span> <span class="n">reference</span> <span class="n">then</span> <span class="n">points</span> <span class="n">to</span> <span class="n">commit</span><span class="o">.</span>
-    <span class="o">-</span> <span class="n">If</span> <span class="n">new</span> <span class="n">commit</span><span class="p">,</span> <span class="n">branch</span> <span class="n">reference</span> <span class="n">gets</span> <span class="n">updated</span> <span class="n">to</span> <span class="n">point</span> <span class="n">to</span> <span class="n">new</span> <span class="n">commit</span><span class="o">.</span> <span class="n">HEAD</span> <span class="n">still</span> <span class="n">points</span> <span class="n">to</span> <span class="n">branch</span> <span class="n">reference</span><span class="o">.</span>
-    <span class="o">-</span> <span class="n">Detached</span> <span class="n">Head</span> <span class="n">state</span> <span class="n">results</span> <span class="n">from</span> <span class="n">time</span> <span class="n">traveling</span> <span class="n">back</span> <span class="n">to</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">commit</span><span class="o">-</span><span class="n">id</span> <span class="p">(</span><span class="n">git</span> <span class="n">checkout</span> <span class="o">&lt;</span><span class="n">commit</span><span class="o">-</span><span class="n">id</span><span class="o">/&gt;</span><span class="p">),</span> <span class="n">does</span> <span class="n">NOT</span> <span class="n">happen</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="k">if</span> <span class="n">checking</span> <span class="n">out</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">file</span> <span class="n">at</span> <span class="n">a</span> <span class="n">certain</span> <span class="n">commit</span> <span class="n">ID</span><span class="p">,</span> <span class="k">as</span> <span class="n">only</span> <span class="n">content</span> <span class="n">of</span> <span class="n">that</span> <span class="n">file</span> <span class="k">is</span> <span class="n">changed</span><span class="o">.</span> 
-    <span class="o">-</span> <span class="n">Options</span> <span class="k">if</span> <span class="ow">in</span> <span class="n">detached</span> <span class="n">HEAD</span> <span class="n">state</span><span class="p">:</span>
-        <span class="o">-</span> <span class="n">Stay</span> <span class="ow">in</span> <span class="n">detached</span> <span class="n">HEAD</span> <span class="n">to</span> <span class="n">view</span> <span class="n">content</span> <span class="n">of</span> <span class="n">old</span> <span class="n">commit</span><span class="p">,</span> <span class="n">do</span> <span class="n">experimantel</span> <span class="n">changes</span>
-        <span class="o">-</span> <span class="n">Go</span> <span class="n">back</span> <span class="n">to</span> <span class="n">last</span> <span class="n">branch</span> <span class="p">(</span><span class="n">git</span> <span class="n">switch</span> <span class="o">-</span><span class="p">)</span>
-        <span class="o">-</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">branch</span> <span class="n">to</span> <span class="n">make</span> <span class="n">changes</span> <span class="ow">and</span> <span class="n">save</span> <span class="n">them</span> <span class="p">(</span><span class="n">git</span> <span class="n">switch</span> <span class="o">-</span><span class="n">c</span> <span class="o">&lt;</span><span class="n">new_branch_name</span>\<span class="o">&gt;</span><span class="p">)</span>
-            <span class="o">-</span> <span class="n">Remember</span><span class="p">:</span> <span class="n">Branch</span> <span class="k">is</span> <span class="n">based</span> <span class="n">upon</span> <span class="n">HEAD</span> <span class="n">Pointer</span><span class="o">.</span> <span class="n">So</span> <span class="n">branch</span> <span class="n">gets</span> <span class="n">created</span> <span class="n">at</span> <span class="n">where</span> <span class="n">HEAD</span> <span class="n">points</span> <span class="n">at</span> <span class="n">that</span> <span class="n">moment</span><span class="o">.</span>
-    <span class="o">-</span> <span class="n">See</span> <span class="n">state</span><span class="p">:</span> <span class="err">`</span><span class="n">cat</span> <span class="o">.</span><span class="n">git</span><span class="o">/</span><span class="n">HEAD</span><span class="err">`</span> <span class="n">usually</span> <span class="n">points</span> <span class="n">to</span> <span class="n">sth</span> <span class="n">like</span> <span class="n">refs</span><span class="o">/</span><span class="n">heads</span><span class="o">/</span><span class="k">master</span><span class="p">,</span> <span class="k">if</span> <span class="n">detached</span> <span class="n">then</span> <span class="n">commit</span><span class="o">-</span><span class="n">id</span>
-<span class="o">-</span> <span class="n">Restore</span><span class="p">,</span> <span class="n">reset</span><span class="p">,</span> <span class="n">revert</span><span class="p">,</span> <span class="n">discarding</span> <span class="n">changes</span><span class="p">,</span> <span class="n">checking</span> <span class="n">out</span> <span class="n">particular</span> <span class="n">commits</span>
-<span class="o">-</span> <span class="n">Reset</span> <span class="n">options</span>
-    <span class="o">-</span> <span class="err">`</span><span class="o">--</span><span class="n">soft</span><span class="err">`</span><span class="p">:</span> <span class="n">Moves</span> <span class="n">only</span> <span class="n">the</span> <span class="n">HEAD</span><span class="p">,</span> <span class="n">Working</span> <span class="n">dir</span> <span class="n">remains</span> <span class="n">intact</span><span class="p">,</span> <span class="n">example</span><span class="p">:</span> <span class="err">`</span><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">soft</span> <span class="n">HEAD</span><span class="o">~</span><span class="err">`</span> 
-        <span class="o">-</span> <span class="o">=</span> <span class="n">Delete</span> <span class="n">last</span><span class="o">/</span><span class="n">n</span> <span class="n">commit</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">but</span> <span class="n">keep</span> <span class="n">changes</span> <span class="ow">in</span> <span class="n">working</span> <span class="n">dir</span> <span class="o">&amp;</span> <span class="n">staging</span> <span class="n">area</span>
-    <span class="o">-</span> <span class="err">`</span><span class="o">--</span><span class="n">mixed</span><span class="err">`</span><span class="p">:</span> <span class="n">Default</span><span class="p">,</span> <span class="n">resets</span> <span class="n">HEAD</span> <span class="o">+</span> <span class="n">moves</span> <span class="n">everything</span> <span class="n">to</span> <span class="n">unstaged</span><span class="p">,</span> <span class="n">Working</span> <span class="n">dir</span> <span class="n">remains</span> <span class="n">intact</span><span class="p">,</span> <span class="n">example</span><span class="p">:</span> <span class="err">`</span><span class="n">git</span> <span class="n">reset</span> <span class="p">[</span><span class="o">--</span><span class="n">mixed</span><span class="p">]</span> <span class="n">HEAD</span><span class="o">~</span><span class="err">`</span>
-        <span class="o">-</span> <span class="o">=</span> <span class="n">Delete</span> <span class="n">last</span><span class="o">/</span><span class="n">n</span> <span class="n">commit</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">but</span> <span class="n">keep</span> <span class="n">changes</span> <span class="ow">in</span> <span class="n">working</span> <span class="n">dir</span>
-        <span class="o">-</span> <span class="n">Example</span><span class="p">:</span> <span class="n">Made</span> <span class="n">some</span> <span class="n">commits</span><span class="p">,</span> <span class="n">but</span> <span class="n">on</span> <span class="n">the</span> <span class="n">wrong</span> <span class="n">branch</span><span class="p">,</span> <span class="n">but</span> <span class="n">keep</span> <span class="n">the</span> <span class="n">work</span><span class="o">!</span> <span class="err">`</span><span class="n">git</span> <span class="n">reset</span> <span class="mi">1234567</span> <span class="o">&amp;&amp;</span> <span class="n">git</span> <span class="n">switch</span> <span class="o">-</span><span class="n">c</span> <span class="n">feat</span><span class="o">/</span><span class="n">test</span> <span class="o">&amp;&amp;</span> <span class="n">git</span> <span class="n">add</span> <span class="o">.</span> <span class="o">&amp;&amp;</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s1">&#39;on other branch&#39;</span><span class="err">`</span>
-    <span class="o">-</span> <span class="err">`</span><span class="o">--</span><span class="n">hard</span><span class="err">`</span><span class="p">:</span> <span class="n">resets</span> <span class="n">HEAD</span> <span class="o">+</span> <span class="n">Index</span> <span class="p">(</span><span class="n">staging</span> <span class="n">area</span><span class="p">)</span> <span class="o">+</span> <span class="n">Working</span> <span class="n">dir</span><span class="p">,</span> <span class="n">example</span><span class="p">:</span> <span class="err">`</span><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">hard</span> <span class="n">HEAD</span><span class="o">~</span><span class="err">`</span>
-        <span class="o">-</span> <span class="o">=</span> <span class="n">Delete</span> <span class="n">last</span><span class="o">/</span><span class="n">n</span> <span class="n">commit</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">+</span> <span class="n">associated</span> <span class="n">changes</span>
-<span class="o">-</span> <span class="n">Checkout</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">file</span> <span class="ow">or</span> <span class="n">restoring</span> <span class="n">it</span> <span class="n">do</span> <span class="n">NOT</span> <span class="n">move</span> <span class="n">the</span> <span class="n">HEAD</span> <span class="n">pointer</span><span class="o">!</span> 
-
-<span class="o">|</span><span class="n">command</span>                                            <span class="o">|</span> <span class="n">comment</span>                                                  <span class="o">|</span>
-<span class="o">|---------------------------------------------------|----------------------------------------------------------|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">soft</span> <span class="n">HEAD</span><span class="o">~</span>                             <span class="o">|</span> <span class="n">Reset</span> <span class="n">HEAD</span> <span class="n">to</span> <span class="n">last</span> <span class="n">commit</span> <span class="p">(</span><span class="n">parent</span> <span class="n">of</span> <span class="n">head</span><span class="p">)</span>  <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">reset</span> <span class="n">HEAD</span><span class="o">~</span>                                    <span class="o">|</span> <span class="n">Default</span> <span class="n">option</span><span class="p">,</span> <span class="n">Reset</span> <span class="n">commit</span><span class="o">+</span><span class="n">staging</span> <span class="n">area</span> <span class="n">to</span> <span class="n">last</span> <span class="n">commit</span> <span class="p">(</span><span class="n">parent</span><span class="p">)</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">mixed</span> <span class="n">HEAD</span><span class="o">~</span>                            <span class="o">|</span> <span class="n">Default</span> <span class="n">option</span><span class="p">,</span> <span class="n">same</span> <span class="k">as</span> <span class="n">above</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">hard</span> <span class="n">HEAD</span><span class="o">~</span>                             <span class="o">|</span> <span class="n">Reset</span> <span class="n">commit</span><span class="o">+</span><span class="n">staging</span> <span class="n">area</span><span class="o">+</span><span class="n">working</span> <span class="n">dir</span> <span class="n">to</span> <span class="n">last</span> <span class="n">commit</span> <span class="p">(</span><span class="o">=</span><span class="n">HEAD</span><span class="o">~</span><span class="mi">1</span><span class="p">)</span> <span class="p">(</span><span class="o">=</span><span class="n">parent</span><span class="p">)</span>  <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">hard</span> <span class="n">HEAD</span><span class="o">~</span><span class="mi">2</span>                            <span class="o">|</span> <span class="n">Reset</span> <span class="n">commit</span><span class="o">+</span><span class="n">staging</span> <span class="n">area</span><span class="o">+</span><span class="n">working</span> <span class="n">dir</span> <span class="n">to</span> <span class="n">head</span><span class="o">-</span><span class="mi">2</span> <span class="n">commits</span> <span class="p">(</span><span class="o">=</span><span class="n">grandparent</span><span class="p">)</span>  <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">hard</span> <span class="n">HEAD</span><span class="err">@</span><span class="p">{</span><span class="mi">1</span><span class="p">}</span>                          <span class="o">|</span> <span class="n">DONT</span> <span class="n">USE</span><span class="p">,</span> <span class="n">Reset</span> <span class="n">commit</span><span class="o">+</span><span class="n">staging</span> <span class="n">area</span><span class="o">+</span><span class="n">working</span> <span class="n">dir</span> <span class="n">to</span> <span class="n">last</span> <span class="n">commit</span> <span class="p">(</span><span class="n">reflog</span><span class="err">?</span><span class="p">)</span>  <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">hard</span> <span class="mi">37</span><span class="n">b92be</span>                          <span class="o">|</span> <span class="n">Reset</span> <span class="n">commit</span><span class="o">+</span><span class="n">staging</span> <span class="n">area</span><span class="o">+</span><span class="n">working</span> <span class="n">dir</span> <span class="n">to</span> <span class="n">specific</span> <span class="n">commit</span> <span class="p">(</span><span class="n">commitid</span><span class="p">)</span>  <span class="o">|</span>
-<span class="o">|||</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">revert</span> <span class="mi">37</span><span class="n">b92be</span>                                  <span class="o">|</span> <span class="o">|</span>
-<span class="o">|||</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">checkout</span> <span class="mi">123</span><span class="n">a567</span>                                <span class="o">|</span> <span class="n">Checkout</span> <span class="n">different</span> <span class="n">commit</span> <span class="n">by</span> <span class="n">using</span> <span class="n">its</span> <span class="n">commit</span><span class="o">-</span><span class="n">id</span> <span class="p">(</span><span class="n">first</span> <span class="mi">7</span> <span class="n">digits</span> <span class="ow">or</span> <span class="n">long</span> <span class="n">variant</span><span class="p">)</span><span class="o">*</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">checkout</span> <span class="n">HEAD</span><span class="o">~</span><span class="mi">1</span>                                 <span class="o">|</span> <span class="n">Parent</span><span class="o">/</span><span class="n">Grandparent</span> <span class="n">etc</span><span class="o">.</span> <span class="n">also</span> <span class="n">works</span> <span class="n">with</span> <span class="n">checkout</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">status</span>                                          <span class="o">|</span> <span class="n">Shows</span> <span class="n">that</span> <span class="n">HEAD</span> <span class="k">is</span> <span class="n">detached</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">switch</span> <span class="o">-</span>                                        <span class="o">|</span> <span class="n">Switch</span> <span class="n">back</span> <span class="n">to</span> <span class="n">whatever</span> <span class="n">branch</span> <span class="n">i</span> <span class="n">was</span> <span class="n">on</span> <span class="n">before</span> <span class="n">checkout</span> <span class="n">speicifc</span> <span class="n">commit</span> <span class="n">id</span> <span class="o">=</span> <span class="n">reattach</span> <span class="n">head</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">switch</span> <span class="k">master</span>                                   <span class="o">|</span> <span class="n">Switch</span> <span class="n">back</span> <span class="n">to</span> <span class="k">master</span> <span class="n">branch</span> <span class="o">=</span> <span class="n">reattach</span> <span class="n">head</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">switch</span> <span class="o">-</span><span class="n">c</span> <span class="n">new_feature_branch</span>                    <span class="o">|</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">branch</span> <span class="n">based</span> <span class="n">on</span> <span class="n">HEAD</span> <span class="n">location</span> <span class="p">(</span><span class="o">=</span><span class="n">what</span> <span class="n">was</span> <span class="n">checked</span> <span class="n">out</span><span class="p">)</span> <span class="o">=</span> <span class="n">reattach</span> <span class="n">HEAD</span> <span class="n">to</span> <span class="n">that</span> <span class="n">new</span> <span class="n">branch</span> <span class="o">|</span>
-<span class="o">|||</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">checkout</span> <span class="n">HEAD</span> <span class="n">file1</span>                             <span class="o">|</span> <span class="n">Discard</span> <span class="n">changes</span> <span class="n">to</span> <span class="n">a</span> <span class="n">file</span> <span class="o">=</span> <span class="n">revert</span> <span class="n">back</span> <span class="n">to</span> <span class="n">HEAD</span> <span class="n">status</span> <span class="k">for</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">file</span> <span class="p">(</span><span class="n">staged</span> <span class="ow">or</span> <span class="n">unstaged</span><span class="p">)</span><span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">checkout</span> <span class="o">--</span> <span class="n">file1</span> <span class="n">file2</span>                         <span class="o">|</span> <span class="n">Same</span> <span class="k">as</span> <span class="n">above</span><span class="p">,</span> <span class="n">shorter</span> <span class="n">version</span><span class="p">,</span> <span class="n">showing</span> <span class="n">multiple</span> <span class="n">files</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">restore</span> <span class="n">file1</span>                                   <span class="o">|</span> <span class="n">New</span> <span class="n">command</span> <span class="n">to</span> <span class="n">do</span> <span class="n">the</span> <span class="n">same</span> <span class="n">thing</span> <span class="p">(</span><span class="o">=</span><span class="n">restore</span> <span class="n">content</span> <span class="n">to</span> <span class="n">HEAD</span><span class="p">)</span> <span class="p">(</span><span class="n">only</span> <span class="n">unstaged</span><span class="p">)</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">restore</span> <span class="o">--</span><span class="n">staged</span> <span class="n">file1</span>                          <span class="o">|</span> <span class="n">Remove</span> <span class="n">file</span> <span class="n">from</span> <span class="n">staging</span> <span class="n">area</span> <span class="p">(</span><span class="o">=</span><span class="n">unstage</span><span class="p">),</span> <span class="n">working</span> <span class="n">dir</span> <span class="n">still</span> <span class="k">as</span> <span class="n">before</span> <span class="p">(</span><span class="o">!=</span> <span class="n">HEAD</span><span class="p">)</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">restore</span> <span class="o">--</span><span class="n">staged</span> <span class="n">file1</span> <span class="o">&amp;&amp;</span> <span class="n">git</span> <span class="n">restore</span> <span class="n">file1</span>     <span class="o">|</span> <span class="n">Equals</span> <span class="n">git</span> <span class="n">checkout</span> <span class="n">HEAD</span> <span class="n">file1</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">restore</span> <span class="o">--</span><span class="n">source</span><span class="o">=</span><span class="n">HEAD</span><span class="o">~</span><span class="mi">1</span> <span class="n">file1</span>                   <span class="o">|</span> <span class="n">By</span> <span class="n">default</span> <span class="n">points</span> <span class="n">to</span> <span class="n">HEAD</span><span class="p">,</span> <span class="k">if</span> <span class="n">different</span> <span class="n">commit</span><span class="p">,</span> <span class="n">then</span> <span class="n">source</span> <span class="n">has</span> <span class="n">to</span> <span class="n">mentioned</span> <span class="o">|</span>
-<span class="o">|||</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">checkout</span> <span class="k">master</span>                                 <span class="o">|</span> <span class="n">Checkout</span> <span class="k">master</span> <span class="n">branch</span>  <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">diff</span> <span class="k">master</span><span class="o">..</span><span class="k">master</span><span class="o">~</span><span class="mi">2</span>                           <span class="o">|</span> <span class="n">Made</span> <span class="n">some</span> <span class="n">error</span><span class="p">,</span> <span class="n">want</span> <span class="n">to</span> <span class="n">revert</span> <span class="n">back</span> <span class="n">to</span> <span class="n">a</span> <span class="n">specific</span> <span class="n">version</span><span class="p">,</span> <span class="n">find</span> <span class="n">that</span> <span class="n">one</span> <span class="n">by</span> <span class="n">using</span> <span class="n">diff</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">checkout</span> <span class="k">master</span><span class="o">~</span><span class="mi">2</span> <span class="n">Makefile</span>                      <span class="o">|</span> <span class="n">Reverts</span> <span class="n">the</span> <span class="n">Makefile</span> <span class="n">to</span> <span class="n">two</span> <span class="n">revisions</span> <span class="n">back</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="n">hello</span><span class="o">.</span><span class="n">c</span>                                       <span class="o">|</span> <span class="n">Deleted</span> <span class="n">some</span> <span class="n">file</span> <span class="n">by</span> <span class="n">mistake</span> <span class="o">|</span>
-<span class="o">|</span><span class="n">git</span> <span class="n">checkout</span> <span class="n">hello</span><span class="o">.</span><span class="n">c</span>                                <span class="o">|</span> <span class="n">Reverts</span> <span class="n">hello</span><span class="o">.</span><span class="n">c</span> <span class="n">from</span> <span class="n">index</span> <span class="p">(</span><span class="n">staging</span> <span class="n">area</span><span class="p">)</span> <span class="o">|</span>
-
-<span class="o">*</span><span class="n">Results</span> <span class="ow">in</span> <span class="n">detached</span> <span class="n">HEAD</span> <span class="n">state</span><span class="o">.</span>
-
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/14_reset_options.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Reset options&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/26_no_detached_head.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Regular1&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/27_no_detached_head_2.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Regular2&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/28_no_detached_head_3.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Regular3&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/29_no_detached_head_4.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Regular4&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/30_detached_head_1.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Detached Head&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/31_head_parent.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Head Parent Grandparent&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/32_git_reset_mixed.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Git reset mixed&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/33_git_reset_mixed_after.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;HGit reset mixed after&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/33_git_reset_hard.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Git reset hard&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/34_reset_vs_rever_1.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Reset vs Revert1&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-<span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../../images/git/35_reset_vs_revert_2.png&quot;</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;Reset vs Revert2&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">/&gt;</span>
-
-<span class="c1"># GitHub</span>
-<span class="o">-</span> <span class="n">Used</span> <span class="k">for</span> <span class="n">Collaboration</span> <span class="o">/</span> <span class="n">Open</span> <span class="n">Source</span> <span class="n">Projects</span> <span class="o">/</span> <span class="n">Backup</span> <span class="o">/</span> <span class="n">etc</span><span class="o">.</span>
-<span class="o">-</span> <span class="n">Cloning</span> <span class="n">anyone</span> <span class="n">can</span> <span class="n">do</span> <span class="k">if</span> <span class="n">repo</span> <span class="k">is</span> <span class="n">public</span> <span class="p">(</span><span class="ow">not</span> <span class="n">pushing</span> <span class="n">though</span><span class="p">)</span>
-
-<span class="c1">## SSH Config</span>
-<span class="o">-</span> <span class="n">Setup</span> <span class="n">SSH</span> <span class="n">Keys</span>
-<span class="o">-</span> <span class="n">Add</span> <span class="n">to</span> <span class="n">github</span>
-
-<span class="err">```</span><span class="n">bash</span>
-<span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span> <span class="o">-</span><span class="n">t</span> <span class="n">ed25519</span> <span class="o">-</span><span class="n">C</span> <span class="s2">&quot;id_github&quot;</span>
+<p>Comments:
+- Line#1: Shows which files are being compared
+- Line#2: Metadata, Hashes of the files being compares followed by a mode
+- Line#3-4: Markers for file A (usually old version) and B (usually new version)
+    - Can be differnt version if e.g. working on 2 branches with same parent (then A/B, not old/new or added/deleted)
+- Line#x-y: Chunks/Portions of changes, each chunk separated by @@, + context (3 lines before and after by default)
+- Line#x-y: @@-24,6 = From file A, 6 lines are extracted starting from line 24 (does NOT mean negative 24, - just refers to file A)
+- Line#x-y: +24,7@@ = From file B, 7 lines are extracted starting from line 24 (does NOT mean plus 24, + just refers to file B)
+    - Note: Skip the line(s) marked with - for counting number of lines for second part
+- Ling#17: Line that begins with - comes from File A (red color does NOT equal deleted in all situations)
+- Line#18: Line that begins with + comes from File B (green color does NOT equal added in all situations)</p>
+<p><img src="../../images/git/18_diff_1.png" alt="Diff files" width="500"/>
+<img src="../../images/git/19_diff_2.png" alt="Diff simplified output" width="500"/>
+<img src="../../images/git/20_diff_3.png" alt="Diff at at read" width="500"/>
+<img src="../../images/git/21_diff_branches.png" alt="Diff branches" width="500"/>
+<img src="../../images/git/22_diff_common_ancestor.png" alt="Diff branches to common ancestor" width="500"/></p>
+<h2 id="stashing">Stashing</h2>
+<ul>
+<li>General<ul>
+<li>Usage Example: Swtich to Branch XY and have some uncommited/unfinished work, need to switch back to e.g. master for some reason.</li>
+<li>In General, uncommited changes on one branch and switching to another branch. 2 Options for a result<ul>
+<li>Uncommited changes get moved to destination branch (assuming they do NOT conflict)</li>
+<li>Git does NOT let one switch to destination branch if it detects a conflict (e.g. same lines modified)</li>
+</ul>
+</li>
+<li>Save, Pop, Apply</li>
+<li>Similar like a Pause: Save changes without commiting them == stash uncommited changes avoids unnessary commits<ul>
+<li>Stashing helps in not destroying commit history.</li>
+</ul>
+</li>
+<li>Git stash will take <strong>ALL uncommited changes (staged &amp; unstaged = Working Dir &amp; Staging Area)</strong>, save them <strong>and revert changes in working copy</strong></li>
+</ul>
+</li>
+<li>Multiple Stashes Possible</li>
+<li>WIP = Work in Progress</li>
+<li>Other Options<ul>
+<li>Can also stash in one branch, and reapply to another branch.</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git stash [save]</td>
+<td>Save ALL uncommited changes and stash them</td>
+</tr>
+<tr>
+<td>git stash pop</td>
+<td>Reapply changes to working copy</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>Shows that working tree is clean after stashing</td>
+</tr>
+<tr>
+<td>git stash list</td>
+<td>Show all different stashes</td>
+</tr>
+<tr>
+<td>git stash show</td>
+<td>Shows stash at top = git stash show stash@{0}</td>
+</tr>
+<tr>
+<td>git stash show stash@{1}</td>
+<td>Show a particular stash</td>
+</tr>
+<tr>
+<td>git stash pop stash@{1}</td>
+<td>Reapply changes from different stash id to working copy</td>
+</tr>
+<tr>
+<td>git stash apply</td>
+<td>Reapply changes wihtout removing from stash*</td>
+</tr>
+<tr>
+<td>git stash drop</td>
+<td>Deletes last stash (=reference stash@{0})</td>
+</tr>
+<tr>
+<td>git stash drop stash@{2}</td>
+<td>Deletes stash with particular stash ref</td>
+</tr>
+<tr>
+<td>git stash clear</td>
+<td>Delete all stored stashes</td>
+</tr>
+</tbody>
+</table>
+<p>*useful when applying to multiple branches</p>
+<p><img src="../../images/git/23_stashing_1.png" alt="Before Stashing" width="500"/>
+<img src="../../images/git/24_stashing_2.png" alt="Stashing away before switching branch" width="500"/>
+<img src="../../images/git/25_stashing_pop.png" alt="Undo stashes after swtiching back" width="500"/></p>
+<h2 id="undoing">Undoing</h2>
+<ul>
+<li>General<ul>
+<li>Reset undos commit = moves the branch pointer (not the HEAD pointer) to a different commit (.e.g .git/refs/heads/develop)<ul>
+<li>= Modify git history and decide whether to keep the changes locally in working dir (soft/mixed) or discard the diff (hard)</li>
+<li><strong>per branch</strong> basis = if reset on feature = no impact on master, even if shared history</li>
+</ul>
+</li>
+<li>Restore restores file content (without moving HEAD) to a particular state (=content at a certain commit), default is restore to HEAD<ul>
+<li>Restore unstages changes from staging area/index (e.g. passwords.txt was added to staging area which should not ahve been done)</li>
+</ul>
+</li>
+<li>Checkout can do many things (create branch, switch to branch, restore files, undo history)<ul>
+<li>Checkout kind of overloaded, then git switch and git restore cmds where added. Whit these commands its clearer when HEAD pointer is moved (git switch) or not (git restore). With git checkout it sometimes is moved (checkout whole branch or commit-id) and sometimes not (checkout particular file)</li>
+</ul>
+</li>
+<li>revert creates a new commit which undos/reverses the changes from a commit<ul>
+<li>Can be helpful because can time-travel back and forth! With reset commit is lost forever.</li>
+<li>Better when <strong>team colaboration</strong> because of commit history on other machines</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Detached HEAD</strong><ul>
+<li>Normally HEAD points to a branch reference (not a particular commmit). Branch reference then points to commit.</li>
+<li>If new commit, branch reference gets updated to point to new commit. HEAD still points to branch reference.</li>
+<li>Detached Head state results from time traveling back to a particular commit-id (git checkout <commit-id/>), does NOT happen e.g. if checking out a particular file at a certain commit ID, as only content of that file is changed. </li>
+<li>Options if in detached HEAD state:<ul>
+<li>Stay in detached HEAD to view content of old commit, do experimantel changes</li>
+<li>Go back to last branch (git switch -)</li>
+<li>Create a new branch to make changes and save them (git switch -c &lt;new_branch_name>)<ul>
+<li>Remember: Branch is based upon HEAD Pointer. So branch gets created at where HEAD points at that moment.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>See state: <code>cat .git/HEAD</code> usually points to sth like refs/heads/master, if detached then commit-id</li>
+</ul>
+</li>
+<li>Restore, reset, revert, discarding changes, checking out particular commits</li>
+<li>Reset options<ul>
+<li><code>--soft</code>: Moves only the HEAD, Working dir remains intact, example: <code>git reset --soft HEAD~</code> <ul>
+<li>= Delete last/n commit(s) but keep changes in working dir &amp; staging area</li>
+</ul>
+</li>
+<li><code>--mixed</code>: Default, resets HEAD + moves everything to unstaged, Working dir remains intact, example: <code>git reset [--mixed] HEAD~</code><ul>
+<li>= Delete last/n commit(s) but keep changes in working dir</li>
+<li>Example: Made some commits, but on the wrong branch, but keep the work! <code>git reset 1234567 &amp;&amp; git switch -c feat/test &amp;&amp; git add . &amp;&amp; git commit -m 'on other branch'</code></li>
+</ul>
+</li>
+<li><code>--hard</code>: resets HEAD + Index (staging area) + Working dir, example: <code>git reset --hard HEAD~</code><ul>
+<li>= Delete last/n commit(s) + associated changes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Checkout a particular file or restoring it do NOT move the HEAD pointer! </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git reset --soft HEAD~</td>
+<td>Reset HEAD to last commit (parent of head)</td>
+</tr>
+<tr>
+<td>git reset HEAD~</td>
+<td>Default option, Reset commit+staging area to last commit (parent)</td>
+</tr>
+<tr>
+<td>git reset --mixed HEAD~</td>
+<td>Default option, same as above</td>
+</tr>
+<tr>
+<td>git reset --hard HEAD~</td>
+<td>Reset commit+staging area+working dir to last commit (=HEAD~1) (=parent)</td>
+</tr>
+<tr>
+<td>git reset --hard HEAD~2</td>
+<td>Reset commit+staging area+working dir to head-2 commits (=grandparent)</td>
+</tr>
+<tr>
+<td>git reset --hard HEAD@{1}</td>
+<td>DONT USE, Reset commit+staging area+working dir to last commit (reflog?)</td>
+</tr>
+<tr>
+<td>git reset --hard 37b92be</td>
+<td>Reset commit+staging area+working dir to specific commit (commitid)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>git revert 37b92be</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>git checkout 123a567</td>
+<td>Checkout different commit by using its commit-id (first 7 digits or long variant)*</td>
+</tr>
+<tr>
+<td>git checkout HEAD~1</td>
+<td>Parent/Grandparent etc. also works with checkout</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>Shows that HEAD is detached</td>
+</tr>
+<tr>
+<td>git switch -</td>
+<td>Switch back to whatever branch i was on before checkout speicifc commit id = reattach head</td>
+</tr>
+<tr>
+<td>git switch master</td>
+<td>Switch back to master branch = reattach head</td>
+</tr>
+<tr>
+<td>git switch -c new_feature_branch</td>
+<td>Create a new branch based on HEAD location (=what was checked out) = reattach HEAD to that new branch </td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>git checkout HEAD file1</td>
+<td>Discard changes to a file = revert back to HEAD status for a particular file (staged or unstaged)</td>
+</tr>
+<tr>
+<td>git checkout -- file1 file2</td>
+<td>Same as above, shorter version, showing multiple files</td>
+</tr>
+<tr>
+<td>git restore file1</td>
+<td>New command to do the same thing (=restore content to HEAD) (only unstaged)</td>
+</tr>
+<tr>
+<td>git restore --staged file1</td>
+<td>Remove file from staging area (=unstage), working dir still as before (!= HEAD)</td>
+</tr>
+<tr>
+<td>git restore --staged file1 &amp;&amp; git restore file1</td>
+<td>Equals git checkout HEAD file1</td>
+</tr>
+<tr>
+<td>git restore --source=HEAD~1 file1</td>
+<td>By default points to HEAD, if different commit, then source has to mentioned</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>git checkout master</td>
+<td>Checkout master branch</td>
+</tr>
+<tr>
+<td>git diff master..master~2</td>
+<td>Made some error, want to revert back to a specific version, find that one by using diff</td>
+</tr>
+<tr>
+<td>git checkout master~2 Makefile</td>
+<td>Reverts the Makefile to two revisions back</td>
+</tr>
+<tr>
+<td>rm -f hello.c</td>
+<td>Deleted some file by mistake</td>
+</tr>
+<tr>
+<td>git checkout hello.c</td>
+<td>Reverts hello.c from index (staging area)</td>
+</tr>
+</tbody>
+</table>
+<p>*Results in detached HEAD state.</p>
+<p><img src="../../images/git/14_reset_options.png" alt="Reset options" width="500"/>
+<img src="../../images/git/26_no_detached_head.png" alt="Regular1" width="500"/>
+<img src="../../images/git/27_no_detached_head_2.png" alt="Regular2" width="500"/>
+<img src="../../images/git/28_no_detached_head_3.png" alt="Regular3" width="500"/>
+<img src="../../images/git/29_no_detached_head_4.png" alt="Regular4" width="500"/>
+<img src="../../images/git/30_detached_head_1.png" alt="Detached Head" width="500"/>
+<img src="../../images/git/31_head_parent.png" alt="Head Parent Grandparent" width="500"/>
+<img src="../../images/git/32_git_reset_mixed.png" alt="Git reset mixed" width="500"/>
+<img src="../../images/git/33_git_reset_mixed_after.png" alt="HGit reset mixed after" width="500"/>
+<img src="../../images/git/33_git_reset_hard.png" alt="Git reset hard" width="500"/>
+<img src="../../images/git/34_reset_vs_rever_1.png" alt="Reset vs Revert1" width="500"/>
+<img src="../../images/git/35_reset_vs_revert_2.png" alt="Reset vs Revert2" width="500"/></p>
+<h1 id="github">GitHub</h1>
+<ul>
+<li>Used for Collaboration / Open Source Projects / Backup / etc.</li>
+<li>Cloning anyone can do if repo is public (not pushing though)</li>
+</ul>
+<h2 id="ssh-config">SSH Config</h2>
+<ul>
+<li>Setup SSH Keys</li>
+<li>Add to github</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ssh-keygen -t ed25519 -C <span class="s2">&quot;id_github&quot;</span>
 
 <span class="c1">#~/.ssh/config</span>
-<span class="n">Host</span> <span class="n">git</span><span class="o">.</span><span class="n">netcloud</span><span class="o">.</span><span class="n">local</span>
- <span class="n">UseKeychain</span> <span class="n">yes</span>
- <span class="n">AddKeysToAgent</span> <span class="n">yes</span>
- <span class="n">IdentityFile</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_ed25519</span>
+Host git.netcloud.local
+ UseKeychain yes
+ AddKeysToAgent yes
+ IdentityFile ~/.ssh/id_ed25519
 
-<span class="n">Host</span> <span class="n">github</span><span class="o">.</span><span class="n">com</span>
- <span class="n">UseKeychain</span> <span class="n">yes</span>
- <span class="n">AddKeysToAgent</span> <span class="n">yes</span>
- <span class="n">IdentityFile</span> <span class="o">~/.</span><span class="n">ssh</span><span class="o">/</span><span class="n">id_github</span>
+Host github.com
+ UseKeychain yes
+ AddKeysToAgent yes
+ IdentityFile ~/.ssh/id_github
 </code></pre></div>
 
 <h2 id="intro_1">Intro</h2>
