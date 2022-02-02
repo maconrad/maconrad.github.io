@@ -8,6 +8,140 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="" />
 
+  
+<style type="text/css">
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: var(--jp-cell-editor-active-background) }
+.highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
+.highlight .c { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment */
+.highlight .err { color: var(--jp-mirror-editor-error-color) } /* Error */
+.highlight .k { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword */
+.highlight .o { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator */
+.highlight .p { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation */
+.highlight .ch { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Preproc */
+.highlight .cpf { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Single */
+.highlight .cs { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Special */
+.highlight .kc { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Type */
+.highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
+.highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
+.highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
+.highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
+.highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
+.highlight .mh { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Hex */
+.highlight .mi { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer */
+.highlight .mo { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Oct */
+.highlight .sa { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Affix */
+.highlight .sb { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Backtick */
+.highlight .sc { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Char */
+.highlight .dl { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Delimiter */
+.highlight .sd { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Doc */
+.highlight .s2 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Double */
+.highlight .se { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Escape */
+.highlight .sh { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Heredoc */
+.highlight .si { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Interpol */
+.highlight .sx { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Other */
+.highlight .sr { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Regex */
+.highlight .s1 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Single */
+.highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
+.highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
+</style>
+
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
+div.entry-content {
+  overflow: visible;
+  padding: 8px;
+}
+.input_area {
+  padding: 0.2em;
+}
+
+a.heading-anchor {
+ white-space: normal;
+}
+
+.rendered_html
+code {
+ font-size: .8em;
+}
+
+pre.ipynb {
+  color: black;
+  background: #f7f7f7;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0px;
+  font-size: 13px;
+}
+
+/* remove the prompt div from text cells */
+div.text_cell .prompt {
+    display: none;
+}
+
+/* remove horizontal padding from text cells, */
+/* so it aligns with outer body text */
+div.text_cell_render {
+    padding: 0.5em 0em;
+}
+
+img.anim_icon{padding:0; border:0; vertical-align:middle; -webkit-box-shadow:none; -box-shadow:none}
+
+div.collapseheader {
+    width=100%;
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+</style>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true,
+        displayMath: [['$$','$$'], ["\\[","\\]"]]
+    }
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $("div.collapseheader").click(function () {
+    $header = $(this).children("span").first();
+    $codearea = $(this).children(".input_area");
+    console.log($(this).children());
+    $codearea.slideToggle(500, function () {
+        $header.text(function () {
+            return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+        });
+    });
+});
+});
+</script>
+
+
+
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
@@ -352,39 +486,39 @@ a6225db 2nd commit
 <li>Part -1,5 denotes 5 lines are part of it (neutral (no +/-) and minus lines)</li>
 <li>Part +1,6 denotes 6 lines are part of it (neutral and plus-lines)</li>
 </ul>
-<div class="highlight"><pre><span></span><code># Example diff working dir to last commit
-# git diff a.txt
-# Here local copy (version 3) vs commit 2
-<span class="gh">diff --git a/a.txt b/a.txt</span>
-<span class="gh">index b07545f..86324cd 100644</span>
-<span class="gd">--- a/a.txt</span>
-<span class="gi">+++ b/a.txt</span>
-<span class="gu">@@ -1,5 +1,6 @@</span>
- line a1
- line a2 - modified commit 2
-<span class="gd">-line a3</span>
-<span class="gi">+line a3 - modified commit 3</span>
- line a4
- line a5 - added commit 2
-<span class="gi">+line a6 - added commit 3</span>
+<div class="highlight"><pre><span></span><code><span class="w"># Example diff working dir to last commit</span>
+<span class="w"># git diff a.txt</span>
+<span class="w"># Here local copy (version 3) vs commit 2</span>
+<span class="gh">diff --git a/a.txt b/a.txt</span><span class="w"></span>
+<span class="gh">index b07545f..86324cd 100644</span><span class="w"></span>
+<span class="gd">--- a/a.txt</span><span class="w"></span>
+<span class="gi">+++ b/a.txt</span><span class="w"></span>
+<span class="gu">@@ -1,5 +1,6 @@</span><span class="w"></span>
+<span class="w"> </span>line a1<span class="w"></span>
+<span class="w"> </span>line a2 - modified commit 2<span class="w"></span>
+<span class="gd">-line a3</span><span class="w"></span>
+<span class="gi">+line a3 - modified commit 3</span><span class="w"></span>
+<span class="w"> </span>line a4<span class="w"></span>
+<span class="w"> </span>line a5 - added commit 2<span class="w"></span>
+<span class="gi">+line a6 - added commit 3</span><span class="w"></span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code># Example diff to specific commit (&quot;2&quot; commits back)
-# git diff 936281f a.txt
-# Here local copy (version 3) vs commit 1
-<span class="gh">diff --git a/a.txt b/a.txt</span>
-<span class="gh">index 610c16c..86324cd 100644</span>
-<span class="gd">--- a/a.txt</span>
-<span class="gi">+++ b/a.txt</span>
-<span class="gu">@@ -1,4 +1,6 @@</span>
- line a1
-<span class="gd">-line a2</span>
-<span class="gd">-line a3</span>
-<span class="gi">+line a2 - modified commit 2</span>
-<span class="gi">+line a3 - modified commit 3</span>
- line a4
-<span class="gi">+line a5 - added commit 2</span>
-<span class="gi">+line a6 - added commit 3</span>
+<div class="highlight"><pre><span></span><code><span class="w"># Example diff to specific commit (&quot;2&quot; commits back)</span>
+<span class="w"># git diff 936281f a.txt</span>
+<span class="w"># Here local copy (version 3) vs commit 1</span>
+<span class="gh">diff --git a/a.txt b/a.txt</span><span class="w"></span>
+<span class="gh">index 610c16c..86324cd 100644</span><span class="w"></span>
+<span class="gd">--- a/a.txt</span><span class="w"></span>
+<span class="gi">+++ b/a.txt</span><span class="w"></span>
+<span class="gu">@@ -1,4 +1,6 @@</span><span class="w"></span>
+<span class="w"> </span>line a1<span class="w"></span>
+<span class="gd">-line a2</span><span class="w"></span>
+<span class="gd">-line a3</span><span class="w"></span>
+<span class="gi">+line a2 - modified commit 2</span><span class="w"></span>
+<span class="gi">+line a3 - modified commit 3</span><span class="w"></span>
+<span class="w"> </span>line a4<span class="w"></span>
+<span class="gi">+line a5 - added commit 2</span><span class="w"></span>
+<span class="gi">+line a6 - added commit 3</span><span class="w"></span>
 </code></pre></div>
 
 <h2 id="git-stash-example">Git Stash Example</h2>

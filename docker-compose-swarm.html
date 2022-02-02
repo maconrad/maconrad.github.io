@@ -8,6 +8,140 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="" />
 
+  
+<style type="text/css">
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: var(--jp-cell-editor-active-background) }
+.highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
+.highlight .c { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment */
+.highlight .err { color: var(--jp-mirror-editor-error-color) } /* Error */
+.highlight .k { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword */
+.highlight .o { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator */
+.highlight .p { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation */
+.highlight .ch { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Preproc */
+.highlight .cpf { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Single */
+.highlight .cs { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Special */
+.highlight .kc { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Type */
+.highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
+.highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
+.highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
+.highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
+.highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
+.highlight .mh { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Hex */
+.highlight .mi { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer */
+.highlight .mo { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Oct */
+.highlight .sa { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Affix */
+.highlight .sb { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Backtick */
+.highlight .sc { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Char */
+.highlight .dl { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Delimiter */
+.highlight .sd { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Doc */
+.highlight .s2 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Double */
+.highlight .se { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Escape */
+.highlight .sh { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Heredoc */
+.highlight .si { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Interpol */
+.highlight .sx { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Other */
+.highlight .sr { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Regex */
+.highlight .s1 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Single */
+.highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
+.highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
+</style>
+
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
+div.entry-content {
+  overflow: visible;
+  padding: 8px;
+}
+.input_area {
+  padding: 0.2em;
+}
+
+a.heading-anchor {
+ white-space: normal;
+}
+
+.rendered_html
+code {
+ font-size: .8em;
+}
+
+pre.ipynb {
+  color: black;
+  background: #f7f7f7;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0px;
+  font-size: 13px;
+}
+
+/* remove the prompt div from text cells */
+div.text_cell .prompt {
+    display: none;
+}
+
+/* remove horizontal padding from text cells, */
+/* so it aligns with outer body text */
+div.text_cell_render {
+    padding: 0.5em 0em;
+}
+
+img.anim_icon{padding:0; border:0; vertical-align:middle; -webkit-box-shadow:none; -box-shadow:none}
+
+div.collapseheader {
+    width=100%;
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+</style>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true,
+        displayMath: [['$$','$$'], ["\\[","\\]"]]
+    }
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $("div.collapseheader").click(function () {
+    $header = $(this).children("span").first();
+    $codearea = $(this).children(".input_area");
+    console.log($(this).children());
+    $codearea.slideToggle(500, function () {
+        $header.text(function () {
+            return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+        });
+    });
+});
+});
+</script>
+
+
+
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
@@ -926,35 +1060,35 @@ networks: <span class="c1"># Optional, same as docker network create</span>
 </code></pre></div>
 
 <h3 id="nginx-example">NGINX Example</h3>
-<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&#39;2&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;2&#39;</span><span class="w"></span>
 
-<span class="c1"># same as </span>
-<span class="c1"># docker run -p 8080:80 -v $(pwd):/usr/share/nginx/html nginx/latest</span>
+<span class="c1"># same as </span><span class="w"></span>
+<span class="c1"># docker run -p 8080:80 -v $(pwd):/usr/share/nginx/html nginx/latest</span><span class="w"></span>
 
-<span class="nt">services</span><span class="p">:</span>
-  <span class="nt">ngiii</span><span class="p">:</span>
-    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx:latest</span>
-    <span class="nt">volumes</span><span class="p">:</span>
-            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.:/usr/share/nginx/html</span>
-    <span class="nt">ports</span><span class="p">:</span>
-            <span class="p p-Indicator">-</span> <span class="s">&#39;8080:80&#39;</span>
+<span class="nt">services</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">ngiii</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx:latest</span><span class="w"></span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.:/usr/share/nginx/html</span><span class="w"></span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;8080:80&#39;</span><span class="w"></span>
 </code></pre></div>
 
 <ul>
 <li>Example to mark file as read-only in container</li>
 <li>And configure nginx proxy to httpd (using DNS name web in nginx.conf)</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&#39;3&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3&#39;</span><span class="w"></span>
 
-<span class="nt">services</span><span class="p">:</span>
-  <span class="nt">proxy</span><span class="p">:</span>
-    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx:1.13</span> <span class="c1"># this will use the latest version of 1.13.x</span>
-    <span class="nt">ports</span><span class="p">:</span>
-            <span class="p p-Indicator">-</span> <span class="s">&#39;80:80&#39;</span> <span class="c1"># expose 80 on host and sent to 80 in container</span>
-    <span class="nt">volumes</span><span class="p">:</span>
-            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./nginx.conf:/etc/nginx/conf.d/default.conf:ro</span>
-  <span class="nt">web</span><span class="p">:</span>
-    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">httpd</span>  <span class="c1"># this will use httpd:latest</span>
+<span class="nt">services</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">proxy</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx:1.13</span><span class="w"> </span><span class="c1"># this will use the latest version of 1.13.x</span><span class="w"></span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;80:80&#39;</span><span class="w"> </span><span class="c1"># expose 80 on host and sent to 80 in container</span><span class="w"></span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./nginx.conf:/etc/nginx/conf.d/default.conf:ro</span><span class="w"></span>
+<span class="w">  </span><span class="nt">web</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">httpd</span><span class="w">  </span><span class="c1"># this will use httpd:latest</span><span class="w"></span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># nginx.conf</span>
@@ -981,36 +1115,36 @@ server <span class="o">{</span>
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&#39;2&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;2&#39;</span><span class="w"></span>
 
-<span class="nt">services</span><span class="p">:</span>
+<span class="nt">services</span><span class="p">:</span><span class="w"></span>
 
-  <span class="nt">wordpress</span><span class="p">:</span>
-    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">wordpress</span>
-    <span class="nt">ports</span><span class="p">:</span>
-            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8080:80</span>
-    <span class="nt">environment</span><span class="p">:</span>
-      <span class="nt">WORDPRESS_DB_HOST</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mysql</span>
-      <span class="nt">WORDPRESS_DB_NAME</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">wordpress</span>
-      <span class="nt">WORDPRESS_DB_USER</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">example</span>
-      <span class="nt">WORDPRESS_DB_PASSWORD</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examplePW</span>
-    <span class="nt">volumes</span><span class="p">:</span>
-            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./wordpress-data:/var/www/html</span>
-    <span class="nt">depends_on</span><span class="p">:</span>
-            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">db</span>
+<span class="w">  </span><span class="nt">wordpress</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span><span class="w"></span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8080:80</span><span class="w"></span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">WORDPRESS_DB_HOST</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql</span><span class="w"></span>
+<span class="w">      </span><span class="nt">WORDPRESS_DB_NAME</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span><span class="w"></span>
+<span class="w">      </span><span class="nt">WORDPRESS_DB_USER</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example</span><span class="w"></span>
+<span class="w">      </span><span class="nt">WORDPRESS_DB_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">examplePW</span><span class="w"></span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./wordpress-data:/var/www/html</span><span class="w"></span>
+<span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db</span><span class="w"></span>
 
-  <span class="nt">db</span><span class="p">:</span>
-    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mariadb</span>
-    <span class="nt">environment</span><span class="p">:</span>
-      <span class="nt">MYSQL_ROOT_PASSWORD</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examplerootPW</span>
-      <span class="nt">MYSQL_DATABASE</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">wordpress</span>
-      <span class="nt">MYSQL_USER</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">example</span>
-      <span class="nt">MYSQL_PASSWORD</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">examplePW</span>
-    <span class="nt">volumes</span><span class="p">:</span>
-            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mysql-data:/var/lib/mysql</span>
+<span class="w">  </span><span class="nt">db</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mariadb</span><span class="w"></span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">MYSQL_ROOT_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">examplerootPW</span><span class="w"></span>
+<span class="w">      </span><span class="nt">MYSQL_DATABASE</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wordpress</span><span class="w"></span>
+<span class="w">      </span><span class="nt">MYSQL_USER</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">example</span><span class="w"></span>
+<span class="w">      </span><span class="nt">MYSQL_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">examplePW</span><span class="w"></span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql-data:/var/lib/mysql</span><span class="w"></span>
 
-<span class="nt">volumes</span><span class="p">:</span>
-  <span class="nt">mysql-data</span><span class="p">:</span>
+<span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">mysql-data</span><span class="p">:</span><span class="w"></span>
 </code></pre></div>
 
 <h3 id="build-example">Build example</h3>
@@ -1020,28 +1154,28 @@ server <span class="o">{</span>
 <li>Very simple dockerfile</li>
 <li>Uses same nginx.conf as above (NGINX Example)</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&#39;2&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;2&#39;</span><span class="w"></span>
 
-<span class="c1"># builds nginx.conf into image</span>
-<span class="c1"># uses sample HTML static site from https://startbootstrap.com/themes/agency/</span>
+<span class="c1"># builds nginx.conf into image</span><span class="w"></span>
+<span class="c1"># uses sample HTML static site from https://startbootstrap.com/themes/agency/</span><span class="w"></span>
 
-<span class="nt">services</span><span class="p">:</span>
-  <span class="nt">proxy</span><span class="p">:</span>
-    <span class="nt">build</span><span class="p">:</span>
-      <span class="nt">context</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">.</span>
-      <span class="nt">dockerfile</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nginx.Dockerfile</span>
-    <span class="c1">#Optional -- image: nginx-custom</span>
-    <span class="nt">ports</span><span class="p">:</span>
-            <span class="p p-Indicator">-</span> <span class="s">&#39;80:80&#39;</span>
-  <span class="nt">web</span><span class="p">:</span>
-    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">httpd</span>
-    <span class="nt">volumes</span><span class="p">:</span>
-            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">./html:/usr/local/apache2/htdocs/</span>
+<span class="nt">services</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">proxy</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">context</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span><span class="w"></span>
+<span class="w">      </span><span class="nt">dockerfile</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nginx.Dockerfile</span><span class="w"></span>
+<span class="w">    </span><span class="c1">#Optional -- image: nginx-custom</span><span class="w"></span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;80:80&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">web</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">httpd</span><span class="w"></span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./html:/usr/local/apache2/htdocs/</span><span class="w"></span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">FROM</span> <span class="s">nginx:1.13</span>
+<div class="highlight"><pre><span></span><code><span class="k">FROM</span><span class="w"> </span><span class="s">nginx:1.13</span>
 
-<span class="k">COPY</span> nginx.conf /etc/nginx/conf.d/default.conf
+<span class="k">COPY</span><span class="w"> </span>nginx.conf /etc/nginx/conf.d/default.conf
 </code></pre></div>
 
 <h2 id="swarm">Swarm</h2>
@@ -1512,99 +1646,99 @@ docker container logs &lt;container-name&gt;
 <li>**** Drawback: Visibiliy in history</li>
 <li>could use remote api on cli on local machine</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="n">version</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span>
-<span class="n">services</span><span class="p">:</span>
-  <span class="n">redis</span><span class="p">:</span>
-    <span class="n">image</span><span class="p">:</span> <span class="n">redis</span><span class="p">:</span><span class="n">alpine</span>
-    <span class="n">networks</span><span class="p">:</span>
-            <span class="o">-</span> <span class="n">frontend</span>
-    <span class="n">deploy</span><span class="p">:</span>
-      <span class="n">replicas</span><span class="p">:</span> <span class="mi">1</span>
-      <span class="n">update_config</span><span class="p">:</span>
-        <span class="n">parallelism</span><span class="p">:</span> <span class="mi">2</span>
-        <span class="n">delay</span><span class="p">:</span> <span class="mi">10</span><span class="n">s</span>
-      <span class="n">restart_policy</span><span class="p">:</span>
-        <span class="n">condition</span><span class="p">:</span> <span class="n">on</span><span class="o">-</span><span class="n">failure</span>
-  <span class="n">db</span><span class="p">:</span>
-    <span class="n">image</span><span class="p">:</span> <span class="n">postgres</span><span class="p">:</span><span class="mf">9.4</span>
-    <span class="n">volumes</span><span class="p">:</span>
-            <span class="o">-</span> <span class="n">db</span><span class="o">-</span><span class="n">data</span><span class="p">:</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">postgresql</span><span class="o">/</span><span class="n">data</span>
-    <span class="n">networks</span><span class="p">:</span>
-            <span class="o">-</span> <span class="n">backend</span>
-    <span class="n">environment</span><span class="p">:</span>
-            <span class="o">-</span> <span class="n">POSTGRES_HOST_AUTH_METHOD</span><span class="o">=</span><span class="n">trust</span>
-    <span class="n">deploy</span><span class="p">:</span>
-      <span class="n">placement</span><span class="p">:</span>
-        <span class="n">constraints</span><span class="p">:</span> <span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">role</span> <span class="o">==</span> <span class="n">manager</span><span class="p">]</span>
-  <span class="n">vote</span><span class="p">:</span>
-    <span class="n">image</span><span class="p">:</span> <span class="n">mconrad</span><span class="o">/</span><span class="n">examplevotingapp_vote</span>
-    <span class="n">ports</span><span class="p">:</span>
-            <span class="o">-</span> <span class="mi">5000</span><span class="p">:</span><span class="mi">80</span>
-    <span class="n">networks</span><span class="p">:</span>
-            <span class="o">-</span> <span class="n">frontend</span>
-    <span class="n">depends_on</span><span class="p">:</span>
-            <span class="o">-</span> <span class="n">redis</span>
-    <span class="n">deploy</span><span class="p">:</span>
-      <span class="n">replicas</span><span class="p">:</span> <span class="mi">2</span>
-      <span class="n">update_config</span><span class="p">:</span>
-        <span class="n">parallelism</span><span class="p">:</span> <span class="mi">2</span>
-      <span class="n">restart_policy</span><span class="p">:</span>
-        <span class="n">condition</span><span class="p">:</span> <span class="n">on</span><span class="o">-</span><span class="n">failure</span>
-  <span class="n">result</span><span class="p">:</span>
-    <span class="n">image</span><span class="p">:</span> <span class="n">mconrad</span><span class="o">/</span><span class="n">examplevotingapp_result</span>
-    <span class="n">ports</span><span class="p">:</span>
-            <span class="o">-</span> <span class="mi">5001</span><span class="p">:</span><span class="mi">80</span>
-    <span class="n">networks</span><span class="p">:</span>
-            <span class="o">-</span> <span class="n">backend</span>
-    <span class="n">depends_on</span><span class="p">:</span>
-            <span class="o">-</span> <span class="n">db</span>
-    <span class="n">deploy</span><span class="p">:</span>
-      <span class="n">replicas</span><span class="p">:</span> <span class="mi">1</span>
-      <span class="n">update_config</span><span class="p">:</span>
-        <span class="n">parallelism</span><span class="p">:</span> <span class="mi">2</span>
-        <span class="n">delay</span><span class="p">:</span> <span class="mi">10</span><span class="n">s</span>
-      <span class="n">restart_policy</span><span class="p">:</span>
-        <span class="n">condition</span><span class="p">:</span> <span class="n">on</span><span class="o">-</span><span class="n">failure</span>
+<div class="highlight"><pre><span></span><code><span class="n">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3&quot;</span><span class="w"></span>
+<span class="n">services</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="n">redis</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">image</span><span class="p">:</span><span class="w"> </span><span class="n">redis</span><span class="p">:</span><span class="n">alpine</span><span class="w"></span>
+<span class="w">    </span><span class="n">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">frontend</span><span class="w"></span>
+<span class="w">    </span><span class="n">deploy</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="n">replicas</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">      </span><span class="n">update_config</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">parallelism</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
+<span class="w">        </span><span class="n">delay</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="n">s</span><span class="w"></span>
+<span class="w">      </span><span class="n">restart_policy</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">condition</span><span class="p">:</span><span class="w"> </span><span class="n">on</span><span class="o">-</span><span class="n">failure</span><span class="w"></span>
+<span class="w">  </span><span class="n">db</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">image</span><span class="p">:</span><span class="w"> </span><span class="n">postgres</span><span class="p">:</span><span class="mf">9.4</span><span class="w"></span>
+<span class="w">    </span><span class="n">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">db</span><span class="o">-</span><span class="n">data</span><span class="p">:</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">postgresql</span><span class="o">/</span><span class="n">data</span><span class="w"></span>
+<span class="w">    </span><span class="n">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">backend</span><span class="w"></span>
+<span class="w">    </span><span class="n">environment</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">POSTGRES_HOST_AUTH_METHOD</span><span class="o">=</span><span class="n">trust</span><span class="w"></span>
+<span class="w">    </span><span class="n">deploy</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="n">placement</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">constraints</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">role</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">manager</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="n">vote</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">image</span><span class="p">:</span><span class="w"> </span><span class="n">mconrad</span><span class="o">/</span><span class="n">examplevotingapp_vote</span><span class="w"></span>
+<span class="w">    </span><span class="n">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="mi">5000</span><span class="p">:</span><span class="mi">80</span><span class="w"></span>
+<span class="w">    </span><span class="n">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">frontend</span><span class="w"></span>
+<span class="w">    </span><span class="n">depends_on</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">redis</span><span class="w"></span>
+<span class="w">    </span><span class="n">deploy</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="n">replicas</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
+<span class="w">      </span><span class="n">update_config</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">parallelism</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
+<span class="w">      </span><span class="n">restart_policy</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">condition</span><span class="p">:</span><span class="w"> </span><span class="n">on</span><span class="o">-</span><span class="n">failure</span><span class="w"></span>
+<span class="w">  </span><span class="n">result</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">image</span><span class="p">:</span><span class="w"> </span><span class="n">mconrad</span><span class="o">/</span><span class="n">examplevotingapp_result</span><span class="w"></span>
+<span class="w">    </span><span class="n">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="mi">5001</span><span class="p">:</span><span class="mi">80</span><span class="w"></span>
+<span class="w">    </span><span class="n">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">backend</span><span class="w"></span>
+<span class="w">    </span><span class="n">depends_on</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">db</span><span class="w"></span>
+<span class="w">    </span><span class="n">deploy</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="n">replicas</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">      </span><span class="n">update_config</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">parallelism</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
+<span class="w">        </span><span class="n">delay</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="n">s</span><span class="w"></span>
+<span class="w">      </span><span class="n">restart_policy</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">condition</span><span class="p">:</span><span class="w"> </span><span class="n">on</span><span class="o">-</span><span class="n">failure</span><span class="w"></span>
 
-  <span class="n">worker</span><span class="p">:</span>
-    <span class="n">image</span><span class="p">:</span> <span class="n">mconrad</span><span class="o">/</span><span class="n">examplevotingapp_worker</span>
-    <span class="n">networks</span><span class="p">:</span>
-            <span class="o">-</span> <span class="n">frontend</span>
-            <span class="o">-</span> <span class="n">backend</span>
-    <span class="n">depends_on</span><span class="p">:</span>
-            <span class="o">-</span> <span class="n">db</span>
-            <span class="o">-</span> <span class="n">redis</span>
-    <span class="n">deploy</span><span class="p">:</span>
-      <span class="n">mode</span><span class="p">:</span> <span class="n">replicated</span>
-      <span class="n">replicas</span><span class="p">:</span> <span class="mi">1</span>
-      <span class="n">labels</span><span class="p">:</span> <span class="p">[</span><span class="n">APP</span><span class="o">=</span><span class="n">VOTING</span><span class="p">]</span>
-      <span class="n">restart_policy</span><span class="p">:</span>
-        <span class="n">condition</span><span class="p">:</span> <span class="n">on</span><span class="o">-</span><span class="n">failure</span>
-        <span class="n">delay</span><span class="p">:</span> <span class="mi">10</span><span class="n">s</span>
-        <span class="n">max_attempts</span><span class="p">:</span> <span class="mi">3</span>
-        <span class="n">window</span><span class="p">:</span> <span class="mi">120</span><span class="n">s</span>
-      <span class="n">placement</span><span class="p">:</span>
-        <span class="n">constraints</span><span class="p">:</span> <span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">role</span> <span class="o">==</span> <span class="n">manager</span><span class="p">]</span>
+<span class="w">  </span><span class="n">worker</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">image</span><span class="p">:</span><span class="w"> </span><span class="n">mconrad</span><span class="o">/</span><span class="n">examplevotingapp_worker</span><span class="w"></span>
+<span class="w">    </span><span class="n">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">frontend</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">backend</span><span class="w"></span>
+<span class="w">    </span><span class="n">depends_on</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">db</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">redis</span><span class="w"></span>
+<span class="w">    </span><span class="n">deploy</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="n">mode</span><span class="p">:</span><span class="w"> </span><span class="n">replicated</span><span class="w"></span>
+<span class="w">      </span><span class="n">replicas</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">      </span><span class="n">labels</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="n">APP</span><span class="o">=</span><span class="n">VOTING</span><span class="p">]</span><span class="w"></span>
+<span class="w">      </span><span class="n">restart_policy</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">condition</span><span class="p">:</span><span class="w"> </span><span class="n">on</span><span class="o">-</span><span class="n">failure</span><span class="w"></span>
+<span class="w">        </span><span class="n">delay</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="n">s</span><span class="w"></span>
+<span class="w">        </span><span class="n">max_attempts</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w"></span>
+<span class="w">        </span><span class="n">window</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="n">s</span><span class="w"></span>
+<span class="w">      </span><span class="n">placement</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">constraints</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">role</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">manager</span><span class="p">]</span><span class="w"></span>
 
-  <span class="n">visualizer</span><span class="p">:</span>
-    <span class="n">image</span><span class="p">:</span> <span class="n">mconrad</span><span class="o">/</span><span class="n">visualizer</span>
-    <span class="n">ports</span><span class="p">:</span>
-            <span class="o">-</span> <span class="mi">8080</span><span class="p">:</span><span class="mi">8080</span>
-    <span class="n">stop_grace_period</span><span class="p">:</span> <span class="mi">1</span><span class="n">m30s</span>
-    <span class="n">networks</span><span class="p">:</span>
-            <span class="o">-</span> <span class="n">frontend</span>
-    <span class="n">volumes</span><span class="p">:</span>
-            <span class="o">-</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">docker</span><span class="o">.</span><span class="n">sock</span><span class="p">:</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">docker</span><span class="o">.</span><span class="n">sock</span>
-    <span class="n">deploy</span><span class="p">:</span>
-      <span class="n">placement</span><span class="p">:</span>
-        <span class="n">constraints</span><span class="p">:</span> <span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">role</span> <span class="o">==</span> <span class="n">manager</span><span class="p">]</span>
+<span class="w">  </span><span class="n">visualizer</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="n">image</span><span class="p">:</span><span class="w"> </span><span class="n">mconrad</span><span class="o">/</span><span class="n">visualizer</span><span class="w"></span>
+<span class="w">    </span><span class="n">ports</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="mi">8080</span><span class="p">:</span><span class="mi">8080</span><span class="w"></span>
+<span class="w">    </span><span class="n">stop_grace_period</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">m30s</span><span class="w"></span>
+<span class="w">    </span><span class="n">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">frontend</span><span class="w"></span>
+<span class="w">    </span><span class="n">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">docker</span><span class="o">.</span><span class="n">sock</span><span class="p">:</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">docker</span><span class="o">.</span><span class="n">sock</span><span class="w"></span>
+<span class="w">    </span><span class="n">deploy</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="n">placement</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">constraints</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="n">node</span><span class="o">.</span><span class="n">role</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">manager</span><span class="p">]</span><span class="w"></span>
 
-<span class="n">networks</span><span class="p">:</span>
-  <span class="n">frontend</span><span class="p">:</span>
-  <span class="n">backend</span><span class="p">:</span>
+<span class="n">networks</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="n">frontend</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="n">backend</span><span class="p">:</span><span class="w"></span>
 
-<span class="n">volumes</span><span class="p">:</span>
-  <span class="n">db</span><span class="o">-</span><span class="n">data</span><span class="p">:</span>
+<span class="n">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="n">db</span><span class="o">-</span><span class="n">data</span><span class="p">:</span><span class="w"></span>
 </code></pre></div>
 
 <h3 id="inheritance-secrets-and-local-development">Inheritance, Secrets and Local Development</h3>
@@ -1650,30 +1784,30 @@ docker container logs &lt;container-name&gt;
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code><span class="nl">version:</span> <span class="s">&quot;3.1&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nl">version:</span><span class="w"> </span><span class="s">&quot;3.1&quot;</span><span class="w"></span>
 
-<span class="nl">services:</span>
-  <span class="nl">psql:</span>
-    <span class="nl">image:</span> <span class="n">postgres</span>
-    <span class="p">#</span> <span class="n">Defined</span> <span class="n">secrets</span> <span class="n">are</span> <span class="n">only</span> <span class="n">assigned</span> <span class="n">to</span> <span class="n">this</span> <span class="n">container</span>
-    <span class="p">#</span> <span class="n">Longer</span> <span class="n">cmd</span> <span class="n">availble</span> <span class="k">for</span> <span class="n">non</span><span class="o">-</span><span class="n">root</span> <span class="n">user</span> <span class="n">to</span> <span class="k">specify</span> <span class="n">exact</span> <span class="n">permissions</span>
-    <span class="nl">secrets:</span>
-            <span class="o">-</span> <span class="n">psql_user</span>
-            <span class="o">-</span> <span class="n">psql_password</span>
-    <span class="nl">environment:</span>
-      <span class="nl">POSTGRES_PASSWORD_FILE:</span> <span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">secrets</span><span class="o">/</span><span class="n">psql_password</span>
-      <span class="nl">POSTGRES_USER_FILE:</span> <span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">secrets</span><span class="o">/</span><span class="n">psql_user</span>
+<span class="nl">services:</span><span class="w"></span>
+<span class="w">  </span><span class="nl">psql:</span><span class="w"></span>
+<span class="w">    </span><span class="nl">image:</span><span class="w"> </span><span class="n">postgres</span><span class="w"></span>
+<span class="w">    </span><span class="p">#</span><span class="w"> </span><span class="n">Defined</span><span class="w"> </span><span class="n">secrets</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">only</span><span class="w"> </span><span class="n">assigned</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">container</span><span class="w"></span>
+<span class="w">    </span><span class="p">#</span><span class="w"> </span><span class="n">Longer</span><span class="w"> </span><span class="n">cmd</span><span class="w"> </span><span class="n">availble</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">non</span><span class="o">-</span><span class="n">root</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="k">specify</span><span class="w"> </span><span class="n">exact</span><span class="w"> </span><span class="n">permissions</span><span class="w"></span>
+<span class="w">    </span><span class="nl">secrets:</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">psql_user</span><span class="w"></span>
+<span class="w">            </span><span class="o">-</span><span class="w"> </span><span class="n">psql_password</span><span class="w"></span>
+<span class="w">    </span><span class="nl">environment:</span><span class="w"></span>
+<span class="w">      </span><span class="nl">POSTGRES_PASSWORD_FILE:</span><span class="w"> </span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">secrets</span><span class="o">/</span><span class="n">psql_password</span><span class="w"></span>
+<span class="w">      </span><span class="nl">POSTGRES_USER_FILE:</span><span class="w"> </span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">secrets</span><span class="o">/</span><span class="n">psql_user</span><span class="w"></span>
 
-<span class="nl">secrets:</span>
-  <span class="nl">psql_user:</span>
-    <span class="nl">file:</span> <span class="p">.</span><span class="o">/</span><span class="n">psql_user</span><span class="p">.</span><span class="n">txt</span>
-  <span class="nl">psql_password:</span>
-    <span class="nl">file:</span> <span class="p">.</span><span class="o">/</span><span class="n">psql_password</span><span class="p">.</span><span class="n">txt</span>
+<span class="nl">secrets:</span><span class="w"></span>
+<span class="w">  </span><span class="nl">psql_user:</span><span class="w"></span>
+<span class="w">    </span><span class="nl">file:</span><span class="w"> </span><span class="p">.</span><span class="o">/</span><span class="n">psql_user</span><span class="p">.</span><span class="n">txt</span><span class="w"></span>
+<span class="w">  </span><span class="nl">psql_password:</span><span class="w"></span>
+<span class="w">    </span><span class="nl">file:</span><span class="w"> </span><span class="p">.</span><span class="o">/</span><span class="n">psql_password</span><span class="p">.</span><span class="n">txt</span><span class="w"></span>
 
-<span class="p">#</span> <span class="n">Production</span>
-<span class="p">#</span> <span class="nl">secrets:</span>
-<span class="p">#</span>  <span class="n">psql</span><span class="o">-</span><span class="nl">pw:</span>
-<span class="p">#</span>    <span class="nl">external:</span> <span class="n">true</span>
+<span class="p">#</span><span class="w"> </span><span class="n">Production</span><span class="w"></span>
+<span class="p">#</span><span class="w"> </span><span class="nl">secrets:</span><span class="w"></span>
+<span class="p">#</span><span class="w">  </span><span class="n">psql</span><span class="o">-</span><span class="nl">pw:</span><span class="w"></span>
+<span class="p">#</span><span class="w">    </span><span class="nl">external:</span><span class="w"> </span><span class="n">true</span><span class="w"></span>
 </code></pre></div>
 
 <h3 id="swarm-service-updates">Swarm service updates</h3>
@@ -1796,20 +1930,20 @@ docker container logs &lt;container-name&gt;
  elasticsearch:2
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">FROM</span> <span class="s">NGINX:1.13</span>
+<div class="highlight"><pre><span></span><code><span class="k">FROM</span><span class="w"> </span><span class="s">NGINX:1.13</span>
 <span class="c"># Option 1</span>
-<span class="k">HEALTHCHECK</span> curl -f http://localhost/ <span class="o">||</span> false
+<span class="k">HEALTHCHECK</span><span class="w"> </span>curl -f http://localhost/ <span class="o">||</span> false
 <span class="c"># Option 2</span>
-<span class="k">HEALTHCHECK</span> --timeout<span class="o">=</span>2s --interval<span class="o">=</span>3s --retries<span class="o">=</span><span class="m">3</span> <span class="se">\</span>
-  <span class="k">CMD</span> curl -f http://localhost/ <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
+<span class="k">HEALTHCHECK</span><span class="w"> </span>--timeout<span class="o">=</span>2s --interval<span class="o">=</span>3s --retries<span class="o">=</span><span class="m">3</span> <span class="se">\</span>
+  <span class="k">CMD</span><span class="w"> </span>curl -f http://localhost/ <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">FROM</span> <span class="s">postgres</span>
+<div class="highlight"><pre><span></span><code><span class="k">FROM</span><span class="w"> </span><span class="s">postgres</span>
 <span class="c"># Option 1</span>
-<span class="k">HEALTHCHECK</span> curl -f http://localhost/ <span class="o">||</span> false
+<span class="k">HEALTHCHECK</span><span class="w"> </span>curl -f http://localhost/ <span class="o">||</span> false
 <span class="c"># Option 2</span>
-<span class="k">HEALTHCHECK</span> --timeout<span class="o">=</span>3s --interval<span class="o">=</span>3s --retries<span class="o">=</span><span class="m">3</span> <span class="se">\</span>
-  <span class="k">CMD</span> pg_isready -U postgres_user <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
+<span class="k">HEALTHCHECK</span><span class="w"> </span>--timeout<span class="o">=</span>3s --interval<span class="o">=</span>3s --retries<span class="o">=</span><span class="m">3</span> <span class="se">\</span>
+  <span class="k">CMD</span><span class="w"> </span>pg_isready -U postgres_user <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>version: &quot;3.4&quot;
