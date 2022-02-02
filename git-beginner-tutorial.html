@@ -1,14 +1,13 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="" />
-
-  
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="True" name="HandheldFriendly"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="robots"/>
 <style type="text/css">
 pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -58,7 +57,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
 .highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
 </style>
-
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
 div.entry-content {
@@ -110,7 +108,6 @@ div.collapseheader {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 </style>
-
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -120,11 +117,9 @@ MathJax.Hub.Config({
     }
 });
 </script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
 </script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 <script type="text/javascript">
 jQuery(document).ready(function($) {
     $("div.collapseheader").click(function () {
@@ -139,121 +134,79 @@ jQuery(document).ready(function($) {
 });
 });
 </script>
-
-
-
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
-
-
-    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-          href="/theme/pygments/github.min.css">
-
-
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
-
-
-
-
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-
-  
-
-
- 
-
-<meta name="author" content="Mario" />
-<meta name="description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Stashing Undoing GitHub SSH Config General This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever …" />
-<meta name="keywords" content="Git">
-
-
-  <meta property="og:site_name" content="PeliBlog"/>
-  <meta property="og:title" content="Git Beginner Tutorial"/>
-  <meta property="og:description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Stashing Undoing GitHub SSH Config General This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever …"/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="/git-beginner-tutorial.html"/>
-  <meta property="og:type" content="article"/>
-  <meta property="article:published_time" content="2021-12-05 11:51:00+01:00"/>
-  <meta property="article:modified_time" content=""/>
-  <meta property="article:author" content="/author/mario.html">
-  <meta property="article:section" content="cicd"/>
-  <meta property="article:tag" content="Git"/>
-  <meta property="og:image" content="/images/Logo.png">
-
-  <title>PeliBlog &ndash; Git Beginner Tutorial</title>
-
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&amp;family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://maconrad.github.io/theme/stylesheet/style.min.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/pygments/github.min.css" id="pygments-light-theme" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/brands.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/solid.css" rel="stylesheet" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<meta content="Mario" name="author"/>
+<meta content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Stashing Undoing GitHub SSH Config General This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever …" name="description"/>
+<meta content="Git" name="keywords"/>
+<meta content="PeliBlog" property="og:site_name">
+<meta content="Git Beginner Tutorial" property="og:title"/>
+<meta content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Stashing Undoing GitHub SSH Config General This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever …" property="og:description"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="https://maconrad.github.io/git-beginner-tutorial.html" property="og:url"/>
+<meta content="article" property="og:type"/>
+<meta content="2021-12-05 11:51:00+01:00" property="article:published_time"/>
+<meta content="" property="article:modified_time"/>
+<meta content="https://maconrad.github.io/author/mario.html" property="article:author"/>
+<meta content="cicd" property="article:section">
+<meta content="Git" property="article:tag"/>
+<meta content="/images/Logo.png" property="og:image"/>
+<title>PeliBlog – Git Beginner Tutorial</title>
+</meta></meta><link href="https://maconrad.github.io/git-beginner-tutorial.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "PeliBlog", "item": "https://maconrad.github.io"}, {"@type": "ListItem", "position": 2, "name": "Git beginner tutorial", "item": "https://maconrad.github.io/git-beginner-tutorial.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Mario"}, "publisher": {"@type": "Organization", "name": "PeliBlog"}, "headline": "Git Beginner Tutorial", "about": "cicd", "datePublished": "2021-12-05 11:51"}</script></head>
 <body class="light-theme">
-  <aside>
-    <div>
-      <a href="/">
-        <img src="/images/Logo.png" alt="" title="">
-      </a>
-
-      <h1>
-        <a href="/"></a>
-      </h1>
-
-
-
-      <nav>
-        <ul class="list">
-
-
-              <li>
-                <a target="_self"
-                   href="/pages/about.html#about">
+<aside>
+<div>
+<a href="https://maconrad.github.io/">
+<img alt="" src="/images/Logo.png" title=""/>
+</a>
+<h1>
+<a href="https://maconrad.github.io/"></a>
+</h1>
+<nav>
+<ul class="list">
+<li>
+<a href="https://maconrad.github.io/pages/about.html#about" target="_self">
                   About
                 </a>
-              </li>
-
-        </ul>
-      </nav>
-
-      <ul class="social">
-          <li>
-            <a  class="sc-You can add links in your config file" href="#" target="_blank">
-              <i class="fab fa-You can add links in your config file"></i>
-            </a>
-          </li>
-          <li>
-            <a  class="sc-Another social link" href="#" target="_blank">
-              <i class="fab fa-Another social link"></i>
-            </a>
-          </li>
-      </ul>
-    </div>
-
-  </aside>
-  <main>
-
-    <nav>
-      <a href="/">Home</a>
-
-      <a href="/archives.html">Archives</a>
-      <a href="/categories.html">Categories</a>
-      <a href="/tags.html">Tags</a>
-
-
-    </nav>
-
+</li>
+</ul>
+</nav>
+<ul class="social">
+<li>
+<a class="sc-You can add links in your config file" href="#" target="_blank">
+<i class="fab fa-You can add links in your config file"></i>
+</a>
+</li>
+<li>
+<a class="sc-Another social link" href="#" target="_blank">
+<i class="fab fa-Another social link"></i>
+</a>
+</li>
+</ul>
+</div>
+</aside>
+<main>
+<nav>
+<a href="https://maconrad.github.io/">Home</a>
+<a href="/archives.html">Archives</a>
+<a href="/categories.html">Categories</a>
+<a href="/tags.html">Tags</a>
+</nav>
 <article class="single">
-  <header>
-      
-    <h1 id="git-beginner-tutorial">Git Beginner Tutorial</h1>
-    <p>
-      Posted on So 05 Dezember 2021 in <a href="/category/cicd.html">cicd</a>
-
-    </p>
-  </header>
-
-
-  <div>
-    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<header>
+<h1 id="git-beginner-tutorial">Git Beginner Tutorial</h1>
+<p>
+      Posted on So 05 Dezember 2021 in <a href="https://maconrad.github.io/category/cicd.html">cicd</a>
+</p>
+</header>
+<div>
+<div class="toc"><span class="toctitle">Table of contents:</span><ul>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#git">Git</a><ul>
 <li><a href="#intro">Intro</a></li>
@@ -330,14 +283,14 @@ jQuery(document).ready(function($) {
 </ul>
 </li>
 </ul>
-<p><img src="../../images/git/1_GitOverview.png" alt="Git Overview" width="500"/>
-<img src="../../images/git/2_before_git.png" alt="Before Git" width="500"/>
-<img src="../../images/git/3_checkpoints.png" alt="Checkpoints" width="500"/>
-<img src="../../images/git/4_revert.png" alt="Revert and Branch off" width="500"/>
-<img src="../../images/git/5_combine.png" alt="Combine work" width="500"/>
-<img src="../../images/git/6_differentRepos.png" alt="Different Repos" width="500"/>
-<img src="../../images/git/7_save_vs_commit.png" alt="Save vs Commit" width="500"/>
-<img src="../../images/git/8_staging_area.png" alt="Staging Area" width="500"/></p>
+<p><img alt="Git Overview" src="../../images/git/1_GitOverview.png" width="500">
+<img alt="Before Git" src="../../images/git/2_before_git.png" width="500"/>
+<img alt="Checkpoints" src="../../images/git/3_checkpoints.png" width="500"/>
+<img alt="Revert and Branch off" src="../../images/git/4_revert.png" width="500"/>
+<img alt="Combine work" src="../../images/git/5_combine.png" width="500"/>
+<img alt="Different Repos" src="../../images/git/6_differentRepos.png" width="500"/>
+<img alt="Save vs Commit" src="../../images/git/7_save_vs_commit.png" width="500"/>
+<img alt="Staging Area" src="../../images/git/8_staging_area.png" width="500"/></img></p>
 <h2 id="install-and-config">Install and config</h2>
 <ul>
 <li>Install Git-SCM<ul>
@@ -476,14 +429,12 @@ m.txt
 .vscode/
 *.log
 </code></pre></div>
-
 <h2 id="commit-details">Commit Details</h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># git log --oneline</span>
 <span class="c1"># before git push to remote </span>
 a6225db <span class="o">(</span>HEAD -&gt; main<span class="o">)</span> 2nd commit
 936281f <span class="o">(</span>origin/main, origin/HEAD<span class="o">)</span> 1st commit
 </code></pre></div>
-
 <h2 id="branching">Branching</h2>
 <ul>
 <li>General<ul>
@@ -524,31 +475,31 @@ a6225db <span class="o">(</span>HEAD -&gt; main<span class="o">)</span> 2nd comm
 <td>Show list of branches</td>
 </tr>
 <tr>
-<td>git branch &lt;branch-name></td>
+<td>git branch &lt;branch-name&gt;</td>
 <td>Create branch but do not switch (based upon current HEAD)</td>
 </tr>
 <tr>
-<td>git switch &lt;branch-name></td>
+<td>git switch &lt;branch-name&gt;</td>
 <td>Swtich to branch (older cmd checkout)</td>
 </tr>
 <tr>
-<td>git switch -c &lt;branch-name></td>
+<td>git switch -c &lt;branch-name&gt;</td>
 <td>Create and swtich to branch (older cmd checkout -b)</td>
 </tr>
 <tr>
-<td>git checkout &lt;branch-name></td>
+<td>git checkout &lt;branch-name&gt;</td>
 <td>Swtich to branch</td>
 </tr>
 <tr>
-<td>git checkout -b &lt;branch-name></td>
+<td>git checkout -b &lt;branch-name&gt;</td>
 <td>Creates a branch and switche to it</td>
 </tr>
 <tr>
-<td>git branch -d &lt;branch-name></td>
+<td>git branch -d &lt;branch-name&gt;</td>
 <td>Delete branch xy if fully merged (-D otherwise)</td>
 </tr>
 <tr>
-<td>git branch -m &lt;branch-name></td>
+<td>git branch -m &lt;branch-name&gt;</td>
 <td>Move/rename branch xy (need to be in that branch)</td>
 </tr>
 <tr>
@@ -582,11 +533,11 @@ a6225db <span class="o">(</span>HEAD -&gt; main<span class="o">)</span> 2nd comm
 </tbody>
 </table>
 <p>*WIP = Work in Progress</p>
-<p><img src="../../images/git/9_commit_hash_parent.png" alt="Commit hashes" width="500"/>
-<img src="../../images/git/10_branching.png" alt="Branching" width="500"/>
-<img src="../../images/git/11_merging.png" alt="Merging" width="500"/>
-<img src="../../images/git/12_featureBranching.png" alt="Feature Branching" width="500"/>
-<img src="../../images/git/13_head_pointer.png" alt="HEAD Pointer" width="500"/></p>
+<p><img alt="Commit hashes" src="../../images/git/9_commit_hash_parent.png" width="500"/>
+<img alt="Branching" src="../../images/git/10_branching.png" width="500"/>
+<img alt="Merging" src="../../images/git/11_merging.png" width="500"/>
+<img alt="Feature Branching" src="../../images/git/12_featureBranching.png" width="500"/>
+<img alt="HEAD Pointer" src="../../images/git/13_head_pointer.png" width="500"/></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Common Base for develop, feat/2 (and also feat/1) is 662eb4d</span>
 <span class="c1"># feat/1 pointer remains at 662eb4d</span>
 <span class="c1"># After 662eb4d, 1 commit on develop branch and 2 commits ond feat2</span>
@@ -604,7 +555,6 @@ a6225db <span class="o">(</span>HEAD -&gt; main<span class="o">)</span> 2nd comm
 * 4fa082c <span class="o">(</span>master<span class="o">)</span> master - 2nd commit
 * <span class="m">1765596</span> iniital commit
 </code></pre></div>
-
 <h2 id="merging">Merging</h2>
 <ul>
 <li>General<ul>
@@ -648,9 +598,9 @@ a6225db <span class="o">(</span>HEAD -&gt; main<span class="o">)</span> 2nd comm
 </tr>
 </tbody>
 </table>
-<p><img src="../../images/git/15_ff_merge.png" alt="Fast Fwd merge" width="500"/>
-<img src="../../images/git/16_merge_commit.png" alt="Merge commit" width="500"/>
-<img src="../../images/git/17_conflict.png" alt="Conflict commit" width="180"/></p>
+<p><img alt="Fast Fwd merge" src="../../images/git/15_ff_merge.png" width="500"/>
+<img alt="Merge commit" src="../../images/git/16_merge_commit.png" width="500"/>
+<img alt="Conflict commit" src="../../images/git/17_conflict.png" width="180"/></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Merge commit shows the two parents!</span>
 commit 2a4d4567ccd2dd7502590add59b758fd0f740bc5 <span class="o">(</span>HEAD -&gt; master<span class="o">)</span>
 Merge: ccd0f35 f6356f7
@@ -659,7 +609,6 @@ Date:   Fri Dec <span class="m">24</span> <span class="m">09</span>:28:38 <span 
 
     Merge commit message
 </code></pre></div>
-
 <h2 id="diff">Diff</h2>
 <ul>
 <li>General<ul>
@@ -768,20 +717,19 @@ index 54ca763..a130563 <span class="m">100644</span>
  <span class="o">{</span>%- endmacro %<span class="o">}</span>
 
 +<span class="o">{</span><span class="c1"># Some comment line 27#}</span>
- <span class="o">{</span>% macro label<span class="o">(</span>content, <span class="nv">type</span><span class="o">=</span><span class="s1">&#39;warning&#39;</span><span class="o">)</span> -%<span class="o">}</span>
-     &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;label label-{{ type }}&quot;</span>&gt;<span class="o">{{</span> content<span class="p">|</span>safe <span class="o">}}</span>&lt;/span&gt;
+ <span class="o">{</span>% macro label<span class="o">(</span>content, <span class="nv">type</span><span class="o">=</span><span class="s1">'warning'</span><span class="o">)</span> -%<span class="o">}</span>
+     &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">"label label-{{ type }}"</span>&gt;<span class="o">{{</span> content<span class="p">|</span>safe <span class="o">}}</span>&lt;/span&gt;
  <span class="o">{</span>%- endmacro %<span class="o">}</span>
 @@ -122,7 +123,7 @@
-            <span class="o">{{</span> include_if<span class="o">(</span><span class="s1">&#39;data-src=&quot;%s&quot;&#39;</span><span class="p">|</span>format<span class="o">(</span>data_src<span class="o">)</span>,data_src<span class="o">)</span> <span class="o">}}</span>
-            <span class="o">{{</span> include_if<span class="o">(</span><span class="s1">&#39;src=&quot;%s&quot;&#39;</span><span class="p">|</span>format<span class="o">(</span>src<span class="o">)</span>,src<span class="o">)</span> <span class="o">}}</span>&gt;
+            <span class="o">{{</span> include_if<span class="o">(</span><span class="s1">'data-src="%s"'</span><span class="p">|</span>format<span class="o">(</span>data_src<span class="o">)</span>,data_src<span class="o">)</span> <span class="o">}}</span>
+            <span class="o">{{</span> include_if<span class="o">(</span><span class="s1">'src="%s"'</span><span class="p">|</span>format<span class="o">(</span>src<span class="o">)</span>,src<span class="o">)</span> <span class="o">}}</span>&gt;
           &lt;/a&gt;
--         &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;media-body&quot;</span>&gt;
-+         &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;media-body-new&quot;</span>&gt;
-            &lt;h4 <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;media-heading&quot;</span>&gt;<span class="o">{{</span> heading <span class="o">}}</span>&lt;/h4&gt;
+-         &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"media-body"</span>&gt;
++         &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"media-body-new"</span>&gt;
+            &lt;h4 <span class="nv">class</span><span class="o">=</span><span class="s2">"media-heading"</span>&gt;<span class="o">{{</span> heading <span class="o">}}</span>&lt;/h4&gt;
             <span class="o">{{</span> description <span class="o">}}</span>
           &lt;/div&gt;
 </code></pre></div>
-
 <p>Comments:</p>
 <ul>
 <li>Line#1: Shows which files are being compared</li>
@@ -799,11 +747,11 @@ index 54ca763..a130563 <span class="m">100644</span>
 <li>Ling#17: Line that begins with - comes from File A (red color does NOT equal deleted in all situations)</li>
 <li>Line#18: Line that begins with + comes from File B (green color does NOT equal added in all situations)</li>
 </ul>
-<p><img src="../../images/git/18_diff_1.png" alt="Diff files" width="500"/>
-<img src="../../images/git/19_diff_2.png" alt="Diff simplified output" width="500"/>
-<img src="../../images/git/20_diff_3.png" alt="Diff at at read" width="500"/>
-<img src="../../images/git/21_diff_branches.png" alt="Diff branches" width="500"/>
-<img src="../../images/git/22_diff_common_ancestor.png" alt="Diff branches to common ancestor" width="500"/></p>
+<p><img alt="Diff files" src="../../images/git/18_diff_1.png" width="500"/>
+<img alt="Diff simplified output" src="../../images/git/19_diff_2.png" width="500"/>
+<img alt="Diff at at read" src="../../images/git/20_diff_3.png" width="500"/>
+<img alt="Diff branches" src="../../images/git/21_diff_branches.png" width="500"/>
+<img alt="Diff branches to common ancestor" src="../../images/git/22_diff_common_ancestor.png" width="500"/></p>
 <h2 id="stashing">Stashing</h2>
 <ul>
 <li>General<ul>
@@ -883,9 +831,9 @@ index 54ca763..a130563 <span class="m">100644</span>
 </tbody>
 </table>
 <p>*useful when applying to multiple branches</p>
-<p><img src="../../images/git/23_stashing_1.png" alt="Before Stashing" width="500"/>
-<img src="../../images/git/24_stashing_2.png" alt="Stashing away before switching branch" width="500"/>
-<img src="../../images/git/25_stashing_pop.png" alt="Undo stashes after swtiching back" width="500"/></p>
+<p><img alt="Before Stashing" src="../../images/git/23_stashing_1.png" width="500"/>
+<img alt="Stashing away before switching branch" src="../../images/git/24_stashing_2.png" width="500"/>
+<img alt="Undo stashes after swtiching back" src="../../images/git/25_stashing_pop.png" width="500"/></p>
 <h2 id="undoing">Undoing</h2>
 <ul>
 <li>General<ul>
@@ -912,11 +860,11 @@ index 54ca763..a130563 <span class="m">100644</span>
 <li><strong>Detached HEAD</strong><ul>
 <li>Normally HEAD points to a branch reference (not a particular commmit). Branch reference then points to commit.</li>
 <li>If new commit, branch reference gets updated to point to new commit. HEAD still points to branch reference.</li>
-<li>Detached Head state results from time traveling back to a particular commit-id (git checkout <commit-id/>), does NOT happen e.g. if checking out a particular file at a certain commit ID, as only content of that file is changed. </li>
+<li>Detached Head state results from time traveling back to a particular commit-id (git checkout <commit-id></commit-id>), does NOT happen e.g. if checking out a particular file at a certain commit ID, as only content of that file is changed. </li>
 <li>Options if in detached HEAD state:<ul>
 <li>Stay in detached HEAD to view content of old commit, do experimantel changes</li>
 <li>Go back to last branch (git switch -)</li>
-<li>Create a new branch to make changes and save them (git switch -c &lt;new_branch_name>)<ul>
+<li>Create a new branch to make changes and save them (git switch -c &lt;new_branch_name&gt;)<ul>
 <li>Remember: Branch is based upon HEAD Pointer. So branch gets created at where HEAD points at that moment.</li>
 </ul>
 </li>
@@ -1071,18 +1019,18 @@ index 54ca763..a130563 <span class="m">100644</span>
 </tbody>
 </table>
 <p>*Results in detached HEAD state.</p>
-<p><img src="../../images/git/14_reset_options.png" alt="Reset options" width="500"/>
-<img src="../../images/git/26_no_detached_head.png" alt="Regular1" width="500"/>
-<img src="../../images/git/27_no_detached_head_2.png" alt="Regular2" width="500"/>
-<img src="../../images/git/28_no_detached_head_3.png" alt="Regular3" width="500"/>
-<img src="../../images/git/29_no_detached_head_4.png" alt="Regular4" width="500"/>
-<img src="../../images/git/30_detached_head_1.png" alt="Detached Head" width="500"/>
-<img src="../../images/git/31_head_parent.png" alt="Head Parent Grandparent" width="500"/>
-<img src="../../images/git/32_git_reset_mixed.png" alt="Git reset mixed" width="500"/>
-<img src="../../images/git/33_git_reset_mixed_after.png" alt="HGit reset mixed after" width="500"/>
-<img src="../../images/git/33_git_reset_hard.png" alt="Git reset hard" width="500"/>
-<img src="../../images/git/34_reset_vs_rever_1.png" alt="Reset vs Revert1" width="500"/>
-<img src="../../images/git/35_reset_vs_revert_2.png" alt="Reset vs Revert2" width="500"/></p>
+<p><img alt="Reset options" src="../../images/git/14_reset_options.png" width="500"/>
+<img alt="Regular1" src="../../images/git/26_no_detached_head.png" width="500"/>
+<img alt="Regular2" src="../../images/git/27_no_detached_head_2.png" width="500"/>
+<img alt="Regular3" src="../../images/git/28_no_detached_head_3.png" width="500"/>
+<img alt="Regular4" src="../../images/git/29_no_detached_head_4.png" width="500"/>
+<img alt="Detached Head" src="../../images/git/30_detached_head_1.png" width="500"/>
+<img alt="Head Parent Grandparent" src="../../images/git/31_head_parent.png" width="500"/>
+<img alt="Git reset mixed" src="../../images/git/32_git_reset_mixed.png" width="500"/>
+<img alt="HGit reset mixed after" src="../../images/git/33_git_reset_mixed_after.png" width="500"/>
+<img alt="Git reset hard" src="../../images/git/33_git_reset_hard.png" width="500"/>
+<img alt="Reset vs Revert1" src="../../images/git/34_reset_vs_rever_1.png" width="500"/>
+<img alt="Reset vs Revert2" src="../../images/git/35_reset_vs_revert_2.png" width="500"/></p>
 <h1 id="github">GitHub</h1>
 <ul>
 <li>Used for Collaboration / Open Source Projects / Backup / etc.</li>
@@ -1093,7 +1041,7 @@ index 54ca763..a130563 <span class="m">100644</span>
 <li>Setup SSH Keys</li>
 <li>Add to github</li>
 </ul>
-<div class="highlight"><pre><span></span><code>ssh-keygen -t ed25519 -C <span class="s2">&quot;id_github&quot;</span>
+<div class="highlight"><pre><span></span><code>ssh-keygen -t ed25519 -C <span class="s2">"id_github"</span>
 
 <span class="c1">#~/.ssh/config</span>
 Host git.netcloud.local
@@ -1106,7 +1054,6 @@ Host github.com
  AddKeysToAgent yes
  IdentityFile ~/.ssh/id_github
 </code></pre></div>
-
 <h2 id="general">General</h2>
 <ul>
 <li><code>git clone</code>, <code>git fetch</code>, <code>git pull</code>, remote Tracking Branches</li>
@@ -1177,7 +1124,7 @@ Host github.com
 </thead>
 <tbody>
 <tr>
-<td>git clone <url/></td>
+<td>git clone <url></url></td>
 <td>Copy repo to local machine including git history</td>
 </tr>
 <tr>
@@ -1185,7 +1132,7 @@ Host github.com
 <td>Verbose, list remotes</td>
 </tr>
 <tr>
-<td>git remote add <name/> <url/></td>
+<td>git remote add <name></name> <url></url></td>
 <td>Create/add new remote</td>
 </tr>
 <tr>
@@ -1201,7 +1148,7 @@ Host github.com
 <td>Remove the remote</td>
 </tr>
 <tr>
-<td>git push <remote/> <local-branch/></td>
+<td>git push <remote></remote> <local-branch></local-branch></td>
 <td>Remote and LOCAL branch</td>
 </tr>
 <tr>
@@ -1221,7 +1168,7 @@ Host github.com
 <td>Shortcut if single upstream, pushes active branch to e.g. origin</td>
 </tr>
 <tr>
-<td>git push <remote/> <local-branch/>:<remote-branch/></td>
+<td>git push <remote></remote> <local-branch></local-branch>:<remote-branch></remote-branch></td>
 <td>Push local branch to different remote branch</td>
 </tr>
 <tr>
@@ -1277,11 +1224,11 @@ Host github.com
 <td>Old command that created a new branch and did setup tracking</td>
 </tr>
 <tr>
-<td>git fetch <remote/></td>
+<td>git fetch <remote></remote></td>
 <td>Fetch branches and history, but dont integrate into workdir</td>
 </tr>
 <tr>
-<td>git fetch <remote/> <branch/></td>
+<td>git fetch <remote></remote> <branch></branch></td>
 <td>Fetch udpates for a specific branch</td>
 </tr>
 <tr>
@@ -1297,7 +1244,7 @@ Host github.com
 <td>See what has changed remotely without messing up local workdir</td>
 </tr>
 <tr>
-<td>git pull <remote/> <branch/></td>
+<td>git pull <remote></remote> <branch></branch></td>
 <td>Get + Merge changes from branch xy into current branch</td>
 </tr>
 <tr>
@@ -1306,15 +1253,15 @@ Host github.com
 </tr>
 </tbody>
 </table>
-<p><img src="../../images/git/36_github_clone.png" alt="Github Local Branch" width="500"/>
-<img src="../../images/git/37_github_remote_tracking_branch.png" alt="Github Remote tracking Branch" width="500"/>
-<img src="../../images/git/37_github_remote_branch_not_updated_by_local_commit.png" alt="Github Remote tracking Branch2" width="500"/>
-<img src="../../images/git/38_remote_tracking_default.png" alt="Main tracked by default on clone" width="500"/>
-<img src="../../images/git/39_remote_tracking_switch.png" alt="Git switch to create local from remote and track" width="500"/>
-<img src="../../images/git/39_git_fetch_pull.png" alt="Git fetch pull overview" width="500"/>
-<img src="../../images/git/40_git_fetch_remote_changes.png" alt="Git fetch" width="500"/>
-<img src="../../images/git/41_git_pull_ff_merge.png" alt="Git fetch fast forward merge" width="500"/>
-<img src="../../images/git/42_git_pull_vs_fetch.png" alt="Git fetch vs pull" width="500"/></p>
+<p><img alt="Github Local Branch" src="../../images/git/36_github_clone.png" width="500"/>
+<img alt="Github Remote tracking Branch" src="../../images/git/37_github_remote_tracking_branch.png" width="500"/>
+<img alt="Github Remote tracking Branch2" src="../../images/git/37_github_remote_branch_not_updated_by_local_commit.png" width="500"/>
+<img alt="Main tracked by default on clone" src="../../images/git/38_remote_tracking_default.png" width="500"/>
+<img alt="Git switch to create local from remote and track" src="../../images/git/39_remote_tracking_switch.png" width="500"/>
+<img alt="Git fetch pull overview" src="../../images/git/39_git_fetch_pull.png" width="500"/>
+<img alt="Git fetch" src="../../images/git/40_git_fetch_remote_changes.png" width="500"/>
+<img alt="Git fetch fast forward merge" src="../../images/git/41_git_pull_ff_merge.png" width="500"/>
+<img alt="Git fetch vs pull" src="../../images/git/42_git_pull_vs_fetch.png" width="500"/></p>
 <h2 id="this-and-that">This and that</h2>
 <ul>
 <li>Public and Private<ul>
@@ -1371,7 +1318,7 @@ Host github.com
 </ul>
 </li>
 </ul>
-<p><img src="../../images/git/42_gitlab_patterns.png" alt="Gitlab Referencing Pattenrns" width="500"/></p>
+<p><img alt="Gitlab Referencing Pattenrns" src="../../images/git/42_gitlab_patterns.png" width="500"/></p>
 <h1 id="collaboration-workflows">Collaboration Workflows</h1>
 <ul>
 <li>Pull Request (PR)<ul>
@@ -1456,39 +1403,28 @@ Host github.com
 <li>See: <a href="https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab">Collapsible MD in Github</a></li>
 <li>See: <a href="https://markdown-it.github.io/">Mardown Ref Github.io</a></li>
 </ul>
-  </div>
-  <div class="tag-cloud">
-    <p>
-      <a href="/tag/git.html">Git</a>
-    </p>
-  </div>
-
-
-
-
-
+</div>
+<div class="tag-cloud">
+<p>
+<a href="https://maconrad.github.io/tag/git.html">Git</a>
+</p>
+</div>
 </article>
-
-    <footer>
-<p>&copy; 2021 </p>
+<footer>
+<p>© 2021 </p>
 <p>
 Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
-</p>    </footer>
-  </main>
-
-
-
-
+</p> </footer>
+</main>
 <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " PeliBlog ",
-  "url" : "",
+  "url" : "https://maconrad.github.io",
   "image": "/images/Logo.png",
   "description": ""
 }
 </script>
-
 </body>
 </html>

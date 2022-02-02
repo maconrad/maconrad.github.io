@@ -1,14 +1,13 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="" />
-
-  
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="True" name="HandheldFriendly"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="robots"/>
 <style type="text/css">
 pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -58,7 +57,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
 .highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
 </style>
-
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
 div.entry-content {
@@ -110,7 +108,6 @@ div.collapseheader {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 </style>
-
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -120,11 +117,9 @@ MathJax.Hub.Config({
     }
 });
 </script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
 </script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 <script type="text/javascript">
 jQuery(document).ready(function($) {
     $("div.collapseheader").click(function () {
@@ -139,123 +134,81 @@ jQuery(document).ready(function($) {
 });
 });
 </script>
-
-
-
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
-
-
-    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-          href="/theme/pygments/github.min.css">
-
-
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
-
-
-
-
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-
-  
-
-
- 
-
-<meta name="author" content="Mario" />
-<meta name="description" content="Table of contents: Intro Before Factory Method With Factory Method Factory Class Abstract Factory Class Reference Intro Factory basically is any entity that takes care of creating objects. Similar to builder, but with the difference that it is not piecewise/step-by-step but wholesale. Why and when is that needed? When …" />
-<meta name="keywords" content="python, patterns, CREATIONAL">
-
-
-  <meta property="og:site_name" content="PeliBlog"/>
-  <meta property="og:title" content="Factories"/>
-  <meta property="og:description" content="Table of contents: Intro Before Factory Method With Factory Method Factory Class Abstract Factory Class Reference Intro Factory basically is any entity that takes care of creating objects. Similar to builder, but with the difference that it is not piecewise/step-by-step but wholesale. Why and when is that needed? When …"/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="/factories.html"/>
-  <meta property="og:type" content="article"/>
-  <meta property="article:published_time" content="2021-11-20 11:51:00+01:00"/>
-  <meta property="article:modified_time" content=""/>
-  <meta property="article:author" content="/author/mario.html">
-  <meta property="article:section" content="Patterns"/>
-  <meta property="article:tag" content="python"/>
-  <meta property="article:tag" content="patterns"/>
-  <meta property="article:tag" content="CREATIONAL"/>
-  <meta property="og:image" content="/images/Logo.png">
-
-  <title>PeliBlog &ndash; Factories</title>
-
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&amp;family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://maconrad.github.io/theme/stylesheet/style.min.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/pygments/github.min.css" id="pygments-light-theme" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/brands.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/solid.css" rel="stylesheet" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<meta content="Mario" name="author"/>
+<meta content="Table of contents: Intro Before Factory Method With Factory Method Factory Class Abstract Factory Class Reference Intro Factory basically is any entity that takes care of creating objects. Similar to builder, but with the difference that it is not piecewise/step-by-step but wholesale. Why and when is that needed? When …" name="description"/>
+<meta content="python, patterns, CREATIONAL" name="keywords"/>
+<meta content="PeliBlog" property="og:site_name">
+<meta content="Factories" property="og:title"/>
+<meta content="Table of contents: Intro Before Factory Method With Factory Method Factory Class Abstract Factory Class Reference Intro Factory basically is any entity that takes care of creating objects. Similar to builder, but with the difference that it is not piecewise/step-by-step but wholesale. Why and when is that needed? When …" property="og:description"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="https://maconrad.github.io/factories.html" property="og:url"/>
+<meta content="article" property="og:type"/>
+<meta content="2021-11-20 11:51:00+01:00" property="article:published_time"/>
+<meta content="" property="article:modified_time"/>
+<meta content="https://maconrad.github.io/author/mario.html" property="article:author"/>
+<meta content="Patterns" property="article:section">
+<meta content="python" property="article:tag"/>
+<meta content="patterns" property="article:tag"/>
+<meta content="CREATIONAL" property="article:tag"/>
+<meta content="/images/Logo.png" property="og:image"/>
+<title>PeliBlog – Factories</title>
+</meta></meta><link href="https://maconrad.github.io/factories.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "PeliBlog", "item": "https://maconrad.github.io"}, {"@type": "ListItem", "position": 2, "name": "Factories", "item": "https://maconrad.github.io/factories.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Mario"}, "publisher": {"@type": "Organization", "name": "PeliBlog"}, "headline": "Factories", "about": "Patterns", "datePublished": "2021-11-20 11:51"}</script></head>
 <body class="light-theme">
-  <aside>
-    <div>
-      <a href="/">
-        <img src="/images/Logo.png" alt="" title="">
-      </a>
-
-      <h1>
-        <a href="/"></a>
-      </h1>
-
-
-
-      <nav>
-        <ul class="list">
-
-
-              <li>
-                <a target="_self"
-                   href="/pages/about.html#about">
+<aside>
+<div>
+<a href="https://maconrad.github.io/">
+<img alt="" src="/images/Logo.png" title=""/>
+</a>
+<h1>
+<a href="https://maconrad.github.io/"></a>
+</h1>
+<nav>
+<ul class="list">
+<li>
+<a href="https://maconrad.github.io/pages/about.html#about" target="_self">
                   About
                 </a>
-              </li>
-
-        </ul>
-      </nav>
-
-      <ul class="social">
-          <li>
-            <a  class="sc-You can add links in your config file" href="#" target="_blank">
-              <i class="fab fa-You can add links in your config file"></i>
-            </a>
-          </li>
-          <li>
-            <a  class="sc-Another social link" href="#" target="_blank">
-              <i class="fab fa-Another social link"></i>
-            </a>
-          </li>
-      </ul>
-    </div>
-
-  </aside>
-  <main>
-
-    <nav>
-      <a href="/">Home</a>
-
-      <a href="/archives.html">Archives</a>
-      <a href="/categories.html">Categories</a>
-      <a href="/tags.html">Tags</a>
-
-
-    </nav>
-
+</li>
+</ul>
+</nav>
+<ul class="social">
+<li>
+<a class="sc-You can add links in your config file" href="#" target="_blank">
+<i class="fab fa-You can add links in your config file"></i>
+</a>
+</li>
+<li>
+<a class="sc-Another social link" href="#" target="_blank">
+<i class="fab fa-Another social link"></i>
+</a>
+</li>
+</ul>
+</div>
+</aside>
+<main>
+<nav>
+<a href="https://maconrad.github.io/">Home</a>
+<a href="/archives.html">Archives</a>
+<a href="/categories.html">Categories</a>
+<a href="/tags.html">Tags</a>
+</nav>
 <article class="single">
-  <header>
-      
-    <h1 id="factories">Factories</h1>
-    <p>
-      Posted on Sa 20 November 2021 in <a href="/category/patterns.html">Patterns</a>
-
-    </p>
-  </header>
-
-
-  <div>
-    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<header>
+<h1 id="factories">Factories</h1>
+<p>
+      Posted on Sa 20 November 2021 in <a href="https://maconrad.github.io/category/patterns.html">Patterns</a>
+</p>
+</header>
+<div>
+<div class="toc"><span class="toctitle">Table of contents:</span><ul>
 <li><a href="#intro">Intro</a></li>
 <li><a href="#before-factory-method">Before Factory Method</a></li>
 <li><a href="#with-factory-method">With Factory Method</a></li>
@@ -332,7 +285,7 @@ jQuery(document).ready(function($) {
 <li>Note: No error handling is on purpose to keep code as lean as possible and still understand pattern. </li>
 </ul>
 <details>
-  <summary>Before Factory Method Code...</summary>
+<summary>Before Factory Method Code...</summary>
 
   ```python
 
@@ -343,7 +296,7 @@ jQuery(document).ready(function($) {
       RGB = 2
 
   class Color:
-      def __init__(self, a, b, c, d=None, type=ColorType.RGB) -> None:
+      def __init__(self, a, b, c, d=None, type=ColorType.RGB) -&gt; None:
 
           if type == ColorType.RGB:
               self.r = a
@@ -356,7 +309,7 @@ jQuery(document).ready(function($) {
           else:
               raise NotImplementedError
 
-      def __str__(self) -> str:
+      def __str__(self) -&gt; str:
           return f'Colorcode RGB: {self.r}/{self.g}/{self.b}'
 
   if __name__ == '__main__':
@@ -366,7 +319,6 @@ jQuery(document).ready(function($) {
 
   ```
 </details>
-
 <h2 id="with-factory-method">With Factory Method</h2>
 <ul>
 <li>Initializer can be like here where object ist just initiliazed with "nothing/all zeros/some default"</li>
@@ -387,7 +339,7 @@ jQuery(document).ready(function($) {
         <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
 
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Colorcode RGB: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">'Colorcode RGB: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="si">}</span><span class="s1">'</span>
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">make_RGB_color</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
@@ -406,12 +358,11 @@ jQuery(document).ready(function($) {
         <span class="k">return</span> <span class="n">color</span>
 
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">red1</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">make_RGB_color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
     <span class="n">red2</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">make_CMYK_color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">red1</span><span class="p">,</span> <span class="s1">&#39; -- &#39;</span><span class="p">,</span> <span class="n">red2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">red1</span><span class="p">,</span> <span class="s1">' -- '</span><span class="p">,</span> <span class="n">red2</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="factory-class">Factory Class</h2>
 <ul>
 <li>Single Responsibility<ul>
@@ -449,13 +400,13 @@ jQuery(document).ready(function($) {
 
 <span class="k">class</span> <span class="nc">Color</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="sd">&quot;&quot;&quot; Use ColorFactory to intantiate object&quot;&quot;&quot;</span>
+        <span class="sd">""" Use ColorFactory to intantiate object"""</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
 
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Colorcode RGB: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">'Colorcode RGB: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="si">}</span><span class="s1">'</span>
 
 
     <span class="k">class</span> <span class="nc">ColorFactory</span><span class="p">:</span>
@@ -475,12 +426,11 @@ jQuery(document).ready(function($) {
 
     <span class="n">colorfactory</span> <span class="o">=</span> <span class="n">ColorFactory</span><span class="p">()</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="n">red1</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">colorfactory</span><span class="o">.</span><span class="n">make_RGB_color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
     <span class="n">red2</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">colorfactory</span><span class="o">.</span><span class="n">make_CMYK_color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">red1</span><span class="p">,</span> <span class="s1">&#39; -- &#39;</span><span class="p">,</span> <span class="n">red2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">red1</span><span class="p">,</span> <span class="s1">' -- '</span><span class="p">,</span> <span class="n">red2</span><span class="p">)</span>
 </code></pre></div>
-
 <h2 id="abstract-factory-class">Abstract Factory Class</h2>
 <ul>
 <li>Abstract Factory is its own pattern</li>
@@ -499,11 +449,11 @@ jQuery(document).ready(function($) {
 
 <span class="k">class</span> <span class="nc">Tea</span><span class="p">(</span><span class="n">HotDrink</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">consume</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This tea is delicious&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'This tea is delicious'</span><span class="p">)</span>
 
 <span class="k">class</span> <span class="nc">Coffee</span><span class="p">(</span><span class="n">HotDrink</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">consume</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This coffee is delicious&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'This coffee is delicious'</span><span class="p">)</span>
 
 <span class="c1"># Not needed due to DuckTyping</span>
 <span class="k">class</span> <span class="nc">HotDrinkFactory</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
@@ -513,19 +463,19 @@ jQuery(document).ready(function($) {
 
 <span class="k">class</span> <span class="nc">TeaFactory</span><span class="p">(</span><span class="n">HotDrinkFactory</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">prepare</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Put in tea bag, boil water, pour </span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s1">ml, enjoy!&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Put in tea bag, boil water, pour </span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s1">ml, enjoy!'</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">Tea</span><span class="p">()</span>
 
 <span class="k">class</span> <span class="nc">CoffeeFactory</span><span class="p">(</span><span class="n">HotDrinkFactory</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">prepare</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Grind beans, boil water, pour </span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s1">ml, enjoy!&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Grind beans, boil water, pour </span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s1">ml, enjoy!'</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">Coffee</span><span class="p">()</span>
 
 <span class="c1"># Option 1</span>
 <span class="k">def</span> <span class="nf">make_drink</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="s1">&#39;tea&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="s1">'tea'</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">TeaFactory</span><span class="p">()</span><span class="o">.</span><span class="n">prepare</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="nb">type</span> <span class="o">==</span> <span class="s1">&#39;coffee&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="nb">type</span> <span class="o">==</span> <span class="s1">'coffee'</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">CoffeeFactory</span><span class="p">()</span><span class="o">.</span><span class="n">prepare</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">None</span>
@@ -544,32 +494,31 @@ jQuery(document).ready(function($) {
             <span class="bp">self</span><span class="o">.</span><span class="n">initialized</span> <span class="o">=</span> <span class="kc">True</span>
             <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">AvailableDrink</span><span class="p">:</span>
                 <span class="n">name</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">d</span><span class="o">.</span><span class="n">name</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-                <span class="n">factory_name</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;Factory&#39;</span>
+                <span class="n">factory_name</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">'Factory'</span>
                 <span class="c1"># evaluates sring as a python expression!</span>
                 <span class="c1"># string into code</span>
                 <span class="n">factory_instance</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">factory_name</span><span class="p">)()</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">factories</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">name</span><span class="p">,</span> <span class="n">factory_instance</span><span class="p">))</span>
 
     <span class="k">def</span> <span class="nf">make_drink</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Available drinks:&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Available drinks:'</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">factories</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-        <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Please pick drink (0-</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">factories</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Please pick drink (0-</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">factories</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="si">}</span><span class="s1">)'</span><span class="p">)</span>
         <span class="n">idx</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-        <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Specify amount: &#39;</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Specify amount: '</span><span class="p">)</span>
         <span class="n">amount</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">factories</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">prepare</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="c1"># Option 1</span>
-    <span class="c1"># entry = input(&#39;What kind of drink would you like?&#39;)</span>
+    <span class="c1"># entry = input('What kind of drink would you like?')</span>
     <span class="c1"># drink = make_drink(entry)</span>
 
     <span class="c1"># Option 2</span>
     <span class="n">drink</span> <span class="o">=</span> <span class="n">HotDrinkMachine</span><span class="p">()</span><span class="o">.</span><span class="n">make_drink</span><span class="p">()</span>
     <span class="n">drink</span><span class="o">.</span><span class="n">consume</span><span class="p">()</span>
 </code></pre></div>
-
 <h2 id="reference">Reference</h2>
 <ul>
 <li>See: <a href="https://refactoring.guru/design-patterns/abstract-factory">Refactoring Guru Example Furniture</a></li>
@@ -579,41 +528,30 @@ jQuery(document).ready(function($) {
 </ul>
 </li>
 </ul>
-  </div>
-  <div class="tag-cloud">
-    <p>
-      <a href="/tag/python.html">python</a>
-      <a href="/tag/patterns.html">patterns</a>
-      <a href="/tag/creational.html">CREATIONAL</a>
-    </p>
-  </div>
-
-
-
-
-
+</div>
+<div class="tag-cloud">
+<p>
+<a href="https://maconrad.github.io/tag/python.html">python</a>
+<a href="https://maconrad.github.io/tag/patterns.html">patterns</a>
+<a href="https://maconrad.github.io/tag/creational.html">CREATIONAL</a>
+</p>
+</div>
 </article>
-
-    <footer>
-<p>&copy; 2021 </p>
+<footer>
+<p>© 2021 </p>
 <p>
 Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
-</p>    </footer>
-  </main>
-
-
-
-
+</p> </footer>
+</main>
 <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " PeliBlog ",
-  "url" : "",
+  "url" : "https://maconrad.github.io",
   "image": "/images/Logo.png",
   "description": ""
 }
 </script>
-
 </body>
 </html>

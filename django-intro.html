@@ -1,14 +1,13 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="" />
-
-  
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="True" name="HandheldFriendly"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="robots"/>
 <style type="text/css">
 pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -58,7 +57,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
 .highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
 </style>
-
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
 div.entry-content {
@@ -110,7 +108,6 @@ div.collapseheader {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 </style>
-
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -120,11 +117,9 @@ MathJax.Hub.Config({
     }
 });
 </script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
 </script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 <script type="text/javascript">
 jQuery(document).ready(function($) {
     $("div.collapseheader").click(function () {
@@ -139,123 +134,81 @@ jQuery(document).ready(function($) {
 });
 });
 </script>
-
-
-
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
-
-
-    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-          href="/theme/pygments/github.min.css">
-
-
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
-
-
-
-
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-
-  
-
-
- 
-
-<meta name="author" content="Mario" />
-<meta name="description" content="Table of contents: Overview - Manual cleanup needed (networks, volumes) Important Files Container CLIs Overview docker container run- Manual cleanup needed (networks, volumes) Important Files config/settings.py: Apps settings etc. config/urls.py: App URLs ./admin.py: Add Model to /admin path Container CLIs command comment django-admin startproject config . Start …" />
-<meta name="keywords" content="development, web, django">
-
-
-  <meta property="og:site_name" content="PeliBlog"/>
-  <meta property="og:title" content="Django Intro"/>
-  <meta property="og:description" content="Table of contents: Overview - Manual cleanup needed (networks, volumes) Important Files Container CLIs Overview docker container run- Manual cleanup needed (networks, volumes) Important Files config/settings.py: Apps settings etc. config/urls.py: App URLs ./admin.py: Add Model to /admin path Container CLIs command comment django-admin startproject config . Start …"/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="/django-intro.html"/>
-  <meta property="og:type" content="article"/>
-  <meta property="article:published_time" content="2022-01-02 11:51:00+01:00"/>
-  <meta property="article:modified_time" content=""/>
-  <meta property="article:author" content="/author/mario.html">
-  <meta property="article:section" content="Python"/>
-  <meta property="article:tag" content="development"/>
-  <meta property="article:tag" content="web"/>
-  <meta property="article:tag" content="django"/>
-  <meta property="og:image" content="/images/Logo.png">
-
-  <title>PeliBlog &ndash; Django Intro</title>
-
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&amp;family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://maconrad.github.io/theme/stylesheet/style.min.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/pygments/github.min.css" id="pygments-light-theme" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/brands.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/solid.css" rel="stylesheet" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<meta content="Mario" name="author"/>
+<meta content="Table of contents: Overview - Manual cleanup needed (networks, volumes) Important Files Container CLIs Overview docker container run- Manual cleanup needed (networks, volumes) Important Files config/settings.py: Apps settings etc. config/urls.py: App URLs ./admin.py: Add Model to /admin path Container CLIs command comment django-admin startproject config . Start …" name="description"/>
+<meta content="development, web, django" name="keywords"/>
+<meta content="PeliBlog" property="og:site_name">
+<meta content="Django Intro" property="og:title"/>
+<meta content="Table of contents: Overview - Manual cleanup needed (networks, volumes) Important Files Container CLIs Overview docker container run- Manual cleanup needed (networks, volumes) Important Files config/settings.py: Apps settings etc. config/urls.py: App URLs ./admin.py: Add Model to /admin path Container CLIs command comment django-admin startproject config . Start …" property="og:description"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="https://maconrad.github.io/django-intro.html" property="og:url"/>
+<meta content="article" property="og:type"/>
+<meta content="2022-01-02 11:51:00+01:00" property="article:published_time"/>
+<meta content="" property="article:modified_time"/>
+<meta content="https://maconrad.github.io/author/mario.html" property="article:author"/>
+<meta content="Python" property="article:section">
+<meta content="development" property="article:tag"/>
+<meta content="web" property="article:tag"/>
+<meta content="django" property="article:tag"/>
+<meta content="/images/Logo.png" property="og:image"/>
+<title>PeliBlog – Django Intro</title>
+</meta></meta><link href="https://maconrad.github.io/django-intro.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "PeliBlog", "item": "https://maconrad.github.io"}, {"@type": "ListItem", "position": 2, "name": "Django intro", "item": "https://maconrad.github.io/django-intro.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Mario"}, "publisher": {"@type": "Organization", "name": "PeliBlog"}, "headline": "Django Intro", "about": "Python", "datePublished": "2022-01-02 11:51"}</script></head>
 <body class="light-theme">
-  <aside>
-    <div>
-      <a href="/">
-        <img src="/images/Logo.png" alt="" title="">
-      </a>
-
-      <h1>
-        <a href="/"></a>
-      </h1>
-
-
-
-      <nav>
-        <ul class="list">
-
-
-              <li>
-                <a target="_self"
-                   href="/pages/about.html#about">
+<aside>
+<div>
+<a href="https://maconrad.github.io/">
+<img alt="" src="/images/Logo.png" title=""/>
+</a>
+<h1>
+<a href="https://maconrad.github.io/"></a>
+</h1>
+<nav>
+<ul class="list">
+<li>
+<a href="https://maconrad.github.io/pages/about.html#about" target="_self">
                   About
                 </a>
-              </li>
-
-        </ul>
-      </nav>
-
-      <ul class="social">
-          <li>
-            <a  class="sc-You can add links in your config file" href="#" target="_blank">
-              <i class="fab fa-You can add links in your config file"></i>
-            </a>
-          </li>
-          <li>
-            <a  class="sc-Another social link" href="#" target="_blank">
-              <i class="fab fa-Another social link"></i>
-            </a>
-          </li>
-      </ul>
-    </div>
-
-  </aside>
-  <main>
-
-    <nav>
-      <a href="/">Home</a>
-
-      <a href="/archives.html">Archives</a>
-      <a href="/categories.html">Categories</a>
-      <a href="/tags.html">Tags</a>
-
-
-    </nav>
-
+</li>
+</ul>
+</nav>
+<ul class="social">
+<li>
+<a class="sc-You can add links in your config file" href="#" target="_blank">
+<i class="fab fa-You can add links in your config file"></i>
+</a>
+</li>
+<li>
+<a class="sc-Another social link" href="#" target="_blank">
+<i class="fab fa-Another social link"></i>
+</a>
+</li>
+</ul>
+</div>
+</aside>
+<main>
+<nav>
+<a href="https://maconrad.github.io/">Home</a>
+<a href="/archives.html">Archives</a>
+<a href="/categories.html">Categories</a>
+<a href="/tags.html">Tags</a>
+</nav>
 <article class="single">
-  <header>
-      
-    <h1 id="django-intro">Django Intro</h1>
-    <p>
-      Posted on So 02 Januar 2022 in <a href="/category/python.html">Python</a>
-
-    </p>
-  </header>
-
-
-  <div>
-    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<header>
+<h1 id="django-intro">Django Intro</h1>
+<p>
+      Posted on So 02 Januar 2022 in <a href="https://maconrad.github.io/category/python.html">Python</a>
+</p>
+</header>
+<div>
+<div class="toc"><span class="toctitle">Table of contents:</span><ul>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#-manual-cleanup-needed-networks-volumes">- Manual cleanup needed (networks, volumes)</a></li>
 <li><a href="#important-files">Important Files</a></li>
@@ -267,7 +220,7 @@ jQuery(document).ready(function($) {
 <li>docker container run<h2 id="-manual-cleanup-needed-networks-volumes">- Manual cleanup needed (networks, volumes)</h2>
 </li>
 </ul>
-<p><img src="../../images/..." alt="Django Overview" width="500"/></p>
+<p><img alt="Django Overview" src="../../images/..." width="500"/></p>
 <h2 id="important-files">Important Files</h2>
 <ul>
 <li><code>config/settings.py</code>: Apps settings etc.</li>
@@ -300,7 +253,7 @@ jQuery(document).ready(function($) {
 <td>Create Flat App</td>
 </tr>
 <tr>
-<td>python manage.py makemigrations &lt;name></td>
+<td>python manage.py makemigrations &lt;name&gt;</td>
 <td>Create migration for specificApp</td>
 </tr>
 <tr>
@@ -309,41 +262,30 @@ jQuery(document).ready(function($) {
 </tr>
 </tbody>
 </table>
-  </div>
-  <div class="tag-cloud">
-    <p>
-      <a href="/tag/development.html">development</a>
-      <a href="/tag/web.html">web</a>
-      <a href="/tag/django.html">django</a>
-    </p>
-  </div>
-
-
-
-
-
+</div>
+<div class="tag-cloud">
+<p>
+<a href="https://maconrad.github.io/tag/development.html">development</a>
+<a href="https://maconrad.github.io/tag/web.html">web</a>
+<a href="https://maconrad.github.io/tag/django.html">django</a>
+</p>
+</div>
 </article>
-
-    <footer>
-<p>&copy; 2021 </p>
+<footer>
+<p>© 2021 </p>
 <p>
 Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
-</p>    </footer>
-  </main>
-
-
-
-
+</p> </footer>
+</main>
 <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " PeliBlog ",
-  "url" : "",
+  "url" : "https://maconrad.github.io",
   "image": "/images/Logo.png",
   "description": ""
 }
 </script>
-
 </body>
 </html>
