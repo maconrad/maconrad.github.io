@@ -1,0 +1,333 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://opensource.com/article/19/5/python-3-default-mac)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 497.2336 141.4776 505.1086 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/Annots [ 6 0 R ] /Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 14 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Outlines 10 0 R /PageLabels 16 0 R /PageMode /UseNone /Pages 14 0 R /Type /Catalog
+>>
+endobj
+9 0 obj
+<<
+/Author () /CreationDate (D:20220202143525-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143525-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (template) /Trapped /False
+>>
+endobj
+10 0 obj
+<<
+/Count 2 /First 11 0 R /Last 11 0 R /Type /Outlines
+>>
+endobj
+11 0 obj
+<<
+/Count -2 /Dest [ 7 0 R /Fit ] /First 12 0 R /Last 13 0 R /Parent 10 0 R /Title (Chap1)
+>>
+endobj
+12 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 13 0 R /Parent 11 0 R /Title (Chap1)
+>>
+endobj
+13 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Parent 11 0 R /Prev 12 0 R /Title (References)
+>>
+endobj
+14 0 obj
+<<
+/Count 1 /Kids [ 7 0 R ] /Type /Pages
+>>
+endobj
+15 0 obj
+<<
+/Length 3227
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 206.1742 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (template) Tj T* -206.1742 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-10-31 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 23.3415 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Chap1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 34.71825 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+Q
+q
+1 0 0 1 57.02362 642.2417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Chap1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 625.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Installation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 610.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In addition, what happens) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 595.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In addition if w) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 580.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (brew) Tj ( ) Tj (install) Tj ( ) Tj (pyenv) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 565.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Then adding the following to ) Tj /F4 5.25 Tf (~/.zprofile) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 542.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 14.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (pyenv) Tj ( ) Tj (specific) Tj ( ) Tj (config) Tj  T* (eval) Tj ( ) Tj (") Tj ($\() Tj (pyenv) Tj ( ) Tj (init) Tj ( ) Tj (--path) Tj (\)) Tj (") Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 527.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (That's it. For more details see links below.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 509.1221 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 492.7844 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 83.454 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Pyenv on Opensource.com) Tj 0 0 0 rg  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 492.7844 cm
+Q
+ 
+endstream
+endobj
+16 0 obj
+<<
+/Nums [ 0 17 0 R ]
+>>
+endobj
+17 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000775 00000 n 
+0000000998 00000 n 
+0000001103 00000 n 
+0000001368 00000 n 
+0000001442 00000 n 
+0000001552 00000 n 
+0000001638 00000 n 
+0000001729 00000 n 
+0000001789 00000 n 
+0000005068 00000 n 
+0000005109 00000 n 
+trailer
+<<
+/ID 
+[<038ee8990293dc70bc07c377eefade8c><038ee8990293dc70bc07c377eefade8c>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 9 0 R
+/Root 8 0 R
+/Size 18
+>>
+startxref
+5143
+%%EOF

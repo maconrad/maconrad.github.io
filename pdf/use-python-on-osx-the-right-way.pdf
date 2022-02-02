@@ -1,0 +1,526 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://opensource.com/article/19/5/python-3-default-mac)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 302.8586 141.4776 310.7336 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://opensource.com/article/19/6/python-virtual-environments-mac)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 292.9836 169.1924 300.8586 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://towardsdatascience.com/python-environment-101-1d68bda3094d)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 283.1086 175.3349 290.9836 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://bobcares.com/blog/virtualbox-ssh-nat/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 263.3586 123.9636 271.2336 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.dev2qa.com/how-to-resolve-virtualbox-guest-additions-kernel-headers-not-found-for-target-kernel-error/#:~:text=2.,list%20current%20linux%20kernel%20version.&text=Then%20you%20should%20run%20command,install%20your%20CentOS%20linux%20kernel.)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 253.4836 159.5639 261.3586 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.rockylinux.org/guides/desktop/mate_installation/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 243.6086 116.9549 251.4836 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/Annots [ 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R ] /Contents 20 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 19 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+13 0 obj
+<<
+/Outlines 15 0 R /PageLabels 21 0 R /PageMode /UseNone /Pages 19 0 R /Type /Catalog
+>>
+endobj
+14 0 obj
+<<
+/Author () /CreationDate (D:20220202143526-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143526-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Use python on OSX the right way) /Trapped /False
+>>
+endobj
+15 0 obj
+<<
+/Count 2 /First 16 0 R /Last 16 0 R /Type /Outlines
+>>
+endobj
+16 0 obj
+<<
+/Count -2 /Dest [ 12 0 R /Fit ] /First 17 0 R /Last 18 0 R /Parent 15 0 R /Title (Installing and using pyenv and virtualenvwrapper)
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 12 0 R /Fit ] /Next 18 0 R /Parent 16 0 R /Title (Installing and using pyenv and virtualenvwrapper)
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 12 0 R /Fit ] /Parent 16 0 R /Prev 17 0 R /Title (References)
+>>
+endobj
+19 0 obj
+<<
+/Count 1 /Kids [ 12 0 R ] /Type /Pages
+>>
+endobj
+20 0 obj
+<<
+/Length 7855
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 104.5142 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Use python on OSX the right way) Tj T* -104.5142 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-10-24 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 121.3853 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Installing and using pyenv and virtualenvwrapper) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 34.71825 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+Q
+q
+1 0 0 1 57.02362 642.2417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Installing and using pyenv and virtualenvwrapper) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 625.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Installation python3 on OSX direcrtly and/or trying to make default python point to python3 on OSX is not a good idea. Worst case, it can break your OSX python installation.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 602.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In addition, what happens when you have to update from let's say python 3.7.3 to 3.9.7? Pyenv in combination with virtualenwrapper solves this issue by providing a python version manager \(pyenv\) as well) Tj T* (as a python virtualenv manager \(venv module could be used.\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 587.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In addition if working amonsgst a team pipenv which fixes dependencies in a lock file could be helpful. See references for more details.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 517.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 61.69775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (brew) Tj ( ) Tj (install) Tj ( ) Tj (pyenv) Tj  T* (pyenv) Tj ( ) Tj (install) Tj ( ) Tj (3) Tj (.9.7) Tj  T* (pyenv) Tj ( ) Tj (install) Tj ( ) Tj (3) Tj (.10.0) Tj  T* (pyenv) Tj ( ) Tj (global) Tj ( ) Tj (3) Tj (.10.0) Tj  T* (pyenv) Tj ( ) Tj (versions) Tj  T* ($\() Tj (pyenv) Tj ( ) Tj (which) Tj ( ) Tj (python3) Tj (\)) Tj ( ) Tj (-m) Tj ( ) Tj (pip) Tj ( ) Tj (install) Tj ( ) Tj (virtualenvwrapper) Tj  T* ($\() Tj (pyenv) Tj ( ) Tj (which) Tj ( ) Tj (python3) Tj (\)) Tj ( ) Tj (-m) Tj ( ) Tj (pip) Tj ( ) Tj (install) Tj ( ) Tj (--upgrade) Tj ( ) Tj (pip) Tj  T* (source) Tj ( ) Tj (~/.zshrc) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 502.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Then adding the following to ) Tj /F4 5.25 Tf (~/.zprofile) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 479.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 14.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (pyenv) Tj ( ) Tj (specific) Tj ( ) Tj (config) Tj  T* (eval) Tj ( ) Tj (") Tj ($\() Tj (pyenv) Tj ( ) Tj (init) Tj ( ) Tj (--path) Tj (\)) Tj (") Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 464.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (and the following to ) Tj /F4 5.25 Tf (~/.zshrc) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 425.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 30.19775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Virtualenvwrapper) Tj ( ) Tj (specific) Tj ( ) Tj (config) Tj  T* (export) Tj ( ) Tj (WORKON_HOME) Tj (=) Tj (~/.virtualenvs) Tj  T* (mkdir) Tj ( ) Tj (-p) Tj ( ) Tj ($WORKON_HOME) Tj  T* (.) Tj ( ) Tj (~/.pyenv/versions/3.10.0/bin/virtualenvwrapper.sh) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 410.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Afterwards we can use virtualenvwrapper like so:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 348.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 53.82275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (mkvirtualenv) Tj ( ) Tj (<) Tj (name) Tj (>) Tj  T* (workon) Tj ( ) Tj (<) Tj (name) Tj (>) Tj  T* (#) Tj ( ) Tj (If) Tj ( ) Tj (project) Tj ( ) Tj (dir) Tj ( ) Tj (name) Tj ( ) Tj (and) Tj ( ) Tj (venv) Tj ( ) Tj (name) Tj ( ) Tj (are) Tj ( ) Tj (equal) Tj  T* (workon) Tj ( ) Tj (.) Tj  T* (deactivate) Tj  T* (rmvirtualenv) Tj ( ) Tj (<) Tj (name) Tj (>) Tj  T* (lsvirtualenv) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 332.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (That's it. For more details see links below.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 314.7471 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 298.4094 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 83.454 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Pyenv on Opensource.com) Tj 0 0 0 rg  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 288.5344 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 111.1687 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Virtualenvwrapper on Opensource.com) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 278.6594 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 117.3113 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Graph about pyenv, pipenv and virtualenv) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 268.7844 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: [ZSH Setup on OSX\(https://sourabhbajaj.com/mac-setup/iTerm/zsh.html\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 258.9094 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 65.94 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Virtualbox Port Fwd) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 249.0344 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 101.5402 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Virtualbox CentOS Kernel Headers) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 239.1594 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 58.93125 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Rockylinux Docs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 239.1594 cm
+Q
+ 
+endstream
+endobj
+21 0 obj
+<<
+/Nums [ 0 22 0 R ]
+>>
+endobj
+22 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+xref
+0 23
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000775 00000 n 
+0000000994 00000 n 
+0000001212 00000 n 
+0000001409 00000 n 
+0000001813 00000 n 
+0000002027 00000 n 
+0000002283 00000 n 
+0000002389 00000 n 
+0000002678 00000 n 
+0000002752 00000 n 
+0000002906 00000 n 
+0000003036 00000 n 
+0000003128 00000 n 
+0000003189 00000 n 
+0000011096 00000 n 
+0000011137 00000 n 
+trailer
+<<
+/ID 
+[<88c03afe4789889d4eb6538c59427b67><88c03afe4789889d4eb6538c59427b67>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 14 0 R
+/Root 13 0 R
+/Size 23
+>>
+startxref
+11171
+%%EOF

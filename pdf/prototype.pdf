@@ -1,0 +1,547 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 14 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 16 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 14 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Outlines 10 0 R /PageLabels 17 0 R /PageMode /UseNone /Pages 14 0 R /Type /Catalog
+>>
+endobj
+9 0 obj
+<<
+/Author () /CreationDate (D:20220202143523-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143523-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Prototype) /Trapped /False
+>>
+endobj
+10 0 obj
+<<
+/Count 2 /First 11 0 R /Last 11 0 R /Type /Outlines
+>>
+endobj
+11 0 obj
+<<
+/Count -2 /Dest [ 6 0 R /Fit ] /First 12 0 R /Last 13 0 R /Parent 10 0 R /Title (Intro)
+>>
+endobj
+12 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 13 0 R /Parent 11 0 R /Title (Intro)
+>>
+endobj
+13 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Parent 11 0 R /Prev 12 0 R /Title (Prototype Factory)
+>>
+endobj
+14 0 obj
+<<
+/Count 2 /Kids [ 6 0 R 7 0 R ] /Type /Pages
+>>
+endobj
+15 0 obj
+<<
+/Length 10680
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 201.7242 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Prototype) Tj T* -201.7242 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-11-21 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.38025 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 49.308 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Prototype Factory) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+Q
+q
+1 0 0 1 57.02362 642.2417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 618.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Sometimes easier to start with a copy \(fully or partially initialized\) of an object than to create a new one. Can be combined with factories to have templates of predefined objects \(for the most typical use) Tj T* (cases of objects that are neede during the runtime of the application\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 602.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Benefits:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 587.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Easy to consume) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 577.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Templates for the main use cases) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 577.904 cm
+Q
+q
+1 0 0 1 57.02362 562.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Use Cases / Examples:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 547.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Anywhere where we have objects that we want to take as a base for creating new objects) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 547.654 cm
+Q
+q
+1 0 0 1 57.02362 532.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Key:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 517.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Requires ) Tj /F4 5.25 Tf (deep copy) Tj /F1 5.25 Tf ( support \(not by reference\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 507.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Partially or fully initialized object that is copied/cloned) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 497.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Customize the resulting instance) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 487.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Combine with factory to have a convenient API) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 487.779 cm
+Q
+q
+1 0 0 1 57.02362 252.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 227.0728 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (from) Tj ( ) Tj (copy) Tj ( ) Tj (import) Tj ( ) Tj (deepcopy) Tj  T*  T* (class) Tj ( ) Tj (Address) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (street) Tj (,) Tj ( ) Tj (city) Tj (,) Tj ( ) Tj (country) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (None) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (street) Tj ( ) Tj (=) Tj ( ) Tj (street) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (city) Tj ( ) Tj (=) Tj ( ) Tj (city) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (country) Tj ( ) Tj (=) Tj ( ) Tj (country) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__str__) Tj (\() Tj (self) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (str) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (f) Tj (') Tj ({) Tj (self) Tj (.) Tj (street) Tj (}) Tj (,) Tj ( ) Tj ({) Tj (self) Tj (.) Tj (city) Tj (}) Tj (,) Tj ( ) Tj ({) Tj (self) Tj (.) Tj (country) Tj (}) Tj (') Tj  T*  T* (class) Tj ( ) Tj (Person) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (name) Tj (,) Tj ( ) Tj (address) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (None) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (name) Tj ( ) Tj (=) Tj ( ) Tj (name) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (address) Tj ( ) Tj (=) Tj ( ) Tj (address) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__str__) Tj (\() Tj (self) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (str) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (f) Tj (') Tj ({) Tj (self) Tj (.) Tj (name) Tj (}) Tj ( ) Tj (lives) Tj ( ) Tj (at) Tj ( ) Tj ({) Tj (self) Tj (.) Tj (address) Tj (}) Tj (') Tj  T*  T*  T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (mario) Tj ( ) Tj (=) Tj ( ) Tj (Person) Tj (\() Tj (') Tj (Mario) Tj (') Tj (,) Tj ( ) Tj (Address) Tj (\() Tj (') Tj (Schulgasse) Tj ( ) Tj (30) Tj (') Tj (,) Tj ( ) Tj (') Tj (Aarau) Tj (') Tj (,) Tj ( ) Tj (') Tj (Switzerland) Tj (') Tj (\)\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (hans) Tj ( ) Tj (=) Tj ( ) Tj (Person) Tj (\() Tj (') Tj (Hans) Tj (') Tj (,) Tj ( ) Tj (Address) Tj (\() Tj (') Tj (Pipapostrasse) Tj ( ) Tj (34) Tj (') Tj (,) Tj ( ) Tj (') Tj (Baden) Tj (') Tj (,) Tj ( ) Tj (') Tj (Switzerland) Tj (') Tj (\)\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (mario) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (hans) Tj (\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (mario2) Tj ( ) Tj (=) Tj ( ) Tj (deepcopy) Tj (\() Tj (mario) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (mario2) Tj (.) Tj (address) Tj (.) Tj (street) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (Volggasse) Tj ( ) Tj (4) Tj (') Tj  T*  ( ) Tj ( ) Tj ( ) Tj (mario2) Tj (.) Tj (address) Tj (.) Tj (city) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (Schinznach) Tj ( ) Tj (Bad) Tj (') Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 233.9971 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Prototype Factory) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 217.6594 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Inconvenient making copy manually) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 207.7844 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Wrapping copy process into its own module) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 197.9094 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Fixed number of prototypes that are used in the system then good idea to put them into a factory and factory methods for usage) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 197.9094 cm
+Q
+q
+1 0 0 1 57.02362 64.65937 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 124.6977 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (import) Tj ( ) Tj (copy) Tj ( ) Tj T* ( ) Tj T* (class) Tj ( ) Tj (Address) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (street) Tj (,) Tj ( ) Tj (city) Tj (,) Tj ( ) Tj (office) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (None) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (street) Tj ( ) Tj (=) Tj ( ) Tj (street) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (city) Tj ( ) Tj (=) Tj ( ) Tj (city) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (office) Tj ( ) Tj (=) Tj ( ) Tj (office) Tj ( ) Tj T* ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__str__) Tj (\() Tj (self) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (str) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (f) Tj (') Tj ({) Tj (self) Tj (.) Tj (street) Tj (}) Tj (,) Tj ( ) Tj ({) Tj (self) Tj (.) Tj (city) Tj (}) Tj (,) Tj ( ) Tj ({) Tj (self) Tj (.) Tj (office) Tj (}) Tj (') Tj ( ) Tj T* ( ) Tj T* (class) Tj ( ) Tj (Employee) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (name) Tj (,) Tj ( ) Tj (address) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (None) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (name) Tj ( ) Tj (=) Tj ( ) Tj (name) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (address) Tj ( ) Tj (=) Tj ( ) Tj (address) Tj ( ) Tj T*  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+16 0 obj
+<<
+/Length 3725
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 534.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 227.0728 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__str__) Tj (\() Tj (self) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (str) Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (f) Tj (') Tj ({) Tj (self) Tj (.) Tj (name) Tj (}) Tj ( ) Tj (works) Tj ( ) Tj (at) Tj ( ) Tj ({) Tj (self) Tj (.) Tj (address) Tj (}) Tj (') Tj ( ) Tj T* ( ) Tj T* (class) Tj ( ) Tj (EmployeeFactory) Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (2) Tj ( ) Tj (Offices,) Tj ( ) Tj (main) Tj ( ) Tj (and) Tj ( ) Tj (auxilary) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (main_office_employee) Tj ( ) Tj (=) Tj ( ) Tj (Employee) Tj (\() Tj (') Tj (') Tj (,) Tj ( ) Tj (Address) Tj (\() Tj (') Tj (Badstrasse) Tj (') Tj (,) Tj ( ) Tj (') Tj (Baden) Tj (') Tj (,) Tj ( ) Tj (0) Tj (\)\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (aux_office_employee) Tj ( ) Tj (=) Tj ( ) Tj (Employee) Tj (\() Tj (') Tj (') Tj (,) Tj ( ) Tj (Address) Tj (\() Tj (') Tj (Zuerichstrasse) Tj (') Tj (,) Tj ( ) Tj (') Tj (Baden) Tj (') Tj (,) Tj ( ) Tj (0) Tj (\)\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (@staticmethod) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__new_employee) Tj (\() Tj (proto) Tj (,) Tj ( ) Tj (name) Tj (,) Tj ( ) Tj (office) Tj (\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (employee) Tj ( ) Tj (=) Tj ( ) Tj (copy) Tj (.) Tj (deepcopy) Tj (\() Tj (proto) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (employee) Tj (.) Tj (name) Tj ( ) Tj (=) Tj ( ) Tj (name) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (employee) Tj (.) Tj (address) Tj (.) Tj (office) Tj ( ) Tj (=) Tj ( ) Tj (office) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (employee) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (@staticmethod) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (new_main_office_employee) Tj (\() Tj (name) Tj (,) Tj ( ) Tj (office) Tj (\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (EmployeeFactory) Tj (.) Tj (__new_employee) Tj (\() Tj (EmployeeFactory) Tj (.) Tj (main_office_employee) Tj (,) Tj ( ) Tj (name) Tj (,) Tj ( ) Tj (office) Tj (\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (@staticmethod) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (new_aux_office_employee) Tj (\() Tj (name) Tj (,) Tj ( ) Tj (office) Tj (\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (EmployeeFactory) Tj (.) Tj (__new_employee) Tj (\() Tj (EmployeeFactory) Tj (.) Tj (aux_office_employee) Tj (,) Tj ( ) Tj (name) Tj (,) Tj ( ) Tj (office) Tj (\)) Tj ( ) Tj T* ( ) Tj T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (john) Tj ( ) Tj (=) Tj ( ) Tj (EmployeeFactory) Tj (.) Tj (new_aux_office_employee) Tj (\() Tj (') Tj (John) Tj (') Tj (,) Tj ( ) Tj (') Tj (#100) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (jane) Tj ( ) Tj (=) Tj ( ) Tj (EmployeeFactory) Tj (.) Tj (new_main_office_employee) Tj (\() Tj (') Tj (Jane) Tj (') Tj (,) Tj ( ) Tj (') Tj (#140) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (john) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (jane) Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+17 0 obj
+<<
+/Nums [ 0 18 0 R 1 19 0 R ]
+>>
+endobj
+18 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+19 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 20
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000772 00000 n 
+0000000977 00000 n 
+0000001082 00000 n 
+0000001348 00000 n 
+0000001422 00000 n 
+0000001532 00000 n 
+0000001618 00000 n 
+0000001716 00000 n 
+0000001782 00000 n 
+0000012515 00000 n 
+0000016292 00000 n 
+0000016342 00000 n 
+0000016376 00000 n 
+trailer
+<<
+/ID 
+[<0dacc1c2a76911b0a4730d30a1fa8d0a><0dacc1c2a76911b0a4730d30a1fa8d0a>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 9 0 R
+/Root 8 0 R
+/Size 20
+>>
+startxref
+16410
+%%EOF

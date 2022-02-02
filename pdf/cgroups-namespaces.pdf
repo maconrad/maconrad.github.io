@@ -1,0 +1,883 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 21 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 20 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://techviewleo.com/install-brave-browser-on-rocky-almalinux-centos-linux/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 607.7336 129.2189 615.6086 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.youtube.com/watch?v=el7768BNUPw)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 597.8586 88.65737 605.7336 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/Annots [ 7 0 R 8 0 R ] /Contents 22 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 20 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+10 0 obj
+<<
+/Outlines 12 0 R /PageLabels 23 0 R /PageMode /UseNone /Pages 20 0 R /Type /Catalog
+>>
+endobj
+11 0 obj
+<<
+/Author () /CreationDate (D:20220202143524-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143524-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Cgroups, Namespaces) /Trapped /False
+>>
+endobj
+12 0 obj
+<<
+/Count 2 /First 13 0 R /Last 13 0 R /Type /Outlines
+>>
+endobj
+13 0 obj
+<<
+/Count -6 /Dest [ 6 0 R /Fit ] /First 14 0 R /Last 19 0 R /Parent 12 0 R /Title (Intro)
+>>
+endobj
+14 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 15 0 R /Parent 13 0 R /Title (Intro)
+>>
+endobj
+15 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 16 0 R /Parent 13 0 R /Prev 14 0 R /Title (Demo Env)
+>>
+endobj
+16 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 17 0 R /Parent 13 0 R /Prev 15 0 R /Title (Control Groups \(Cgroups\))
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 18 0 R /Parent 13 0 R /Prev 16 0 R /Title (Namespaces)
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 9 0 R /Fit ] /Next 19 0 R /Parent 13 0 R /Prev 17 0 R /Title (UFS \(Union Filesystem\))
+>>
+endobj
+19 0 obj
+<<
+/Dest [ 9 0 R /Fit ] /Parent 13 0 R /Prev 18 0 R /Title (References)
+>>
+endobj
+20 0 obj
+<<
+/Count 2 /Kids [ 6 0 R 9 0 R ] /Type /Pages
+>>
+endobj
+21 0 obj
+<<
+/Length 12757
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 151.7442 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Cgroups, Namespaces) Tj T* -151.7442 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-11-06 18:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.38025 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 32.382 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Demo Env) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 68.26575 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Control Groups \(Cgroups\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 640.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 38.50875 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Namespaces) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 630.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 63.588 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (UFS \(Union Filesystem\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 620.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 34.71825 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 620.8986 cm
+Q
+q
+1 0 0 1 57.02362 602.7417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 586.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Control Group: Limit what a resource can use. Resource mgmt for individual processes \(prioritize, enforce, account\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 576.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Limits: CPU,I/O,Memory,Network) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 566.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Access control to Devices: /dev/*) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 566.654 cm
+Q
+q
+1 0 0 1 57.02362 556.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Namespace: Limits what resources a process can see. And therfore access \(process isolation\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 546.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Provide processes with own view of the system) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 537.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (net, pid, mnt, utc and ipc most important) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 527.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Each process is in ONE namespace of each type! not more) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 527.154 cm
+Q
+q
+1 0 0 1 57.02362 517.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Both constructs especially useful for example with containers.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 517.279 cm
+Q
+q
+1 0 0 1 57.02362 499.1221 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Demo Env) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 411.9094 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 77.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (sudo) Tj ( ) Tj (dnf) Tj ( ) Tj (install) Tj ( ) Tj (httpd) Tj  T* (sudo) Tj ( ) Tj (firewall-cmd) Tj ( ) Tj (--permanent) Tj ( ) Tj (--add-service) Tj (=) Tj (http) Tj  T* (sudo) Tj ( ) Tj (firewall-cmd) Tj ( ) Tj (--permanent) Tj ( ) Tj (--add-service) Tj (=) Tj (https) Tj  T* (sudo) Tj ( ) Tj (firewall-cmd) Tj ( ) Tj (--reload) Tj  T* (sudo) Tj ( ) Tj (systemctl) Tj ( ) Tj (start) Tj ( ) Tj (httpd) Tj  T* (sudo) Tj ( ) Tj (systemctl) Tj ( ) Tj (status) Tj ( ) Tj (httpd) Tj  T*  T* (sudo) Tj ( ) Tj (systemctl) Tj ( ) Tj (enable) Tj ( ) Tj (httpd) Tj  T* (sudo) Tj ( ) Tj (systemctl) Tj ( ) Tj (disable) Tj ( ) Tj (httpd) Tj  T* (sudo) Tj ( ) Tj (systemctl) Tj ( ) Tj (reload) Tj ( ) Tj (httpd) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 393.7525 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Control Groups \(Cgroups\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 377.4147 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (With cgroups, processes run in their own kernel space and memory space.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 362.2897 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (One cgroup per process by default) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 352.4147 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Features of cgroups) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 342.5397 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Set resource limits \(e.g. CPU, I/O, mem\) - none by default) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 332.6647 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Accounting) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 322.7897 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Prioritize) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 312.9147 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Freeze, Checkpoint \(snapshot\) & restart) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 312.9147 cm
+Q
+q
+1 0 0 1 57.02362 303.0397 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Files) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 293.1647 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.57275 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (/etc/systemd/system.control) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 293.1647 cm
+Q
+q
+1 0 0 1 57.02362 283.2897 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Example Docker) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 273.4147 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Limit resources that container can use on the host) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 273.4147 cm
+Q
+q
+1 0 0 1 57.02362 273.4147 cm
+Q
+q
+1 0 0 1 57.02362 187.4147 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 77.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Enable) Tj ( ) Tj (Accounting) Tj  T* (sudo) Tj ( ) Tj (systemctl) Tj ( ) Tj (set-property) Tj ( ) Tj (httpd.service) Tj ( ) Tj (MemoryAccounting) Tj (=) Tj (1) Tj ( ) Tj (CPUAccounting) Tj (=) Tj (1) Tj ( ) Tj (BlockIOAccounting) Tj (=) Tj (1) Tj  T*  T* (#) Tj ( ) Tj (Set) Tj ( ) Tj (limits) Tj ( ) Tj (for) Tj ( ) Tj (procs) Tj  T* (sudo) Tj ( ) Tj (systemctl) Tj ( ) Tj (set-property) Tj ( ) Tj (httpd.service) Tj ( ) Tj (CPUQuota) Tj (=) Tj (40) Tj (%) Tj ( ) Tj (MemoryLimit) Tj (=) Tj (500M) Tj  T*  T* (#) Tj ( ) Tj (Set) Tj ( ) Tj (limits) Tj ( ) Tj (for) Tj ( ) Tj (users) Tj  T* (id) Tj ( ) Tj (mario) Tj  T* (sudo) Tj ( ) Tj (systemctl) Tj ( ) Tj (set-property) Tj ( ) Tj (user-1001.slice) Tj ( ) Tj (MemoryAccounting) Tj (=) Tj (1) Tj ( ) Tj (CPUAccounting) Tj (=) Tj (1) Tj ( ) Tj (BlockIOAccounting) Tj (=) Tj (1) Tj  T* (sudo) Tj ( ) Tj (systemctl) Tj ( ) Tj (set-property) Tj ( ) Tj (user-1001.slice) Tj ( ) Tj (CPUQuota) Tj (=) Tj (20) Tj (%) Tj ( ) Tj (MemoryLimit) Tj (=) Tj (500M) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 169.2579 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Namespaces) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 89.92012 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 69.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (A namespace allows a process to have its own set of resources that other processes can't see. A namespace limits what resources a process can see and access Main Types: - Mount \(mnt\): each process) Tj T* (to have its own root filesystem that no other processes can see - UTS: each process to have its own unique hostname and domain name. - PID: Every running process can have its own set of PID number) Tj T* (\(childs cant see parents\). Node = Group of processes. - Network \(net\): virtual network for each process. Each virtual network can have its own subnets, virtual network interfaces, routing tables, and firewalls) Tj T* (- Interprocess Communication \(ipc\): This also prevents data leakage by preventing two processes from sharing the same memory space - control group \(cgroup\): This namespace hides the identity of the) Tj T* (cgroup that a process is a member of - User: The User namespace allows a user to have different levels of privilege on different processes. For example, a user could have root-level privileges on one) Tj T* (process, but only normal-user privileges on another process. - Examples - Docker uses namespaces to isolate containers from each other and from host os - PID: E.g. each container could have the same) Tj T* (PID \(or different\). Each Process only sees the other processes it launches. So container cannot see any other processes of the system. - NET: give different network access to different containers - mnt: Give) Tj T* (different file access to differetn containers - uts: each container has individual name & domai name system - ipc: define which container can talk to whom - user: isolate user & group id - Firejail uses) Tj T* (namespace per Tab) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 74.79512 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (```bash ls -al /proc/{pid}/ns top -c -p $\(pgrep -d',' -f brave\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+22 0 obj
+<<
+/Length 3944
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (```) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 736.9917 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (UFS \(Union Filesystem\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 720.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Way to combine multiple directories into a new virtual one) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 695.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 21.8555 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 7.875 21.8555 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Different parts of the new FS can be either read-only or read/write f. Writes to the new virtual are then directed to specific location on the real file system. This allows a file system to appear as writable,) Tj T* (but without actually allowing writes to change the some part of the file system, also known as copy-on-write. E.g. r/o CDROM + /home/user/cdrom-write combined into /media/cdrom that is writable for) Tj T* (container.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 685.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (When mounting different locations, last mounted has priority) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 675.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Example applictions) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 665.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Knoppix Live-CD + USB Drive saves changes to USB) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 655.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Docker layers with same /path/to/file + Top level writable container, + only layer updates populated for different images) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 637.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 13.9805 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+.492188 w
+BT 1 0 0 1 15.75 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Base layer can be read-only. Next-layer read-write. If file from base-layer \(read-only\) changed inside container it will be saved to write-layer. Write-layer only keeps diff. Different containers can share) Tj T* (same base-layers and still have individual changes. Even kept among start & stop of container.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 637.779 cm
+Q
+q
+1 0 0 1 57.02362 637.779 cm
+Q
+q
+1 0 0 1 57.02362 619.6221 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 603.2844 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 71.19525 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Brave on Rocky Linux) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 593.4094 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 30.63375 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (UFS) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 593.4094 cm
+Q
+ 
+endstream
+endobj
+23 0 obj
+<<
+/Nums [ 0 24 0 R 1 25 0 R ]
+>>
+endobj
+24 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+25 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 26
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000772 00000 n 
+0000001002 00000 n 
+0000001197 00000 n 
+0000001426 00000 n 
+0000001532 00000 n 
+0000001809 00000 n 
+0000001883 00000 n 
+0000001993 00000 n 
+0000002079 00000 n 
+0000002181 00000 n 
+0000002301 00000 n 
+0000002405 00000 n 
+0000002523 00000 n 
+0000002614 00000 n 
+0000002680 00000 n 
+0000015490 00000 n 
+0000019486 00000 n 
+0000019536 00000 n 
+0000019570 00000 n 
+trailer
+<<
+/ID 
+[<503aae8ee94c8a8898c9bff4d15a0f03><503aae8ee94c8a8898c9bff4d15a0f03>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 11 0 R
+/Root 10 0 R
+/Size 26
+>>
+startxref
+19604
+%%EOF

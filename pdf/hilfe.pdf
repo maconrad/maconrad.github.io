@@ -1,0 +1,1689 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 54 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 53 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 55 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 53 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Contents 56 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 53 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Outlines 11 0 R /PageLabels 57 0 R /PageMode /UseNone /Pages 53 0 R /Type /Catalog
+>>
+endobj
+10 0 obj
+<<
+/Author () /CreationDate (D:20220202143526-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143526-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Hilfe) /Trapped /False
+>>
+endobj
+11 0 obj
+<<
+/Count 29 /First 12 0 R /Last 50 0 R /Type /Outlines
+>>
+endobj
+12 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 13 0 R /Parent 11 0 R /Title (Blockquotes)
+>>
+endobj
+13 0 obj
+<<
+/Count -2 /Dest [ 6 0 R /Fit ] /First 14 0 R /Last 15 0 R /Next 16 0 R /Parent 11 0 R 
+  /Prev 12 0 R /Title (Blockquotes{.tabset})
+>>
+endobj
+14 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 15 0 R /Parent 13 0 R /Title (Beispiel)
+>>
+endobj
+15 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Parent 13 0 R /Prev 14 0 R /Title (Code)
+>>
+endobj
+16 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 17 0 R /Parent 11 0 R /Prev 13 0 R /Title (Collapsible / Ausklappen)
+>>
+endobj
+17 0 obj
+<<
+/Count -3 /Dest [ 6 0 R /Fit ] /First 18 0 R /Last 20 0 R /Next 21 0 R /Parent 11 0 R 
+  /Prev 16 0 R /Title (Collapsible / Ausklappen{.tabset})
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 19 0 R /Parent 17 0 R /Title (Beispiel 1)
+>>
+endobj
+19 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 20 0 R /Parent 17 0 R /Prev 18 0 R /Title (Code 1)
+>>
+endobj
+20 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Parent 17 0 R /Prev 19 0 R /Title (Beispiel 2 \(Codeblock\))
+>>
+endobj
+21 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 22 0 R /Parent 11 0 R /Prev 17 0 R /Title (Code)
+>>
+endobj
+22 0 obj
+<<
+/Count -3 /Dest [ 6 0 R /Fit ] /First 23 0 R /Last 25 0 R /Next 26 0 R /Parent 11 0 R 
+  /Prev 21 0 R /Title (Code{.tabset})
+>>
+endobj
+23 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 24 0 R /Parent 22 0 R /Title (Beispiel)
+>>
+endobj
+24 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 25 0 R /Parent 22 0 R /Prev 23 0 R /Title (Code)
+>>
+endobj
+25 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Parent 22 0 R /Prev 24 0 R /Title (Sprachen)
+>>
+endobj
+26 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 27 0 R /Parent 11 0 R /Prev 22 0 R /Title (Tabs)
+>>
+endobj
+27 0 obj
+<<
+/Count -2 /Dest [ 7 0 R /Fit ] /First 28 0 R /Last 32 0 R /Next 33 0 R /Parent 11 0 R 
+  /Prev 26 0 R /Title (Tabs{.tabset})
+>>
+endobj
+28 0 obj
+<<
+/Count -1 /Dest [ 7 0 R /Fit ] /First 29 0 R /Last 29 0 R /Next 32 0 R /Parent 27 0 R 
+  /Title (Beispiel)
+>>
+endobj
+29 0 obj
+<<
+/Count -2 /Dest [ 7 0 R /Fit ] /First 30 0 R /Last 31 0 R /Parent 28 0 R /Title (Tabs)
+>>
+endobj
+30 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 31 0 R /Parent 29 0 R /Title (Tab1)
+>>
+endobj
+31 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Parent 29 0 R /Prev 30 0 R /Title (Tab2)
+>>
+endobj
+32 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Parent 27 0 R /Prev 28 0 R /Title (Code)
+>>
+endobj
+33 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 34 0 R /Parent 11 0 R /Prev 27 0 R /Title (Listen)
+>>
+endobj
+34 0 obj
+<<
+/Count -2 /Dest [ 7 0 R /Fit ] /First 35 0 R /Last 36 0 R /Next 37 0 R /Parent 11 0 R 
+  /Prev 33 0 R /Title (Listen{.tabset})
+>>
+endobj
+35 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 36 0 R /Parent 34 0 R /Title (Beispiel)
+>>
+endobj
+36 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Parent 34 0 R /Prev 35 0 R /Title (Code)
+>>
+endobj
+37 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 38 0 R /Parent 11 0 R /Prev 34 0 R /Title (Tabellen)
+>>
+endobj
+38 0 obj
+<<
+/Count -2 /Dest [ 7 0 R /Fit ] /First 39 0 R /Last 40 0 R /Next 41 0 R /Parent 11 0 R 
+  /Prev 37 0 R /Title (Tabellen{.tabset})
+>>
+endobj
+39 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 40 0 R /Parent 38 0 R /Title (Beispiel)
+>>
+endobj
+40 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Parent 38 0 R /Prev 39 0 R /Title (Code)
+>>
+endobj
+41 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 42 0 R /Parent 11 0 R /Prev 38 0 R /Title (Check List)
+>>
+endobj
+42 0 obj
+<<
+/Count -2 /Dest [ 8 0 R /Fit ] /First 43 0 R /Last 44 0 R /Next 45 0 R /Parent 11 0 R 
+  /Prev 41 0 R /Title (Check List{.tabset})
+>>
+endobj
+43 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 44 0 R /Parent 42 0 R /Title (Beispiel)
+>>
+endobj
+44 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Parent 42 0 R /Prev 43 0 R /Title (Code)
+>>
+endobj
+45 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 46 0 R /Parent 11 0 R /Prev 42 0 R /Title (Emoji)
+>>
+endobj
+46 0 obj
+<<
+/Count -2 /Dest [ 8 0 R /Fit ] /First 47 0 R /Last 48 0 R /Next 49 0 R /Parent 11 0 R 
+  /Prev 45 0 R /Title (Emoji{.tabset})
+>>
+endobj
+47 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 48 0 R /Parent 46 0 R /Title (Beispiel)
+>>
+endobj
+48 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Parent 46 0 R /Prev 47 0 R /Title (Mehr)
+>>
+endobj
+49 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 50 0 R /Parent 11 0 R /Prev 46 0 R /Title (MDI Icons)
+>>
+endobj
+50 0 obj
+<<
+/Count -2 /Dest [ 8 0 R /Fit ] /First 51 0 R /Last 52 0 R /Parent 11 0 R /Prev 49 0 R 
+  /Title (MDI Icons{.tabset})
+>>
+endobj
+51 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 52 0 R /Parent 50 0 R /Title (Beispiel)
+>>
+endobj
+52 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Parent 50 0 R /Prev 51 0 R /Title (Code)
+>>
+endobj
+53 0 obj
+<<
+/Count 3 /Kids [ 6 0 R 7 0 R 8 0 R ] /Type /Pages
+>>
+endobj
+54 0 obj
+<<
+/Length 5207
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 220.0642 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Hilfe) Tj T* -220.0642 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-10-26 11:46:25.029000+00:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 669.8455 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Blockquotes) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 649.6674 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Blockquotes{.tabset}) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 630.702 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Beispiel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 614.3642 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (a) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 599.2392 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (b) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 584.1142 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (c) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 568.9892 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (d) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 553.8642 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (e) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 535.7074 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 424.8696 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 101.0727 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (>) Tj ( ) Tj (a) Tj  T*  T* (>) Tj ( ) Tj (b) Tj  T* ({.is-info}) Tj  T*  T* (>) Tj ( ) Tj (c) Tj  T* ({.is-success}) Tj  T*  T* (>) Tj ( ) Tj (d) Tj  T* ({.is-warning}) Tj  T*  T* (>) Tj ( ) Tj (e) Tj  T* ({.is-danger}) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 404.6915 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Collapsible / Ausklappen) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 384.5134 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Collapsible / Ausklappen{.tabset}) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 365.548 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Beispiel 1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 349.2102 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Ein/Ausblenden Hello, here is collapsed text! * Nice * Nice 2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 331.0534 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Code 1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 267.4656 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 53.82275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (<) Tj (details) Tj (>) Tj  T* (<) Tj (summary) Tj (>) Tj (Ausklappen) Tj (<) Tj (/summary) Tj (>) Tj  T* (Hello,) Tj ( ) Tj (here) Tj ( ) Tj (is) Tj ( ) Tj (collapsed) Tj ( ) Tj (text!) Tj  T*  T* (*) Tj ( ) Tj (Nice) Tj  T* (*) Tj ( ) Tj (Nice) Tj ( ) Tj (2) Tj  T* (<) Tj (/details) Tj (>) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 249.3087 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Beispiel 2 \(Codeblock\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 232.971 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Wichtig Leerzeile muss dabei sein.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 217.846 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Inhalt: ) Tj /F4 5.25 Tf (Properties.yml) Tj /F1 5.25 Tf  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 202.721 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (ls) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 182.5429 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 162.3647 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Code{.tabset}) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 143.3994 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Beispiel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 127.0616 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (code) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 108.9047 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 76.817 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 22.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (```) Tj  T* (code) Tj  T* (```) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+55 0 obj
+<<
+/Length 9125
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 753.3295 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Sprachen) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 721.2417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 22.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (```java) Tj  T* (//) Tj ( ) Tj (some) Tj ( ) Tj (code) Tj ( ) Tj (here) Tj  T* (```) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 706.1167 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Weitere https://github.com/highlightjs/highlight.js/blob/main/SUPPORTED_LANGUAGES.md) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 685.9386 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Tabs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 665.7605 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Tabs{.tabset}) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 646.7951 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Beispiel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 629.8274 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Tabs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 614.2824 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F3 5.25 Tf 0 0 0 rg (Tab1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 599.1574 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Any content here will go into the first tab...) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 584.0324 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F3 5.25 Tf 0 0 0 rg (Tab2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 568.9074 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Any content here will go into the second tab...) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 550.7505 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 479.2877 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 61.69775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Tabs) Tj ( ) Tj ({) Tj (.) Tj (tabset) Tj (}) Tj  T* (##) Tj ( ) Tj (Tab1) Tj  T*  T* (Any) Tj ( ) Tj (content) Tj ( ) Tj (here) Tj ( ) Tj (will) Tj ( ) Tj (go) Tj ( ) Tj (into) Tj ( ) Tj (the) Tj ( ) Tj (first) Tj ( ) Tj (tab) Tj (...) Tj  T*  T* (##) Tj ( ) Tj (Tab2) Tj  T*  T* (Any) Tj ( ) Tj (content) Tj ( ) Tj (here) Tj ( ) Tj (will) Tj ( ) Tj (go) Tj ( ) Tj (into) Tj ( ) Tj (the) Tj ( ) Tj (second) Tj ( ) Tj (tab) Tj (...) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 459.1096 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Listen) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 438.9315 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Listen{.tabset}) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 419.9661 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Beispiel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 403.6284 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (1.) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Erstens) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 393.7534 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (2.) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Zweitens) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 383.8784 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (3.) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Drittens) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 374.0034 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (4.) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (...) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 374.0034 cm
+Q
+q
+1 0 0 1 57.02362 355.8465 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 339.5087 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Mit Leerzeichen) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 300.7587 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 30.19775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (1.) Tj ( ) Tj (Erstens) Tj  T* (1.) Tj ( ) Tj (Zweitens) Tj  T* (1.) Tj ( ) Tj (Drittens) Tj  T* (1.) Tj ( ) Tj (...) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 280.5806 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Tabellen) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 260.4025 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Tabellen{.tabset}) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 241.4371 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Beispiel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 225.0994 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Mit Leerzeichen | Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text |) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 209.9744 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Ohne Leerzeichen) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 181.0994 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 111.6997 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Syntax) Tj T* -111.6997 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 105.867 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Description) Tj T* -105.867 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Header) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Title) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Paragraph) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Text) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 165.9744 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Aligned) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 137.0994 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F3 5.25 Tf 0 0 0 rg (Syntax) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 65.7646 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Description) Tj T* -65.7646 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 320.8189 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 137.3619 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Test Text) Tj T* -137.3619 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Header) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 75.2461 0 Td 7.875 TL /F1 5.25 Tf 0 0 0 rg (Title) Tj T* -75.2461 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 320.8189 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 135.7764 0 Td 7.875 TL /F1 5.25 Tf 0 0 0 rg (Here's this) Tj T* -135.7764 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Paragraph) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 75.0991 0 Td 7.875 TL /F1 5.25 Tf 0 0 0 rg (Text) Tj T* -75.0991 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 320.8189 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 137.6507 0 Td 7.875 TL /F1 5.25 Tf 0 0 0 rg (And more) Tj T* -137.6507 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 118.9425 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 102.6048 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Mit Leerzeichen) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 63.85475 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 30.19775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (|) Tj ( ) Tj (Syntax) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj (Description) Tj ( ) Tj (|) Tj  T* (|) Tj ( ) Tj (-----------) Tj ( ) Tj (|) Tj ( ) Tj (-----------) Tj ( ) Tj (|) Tj  T* (|) Tj ( ) Tj (Header) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj (Title) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj  T* (|) Tj ( ) Tj (Paragraph) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj (Text) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+56 0 obj
+<<
+/Length 6260
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Ohne Leerzeichen) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 716.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 30.19775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (|) Tj ( ) Tj (Syntax) Tj ( ) Tj (|) Tj ( ) Tj (Description) Tj ( ) Tj (|) Tj  T* (|) Tj ( ) Tj (---) Tj ( ) Tj (|) Tj ( ) Tj (-----------) Tj ( ) Tj (|) Tj  T* (|) Tj ( ) Tj (Header) Tj ( ) Tj (|) Tj ( ) Tj (Title) Tj ( ) Tj (|) Tj  T* (|) Tj ( ) Tj (Paragraph) Tj ( ) Tj (|) Tj ( ) Tj (Text) Tj ( ) Tj (|) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 701.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Aligned) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 662.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 30.19775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (|) Tj ( ) Tj (Syntax) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj (Description) Tj ( ) Tj (|) Tj ( ) Tj (Test) Tj ( ) Tj (Text) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj  T* (|) Tj ( ) Tj (:-) Tj (--) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (:-) Tj (---:) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (---:) Tj ( ) Tj (|) Tj  T* (|) Tj ( ) Tj (Header) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj (Title) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj (Here) Tj (') Tj (s) Tj ( ) Tj (this) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj  T* (|) Tj ( ) Tj (Paragraph) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj (Text) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj (And) Tj ( ) Tj (more) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 642.3455 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Check List) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 622.1674 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Check List{.tabset}) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 603.202 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Beispiel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 586.8642 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ([x] Write the press release) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 576.9892 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ([ ] Update the website) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 567.1142 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ([ ] Contact the media) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 567.1142 cm
+Q
+q
+1 0 0 1 57.02362 548.9574 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 516.8696 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 22.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (-) Tj ( ) Tj ([) Tj (x) Tj (]) Tj ( ) Tj (Write) Tj ( ) Tj (the) Tj ( ) Tj (press) Tj ( ) Tj (release) Tj  T* (-) Tj ( ) Tj ([) Tj ( ) Tj (]) Tj ( ) Tj (Update) Tj ( ) Tj (the) Tj ( ) Tj (website) Tj  T* (-) Tj ( ) Tj ([) Tj ( ) Tj (]) Tj ( ) Tj (Contact) Tj ( ) Tj (the) Tj ( ) Tj (media) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 496.6915 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Emoji) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 476.5134 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Emoji{.tabset}) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 457.548 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Beispiel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 441.2102 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (:apple: :octopus: :laughing: :cloud: :floppy_disk: :tophat: :office: :m:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 423.0534 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Mehr) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 406.7156 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://www.webfx.com/tools/emoji-cheat-sheet/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 406.7156 cm
+Q
+q
+1 0 0 1 57.02362 386.5375 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (MDI Icons) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 366.3594 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (MDI Icons{.tabset}) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 347.394 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Beispiel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 331.0562 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Windows Linux / macOS Docker) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 312.8994 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 280.8116 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 22.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (Windows) Tj ( ) Tj (<) Tj (i) Tj ( ) Tj (class=) Tj (") Tj (mdi) Tj ( ) Tj (mdi-microsoft-windows) Tj (") Tj (>) Tj (<) Tj (/i) Tj (>) Tj  T* (Linux) Tj ( ) Tj (/) Tj ( ) Tj (macOS) Tj ( ) Tj (<) Tj (i) Tj ( ) Tj (class=) Tj (") Tj (mdi) Tj ( ) Tj (mdi-ubuntu) Tj (") Tj (>) Tj (<) Tj (/i) Tj (>) Tj  T* (Docker) Tj ( ) Tj (<) Tj (i) Tj ( ) Tj (class=) Tj (") Tj (mdi) Tj ( ) Tj (mdi-docker) Tj (") Tj (>) Tj (<) Tj (/i) Tj (>) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+57 0 obj
+<<
+/Nums [ 0 58 0 R 1 59 0 R 2 60 0 R ]
+>>
+endobj
+58 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+59 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+60 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+xref
+0 61
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000772 00000 n 
+0000000977 00000 n 
+0000001182 00000 n 
+0000001287 00000 n 
+0000001550 00000 n 
+0000001625 00000 n 
+0000001717 00000 n 
+0000001871 00000 n 
+0000001960 00000 n 
+0000002045 00000 n 
+0000002163 00000 n 
+0000002330 00000 n 
+0000002421 00000 n 
+0000002521 00000 n 
+0000002626 00000 n 
+0000002724 00000 n 
+0000002871 00000 n 
+0000002960 00000 n 
+0000003058 00000 n 
+0000003147 00000 n 
+0000003245 00000 n 
+0000003392 00000 n 
+0000003521 00000 n 
+0000003630 00000 n 
+0000003715 00000 n 
+0000003800 00000 n 
+0000003885 00000 n 
+0000003985 00000 n 
+0000004134 00000 n 
+0000004223 00000 n 
+0000004308 00000 n 
+0000004410 00000 n 
+0000004561 00000 n 
+0000004650 00000 n 
+0000004735 00000 n 
+0000004839 00000 n 
+0000004992 00000 n 
+0000005081 00000 n 
+0000005166 00000 n 
+0000005265 00000 n 
+0000005413 00000 n 
+0000005502 00000 n 
+0000005587 00000 n 
+0000005690 00000 n 
+0000005829 00000 n 
+0000005918 00000 n 
+0000006003 00000 n 
+0000006075 00000 n 
+0000011334 00000 n 
+0000020511 00000 n 
+0000026823 00000 n 
+0000026882 00000 n 
+0000026916 00000 n 
+0000026950 00000 n 
+trailer
+<<
+/ID 
+[<23d26612fd90a936f8c455016c2bd94d><23d26612fd90a936f8c455016c2bd94d>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 10 0 R
+/Root 9 0 R
+/Size 61
+>>
+startxref
+26984
+%%EOF

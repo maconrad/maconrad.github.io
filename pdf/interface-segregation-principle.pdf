@@ -1,0 +1,639 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 16 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 15 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 17 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 15 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Outlines 10 0 R /PageLabels 18 0 R /PageMode /UseNone /Pages 15 0 R /Type /Catalog
+>>
+endobj
+9 0 obj
+<<
+/Author () /CreationDate (D:20220202143525-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143525-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Interface Segregation Principle) /Trapped /False
+>>
+endobj
+10 0 obj
+<<
+/Count 2 /First 11 0 R /Last 11 0 R /Type /Outlines
+>>
+endobj
+11 0 obj
+<<
+/Count -3 /Dest [ 6 0 R /Fit ] /First 12 0 R /Last 14 0 R /Parent 10 0 R /Title (Intro)
+>>
+endobj
+12 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 13 0 R /Parent 11 0 R /Title (Intro)
+>>
+endobj
+13 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 14 0 R /Parent 11 0 R /Prev 12 0 R /Title (Before)
+>>
+endobj
+14 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Parent 11 0 R /Prev 13 0 R /Title (After)
+>>
+endobj
+15 0 obj
+<<
+/Count 2 /Kids [ 6 0 R 7 0 R ] /Type /Pages
+>>
+endobj
+16 0 obj
+<<
+/Length 9964
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 116.2042 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Interface Segregation Principle) Tj T* -116.2042 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-10-31 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.38025 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 23.3415 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Before) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.963 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (After) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+Q
+q
+1 0 0 1 57.02362 632.3667 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 608.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Interface segregation principle states that you should not put to much into an interface, but split into multiple interfaces instead. Why? The Client/Implementer should not have to deal with interfaces he does) Tj T* (not need.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 593.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Benefits:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 577.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Cleaner code: Avoid implementing functionality that is not needed. Avoid to throw errors or pass statements.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 568.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (API / method not even visisble in IDE code completion) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 568.029 cm
+Q
+q
+1 0 0 1 57.02362 552.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Key:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 537.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Think LCD: Least Common Denominator \("kgN=Kleinster gemeinsamer Nenner" in german\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 527.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (No enforcement possible due to Duck typing in python \(vs Static typing in other languages\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 527.904 cm
+Q
+q
+1 0 0 1 57.02362 512.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Antipattern:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 497.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Many methods with a ) Tj /F4 5.25 Tf (pass) Tj /F1 5.25 Tf ( statement or a ) Tj /F4 5.25 Tf (NotImplementedError) Tj /F1 5.25 Tf ( exception.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 487.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Problem with pass: User using the interface expect sth to happen \(implementing the method suggests that sth happens\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 477.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Problem with raining an error: small app not an issue, big app or library, maybe crashes app because Exception not handled.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 477.904 cm
+Q
+q
+1 0 0 1 57.02362 462.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Short Forms:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 447.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (ISP) Tj /F1 5.25 Tf (: Interface Segregation Principle) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 447.654 cm
+Q
+q
+1 0 0 1 57.02362 429.4971 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Before) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 413.1594 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Basic ExpressoMachine throws a NotImplementedError as it cannot implement all methods of the interface due to limited functionality.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 403.2844 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Note: No error handling is on purpose to keep code as lean as possible and still understand pattern.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 403.2844 cm
+Q
+q
+1 0 0 1 57.02362 112.5344 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 282.1977 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (from) Tj ( ) Tj (abc) Tj ( ) Tj (import) Tj ( ) Tj (abstractmethod) Tj  T*  T* (#) Tj ( ) Tj (Interface) Tj  T* (class) Tj ( ) Tj (CoffeeMachine) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (@abstractmethod) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (brew_machiato) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (@abstractmethod) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (brew_espresso) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj  T*  T* (class) Tj ( ) Tj (BasicEspressoMachine) Tj (\() Tj (CoffeeMachine) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (brew_machiato) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (raise) Tj ( ) Tj (NotImplementedError) Tj (\() Tj (") Tj (Can) Tj ( ) Tj (only) Tj ( ) Tj (brew) Tj ( ) Tj (espresso) Tj (") Tj (\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (brew_espresso) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (") Tj (Brewing...) Tj (") Tj (\)) Tj  T*  T* (class) Tj ( ) Tj (FullyAutomaticCoffeeMachine) Tj (\() Tj (CoffeeMachine) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (brew_machiato) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (") Tj (Brewing) Tj ( ) Tj (machiato) Tj (") Tj (\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (brew_espresso) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (") Tj (Brewing) Tj ( ) Tj (espresso) Tj (") Tj (\)) Tj  T*  T*  T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (coffemachine2) Tj ( ) Tj (=) Tj ( ) Tj (BasicEspressoMachine) Tj (\(\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (coffemachine1) Tj ( ) Tj (=) Tj ( ) Tj (FullyAutomaticCoffeeMachine) Tj (\(\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (machines) Tj ( ) Tj (=) Tj ( ) Tj ([) Tj (coffemachine1) Tj (,) Tj ( ) Tj (coffemachine2) Tj (]) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (machine) Tj ( ) Tj (in) Tj ( ) Tj (machines) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (machine) Tj (.) Tj (brew_espresso) Tj (\(\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (machine) Tj (.) Tj (brew_machiato) Tj (\(\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 94.3775 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (After) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 78.03975 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Multiple interfaces based on least common functionality) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 68.16475 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Note: No error handling is on purpose to keep code as lean as possible and still understand pattern.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 68.16475 cm
+Q
+ 
+endstream
+endobj
+17 0 obj
+<<
+/Length 4206
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 471.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 290.0727 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (from) Tj ( ) Tj (abc) Tj ( ) Tj (import) Tj ( ) Tj (abstractmethod) Tj  T*  T* (class) Tj ( ) Tj (MachiatoMachine) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (@abstractmethod) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (brew_machiato) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj  T*  T*  T* (class) Tj ( ) Tj (EspressoMachine) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (@abstractmethod) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (brew_espresso) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj  T*  T* (class) Tj ( ) Tj (BasicEspressoMachine) Tj (\() Tj (EspressoMachine) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (brew_espresso) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (") Tj (Brewing) Tj ( ) Tj (espresso) Tj (") Tj (\)) Tj  T*  T* (class) Tj ( ) Tj (FullyAutomaticCoffeeMachine) Tj (\() Tj (EspressoMachine) Tj (,) Tj ( ) Tj (MachiatoMachine) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (brew_machiato) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (") Tj (Brewing) Tj ( ) Tj (machiato) Tj (") Tj (\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (brew_espresso) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (") Tj (Brewing) Tj ( ) Tj (espresso) Tj (") Tj (\)) Tj  T*  T*  T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (coffemachine2) Tj ( ) Tj (=) Tj ( ) Tj (BasicEspressoMachine) Tj (\(\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (coffemachine1) Tj ( ) Tj (=) Tj ( ) Tj (FullyAutomaticCoffeeMachine) Tj (\(\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (machines) Tj ( ) Tj (=) Tj ( ) Tj ([) Tj (coffemachine1) Tj (,) Tj ( ) Tj (coffemachine2) Tj (]) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (funcs) Tj ( ) Tj (=) Tj ( ) Tj ([) Tj (') Tj (brew_espresso) Tj (') Tj (,) Tj ( ) Tj (') Tj (brew_machiato) Tj (') Tj (]) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (machine) Tj ( ) Tj (in) Tj ( ) Tj (machines) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (func) Tj ( ) Tj (in) Tj ( ) Tj (funcs) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (hasattr) Tj (\() Tj (machine) Tj (,) Tj ( ) Tj (func) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (getattr) Tj (\() Tj (machine) Tj (,) Tj ( ) Tj (func) Tj (\)\(\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 440.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 21.8555 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (One major problem here, which at the same time brings a lot of flexibility into python, is that of dynamic typing. No static type checking is done. The code in the main part of the before section would also run) Tj T* (in the after section, as the type is not checked and the machines array has no strict type. Therefore duck typign applies, which states: \223) Tj (If it walks like a duck, and it quacks like a duck, then it must be a duck.) Tj (\224) Tj T* (Instead the presence of a method is checked on the object.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 417.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In essence, although from a design perspective the After-Implementation is much cleaner, there needs to be an additional enforcement/verification on the usage part. This was solved here using introspection) Tj T* (functionality.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+18 0 obj
+<<
+/Nums [ 0 19 0 R 1 20 0 R ]
+>>
+endobj
+19 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+20 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000772 00000 n 
+0000000977 00000 n 
+0000001082 00000 n 
+0000001370 00000 n 
+0000001444 00000 n 
+0000001554 00000 n 
+0000001640 00000 n 
+0000001740 00000 n 
+0000001826 00000 n 
+0000001892 00000 n 
+0000011908 00000 n 
+0000016166 00000 n 
+0000016216 00000 n 
+0000016250 00000 n 
+trailer
+<<
+/ID 
+[<c12f983d197797ed9be0d740bff32656><c12f983d197797ed9be0d740bff32656>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 9 0 R
+/Root 8 0 R
+/Size 21
+>>
+startxref
+16284
+%%EOF

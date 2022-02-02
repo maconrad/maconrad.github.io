@@ -1,0 +1,1407 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 22 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 21 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 23 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 21 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.youtube.com/watch?v=_WOKRaM-HI4&t=1921s)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 654.2282 179.0991 662.1032 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.thegeekdiary.com/understanding-selinux-file-labelling-and-selinux-context/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 644.3532 161.0181 652.2282 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/Annots [ 8 0 R 9 0 R ] /Contents 24 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 21 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+11 0 obj
+<<
+/Outlines 13 0 R /PageLabels 25 0 R /PageMode /UseNone /Pages 21 0 R /Type /Catalog
+>>
+endobj
+12 0 obj
+<<
+/Author () /CreationDate (D:20220202143524-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143524-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (SELinux) /Trapped /False
+>>
+endobj
+13 0 obj
+<<
+/Count 3 /First 14 0 R /Last 14 0 R /Type /Outlines
+>>
+endobj
+14 0 obj
+<<
+/Count -3 /Dest [ 6 0 R /Fit ] /First 15 0 R /Last 20 0 R /Parent 13 0 R /Title (Basics)
+>>
+endobj
+15 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 16 0 R /Parent 14 0 R /Title (Basics)
+>>
+endobj
+16 0 obj
+<<
+/Count -3 /Dest [ 6 0 R /Fit ] /First 17 0 R /Last 19 0 R /Next 20 0 R /Parent 14 0 R 
+  /Prev 15 0 R /Title (- If bool or re-labeling does NOT fix a problem, might need a policy)
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 18 0 R /Parent 16 0 R /Title (Key Points)
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 19 0 R /Parent 16 0 R /Prev 17 0 R /Title (Files)
+>>
+endobj
+19 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Parent 16 0 R /Prev 18 0 R /Title (CLI)
+>>
+endobj
+20 0 obj
+<<
+/Dest [ 10 0 R /Fit ] /Parent 14 0 R /Prev 16 0 R /Title (References)
+>>
+endobj
+21 0 obj
+<<
+/Count 3 /Kids [ 6 0 R 7 0 R 10 0 R ] /Type /Pages
+>>
+endobj
+22 0 obj
+<<
+/Length 18259
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 205.0542 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (SELinux) Tj T* -205.0542 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-11-06 18:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 23.33625 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Basics) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 162.519 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (- If bool or re-labeling does NOT fix a problem, might need a policy) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 40.845 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Key Points) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 640.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 26.83275 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Files) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 630.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 23.919 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (CLI) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 630.7736 cm
+Q
+q
+1 0 0 1 57.02362 620.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 34.71825 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 620.8986 cm
+Q
+q
+1 0 0 1 57.02362 602.7417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Basics) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 578.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year 2000 by NSA to open source community. While talking to one of my) Tj T* (fellow engineers about some customer projects, he mentioned SELinux several times. Not knowing how stuff actually works, sucks... So time to get my hands on at least the basics of SELinux.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 563.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Runs a module in the linux kernel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 537.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 21.8555 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 7.875 21.8555 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (MAC vs. AC - DAC: Discretionary access control - Ownership \(user, group, other\) + permissions \(rwx\) - Users have ability \(discretion\) to change permissions - User can do chmod +rwx on his home) Tj T* (directory, no way to stop that - Problem: Execute anything he wants in his home dir! - MAC: Mandatory access control - Policy that is administratively set and fixed - Even if DAC is changed on home dir,) Tj T* (nothing happens, as if there is a policy that prevents users and processes from accessing it) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 527.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Policy very precise and can protect all types of communication between:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 518.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (users / files / dirs / memories / sockets / tcp,udp ports / etc.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 508.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (targeted) Tj /F1 5.25 Tf ( \(default policy type\) vs ) Tj /F4 5.25 Tf (mls) Tj /F1 5.25 Tf ( \(multi-layer\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 490.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 13.9805 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+.492188 w
+BT 1 0 0 1 15.75 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (targeted: Policy for targeted processes \(hundreds defined by default\), everything else unrestricted/unconfied. Examples of targed procceses are httpd & network, but also web-browser and) Tj T* (email-client.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 480.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (remember that ) Tj /F4 5.25 Tf (targeted) Tj /F1 5.25 Tf ( does NOT use user or role!) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 480.529 cm
+Q
+q
+1 0 0 1 57.02362 470.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (mls: Multi-level, multi-category, can get very complex) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 470.654 cm
+Q
+q
+1 0 0 1 57.02362 460.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Two major concepts) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 450.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (Label) Tj /F1 5.25 Tf ( \(also referrred to as context\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 441.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Files, procs, ports etc. are all labeled with a SELinux ) Tj /F4 5.25 Tf (context) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 431.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 23.625 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 31.5 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Files & dirs store them as extended attributes on the filesystem) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 421.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 23.625 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 31.5 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (proccesses, ports etc, the kernel manages the labels) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 421.279 cm
+Q
+q
+1 0 0 1 57.02362 411.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Remember: Context set when files created \(based on parent dir unless file transition policy\). RPM can set context as part of installation. Login process sets default context \(e.g. targeted\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 401.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Format: ) Tj /F4 5.25 Tf (user:role:type:level\(optional\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 391.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 23.625 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 31.5 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (MLS uses user & role) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 381.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 23.625 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 31.5 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (level refers to multi-level, multi-category) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 381.779 cm
+Q
+q
+1 0 0 1 57.02362 381.779 cm
+Q
+q
+1 0 0 1 57.02362 371.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Type Enforcement \(remember type part of the label\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 362.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (2 Modes) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 352.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 23.625 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 31.5 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (enforced) Tj /F1 5.25 Tf ( or ) Tj /F4 5.25 Tf (permissive) Tj /F1 5.25 Tf ( \(still monitoring\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 352.154 cm
+Q
+q
+1 0 0 1 57.02362 342.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Example) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 332.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 23.625 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 31.5 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (process running in httpd_t context to interact with a file in httpd_config_t context/label = OK) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 322.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 23.625 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 31.5 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (process running in httpd_t context to interact with shadow_t label = NOK.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 322.529 cm
+Q
+q
+1 0 0 1 57.02362 312.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Policy \(SELinux policy\) defined on system defines interaction between types even if e.g. chmod 777 on file /etc/shadow) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 312.654 cm
+Q
+q
+1 0 0 1 57.02362 312.654 cm
+Q
+q
+1 0 0 1 57.02362 302.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (-Z) Tj /F1 5.25 Tf ( for many commands to view context) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 292.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Other similar tools:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 283.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Ubuntu uses AppArmor as an alternative. SELinux installation probably breaks ubuntu if not configured) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 283.029 cm
+Q
+q
+1 0 0 1 57.02362 273.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Exception to inheritance for context from parent dir: File transitions policy) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 263.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Example:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 253.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Real Behaviour: dhclient \(dhclient_t\) creates a file /etc/resolv.conf \(net_conf_t\) in director /etc \(etc_t\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 243.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Without file transition policy: /etc/resolv.conf would have inherited \(etc_t\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 243.529 cm
+Q
+q
+1 0 0 1 57.02362 243.529 cm
+Q
+q
+1 0 0 1 57.02362 233.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (semanage) Tj /F1 5.25 Tf ( to manage SELinux settings for nodes, file context, boolean, permissive state, dontaudit) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 223.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Booleans Examples, defaults) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 213.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ("Allow ftp server to access users home-dir") Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 204.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ("Allow httpd to to use mod_auth_ntlm_winbind") Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 204.029 cm
+Q
+q
+1 0 0 1 57.02362 194.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Tips & Tricks) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 184.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Install ) Tj /F4 5.25 Tf (setroubleshoot) Tj /F1 5.25 Tf ( and ) Tj /F4 5.25 Tf (setroubleshoot-server) Tj /F1 5.25 Tf ( in dev environment = lots of tools for debugging. Restart auditd after that) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 184.279 cm
+Q
+q
+1 0 0 1 57.02362 174.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Moving & Copying) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 164.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Remember: Moving file keeps context! Copy copies context over from parent dir.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 154.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Example: ) Tj /F4 5.25 Tf (move /home/maconrad/content/* /var/www/html/) Tj /F1 5.25 Tf ( & ) Tj /F4 5.25 Tf (chown httpd:httpd /var/www/html/*) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 144.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (journalctl) Tj /F1 5.25 Tf ( for error and ) Tj /F4 5.25 Tf (ls -ldZ /var/www/html/) Tj /F1 5.25 Tf ( for target type and ) Tj /F4 5.25 Tf (chcon) Tj /F1 5.25 Tf ( to change the context of the file) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 134.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Can use ) Tj /F4 5.25 Tf (chcon) Tj /F1 5.25 Tf ( to set manually or reference known good or use ) Tj /F4 5.25 Tf (restorecon) Tj /F1 5.25 Tf ( that relies on predefined defintions. See files.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 134.904 cm
+Q
+q
+1 0 0 1 57.02362 125.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Policy Module) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 106.8721 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 7.875 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (- If bool or re-labeling does NOT fix a problem, might need a policy) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 90.53437 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Example) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 80.65937 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (User fred with home-dir /home/fred/public_html, UserDir public_html in /etc/httpd/conf.d/userdir.conf is enabled & systemctl restart httpd) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 70.78437 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Nothing works and /var/log/httpd/access_log & /var/log/httpd/error_log only show forbidden \(http 403\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+23 0 obj
+<<
+/Length 11571
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (journalctl) Tj /F1 5.25 Tf ( shows systemlogs including SELinux stuff) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 755.1486 cm
+Q
+q
+1 0 0 1 57.02362 755.1486 cm
+Q
+q
+1 0 0 1 57.02362 738.9736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Key Points) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 723.4286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Tag/Label/Context/Type) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 713.5536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (User & Role only used in MLS mode \(not targeted\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 703.6786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Permissive mode still logs but allows everything, enforced mode enforces ;\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 693.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Moving keeps context, copying inhertis context, exception transition policy) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 683.9286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (sestatus) Tj /F1 5.25 Tf (, ) Tj /F4 5.25 Tf (getenforce) Tj /F1 5.25 Tf (, ) Tj /F4 5.25 Tf (xy -Z) Tj /F1 5.25 Tf ( for info) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 674.0536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (getsebool) Tj /F1 5.25 Tf ( & ) Tj /F4 5.25 Tf (setsebool) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 664.1786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (journalctl) Tj /F1 5.25 Tf ( & ) Tj /F4 5.25 Tf (sealert) Tj /F1 5.25 Tf ( for tshoot) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 654.3036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (restorecon) Tj /F1 5.25 Tf ( & ) Tj /F4 5.25 Tf (chcon) Tj /F1 5.25 Tf ( to change label) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 644.4286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (semanage) Tj /F1 5.25 Tf ( to tell SELinux what it should be \(does NOT relabel\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 644.4286 cm
+Q
+q
+1 0 0 1 57.02362 628.2536 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Files) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 612.7086 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (What policy: ) Tj /F4 5.25 Tf (/etc/selinux/config) Tj /F1 5.25 Tf ( or ) Tj /F4 5.25 Tf (/etc/sysconfig/selinux) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 602.8336 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (What booleans: ) Tj /F4 5.25 Tf (/etc/selinux/targeted/modules/active/booleans.local) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 592.9586 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Restorecon default contexts: ) Tj /F4 5.25 Tf (/etc/selinux/targeted/contexts/files/file_contexts) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 583.0836 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Good reference for REGEX of files) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 583.0836 cm
+Q
+q
+1 0 0 1 57.02362 583.0836 cm
+Q
+q
+1 0 0 1 57.02362 566.9086 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (CLI) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 63.11362 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 494.8227 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (dnf) Tj ( ) Tj (provides) Tj ( ) Tj (/usr/sbin/semanage) Tj ( ) Tj T* (dnf) Tj ( ) Tj (install) Tj ( ) Tj (policycoreutils-python-utils) Tj ( ) Tj T* (#) Tj ( ) Tj (setup) Tj ( ) Tj (via) Tj ( ) Tj (gui) Tj ( ) Tj (if) Tj ( ) Tj (needed) Tj ( ) Tj T* (dnf) Tj ( ) Tj (install) Tj ( ) Tj (policycoreutils-gui) Tj (;) Tj ( ) Tj (system-config-selinux) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (What) Tj ( ) Tj (policy) Tj ( ) Tj T* (sudo) Tj ( ) Tj (sestatus) Tj ( ) Tj T* (sudo) Tj ( ) Tj (getenforce) Tj ( ) Tj T* (#) Tj ( ) Tj (temporary) Tj ( ) Tj (turn) Tj ( ) Tj (off) Tj ( ) Tj (selinux) Tj ( ) Tj T* (#) Tj ( ) Tj (permissive) Tj ( ) Tj (mode) Tj ( ) Tj (=) Tj ( ) Tj (still) Tj ( ) Tj (see) Tj ( ) Tj (errors) Tj ( ) Tj T* (sudo) Tj ( ) Tj (setenforce) Tj ( ) Tj (0) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Get) Tj ( ) Tj (context/label) Tj ( ) Tj T* (ps) Tj ( ) Tj (-Z) Tj ( ) Tj T* (ls) Tj ( ) Tj (-Z) Tj ( ) Tj T* (id) Tj ( ) Tj (-Z) Tj ( ) Tj T* (netstat) Tj ( ) Tj (-Z) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Example) Tj ( ) Tj T* (ls) Tj ( ) Tj (-lZ) Tj ( ) Tj (/usr/sbin/httpd) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (httpd_exec_t) Tj ( ) Tj (type) Tj ( ) Tj (\(executable) Tj ( ) Tj (file\)) Tj ( ) Tj T* (ls) Tj ( ) Tj (-dZ) Tj ( ) Tj (/etc/httpd) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (httpd_config_t) Tj ( ) Tj (type) Tj ( ) Tj (\(config) Tj ( ) Tj (files\)) Tj ( ) Tj T* (ls) Tj ( ) Tj (-dZ) Tj ( ) Tj (/var/log/httpd) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (httpd_log_t) Tj ( ) Tj (type) Tj ( ) Tj (\(log) Tj ( ) Tj (files\)) Tj ( ) Tj T* (ls) Tj ( ) Tj (-dZ) Tj ( ) Tj (/var/www/html) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (httpd_sys_content_t) Tj ( ) Tj (type) Tj ( ) Tj (\(conent) Tj ( ) Tj (dir) Tj (&) Tj (files\)) Tj ( ) Tj T* (ls) Tj ( ) Tj (-lz) Tj ( ) Tj (/usr/lib/systemd/system/httpd.service) Tj ( ) Tj (#) Tj ( ) Tj (httpd_unit_file_t) Tj ( ) Tj (\(startup) Tj ( ) Tj (script\)) Tj ( ) Tj T* (ps) Tj ( ) Tj (-axZ) Tj ( ) Tj (|) Tj ( ) Tj (grep) Tj ( ) Tj ([) Tj (h) Tj (]) Tj (ttpd) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (httpd_t) Tj ( ) Tj (\(Proc\)) Tj ( ) Tj T* (netstat) Tj ( ) Tj (-tnlpZ) Tj ( ) Tj (|) Tj ( ) Tj (grep) Tj ( ) Tj ([) Tj (h) Tj (]) Tj (ttpd) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (httpd_t) Tj ( ) Tj (\(Ports\)) Tj ( ) Tj T* (semanage) Tj ( ) Tj (port) Tj ( ) Tj (-l) Tj ( ) Tj (|) Tj ( ) Tj (grep) Tj ( ) Tj ([) Tj (h) Tj (]) Tj (ttp) Tj ( ) Tj T* (ls) Tj ( ) Tj (-lZ) Tj ( ) Tj (/etc/shadow) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (shadow_t) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Booleans,) Tj ( ) Tj (e.g.) Tj ( ) Tj (httpd_can_connect_ftp,) Tj ( ) Tj (httpd_can_sendmail) Tj ( ) Tj T* (getsebool) Tj ( ) Tj (-a) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (-P=Persistent) Tj ( ) Tj (across) Tj ( ) Tj (reboots) Tj ( ) Tj (1=on) Tj ( ) Tj T* (setsebool) Tj ( ) Tj (httpd_enable_homedirs) Tj ( ) Tj (1) Tj ( ) Tj (-P) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Setroubleshoot) Tj ( ) Tj (for) Tj ( ) Tj (dev) Tj ( ) Tj T* (yum) Tj ( ) Tj (install) Tj ( ) Tj (setroubleshoot) Tj ( ) Tj (setroubleshoot-server) Tj ( ) Tj T* (systemctl) Tj ( ) Tj (restart) Tj ( ) Tj (auditd.service) Tj ( ) Tj T* (service) Tj ( ) Tj (auditd) Tj ( ) Tj (restart) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Troubleshoot,) Tj ( ) Tj (-b=boot,) Tj ( ) Tj (-0=last) Tj ( ) Tj (boot,) Tj ( ) Tj (1=1st) Tj ( ) Tj (boot) Tj ( ) Tj (found) Tj ( ) Tj (in) Tj ( ) Tj (file,) Tj ( ) Tj (2nd) Tj ( ) Tj (boot) Tj ( ) Tj (found) Tj ( ) Tj (in) Tj ( ) Tj (file) Tj ( ) Tj ( ) Tj T* (journalctl) Tj ( ) Tj (-b) Tj ( ) Tj (-0) Tj ( ) Tj (#) Tj ( ) Tj (replacement) Tj ( ) Tj (for) Tj ( ) Tj (tail) Tj ( ) Tj (-f) Tj ( ) Tj (/var/log/messages) Tj ( ) Tj T* (sealert) Tj ( ) Tj (-l) Tj ( ) Tj ({) Tj (uuid) Tj (}) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Change) Tj ( ) Tj (context/label) Tj ( ) Tj (of) Tj ( ) Tj (a) Tj ( ) Tj (file) Tj ( ) Tj T* (#) Tj ( ) Tj (-u=user,) Tj ( ) Tj (-r=role,) Tj ( ) Tj (-t=type) Tj ( ) Tj T* (chcon) Tj ( ) Tj (-u) Tj ( ) Tj (system_u) Tj ( ) Tj (-r) Tj ( ) Tj (object_r) Tj ( ) Tj (-t) Tj ( ) Tj (httpd_sys_content_t) Tj ( ) Tj (/var/www/html/index.html) Tj ( ) Tj T* (#) Tj ( ) Tj (targeted) Tj ( ) Tj (environment) Tj ( ) Tj (user) Tj ( ) Tj (&) Tj ( ) Tj (role) Tj ( ) Tj (not) Tj ( ) Tj (taken) Tj ( ) Tj (into) Tj ( ) Tj (consideration) Tj ( ) Tj T* (chcon) Tj ( ) Tj (-t) Tj ( ) Tj (httpd_sys_content_t) Tj ( ) Tj (/var/www/html/index.html) Tj ( ) Tj T* (#) Tj ( ) Tj (Reference) Tj ( ) Tj (some) Tj ( ) Tj (known) Tj ( ) Tj (good) Tj ( ) Tj (file) Tj ( ) Tj T* (chcon) Tj ( ) Tj (--reference) Tj ( ) Tj (/var/www/html) Tj ( ) Tj (/var/www/html/index.html) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Restore) Tj ( ) Tj (directory) Tj ( ) Tj (to) Tj ( ) Tj (default) Tj ( ) Tj (context) Tj ( ) Tj T* (#) Tj ( ) Tj (-R=recursive,) Tj ( ) Tj (-v=verbose=show) Tj ( ) Tj (changes) Tj ( ) Tj T* (restorecon) Tj ( ) Tj (-vR) Tj ( ) Tj (/var/www/html) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Semanage) Tj ( ) Tj (does) Tj ( ) Tj (NOT) Tj ( ) Tj (make) Tj ( ) Tj (any) Tj ( ) Tj (changes) Tj ( ) Tj (to) Tj ( ) Tj (the) Tj ( ) Tj (file) Tj ( ) Tj (system,) Tj ( ) Tj (only) Tj ( ) Tj (tells) Tj ( ) Tj (it) Tj ( ) Tj (what) Tj ( ) Tj (it) Tj ( ) Tj (is) Tj ( ) Tj (supposed) Tj ( ) Tj (to) Tj ( ) Tj (be,) Tj ( ) Tj (restorecon) Tj ( ) Tj (can) Tj ( ) Tj (be) Tj ( ) Tj (used) Tj ( ) Tj (to) Tj ( ) Tj (set) Tj ( ) Tj (it) Tj ( ) Tj T* (#) Tj ( ) Tj (fcontext=filecontext,) Tj ( ) Tj (-a=add,) Tj ( ) Tj (-t=type) Tj ( ) Tj T* (semanage) Tj ( ) Tj (fcontext) Tj ( ) Tj (-a) Tj ( ) Tj (-t) Tj ( ) Tj (httpd_sys_content_t) Tj ( ) Tj (") Tj (/foo\(/.*\)?) Tj (") Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (-e=equivalent) Tj ( ) Tj T* (semanage) Tj ( ) Tj (fcontext) Tj ( ) Tj (-a) Tj ( ) Tj (-e) Tj ( ) Tj (/var/www/html) Tj ( ) Tj (/foo) Tj ( ) Tj T* (restorecon) Tj ( ) Tj (-vR) Tj ( ) Tj (/foo) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+24 0 obj
+<<
+/Length 1842
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 684.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 77.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ( ) Tj T* (#) Tj ( ) Tj (Find) Tj ( ) Tj (files) Tj ( ) Tj (newer) Tj ( ) Tj (than) Tj ( ) Tj T* (touch) Tj ( ) Tj (marker) Tj ( ) Tj T* (setsebool) Tj ( ) Tj (-P) Tj ( ) Tj (httpd_enable_homedirs) Tj (=) Tj (1) Tj ( ) Tj T* (find) Tj ( ) Tj (/etc/selinux/) Tj ( ) Tj (-newer) Tj ( ) Tj (marker) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (SELinux) Tj ( ) Tj (policy) Tj ( ) Tj (\(if) Tj ( ) Tj (boleans) Tj ( ) Tj (and) Tj ( ) Tj (labels) Tj ( ) Tj (fail\)) Tj ( ) Tj T* (#) Tj ( ) Tj (-M=module) Tj ( ) Tj T* (grep) Tj ( ) Tj (httpd) Tj ( ) Tj (/var/log/audit/audit.log) Tj ( ) Tj (|) Tj ( ) Tj (audit2allow) Tj ( ) Tj (-M) Tj ( ) Tj (myapp) Tj ( ) Tj T* (semodule) Tj ( ) Tj (-i) Tj ( ) Tj (myapp.pp) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 666.1167 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 649.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 121.0755 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (RedHat Summit - SELinux for mere mortals) Tj 0 0 0 rg  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 639.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 102.9945 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (GiakDiary - Understanding SELinux) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 639.904 cm
+Q
+ 
+endstream
+endobj
+25 0 obj
+<<
+/Nums [ 0 26 0 R 1 27 0 R 2 28 0 R ]
+>>
+endobj
+26 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+27 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+28 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+xref
+0 29
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000772 00000 n 
+0000000977 00000 n 
+0000001180 00000 n 
+0000001418 00000 n 
+0000001648 00000 n 
+0000001754 00000 n 
+0000002019 00000 n 
+0000002093 00000 n 
+0000002204 00000 n 
+0000002291 00000 n 
+0000002493 00000 n 
+0000002584 00000 n 
+0000002683 00000 n 
+0000002767 00000 n 
+0000002859 00000 n 
+0000002932 00000 n 
+0000021244 00000 n 
+0000032868 00000 n 
+0000034762 00000 n 
+0000034821 00000 n 
+0000034855 00000 n 
+0000034889 00000 n 
+trailer
+<<
+/ID 
+[<145c7c3a978d19c6554c31bf10d80e2c><145c7c3a978d19c6554c31bf10d80e2c>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 12 0 R
+/Root 11 0 R
+/Size 29
+>>
+startxref
+34923
+%%EOF

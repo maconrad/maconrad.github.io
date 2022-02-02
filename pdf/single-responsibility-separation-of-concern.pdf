@@ -1,0 +1,597 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 16 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 15 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 17 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 15 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Outlines 10 0 R /PageLabels 18 0 R /PageMode /UseNone /Pages 15 0 R /Type /Catalog
+>>
+endobj
+9 0 obj
+<<
+/Author () /CreationDate (D:20220202143525-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143525-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Single Responsibility, Separation of Concern) /Trapped /False
+>>
+endobj
+10 0 obj
+<<
+/Count 2 /First 11 0 R /Last 11 0 R /Type /Outlines
+>>
+endobj
+11 0 obj
+<<
+/Count -3 /Dest [ 6 0 R /Fit ] /First 12 0 R /Last 14 0 R /Parent 10 0 R /Title (Intro)
+>>
+endobj
+12 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 13 0 R /Parent 11 0 R /Title (Intro)
+>>
+endobj
+13 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 14 0 R /Parent 11 0 R /Prev 12 0 R /Title (Before)
+>>
+endobj
+14 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Parent 11 0 R /Prev 13 0 R /Title (After)
+>>
+endobj
+15 0 obj
+<<
+/Count 2 /Kids [ 6 0 R 7 0 R ] /Type /Pages
+>>
+endobj
+16 0 obj
+<<
+/Length 10086
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 59.78417 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Single Responsibility, Separation of Concern) Tj T* -59.78417 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-10-31 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.38025 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 23.3415 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Before) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.963 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (After) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+Q
+q
+1 0 0 1 57.02362 632.3667 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 616.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The single responsibility principle principle defines that a Class has a single main goal it achieves and should not implement any side responsibilities. DO NOT overload objects with too many responsibilities.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 600.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Benefit:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 585.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Assures that a change in functionality is made centrally \(at a single place\), instead of searching through 20 classes that all implement the same behaviour for there own class.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 585.779 cm
+Q
+q
+1 0 0 1 57.02362 570.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Antipattern:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 555.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (God Object = stick it all into single class) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 555.529 cm
+Q
+q
+1 0 0 1 57.02362 540.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Example:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 525.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Saving to file is offloaded to a FileManager instead of each class impelemting a save_to_file\(\) method.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 525.279 cm
+Q
+q
+1 0 0 1 57.02362 510.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Short Forms:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 495.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (SRP) Tj /F1 5.25 Tf (: Single Responsibility Principle) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 485.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (SoC) Tj /F1 5.25 Tf (: Separation of Concerns) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 485.154 cm
+Q
+q
+1 0 0 1 57.02362 466.9971 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Before) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 450.6594 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Multiple responsibilities \(tasks\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 440.7844 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Note: No error handling is on purpose to keep code as lean as possible and still understand pattern.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 440.7844 cm
+Q
+q
+1 0 0 1 57.02362 157.9094 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 274.3227 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (class) Tj ( ) Tj (Garage) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Primary) Tj ( ) Tj (responsibility) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (None) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (cars) Tj ( ) Tj (=) Tj ( ) Tj ([]) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (count) Tj ( ) Tj (=) Tj ( ) Tj (0) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (park_car) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (car) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (count) Tj ( ) Tj (+=) Tj ( ) Tj (1) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (cars) Tj (.) Tj (append) Tj (\() Tj (f) Tj (") Tj ({) Tj (self) Tj (.) Tj (count) Tj (}) Tj (:) Tj ( ) Tj ({) Tj (car) Tj (}) Tj (") Tj (\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Leave) Tj ( ) Tj (the) Tj ( ) Tj (garage) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (checkout) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (pos) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (del) Tj ( ) Tj (self) Tj (.) Tj (cars) Tj ([) Tj (pos) Tj (]) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (count) Tj ( ) Tj (-=) Tj ( ) Tj (1) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__str__) Tj (\() Tj (self) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (str) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (') Tj (\\n) Tj (') Tj (.) Tj (join) Tj (\() Tj (self) Tj (.) Tj (cars) Tj (\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Secondary) Tj ( ) Tj (responsibility!) Tj ( ) Tj (Persistency) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (save) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (filename) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (file) Tj ( ) Tj (=) Tj ( ) Tj (open) Tj (\() Tj (filename) Tj (,) Tj ( ) Tj (') Tj (w) Tj (') Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (file) Tj (.) Tj (write) Tj (\() Tj (str) Tj (\() Tj (self) Tj (\)\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (file) Tj (.) Tj (close) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (load) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (filename) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (load_from_api) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (uri) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj  T*  T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (g) Tj ( ) Tj (=) Tj ( ) Tj (Garage) Tj (\(\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (g) Tj (.) Tj (park_car) Tj (\() Tj (') Tj (Volvo) Tj (') Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (g) Tj (.) Tj (park_car) Tj (\() Tj (') Tj (Fiat) Tj (') Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (') Tj (Garage) Tj ( ) Tj (parked) Tj ( ) Tj (cars:) Tj (\\n) Tj ({) Tj (g) Tj (}) Tj (') Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 142.7844 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (What if there is not just a single type of garage? You have to go into every single class and change the safe to file and load from file mechanisms if something changes.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 124.6275 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (After) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 108.2897 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Single responsibility per class) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 98.41475 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Centrally change each responsibility.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 98.41475 cm
+Q
+q
+1 0 0 1 57.02362 67.53975 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 22.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (class) Tj ( ) Tj (Garage) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Primary) Tj ( ) Tj (responsibility) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (None) Tj (:) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+17 0 obj
+<<
+/Length 3811
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 471.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 290.0727 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (cars) Tj ( ) Tj (=) Tj ( ) Tj ([]) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (count) Tj ( ) Tj (=) Tj ( ) Tj (0) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (park_car) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (car) Tj (\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (count) Tj ( ) Tj (+=) Tj ( ) Tj (1) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (cars) Tj (.) Tj (append) Tj (\() Tj (f) Tj (") Tj ({) Tj (self) Tj (.) Tj (count) Tj (}) Tj (:) Tj ( ) Tj ({) Tj (car) Tj (}) Tj (") Tj (\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Leave) Tj ( ) Tj (the) Tj ( ) Tj (garage) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (checkout) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (pos) Tj (\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (del) Tj ( ) Tj (self) Tj (.) Tj (cars) Tj ([) Tj (pos) Tj (]) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (count) Tj ( ) Tj (-=) Tj ( ) Tj (1) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__str__) Tj (\() Tj (self) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (str) Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (') Tj (\\n) Tj (') Tj (.) Tj (join) Tj (\() Tj (self) Tj (.) Tj (cars) Tj (\)) Tj ( ) Tj T* ( ) Tj T* (class) Tj ( ) Tj (PersistenceManager) Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (@staticmethod) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (save_to_file) Tj (\() Tj (filename) Tj (,) Tj ( ) Tj (garage) Tj (\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (file) Tj ( ) Tj (=) Tj ( ) Tj (open) Tj (\() Tj (filename) Tj (,) Tj ( ) Tj (') Tj (w) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (file) Tj (.) Tj (write) Tj (\() Tj (str) Tj (\() Tj (garage) Tj (\)\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (file) Tj (.) Tj (close) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (@staticmethod) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (load) Tj (\() Tj (filename) Tj (\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (@staticmethod) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (load_from_api) Tj (\() Tj (uri) Tj (\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj ( ) Tj T* ( ) Tj T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (g) Tj ( ) Tj (=) Tj ( ) Tj (Garage) Tj (\(\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (g) Tj (.) Tj (park_car) Tj (\() Tj (') Tj (Volvo) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (g) Tj (.) Tj (park_car) Tj (\() Tj (') Tj (Fiat) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (') Tj (Garage) Tj ( ) Tj (parked) Tj ( ) Tj (cars:) Tj (\\n) Tj ({) Tj (g) Tj (}) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (filename) Tj ( ) Tj (=) Tj ( ) Tj (") Tj (./garage-state.txt) Tj (") Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (PersistenceManager) Tj (.) Tj (save_to_file) Tj (\() Tj (filename) Tj (,) Tj ( ) Tj (g) Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+18 0 obj
+<<
+/Nums [ 0 19 0 R 1 20 0 R ]
+>>
+endobj
+19 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+20 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000772 00000 n 
+0000000977 00000 n 
+0000001082 00000 n 
+0000001383 00000 n 
+0000001457 00000 n 
+0000001567 00000 n 
+0000001653 00000 n 
+0000001753 00000 n 
+0000001839 00000 n 
+0000001905 00000 n 
+0000012044 00000 n 
+0000015907 00000 n 
+0000015957 00000 n 
+0000015991 00000 n 
+trailer
+<<
+/ID 
+[<edd9804999a53bcd316a4aa68f68ce19><edd9804999a53bcd316a4aa68f68ce19>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 9 0 R
+/Root 8 0 R
+/Size 21
+>>
+startxref
+16025
+%%EOF

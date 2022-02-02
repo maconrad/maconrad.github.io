@@ -1,0 +1,771 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 17 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 16 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 18 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 16 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Contents 19 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 16 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Outlines 11 0 R /PageLabels 20 0 R /PageMode /UseNone /Pages 16 0 R /Type /Catalog
+>>
+endobj
+10 0 obj
+<<
+/Author () /CreationDate (D:20220202143525-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143525-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Open Closed Principle) /Trapped /False
+>>
+endobj
+11 0 obj
+<<
+/Count 2 /First 12 0 R /Last 12 0 R /Type /Outlines
+>>
+endobj
+12 0 obj
+<<
+/Count -3 /Dest [ 6 0 R /Fit ] /First 13 0 R /Last 15 0 R /Parent 11 0 R /Title (Intro)
+>>
+endobj
+13 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 14 0 R /Parent 12 0 R /Title (Intro)
+>>
+endobj
+14 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 15 0 R /Parent 12 0 R /Prev 13 0 R /Title (Before)
+>>
+endobj
+15 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Parent 12 0 R /Prev 14 0 R /Title (After)
+>>
+endobj
+16 0 obj
+<<
+/Count 3 /Kids [ 6 0 R 7 0 R 8 0 R ] /Type /Pages
+>>
+endobj
+17 0 obj
+<<
+/Length 9982
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 150.0642 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Open Closed Principle) Tj T* -150.0642 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-10-31 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.38025 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 23.3415 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Before) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.963 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (After) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+Q
+q
+1 0 0 1 57.02362 632.3667 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 616.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Open Closed principle states that new functionality should be added via extension, ot via modification. So what does that mean?) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 600.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Benefits:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 585.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Scales well) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 575.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Does not change interface how class is used) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 566.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Prevents state/space explosion and code replication) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 566.029 cm
+Q
+q
+1 0 0 1 57.02362 550.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Key:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 535.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (New functionality is added via extension, not via modification) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 535.779 cm
+Q
+q
+1 0 0 1 57.02362 520.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Example:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 505.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Lots and lots of filters, adding new filters = pain without OCP) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 505.529 cm
+Q
+q
+1 0 0 1 57.02362 490.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Short Forms:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 475.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (OCP) Tj /F1 5.25 Tf (: Open Closed Principle) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 475.279 cm
+Q
+q
+1 0 0 1 57.02362 457.1221 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Before) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 440.7844 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (CarSearch Class is violating open closed prinicple) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 430.9094 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Note: No error handling is on purpose to keep code as lean as possible and still understand pattern.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 430.9094 cm
+Q
+q
+1 0 0 1 57.02362 69.28437 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 353.0727 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (from) Tj ( ) Tj (enum) Tj ( ) Tj (import) Tj ( ) Tj (Enum) Tj  T*  T* (class) Tj ( ) Tj (Color) Tj (\() Tj (Enum) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (RED) Tj ( ) Tj (=) Tj ( ) Tj (1) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (GREEN) Tj ( ) Tj (=) Tj ( ) Tj (2) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (BLUE) Tj ( ) Tj (=) Tj ( ) Tj (3) Tj  T*  T* (class) Tj ( ) Tj (Make) Tj (\() Tj (Enum) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (VOLVO) Tj ( ) Tj (=) Tj ( ) Tj (1) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (FIAT) Tj ( ) Tj (=) Tj ( ) Tj (2) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (AUDI) Tj ( ) Tj (=) Tj ( ) Tj (3) Tj  T*  T* (class) Tj ( ) Tj (Car) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (name) Tj (,) Tj ( ) Tj (color) Tj (,) Tj ( ) Tj (make) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (None) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (name) Tj ( ) Tj (=) Tj ( ) Tj (name) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (color) Tj ( ) Tj (=) Tj ( ) Tj (color) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (make) Tj ( ) Tj (=) Tj ( ) Tj (make) Tj  T*  T* (class) Tj ( ) Tj (CarSearch) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (filter_by_color) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (cars) Tj (,) Tj ( ) Tj (color) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (c) Tj ( ) Tj (in) Tj ( ) Tj (cars) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (c) Tj (.) Tj (color) Tj ( ) Tj (==) Tj ( ) Tj (color) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (yield) Tj ( ) Tj (c) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (filter_by_make) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (cars) Tj (,) Tj ( ) Tj (make) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (c) Tj ( ) Tj (in) Tj ( ) Tj (cars) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (c) Tj (.) Tj (make) Tj ( ) Tj (==) Tj ( ) Tj (make) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (yield) Tj ( ) Tj (c) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (filter_by_color_and_make) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (cars) Tj (,) Tj ( ) Tj (color) Tj (,) Tj ( ) Tj (make) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (c) Tj ( ) Tj (in) Tj ( ) Tj (cars) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (c) Tj (.) Tj (color) Tj ( ) Tj (==) Tj ( ) Tj (color) Tj ( ) Tj (and) Tj ( ) Tj (c) Tj (.) Tj (make) Tj ( ) Tj (==) Tj ( ) Tj (make) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (yield) Tj ( ) Tj (c) Tj  T*  T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (car1) Tj ( ) Tj (=) Tj ( ) Tj (Car) Tj (\() Tj (') Tj (DailyDriver) Tj (') Tj (,) Tj ( ) Tj (Color) Tj (.) Tj (RED) Tj (,) Tj ( ) Tj (Make) Tj (.) Tj (FIAT) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (car2) Tj ( ) Tj (=) Tj ( ) Tj (Car) Tj (\() Tj (') Tj (WinterCar) Tj (') Tj (,) Tj ( ) Tj (Color) Tj (.) Tj (BLUE) Tj (,) Tj ( ) Tj (Make) Tj (.) Tj (VOLVO) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (car3) Tj ( ) Tj (=) Tj ( ) Tj (Car) Tj (\() Tj (') Tj (NiceWeather) Tj (') Tj (,) Tj ( ) Tj (Color) Tj (.) Tj (BLUE) Tj (,) Tj ( ) Tj (Make) Tj (.) Tj (AUDI) Tj (\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (cars) Tj ( ) Tj (=) Tj ( ) Tj ([) Tj (car1) Tj (,) Tj ( ) Tj (car2) Tj (,) Tj ( ) Tj (car3) Tj (]) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (searcher) Tj ( ) Tj (=) Tj ( ) Tj (CarSearch) Tj (\(\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (") Tj (Blue) Tj ( ) Tj (cars:) Tj (") Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (car) Tj ( ) Tj (in) Tj ( ) Tj (searcher) Tj (.) Tj (filter_by_color) Tj (\() Tj (cars) Tj (,) Tj ( ) Tj (Color) Tj (.) Tj (BLUE) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (") Tj ({) Tj (car) Tj (.) Tj (name) Tj (}) Tj (") Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+18 0 obj
+<<
+/Length 10599
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The problem is that each new filter adds new combinations resulting in a explosion of combinations. For example:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 740.0236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (2 Filters: byColor, byMake, byColorMake = 3 Combinations) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 730.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (3 Filters, byColor, byMake, ByEngine, byCM, byCE, byME, byCME = 7 Combos) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 730.1486 cm
+Q
+q
+1 0 0 1 57.02362 711.9917 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (After) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 695.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Uses specification Enterprise pattern) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 685.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Very flexible with all\(\) and map\(func, iterator\) functions) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 675.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (No need for any more methods, can only add new specifications if needed. E.g. EngineSpecification, TiresSpecification, DoorsSpec etc. etc.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 666.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (OR can be implemented similarly using any\(\) method) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 656.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (If there is need for e.g. a HouseSearch\(\), same specifications can be reused, e.g. ColorSpecification. Just create a new Search Class be inheriting from Search.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 646.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Note: No error handling is on purpose to keep code as lean as possible and still understand pattern.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 646.279 cm
+Q
+q
+1 0 0 1 57.02362 64.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 573.5728 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (from) Tj ( ) Tj (enum) Tj ( ) Tj (import) Tj ( ) Tj (Enum) Tj ( ) Tj T* ( ) Tj T* (class) Tj ( ) Tj (Color) Tj (\() Tj (Enum) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (RED) Tj ( ) Tj (=) Tj ( ) Tj (1) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (GREEN) Tj ( ) Tj (=) Tj ( ) Tj (2) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (BLUE) Tj ( ) Tj (=) Tj ( ) Tj (3) Tj ( ) Tj T* ( ) Tj T* (class) Tj ( ) Tj (Make) Tj (\() Tj (Enum) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (VOLVO) Tj ( ) Tj (=) Tj ( ) Tj (1) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (FIAT) Tj ( ) Tj (=) Tj ( ) Tj (2) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (AUDI) Tj ( ) Tj (=) Tj ( ) Tj (3) Tj ( ) Tj T* ( ) Tj T* (class) Tj ( ) Tj (Car) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (name) Tj (,) Tj ( ) Tj (color) Tj (,) Tj ( ) Tj (make) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (None) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (name) Tj ( ) Tj (=) Tj ( ) Tj (name) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (color) Tj ( ) Tj (=) Tj ( ) Tj (color) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (make) Tj ( ) Tj (=) Tj ( ) Tj (make) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Base) Tj ( ) Tj (classes) Tj ( ) Tj T* (class) Tj ( ) Tj (Specification) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (is_satisfied) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (item) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj ( ) Tj T* ( ) Tj T* (class) Tj ( ) Tj (Search) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (filter) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (items) Tj (,) Tj ( ) Tj (spec) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj ( ) Tj T* ( ) Tj T* (class) Tj ( ) Tj (ColorSpecification) Tj (\() Tj (Specification) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (color) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (None) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (color) Tj ( ) Tj (=) Tj ( ) Tj (color) Tj ( ) Tj T* ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (is_satisfied) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (item) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (item) Tj (.) Tj (color) Tj ( ) Tj (==) Tj ( ) Tj (self) Tj (.) Tj (color) Tj ( ) Tj T* ( ) Tj T* (class) Tj ( ) Tj (MakeSpecification) Tj (\() Tj (Specification) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (make) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (None) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (make) Tj ( ) Tj (=) Tj ( ) Tj (make) Tj ( ) Tj T* ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (is_satisfied) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (item) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (item) Tj (.) Tj (make) Tj ( ) Tj (==) Tj ( ) Tj (self) Tj (.) Tj (make) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Combinator) Tj ( ) Tj T* (class) Tj ( ) Tj (AndSpecification) Tj (\() Tj (Specification) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (*) Tj (args) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (None) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (specs) Tj ( ) Tj (=) Tj ( ) Tj (args) Tj ( ) Tj T* ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (is_satisfied) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (item) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (all) Tj (\() Tj (map) Tj (\() Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (lambda) Tj ( ) Tj (spec) Tj (:) Tj ( ) Tj (spec) Tj (.) Tj (is_satisfied) Tj (\() Tj (item) Tj (\),) Tj ( ) Tj (self) Tj (.) Tj (specs) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (\)\)) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Could) Tj ( ) Tj (be) Tj ( ) Tj (in) Tj ( ) Tj (base) Tj ( ) Tj (Class,) Tj ( ) Tj (but) Tj ( ) Tj (more) Tj ( ) Tj (extendable) Tj ( ) Tj (like) Tj ( ) Tj (this) Tj ( ) Tj T* (class) Tj ( ) Tj (CarSearch) Tj (\() Tj (Search) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (filter) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (cars) Tj (,) Tj ( ) Tj (spec) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (car) Tj ( ) Tj (in) Tj ( ) Tj (cars) Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (spec) Tj (.) Tj (is_satisfied) Tj (\() Tj (car) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (yield) Tj ( ) Tj (car) Tj ( ) Tj T* ( ) Tj T* ( ) Tj T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (car1) Tj ( ) Tj (=) Tj ( ) Tj (Car) Tj (\() Tj (') Tj (DailyDriver500) Tj (') Tj (,) Tj ( ) Tj (Color) Tj (.) Tj (RED) Tj (,) Tj ( ) Tj (Make) Tj (.) Tj (FIAT) Tj (\)) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (car2) Tj ( ) Tj (=) Tj ( ) Tj (Car) Tj (\() Tj (') Tj (WinterCar) Tj (') Tj (,) Tj ( ) Tj (Color) Tj (.) Tj (BLUE) Tj (,) Tj ( ) Tj (Make) Tj (.) Tj (VOLVO) Tj (\)) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (car3) Tj ( ) Tj (=) Tj ( ) Tj (Car) Tj (\() Tj (') Tj (NiceWeather) Tj (') Tj (,) Tj ( ) Tj (Color) Tj (.) Tj (BLUE) Tj (,) Tj ( ) Tj (Make) Tj (.) Tj (AUDI) Tj (\)) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (car4) Tj ( ) Tj (=) Tj ( ) Tj (Car) Tj (\() Tj (') Tj (DucatoCamper) Tj (') Tj (,) Tj ( ) Tj (Color) Tj (.) Tj (RED) Tj (,) Tj ( ) Tj (Make) Tj (.) Tj (FIAT) Tj (\)) Tj ( ) Tj T* ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (cars) Tj ( ) Tj (=) Tj ( ) Tj ([) Tj (car1) Tj (,) Tj ( ) Tj (car2) Tj (,) Tj ( ) Tj (car3) Tj (,) Tj ( ) Tj (car4) Tj (]) Tj ( ) Tj T* ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (searcher) Tj ( ) Tj (=) Tj ( ) Tj (CarSearch) Tj (\(\)) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (") Tj (Blue) Tj ( ) Tj (cars:) Tj (") Tj (\)) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (car) Tj ( ) Tj (in) Tj ( ) Tj (searcher) Tj (.) Tj (filter) Tj (\() Tj (cars) Tj (,) Tj ( ) Tj (ColorSpecification) Tj (\() Tj (Color) Tj (.) Tj (BLUE) Tj (\)\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (") Tj ({) Tj (car) Tj (.) Tj (name) Tj (}) Tj (") Tj (\)) Tj ( ) Tj T* ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (") Tj (Volvos) Tj ( ) Tj (cars:) Tj (") Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+19 0 obj
+<<
+/Length 1497
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 684.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 77.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (car) Tj ( ) Tj (in) Tj ( ) Tj (searcher) Tj (.) Tj (filter) Tj (\() Tj (cars) Tj (,) Tj ( ) Tj (MakeSpecification) Tj (\() Tj (Make) Tj (.) Tj (VOLVO) Tj (\)\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (") Tj ({) Tj (car) Tj (.) Tj (name) Tj (}) Tj (") Tj (\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (") Tj (RED) Tj ( ) Tj (Fiat) Tj ( ) Tj (cars:) Tj (") Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (car) Tj ( ) Tj (in) Tj ( ) Tj (searcher) Tj (.) Tj (filter) Tj (\() Tj (cars) Tj (,) Tj ( ) Tj (AndSpecification) Tj (\() Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (ColorSpecification) Tj (\() Tj (Color) Tj (.) Tj (RED) Tj (\),) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (MakeSpecification) Tj (\() Tj (Make) Tj (.) Tj (FIAT) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Could) Tj ( ) Tj (be) Tj ( ) Tj (20) Tj ( ) Tj (specs...) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (\)\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (") Tj ({) Tj (car) Tj (.) Tj (name) Tj (}) Tj (") Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+20 0 obj
+<<
+/Nums [ 0 21 0 R 1 22 0 R 2 23 0 R ]
+>>
+endobj
+21 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+22 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+23 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+xref
+0 24
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000772 00000 n 
+0000000977 00000 n 
+0000001182 00000 n 
+0000001287 00000 n 
+0000001566 00000 n 
+0000001640 00000 n 
+0000001750 00000 n 
+0000001836 00000 n 
+0000001936 00000 n 
+0000002022 00000 n 
+0000002094 00000 n 
+0000012128 00000 n 
+0000022780 00000 n 
+0000024329 00000 n 
+0000024388 00000 n 
+0000024422 00000 n 
+0000024456 00000 n 
+trailer
+<<
+/ID 
+[<f70fcada1ee2d551737c7c8fca7cfacf><f70fcada1ee2d551737c7c8fca7cfacf>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 10 0 R
+/Root 9 0 R
+/Size 24
+>>
+startxref
+24490
+%%EOF

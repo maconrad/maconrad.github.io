@@ -1,0 +1,386 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.thedigitalcatonline.com/blog/2019/06/07/run-a-pelican-blog/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 403.0082 110.5499 410.8832 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://antonellocalamea.medium.com/step-by-step-guide-to-setup-a-web-site-using-pelican-and-gitpages-5de976ae44cb)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 393.1332 142.0709 401.0082 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/alexandrevicenzi/Flex/tree/master/docs/content)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 383.2582 124.5464 391.1332 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://www.pelicanthemes.com/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 373.3832 111.1274 381.2582 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.getpelican.com/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 363.5082 107.6204 371.3832 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/Annots [ 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R ] /Contents 19 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 18 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+12 0 obj
+<<
+/Outlines 14 0 R /PageLabels 20 0 R /PageMode /UseNone /Pages 18 0 R /Type /Catalog
+>>
+endobj
+13 0 obj
+<<
+/Author () /CreationDate (D:20220202143526-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143526-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Pelican Blogging) /Trapped /False
+>>
+endobj
+14 0 obj
+<<
+/Count 3 /First 15 0 R /Last 15 0 R /Type /Outlines
+>>
+endobj
+15 0 obj
+<<
+/Count -1 /Dest [ 11 0 R /Fit ] /First 16 0 R /Last 16 0 R /Parent 14 0 R /Title (Installing and using pelican for blogging)
+>>
+endobj
+16 0 obj
+<<
+/Count -1 /Dest [ 11 0 R /Fit ] /First 17 0 R /Last 17 0 R /Parent 15 0 R /Title (Installing and using pelican for blogging)
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 11 0 R /Fit ] /Parent 16 0 R /Title (References)
+>>
+endobj
+18 0 obj
+<<
+/Count 1 /Kids [ 11 0 R ] /Type /Pages
+>>
+endobj
+19 0 obj
+<<
+/Length 4919
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 171.4442 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Pelican Blogging) Tj T* -171.4442 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-10-24 18:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 671.8667 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Installing and using pelican for blogging) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 655.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Easy, nice and minimalistic approach for blog based on static content and capable of RST as well as markdown including support for pygments for code highlighting.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 640.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Can it get any more perfect for a simple blog like mine?) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 538.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 93.19775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (pelican) Tj ( ) Tj (specific) Tj ( ) Tj (commands) Tj  T* (pip) Tj ( ) Tj (install) Tj ( ) Tj (pelican) Tj ([) Tj (Markdown) Tj (]) Tj  T* (#) Tj ( ) Tj (Starting) Tj ( ) Tj (a) Tj ( ) Tj (new) Tj ( ) Tj (project) Tj  T* (pelican-quickstart) Tj  T* (#) Tj ( ) Tj (Create) Tj ( ) Tj (content) Tj ( ) Tj (manually) Tj  T* (pelican) Tj ( ) Tj (content) Tj  T* (#) Tj ( ) Tj (Create) Tj ( ) Tj (content) Tj ( ) Tj (manually) Tj  T* (make) Tj ( ) Tj (html) Tj  T* (#) Tj ( ) Tj (Serve) Tj ( ) Tj (content) Tj ( ) Tj (on) Tj ( ) Tj (server) Tj ( ) Tj (locally) Tj  T* (make) Tj ( ) Tj (serve) Tj  T* (#) Tj ( ) Tj (Watch) Tj ( ) Tj (files) Tj  T* (make) Tj ( ) Tj (devserver) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 523.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Thanks @pelican-devs. Awesome job.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 508.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Following the push flow for git) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 430.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 69.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (cd) Tj ( ) Tj (output) Tj  T* (make) Tj ( ) Tj (clean) Tj  T* (make) Tj ( ) Tj (html) Tj  T* (git) Tj ( ) Tj (init) Tj  T* (git) Tj ( ) Tj (add) Tj ( ) Tj (.) Tj  T* (git) Tj ( ) Tj (commit) Tj ( ) Tj (-m) Tj ( ) Tj (") Tj (msg) Tj (") Tj  T* (git) Tj ( ) Tj (branch) Tj ( ) Tj (-M) Tj ( ) Tj (main) Tj  T* (git) Tj ( ) Tj (remote) Tj ( ) Tj (add) Tj ( ) Tj (origin) Tj ( ) Tj (https://github.com/maconrad/pelicanblog.git) Tj  T* (git) Tj ( ) Tj (push) Tj ( ) Tj (-u) Tj ( ) Tj (origin) Tj ( ) Tj (main) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 414.104 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 398.559 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 52.52625 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Pelican Setup) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 388.684 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 84.04725 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Pelican Setup Step by Step) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 378.809 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 66.52275 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Pelican Flex Theme) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 368.934 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 53.10375 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Themes Repo) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 359.059 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 49.59675 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (RTD Pelican) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 359.059 cm
+Q
+ 
+endstream
+endobj
+20 0 obj
+<<
+/Nums [ 0 21 0 R ]
+>>
+endobj
+21 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+xref
+0 22
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000790 00000 n 
+0000001056 00000 n 
+0000001273 00000 n 
+0000001454 00000 n 
+0000001635 00000 n 
+0000001884 00000 n 
+0000001990 00000 n 
+0000002264 00000 n 
+0000002338 00000 n 
+0000002485 00000 n 
+0000002632 00000 n 
+0000002711 00000 n 
+0000002772 00000 n 
+0000007743 00000 n 
+0000007784 00000 n 
+trailer
+<<
+/ID 
+[<35356c5eb2996e0297fff31d04e7b3e1><35356c5eb2996e0297fff31d04e7b3e1>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 13 0 R
+/Root 12 0 R
+/Size 22
+>>
+startxref
+7818
+%%EOF

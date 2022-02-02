@@ -1,0 +1,614 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 16 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 15 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 17 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 15 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Outlines 10 0 R /PageLabels 18 0 R /PageMode /UseNone /Pages 15 0 R /Type /Catalog
+>>
+endobj
+9 0 obj
+<<
+/Author () /CreationDate (D:20220202143524-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143524-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Dependency Inversion) /Trapped /False
+>>
+endobj
+10 0 obj
+<<
+/Count 2 /First 11 0 R /Last 11 0 R /Type /Outlines
+>>
+endobj
+11 0 obj
+<<
+/Count -3 /Dest [ 6 0 R /Fit ] /First 12 0 R /Last 14 0 R /Parent 10 0 R /Title (Intro)
+>>
+endobj
+12 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 13 0 R /Parent 11 0 R /Title (Intro)
+>>
+endobj
+13 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 14 0 R /Parent 11 0 R /Prev 12 0 R /Title (Before)
+>>
+endobj
+14 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Parent 11 0 R /Prev 13 0 R /Title (After)
+>>
+endobj
+15 0 obj
+<<
+/Count 2 /Kids [ 6 0 R 7 0 R ] /Type /Pages
+>>
+endobj
+16 0 obj
+<<
+/Length 10001
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 150.3642 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Dependency Inversion) Tj T* -150.3642 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-11-14 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.38025 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 23.3415 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Before) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.963 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (After) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+Q
+q
+1 0 0 1 57.02362 632.3667 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 616.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Dependency inversion principle states that higher level modules should not depend on lower level modules and their implementation. Instead they should use interfaces / abstraction.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 600.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Benefits:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 585.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Low Level Modules implementation can be changed without impact on high level mdoule. E.g. datastructure from one DB to another or List to Dict.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 575.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Low Level Modules can be swapped for other ones in special use cases, e.g. Unit-Testing) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 575.904 cm
+Q
+q
+1 0 0 1 57.02362 560.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Key:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 545.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Depend on interfaces & no access to low level datastructure directly) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 535.779 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Has nothing to do with Dependency Injection) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 535.779 cm
+Q
+q
+1 0 0 1 57.02362 520.654 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Short Forms:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 505.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (DIP) Tj /F1 5.25 Tf (: Dependency Inversion Principle) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 505.529 cm
+Q
+q
+1 0 0 1 57.02362 487.3721 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Before) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 463.1594 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 13.9805 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+.492188 w
+BT 1 0 0 1 7.875 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Website Class is violating dependency inversion prinicple because it accesses the bookstore datastructure directly. If the implementation changes from Tuple to for example a database, Website will be) Tj T* (broken/needs to change.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 453.2844 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Note: No error handling is on purpose to keep code as lean as possible and still understand pattern.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 453.2844 cm
+Q
+q
+1 0 0 1 57.02362 99.53437 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 345.1977 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (from) Tj ( ) Tj (enum) Tj ( ) Tj (import) Tj ( ) Tj (Enum) Tj  T*  T* (class) Tj ( ) Tj (Genre) Tj (\() Tj (Enum) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (ROMANCE) Tj ( ) Tj (=) Tj ( ) Tj (1) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (SIFI) Tj ( ) Tj (=) Tj ( ) Tj (2) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (THRILLER) Tj ( ) Tj (=) Tj ( ) Tj (3) Tj  T*  T* (class) Tj ( ) Tj (Author) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (name) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (name) Tj ( ) Tj (=) Tj ( ) Tj (name) Tj  T*  T* (#) Tj ( ) Tj (Low) Tj ( ) Tj (Level) Tj ( ) Tj (Module) Tj  T* (class) Tj ( ) Tj (BookStore) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (books) Tj ( ) Tj (=) Tj ( ) Tj ([]) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (add_book) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (title) Tj (,) Tj ( ) Tj (author) Tj (:) Tj ( ) Tj (Author) Tj (,) Tj ( ) Tj (genre) Tj (:) Tj ( ) Tj (Genre) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (books) Tj (.) Tj (append) Tj (\(\() Tj (title) Tj (,) Tj ( ) Tj (author) Tj (,) Tj ( ) Tj (genre) Tj (\)\)) Tj  T*  T* (#) Tj ( ) Tj (High) Tj ( ) Tj (Level) Tj ( ) Tj (Module) Tj  T* (class) Tj ( ) Tj (Website) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (bookstore) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (books) Tj ( ) Tj (=) Tj ( ) Tj (bookstore) Tj (.) Tj (books) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (find_book_by_author) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (author) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (book) Tj ( ) Tj (in) Tj ( ) Tj (self) Tj (.) Tj (books) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (book) Tj ([) Tj (1) Tj (]) Tj ( ) Tj (==) Tj ( ) Tj (author) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (') Tj (Book) Tj ( ) Tj ({) Tj (book) Tj ([) Tj (0) Tj (]) Tj (}) Tj ( ) Tj (from) Tj ( ) Tj (Dan) Tj ( ) Tj (Brown) Tj (') Tj (\)) Tj  T*  T*  T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (bookstore) Tj ( ) Tj (=) Tj ( ) Tj (BookStore) Tj (\(\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (danbrown) Tj ( ) Tj (=) Tj ( ) Tj (Author) Tj (\() Tj (") Tj (Dan) Tj ( ) Tj (Brown) Tj (") Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (jane) Tj ( ) Tj (=) Tj ( ) Tj (Author) Tj (\() Tj (") Tj (Jane) Tj ( ) Tj (Austen) Tj (") Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (andy) Tj ( ) Tj (=) Tj ( ) Tj (Author) Tj (\() Tj (") Tj (Andy) Tj ( ) Tj (Weir) Tj (") Tj (\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (bookstore) Tj (.) Tj (add_book) Tj (\() Tj (") Tj (Origin) Tj (") Tj (,) Tj ( ) Tj (danbrown) Tj (,) Tj ( ) Tj (Genre) Tj (.) Tj (THRILLER) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (bookstore) Tj (.) Tj (add_book) Tj (\() Tj (") Tj (Illuminati) Tj (") Tj (,) Tj ( ) Tj (danbrown) Tj (,) Tj ( ) Tj (Genre) Tj (.) Tj (THRILLER) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (bookstore) Tj (.) Tj (add_book) Tj (\() Tj (") Tj (Pride) Tj ( ) Tj (and) Tj ( ) Tj (Prejudice) Tj (") Tj (,) Tj ( ) Tj (jane) Tj (,) Tj ( ) Tj (Genre) Tj (.) Tj (ROMANCE) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (bookstore) Tj (.) Tj (add_book) Tj (\() Tj (") Tj (The) Tj ( ) Tj (Marsian) Tj (") Tj (,) Tj ( ) Tj (andy) Tj (,) Tj ( ) Tj (Genre) Tj (.) Tj (SIFI) Tj (\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (website1) Tj ( ) Tj (=) Tj ( ) Tj (Website) Tj (\() Tj (bookstore) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (website1) Tj (.) Tj (find_book_by_author) Tj (\() Tj (danbrown) Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 81.3775 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (After) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 65.03975 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Website does NOT depend on implementation of Bookstore, instead relies on interface of BookBrowser.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+17 0 obj
+<<
+/Length 6609
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The concrete implementation of the search \(BookBrowser\) is moved to the BookStore and not the Website!) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 745.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Note that website still uses the concrete bookstore in the main part, but refers to an interface BookBrowser rather than the bookstore implementation.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 735.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Datastructure can change) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 735.3986 cm
+Q
+q
+1 0 0 1 57.02362 263.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 463.3227 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (from) Tj ( ) Tj (abc) Tj ( ) Tj (import) Tj ( ) Tj (abstractmethod) Tj  T* (from) Tj ( ) Tj (enum) Tj ( ) Tj (import) Tj ( ) Tj (Enum) Tj  T*  T*  T* (class) Tj ( ) Tj (Genre) Tj (\() Tj (Enum) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (ROMANCE) Tj ( ) Tj (=) Tj ( ) Tj (1) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (SIFI) Tj ( ) Tj (=) Tj ( ) Tj (2) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (THRILLER) Tj ( ) Tj (=) Tj ( ) Tj (3) Tj  T*  T*  T* (class) Tj ( ) Tj (Author) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (name) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (name) Tj ( ) Tj (=) Tj ( ) Tj (name) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__str__) Tj (\() Tj (self) Tj (\)) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (str) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (self) Tj (.) Tj (name) Tj  T*  T* (#) Tj ( ) Tj (Interface) Tj  T* (@abstractmethod) Tj  T* (class) Tj ( ) Tj (BookBrowser) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (find_by_author) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (author) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (pass) Tj  T*  T* (#) Tj ( ) Tj (Low) Tj ( ) Tj (Level) Tj ( ) Tj (Module) Tj  T* (class) Tj ( ) Tj (BookStore) Tj (\() Tj (BookBrowser) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (books) Tj ( ) Tj (=) Tj ( ) Tj ([]) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (add_book) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (title) Tj (,) Tj ( ) Tj (author) Tj (:) Tj ( ) Tj (Author) Tj (,) Tj ( ) Tj (genre) Tj (:) Tj ( ) Tj (Genre) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (books) Tj (.) Tj (append) Tj (\(\() Tj (title) Tj (,) Tj ( ) Tj (author) Tj (,) Tj ( ) Tj (genre) Tj (\)\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (find_by_author) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (author) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (book) Tj ( ) Tj (in) Tj ( ) Tj (self) Tj (.) Tj (books) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (book) Tj ([) Tj (1) Tj (]) Tj ( ) Tj (==) Tj ( ) Tj (author) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (') Tj (Book) Tj ( ) Tj ({) Tj (book) Tj ([) Tj (0) Tj (]) Tj (}) Tj ( ) Tj (from) Tj ( ) Tj ({) Tj (author) Tj (}) Tj (') Tj (\)) Tj  T*  T* (#) Tj ( ) Tj (High) Tj ( ) Tj (Level) Tj ( ) Tj (Module) Tj  T* (class) Tj ( ) Tj (Website) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (__init__) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (bookbrowser) Tj (:) Tj ( ) Tj (BookBrowser) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (self) Tj (.) Tj (bookbrowser) Tj ( ) Tj (=) Tj ( ) Tj (bookbrowser) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (def) Tj ( ) Tj (find_book_by_author) Tj (\() Tj (self) Tj (,) Tj ( ) Tj (author) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (self) Tj (.) Tj (bookbrowser) Tj (.) Tj (find_by_author) Tj (\() Tj (author) Tj (=) Tj (author) Tj (\)) Tj  T*  T*  T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (bookstore) Tj ( ) Tj (=) Tj ( ) Tj (BookStore) Tj (\(\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (danbrown) Tj ( ) Tj (=) Tj ( ) Tj (Author) Tj (\() Tj (") Tj (Dan) Tj ( ) Tj (Brown) Tj (") Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (jane) Tj ( ) Tj (=) Tj ( ) Tj (Author) Tj (\() Tj (") Tj (Jane) Tj ( ) Tj (Austen) Tj (") Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (andy) Tj ( ) Tj (=) Tj ( ) Tj (Author) Tj (\() Tj (") Tj (Andy) Tj ( ) Tj (Weir) Tj (") Tj (\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (bookstore) Tj (.) Tj (add_book) Tj (\() Tj (") Tj (Origin) Tj (") Tj (,) Tj ( ) Tj (danbrown) Tj (,) Tj ( ) Tj (Genre) Tj (.) Tj (THRILLER) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (bookstore) Tj (.) Tj (add_book) Tj (\() Tj (") Tj (Illuminati) Tj (") Tj (,) Tj ( ) Tj (danbrown) Tj (,) Tj ( ) Tj (Genre) Tj (.) Tj (THRILLER) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (bookstore) Tj (.) Tj (add_book) Tj (\() Tj (") Tj (Pride) Tj ( ) Tj (and) Tj ( ) Tj (Prejudice) Tj (") Tj (,) Tj ( ) Tj (jane) Tj (,) Tj ( ) Tj (Genre) Tj (.) Tj (ROMANCE) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (bookstore) Tj (.) Tj (add_book) Tj (\() Tj (") Tj (The) Tj ( ) Tj (Marsian) Tj (") Tj (,) Tj ( ) Tj (andy) Tj (,) Tj ( ) Tj (Genre) Tj (.) Tj (SIFI) Tj (\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (website1) Tj ( ) Tj (=) Tj ( ) Tj (Website) Tj (\() Tj (bookstore) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (website1) Tj (.) Tj (find_book_by_author) Tj (\() Tj (danbrown) Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+18 0 obj
+<<
+/Nums [ 0 19 0 R 1 20 0 R ]
+>>
+endobj
+19 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+20 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000772 00000 n 
+0000000977 00000 n 
+0000001082 00000 n 
+0000001359 00000 n 
+0000001433 00000 n 
+0000001543 00000 n 
+0000001629 00000 n 
+0000001729 00000 n 
+0000001815 00000 n 
+0000001881 00000 n 
+0000011935 00000 n 
+0000018596 00000 n 
+0000018646 00000 n 
+0000018680 00000 n 
+trailer
+<<
+/ID 
+[<ab6b079f6e2b55436ad77a19daf8bf08><ab6b079f6e2b55436ad77a19daf8bf08>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 9 0 R
+/Root 8 0 R
+/Size 21
+>>
+startxref
+18714
+%%EOF

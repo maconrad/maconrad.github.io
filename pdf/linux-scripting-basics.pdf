@@ -1,0 +1,1607 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 21 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 20 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 22 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 20 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Contents 23 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 20 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Outlines 11 0 R /PageLabels 24 0 R /PageMode /UseNone /Pages 20 0 R /Type /Catalog
+>>
+endobj
+10 0 obj
+<<
+/Author () /CreationDate (D:20220202143526-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143526-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Linux Scripting Basics) /Trapped /False
+>>
+endobj
+11 0 obj
+<<
+/Count 3 /First 12 0 R /Last 12 0 R /Type /Outlines
+>>
+endobj
+12 0 obj
+<<
+/Count -1 /Dest [ 6 0 R /Fit ] /First 13 0 R /Last 13 0 R /Parent 11 0 R /Title (Basics)
+>>
+endobj
+13 0 obj
+<<
+/Count -6 /Dest [ 6 0 R /Fit ] /First 14 0 R /Last 19 0 R /Parent 12 0 R /Title (Basics)
+>>
+endobj
+14 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 15 0 R /Parent 13 0 R /Title (Regex)
+>>
+endobj
+15 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 16 0 R /Parent 13 0 R /Prev 14 0 R /Title (Grep)
+>>
+endobj
+16 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 17 0 R /Parent 13 0 R /Prev 15 0 R /Title (Awk)
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 18 0 R /Parent 13 0 R /Prev 16 0 R /Title (Sed)
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 19 0 R /Parent 13 0 R /Prev 17 0 R /Title (Bashscripts)
+>>
+endobj
+19 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Parent 13 0 R /Prev 18 0 R /Title (Expect)
+>>
+endobj
+20 0 obj
+<<
+/Count 3 /Kids [ 6 0 R 7 0 R 8 0 R ] /Type /Pages
+>>
+endobj
+21 0 obj
+<<
+/Length 16904
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 148.9442 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Linux Scripting Basics) Tj T* -148.9442 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-10-24 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 23.33625 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Basics) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 30.9225 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Regex) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 27.42075 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Grep) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 640.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 25.66725 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Awk) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 630.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 25.08975 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Sed) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 620.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 42.882 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Bashscripts) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 611.0236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 31.79925 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Expect) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 611.0236 cm
+Q
+q
+1 0 0 1 57.02362 611.0236 cm
+Q
+q
+1 0 0 1 57.02362 592.8667 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Basics) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 576.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Shell parses and interprets cmds and passes it to kernel for execution, usually in interactive mode, but can be scripted.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 560.354 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Regex) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 544.809 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Definition) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 534.934 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Pattern: Sequence of Characters, can use [], {} or \(\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 525.059 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Literal: String that represents itself, e.g. Hello matches Hello ;\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 515.184 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Metacharacter: Speical chars) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 505.309 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Repetiton meta-chars: e.g. + \(one or more occurrences of preceding char\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 495.434 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (\\) Tj /F1 5.25 Tf ( Escape Char) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 485.559 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ({2,}) Tj /F1 5.25 Tf ( leaving out upper range means infinity) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 485.559 cm
+Q
+q
+1 0 0 1 57.02362 485.559 cm
+Q
+q
+1 0 0 1 57.02362 470.434 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Standard Regex \(GNU\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 378.559 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 78.74999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 70.87022 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Item) Tj T* -70.87022 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 78.74999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 65.62022 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Meaning) Tj T* -65.62022 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 320.8189 78.74999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 70.43447 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Note) Tj T* -70.43447 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 70.87499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (^) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 70.87499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Beginning of Line) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 62.99999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ($) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 62.99999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (End of Line) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 55.12499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 55.12499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Any single char EXCEPT new line) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 320.8189 55.12499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (.*) Tj /F1 5.25 Tf ( anything) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 47.24999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (*) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 47.24999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Zero or more) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ([lit]) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Any of the literals, char class) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 320.8189 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ([zZ] match z or Z) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ([1-5]) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Range) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 320.8189 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ([a-x] match a,f but not z) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (\\b) Tj /F1 5.25 Tf (, ) Tj /F4 5.25 Tf (\\) Tj (<) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Beginning of a word) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (\\b) Tj /F1 5.25 Tf (, ) Tj /F4 5.25 Tf (\\) Tj (>) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (end of a word) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (\\) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Escape char) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 320.8189 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (\\.) Tj /F1 5.25 Tf ( match on dot) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (- Extended Regex) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 331.309 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 70.87022 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Item) Tj T* -70.87022 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 65.62022 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Meaning) Tj T* -65.62022 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 320.8189 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 70.43447 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Note) Tj T* -70.43447 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (?) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Zero or one occurences) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 320.8189 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Same as) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (+) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (One or more occurences) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 320.8189 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Same as) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ({N}, {N,M}) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (N or N-M occurences) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (|) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (OR operator) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (\(\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 160.4094 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Group operator \(capture group\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 331.309 cm
+Q
+q
+1 0 0 1 57.02362 315.134 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Grep) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 299.589 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Prints the whole line) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 289.714 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Matching pattern can be worked on separately by using groups) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 279.839 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Grep Case sensitive by default) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 269.964 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Single quotation marks called expansion) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 269.964 cm
+Q
+q
+1 0 0 1 57.02362 65.83901 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 195.5728 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (grep) Tj ( ) Tj ({options}) Tj ( ) Tj ({File},) Tj ( ) Tj (#) Tj ( ) Tj (grep) Tj ( ) Tj ({options}) Tj ( ) Tj T* (#) Tj ( ) Tj (-G=GNU/standard) Tj ( ) Tj (regex,) Tj ( ) Tj (-E=Extended) Tj ( ) Tj (Regex,) Tj ( ) Tj (-P=Perl) Tj ( ) Tj (Regex) Tj ( ) Tj ( ) Tj T* (#) Tj ( ) Tj (-i=Case) Tj ( ) Tj (insensitive,) Tj ( ) Tj (-c=Number) Tj ( ) Tj (of) Tj ( ) Tj (lines) Tj ( ) Tj (matching,) Tj ( ) Tj (nothing) Tj ( ) Tj (else) Tj ( ) Tj T* (#) Tj ( ) Tj (-v=Reverse,) Tj ( ) Tj (-n=add) Tj ( ) Tj (line) Tj ( ) Tj (number) Tj ( ) Tj (from) Tj ( ) Tj (original) Tj ( ) Tj (file) Tj ( ) Tj T* (#) Tj ( ) Tj (-r,) Tj ( ) Tj (-R=recursive) Tj ( ) Tj T* (#) Tj ( ) Tj (-A{num}=Num) Tj ( ) Tj (trailing) Tj ( ) Tj (lines) Tj ( ) Tj (after) Tj ( ) Tj (match) Tj ( ) Tj T* (#) Tj ( ) Tj (-B{num}=Num) Tj ( ) Tj (leading) Tj ( ) Tj (lines) Tj ( ) Tj (before) Tj ( ) Tj (match) Tj ( ) Tj T* (#) Tj ( ) Tj (-C{num}=Num) Tj ( ) Tj (leading) Tj ( ) Tj (and) Tj ( ) Tj (trailing) Tj ( ) Tj (lines) Tj ( ) Tj T* ( ) Tj T* (grep) Tj ( ) Tj (') Tj (line) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (line) Tj ( ) Tj (aux,) Tj ( ) Tj (line) Tj ( ) Tj (vty) Tj ( ) Tj T* ( ) Tj T* (grep) Tj ( ) Tj (') Tj (acc) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (ACL) Tj ( ) Tj (but) Tj ( ) Tj (also) Tj ( ) Tj (Radius) Tj ( ) Tj (cfg) Tj ( ) Tj T* (grep) Tj ( ) Tj (-E) Tj ( ) Tj (') Tj (^acc) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Only) Tj ( ) Tj (ACL) Tj ( ) Tj T* ( ) Tj T* (grep) Tj ( ) Tj (') Tj (isakmp) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Crypto) Tj ( ) Tj (isakmp) Tj ( ) Tj (as) Tj ( ) Tj (well) Tj ( ) Tj (as) Tj ( ) Tj (ACL) Tj ( ) Tj (permit) Tj ( ) Tj (isakmp) Tj ( ) Tj T* (grep) Tj ( ) Tj (-E) Tj ( ) Tj (') Tj (isakmp$) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Only) Tj ( ) Tj (ACL) Tj ( ) Tj (part) Tj ( ) Tj T* ( ) Tj T* (grep) Tj ( ) Tj (-i) Tj ( ) Tj (') Tj (username) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj (#) Tj ( ) Tj (Username) Tj ( ) Tj (AMER,) Tj ( ) Tj (Amer) Tj ( ) Tj (as) Tj ( ) Tj (well) Tj ( ) Tj (as) Tj ( ) Tj (amer) Tj ( ) Tj T* (grep) Tj ( ) Tj (-E) Tj ( ) Tj (') Tj ([Aa]mer) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj (#) Tj ( ) Tj (Username) Tj ( ) Tj (Amer) Tj ( ) Tj (and) Tj ( ) Tj (amer) Tj ( ) Tj (but) Tj ( ) Tj (NOT) Tj ( ) Tj (AMER) Tj ( ) Tj T* ( ) Tj T* (grep) Tj ( ) Tj (-E) Tj ( ) Tj (') Tj ([a-zA-Z0-9].*) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj (#) Tj ( ) Tj (Any) Tj ( ) Tj (Line) Tj ( ) Tj (not) Tj ( ) Tj (containing) Tj ( ) Tj (!) Tj ( ) Tj T* ( ) Tj T* (grep) Tj ( ) Tj (-E) Tj ( ) Tj (') Tj (\\) Tj (<) Tj (acce) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (access-list) Tj ( ) Tj (and) Tj ( ) Tj (access-group) Tj ( ) Tj (but) Tj ( ) Tj (not) Tj ( ) Tj (acct) Tj ( ) Tj T* (grep) Tj ( ) Tj (-E) Tj ( ) Tj (') Tj (\\) Tj (<) Tj (access\\) Tj (>) Tj (.\\) Tj (<) Tj (list) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (access-list) Tj ( ) Tj (but) Tj ( ) Tj (no) Tj ( ) Tj (access-group) Tj ( ) Tj T* (grep) Tj ( ) Tj (-E) Tj ( ) Tj (') Tj (^access.*deny.*$) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (any) Tj ( ) Tj (acl) Tj ( ) Tj (with) Tj ( ) Tj (a) Tj ( ) Tj (deny) Tj ( ) Tj (in) Tj ( ) Tj (it) Tj ( ) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+22 0 obj
+<<
+/Length 12122
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 739.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 22.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (grep) Tj ( ) Tj (-E) Tj ( ) Tj (-v) Tj ( ) Tj (') Tj (^access.*deny.*$) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Any) Tj ( ) Tj (line) Tj ( ) Tj (that) Tj ( ) Tj (does) Tj ( ) Tj (NOT) Tj ( ) Tj (not) Tj ( ) Tj (start) Tj ( ) Tj (with) Tj ( ) Tj (access) Tj ( ) Tj (and) Tj ( ) Tj (contain) Tj ( ) Tj (deny) Tj ( ) Tj T* ( ) Tj T* (grep) Tj ( ) Tj (-E) Tj ( ) Tj (-A5) Tj ( ) Tj (') Tj (line) Tj ( ) Tj (vty) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj (#) Tj ( ) Tj (Line) Tj ( ) Tj (vty) Tj ( ) Tj (") Tj (section) Tj (") Tj ( ) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 723.2236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Awk) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 707.6786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Programming Language, but mostly used for text processing) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 697.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Find pattern, then perform action) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 687.9286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Supports spreadsheet styles \(rows and columns\) and value extraction) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 678.0536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Typical use case: Grep used to match, awk used to print a certain row.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 678.0536 cm
+Q
+q
+1 0 0 1 57.02362 668.1786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Default field separator/delimitir = Whitespace) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 658.3036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Column numbers need to be identical, otherwise different output) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 658.3036 cm
+Q
+q
+1 0 0 1 57.02362 414.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 234.9478 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (awk) Tj ( ) Tj (') Tj (/) Tj ( ) Tj (search-pattern) Tj ( ) Tj (/{) Tj ( ) Tj (action) Tj ( ) Tj (}) Tj (') Tj ( ) Tj ( ) Tj (filename) Tj  T* (#) Tj ( ) Tj (-F) Tj ( ) Tj (Delimiter) Tj ( ) Tj (\(e.g.) Tj ( ) Tj (awk) Tj ( ) Tj (-F) Tj ( ) Tj (,) Tj ( ) Tj (') Tj (/search/{action}) Tj (') Tj ( ) Tj (filename\)) Tj  T*  T* (#) Tj ( ) Tj (Basics) Tj  T* (awk) Tj ( ) Tj (') Tj (/sdc1/) Tj (') Tj ( ) Tj (proc-content.txt) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Print) Tj ( ) Tj (line) Tj ( ) Tj (with) Tj ( ) Tj (sdc1) Tj ( ) Tj (in) Tj ( ) Tj (it) Tj  T* (awk) Tj ( ) Tj (') Tj (/^l/) Tj (') Tj ( ) Tj (folder-content-ls-l.txt) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Print) Tj ( ) Tj (symlinks) Tj ( ) Tj (only) Tj ( ) Tj  T*  T* (#) Tj ( ) Tj (Can) Tj ( ) Tj (do) Tj ( ) Tj (operations,) Tj ( ) Tj (such) Tj ( ) Tj (as) Tj ( ) Tj (multiplications) Tj ( ) Tj (on) Tj ( ) Tj (data) Tj  T* (awk) Tj ( ) Tj (') Tj (/^l/) Tj ( ) Tj ({print) Tj ( ) Tj ($5,) Tj (") Tj (----) Tj (") Tj (,$5*512}) Tj (') Tj ( ) Tj (awk-data-ls) Tj  T*  T* (#) Tj ( ) Tj (Typical) Tj ( ) Tj (use) Tj ( ) Tj (case,) Tj ( ) Tj (grep) Tj ( ) Tj (and) Tj ( ) Tj (awk) Tj ( ) Tj (together,) Tj ( ) Tj (e.g.) Tj ( ) Tj (get) Tj ( ) Tj (PID) Tj  T* (ps) Tj ( ) Tj (-aux) Tj ( ) Tj (|) Tj ( ) Tj (grep) Tj ( ) Tj (bash) Tj ( ) Tj (|) Tj ( ) Tj (awk) Tj ( ) Tj (') Tj ({print) Tj ( ) Tj ($2}) Tj (') Tj  T*  T* (#) Tj ( ) Tj (Number) Tj ( ) Tj (fields) Tj ( ) Tj (per) Tj ( ) Tj (column,) Tj ( ) Tj (should) Tj ( ) Tj (be) Tj ( ) Tj (identical) Tj  T* (awk) Tj ( ) Tj (') Tj ({print) Tj ( ) Tj (NF}) Tj (') Tj ( ) Tj (show-ip-int-brief.txt) Tj  T*  T* (#) Tj ( ) Tj (Cisco) Tj ( ) Tj (example) Tj  T* (cat) Tj ( ) Tj (show-ip-int-brief.txt) Tj  T*  T* (Interface) Tj ( ) Tj ( ) Tj ( ) Tj (IP-Address) Tj ( ) Tj ( ) Tj (OK?) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (Method) Tj ( ) Tj ( ) Tj (Status) Tj ( ) Tj ( ) Tj (Protocol) Tj  T* (FastEthernet0/0) Tj ( ) Tj (192) Tj (.168.254.254) Tj ( ) Tj (YES) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (NVRAM) Tj ( ) Tj ( ) Tj ( ) Tj (up) Tj ( ) Tj ( ) Tj ( ) Tj (up) Tj  T* (FastEthernet0/1/0) Tj ( ) Tj ( ) Tj ( ) Tj (unassigned) Tj ( ) Tj ( ) Tj (YES) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (unset) Tj ( ) Tj ( ) Tj ( ) Tj (down) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (down) Tj  T* (Serial0/0/0) Tj ( ) Tj (172) Tj (.16.0.254) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (YES) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (NVRAM) Tj ( ) Tj ( ) Tj ( ) Tj (up) Tj ( ) Tj ( ) Tj ( ) Tj (up) Tj  T* (Serial0/0/1) Tj ( ) Tj (unassigned) Tj ( ) Tj ( ) Tj (YES) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (unset) Tj ( ) Tj ( ) Tj ( ) Tj (administratively) Tj ( ) Tj (down) Tj ( ) Tj ( ) Tj ( ) Tj (down) Tj  T*  T* (#) Tj ( ) Tj (Print) Tj ( ) Tj (IP) Tj ( ) Tj (address) Tj ( ) Tj (for) Tj ( ) Tj (interfaces) Tj ( ) Tj (starting) Tj ( ) Tj (with) Tj ( ) Tj (Fast) Tj  T* (awk) Tj ( ) Tj (') Tj (/^Fast/) Tj ( ) Tj ({) Tj ( ) Tj (print) Tj ( ) Tj ($2) Tj ( ) Tj (}) Tj (') Tj ( ) Tj (show-ip-int-brief.txt) Tj  T*  T* (#) Tj ( ) Tj (Print) Tj ( ) Tj (Multiple) Tj ( ) Tj (rows) Tj  T* (awk) Tj ( ) Tj (') Tj (/^Fast/) Tj ( ) Tj ({) Tj ( ) Tj (print) Tj ( ) Tj ($5,$6) Tj ( ) Tj (}) Tj (') Tj ( ) Tj (show-ip-int-brief.txt) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 398.6286 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Sed) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 383.0836 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Stream editor) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 373.2086 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Stream -) Tj (> reads, buffers and operates on a ) Tj /F4 5.25 Tf (line-by-line) Tj /F1 5.25 Tf ( base) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 363.3336 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Each line is safed in a pattern buffer. Emptied when processed) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 353.4586 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (By default pattern buffer is emptied = printed out) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 343.5836 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (-n) Tj /F1 5.25 Tf (to NOT print content of pattern buffer, only the action done) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 343.5836 cm
+Q
+q
+1 0 0 1 57.02362 333.7086 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Regex, specify line or range of lines) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 323.8336 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (E.g. $ for Last line of file) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 323.8336 cm
+Q
+q
+1 0 0 1 57.02362 313.9586 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Sed also procceses whole line \(like grep and awk\) that matches!) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 304.0836 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (No {} for action as with awk) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 304.0836 cm
+Q
+q
+1 0 0 1 57.02362 288.9586 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 69.08362 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 211.3228 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (sed) Tj ( ) Tj (options) Tj ( ) Tj (') Tj (line_identifier) Tj ( ) Tj (action) Tj (') Tj ( ) Tj (filename) Tj ( ) Tj (OR) Tj ( ) Tj T* (#) Tj ( ) Tj (Actions:) Tj ( ) Tj (p=printing,) Tj ( ) Tj (s=substitute,) Tj ( ) Tj (d=delete,) Tj ( ) Tj (w=write) Tj ( ) Tj (to) Tj ( ) Tj (file) Tj ( ) Tj ( ) Tj T* (#) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (a=append,) Tj ( ) Tj (c=change,) Tj ( ) Tj (i=insert) Tj ( ) Tj T* (#) Tj ( ) Tj (-e) Tj ( ) Tj (=) Tj ( ) Tj (Multiple) Tj ( ) Tj (actions) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (sed) Tj ( ) Tj (') Tj (/pattern/action) Tj (') Tj ( ) Tj (filename) Tj ( ) Tj (format) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Substituion) Tj ( ) Tj T* (#) Tj ( ) Tj (sed) Tj ( ) Tj (s/regex/replacement/flags) Tj ( ) Tj T* (#) Tj ( ) Tj (flags:) Tj ( ) Tj (g=global) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Line) Tj ( ) Tj (identifier) Tj ( ) Tj (=) Tj ( ) Tj (1,) Tj ( ) Tj (action) Tj ( ) Tj (=) Tj ( ) Tj (print) Tj ( ) Tj T* (#) Tj ( ) Tj (Output,) Tj ( ) Tj (all) Tj ( ) Tj (lines) Tj ( ) Tj (outputted) Tj ( ) Tj (and) Tj ( ) Tj (line) Tj ( ) Tj (#1) Tj ( ) Tj (outputted) Tj ( ) Tj (twice) Tj ( ) Tj T* (sed) Tj ( ) Tj (') Tj (1p) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (do) Tj ( ) Tj (NOT) Tj ( ) Tj (print) Tj ( ) Tj (content) Tj ( ) Tj (of) Tj ( ) Tj (pattern) Tj ( ) Tj (buffer) Tj ( ) Tj T* (#) Tj ( ) Tj (Only) Tj ( ) Tj (match) Tj ( ) Tj (is) Tj ( ) Tj (printed) Tj ( ) Tj (=) Tj ( ) Tj (1st) Tj ( ) Tj (line) Tj ( ) Tj T* (sed) Tj ( ) Tj (-n) Tj ( ) Tj (') Tj (1p) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Prints) Tj ( ) Tj (whole) Tj ( ) Tj (file,) Tj ( ) Tj (as) Tj ( ) Tj (no) Tj ( ) Tj (line) Tj ( ) Tj (selection) Tj ( ) Tj (done) Tj ( ) Tj (and) Tj ( ) Tj ( ) Tj T* (#) Tj ( ) Tj (all) Tj ( ) Tj (lines) Tj ( ) Tj (are) Tj ( ) Tj (stored) Tj ( ) Tj (in) Tj ( ) Tj (pattern) Tj ( ) Tj (buffer) Tj ( ) Tj (and) Tj ( ) Tj (then) Tj ( ) Tj (emptied) Tj ( ) Tj (to) Tj ( ) Tj (stdout) Tj ( ) Tj T* (sed) Tj ( ) Tj (') Tj ( ) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (3rd) Tj ( ) Tj (line) Tj ( ) Tj (only,) Tj ( ) Tj (3rd) Tj ( ) Tj (and) Tj ( ) Tj (4th) Tj ( ) Tj (line) Tj ( ) Tj T* (sed) Tj ( ) Tj (-n) Tj ( ) Tj (') Tj (3p) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj T* (sed) Tj ( ) Tj (-n) Tj ( ) Tj (') Tj (3,4p) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj T*  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+23 0 obj
+<<
+/Length 4090
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 534.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 227.0728 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (last) Tj ( ) Tj (line) Tj ( ) Tj (only) Tj ( ) Tj T* (sed) Tj ( ) Tj (-n) Tj ( ) Tj (') Tj ($p) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (230) Tj ( ) Tj (until) Tj ( ) Tj (last) Tj ( ) Tj (line) Tj ( ) Tj T* (sed) Tj ( ) Tj (-n) Tj ( ) Tj (') Tj (230,$p) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (230-232) Tj ( ) Tj (until) Tj ( ) Tj (last) Tj ( ) Tj (line) Tj ( ) Tj T* (sed) Tj ( ) Tj (-n) Tj ( ) Tj (') Tj (230,+2p) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Delete) Tj ( ) Tj (lines) Tj ( ) Tj (10) Tj ( ) Tj (to) Tj ( ) Tj (end) Tj ( ) Tj (of) Tj ( ) Tj (file) Tj ( ) Tj T* (#) Tj ( ) Tj (=Print) Tj ( ) Tj (first) Tj ( ) Tj (10) Tj ( ) Tj (lines) Tj ( ) Tj T* (sed) Tj ( ) Tj (') Tj (10,$d) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Send) Tj ( ) Tj (output) Tj ( ) Tj (to) Tj ( ) Tj (new) Tj ( ) Tj (file) Tj ( ) Tj (using) Tj ( ) Tj (redirection) Tj ( ) Tj T* (sed) Tj ( ) Tj (-n) Tj ( ) Tj (') Tj (230,$p) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj (>) Tj ( ) Tj (router_new.cfg) Tj ( ) Tj T* (sed) Tj ( ) Tj (-n) Tj ( ) Tj (') Tj (230,$) Tj ( ) Tj (w) Tj ( ) Tj (router_new2.cfg) Tj (') Tj ( ) Tj (router.cfg) Tj ( ) Tj T* ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Pattenr) Tj ( ) Tj (matching) Tj ( ) Tj (using) Tj ( ) Tj (regex) Tj ( ) Tj T* (sed) Tj ( ) Tj (-n) Tj ( ) Tj (') Tj (/[12]\\.23\\./) Tj ( ) Tj (p) Tj (') Tj ( ) Tj (bgp-routes-misc) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Multiple) Tj ( ) Tj (action) Tj ( ) Tj (with) Tj ( ) Tj (-e) Tj ( ) Tj T* (sed) Tj ( ) Tj (-n) Tj ( ) Tj (-e) Tj ( ) Tj (') Tj (/3356) Tj ( ) Tj (i/) Tj ( ) Tj (w) Tj ( ) Tj (3356.txt) Tj (') Tj ( ) Tj (-e) Tj ( ) Tj (') Tj (/16625) Tj ( ) Tj (i/) Tj ( ) Tj (w) Tj ( ) Tj (16625.txt) Tj (') Tj ( ) Tj (bgp-routes-misc) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Substitution) Tj ( ) Tj T* (#) Tj ( ) Tj (s/regex/replacement/flags) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (g) Tj ( ) Tj (=) Tj ( ) Tj (global,) Tj ( ) Tj (otherwise) Tj ( ) Tj (only) Tj ( ) Tj (1st) Tj ( ) Tj (occurence) Tj ( ) Tj T* (grep) Tj ( ) Tj (access-list) Tj ( ) Tj (router.cfg) Tj ( ) Tj (|) Tj ( ) Tj (sed) Tj ( ) Tj (-e) Tj ( ) Tj (') Tj (s/200.1.1.1/200.1.1.2/g) Tj (') Tj ( ) Tj (>) Tj ( ) Tj (new-acl.txt) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 519.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 503.3486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Bashscripts) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 487.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 472.6786 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (brew) Tj ( ) Tj (install) Tj ( ) Tj (pyenv) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 457.5536 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 441.3786 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Expect) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 425.8336 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 410.7086 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (brew) Tj ( ) Tj (install) Tj ( ) Tj (pyenv) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 395.5836 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+24 0 obj
+<<
+/Nums [ 0 25 0 R 1 26 0 R 2 27 0 R ]
+>>
+endobj
+25 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+26 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+27 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+xref
+0 28
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000772 00000 n 
+0000000977 00000 n 
+0000001182 00000 n 
+0000001287 00000 n 
+0000001567 00000 n 
+0000001641 00000 n 
+0000001752 00000 n 
+0000001863 00000 n 
+0000001949 00000 n 
+0000002047 00000 n 
+0000002144 00000 n 
+0000002241 00000 n 
+0000002346 00000 n 
+0000002433 00000 n 
+0000002505 00000 n 
+0000019462 00000 n 
+0000031637 00000 n 
+0000035779 00000 n 
+0000035838 00000 n 
+0000035872 00000 n 
+0000035906 00000 n 
+trailer
+<<
+/ID 
+[<a274dbdaf29e942bf8700ff30808ea9d><a274dbdaf29e942bf8700ff30808ea9d>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 10 0 R
+/Root 9 0 R
+/Size 28
+>>
+startxref
+35940
+%%EOF

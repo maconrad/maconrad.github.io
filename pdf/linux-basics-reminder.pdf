@@ -1,0 +1,2420 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 31 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 30 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 32 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 30 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Contents 33 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 30 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Contents 34 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 30 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+10 0 obj
+<<
+/Contents 35 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 30 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+11 0 obj
+<<
+/Contents 36 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 30 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+12 0 obj
+<<
+/Outlines 14 0 R /PageLabels 37 0 R /PageMode /UseNone /Pages 30 0 R /Type /Catalog
+>>
+endobj
+13 0 obj
+<<
+/Author () /CreationDate (D:20220202143525-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202143525-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Linux Basics Reminder) /Trapped /False
+>>
+endobj
+14 0 obj
+<<
+/Count 3 /First 15 0 R /Last 15 0 R /Type /Outlines
+>>
+endobj
+15 0 obj
+<<
+/Count -1 /Dest [ 6 0 R /Fit ] /First 16 0 R /Last 16 0 R /Parent 14 0 R /Title (Basics)
+>>
+endobj
+16 0 obj
+<<
+/Count -13 /Dest [ 6 0 R /Fit ] /First 17 0 R /Last 29 0 R /Parent 15 0 R /Title (Basics)
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 18 0 R /Parent 16 0 R /Title (Basic Terminology)
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 19 0 R /Parent 16 0 R /Prev 17 0 R /Title (Boot Process)
+>>
+endobj
+19 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 20 0 R /Parent 16 0 R /Prev 18 0 R /Title (General)
+>>
+endobj
+20 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 21 0 R /Parent 16 0 R /Prev 19 0 R /Title (Files & Dirs)
+>>
+endobj
+21 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 22 0 R /Parent 16 0 R /Prev 20 0 R /Title (2>&1)
+>>
+endobj
+22 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 23 0 R /Parent 16 0 R /Prev 21 0 R /Title (bzip & co)
+>>
+endobj
+23 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 24 0 R /Parent 16 0 R /Prev 22 0 R /Title (/proc & co)
+>>
+endobj
+24 0 obj
+<<
+/Dest [ 9 0 R /Fit ] /Next 25 0 R /Parent 16 0 R /Prev 23 0 R /Title (Logfiles)
+>>
+endobj
+25 0 obj
+<<
+/Dest [ 10 0 R /Fit ] /Next 26 0 R /Parent 16 0 R /Prev 24 0 R /Title (yum and friends)
+>>
+endobj
+26 0 obj
+<<
+/Dest [ 11 0 R /Fit ] /Next 27 0 R /Parent 16 0 R /Prev 25 0 R /Title (/dev/sda & LVM)
+>>
+endobj
+27 0 obj
+<<
+/Dest [ 11 0 R /Fit ] /Next 28 0 R /Parent 16 0 R /Prev 26 0 R /Title (Chmod, chown and ACLs)
+>>
+endobj
+28 0 obj
+<<
+/Dest [ 11 0 R /Fit ] /Next 29 0 R /Parent 16 0 R /Prev 27 0 R /Title (ifconfig vs ip, NetworkManager)
+>>
+endobj
+29 0 obj
+<<
+/Dest [ 11 0 R /Fit ] /Parent 16 0 R /Prev 28 0 R /Title (Ref Images)
+>>
+endobj
+30 0 obj
+<<
+/Count 6 /Kids [ 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R ] /Type /Pages
+>>
+endobj
+31 0 obj
+<<
+/Length 13905
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 146.1742 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Linux Basics Reminder) Tj T* -146.1742 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2021-11-04 18:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 23.33625 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Basics) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 58.926 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Basic Terminology) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 46.97175 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Boot Process) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 640.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 34.42425 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (General) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 630.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 42.58275 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Files & Dirs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 620.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 28.15575 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (2) Tj (>) Tj (&) Tj (1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 611.0236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 37.34325 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (bzip & co) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 601.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 39.3855 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (/proc & co) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 591.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 33.8415 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Logfiles) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 581.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 53.0985 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (yum and friends) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 571.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 52.80975 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (/dev/sda & LVM) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 561.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 75.2745 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Chmod, chown and ACLs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 551.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 87.52275 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (ifconfig vs ip, NetworkManager) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 541.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 42.59325 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Ref Images) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 541.8986 cm
+Q
+q
+1 0 0 1 57.02362 541.8986 cm
+Q
+q
+1 0 0 1 57.02362 523.7417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Basics) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 506.774 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Basic Terminology) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 483.354 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 13.9805 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+.492188 w
+BT 1 0 0 1 7.875 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Kernel: Interface between HW and OS, e.g. Webbrowsing opens network socket done via kernel, kernel translates instruction to device driver. Application and kernel run in different memory spaces) Tj T* (\(kernel-space, user-space\). Apps and Deamons make system calls to the kernel to access HW \(memory, network etc.\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 473.479 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Kernel modules: Implement functionality of kernel, e.g. process scheduling, memory mgmt, IPC, network, device drivers, file system, security. etc.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 463.604 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (LKM: Loadable kernel modules. Modules that are not part of monolithic kernel but can be loaded if needed to extend functionality.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 453.729 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Linux OS: Kernel + GNU Utilities \(Deamons, Window System\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 443.854 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Distro: Linux OS + Other SW \(e.g. word processing, browsers\) + optionally support. 300+ available) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 433.979 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Distro Family: Base OS \(Debian, RedHat, Android\). Debian E.g. parent for ubuntu. RedHat parent for RHEL, Centos & Rocky Linux etc.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 424.104 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Deamon: Application that provides specific service \(e.g. httpd\) and runs in background) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 414.229 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Glibc: GNU C Library. System calls are made through this lib. Subroutines access the kernel through SCI \(system call interface\). See image below.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 414.229 cm
+Q
+q
+1 0 0 1 57.02362 398.054 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Boot Process) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 382.509 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Load OS components into memory) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 372.634 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Step 1: Firmware/BIOS loaded from NVRAM) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 362.759 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (POST) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 352.884 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Searches boot sector on devices \(marked with boot sector signature\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 352.884 cm
+Q
+q
+1 0 0 1 57.02362 343.009 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Step 2: BIOS hands over control to software sitting in boot sector) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 333.134 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Called boot loader \(e.g. GRUB/SYSLINUX\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 333.134 cm
+Q
+q
+1 0 0 1 57.02362 323.259 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Step 3: Boot Loader loads kernel image into memory \(compressed\) + load init RAM disk \(initrd/initramfs\) which provides temporary file system in memory + pass control to kernel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 313.384 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Step 4: Kernel creates root file system in memory and decompresses into RAM) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 303.509 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Step 5: Kernel loads device drivers, mounts physical device + unloads initramfs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 293.634 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Step 6: Kernel starts 1st user-space program \(/usr/sbin/init or /lib/systemd/systemd\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 283.759 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Step 7: Init/systemd invokes all other programs \(e.g. cmd shell / GUI\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 273.884 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Note: MBR \(Master Boot Record\) located before the first partition on the disk.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 273.884 cm
+Q
+q
+1 0 0 1 57.02362 257.709 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (General) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 242.164 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Basic Commands) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 69.539 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 164.0728 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#Present) Tj ( ) Tj (working) Tj ( ) Tj (directory) Tj ( ) Tj T* (pwd) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Add) Tj ( ) Tj (a) Tj ( ) Tj (user,) Tj ( ) Tj (-m) Tj ( ) Tj (to) Tj ( ) Tj (create) Tj ( ) Tj (a) Tj ( ) Tj (homedir) Tj ( ) Tj T* (useradd) Tj ( ) Tj (-m) Tj ( ) Tj (mario) Tj ( ) Tj T* (passwd) Tj ( ) Tj (mario) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Add) Tj ( ) Tj (user) Tj ( ) Tj (to) Tj ( ) Tj (sudoers) Tj ( ) Tj T* (visudo) Tj ( ) Tj (#) Tj ( ) Tj (check) Tj ( ) Tj (if) Tj ( ) Tj (wheel) Tj ( ) Tj (group) Tj ( ) Tj (allowed) Tj ( ) Tj T* (#) Tj ( ) Tj (append) Tj ( ) Tj (wheel) Tj ( ) Tj (group) Tj ( ) Tj T* (su) Tj ( ) Tj (-) Tj ( ) Tj T* (usermod) Tj ( ) Tj (-aG) Tj ( ) Tj (wheel) Tj ( ) Tj (mario) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Switch) Tj ( ) Tj (user) Tj ( ) Tj (-) Tj ( ) Tj (su) Tj ( ) Tj ({username},) Tj ( ) Tj (-) Tj ( ) Tj (switches) Tj ( ) Tj (to) Tj ( ) Tj (homedir) Tj ( ) Tj (of) Tj ( ) Tj (that) Tj ( ) Tj (user) Tj ( ) Tj T* (su) Tj ( ) Tj (-) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (sudo) Tj ( ) Tj ({command},) Tj ( ) Tj (sudoers/wheel) Tj ( ) Tj (group) Tj ( ) Tj T* (sudo) Tj ( ) Tj (cp) Tj ( ) Tj (a.txt) Tj ( ) Tj (b.txt) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (SSH) Tj ( ) Tj (X) Tj ( ) Tj (Forwarding) Tj ( ) Tj T* (ssh) Tj ( ) Tj (-Y) Tj ( ) Tj (user@machine) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+32 0 obj
+<<
+/Length 10184
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 644.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 116.8227 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ( ) Tj T* (history) Tj ( ) Tj T* (#) Tj ( ) Tj (/) Tj ( ) Tj (to) Tj ( ) Tj (search,) Tj ( ) Tj (n=fwd,) Tj ( ) Tj (N=back,) Tj ( ) Tj (g=top,) Tj ( ) Tj (G=end) Tj ( ) Tj T* (#) Tj ( ) Tj (Sections) Tj ( ) Tj ( ) Tj (1-9) Tj ( ) Tj (\(1=exec\(default\),) Tj ( ) Tj (2=sys-calls,) Tj ( ) Tj (5=file) Tj ( ) Tj (formats,) Tj ( ) Tj (9=kernel) Tj ( ) Tj (etc...\)) Tj ( ) Tj T* (man) Tj ( ) Tj (man) Tj ( ) Tj T* (man) Tj ( ) Tj (ls) Tj ( ) Tj T* (info) Tj ( ) Tj (ls) Tj ( ) Tj T* (man) Tj ( ) Tj (tar) Tj ( ) Tj T* (man) Tj ( ) Tj (5) Tj ( ) Tj (tar) Tj ( ) Tj T* (man) Tj ( ) Tj (-k) Tj ( ) Tj (tar) Tj ( ) Tj T* (man) Tj ( ) Tj (-k) Tj ( ) Tj (") Tj (^tar) Tj ($) Tj (") Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Info) Tj ( ) Tj (more) Tj ( ) Tj (detailed,) Tj ( ) Tj (hypertext) Tj ( ) Tj (docs) Tj ( ) Tj (named) Tj ( ) Tj (nodes,) Tj ( ) Tj (n=next,) Tj ( ) Tj (p=previous) Tj ( ) Tj T* (info) Tj ( ) Tj (ls) Tj ( ) Tj T* (pinfo) Tj ( ) Tj (ls) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 628.7236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Files & Dirs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 613.1786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (General: Disk - Partition - Filesystem on Partition) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 595.4286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 13.9805 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+.492188 w
+BT 1 0 0 1 7.875 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Filesystem defines how data is stored and retrieved. Defines Block of data \(which has a name, start and stop\) called file, allocation unit \(=minimum size of a block\), defines mapping of files to dirs, defines) Tj T* (naming schemes, manages metadata) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 585.5536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Ext3/4 and XFS support ACLs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 575.6786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Linux has FHS \(Filesystem Hierarchy Standard\) & everything is a file) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 565.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Inode: Uniquely identfifies file within a filesystem) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 555.9286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Filetypes: - \(regular\), d \(directory\), l \(link\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 538.1786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 13.9805 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+.492188 w
+BT 1 0 0 1 7.875 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Hardlinks: link to same inode, Number after file permissions \(within partition only because inode number only unique within filesystem\). File attrubte changes \(.e.g permissions\) are reflected. Files only.) Tj T* (Inode deleted after last hard link deleted. E.g. used to distribut data/file-access!) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 528.3036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Softlink: link to other file, not inode \(across partitions\). Files or directories.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 518.4286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Utilitities like cat, more, less, ls, rm, mkdir etc. groupted together in packages. Core-utils and util-linux are examples) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 518.4286 cm
+Q
+q
+1 0 0 1 57.02362 70.17862 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 439.6977 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (-n) Tj ( ) Tj (for) Tj ( ) Tj (line) Tj ( ) Tj (number,) Tj ( ) Tj (-b) Tj ( ) Tj (for) Tj ( ) Tj (line) Tj ( ) Tj (number) Tj ( ) Tj (of) Tj ( ) Tj (non-emtpy) Tj ( ) Tj (lines,) Tj ( ) Tj (-s) Tj ( ) Tj (squeeze) Tj ( ) Tj (multiple) Tj ( ) Tj (non) Tj ( ) Tj (empty) Tj ( ) Tj (lines) Tj ( ) Tj (onto) Tj ( ) Tj (one) Tj ( ) Tj T* (cat) Tj ( ) Tj T* (#) Tj ( ) Tj (Enter/Space) Tj ( ) Tj (to) Tj ( ) Tj (scroll,) Tj ( ) Tj (/{pattern},) Tj ( ) Tj (b=back,) Tj ( ) Tj (g=begin,) Tj ( ) Tj (G=end) Tj ( ) Tj T* (more) Tj ( ) Tj T* (less) Tj ( ) Tj T* (#) Tj ( ) Tj (-n) Tj ( ) Tj ({num},) Tj ( ) Tj (f) Tj ( ) Tj (=) Tj ( ) Tj (follow) Tj ( ) Tj T* (head) Tj ( ) Tj (-n15) Tj ( ) Tj (a.txt) Tj ( ) Tj T* (tail) Tj ( ) Tj (-fn10) Tj ( ) Tj (/var/log/syslog) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (create,) Tj ( ) Tj (copy,) Tj ( ) Tj (move,) Tj ( ) Tj (delete,) Tj ( ) Tj (shred) Tj ( ) Tj (\(overwrite) Tj ( ) Tj (multiple) Tj ( ) Tj (times,) Tj ( ) Tj (no) Tj ( ) Tj (recovery\)) Tj ( ) Tj T* (touch) Tj ( ) Tj (a.txt) Tj ( ) Tj T* (cp) Tj ( ) Tj (src) Tj ( ) Tj (dst) Tj ( ) Tj T* (cp) Tj ( ) Tj (-r) Tj ( ) Tj (srcdir) Tj ( ) Tj (dstdir) Tj ( ) Tj T* (mv) Tj ( ) Tj (src) Tj ( ) Tj (dst) Tj ( ) Tj T* (rm) Tj ( ) Tj (a.txt) Tj ( ) Tj T* (shred) Tj ( ) Tj (a.txt) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (-p) Tj ( ) Tj (=) Tj ( ) Tj (parent) Tj ( ) Tj (\(make) Tj ( ) Tj (parent) Tj ( ) Tj (if) Tj ( ) Tj (needed\),) Tj ( ) Tj ({multiple) Tj ( ) Tj (dirs) Tj ( ) Tj (at) Tj ( ) Tj (same) Tj ( ) Tj (level) Tj ( ) Tj (,-separted}) Tj ( ) Tj T* (mkdir) Tj ( ) Tj (-p) Tj ( ) Tj (/home/mario/dir1/dir2) Tj ( ) Tj T* (mkdir) Tj ( ) Tj (-p) Tj ( ) Tj (/home/mario/dir1/dir2/) Tj ({) Tj (dir3,dir4) Tj (}) Tj ( ) Tj T* (rmdir) Tj ( ) Tj (/path/to/empty/dir) Tj ( ) Tj T* (rm) Tj ( ) Tj (-r) Tj ( ) Tj (/path/to/nonempty/dir) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Add) Tj ( ) Tj (inode) Tj ( ) Tj T* (mario@vbox:~$) Tj ( ) Tj (ls) Tj ( ) Tj (-lai) Tj ( ) Tj T* (total) Tj ( ) Tj (132) Tj ( ) Tj T*  (920630) Tj ( ) Tj (drwxr-xr-x) Tj ( ) Tj (16) Tj ( ) Tj (mario) Tj ( ) Tj (mario) Tj ( ) Tj ( ) Tj (4096) Tj ( ) Tj (Nov) Tj ( ) Tj ( ) Tj (1) Tj ( ) Tj (11) Tj (:48) Tj ( ) Tj (.) Tj ( ) Tj T*  (915713) Tj ( ) Tj (drwxr-xr-x) Tj ( ) Tj ( ) Tj (3) Tj ( ) Tj (root) Tj ( ) Tj ( ) Tj (root) Tj ( ) Tj ( ) Tj ( ) Tj (4096) Tj ( ) Tj (Nov) Tj ( ) Tj ( ) Tj (1) Tj ( ) Tj (09) Tj (:11) Tj ( ) Tj (..) Tj ( ) Tj T*  (922050) Tj ( ) Tj (-rw-------) Tj ( ) Tj ( ) Tj (1) Tj ( ) Tj (mario) Tj ( ) Tj (mario) Tj ( ) Tj ( ) Tj ( ) Tj (500) Tj ( ) Tj (Nov) Tj ( ) Tj ( ) Tj (1) Tj ( ) Tj (11) Tj (:47) Tj ( ) Tj (.bash_history) Tj ( ) Tj T*  (927160) Tj ( ) Tj (-rw-r--r--) Tj ( ) Tj ( ) Tj (1) Tj ( ) Tj (mario) Tj ( ) Tj (mario) Tj ( ) Tj ( ) Tj ( ) Tj (220) Tj ( ) Tj (Nov) Tj ( ) Tj ( ) Tj (1) Tj ( ) Tj (09) Tj (:11) Tj ( ) Tj (.bash_logout) Tj ( ) Tj T*  (930761) Tj ( ) Tj (-rw-r--r--) Tj ( ) Tj ( ) Tj (1) Tj ( ) Tj (mario) Tj ( ) Tj (mario) Tj ( ) Tj ( ) Tj (3869) Tj ( ) Tj (Nov) Tj ( ) Tj ( ) Tj (1) Tj ( ) Tj (10) Tj (:06) Tj ( ) Tj (.bashrc) Tj ( ) Tj T*  (928057) Tj ( ) Tj (drwx------) Tj ( ) Tj (17) Tj ( ) Tj (mario) Tj ( ) Tj (mario) Tj ( ) Tj ( ) Tj (4096) Tj ( ) Tj (Nov) Tj ( ) Tj ( ) Tj (1) Tj ( ) Tj (11) Tj (:47) Tj ( ) Tj (.cache) Tj ( ) Tj T*  (928060) Tj ( ) Tj (drwxr-xr-x) Tj ( ) Tj (21) Tj ( ) Tj (mario) Tj ( ) Tj (mario) Tj ( ) Tj ( ) Tj (4096) Tj ( ) Tj (Nov) Tj ( ) Tj ( ) Tj (1) Tj ( ) Tj (11) Tj (:49) Tj ( ) Tj (.config) Tj ( ) Tj T* (1056707) Tj ( ) Tj (drwxr-xr-x) Tj ( ) Tj ( ) Tj (2) Tj ( ) Tj (mario) Tj ( ) Tj (mario) Tj ( ) Tj ( ) Tj (4096) Tj ( ) Tj (Nov) Tj ( ) Tj ( ) Tj (1) Tj ( ) Tj (10) Tj (:45) Tj ( ) Tj (Desktop) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Hardlink,) Tj ( ) Tj (ln) Tj ( ) Tj ({existing}) Tj ( ) Tj ({new},) Tj ( ) Tj (permissions) Tj ( ) Tj (reflected) Tj ( ) Tj T* (ls) Tj ( ) Tj (-ali) Tj ( ) Tj T* (ln) Tj ( ) Tj (a.txt) Tj ( ) Tj (a2.txt) Tj ( ) Tj T* (#) Tj ( ) Tj (number) Tj ( ) Tj (hardlinks) Tj ( ) Tj (now) Tj ( ) Tj (2) Tj ( ) Tj T* (ls) Tj ( ) Tj (-ali) Tj ( ) Tj T* ( ) Tj T* (chmod) Tj ( ) Tj (g+w) Tj ( ) Tj (a2.txt) Tj ( ) Tj T* (chmod) Tj ( ) Tj (o+w) Tj ( ) Tj (a2.xt) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Softlink,) Tj ( ) Tj (permission) Tj ( ) Tj (always) Tj ( ) Tj (777,) Tj ( ) Tj (can) Tj ( ) Tj (be) Tj ( ) Tj (broken) Tj ( ) Tj (\(if) Tj ( ) Tj (original) Tj ( ) Tj (file) Tj ( ) Tj (deleted\)) Tj ( ) Tj T* (ln) Tj ( ) Tj (-s) Tj ( ) Tj (exist) Tj ( ) Tj (new_link) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Info) Tj ( ) Tj (about) Tj ( ) Tj (file,) Tj ( ) Tj (permission) Tj ( ) Tj (size) Tj ( ) Tj (etc.) Tj ( ) Tj T* (stat) Tj ( ) Tj (a2.xt) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Mounting,) Tj ( ) Tj (find) Tj ( ) Tj (UUID) Tj ( ) Tj (of) Tj ( ) Tj (device) Tj ( ) Tj T* (blkid) Tj ( ) Tj T* (mkdir) Tj ( ) Tj (/media/iso) Tj ( ) Tj T* (mount) Tj ( ) Tj (/dev/sr0) Tj ( ) Tj (/media/iso) Tj ( ) Tj T* ( ) Tj T* (vi) Tj ( ) Tj (/etc/fstab) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+33 0 obj
+<<
+/Length 11898
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (UUID) Tj (={) Tj (uuid) Tj (}) Tj ( ) Tj ( ) Tj (/media/iso) Tj ( ) Tj ( ) Tj (iso9660) Tj ( ) Tj (ro,user,auto) Tj ( ) Tj ( ) Tj (0) Tj ( ) Tj (0) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 738.9736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (2) Tj (>) Tj (&) Tj (1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 723.4286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Goal: filter input/output of programs/utils and apply control) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 713.5536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (File handle: Number assigned to a file by the OS when that file is opened, usually dynamic, static for certain files. Remember everything is a file in linux. Also called FD \(File descriptor\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 703.6786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Stdin: file handle #0 \(keyboard by default\), FD0) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 693.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Input redirection: { command } < { file }) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 693.8036 cm
+Q
+q
+1 0 0 1 57.02362 683.9286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Stdout: file handle #1 \(default screen\), FD1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 674.0536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Stderr: file handle #2 \(default screen\), FD2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 664.1786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (/dev/null can be used if not wanted) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 664.1786 cm
+Q
+q
+1 0 0 1 57.02362 664.1786 cm
+Q
+q
+1 0 0 1 57.02362 397.0536 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 258.5727 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Input) Tj ( ) Tj (redirection) Tj ( ) Tj (\(default) Tj ( ) Tj (to) Tj ( ) Tj (keyboard\)) Tj ( ) Tj (-) Tj ( ) Tj ( ) Tj ({command}) Tj ( ) Tj (<) Tj ( ) Tj ({file}) Tj  T* (sort) Tj ( ) Tj (<) Tj ( ) Tj (abc.txt) Tj  T*  T* (#) Tj ( ) Tj (Output) Tj ( ) Tj (redirection) Tj ( ) Tj (\(default) Tj ( ) Tj (to) Tj ( ) Tj (screen\)) Tj ( ) Tj (-) Tj ( ) Tj ({command}) Tj ( ) Tj (>) Tj ( ) Tj ({file}) Tj  T* (sort) Tj ( ) Tj (inputfile.) Tj ( ) Tj (>) Tj ( ) Tj (file.txt) Tj  T*  T* (#) Tj ( ) Tj (Input) Tj ( ) Tj (and) Tj ( ) Tj (output) Tj ( ) Tj (redirection) Tj  T* (sort) Tj ( ) Tj (<) Tj ( ) Tj (input.txt) Tj ( ) Tj (>) Tj ( ) Tj (sorted.txt) Tj  T*  T* (#) Tj ( ) Tj (Error) Tj ( ) Tj (redirection) Tj ( ) Tj (\(default) Tj ( ) Tj (to) Tj ( ) Tj (screen\)) Tj ( ) Tj (-) Tj ( ) Tj ({command}) Tj ( ) Tj ( ) Tj (2) Tj (>) Tj ( ) Tj ({file}) Tj  T* (#) Tj ( ) Tj (Example:) Tj ( ) Tj (All) Tj ( ) Tj (permission) Tj ( ) Tj (denied) Tj ( ) Tj (goes) Tj ( ) Tj (into) Tj ( ) Tj (error.log) Tj  T* (find) Tj ( ) Tj (/*) Tj ( ) Tj (-name) Tj ( ) Tj (') Tj (xy*) Tj (') Tj ( ) Tj (2) Tj (>) Tj (error.log) Tj  T*  T* (#) Tj ( ) Tj (Stdout) Tj ( ) Tj (and) Tj ( ) Tj (stderr) Tj ( ) Tj ({command}) Tj ( ) Tj (&) Tj (>) Tj ( ) Tj ({file}) Tj  T* (find) Tj ( ) Tj (/*) Tj ( ) Tj (-name) Tj ( ) Tj (') Tj (xy*) Tj (') Tj ( ) Tj (&) Tj (>) Tj ( ) Tj (errandout.xt) Tj  T* (find) Tj ( ) Tj (/*) Tj ( ) Tj (-name) Tj ( ) Tj (') Tj (xy*) Tj (') Tj ( ) Tj (>) Tj ( ) Tj (errandoutoption2.xt) Tj ( ) Tj (2) Tj (>) Tj (&) Tj (1) Tj  T*  T* (#) Tj ( ) Tj (Split) Tj ( ) Tj (out) Tj ( ) Tj (and) Tj ( ) Tj (error) Tj ( ) Tj (into) Tj ( ) Tj (separate) Tj ( ) Tj (files) Tj ( ) Tj ({command}) Tj ( ) Tj (>) Tj ( ) Tj ({output_file}) Tj ( ) Tj (2) Tj (>) Tj ( ) Tj ({error_file}) Tj  T* (find) Tj ( ) Tj (/*) Tj ( ) Tj (-name) Tj ( ) Tj (') Tj (*prf*) Tj (') Tj ( ) Tj (>) Tj ( ) Tj (out2.txt) Tj ( ) Tj (2) Tj (>) Tj ( ) Tj (err2.xt) Tj  T*  T* (#) Tj ( ) Tj (Append) Tj  T* (cat) Tj ( ) Tj (a.txt) Tj ( ) Tj (>) Tj (>) Tj ( ) Tj (existing.txt) Tj  T* (find) Tj ( ) Tj (/*) Tj ( ) Tj (-name) Tj ( ) Tj (') Tj (*prf*) Tj (') Tj ( ) Tj (>) Tj (>) Tj ( ) Tj (existing.txt) Tj ( ) Tj (2) Tj (>) Tj (&) Tj (1) Tj  T* (find) Tj ( ) Tj (/*) Tj ( ) Tj (-name) Tj ( ) Tj (') Tj (*prf*) Tj (') Tj ( ) Tj (>) Tj (>) Tj ( ) Tj (existing.txt) Tj ( ) Tj (2) Tj (>) Tj ( ) Tj (/dev/null) Tj  T*  T* (#) Tj ( ) Tj (Pipe,) Tj ( ) Tj (redirect) Tj ( ) Tj (output) Tj ( ) Tj (to) Tj ( ) Tj (input) Tj ( ) Tj (of) Tj ( ) Tj (other) Tj  T* (stat) Tj ( ) Tj (xy.txt) Tj ( ) Tj (|) Tj ( ) Tj (sort) Tj ( ) Tj (|) Tj ( ) Tj (head) Tj ( ) Tj (-n) Tj ( ) Tj (1) Tj  T*  T* (#) Tj ( ) Tj (Ping) Tj ( ) Tj (default) Tj ( ) Tj (GW) Tj ( ) Tj (\(awk) Tj ( ) Tj (filter) Tj ( ) Tj (second) Tj ( ) Tj (column\)) Tj  T* (netstat) Tj ( ) Tj (-nr) Tj ( ) Tj (|) Tj ( ) Tj (awk) Tj ( ) Tj (') Tj ({print) Tj ( ) Tj ($2}) Tj (') Tj ( ) Tj (|) Tj ( ) Tj (egrep) Tj ( ) Tj (") Tj (\([0-9]{1,3}.\){3}\([0-9]{1,3}\)) Tj (") Tj ( ) Tj (|) Tj ( ) Tj (xargs) Tj ( ) Tj (-n1) Tj ( ) Tj (ping) Tj ( ) Tj (-c) Tj ( ) Tj (1) Tj  T*  T* (#) Tj ( ) Tj (Redirect) Tj ( ) Tj (and) Tj ( ) Tj (output) Tj ( ) Tj (to) Tj ( ) Tj (file) Tj ( ) Tj (at) Tj ( ) Tj (same) Tj ( ) Tj (time) Tj ( ) Tj (using) Tj ( ) Tj (tee,) Tj ( ) Tj (-a) Tj ( ) Tj (to) Tj ( ) Tj (append) Tj  T* (ls) Tj ( ) Tj (-l) Tj ( ) Tj (|) Tj ( ) Tj (tee) Tj ( ) Tj (lsoutput.txt) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 380.8786 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (bzip & co) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 365.3336 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Vary in compression ratio and speed. Often used together with archiving utility like tar. - xz: best compression, slowest - bzip2: middle - gzip: worst compresstion, fastest) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 176.9586 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 179.8228 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Removes) Tj ( ) Tj (uncrompessed) Tj ( ) Tj (file) Tj ( ) Tj (by) Tj ( ) Tj (default,) Tj ( ) Tj (-k) Tj ( ) Tj (=keep,) Tj ( ) Tj (-v=verbose) Tj  T* (gzip) Tj ( ) Tj (-k) Tj ( ) Tj (a.txt) Tj  T* (gunzip) Tj ( ) Tj (a.txt.gz) Tj  T*  T* (bzip2) Tj ( ) Tj (-kv) Tj ( ) Tj (a.txt) Tj  T* (bunzip2) Tj ( ) Tj (a.txt.bz2) Tj  T*  T* (xz) Tj ( ) Tj (-v) Tj ( ) Tj (a.txt) Tj  T* (xz) Tj ( ) Tj (-d) Tj ( ) Tj (a.txt.xz) Tj  T*  T* (#) Tj ( ) Tj (tar) Tj ( ) Tj (tar) Tj ( ) Tj (-cvf) Tj ( ) Tj ({Archive_File.tar}) Tj ( ) Tj ({file1}) Tj ( ) Tj ({file2}) Tj ( ) Tj ( ) Tj (..) Tj ( ) Tj ({fileX}) Tj  T* (tar) Tj ( ) Tj (-cvf) Tj ( ) Tj (errs.tar) Tj ( ) Tj (prf*) Tj  T* (#) Tj ( ) Tj (-t) Tj ( ) Tj (=) Tj ( ) Tj (table) Tj ( ) Tj (=) Tj ( ) Tj (view) Tj ( ) Tj (content,) Tj ( ) Tj (not) Tj ( ) Tj (extracted) Tj  T* (tar) Tj ( ) Tj (-tf) Tj ( ) Tj (errs.tar) Tj  T* (#) Tj ( ) Tj (-x) Tj ( ) Tj (=) Tj ( ) Tj (extract) Tj  T* (tar) Tj ( ) Tj (-xvf) Tj ( ) Tj (errs.tar) Tj  T*  T* (#) Tj ( ) Tj (tar) Tj ( ) Tj (and) Tj ( ) Tj (compression) Tj  T* (#) Tj ( ) Tj (tar) Tj ( ) Tj (-zcvf) Tj ( ) Tj ({) Tj ( ) Tj (archive-file.tar.gz) Tj ( ) Tj (}) Tj ( ) Tj ({) Tj ( ) Tj (file1) Tj ( ) Tj (}) Tj ( ) Tj ({) Tj ( ) Tj (file2) Tj ( ) Tj (}) Tj ( ) Tj ( ) Tj (..) Tj ( ) Tj ({) Tj ( ) Tj (fileX) Tj ( ) Tj (}) Tj  T* (#) Tj ( ) Tj (tar) Tj ( ) Tj (-jcvf) Tj ( ) Tj ({) Tj ( ) Tj (archive-file.tar.bz2) Tj ( ) Tj (}) Tj ( ) Tj ({) Tj ( ) Tj (file1) Tj ( ) Tj (}) Tj ( ) Tj ({) Tj ( ) Tj (file2) Tj ( ) Tj (}) Tj ( ) Tj ( ) Tj (..) Tj ( ) Tj ({) Tj ( ) Tj (fileX) Tj ( ) Tj (}) Tj  T* (#) Tj ( ) Tj (tar) Tj ( ) Tj (-Jcvf) Tj ( ) Tj ({) Tj ( ) Tj (archive-file.tar.xz) Tj ( ) Tj (}) Tj ( ) Tj ({) Tj ( ) Tj (file1) Tj ( ) Tj (}) Tj ( ) Tj ({) Tj ( ) Tj (file2) Tj ( ) Tj (}) Tj ( ) Tj ( ) Tj (..) Tj ( ) Tj ({) Tj ( ) Tj (fileX) Tj ( ) Tj (}) Tj  T* (tar) Tj ( ) Tj (-Jcvf) Tj ( ) Tj (xy.tar.xz) Tj ( ) Tj (a.txt) Tj ( ) Tj (b.txt) Tj ( ) Tj (c.txt) Tj  T* (tar) Tj ( ) Tj (-Jxvf) Tj ( ) Tj (xy.tar.xz) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 160.7836 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (/proc & co) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 145.2386 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Thread: Seq of instructions that are executed by the CPU. Cannot be broken up.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 135.3636 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Process: Group of threads. Has its own address space in memory.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 125.4886 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (PID: Process ID) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 115.6136 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (PID 0 = kernel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 105.7386 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (PID 1 = systemd \(init\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 105.7386 cm
+Q
+q
+1 0 0 1 57.02362 95.86362 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Signal: Numb 1-64) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 85.98862 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (SIGTERM) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 76.11362 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (SIGKILL) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 66.23862 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (SIGCONT) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+34 0 obj
+<<
+/Length 9020
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (SIGSTOP) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 755.1486 cm
+Q
+q
+1 0 0 1 57.02362 755.1486 cm
+Q
+q
+1 0 0 1 57.02362 745.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Job: 2+ processes.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 735.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Example: Piping creats jobs, ls | less) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 735.3986 cm
+Q
+q
+1 0 0 1 57.02362 725.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Service: 1+ process to achieve a function. If runs in background called daemon) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 715.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (TTY: Terminal number, e.g. pts/0 = Terminal 0, pts/1 = Terminal 1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 705.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (? in ps output = not associated with a terminal) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 705.7736 cm
+Q
+q
+1 0 0 1 57.02362 695.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (VSZ: Virtual memory) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 686.0236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (RSS: Main Memory \(RAM\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 686.0236 cm
+Q
+q
+1 0 0 1 57.02362 182.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 494.8227 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (-A,) Tj ( ) Tj (-e) Tj ( ) Tj (for) Tj ( ) Tj (all,) Tj ( ) Tj (-a) Tj ( ) Tj (for) Tj ( ) Tj (all) Tj ( ) Tj (except) Tj ( ) Tj (session) Tj ( ) Tj (leaders) Tj  T* (#) Tj ( ) Tj (-u) Tj ( ) Tj (=) Tj ( ) Tj (current) Tj ( ) Tj (user,) Tj ( ) Tj (-u) Tj ( ) Tj ({name}) Tj  T* (#) Tj ( ) Tj (-f) Tj ( ) Tj (=) Tj ( ) Tj (parent) Tj ( ) Tj (process) Tj ( ) Tj (id) Tj  T* (#) Tj ( ) Tj (-C) Tj ( ) Tj (=) Tj ( ) Tj (select) Tj ( ) Tj (by) Tj ( ) Tj (cmd) Tj ( ) Tj (name) Tj  T* (#) Tj ( ) Tj (-p) Tj ( ) Tj (=) Tj ( ) Tj (specifc) Tj ( ) Tj (PID) Tj  T*  T* (#) Tj ( ) Tj (Nice) Tj ( ) Tj (tree) Tj  T* (ps) Tj ( ) Tj (-uf) Tj  T*  T* (#) Tj ( ) Tj (PPID) Tj ( ) Tj (\(remember:) Tj ( ) Tj (PID0=kernel,) Tj ( ) Tj (PID1=init\)) Tj  T* (ps) Tj ( ) Tj (-ef) Tj  T*  T* (#) Tj ( ) Tj (-C) Tj  T* (ps) Tj ( ) Tj (-C) Tj ( ) Tj (bash) Tj  T* (ps) Tj ( ) Tj (-up) Tj ( ) Tj (3040) Tj  T*  T* (pstree) Tj ( ) Tj (-p) Tj  T* (pidof) Tj ( ) Tj (bash) Tj  T*  T* (#) Tj ( ) Tj (Process) Tj ( ) Tj (grep,) Tj ( ) Tj (-u=user,) Tj ( ) Tj (-l=list) Tj ( ) Tj (name) Tj  T* (pgrep) Tj ( ) Tj (-u) Tj ( ) Tj (mario) Tj ( ) Tj (-l) Tj ( ) Tj (bash) Tj  T* (pkill) Tj ( ) Tj (bash) Tj ( ) Tj (--ns) Tj ( ) Tj (11730) Tj  T* (pkill) Tj ( ) Tj (bash) Tj ( ) Tj (--ns) Tj ( ) Tj (11730) Tj ( ) Tj (--signal) Tj ( ) Tj (SIGSTOp) Tj  T*  T* (#) Tj ( ) Tj (List) Tj ( ) Tj (all) Tj ( ) Tj (signals) Tj  T* (kill) Tj ( ) Tj (-l) Tj  T* (kill) Tj ( ) Tj (-SIGSTOP) Tj ( ) Tj (11730) Tj  T* (kill) Tj ( ) Tj (-SIGCONT) Tj ( ) Tj (11730) Tj  T*  T* (#) Tj ( ) Tj (jobs,) Tj ( ) Tj (bring) Tj ( ) Tj (to) Tj ( ) Tj (front,) Tj ( ) Tj (send) Tj ( ) Tj (to) Tj ( ) Tj (back) Tj  T* (jobs) Tj  T* (vi) Tj ( ) Tj (a.txt) Tj ( ) Tj (&) Tj  T* (jobs) Tj  T* (fg) Tj ( ) Tj (1) Tj  T* (bg) Tj ( ) Tj (1) Tj  T*  T* (#) Tj ( ) Tj (systemctl) Tj ( ) Tj ({) Tj ( ) Tj (options) Tj ( ) Tj (}) Tj ( ) Tj ({) Tj ( ) Tj (service_name) Tj ( ) Tj (}) Tj  T* (#) Tj ( ) Tj (Options:) Tj ( ) Tj (start,) Tj ( ) Tj (stop,) Tj ( ) Tj (enable) Tj ( ) Tj (\(auto-start) Tj ( ) Tj (on) Tj ( ) Tj (boot\),) Tj ( ) Tj (disable,) Tj ( ) Tj (status) Tj  T* (systemctl) Tj ( ) Tj (status) Tj  T* (systemctl) Tj ( ) Tj (status) Tj ( ) Tj (rsyslog) Tj  T* (sudo) Tj ( ) Tj (systemctl) Tj ( ) Tj (enable) Tj ( ) Tj (httpd) Tj  T*  T* (#) Tj ( ) Tj (Keys:) Tj ( ) Tj (m=memory,) Tj ( ) Tj (t=cpu%,shift+m=sort) Tj ( ) Tj (by) Tj ( ) Tj (memory,) Tj ( ) Tj (shirt+p=sort) Tj ( ) Tj (by) Tj ( ) Tj (cpu) Tj  T* (#) Tj ( ) Tj (Keys:) Tj ( ) Tj (k) Tj ( ) Tj (>) Tj ( ) Tj (PID) Tj ( ) Tj (>) Tj ( ) Tj (Signal,) Tj ( ) Tj (1=all) Tj ( ) Tj (processes) Tj ( ) Tj (of) Tj ( ) Tj (system) Tj  T* (top) Tj  T* (#) Tj ( ) Tj (Referesh) Tj ( ) Tj (rate) Tj ( ) Tj (every) Tj ( ) Tj (5sec) Tj  T* (top) Tj ( ) Tj (-d) Tj ( ) Tj (5) Tj  T*  T* (#) Tj ( ) Tj (-R) Tj ( ) Tj (=) Tj ( ) Tj (RFC2822) Tj  T* (date) Tj  T* (date) Tj ( ) Tj (-R) Tj  T* (#) Tj ( ) Tj (NTP) Tj ( ) Tj (and) Tj ( ) Tj (timezone) Tj  T* (timedatectl) Tj  T*  T* (#) Tj ( ) Tj (Load) Tj ( ) Tj (average) Tj ( ) Tj (1,5,15min,) Tj ( ) Tj (depends) Tj ( ) Tj (on) Tj ( ) Tj (num-cpu) Tj  T* (uptime) Tj  T*  T* (#) Tj ( ) Tj (Processer) Tj ( ) Tj (info) Tj  T* (cat) Tj ( ) Tj (/proc/cpuinfo) Tj ( ) Tj (|) Tj ( ) Tj (grep) Tj ( ) Tj (processor) Tj  T* (dmidecode) Tj ( ) Tj (-t) Tj  T* (dmidecode) Tj ( ) Tj (-t) Tj ( ) Tj (memory) Tj  T* (dmesg) Tj ( ) Tj (|) Tj ( ) Tj (grep) Tj ( ) Tj (-i) Tj ( ) Tj (usb) Tj  T* (lspci) Tj ( ) Tj (-tv) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 166.4736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Logfiles) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 150.9286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (/var/log/lastlog) Tj /F1 5.25 Tf (: Last successful login) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 141.0536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (/var/log/messages) Tj /F1 5.25 Tf (: General system info) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 131.1786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (/var/log/secure) Tj /F1 5.25 Tf (: Failed user logon attempts) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 121.3036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (/var/log/yum.log) Tj /F1 5.25 Tf (: YUM Logs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 111.4286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (rsyslogd and journald) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 101.5536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Syslog: Define which facility msg goes where) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 91.67862 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Jounal: Single binary file ) Tj /F4 5.25 Tf (/run/log/journal/system.journal) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 91.67862 cm
+Q
+q
+1 0 0 1 57.02362 91.67862 cm
+Q
+q
+1 0 0 1 57.02362 68.67862 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 14.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Interprets) Tj ( ) Tj (binary) Tj ( ) Tj (file) Tj ( ) Tj T* (lastlog) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+35 0 obj
+<<
+/Length 10382
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 644.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 116.8227 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ( ) Tj T* (#) Tj ( ) Tj ($IncludeConfig) Tj ( ) Tj (/etc/rsyslog.d/*.conf) Tj ( ) Tj T* (#) Tj ( ) Tj (RULES) Tj ( ) Tj (Section) Tj ( ) Tj (which) Tj ( ) Tj (facility) Tj ( ) Tj (goes) Tj ( ) Tj (where) Tj ( ) Tj T* (vi) Tj ( ) Tj (/etc/rsyslog.conf) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Interprets) Tj ( ) Tj (journal) Tj ( ) Tj (file) Tj ( ) Tj T* (#) Tj ( ) Tj (-n=last) Tj ( ) Tj (n) Tj ( ) Tj (lines,) Tj ( ) Tj (-p=severity,) Tj ( ) Tj (--since=today|yesterday) Tj ( ) Tj ( ) Tj T* (#) Tj ( ) Tj (--since) Tj ( ) Tj (date) Tj ( ) Tj (--until,) Tj ( ) Tj (-f=follow) Tj ( ) Tj T* (journalctl) Tj ( ) Tj T* (journalctl) Tj ( ) Tj (-n) Tj ( ) Tj (10) Tj ( ) Tj T* (#) Tj ( ) Tj (E.g.) Tj ( ) Tj (ERROR) Tj ( ) Tj (level) Tj ( ) Tj T* (journalctl) Tj ( ) Tj (-p3) Tj ( ) Tj (--since) Tj (=) Tj (today) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (-b=boot,) Tj ( ) Tj (-0=since) Tj ( ) Tj (last) Tj ( ) Tj (boot) Tj ( ) Tj T* (journalctl) Tj ( ) Tj (-b) Tj ( ) Tj (-0) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 628.7236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (yum and friends) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 613.1786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Manual compilation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 603.3036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Process:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 593.4286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (configure) Tj /F1 5.25 Tf ( to detect and configure HW and SW on local system. Generates make file) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 583.5536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (make) Tj /F1 5.25 Tf ( compiles the src, generate new libs, link existing shared libraries \(.so files\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 573.6786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (make install) Tj /F1 5.25 Tf ( move compiled bins into respective dirs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 573.6786 cm
+Q
+q
+1 0 0 1 57.02362 563.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Problems:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 563.8036 cm
+Q
+q
+1 0 0 1 57.02362 553.9286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (RPM) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 544.0536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (pre-compiled \(unsless src-rpm\) binaries \(save time\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 534.1786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (checksum to validate) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 524.3036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (metadata that point out dependencies and notifies user) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 514.4286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Non Repo Based \(files installed\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 514.4286 cm
+Q
+q
+1 0 0 1 57.02362 504.5536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (YUM Based on RPM file format but uses Repos) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 494.6786 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (RPM includes dependencies, but does not resolve them) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 484.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (YUM detects and resolved deps recursevely) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 484.8036 cm
+Q
+q
+1 0 0 1 57.02362 474.9286 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (DNS enhancements to YUM) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 465.0536 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Faster & Dependenciy resolve better) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 465.0536 cm
+Q
+q
+1 0 0 1 57.02362 455.1786 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Local Repos under ) Tj /F4 5.25 Tf (/etc/yum.repos.d/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 445.3036 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Can be enabled oro disabled there) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 445.3036 cm
+Q
+q
+1 0 0 1 57.02362 445.3036 cm
+Q
+q
+1 0 0 1 57.02362 67.92862 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 368.8227 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (-q=query,) Tj ( ) Tj (-V=verify,) Tj ( ) Tj (-i) Tj ( ) Tj (install,) Tj ( ) Tj (-U=upgrade,) Tj ( ) Tj (-F=freshen,) Tj ( ) Tj (-e=uninstall) Tj ( ) Tj T* (#) Tj ( ) Tj (-qp=Query) Tj ( ) Tj (not) Tj ( ) Tj (installed) Tj ( ) Tj (package) Tj ( ) Tj (\(rpm) Tj ( ) Tj (file\),) Tj ( ) Tj (-ql=list,) Tj ( ) Tj (-qR=dependencies) Tj ( ) Tj T* (#) Tj ( ) Tj (1st) Tj ( ) Tj (Mode) Tj ( ) Tj (decides:) Tj ( ) Tj ( ) Tj T* (#) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (rpm) Tj ( ) Tj (-qi) Tj ( ) Tj ({) Tj ( ) Tj (package_name) Tj ( ) Tj (}) Tj ( ) Tj (=) Tj ( ) Tj (Query) Tj ( ) Tj (Mode) Tj ( ) Tj (\(nothing) Tj ( ) Tj (installed\)) Tj ( ) Tj T* (#) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (rpm) Tj ( ) Tj (-iV) Tj ( ) Tj ({) Tj ( ) Tj (package_name) Tj ( ) Tj (}) Tj ( ) Tj (=) Tj ( ) Tj (Install) Tj ( ) Tj (Mode) Tj ( ) Tj T* (rpm) Tj ( ) Tj (-qi) Tj ( ) Tj (gedit) Tj ( ) Tj T* (rpm) Tj ( ) Tj (-qpi) Tj ( ) Tj (xy.rpm) Tj ( ) Tj T* (rpm) Tj ( ) Tj (-ql) Tj ( ) Tj (gedit) Tj ( ) Tj T* (rpm) Tj ( ) Tj (-qR) Tj ( ) Tj (gedit) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Install) Tj ( ) Tj (in) Tj ( ) Tj (verbose) Tj ( ) Tj (mode) Tj ( ) Tj T* (rpm) Tj ( ) Tj (-iv) Tj ( ) Tj (xy.rpm) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (YUM) Tj ( ) Tj T* (yum) Tj ( ) Tj (list) Tj ( ) Tj T* (yum) Tj ( ) Tj (list) Tj ( ) Tj (gedit) Tj ( ) Tj T* (yum) Tj ( ) Tj (list) Tj ( ) Tj (^core) Tj ([) Tj (5) Tj (-9) Tj (]) Tj (.$) Tj ( ) Tj T* (yum) Tj ( ) Tj (list) Tj ( ) Tj (installed) Tj ( ) Tj T* (yum) Tj ( ) Tj (list) Tj ( ) Tj (available) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (search) Tj ( ) Tj (on) Tj ( ) Tj (name) Tj ( ) Tj (of) Tj ( ) Tj (pkg) Tj ( ) Tj (and) Tj ( ) Tj (description) Tj ( ) Tj T* (yum) Tj ( ) Tj (search) Tj ( ) Tj (httpd) Tj ( ) Tj T* (yum) Tj ( ) Tj (search) Tj ( ) Tj (') Tj (text) Tj ( ) Tj (editor) Tj (') Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (search) Tj ( ) Tj (on) Tj ( ) Tj (name,) Tj ( ) Tj (desc,) Tj ( ) Tj ( ) Tj T* (yum) Tj ( ) Tj (search) Tj ( ) Tj (all) Tj ( ) Tj (apache) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (detailed) Tj ( ) Tj (info) Tj ( ) Tj (\(version,) Tj ( ) Tj (arch,) Tj ( ) Tj (size,) Tj ( ) Tj (repo) Tj ( ) Tj (etc.\)) Tj ( ) Tj T* (yum) Tj ( ) Tj (info) Tj ( ) Tj (gedit) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Repo) Tj ( ) Tj (that) Tj ( ) Tj (provides) Tj ( ) Tj (a) Tj ( ) Tj (certain) Tj ( ) Tj (file) Tj ( ) Tj T* (yum) Tj ( ) Tj (provides) Tj ( ) Tj (httpd.conf) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Group) Tj ( ) Tj (of) Tj ( ) Tj (pkgs) Tj ( ) Tj T* (yum) Tj ( ) Tj (group) Tj ( ) Tj (info) Tj ( ) Tj (xy) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Like) Tj ( ) Tj (bash) Tj ( ) Tj (history,) Tj ( ) Tj (but) Tj ( ) Tj (for) Tj ( ) Tj (yum) Tj ( ) Tj T* (yum) Tj ( ) Tj (history) Tj ( ) Tj T* (yum) Tj ( ) Tj (history) Tj ( ) Tj (info) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Install,) Tj ( ) Tj (remove,) Tj ( ) Tj (update) Tj ( ) Tj (pkg) Tj ( ) Tj T* (sudo) Tj ( ) Tj (yum) Tj ( ) Tj (install) Tj ( ) Tj (httpd) Tj ( ) Tj T* (sudo) Tj ( ) Tj (yum) Tj ( ) Tj (remove) Tj ( ) Tj (httpd) Tj ( ) Tj T* (sudo) Tj ( ) Tj (yum) Tj ( ) Tj (update) Tj ( ) Tj (httpd) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (enabled) Tj ( ) Tj (repos) Tj ( ) Tj T* (yum) Tj ( ) Tj (repolist) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+36 0 obj
+<<
+/Length 5594
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 463.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 297.9477 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ( ) Tj T* (#) Tj ( ) Tj (all) Tj ( ) Tj (repos,) Tj ( ) Tj (enabled) Tj ( ) Tj (or) Tj ( ) Tj (disabled) Tj ( ) Tj T* (yum) Tj ( ) Tj (repolist) Tj ( ) Tj (all) Tj ( ) Tj T* (yum-config-manager) Tj ( ) Tj (--enable) Tj ( ) Tj ({) Tj (repo_name) Tj (}) Tj ( ) Tj T* (yum-config-manager) Tj ( ) Tj (--disable) Tj ( ) Tj ({) Tj (repo_name) Tj (}) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (yum-config-manager) Tj ( ) Tj (--add-repo=) Tj ( ) Tj ({repo_url}) Tj ( ) Tj T* (#) Tj ( ) Tj (Example) Tj ( ) Tj (add) Tj ( ) Tj (EPEL) Tj ( ) Tj (\(extra) Tj ( ) Tj (packages) Tj ( ) Tj (for) Tj ( ) Tj (enterprise) Tj ( ) Tj (linux\)) Tj ( ) Tj T* (sudo) Tj ( ) Tj (yum-config-manager) Tj ( ) Tj (--add-) Tj ( ) Tj (repo) Tj (=) Tj (") Tj (https://dl.fedoraproject.org/pub/epel/7/x86_64/) Tj (") Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Alternative) Tj ( ) Tj (to) Tj ( ) Tj (using) Tj ( ) Tj (yum) Tj ( ) Tj (config) Tj ( ) Tj (manager) Tj ( ) Tj (for) Tj ( ) Tj (installing) Tj ( ) Tj (this) Tj ( ) Tj (specific) Tj ( ) Tj (repo) Tj ( ) Tj (\(some) Tj ( ) Tj (popular) Tj ( ) Tj (repos) Tj ( ) Tj (can) Tj ( ) Tj (be) Tj ( ) Tj (installed) Tj ( ) Tj (like) Tj ( ) Tj (this\)) Tj ( ) Tj T* (yum) Tj ( ) Tj (install) Tj ( ) Tj (epel-release) Tj ( ) Tj T* ( ) Tj T* (ls) Tj ( ) Tj (/etc/yum.repos.d/) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (create) Tj ( ) Tj (local) Tj ( ) Tj (repo) Tj ( ) Tj (-) Tj ( ) Tj (createrepo) Tj ( ) Tj ({) Tj ( ) Tj (rpm_archives_directory) Tj ( ) Tj (}) Tj ( ) Tj T* (mkdir) Tj ( ) Tj (/home/maconrad/MyRepo) Tj ( ) Tj T* (cp) Tj ( ) Tj (xy.rpm) Tj ( ) Tj (/hoem/maconrad/MyRepo/) Tj ( ) Tj T* ( ) Tj T* (touch) Tj ( ) Tj (/etc/yum.repos.d/my.repo) Tj ( ) Tj T* (cd) Tj ( ) Tj (/etc/yum.repos.d/) Tj ( ) Tj T* (echo) Tj ( ) Tj (") Tj ([MyRepo]) Tj (") Tj ( ) Tj (>) Tj ( ) Tj (my.repo) Tj ( ) Tj T* (echo) Tj ( ) Tj (") Tj (Name=MyRepo) Tj (") Tj ( ) Tj (>) Tj (>) Tj ( ) Tj (my.repo) Tj ( ) Tj T* (echo) Tj ( ) Tj (") Tj (Baseurl=file:///home/maconrad/MyRepo) Tj (") Tj ( ) Tj (>) Tj (>) Tj ( ) Tj ( ) Tj (my.repo) Tj ( ) Tj T* (echo) Tj ( ) Tj (") Tj (Enabled=1) Tj (") Tj ( ) Tj (>) Tj (>) Tj ( ) Tj (my.repo) Tj ( ) Tj T* (echo) Tj ( ) Tj (") Tj (Gpgcheck=0) Tj (") Tj ( ) Tj (>) Tj (>) Tj ( ) Tj (my.repo) Tj ( ) Tj T* ( ) Tj T* (createrepo) Tj ( ) Tj (/home/maconrad/MyRepo/) Tj ( ) Tj T* (yum) Tj ( ) Tj (clean) Tj ( ) Tj (all) Tj ( ) Tj T* (yum) Tj ( ) Tj (update) Tj ( ) Tj T* (yum) Tj ( ) Tj (repolist) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Search) Tj ( ) Tj (for) Tj ( ) Tj (package) Tj ( ) Tj (from) Tj ( ) Tj (myrepo) Tj ( ) Tj T* (yum) Tj ( ) Tj (info) Tj ( ) Tj (pkgname*) Tj ( ) Tj T* (sudo) Tj ( ) Tj (yum) Tj ( ) Tj (install) Tj ( ) Tj (xy) Tj ( ) Tj T* ( ) Tj T* (dnf) Tj ( ) Tj (provides) Tj ( ) Tj (/usr/sbin/semanage) Tj ( ) Tj T* (sudo) Tj ( ) Tj (dnf) Tj ( ) Tj (install) Tj ( ) Tj (lightdm-gtk) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 447.5986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (/dev/sda & LVM) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 432.0536 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 416.9286 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (brew) Tj ( ) Tj (install) Tj ( ) Tj (pyenv) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 401.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 385.6286 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Chmod, chown and ACLs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 370.0836 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 354.9586 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (brew) Tj ( ) Tj (install) Tj ( ) Tj (pyenv) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 339.8336 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 323.6586 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (ifconfig vs ip, NetworkManager) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 308.1136 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 292.9886 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (brew) Tj ( ) Tj (install) Tj ( ) Tj (pyenv) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 277.8636 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (asdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 261.6886 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Ref Images) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 246.1436 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Image Copyright @Cisco, if violating any policy will be removed. Please advice.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+37 0 obj
+<<
+/Nums [ 0 38 0 R 1 39 0 R 2 40 0 R 3 41 0 R 4 42 0 R 
+  5 43 0 R ]
+>>
+endobj
+38 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+39 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+40 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+41 0 obj
+<<
+/S /D /St 4
+>>
+endobj
+42 0 obj
+<<
+/S /D /St 5
+>>
+endobj
+43 0 obj
+<<
+/S /D /St 6
+>>
+endobj
+xref
+0 44
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000567 00000 n 
+0000000772 00000 n 
+0000000977 00000 n 
+0000001182 00000 n 
+0000001387 00000 n 
+0000001593 00000 n 
+0000001799 00000 n 
+0000001905 00000 n 
+0000002184 00000 n 
+0000002258 00000 n 
+0000002369 00000 n 
+0000002481 00000 n 
+0000002579 00000 n 
+0000002685 00000 n 
+0000002786 00000 n 
+0000002892 00000 n 
+0000002990 00000 n 
+0000003093 00000 n 
+0000003197 00000 n 
+0000003299 00000 n 
+0000003409 00000 n 
+0000003518 00000 n 
+0000003634 00000 n 
+0000003759 00000 n 
+0000003851 00000 n 
+0000003943 00000 n 
+0000017901 00000 n 
+0000028138 00000 n 
+0000040089 00000 n 
+0000049161 00000 n 
+0000059596 00000 n 
+0000065242 00000 n 
+0000065331 00000 n 
+0000065365 00000 n 
+0000065399 00000 n 
+0000065433 00000 n 
+0000065467 00000 n 
+0000065501 00000 n 
+trailer
+<<
+/ID 
+[<2268f47c95489bd0e2de6204ec03f12e><2268f47c95489bd0e2de6204ec03f12e>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 13 0 R
+/Root 12 0 R
+/Size 44
+>>
+startxref
+65535
+%%EOF
