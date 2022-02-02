@@ -103,6 +103,105 @@
 
 <article>
   <header>
+    <h2><a href="/docker-compose-swarm.html#docker-compose-swarm">Docker, Compose & Swarm</a></h2>
+    <p>
+      Posted on So 05 Dezember 2021 in <a href="/category/container.html">container</a>
+
+          &#8226; Tagged with
+              <a href="/tag/docker.html">docker</a>,              <a href="/tag/docker-compose.html">docker-compose</a>,              <a href="/tag/docker-swarm.html">docker-swarm</a>,              <a href="/tag/dockerfile.html">Dockerfile</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#container-clis">Container CLIs</a></li>
+<li><a href="#image-clis">Image CLIs</a><ul>
+<li><a href="#tags">Tags</a></li>
+</ul>
+</li>
+<li><a href="#network-clis">Network CLIs</a></li>
+<li><a href="#general">General</a></li>
+<li><a href="#docker-networks-dns">Docker Networks &amp; DNS</a></li>
+<li><a href="#dockerfile">Dockerfile</a><ul>
+<li><a href="#dockerfile-section-overview">Dockerfile Section Overview</a></li>
+</ul>
+</li>
+<li><a href="#persistent-data">Persistent Data</a></li>
+<li><a href="#compose">Compose</a><ul>
+<li><a href="#docker-composeyml-structure">docker-compose.yml Structure</a></li>
+<li><a href="#nginx-example">NGINX Example</a></li>
+<li><a href="#bigger-example">Bigger example</a></li>
+<li><a href="#build-example">Build example</a></li>
+</ul>
+</li>
+<li><a href="#swarm">Swarm</a><ul>
+<li><a href="#swarm-feature-overlay-network">Swarm Feature - Overlay Network</a></li>
+<li><a href="#swarm-feature-routing-mesh">Swarm Feature - Routing Mesh</a></li>
+<li><a href="#service-example">Service Example</a></li>
+<li><a href="#swarm-stacks">Swarm Stacks</a></li>
+<li><a href="#inheritance-secrets-and-local-development">Inheritance, Secrets and Local Development</a></li>
+<li><a href="#swarm-service-updates">Swarm …</a></li></ul></li></ul></div></div>
+        <br>
+        <a class="btn"
+           href="/docker-compose-swarm.html#docker-compose-swarm">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="/git-beginner-tutorial.html#git-beginner-tutorial">Git Beginner Tutorial</a></h2>
+    <p>
+      Posted on So 05 Dezember 2021 in <a href="/category/cicd.html">cicd</a>
+
+          &#8226; Tagged with
+              <a href="/tag/git.html">Git</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#git">Git</a><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#install-and-config">Install and config</a></li>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#commit-details">Commit Details</a></li>
+<li><a href="#branching">Branching</a></li>
+<li><a href="#merging">Merging</a></li>
+<li><a href="#diff">Diff</a></li>
+<li><a href="#intro_1">Intro</a></li>
+<li><a href="#this-and-that">This and that</a></li>
+</ul>
+</li>
+<li><a href="#collaboration-workflows">Collaboration Workflows</a><ul>
+<li><a href="#centralized">Centralized</a></li>
+<li><a href="#feature-branch">Feature Branch</a></li>
+<li><a href="#forking">Forking</a></li>
+<li><a href="#refs">Refs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>Important cmds<ul>
+<li>git <code>init / commit / status / add</code></li>
+</ul>
+</li>
+<li>Important files<ul>
+<li><code>.git</code> folder<ul>
+<li><code>.git/HEAD</code> file just points to whatever is active (e.g. ref …</li></ul></li></ul></li></ul></div>
+        <br>
+        <a class="btn"
+           href="/git-beginner-tutorial.html#git-beginner-tutorial">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
     <h2><a href="/play-with-git.html#play-with-git">Play with Git</a></h2>
     <p>
       Posted on So 05 Dezember 2021 in <a href="/category/cicd.html">cicd</a>
@@ -199,66 +298,6 @@ Can be combined with factories to have templates of predefined objects (for the 
         <br>
         <a class="btn"
            href="/factories.html#factories">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="/builder.html#builder">Builder</a></h2>
-    <p>
-      Posted on So 14 November 2021 in <a href="/category/patterns.html">Patterns</a>
-
-          &#8226; Tagged with
-              <a href="/tag/python.html">python</a>,              <a href="/tag/patterns.html">patterns</a>,              <a href="/tag/creational.html">CREATIONAL</a>
-    </p>
-  </header>
-  <div>
-      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
-<li><a href="#intro">Intro</a></li>
-<li><a href="#before">Before</a></li>
-<li><a href="#after">After</a></li>
-<li><a href="#after-21">After #2.1</a></li>
-<li><a href="#after-22">After #2.2</a></li>
-<li><a href="#reference">Reference</a></li>
-</ul>
-</div>
-<h2 id="intro">Intro</h2>
-<p>Builder pattern is mainly used if the objects to be build are not that simple anymore. Builder is a separate component/class/set of classes for building an object. The builder can have an initializer itself …</p></div>
-        <br>
-        <a class="btn"
-           href="/builder.html#builder">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="/dependency-inversion.html#dependency-inversion">Dependency Inversion</a></h2>
-    <p>
-      Posted on So 14 November 2021 in <a href="/category/patterns.html">Patterns</a>
-
-          &#8226; Tagged with
-              <a href="/tag/python.html">python</a>,              <a href="/tag/patterns.html">patterns</a>,              <a href="/tag/solid.html">SOLID</a>
-    </p>
-  </header>
-  <div>
-      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
-<li><a href="#intro">Intro</a></li>
-<li><a href="#before">Before</a></li>
-<li><a href="#after">After</a></li>
-</ul>
-</div>
-<h2 id="intro">Intro</h2>
-<p>Dependency inversion principle states that higher level modules should not depend on lower level modules and their implementation. Instead they should use interfaces / abstraction.  </p>
-<p>Benefits:</p>
-<ul>
-<li>Low Level Modules implementation can be changed without impact on high level mdoule. E.g. datastructure from one …</li></ul></div>
-        <br>
-        <a class="btn"
-           href="/dependency-inversion.html#dependency-inversion">
           Continue reading
         </a>
   </div>

@@ -33,13 +33,13 @@
  
 
 <meta name="author" content="Mario" />
-<meta name="description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Intro This and that Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever is active (e.g. ref: refs/heads/master) .git/refs/heads …" />
+<meta name="description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Intro This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever is active (e.g. ref …" />
 <meta name="keywords" content="Git">
 
 
   <meta property="og:site_name" content="PeliBlog"/>
   <meta property="og:title" content="Git Beginner Tutorial"/>
-  <meta property="og:description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Intro This and that Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever is active (e.g. ref: refs/heads/master) .git/refs/heads …"/>
+  <meta property="og:description" content="Table of contents: Overview Git Intro Install and config Basics Commit Details Branching Merging Diff Intro This and that Collaboration Workflows Centralized Feature Branch Forking Refs Overview Important cmds git init / commit / status / add Important files .git folder .git/HEAD file just points to whatever is active (e.g. ref …"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:url" content="/git-beginner-tutorial.html"/>
   <meta property="og:type" content="article"/>
@@ -131,6 +131,12 @@
 <li><a href="#diff">Diff</a></li>
 <li><a href="#intro_1">Intro</a></li>
 <li><a href="#this-and-that">This and that</a></li>
+</ul>
+</li>
+<li><a href="#collaboration-workflows">Collaboration Workflows</a><ul>
+<li><a href="#centralized">Centralized</a></li>
+<li><a href="#feature-branch">Feature Branch</a></li>
+<li><a href="#forking">Forking</a></li>
 <li><a href="#refs">Refs</a></li>
 </ul>
 </li>
@@ -1021,6 +1027,100 @@ index 54ca763..a130563 100644
 <li>Github renders this by default (in project root)</li>
 </ul>
 </li>
+<li>Gists<ul>
+<li>Share Code Snippets/Fragments (Profile &gt; Gists)</li>
+<li>See: <a href="https://gist.github.com/">Gists</a></li>
+</ul>
+</li>
+<li>GH Pages<ul>
+<li>Static sites, no server side code (python/node etc)</li>
+<li>Html, css, js</li>
+<li>User sites (maconrad.github.io)</li>
+<li>Project sites (maconrad.github.io/repo-name) (which branch contains web content)<ul>
+<li>Settings &gt; GitHub Pages &gt; Select Branch (needs an index.html file, thats it)</li>
+<li>(/docs makes sense)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Gitlab References to Issues and Pull Requests<ul>
+<li>With Gitlab, a single <code>-m</code>does not work, example:<ul>
+<li><code>git commit -m "Message" -m "Closes #123"</code></li>
+</ul>
+</li>
+<li>Can use <code>Ref</code>, <code>Close</code>, <code>Fixes</code></li>
+<li><code>#xxx</code> for issue, <code>!xy</code> for Merge Request, <code>$xxx</code> for snippets, <code>@username</code> to mention</li>
+<li>Other useful features are <strong>labels</strong>, <strong>milestones</strong> and <strong>tasklists</strong></li>
+</ul>
+</li>
+<li>Github References to Issues and Pull Requests<ul>
+<li>Very similar to gitlab (see links below)</li>
+</ul>
+</li>
+</ul>
+<p><img src="../../images/git/42_gitlab_patterns.png" alt="Gitlab Referencing Pattenrns" width="500"/></p>
+<h1 id="collaboration-workflows">Collaboration Workflows</h1>
+<ul>
+<li>Pull Request (PR)<ul>
+<li>Not a feature of git, but GitHub, Bickbucket, Gitlab etc.</li>
+<li>Review &amp; discuss, approve, reject work to be merged into master/main</li>
+<li>Request changes on review, approve</li>
+<li>Together with branch protection rule powerful</li>
+</ul>
+</li>
+<li>Branch Protection Rules<ul>
+<li>Settings &gt; Branches &gt; Branch protection rules</li>
+<li>Often used together with Pull requests to protect master/main</li>
+</ul>
+</li>
+</ul>
+<h2 id="centralized">Centralized</h2>
+<ul>
+<li>Everybody works on single branch (master/main)</li>
+<li>Good for single user, tiny team</li>
+<li>Not a recommended workflow</li>
+<li>Multiple collaborators: <strong>failed to push</strong> because tip of current branch is behind remote<ul>
+<li>Other collaborator pushed to remote repo since we last pulled</li>
+<li>Pull changes down, merge (possible with conflict), then push up</li>
+</ul>
+</li>
+<li>Other problems<ul>
+<li>Collaborator XY cannot push up to share stuff if he is behind branch on remote</li>
+<li>If code is incomplete/broken -&gt; breaks the whole code base for everybode</li>
+<li>Collaboration on feature with teammates only via incomplete code push to remote</li>
+<li>Experiments/bug fixes always on "stable" code</li>
+</ul>
+</li>
+</ul>
+<h2 id="feature-branch">Feature Branch</h2>
+<ul>
+<li>Nobody works on master/main</li>
+<li>Master/main = project history with only stable code</li>
+<li>Multiple teammates can collaborate on feature and share code without breaking master</li>
+<li>Patterns<ul>
+<li><strong>feat/xy</strong>, <strong>feat.xy</strong>, <strong>bug.xy</strong>, <strong>refactor.xy</strong>, etc.</li>
+</ul>
+</li>
+<li>Integrate via Pull Request or local merge into master/main and push back up<ul>
+<li>Pull requests prefereed for collaboration</li>
+</ul>
+</li>
+<li>Merge with conflict (either in online editor for simple merge or locally)<ul>
+<li>go into feature branch locally, merge in main, resolve conflict<ul>
+<li><code>git fetch origin</code>, <code>git switch feat/xy</code>, <code>git merge main</code> and fix conflicts</li>
+</ul>
+</li>
+<li>go into main branch, merge in feature branch (we know no conflict can occur now that it was resolved on feature branch)<ul>
+<li>Merge with <code>--no-ff</code> to preserve history and create a new merge commit (not just move Head pointer to different commit)</li>
+<li><code>git switch main</code>, <code>git merge --no-ff feat/xy</code>, <code>git push origin main</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="forking">Forking</h2>
+<ul>
+<li>Common pattern for open source project where user is not a collaborator and does NOT have permission to push anything into project</li>
 </ul>
 <h2 id="refs">Refs</h2>
 <ul>
@@ -1037,6 +1137,11 @@ index 54ca763..a130563 100644
 <li>See: <a href="https://git-scm.com/docs/git-checkout#_argument_disambiguation">Git Double Dash Git Doku</a></li>
 <li>See: <a href="https://github.github.com/gfm/#:~:text=GitHub%20Flavored%20Markdown%2C%20often%20shortened,a%20strict%20superset%20of%20CommonMark.">Github GFM</a></li>
 <li>See: <a href="https://daringfireball.net/projects/markdown/">Markdown Official Site</a></li>
+<li>See: <a href="https://about.gitlab.com/blog/2016/03/08/gitlab-tutorial-its-all-connected/">Gitlab Tags</a></li>
+<li>See: <a href="https://docs.gitlab.com/ee/user/project/issues/managing_issues.html">Gitlaub default Closing pattern</a></li>
+<li>See: <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue">Github Closing patterns</a></li>
+<li>See: <a href="https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab">Collapsible MD in Github</a></li>
+<li>See: <a href="https://markdown-it.github.io/">Mardown Ref Github.io</a></li>
 </ul>
   </div>
   <div class="tag-cloud">
