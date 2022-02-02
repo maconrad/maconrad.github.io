@@ -27,7 +27,7 @@ endobj
 endobj
 6 0 obj
 <<
-/Contents 59 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 58 0 R /Resources <<
+/Contents 64 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 63 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 /Trans <<
 
@@ -44,7 +44,7 @@ endobj
 endobj
 8 0 obj
 <<
-/Annots [ 7 0 R ] /Contents 60 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 58 0 R /Resources <<
+/Annots [ 7 0 R ] /Contents 65 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 63 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -54,7 +54,7 @@ endobj
 endobj
 9 0 obj
 <<
-/Contents 61 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 58 0 R /Resources <<
+/Contents 66 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 63 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 /Trans <<
 
@@ -64,7 +64,7 @@ endobj
 endobj
 10 0 obj
 <<
-/Contents 62 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 58 0 R /Resources <<
+/Contents 67 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 63 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 /Trans <<
 
@@ -74,7 +74,7 @@ endobj
 endobj
 11 0 obj
 <<
-/Contents 63 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 58 0 R /Resources <<
+/Contents 68 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 63 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 /Trans <<
 
@@ -91,7 +91,7 @@ endobj
 endobj
 13 0 obj
 <<
-/Annots [ 12 0 R ] /Contents 64 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 58 0 R /Resources <<
+/Annots [ 12 0 R ] /Contents 69 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 63 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -102,91 +102,91 @@ endobj
 14 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://gist.github.com/karenyyng/f19ff75c60f18b4b8149)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 179.42 104.1239 187.295 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (http://ndpsoftware.com/git-cheatsheet.html#loc=index;)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 179.42 158.1044 187.295 ] /Subtype /Link /Type /Annot
 >>
 endobj
 15 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://git-scm.com/docs/gitcredentials)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 169.545 127.1714 177.42 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://onlywei.github.io/explain-git-with-d3/#rebase)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 169.545 161.9001 177.42 ] /Subtype /Link /Type /Annot
 >>
 endobj
 16 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://git-scm.com/docs/)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 159.67 98.28587 167.545 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://gist.github.com/karenyyng/f19ff75c60f18b4b8149)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 159.67 104.1239 167.545 ] /Subtype /Link /Type /Annot
 >>
 endobj
 17 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://git-scm.com/book/en/v2)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 149.795 98.29112 157.67 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://git-scm.com/docs/gitcredentials)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 149.795 127.1714 157.67 ] /Subtype /Link /Type /Annot
 >>
 endobj
 18 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://gitignore.io)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 139.92 120.1731 147.795 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://git-scm.com/docs/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 139.92 98.28587 147.795 ] /Subtype /Link /Type /Annot
 >>
 endobj
 19 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://git-scm.com/docs/gitignore)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 130.045 123.6749 137.92 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://git-scm.com/book/en/v2)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 130.045 98.29112 137.92 ] /Subtype /Link /Type /Annot
 >>
 endobj
 20 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://www.cloudsavvyit.com/12962/how-does-git-reset-actually-work-soft-hard-and-mixed-resets-explained/)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 120.17 116.0886 128.045 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://gitignore.io)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 120.17 120.1731 128.045 ] /Subtype /Link /Type /Annot
 >>
 endobj
 21 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 110.295 130.3844 118.17 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://git-scm.com/docs/gitignore)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 110.295 123.6749 118.17 ] /Subtype /Link /Type /Annot
 >>
 endobj
 22 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://git-scm.com/docs/git-diff)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 100.42 108.7859 108.295 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://www.cloudsavvyit.com/12962/how-does-git-reset-actually-work-soft-hard-and-mixed-resets-explained/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 100.42 116.0886 108.295 ] /Subtype /Link /Type /Annot
 >>
 endobj
 23 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://stackoverflow.com/questions/13321458/meaning-of-git-checkout-double-dashes)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 90.545 150.8069 98.42 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 90.545 130.3844 98.42 ] /Subtype /Link /Type /Annot
 >>
 endobj
 24 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://git-scm.com/docs/git-checkout#_argument_disambiguation)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 80.67 138.5534 88.545 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://git-scm.com/docs/git-diff)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 80.67 108.7859 88.545 ] /Subtype /Link /Type /Annot
 >>
 endobj
 25 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.github.com/gfm/#:~:text=GitHub%20Flavored%20Markdown%2C%20often%20shortened,a%20strict%20superset%20of%20CommonMark.)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 70.795 106.7489 78.67 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://stackoverflow.com/questions/13321458/meaning-of-git-checkout-double-dashes)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 70.795 150.8069 78.67 ] /Subtype /Link /Type /Annot
 >>
 endobj
 26 0 obj
 <<
 /Annots [ 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R 
-  24 0 R 25 0 R ] /Contents 65 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 58 0 R /Resources <<
+  24 0 R 25 0 R ] /Contents 70 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 63 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -197,48 +197,84 @@ endobj
 27 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://daringfireball.net/projects/markdown/)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 759.5979 130.3791 767.4729 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://git-scm.com/docs/git-checkout#_argument_disambiguation)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 759.5979 138.5534 767.4729 ] /Subtype /Link /Type /Annot
 >>
 endobj
 28 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://about.gitlab.com/blog/2016/03/08/gitlab-tutorial-its-all-connected/)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 749.7229 105.0006 757.5979 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://github.github.com/gfm/#:~:text=GitHub%20Flavored%20Markdown%2C%20often%20shortened,a%20strict%20superset%20of%20CommonMark.)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 749.7229 106.7489 757.5979 ] /Subtype /Link /Type /Annot
 >>
 endobj
 29 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://docs.gitlab.com/ee/user/project/issues/managing_issues.html)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 739.8479 148.7751 747.7229 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://daringfireball.net/projects/markdown/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 739.8479 130.3791 747.7229 ] /Subtype /Link /Type /Annot
 >>
 endobj
 30 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 729.9729 133.0146 737.8479 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://about.gitlab.com/blog/2016/03/08/gitlab-tutorial-its-all-connected/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 729.9729 105.0006 737.8479 ] /Subtype /Link /Type /Annot
 >>
 endobj
 31 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 720.0979 135.9231 727.9729 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://docs.gitlab.com/ee/user/project/issues/managing_issues.html)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 720.0979 148.7751 727.9729 ] /Subtype /Link /Type /Annot
 >>
 endobj
 32 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://markdown-it.github.io/)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 710.2229 131.8439 718.0979 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 710.2229 133.0146 718.0979 ] /Subtype /Link /Type /Annot
 >>
 endobj
 33 0 obj
 <<
-/Annots [ 27 0 R 28 0 R 29 0 R 30 0 R 31 0 R 32 0 R ] /Contents 66 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 58 0 R /Resources <<
+/A <<
+/S /URI /Type /Action /URI (https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 700.3479 135.9231 708.2229 ] /Subtype /Link /Type /Annot
+>>
+endobj
+34 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://markdown-it.github.io/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 690.4729 131.8439 698.3479 ] /Subtype /Link /Type /Annot
+>>
+endobj
+35 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://bfh.science/OLD/software/git/ressources.html)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 680.5979 96.82637 688.4729 ] /Subtype /Link /Type /Annot
+>>
+endobj
+36 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://www-cs-students.stanford.edu/~blynn/gitmagic/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 670.7229 106.1714 678.5979 ] /Subtype /Link /Type /Annot
+>>
+endobj
+37 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://digital.ai/periodic-table-of-devops-tools)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 660.8479 148.4759 668.7229 ] /Subtype /Link /Type /Annot
+>>
+endobj
+38 0 obj
+<<
+/Annots [ 27 0 R 28 0 R 29 0 R 30 0 R 31 0 R 32 0 R 33 0 R 34 0 R 35 0 R 36 0 R 
+  37 0 R ] /Contents 71 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 63 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -246,137 +282,137 @@ endobj
 >> /Type /Page
 >>
 endobj
-34 0 obj
-<<
-/Outlines 36 0 R /PageLabels 67 0 R /PageMode /UseNone /Pages 58 0 R /Type /Catalog
->>
-endobj
-35 0 obj
-<<
-/Author () /CreationDate (D:20220202151707-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202151707-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
-  /Subject (\(unspecified\)) /Title (Git Beginner Tutorial) /Trapped /False
->>
-endobj
-36 0 obj
-<<
-/Count 8 /First 37 0 R /Last 53 0 R /Type /Outlines
->>
-endobj
-37 0 obj
-<<
-/Count -1 /Dest [ 6 0 R /Fit ] /First 38 0 R /Last 38 0 R /Next 39 0 R /Parent 36 0 R 
-  /Title (Overview)
->>
-endobj
-38 0 obj
-<<
-/Dest [ 6 0 R /Fit ] /Parent 37 0 R /Title (Overview)
->>
-endobj
 39 0 obj
 <<
-/Count -9 /Dest [ 6 0 R /Fit ] /First 40 0 R /Last 48 0 R /Next 49 0 R /Parent 36 0 R 
-  /Prev 37 0 R /Title (Git)
+/Outlines 41 0 R /PageLabels 72 0 R /PageMode /UseNone /Pages 63 0 R /Type /Catalog
 >>
 endobj
 40 0 obj
 <<
-/Dest [ 6 0 R /Fit ] /Next 41 0 R /Parent 39 0 R /Title (Intro)
+/Author () /CreationDate (D:20220202152912-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202152912-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Git Beginner Tutorial) /Trapped /False
 >>
 endobj
 41 0 obj
 <<
-/Dest [ 6 0 R /Fit ] /Next 42 0 R /Parent 39 0 R /Prev 40 0 R /Title (Install and config)
+/Count 8 /First 42 0 R /Last 58 0 R /Type /Outlines
 >>
 endobj
 42 0 obj
 <<
-/Dest [ 8 0 R /Fit ] /Next 43 0 R /Parent 39 0 R /Prev 41 0 R /Title (Basics)
+/Count -1 /Dest [ 6 0 R /Fit ] /First 43 0 R /Last 43 0 R /Next 44 0 R /Parent 41 0 R 
+  /Title (Overview)
 >>
 endobj
 43 0 obj
 <<
-/Dest [ 8 0 R /Fit ] /Next 44 0 R /Parent 39 0 R /Prev 42 0 R /Title (Commit Details)
+/Dest [ 6 0 R /Fit ] /Parent 42 0 R /Title (Overview)
 >>
 endobj
 44 0 obj
 <<
-/Dest [ 8 0 R /Fit ] /Next 45 0 R /Parent 39 0 R /Prev 43 0 R /Title (Branching)
+/Count -9 /Dest [ 6 0 R /Fit ] /First 45 0 R /Last 53 0 R /Next 54 0 R /Parent 41 0 R 
+  /Prev 42 0 R /Title (Git)
 >>
 endobj
 45 0 obj
 <<
-/Dest [ 9 0 R /Fit ] /Next 46 0 R /Parent 39 0 R /Prev 44 0 R /Title (Merging)
+/Dest [ 6 0 R /Fit ] /Next 46 0 R /Parent 44 0 R /Title (Intro)
 >>
 endobj
 46 0 obj
 <<
-/Dest [ 9 0 R /Fit ] /Next 47 0 R /Parent 39 0 R /Prev 45 0 R /Title (Diff)
+/Dest [ 6 0 R /Fit ] /Next 47 0 R /Parent 44 0 R /Prev 45 0 R /Title (Install and config)
 >>
 endobj
 47 0 obj
 <<
-/Dest [ 10 0 R /Fit ] /Next 48 0 R /Parent 39 0 R /Prev 46 0 R /Title (Stashing)
+/Dest [ 8 0 R /Fit ] /Next 48 0 R /Parent 44 0 R /Prev 46 0 R /Title (Basics)
 >>
 endobj
 48 0 obj
 <<
-/Dest [ 10 0 R /Fit ] /Parent 39 0 R /Prev 47 0 R /Title (Undoing)
+/Dest [ 8 0 R /Fit ] /Next 49 0 R /Parent 44 0 R /Prev 47 0 R /Title (Commit Details)
 >>
 endobj
 49 0 obj
 <<
-/Count -3 /Dest [ 11 0 R /Fit ] /First 50 0 R /Last 52 0 R /Next 53 0 R /Parent 36 0 R 
-  /Prev 39 0 R /Title (GitHub)
+/Dest [ 8 0 R /Fit ] /Next 50 0 R /Parent 44 0 R /Prev 48 0 R /Title (Branching)
 >>
 endobj
 50 0 obj
 <<
-/Dest [ 11 0 R /Fit ] /Next 51 0 R /Parent 49 0 R /Title (SSH Config)
+/Dest [ 9 0 R /Fit ] /Next 51 0 R /Parent 44 0 R /Prev 49 0 R /Title (Merging)
 >>
 endobj
 51 0 obj
 <<
-/Dest [ 11 0 R /Fit ] /Next 52 0 R /Parent 49 0 R /Prev 50 0 R /Title (General)
+/Dest [ 9 0 R /Fit ] /Next 52 0 R /Parent 44 0 R /Prev 50 0 R /Title (Diff)
 >>
 endobj
 52 0 obj
 <<
-/Dest [ 13 0 R /Fit ] /Parent 49 0 R /Prev 51 0 R /Title (This and that)
+/Dest [ 10 0 R /Fit ] /Next 53 0 R /Parent 44 0 R /Prev 51 0 R /Title (Stashing)
 >>
 endobj
 53 0 obj
 <<
-/Count -4 /Dest [ 26 0 R /Fit ] /First 54 0 R /Last 57 0 R /Parent 36 0 R /Prev 49 0 R 
-  /Title (Collaboration Workflows)
+/Dest [ 10 0 R /Fit ] /Parent 44 0 R /Prev 52 0 R /Title (Undoing)
 >>
 endobj
 54 0 obj
 <<
-/Dest [ 26 0 R /Fit ] /Next 55 0 R /Parent 53 0 R /Title (Centralized)
+/Count -3 /Dest [ 11 0 R /Fit ] /First 55 0 R /Last 57 0 R /Next 58 0 R /Parent 41 0 R 
+  /Prev 44 0 R /Title (GitHub)
 >>
 endobj
 55 0 obj
 <<
-/Dest [ 26 0 R /Fit ] /Next 56 0 R /Parent 53 0 R /Prev 54 0 R /Title (Feature Branch)
+/Dest [ 11 0 R /Fit ] /Next 56 0 R /Parent 54 0 R /Title (SSH Config)
 >>
 endobj
 56 0 obj
 <<
-/Dest [ 26 0 R /Fit ] /Next 57 0 R /Parent 53 0 R /Prev 55 0 R /Title (Forking)
+/Dest [ 11 0 R /Fit ] /Next 57 0 R /Parent 54 0 R /Prev 55 0 R /Title (General)
 >>
 endobj
 57 0 obj
 <<
-/Dest [ 26 0 R /Fit ] /Parent 53 0 R /Prev 56 0 R /Title (Refs)
+/Dest [ 13 0 R /Fit ] /Parent 54 0 R /Prev 56 0 R /Title (This and that)
 >>
 endobj
 58 0 obj
 <<
-/Count 8 /Kids [ 6 0 R 8 0 R 9 0 R 10 0 R 11 0 R 13 0 R 26 0 R 33 0 R ] /Type /Pages
+/Count -4 /Dest [ 26 0 R /Fit ] /First 59 0 R /Last 62 0 R /Parent 41 0 R /Prev 54 0 R 
+  /Title (Collaboration Workflows)
 >>
 endobj
 59 0 obj
+<<
+/Dest [ 26 0 R /Fit ] /Next 60 0 R /Parent 58 0 R /Title (Centralized)
+>>
+endobj
+60 0 obj
+<<
+/Dest [ 26 0 R /Fit ] /Next 61 0 R /Parent 58 0 R /Prev 59 0 R /Title (Feature Branch)
+>>
+endobj
+61 0 obj
+<<
+/Dest [ 26 0 R /Fit ] /Next 62 0 R /Parent 58 0 R /Prev 60 0 R /Title (Forking)
+>>
+endobj
+62 0 obj
+<<
+/Dest [ 26 0 R /Fit ] /Parent 58 0 R /Prev 61 0 R /Title (Refs)
+>>
+endobj
+63 0 obj
+<<
+/Count 8 /Kids [ 6 0 R 8 0 R 9 0 R 10 0 R 11 0 R 13 0 R 26 0 R 38 0 R ] /Type /Pages
+>>
+endobj
+64 0 obj
 <<
 /Length 16705
 >>
@@ -1281,7 +1317,7 @@ Q
  
 endstream
 endobj
-60 0 obj
+65 0 obj
 <<
 /Length 19720
 >>
@@ -2537,7 +2573,7 @@ Q
  
 endstream
 endobj
-61 0 obj
+66 0 obj
 <<
 /Length 18308
 >>
@@ -3522,7 +3558,7 @@ Q
  
 endstream
 endobj
-62 0 obj
+67 0 obj
 <<
 /Length 20658
 >>
@@ -4484,7 +4520,7 @@ Q
  
 endstream
 endobj
-63 0 obj
+68 0 obj
 <<
 /Length 19353
 >>
@@ -5599,7 +5635,7 @@ Q
  
 endstream
 endobj
-64 0 obj
+69 0 obj
 <<
 /Length 23988
 >>
@@ -7000,9 +7036,9 @@ Q
  
 endstream
 endobj
-65 0 obj
+70 0 obj
 <<
-/Length 19123
+/Length 19157
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -7727,6 +7763,36 @@ q
 BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
 .492188 w
 0 0 1 RG
+n 20.13375 5.121125 m 100.0807 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Interactive GIT Cheatsheet - NICE) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 165.0957 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 103.8765 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Interactive Git what happens - NICE) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 155.2207 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
 n 20.13375 5.121125 m 46.10025 5.121125 l S
 BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Mergetools) Tj T* ET
 Q
@@ -7735,7 +7801,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 165.0957 cm
+1 0 0 1 57.02362 145.3457 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7750,7 +7816,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 155.2207 cm
+1 0 0 1 57.02362 135.4707 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7765,7 +7831,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 145.3457 cm
+1 0 0 1 57.02362 125.5957 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7780,7 +7846,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 135.4707 cm
+1 0 0 1 57.02362 115.7207 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7795,7 +7861,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 125.5957 cm
+1 0 0 1 57.02362 105.8457 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7810,7 +7876,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 115.7207 cm
+1 0 0 1 57.02362 95.97075 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7825,7 +7891,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 105.8457 cm
+1 0 0 1 57.02362 86.09575 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7840,7 +7906,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 95.97075 cm
+1 0 0 1 57.02362 76.22075 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7855,7 +7921,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 86.09575 cm
+1 0 0 1 57.02362 66.34575 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7869,8 +7935,17 @@ Q
 q
 Q
 Q
+ 
+endstream
+endobj
+71 0 obj
+<<
+/Length 3637
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 57.02362 76.22075 cm
+1 0 0 1 57.02362 755.1486 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7885,7 +7960,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 66.34575 cm
+1 0 0 1 57.02362 745.2736 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7899,17 +7974,8 @@ Q
 q
 Q
 Q
- 
-endstream
-endobj
-66 0 obj
-<<
-/Length 2030
->>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 57.02362 755.1486 cm
+1 0 0 1 57.02362 735.3986 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7924,7 +7990,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 745.2736 cm
+1 0 0 1 57.02362 725.5236 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7939,7 +8005,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 735.3986 cm
+1 0 0 1 57.02362 715.6486 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7954,7 +8020,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 725.5236 cm
+1 0 0 1 57.02362 705.7736 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7969,7 +8035,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 715.6486 cm
+1 0 0 1 57.02362 695.8986 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7984,7 +8050,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 705.7736 cm
+1 0 0 1 57.02362 686.0236 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -7999,59 +8065,104 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 705.7736 cm
+1 0 0 1 57.02362 676.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 38.80275 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Git BFH) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 666.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 48.14775 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Git Stanford) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 656.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 90.45225 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Periodic Table of Devop Tools) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 656.3986 cm
 Q
  
 endstream
 endobj
-67 0 obj
-<<
-/Nums [ 0 68 0 R 1 69 0 R 2 70 0 R 3 71 0 R 4 72 0 R 
-  5 73 0 R 6 74 0 R 7 75 0 R ]
->>
-endobj
-68 0 obj
-<<
-/S /D /St 1
->>
-endobj
-69 0 obj
-<<
-/S /D /St 2
->>
-endobj
-70 0 obj
-<<
-/S /D /St 3
->>
-endobj
-71 0 obj
-<<
-/S /D /St 4
->>
-endobj
 72 0 obj
 <<
-/S /D /St 5
+/Nums [ 0 73 0 R 1 74 0 R 2 75 0 R 3 76 0 R 4 77 0 R 
+  5 78 0 R 6 79 0 R 7 80 0 R ]
 >>
 endobj
 73 0 obj
 <<
-/S /D /St 6
+/S /D /St 1
 >>
 endobj
 74 0 obj
 <<
-/S /D /St 7
+/S /D /St 2
 >>
 endobj
 75 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+76 0 obj
+<<
+/S /D /St 4
+>>
+endobj
+77 0 obj
+<<
+/S /D /St 5
+>>
+endobj
+78 0 obj
+<<
+/S /D /St 6
+>>
+endobj
+79 0 obj
+<<
+/S /D /St 7
+>>
+endobj
+80 0 obj
 <<
 /S /D /St 8
 >>
 endobj
 xref
-0 76
+0 81
 0000000000 65535 f 
 0000000073 00000 n 
 0000000134 00000 n 
@@ -8067,77 +8178,82 @@ xref
 0000001796 00000 n 
 0000001973 00000 n 
 0000002198 00000 n 
-0000002402 00000 n 
-0000002591 00000 n 
-0000002766 00000 n 
-0000002946 00000 n 
-0000003116 00000 n 
-0000003300 00000 n 
-0000003555 00000 n 
-0000003763 00000 n 
-0000003946 00000 n 
-0000004176 00000 n 
-0000004386 00000 n 
-0000004665 00000 n 
-0000004970 00000 n 
-0000005168 00000 n 
-0000005396 00000 n 
-0000005616 00000 n 
-0000005868 00000 n 
-0000006093 00000 n 
-0000006276 00000 n 
-0000006536 00000 n 
-0000006642 00000 n 
-0000006921 00000 n 
-0000006995 00000 n 
-0000007124 00000 n 
-0000007200 00000 n 
-0000007337 00000 n 
-0000007423 00000 n 
-0000007535 00000 n 
-0000007635 00000 n 
-0000007743 00000 n 
-0000007846 00000 n 
-0000007947 00000 n 
-0000008045 00000 n 
-0000008148 00000 n 
-0000008237 00000 n 
-0000008378 00000 n 
-0000008470 00000 n 
-0000008572 00000 n 
-0000008667 00000 n 
-0000008812 00000 n 
-0000008905 00000 n 
-0000009014 00000 n 
-0000009116 00000 n 
-0000009202 00000 n 
-0000009309 00000 n 
-0000026067 00000 n 
-0000045840 00000 n 
-0000064201 00000 n 
-0000084912 00000 n 
-0000104318 00000 n 
-0000128359 00000 n 
-0000147535 00000 n 
-0000149617 00000 n 
-0000149724 00000 n 
-0000149758 00000 n 
-0000149792 00000 n 
-0000149826 00000 n 
-0000149860 00000 n 
-0000149894 00000 n 
-0000149928 00000 n 
-0000149962 00000 n 
+0000002401 00000 n 
+0000002604 00000 n 
+0000002808 00000 n 
+0000002997 00000 n 
+0000003172 00000 n 
+0000003352 00000 n 
+0000003522 00000 n 
+0000003706 00000 n 
+0000003961 00000 n 
+0000004167 00000 n 
+0000004348 00000 n 
+0000004578 00000 n 
+0000004883 00000 n 
+0000005098 00000 n 
+0000005382 00000 n 
+0000005580 00000 n 
+0000005808 00000 n 
+0000006028 00000 n 
+0000006280 00000 n 
+0000006505 00000 n 
+0000006688 00000 n 
+0000006893 00000 n 
+0000007098 00000 n 
+0000007300 00000 n 
+0000007598 00000 n 
+0000007704 00000 n 
+0000007983 00000 n 
+0000008057 00000 n 
+0000008186 00000 n 
+0000008262 00000 n 
+0000008399 00000 n 
+0000008485 00000 n 
+0000008597 00000 n 
+0000008697 00000 n 
+0000008805 00000 n 
+0000008908 00000 n 
+0000009009 00000 n 
+0000009107 00000 n 
+0000009210 00000 n 
+0000009299 00000 n 
+0000009440 00000 n 
+0000009532 00000 n 
+0000009634 00000 n 
+0000009729 00000 n 
+0000009874 00000 n 
+0000009967 00000 n 
+0000010076 00000 n 
+0000010178 00000 n 
+0000010264 00000 n 
+0000010371 00000 n 
+0000027129 00000 n 
+0000046902 00000 n 
+0000065263 00000 n 
+0000085974 00000 n 
+0000105380 00000 n 
+0000129421 00000 n 
+0000148631 00000 n 
+0000152320 00000 n 
+0000152427 00000 n 
+0000152461 00000 n 
+0000152495 00000 n 
+0000152529 00000 n 
+0000152563 00000 n 
+0000152597 00000 n 
+0000152631 00000 n 
+0000152665 00000 n 
 trailer
 <<
 /ID 
-[<019394615f2419efb51eb150670f5558><019394615f2419efb51eb150670f5558>]
+[<1f3064c35a2ff2cf5aa87fc781acce22><1f3064c35a2ff2cf5aa87fc781acce22>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
-/Info 35 0 R
-/Root 34 0 R
-/Size 76
+/Info 40 0 R
+/Root 39 0 R
+/Size 81
 >>
 startxref
-149996
+152699
 %%EOF
