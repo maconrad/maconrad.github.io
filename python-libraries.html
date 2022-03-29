@@ -463,7 +463,7 @@ jQuery(document).ready(function($) {
 </tr>
 <tr>
 <td>sys</td>
-<td>exit, argv, flags, windowsversion, path, platform, stdout,stderr,stdin, version</td>
+<td>exit, argv, flags, windowsversion, path, platform, stdout,stderr,stdin, version, modules, meta_path</td>
 </tr>
 <tr>
 <td>abc</td>
@@ -503,7 +503,7 @@ jQuery(document).ready(function($) {
 </tr>
 <tr>
 <td>argparse</td>
-<td>Argument parser</td>
+<td>Argument parser, ArgumentParser, parse_args()</td>
 </tr>
 <tr>
 <td>logging</td>
@@ -532,6 +532,22 @@ jQuery(document).ready(function($) {
 <tr>
 <td>distutils</td>
 <td>deprecated, use setuptools instead</td>
+</tr>
+<tr>
+<td>importlib</td>
+<td>import_module('math'), util.find_spec('math'), .reload('my_changed_module')</td>
+</tr>
+<tr>
+<td>site</td>
+<td>.pth files, lines get added to sys.path on load</td>
+</tr>
+<tr>
+<td>zipfile</td>
+<td>python -m zipfile -l xy.zip or python -m zipfile -c ab.zip a.py b.py</td>
+</tr>
+<tr>
+<td>zipfile</td>
+<td>Cerate executable: python -m zipfile -c app.zip *.py (if it contains a <strong>main</strong>.py file)</td>
 </tr>
 </tbody>
 </table>
@@ -978,6 +994,7 @@ jQuery(document).ready(function($) {
 <li>MariaDB 10.2.7+, MySQL 5.7.8+, Oracle, PostgreSQL, and SQLite 3.9.0+ (with the JSON1 extension enabled).</li>
 <li>ResponseLib - https://github.com/getsentry/responses#basics</li>
 <li>DRF.reverse - https://www.django-rest-framework.org/api-guide/reverse/</li>
+<li>Awesome Django curated list - https://realpython.com/python-return-statement</li>
 </ul>
 </div>
 <div class="tag-cloud">
@@ -989,11 +1006,11 @@ jQuery(document).ready(function($) {
 <div class="related-posts">
 <h4>You might enjoy</h4>
 <ul class="related-posts">
+<li><a href="https://maconrad.github.io/pycon-talks.html">Pycon Talks</a></li>
 <li><a href="https://maconrad.github.io/my-list-of-nice-python-articles.html">Nice Python Articles</a></li>
 <li><a href="https://maconrad.github.io/prototype.html">Prototype</a></li>
 <li><a href="https://maconrad.github.io/pattern-creational-factory.html">Factories</a></li>
 <li><a href="https://maconrad.github.io/builder.html">Builder</a></li>
-<li><a href="https://maconrad.github.io/dependency-inversion.html">Dependency Inversion</a></li>
 </ul>
 </div>
 </article>

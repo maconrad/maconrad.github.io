@@ -1,0 +1,1225 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 6 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.youtube.com/c/PyConDE)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 627.5235 140.3069 635.3985 ] /Subtype /Link /Type /Annot
+>>
+endobj
+6 0 obj
+<<
+/BaseFont /ZapfDingbats /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+7 0 obj
+<<
+/Annots [ 5 0 R ] /Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 14 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Contents 16 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 14 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Outlines 11 0 R /PageLabels 17 0 R /PageMode /UseNone /Pages 14 0 R /Type /Catalog
+>>
+endobj
+10 0 obj
+<<
+/Author () /CreationDate (D:20220329112132-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220329112132-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Pycon Talks) /Trapped /False
+>>
+endobj
+11 0 obj
+<<
+/Count 2 /First 12 0 R /Last 13 0 R /Type /Outlines
+>>
+endobj
+12 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 13 0 R /Parent 11 0 R /Title (PyCon DE 2019)
+>>
+endobj
+13 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Parent 11 0 R /Prev 12 0 R /Title (PyCon DE 2022)
+>>
+endobj
+14 0 obj
+<<
+/Count 2 /Kids [ 7 0 R 8 0 R ] /Type /Pages
+>>
+endobj
+15 0 obj
+<<
+/Length 15684
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 190.8942 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Pycon Talks) Tj T* -190.8942 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2022-02-21 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 45.5175 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (PyCon DE 2019) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 45.5175 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (PyCon DE 2022) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+Q
+q
+1 0 0 1 57.02362 640.2205 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (PyCon DE 2019) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 623.0742 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 82.28325 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (PyConDE Playlist Youtube) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 623.0742 cm
+Q
+q
+1 0 0 1 57.02362 449.8243 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 165.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 114.9075 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Play) Tj T* -114.9075 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 165.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 108.639 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (comment) Tj T* -108.639 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 157.5 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://youtu.be/vTxXHx5lfv0) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 157.5 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Whats new in Python 3.8) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 149.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (6 Years of Docker, the good, the bad and python packacking) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 141.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (10 ways to debug python code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 133.875 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (static typing in python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 126 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (intro to automated testing with pytest) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 118.125 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (venv, pyenv, pypi, pip, pipenv, pyWTF?) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 110.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Whats new in Python 3.8) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 102.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Kubernetes 101 for python developers) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 94.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Refactoring in python, design patterns and approaches) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 86.62499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (What we learned from scraping over 1 billion webpages per month) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 78.74999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Monitoring infrastrcture and application using django, sensu and celery) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 70.87499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Abridged metaprogramming classics, pytest) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 62.99999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Package and dependency management with poetry) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 55.12499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Commenting code, beyond common wisdom) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 47.24999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Break your api gently or not at all) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Write your own decorator) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (paralell programming for python developers) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Mock Hell) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (pytest, simple, rapid and fun testing) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Docker and python, a match made in heaven) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (An introduction to concurrency and parallelism) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 429.6461 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (PyCon DE 2022) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 412.4999 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: Coming) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 412.4999 cm
+Q
+q
+1 0 0 1 57.02362 65.99994 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 338.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 114.9075 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Play) Tj T* -114.9075 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 338.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 108.639 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (comment) Tj T* -108.639 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 330.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (\(Serious\) Time for Time Series) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 322.875 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (An Introduction to Inter Process Communication and Synchronization using Python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 315 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Aspect-oriented Programming - Diving deep into Decorators) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 307.125 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (ML Communication 101: How to talk about Machine Learning with anyone) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 299.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Practical graph neural networks in Python with TensorFlow and Spektral) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 291.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj (pytest - simple, rapid and fun testing with Python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 283.5 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Refactoring) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 275.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (sktime - python toolbox for time series: advanced forecasting - probabilistic, global and hierarchical) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 267.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 267.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (We know what your app did last summer. Do you? Observing Python applications using Prometheus.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 259.875 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ("Easy Python": lies, damned lies, and metaclasses) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 252 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Advanced Django ORM) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 244.125 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Building an ORM from scratch) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 236.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 236.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj (But this is an OAuth, is it not?) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 228.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Forget Mono vs. Multi-Repo - Building Centralized Git Workflows with Python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 220.5 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (jsonargparse - Say goodbye to configuration hassles) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 212.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Make the most of Django) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 204.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Navigating the limitations of Python) Tj (\222) Tj (s concurrency model in web services) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 196.875 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj (Python 3.10: Welcome to pattern matching!) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 189 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Quitting pip: How we use git submodules to manage internal dependencies that require fast iteration) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 181.125 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Securing Django Applications) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 173.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The Magic of Python Objects) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 165.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 165.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj (The state of DevOps for Python projects) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 157.5 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Trojan Source Attacks - Can we trust open-source anymore?) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 149.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Web based live visualisation of sensor data) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 133.875 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 11.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj (Building a Sign-to-Speech prototype with TensorFlow, Pytorch and DeepStack: How it happened &) Tj T* (What I learned) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 126 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 126 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Can you Read This? \(Or: how I Improved Text Readability on the Web for the Visually Impaired\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 118.125 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 118.125 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Creating 3D Maps using Python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 110.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj (deepdoctection - An open source package for document intelligence) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 102.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Easy and flexible imaging with the Core Imaging Library) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 94.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Financial Portfolio Management with Deep Reinforcement Learning) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 86.62499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Forget Mono vs. Multi-Repo - Building Centralized Git Workflows with Python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 78.74999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (High Performance Pandas: Leveraging The Power Of Pandas Data Manipulation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 70.87499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj (How to build a Python-based Research Cloud Platform from scratch) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 62.99999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (JupyterLite: Jupyter ) Tj /F4 5.25 Tf 7.875 TL (\244) Tj /F1 5.25 Tf 7.875 TL /F4 5.25 Tf 7.875 TL (n) Tj /F1 5.25 Tf 7.875 TL ( WebAssembly ) Tj /F4 5.25 Tf 7.875 TL (\244) Tj /F1 5.25 Tf 7.875 TL /F4 5.25 Tf 7.875 TL (n) Tj /F1 5.25 Tf 7.875 TL ( Python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 55.12499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Machine Learning Testing Ecosystem of Python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 47.24999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Navigating the limitations of Python) Tj (\222) Tj (s concurrency model in web services) Tj ( ) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj (Performing Content: Can NLP and Deep Learning algorithms predict reader preferences?) Tj ( ) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Processing Open Street Map Data with Python and PostgreSQL) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Recommending Artworks) Tj ( ) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Slack bots 101: An introduction into slack bot-based workflow automation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Stupid Things I've Done With Python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Unclear Code Hurts) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+Q
+ 
+endstream
+endobj
+16 0 obj
+<<
+/Length 678
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.3986 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 240.6142 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Upgrade your Documentation to the Next Level) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg ( ) Tj (You shall not share!) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Your data, your insights: creating personal data projects to \(re-\)own the data you share) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+Q
+ 
+endstream
+endobj
+17 0 obj
+<<
+/Nums [ 0 18 0 R 1 19 0 R ]
+>>
+endobj
+18 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+19 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 20
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000350 00000 n 
+0000000462 00000 n 
+0000000647 00000 n 
+0000000730 00000 n 
+0000000953 00000 n 
+0000001158 00000 n 
+0000001263 00000 n 
+0000001532 00000 n 
+0000001606 00000 n 
+0000001700 00000 n 
+0000001794 00000 n 
+0000001860 00000 n 
+0000017597 00000 n 
+0000018326 00000 n 
+0000018376 00000 n 
+0000018410 00000 n 
+trailer
+<<
+/ID 
+[<96857e6bc2ef791136488202550eaecb><96857e6bc2ef791136488202550eaecb>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 10 0 R
+/Root 9 0 R
+/Size 20
+>>
+startxref
+18444
+%%EOF

@@ -1,0 +1,2253 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 8 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 51 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 50 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 52 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 50 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
+endobj
+9 0 obj
+<<
+/Contents 53 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 50 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+10 0 obj
+<<
+/Contents 54 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 50 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+11 0 obj
+<<
+/Contents 55 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 50 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://yang-prog-lab.ciscolive.com/pod/1/ncclient/edit_config)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 134.2896 128.9249 142.1646 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.yangcatalog.org/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 124.4146 109.9671 132.2896 ] /Subtype /Link /Type /Annot
+>>
+endobj
+14 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/ansible-collections/ansible.netcommon/blob/main/docs/ansible.netcommon.netconf_config_module.rst)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 114.5396 144.6801 122.4146 ] /Subtype /Link /Type /Annot
+>>
+endobj
+15 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://stackoverflow.com/questions/52120179/how-do-i-add-several-library-path-in-ansible-cfg-file)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 104.6646 170.0744 112.5396 ] /Subtype /Link /Type /Annot
+>>
+endobj
+16 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://galaxy.ansible.com/ansible/netcommon)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 94.78962 142.9266 102.6646 ] /Subtype /Link /Type /Annot
+>>
+endobj
+17 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/YangModels/yang/blob/main/vendor/cisco/xe/1711/README.md)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 84.91462 141.1941 92.78962 ] /Subtype /Link /Type /Annot
+>>
+endobj
+18 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.ietf.org/proceedings/90/slides/slides-90-edu-yang-0.pdf)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 75.03962 114.3351 82.91462 ] /Subtype /Link /Type /Annot
+>>
+endobj
+19 0 obj
+<<
+/Annots [ 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R ] /Contents 56 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 50 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+20 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.tail-f.com/wordpress/wp-content/uploads/2014/02/Tail-f-Instant-YANG.pdf)
+>> /Border [ 0 0 0 ] /Rect [ 78.74012 759.5979 102.3704 767.4729 ] /Subtype /Link /Type /Annot
+>>
+endobj
+21 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://ultraconfig.com.au/blog/learn-yang-full-tutorial-for-beginners/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 749.7229 137.3931 757.5979 ] /Subtype /Link /Type /Annot
+>>
+endobj
+22 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://blog.devopssimplified.com/Learning-YANG)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 739.8479 259.0881 747.7229 ] /Subtype /Link /Type /Annot
+>>
+endobj
+23 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://community.cisco.com/t5/yang-tools/ydkgenerator-error/td-p/4295247)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 729.9729 126.3051 737.8479 ] /Subtype /Link /Type /Annot
+>>
+endobj
+24 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://aristanetworks.github.io/openmgmt/examples/pyang/)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 720.0979 159.5691 727.9729 ] /Subtype /Link /Type /Annot
+>>
+endobj
+25 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github-wiki-see.page/m/mbj4668/pyang/wiki/Augment)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 710.2229 104.4126 718.0979 ] /Subtype /Link /Type /Annot
+>>
+endobj
+26 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://content.cisco.com/chapter.sjs?uri=/searchable/chapter/content/en/us/td/docs/ios-xml/ios/prog/configuration/171/b_171_programmability_cg/configuring_yang_datamodel.html.xml)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 700.3479 168.8984 708.2229 ] /Subtype /Link /Type /Annot
+>>
+endobj
+27 0 obj
+<<
+/Annots [ 20 0 R 21 0 R 22 0 R 23 0 R 24 0 R 25 0 R 26 0 R ] /Contents 57 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 50 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+28 0 obj
+<<
+/Outlines 30 0 R /PageLabels 58 0 R /PageMode /UseNone /Pages 50 0 R /Type /Catalog
+>>
+endobj
+29 0 obj
+<<
+/Author () /CreationDate (D:20220329112135-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220329112135-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Netconf, pyang & ansible to automate IOS-XE) /Trapped /False
+>>
+endobj
+30 0 obj
+<<
+/Count 10 /First 31 0 R /Last 49 0 R /Type /Outlines
+>>
+endobj
+31 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 32 0 R /Parent 30 0 R /Title (How to setup the Switch for Netconf)
+>>
+endobj
+32 0 obj
+<<
+/Count -2 /Dest [ 6 0 R /Fit ] /First 33 0 R /Last 34 0 R /Next 41 0 R /Parent 30 0 R 
+  /Prev 31 0 R /Title (Netconf Operations)
+>>
+endobj
+33 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 34 0 R /Parent 32 0 R /Title (Validation of Connectivity)
+>>
+endobj
+34 0 obj
+<<
+/Count -5 /Dest [ 7 0 R /Fit ] /First 35 0 R /Last 40 0 R /Parent 32 0 R /Prev 33 0 R 
+  /Title (Using Ansible Netconf Module)
+>>
+endobj
+35 0 obj
+<<
+/Count -1 /Dest [ 7 0 R /Fit ] /First 36 0 R /Last 36 0 R /Next 37 0 R /Parent 34 0 R 
+  /Title (Ansible installation)
+>>
+endobj
+36 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Parent 35 0 R /Title (Note OSX)
+>>
+endobj
+37 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 38 0 R /Parent 34 0 R /Prev 35 0 R /Title (Validate Switch Connectivity without Netconf)
+>>
+endobj
+38 0 obj
+<<
+/Dest [ 9 0 R /Fit ] /Next 39 0 R /Parent 34 0 R /Prev 37 0 R /Title (Basic Netconf Automation - NTP)
+>>
+endobj
+39 0 obj
+<<
+/Dest [ 9 0 R /Fit ] /Next 40 0 R /Parent 34 0 R /Prev 38 0 R /Title (Automation - Getting Values)
+>>
+endobj
+40 0 obj
+<<
+/Dest [ 9 0 R /Fit ] /Parent 34 0 R /Prev 39 0 R /Title (Automation Plus - RPCs & Notifications)
+>>
+endobj
+41 0 obj
+<<
+/Count -2 /Dest [ 10 0 R /Fit ] /First 42 0 R /Last 43 0 R /Next 44 0 R /Parent 30 0 R 
+  /Prev 32 0 R /Title (Using Python)
+>>
+endobj
+42 0 obj
+<<
+/Dest [ 10 0 R /Fit ] /Next 43 0 R /Parent 41 0 R /Title (Get-Config)
+>>
+endobj
+43 0 obj
+<<
+/Dest [ 10 0 R /Fit ] /Parent 41 0 R /Prev 42 0 R /Title (Edit-Config)
+>>
+endobj
+44 0 obj
+<<
+/Count -4 /Dest [ 11 0 R /Fit ] /First 45 0 R /Last 48 0 R /Next 49 0 R /Parent 30 0 R 
+  /Prev 41 0 R /Title (Pyang and netconf-console)
+>>
+endobj
+45 0 obj
+<<
+/Dest [ 11 0 R /Fit ] /Next 46 0 R /Parent 44 0 R /Title (Basic Tree Printing)
+>>
+endobj
+46 0 obj
+<<
+/Dest [ 19 0 R /Fit ] /Next 47 0 R /Parent 44 0 R /Prev 45 0 R /Title (Augmentation)
+>>
+endobj
+47 0 obj
+<<
+/Dest [ 19 0 R /Fit ] /Next 48 0 R /Parent 44 0 R /Prev 46 0 R /Title (Use Yang to generate Skeleton)
+>>
+endobj
+48 0 obj
+<<
+/Dest [ 19 0 R /Fit ] /Parent 44 0 R /Prev 47 0 R /Title (Note on Cisco Models)
+>>
+endobj
+49 0 obj
+<<
+/Dest [ 19 0 R /Fit ] /Parent 30 0 R /Prev 44 0 R /Title (References)
+>>
+endobj
+50 0 obj
+<<
+/Count 7 /Kids [ 6 0 R 7 0 R 9 0 R 10 0 R 11 0 R 19 0 R 27 0 R ] /Type /Pages
+>>
+endobj
+51 0 obj
+<<
+/Length 10379
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 53.14417 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Netconf, pyang & ansible to automate IOS-XE) Tj T* -53.14417 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2022-02-02 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 91.329 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (How to setup the Switch for Netconf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 53.10375 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Netconf Operations) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 74.69175 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Validation of Connectivity) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 640.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 86.0685 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Using Ansible Netconf Module) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 630.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+0 0 1 RG
+n 23.625 5.121125 m 67.10025 5.121125 l S
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Ansible installation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 620.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 23.625 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 31.5 5.121125 m 55.1355 5.121125 l S
+BT 1 0 0 1 31.5 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Note OSX) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 620.8986 cm
+Q
+q
+1 0 0 1 57.02362 611.0236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 23.625 5.121125 m 127.2075 5.121125 l S
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Validate Switch Connectivity without Netconf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 601.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 23.625 5.121125 m 99.1935 5.121125 l S
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Basic Netconf Automation - NTP) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 591.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 23.625 5.121125 m 89.2815 5.121125 l S
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Automation - Getting Values) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 581.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 15.75 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 23.625 5.121125 m 115.2375 5.121125 l S
+BT 1 0 0 1 23.625 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Automation Plus - RPCs & Notifications) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 581.3986 cm
+Q
+q
+1 0 0 1 57.02362 581.3986 cm
+Q
+q
+1 0 0 1 57.02362 571.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 39.09675 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Using Python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 561.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 41.13375 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Get-Config) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 551.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 41.7165 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Edit-Config) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 551.7736 cm
+Q
+q
+1 0 0 1 57.02362 541.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 71.4945 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Pyang and netconf-console) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 532.0236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 60.09675 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Basic Tree Printing) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 522.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 48.1425 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Augmentation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 512.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 88.70925 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Use Yang to generate Skeleton) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 502.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 67.10025 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Note on Cisco Models) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 502.3986 cm
+Q
+q
+1 0 0 1 57.02362 492.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 34.71825 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 492.5236 cm
+Q
+q
+1 0 0 1 57.02362 472.3455 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (How to setup the Switch for Netconf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 447.3242 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Basic functionality of Netconf is simply achieved via using ) Tj /F4 5.25 Tf (netconf-yang) Tj /F1 5.25 Tf ( command. However the great benefit of netconf comes with using validation and rollback, which is a feature in DB world as) Tj T* (ATOMIC operations. Either all-or-nothing. This can be achieved by netconf using the datastore. Furthermore an ACL should be applied to restrict connectivity to the management Hosts.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 148.6992 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 290.0727 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (hostname) Tj ( ) Tj (SWITCH) Tj  T* (no) Tj ( ) Tj (service) Tj ( ) Tj (config) Tj  T* (username) Tj ( ) Tj (admin) Tj ( ) Tj (privilege) Tj ( ) Tj (15) Tj ( ) Tj (algorithm-type) Tj ( ) Tj (scrypt) Tj ( ) Tj (secret) Tj ( ) Tj (Admin123) Tj  T* (enable) Tj ( ) Tj (secret) Tj ( ) Tj (Admin123) Tj  T* (service) Tj ( ) Tj (password-encryption) Tj  T* (ip) Tj ( ) Tj (domain) Tj ( ) Tj (name) Tj ( ) Tj (info.lab) Tj  T* (system) Tj ( ) Tj (mtu) Tj ( ) Tj (9100) Tj  T*  T* (line) Tj ( ) Tj (vty) Tj ( ) Tj (0) Tj ( ) Tj (15) Tj  T*  (login) Tj ( ) Tj (local) Tj  T*  (transport) Tj ( ) Tj (input) Tj ( ) Tj (ssh) Tj  T*  (transport) Tj ( ) Tj (preferred) Tj ( ) Tj (none) Tj  T*  T* (crypto) Tj ( ) Tj (key) Tj ( ) Tj (generate) Tj ( ) Tj (rsa) Tj ( ) Tj (modulus) Tj ( ) Tj (2048) Tj  T* (ip) Tj ( ) Tj (ssh) Tj ( ) Tj (version) Tj ( ) Tj (2) Tj  T* (ip) Tj ( ) Tj (scp) Tj ( ) Tj (server) Tj ( ) Tj (enable) Tj  T*  T* (vrf) Tj ( ) Tj (definition) Tj ( ) Tj (Mgmt) Tj  T*  (rd) Tj ( ) Tj (1) Tj (:1) Tj  T*  (address-family) Tj ( ) Tj (ipv4) Tj  T*  T* (int) Tj ( ) Tj (gig0) Tj  T*  (vrf) Tj ( ) Tj (forwarding) Tj ( ) Tj (Mgmt) Tj  T*  (ip) Tj ( ) Tj (address) Tj ( ) Tj (10) Tj (.10.10.200) Tj ( ) Tj (255) Tj (.255.255.0) Tj  T*  T* (ip) Tj ( ) Tj (route) Tj ( ) Tj (vrf) Tj ( ) Tj (Mgmt) Tj ( ) Tj (0) Tj (.0.0.0) Tj ( ) Tj (0) Tj (.0.0.0) Tj ( ) Tj (10) Tj (.10.10.1) Tj  T*  T* (ip) Tj ( ) Tj (access-list) Tj ( ) Tj (extended) Tj ( ) Tj (ACL_NETCONF_PERMIT) Tj  T*  (permit) Tj ( ) Tj (tcp) Tj ( ) Tj (10) Tj (.20.20.0) Tj ( ) Tj (0) Tj (.0.0.255) Tj ( ) Tj (host) Tj ( ) Tj (10) Tj (.10.10.200) Tj ( ) Tj (eq) Tj ( ) Tj (830) Tj  T*  T* (netconf-yang) Tj  T* (netconf-yang) Tj ( ) Tj (feature) Tj ( ) Tj (candidate-datastore) Tj  T* (netconf-yang) Tj ( ) Tj (ssh) Tj ( ) Tj (ipv4) Tj ( ) Tj (access-list) Tj ( ) Tj (name) Tj ( ) Tj (ACL_NETCONF_PERMIT) Tj  T*  T* (event) Tj ( ) Tj (manager) Tj ( ) Tj (applet) Tj ( ) Tj (catch_all) Tj  T*  (event) Tj ( ) Tj (cli) Tj ( ) Tj (pattern) Tj ( ) Tj (") Tj (.*) Tj (") Tj ( ) Tj (sync) Tj ( ) Tj (no) Tj ( ) Tj (skip) Tj ( ) Tj (no) Tj  T*  (action) Tj ( ) Tj (1) Tj ( ) Tj (syslog) Tj ( ) Tj (msg) Tj ( ) Tj (") Tj ($_cli_msg) Tj (") Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 128.5211 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Netconf Operations) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 109.5557 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Validation of Connectivity) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 93.218 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Validation is easy using any standard SSH Client.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 78.093 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (ssh) Tj ( ) Tj (-p) Tj ( ) Tj (830) Tj ( ) Tj (admin@10.10.10.200) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+52 0 obj
+<<
+/Length 8289
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 753.3295 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Using Ansible Netconf Module) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 729.1167 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (For the sake of completness and easyness of usage, installation of the module and usage is quickly summarized: - Setup python venv using on of the known tools like anaconda, virtualenvwrapper or std-lib) Tj T* (bundles venv module - Installation of ansible - Setup of inventory - Installation of Netconf via Netcommons Ansible Galaxy Collection) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 712.9417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Ansible installation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 547.7717 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 156.1978 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Create) Tj ( ) Tj (virtualenv) Tj ( ) Tj (using) Tj ( ) Tj (virtualenvwrapper) Tj  T* (mkvirtualenv) Tj ( ) Tj (netconf-ansible) Tj  T* (workon) Tj ( ) Tj (netconf-ansible) Tj  T*  T* (python) Tj ( ) Tj (-m) Tj ( ) Tj (venv) Tj ( ) Tj (netconf-env) Tj  T* (source) Tj ( ) Tj (netconf-env/bin/activate) Tj  T*  T* (#) Tj ( ) Tj (Install) Tj ( ) Tj (ansible) Tj ( ) Tj (\(v.5.5.0) Tj ( ) Tj (and) Tj ( ) Tj (ansible-core) Tj ( ) Tj (2.12) Tj ( ) Tj (in) Tj ( ) Tj (my) Tj ( ) Tj (case\)) Tj  T* (pip) Tj ( ) Tj (install) Tj ( ) Tj (ansible) Tj  T* (#) Tj ( ) Tj (Paramiko) Tj ( ) Tj (required) Tj ( ) Tj (by) Tj ( ) Tj (ansible.netcommon.network_cli) Tj  T* (pip) Tj ( ) Tj (install) Tj ( ) Tj (paramiko) Tj  T*  T* (#) Tj ( ) Tj (Verify) Tj ( ) Tj (python3) Tj ( ) Tj (is) Tj ( ) Tj (used) Tj ( ) Tj (in) Tj ( ) Tj (the) Tj ( ) Tj (backend) Tj  T* (ansible) Tj ( ) Tj (--version) Tj ( ) Tj (|) Tj ( ) Tj (grep) Tj ( ) Tj (") Tj (python) Tj ( ) Tj (version) Tj (") Tj  T*  T* (#) Tj ( ) Tj (Quick) Tj ( ) Tj (test) Tj ( ) Tj (of) Tj ( ) Tj (ansible) Tj ( ) Tj (installation) Tj  T* (ansible) Tj ( ) Tj (localhost) Tj ( ) Tj (-m) Tj ( ) Tj (ping) Tj  T*  T* (#) Tj ( ) Tj (Validate) Tj ( ) Tj (what) Tj ( ) Tj (Cisco) Tj ( ) Tj (enhancements) Tj ( ) Tj (are) Tj ( ) Tj (already) Tj ( ) Tj (installed) Tj  T* (ansible-galaxy) Tj ( ) Tj (collection) Tj ( ) Tj (list) Tj ( ) Tj (|) Tj ( ) Tj (grep) Tj ( ) Tj (cisco) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 532.6467 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F3 5.25 Tf 0 0 0 rg (Note OSX) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 509.6467 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (On OSX when using pyenv, the interpreter points directly to pyenv installed version. Therefore the modules/packages search path is not correctly added. Therefore e.g. paramiko is not found when executing) Tj T* (ansible. The easy way is to install the module globally, which would pollute the system. The better way is to adjust the python search path.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 407.8967 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 93.19775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Get) Tj ( ) Tj (current) Tj ( ) Tj (search) Tj ( ) Tj (path) Tj  T* (ansible) Tj ( ) Tj (--version) Tj ( ) Tj (|) Tj ( ) Tj (grep) Tj ( ) Tj (") Tj (configured) Tj ( ) Tj (module) Tj ( ) Tj (search) Tj ( ) Tj (path) Tj (") Tj  T*  T* (#) Tj ( ) Tj (Get) Tj ( ) Tj (path) Tj ( ) Tj (of) Tj ( ) Tj (venv) Tj  T* (source) Tj ( ) Tj (netconf-env/bin/activate) Tj  T* (#) Tj ( ) Tj (Start) Tj ( ) Tj (interactive) Tj ( ) Tj (shell) Tj ( ) Tj (and) Tj ( ) Tj (look) Tj ( ) Tj (for) Tj ( ) Tj (site-package) Tj ( ) Tj (path) Tj ( ) Tj (if) Tj ( ) Tj (unkown) Tj  T* (python) Tj  T*  (import) Tj ( ) Tj (sys) Tj  T*  (print) Tj (\() Tj (sys.path) Tj (\)) Tj  T*  T* (#) Tj ( ) Tj (Add) Tj ( ) Tj (site) Tj ( ) Tj (package) Tj ( ) Tj (path) Tj ( ) Tj (to) Tj ( ) Tj (ansible.cfg) Tj ( ) Tj (library=...) Tj ( ) Tj (using) Tj ( ) Tj (colon) Tj ( ) Tj (\(:\)) Tj ( ) Tj (notation) Tj ( ) Tj (for) Tj ( ) Tj (multiple) Tj  T* (##) Tj ( ) Tj (See) Tj ( ) Tj (below) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 392.7717 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Note MAC: ) Tj /F4 5.25 Tf (ansible 127.0.0.1 -m shell -a "python -c 'import sys; print\(sys.path\)'" --connection=local) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 376.5967 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Validate Switch Connectivity without Netconf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 353.1767 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (We setup ansible, an inventory containing our switch and configure a NTP server using a simple playbook. It is always good to first do some basic testing with a simple playbook to see everything works as) Tj T* (expected.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 306.5517 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 38.07275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (ansible.cfg) Tj  T* ([) Tj (defaults) Tj (]) Tj  T* (inventory) Tj ( ) Tj (=) Tj ( ) Tj (inventory) Tj  T* (interpreter_python) Tj (=) Tj (/Users/conrad/) Tj (<) Tj (...) Tj (>) Tj (/netconf_play/netconf-env/bin/python) Tj  T* (library) Tj ( ) Tj (=) Tj ( ) Tj (/Users/conrad/.ansible/plugins/modules:/usr/share/ansible/plugins/modules:/Users/conrad/) Tj (<) Tj (...) Tj (>) Tj (/netconf_play/netconf-env/lib/python3.9/site-packages) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 291.4267 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Configure a basic inventory:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 197.5517 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 85.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (inventory) Tj  T* ([) Tj (routers) Tj (]) Tj  T* (10) Tj (.10.10.200) Tj  T*  T* ([) Tj (routers:vars) Tj (]) Tj  T* (ansible_connection) Tj (=) Tj (ansible.netcommon.network_cli) Tj  T* (ansible_become) Tj (=) Tj (yes) Tj  T* (ansible_become_method) Tj (=) Tj (enable) Tj  T* (ansible_network_os) Tj (=) Tj (cisco.ios.ios) Tj  T* (ansible_user) Tj (=) Tj (admin) Tj  T* (ansible_password) Tj (=) Tj (supersecret) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 182.4267 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Setup the playbook:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 64.92675 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 108.9477 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (---) Tj  T* (-) Tj ( ) Tj (name) Tj (:) Tj ( ) Tj (Configure) Tj ( ) Tj (the) Tj ( ) Tj (banner) Tj  T*  ( ) Tj (gather_facts) Tj (:) Tj ( ) Tj (false) Tj  T*  ( ) Tj (hosts) Tj (:) Tj ( ) Tj (routers) Tj  T*  ( ) Tj (tasks) Tj (:) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (name) Tj (:) Tj ( ) Tj (Configure) Tj ( ) Tj (the) Tj ( ) Tj (login) Tj ( ) Tj (banner) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (cisco.ios.ios_banner) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (banner) Tj (:) Tj ( ) Tj (login) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (text) Tj (:) Tj ( ) Tj (|) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (----) Tj ( ) Tj (Fully) Tj ( ) Tj (automated) Tj ( ) Tj (Box) Tj ( ) Tj (----) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (Do) Tj ( ) Tj (NOT) Tj ( ) Tj (change) Tj ( ) Tj (manually.) Tj ( ) Tj ( ) Tj ( ) Tj (-) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (-----------------------------) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (state) Tj (:) Tj ( ) Tj (present) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+53 0 obj
+<<
+/Length 9346
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 676.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 85.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Update) Tj ( ) Tj (collection) Tj ( ) Tj (to) Tj ( ) Tj (latest) Tj ( ) Tj (version) Tj  T* (ansible-galaxy) Tj ( ) Tj (collection) Tj ( ) Tj (install) Tj ( ) Tj (cisco.ios) Tj  T*  T* (#) Tj ( ) Tj (Syntax) Tj ( ) Tj (Check,) Tj ( ) Tj (lint) Tj ( ) Tj (and) Tj ( ) Tj (run) Tj ( ) Tj (Playbook) Tj  T* (ansible-lint) Tj ( ) Tj (1_play_banner.yaml) Tj  T* (ansible-playbook) Tj ( ) Tj (1_play_banner.yaml) Tj ( ) Tj (--syntax-check) Tj  T* (ansible-playbook) Tj ( ) Tj (1_play_banner.yaml) Tj  T*  T* (#) Tj ( ) Tj (In) Tj ( ) Tj (case) Tj ( ) Tj (of) Tj ( ) Tj (errors) Tj  T* (ansible-playbook) Tj ( ) Tj (1_play_banner.yaml) Tj ( ) Tj (-vvv) Tj  T* (export) Tj ( ) Tj (ANSIBLE_DEBUG) Tj (=) Tj (1) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.2236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Basic Netconf Automation - NTP) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 644.6786 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Ansible netconf module has been moved \(like many modules\) to be part of a collection, namely the ) Tj /F4 5.25 Tf (ansible.netcommon) Tj /F1 5.25 Tf ( collection.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 558.6786 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 77.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Install/update) Tj ( ) Tj (netcommon,) Tj ( ) Tj (as) Tj ( ) Tj (Netconf) Tj ( ) Tj (part) Tj ( ) Tj (of) Tj ( ) Tj (netcommon) Tj ( ) Tj (module) Tj  T* (ansible-galaxy) Tj ( ) Tj (collection) Tj ( ) Tj (list) Tj ( ) Tj (|) Tj ( ) Tj (grep) Tj ( ) Tj (netcommon) Tj  T*  T* (#) Tj ( ) Tj (Install) Tj ( ) Tj (netconf) Tj ( ) Tj (python) Tj ( ) Tj (library) Tj  T* (pip) Tj ( ) Tj (install) Tj ( ) Tj (ncclient) Tj  T* (pip) Tj ( ) Tj (install) Tj ( ) Tj (netconf-console) Tj  T* (pip) Tj ( ) Tj (install) Tj ( ) Tj (netconf-console2) Tj  T* (ppip) Tj ( ) Tj (install) Tj ( ) Tj (jxmlease) Tj  T*  T* (netconf-console) Tj ( ) Tj (--host) Tj ( ) Tj (10) Tj (.10.10.200) Tj ( ) Tj (--port) Tj ( ) Tj (830) Tj ( ) Tj (--user) Tj ( ) Tj (admin) Tj ( ) Tj (--password) Tj ( ) Tj (xy) Tj ( ) Tj (--db) Tj ( ) Tj (running) Tj ( ) Tj (--get-config) Tj ( ) Tj (--xpath) Tj ( ) Tj (/native) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 543.5536 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Adjust the Connection parameter in inventory:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 496.9286 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 38.07275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (inventory) Tj  T* (...) Tj  T* ([) Tj (routers:vars) Tj (]) Tj  T* (#ansible_connection=ansible.netcommon.network_cli) Tj  T* (ansible_connection) Tj (=) Tj (ansible.netcommon.netconf) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 481.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (And finally the playbook, here to set an NTP Server on a router that does not support candidate datastore.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 332.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 140.4478 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (-) Tj ( ) Tj (hosts) Tj (:) Tj ( ) Tj (routers) Tj  T*  ( ) Tj (connection) Tj (:) Tj ( ) Tj (ansible.netcommon.netconf) Tj  T*  ( ) Tj (gather_facts) Tj (:) Tj ( ) Tj (no) Tj  T*  ( ) Tj (tasks) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (ansible.netcommon.netconf_config) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (target) Tj (:) Tj ( ) Tj (running) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (content) Tj (:) Tj ( ) Tj (|) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (config) Tj ( ) Tj (xmlns=) Tj (") Tj (urn:ietf:params:xml:ns:netconf:base:1.0) Tj (") Tj ( ) Tj (xmlns:nc=) Tj (") Tj (urn:ietf:params:xml:ns:netconf:base:1.0) Tj (") Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (native) Tj ( ) Tj (xmlns=) Tj (") Tj (http://cisco.com/ns/yang/Cisco-IOS-XE-native) Tj (") Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (ntp) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (server) Tj ( ) Tj (xmlns=) Tj (") Tj (http://cisco.com/ns/yang/Cisco-IOS-XE-ntp) Tj (") Tj ( ) Tj (operation=) Tj (') Tj (replace) Tj (') Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (server-list) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (ip-address) Tj (>) Tj (1.1.1.1) Tj (<) Tj (/ip-address) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/server-list) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/server) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/ntp) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/native) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/config) Tj (>) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 309.8036 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Some of the supported operations of thet netcommons.netconf module are: - format \(xml or json\) - get_filter - confirm, lock, save, confirm_commit, validate, commit, delete, backup - content \(defaults to xml\) -) Tj T* (source_datastore \(source\), target \(datastore\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 293.6286 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Automation - Getting Values) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 278.0836 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The easiest one would be getting all configuraton:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 223.5836 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 45.94775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (-) Tj ( ) Tj (hosts) Tj (:) Tj ( ) Tj (routers) Tj  T*  ( ) Tj (connection) Tj (:) Tj ( ) Tj (ansible.netcommon.netconf) Tj  T*  ( ) Tj (gather_facts) Tj (:) Tj ( ) Tj (no) Tj  T*  ( ) Tj (tasks) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (ansible.netcommon.netconf_get) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (source) Tj (:) Tj ( ) Tj (running) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 208.4586 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Several aditioinal options exist like adding a filter \(in XML or XPath style\) or output in json.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 138.2086 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 61.69775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (-) Tj ( ) Tj (hosts) Tj (:) Tj ( ) Tj (routers) Tj  T*  ( ) Tj (connection) Tj (:) Tj ( ) Tj (ansible.netcommon.netconf) Tj  T*  ( ) Tj (gather_facts) Tj (:) Tj ( ) Tj (no) Tj  T*  ( ) Tj (tasks) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (ansible.netcommon.netconf_get) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (source) Tj (:) Tj ( ) Tj (running) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (filter) Tj (:) Tj ( ) Tj (/native/logging/history) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (display) Tj (:) Tj ( ) Tj (json) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 122.0336 cm
+q
+1 0 0 1 1 -1 cm
+q
+.531562 w
+BT 1 0 0 1 0 6.43394 Tm 8.505 TL /F3 5.67 Tf 0 0 0 rg (Automation Plus - RPCs & Notifications) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 106.4886 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (RPCs are the way netconf implements actions. In fact ) Tj /F5 5.25 Tf (edit-config) Tj /F1 5.25 Tf ( is just an rpc of the ) Tj /F4 5.25 Tf (ietf-netconf.yang) Tj /F1 5.25 Tf ( specification. Custom RPCs are also defined in the yang models themselfes.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 67.73862 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 30.19775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Get) Tj ( ) Tj (a) Tj ( ) Tj (list) Tj ( ) Tj (of) Tj ( ) Tj (all) Tj ( ) Tj (rpcs) Tj ( ) Tj (per) Tj ( ) Tj (module) Tj ( ) Tj T* (grep) Tj ( ) Tj (rpc) Tj ( ) Tj (./*) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (List) Tj ( ) Tj (of) Tj ( ) Tj (IOS) Tj ( ) Tj (XE) Tj ( ) Tj (rpcs) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+54 0 obj
+<<
+/Length 12175
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (tree) Tj ( ) Tj (Cisco-IOS-XE-rpc.yang) Tj ( ) Tj (--tree-depth) Tj (=) Tj (3) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 740.0236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Example use cases: - Reload routers, start traffic captures, - Clear arp caches and bgp processes - Register to smart licensesing - Start aguestshell, enable debug - etc. etc.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 646.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 85.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (-) Tj ( ) Tj (hosts) Tj (:) Tj ( ) Tj (routers) Tj  T*  ( ) Tj (connection) Tj (:) Tj ( ) Tj (ansible.netcommon.netconf) Tj  T*  ( ) Tj (gather_facts) Tj (:) Tj ( ) Tj (no) Tj  T*  ( ) Tj (tasks) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (ansible.netcommon.netconf_rpc) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (xmlns) Tj (:) Tj ( ) Tj (http://cisco.com/ns/yang/Cisco-IOS-XE-rpc) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (rpc) Tj (:) Tj ( ) Tj (clear) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (content) Tj (:) Tj ( ) Tj (|) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (arp-cache) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (vrf) Tj (>) Tj (Mgmt) Tj ( ) Tj (10.240.72.144) Tj (<) Tj (/vrf) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/arp-cache) Tj (>) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 625.9705 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Using Python) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 600.9492 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The nccclient module can be used directly. The call is very similar to the ones shown above, as in the end, it is netconf format. Important to note are the supported device types, which are: - Cisco:) Tj T* (csr/nexus/iosxr/iosxe - Non-cisco: junos/huawei/alu\(alcatel-lucent\)/hpcomware\(HP\) - default) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 582.7924 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Get-Config) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 566.4546 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (A very simple example getting configuration would be:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 283.5796 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 274.3227 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (from) Tj ( ) Tj (ncclient) Tj ( ) Tj (import) Tj ( ) Tj (manager) Tj  T*  T*  T* (def) Tj ( ) Tj (main) Tj (\(\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (") Tj (") Tj (") Tj  T*  ( ) Tj ( ) Tj ( ) Tj (Main) Tj ( ) Tj (method) Tj ( ) Tj (that) Tj ( ) Tj (prints) Tj ( ) Tj (netconf) Tj ( ) Tj (capabilities) Tj ( ) Tj (of) Tj ( ) Tj (device.) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (") Tj (") Tj (") Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Device) Tj ( ) Tj (dictionary) Tj ( ) Tj (that) Tj ( ) Tj (provides) Tj ( ) Tj (key/value) Tj ( ) Tj (connection) Tj ( ) Tj (information) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (device) Tj ( ) Tj (=) Tj ( ) Tj ({) Tj (") Tj (ip) Tj (") Tj (:) Tj ( ) Tj (") Tj (10.10.10.200) Tj (") Tj (,) Tj ( ) Tj (") Tj (port) Tj (") Tj (:) Tj ( ) Tj (") Tj (830) Tj (") Tj (,) Tj ( ) Tj (") Tj (platform) Tj (") Tj (:) Tj ( ) Tj (") Tj (csr) Tj (") Tj (,}) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (ncclient) Tj ( ) Tj (manager) Tj ( ) Tj (instantiation) Tj ( ) Tj (for) Tj ( ) Tj (csr) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (with) Tj ( ) Tj (manager) Tj (.) Tj (connect) Tj (\() Tj (host) Tj (=) Tj (device) Tj ([) Tj (') Tj (ip) Tj (') Tj (],) Tj ( ) Tj (port) Tj (=) Tj (device) Tj ([) Tj (') Tj (port) Tj (') Tj (],) Tj ( ) Tj (username) Tj (=) Tj (') Tj (admin) Tj (') Tj (,) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (password) Tj (=) Tj (') Tj (xy) Tj (') Tj (,) Tj ( ) Tj (hostkey_verify) Tj (=) Tj (False) Tj (,) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (device_params) Tj (=) Tj ({) Tj (') Tj (name) Tj (') Tj (:) Tj ( ) Tj (device) Tj ([) Tj (') Tj (platform) Tj (') Tj (]},) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (look_for_keys) Tj (=) Tj (False) Tj (,) Tj ( ) Tj (allow_agent) Tj (=) Tj (False) Tj (\)) Tj ( ) Tj (as) Tj ( ) Tj (m) Tj (:) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Filter) Tj ( ) Tj (using) Tj ( ) Tj (top-level) Tj ( ) Tj (container) Tj ( ) Tj (namespace) Tj ( ) Tj (and) Tj ( ) Tj (node) Tj ( ) Tj (matching) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (int_filter) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (') Tj (') Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (interfaces) Tj ( ) Tj (xmlns=) Tj (") Tj (urn:ietf:params:xml:ns:yang:ietf-interfaces) Tj (") Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (interface) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (name) Tj (>) Tj (GigabitEthernet1) Tj (<) Tj (/name) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/interface) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/interfaces) Tj (>) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (') Tj (') Tj (') Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (get-config) Tj ( ) Tj (RPC) Tj ( ) Tj (against) Tj ( ) Tj (the) Tj ( ) Tj (running) Tj ( ) Tj (datastore) Tj ( ) Tj (using) Tj ( ) Tj (a) Tj ( ) Tj (subtree) Tj ( ) Tj (filter) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (reply) Tj ( ) Tj (=) Tj ( ) Tj (m) Tj (.) Tj (get_config) Tj (\() Tj (') Tj (running) Tj (') Tj (,) Tj ( ) Tj (filter) Tj (=) Tj (\() Tj (') Tj (subtree) Tj (') Tj (,) Tj ( ) Tj (int_filter) Tj (\)\)) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Print) Tj ( ) Tj (RPC) Tj ( ) Tj (reply) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (reply) Tj (\)) Tj  T*  T*  T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (main) Tj (\(\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 265.4227 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Edit-Config) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 249.085 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (A very simple example to configure an OSPF Process would be:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 68.585 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 171.9478 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (from) Tj ( ) Tj (ncclient) Tj ( ) Tj (import) Tj ( ) Tj (manager) Tj ( ) Tj T* ( ) Tj T* ( ) Tj T* (def) Tj ( ) Tj (main) Tj (\(\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (") Tj (") Tj (") Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (Main) Tj ( ) Tj (method) Tj ( ) Tj (that) Tj ( ) Tj (prints) Tj ( ) Tj (netconf) Tj ( ) Tj (capabilities) Tj ( ) Tj (of) Tj ( ) Tj (device.) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (") Tj (") Tj (") Tj ( ) Tj T* ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (device) Tj ( ) Tj (=) Tj ( ) Tj ({) Tj (") Tj (ip) Tj (") Tj (:) Tj ( ) Tj (") Tj (10.10.10.200) Tj (") Tj (,) Tj ( ) Tj (") Tj (port) Tj (") Tj (:) Tj ( ) Tj (") Tj (830) Tj (") Tj (,) Tj ( ) Tj (") Tj (platform) Tj (") Tj (:) Tj ( ) Tj (") Tj (csr) Tj (") Tj (,}) Tj ( ) Tj T* ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (with) Tj ( ) Tj (manager) Tj (.) Tj (connect) Tj (\() Tj (host) Tj (=) Tj (device) Tj ([) Tj (') Tj (ip) Tj (') Tj (],) Tj ( ) Tj (port) Tj (=) Tj (device) Tj ([) Tj (') Tj (port) Tj (') Tj (],) Tj ( ) Tj (username) Tj (=) Tj (') Tj (admin) Tj (') Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (password) Tj (=) Tj (') Tj (xy) Tj (') Tj (,) Tj ( ) Tj (hostkey_verify) Tj (=) Tj (False) Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (device_params) Tj (=) Tj ({) Tj (') Tj (name) Tj (') Tj (:) Tj ( ) Tj (device) Tj ([) Tj (') Tj (platform) Tj (') Tj (]},) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (look_for_keys) Tj (=) Tj (False) Tj (,) Tj ( ) Tj (allow_agent) Tj (=) Tj (False) Tj (\)) Tj ( ) Tj (as) Tj ( ) Tj (m) Tj (:) Tj ( ) Tj T* ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (rpc) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (') Tj (') Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (config) Tj ( ) Tj (xmlns=) Tj (") Tj (urn:ietf:params:xml:ns:netconf:base:1.0) Tj (") Tj ( ) Tj (xmlns:nc=) Tj (") Tj (urn:ietf:params:xml:ns:netconf:base:1.0) Tj (") Tj (>) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (native) Tj ( ) Tj (xmlns=) Tj (") Tj (http://cisco.com/ns/yang/Cisco-IOS-XE-native) Tj (") Tj (>) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (router) Tj (>) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (ospf) Tj ( ) Tj (xmlns=) Tj (") Tj (http://cisco.com/ns/yang/Cisco-IOS-XE-ospf) Tj (") Tj (>) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (id) Tj (>) Tj (100) Tj (<) Tj (/id) Tj (>) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (router-id) Tj (>) Tj (1.1.1.1) Tj (<) Tj (/router-id) Tj (>) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+55 0 obj
+<<
+/Length 11509
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 629.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 132.5728 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (network) Tj (>) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (ip) Tj (>) Tj (10.1.1.0) Tj (<) Tj (/ip) Tj (>) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (mask) Tj (>) Tj (0.0.0.3) Tj (<) Tj (/mask) Tj (>) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (area) Tj (>) Tj (0) Tj (<) Tj (/area) Tj (>) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/network) Tj (>) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/ospf) Tj (>) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/router) Tj (>) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/native) Tj (>) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (<) Tj (/config) Tj (>) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (') Tj (') Tj (') Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (reply) Tj ( ) Tj (=) Tj ( ) Tj (m) Tj (.) Tj (edit_config) Tj (\() Tj (rpc) Tj (,) Tj ( ) Tj (target) Tj (=) Tj (') Tj (running) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (reply) Tj (\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (main) Tj (\(\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 606.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Sometimes we want to look at the yang models directly, to understand what can be configured or to generate stub data \(see next chapter\). Instead of downloading the model from the git repository, it can be) Tj T* (directly downloaded from the device.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 157.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 439.6977 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (import) Tj ( ) Tj (re) Tj  T* (from) Tj ( ) Tj (ncclient) Tj ( ) Tj (import) Tj ( ) Tj (manager) Tj  T*  T* (#) Tj ( ) Tj (Context) Tj ( ) Tj (manager) Tj ( ) Tj (keeping) Tj ( ) Tj (ncclient) Tj ( ) Tj (connection) Tj ( ) Tj (alive) Tj ( ) Tj (for) Tj ( ) Tj (the) Tj ( ) Tj (duration) Tj ( ) Tj (of) Tj  T* (#) Tj ( ) Tj (the) Tj ( ) Tj (context.) Tj  T* (m) Tj ( ) Tj (=) Tj ( ) Tj (manager) Tj (.) Tj (connect) Tj (\() Tj  T*  ( ) Tj ( ) Tj ( ) Tj (host) Tj (=) Tj (') Tj (10.10.10.200) Tj (') Tj (,) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (IP) Tj ( ) Tj (address) Tj ( ) Tj (of) Tj ( ) Tj (the) Tj ( ) Tj (device) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (port) Tj (=) Tj (830) Tj (,) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Port) Tj ( ) Tj (to) Tj ( ) Tj (connect) Tj ( ) Tj (to) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (username) Tj (=) Tj (') Tj (admin) Tj (') Tj (,) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (SSH) Tj ( ) Tj (Username) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (password) Tj (=) Tj (') Tj (xy.) Tj (') Tj (,) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (SSH) Tj ( ) Tj (Password) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (hostkey_verify) Tj (=) Tj (False) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Allow) Tj ( ) Tj (unknown) Tj ( ) Tj (hostkeys) Tj ( ) Tj (not) Tj ( ) Tj (in) Tj ( ) Tj (local) Tj ( ) Tj (store) Tj  T* (\)) Tj  T* (capabilities) Tj ( ) Tj (=) Tj ( ) Tj ([]) Tj  T* (#) Tj ( ) Tj (Write) Tj ( ) Tj (each) Tj ( ) Tj (capability) Tj ( ) Tj (to) Tj ( ) Tj (console) Tj  T* (for) Tj ( ) Tj (capability) Tj ( ) Tj (in) Tj ( ) Tj (m) Tj (.) Tj (server_capabilities) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Print) Tj ( ) Tj (the) Tj ( ) Tj (capability) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (") Tj (Capability:) Tj ( ) Tj ({) Tj (capability) Tj (}) Tj (") Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Store) Tj ( ) Tj (the) Tj ( ) Tj (capability) Tj ( ) Tj (list) Tj ( ) Tj (for) Tj ( ) Tj (later.) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (capabilities) Tj (.) Tj (append) Tj (\() Tj (capability) Tj (\)) Tj  T*  T*  T* (#) Tj ( ) Tj (Sort) Tj ( ) Tj (the) Tj ( ) Tj (list) Tj ( ) Tj (alphabetically.) Tj  T* (capabilities) Tj ( ) Tj (=) Tj ( ) Tj (sorted) Tj (\() Tj (capabilities) Tj (\)) Tj  T*  T* (#) Tj ( ) Tj (List) Tj ( ) Tj (of) Tj ( ) Tj (modules) Tj ( ) Tj (that) Tj ( ) Tj (we) Tj ( ) Tj (store) Tj ( ) Tj (for) Tj ( ) Tj (use) Tj ( ) Tj (later) Tj  T* (modules) Tj ( ) Tj (=) Tj ( ) Tj ([]) Tj  T*  T* (#) Tj ( ) Tj (Iterate) Tj ( ) Tj (server) Tj ( ) Tj (capabilities) Tj ( ) Tj (and) Tj ( ) Tj (extract) Tj ( ) Tj (supported) Tj ( ) Tj (modules.) Tj  T* (for) Tj ( ) Tj (capability) Tj ( ) Tj (in) Tj ( ) Tj (capabilities) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Scan) Tj ( ) Tj (the) Tj ( ) Tj (capabilities) Tj ( ) Tj (and) Tj ( ) Tj (extract) Tj ( ) Tj (modules) Tj ( ) Tj (via) Tj ( ) Tj (this) Tj ( ) Tj (regex.) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (i.e.,) Tj ( ) Tj (if) Tj ( ) Tj (this) Tj ( ) Tj (was) Tj ( ) Tj (the) Tj ( ) Tj (capability) Tj ( ) Tj (string:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj ( ) Tj ( ) Tj (http://openconfig.net/yang/lldp/types?module=openconfig-lldp-types) Tj (&) Tj (revision=2016-05-16) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (then:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj ( ) Tj ( ) Tj (openconfig-lldp-types) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (..) Tj ( ) Tj (would) Tj ( ) Tj (be) Tj ( ) Tj (the) Tj ( ) Tj (module) Tj ( ) Tj (printed.) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Scan) Tj ( ) Tj (capability) Tj ( ) Tj (string) Tj ( ) Tj (for) Tj ( ) Tj (module) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (supported_model) Tj ( ) Tj (=) Tj ( ) Tj (re) Tj (.) Tj (search) Tj (\() Tj (') Tj (module=\(.*\)) Tj (&) Tj (') Tj (,) Tj ( ) Tj (capability) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (If) Tj ( ) Tj (module) Tj ( ) Tj (found) Tj ( ) Tj (in) Tj ( ) Tj (string,) Tj ( ) Tj (store) Tj ( ) Tj (it.) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (supported_model) Tj ( ) Tj (is) Tj ( ) Tj (not) Tj ( ) Tj (None) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Module) Tj ( ) Tj (string) Tj ( ) Tj (was) Tj ( ) Tj (found,) Tj ( ) Tj (store) Tj ( ) Tj (it.) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (") Tj (Supported) Tj ( ) Tj (Model:) Tj ( ) Tj ({) Tj (supported_model) Tj (.) Tj (group) Tj (\() Tj (1) Tj (\)) Tj (}) Tj (") Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Store) Tj ( ) Tj (the) Tj ( ) Tj (module) Tj ( ) Tj (for) Tj ( ) Tj (later) Tj ( ) Tj (use.) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (modules) Tj (.) Tj (append) Tj (\() Tj (supported_model) Tj (.) Tj (groups) Tj (\() Tj (0) Tj (\)[) Tj (0) Tj (]\)) Tj  T*  T*  T* (#) Tj ( ) Tj (List) Tj ( ) Tj (of) Tj ( ) Tj (models) Tj ( ) Tj (that) Tj ( ) Tj (we) Tj ( ) Tj (want) Tj ( ) Tj (to) Tj ( ) Tj (download.) Tj  T* (#) Tj ( ) Tj (We) Tj ( ) Tj (will) Tj ( ) Tj (get) Tj ( ) Tj (the) Tj ( ) Tj (schema) Tj ( ) Tj (for) Tj ( ) Tj (each) Tj ( ) Tj (and) Tj ( ) Tj (write) Tj ( ) Tj (it) Tj ( ) Tj (to) Tj ( ) Tj (disk.) Tj  T* (models_desired) Tj ( ) Tj (=) Tj ( ) Tj ([) Tj (') Tj (openconfig-extensions) Tj (') Tj (,) Tj ( ) Tj (') Tj (openconfig-interfaces) Tj (') Tj (]) Tj  T* (#) Tj ( ) Tj (Iterate) Tj ( ) Tj (each) Tj ( ) Tj (desired) Tj ( ) Tj (model) Tj ( ) Tj (and) Tj ( ) Tj (write) Tj ( ) Tj (it) Tj ( ) Tj (to) Tj ( ) Tj (./models/) Tj  T* (for) Tj ( ) Tj (model) Tj ( ) Tj (in) Tj ( ) Tj (models_desired) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Get) Tj ( ) Tj (the) Tj ( ) Tj (model) Tj ( ) Tj (schema.) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (schema) Tj ( ) Tj (=) Tj ( ) Tj (m) Tj (.) Tj (get_schema) Tj (\() Tj (model) Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Open) Tj ( ) Tj (new) Tj ( ) Tj (file) Tj ( ) Tj (handle.) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (with) Tj ( ) Tj (open) Tj (\() Tj (") Tj (./models/) Tj ({}) Tj (.yang) Tj (") Tj (.) Tj (format) Tj (\() Tj (model) Tj (\),) Tj ( ) Tj (') Tj (w) Tj (') Tj (\)) Tj ( ) Tj (as) Tj ( ) Tj (f) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Write) Tj ( ) Tj (schema) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (f) Tj (.) Tj (write) Tj (\() Tj (schema) Tj (.) Tj (data) Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 137.7205 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Pyang and netconf-console) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 120.5742 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Pyang will automatically look for mentioned/related \() Tj /F4 5.25 Tf (import) Tj /F1 5.25 Tf (\) models.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 102.4174 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Basic Tree Printing) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 70.32962 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 22.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (tree) Tj ( ) Tj (models/openconfig-interfaces.yang) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Openconfig-interface.yang) Tj ( ) Tj (Model) Tj ( ) Tj (excerpt) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+56 0 obj
+<<
+/Length 13364
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 581.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 179.8228 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (module) Tj ( ) Tj (openconfig-interfaces) Tj ( ) Tj ({) Tj ( ) Tj T* ( ) Tj (yang-version) Tj ( ) Tj (") Tj (1) Tj (") Tj (;) Tj ( ) Tj T* ( ) Tj (//) Tj ( ) Tj (namespace) Tj ( ) Tj T* ( ) Tj (namespace) Tj ( ) Tj (") Tj (http://openconfig.net/yang/interfaces) Tj (") Tj (;) Tj ( ) Tj T* ( ) Tj (prefix) Tj ( ) Tj (") Tj (oc-if) Tj (") Tj (;) Tj ( ) Tj T* ( ) Tj (//) Tj ( ) Tj (import) Tj ( ) Tj (some) Tj ( ) Tj (basic) Tj ( ) Tj (types) Tj ( ) Tj T* ( ) Tj (import) Tj ( ) Tj (ietf-interfaces) Tj ( ) Tj ({) Tj ( ) Tj (prefix) Tj ( ) Tj (ietf-if) Tj (;) Tj ( ) Tj (}) Tj ( ) Tj T* ( ) Tj (import) Tj ( ) Tj (openconfig-yang-types) Tj ( ) Tj ({) Tj ( ) Tj (prefix) Tj ( ) Tj (oc-yang) Tj (;) Tj ( ) Tj (}) Tj ( ) Tj T* ( ) Tj (import) Tj ( ) Tj (openconfig-types) Tj ( ) Tj ({) Tj ( ) Tj (prefix) Tj ( ) Tj (oc-types) Tj (;) Tj ( ) Tj (}) Tj ( ) Tj T* ( ) Tj (import) Tj ( ) Tj (openconfig-extensions) Tj ( ) Tj ({) Tj ( ) Tj (prefix) Tj ( ) Tj (oc-ext) Tj (;) Tj ( ) Tj (}) Tj ( ) Tj T* (...) Tj ( ) Tj T* (}) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Output) Tj ( ) Tj T* (odels/openconfig-interfaces.yang:12:) Tj ( ) Tj (error:) Tj ( ) Tj (module) Tj ( ) Tj (") Tj (openconfig-yang-types) Tj (") Tj ( ) Tj (not) Tj ( ) Tj (found) Tj ( ) Tj (in) Tj ( ) Tj (search) Tj ( ) Tj (path) Tj ( ) Tj T* (models/openconfig-interfaces.yang:13:) Tj ( ) Tj (error:) Tj ( ) Tj (module) Tj ( ) Tj (") Tj (openconfig-types) Tj (") Tj ( ) Tj (not) Tj ( ) Tj (found) Tj ( ) Tj (in) Tj ( ) Tj (search) Tj ( ) Tj (path) Tj ( ) Tj T* (models/openconfig-interfaces.yang:14:) Tj ( ) Tj (error:) Tj ( ) Tj (module) Tj ( ) Tj (") Tj (openconfig-extensions) Tj (") Tj ( ) Tj (not) Tj ( ) Tj (found) Tj ( ) Tj (in) Tj ( ) Tj (search) Tj ( ) Tj (path) Tj ( ) Tj T* (module:) Tj ( ) Tj (openconfig-interfaces) Tj ( ) Tj T* ( ) Tj (+--rw) Tj ( ) Tj (interfaces) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (interface*) Tj ( ) Tj ([) Tj (name) Tj (]) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (name) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (-) Tj (>) Tj ( ) Tj (../config/name) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (config) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (name?) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (string) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 563.7417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Augmentation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 547.404 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Pyang in most cases will combin the different models and augment the source.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 492.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 45.94775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Example) Tj ( ) Tj (with) Tj ( ) Tj (dot1x) Tj ( ) Tj (without) Tj ( ) Tj (augmentation) Tj ( ) Tj (will) Tj ( ) Tj (not) Tj ( ) Tj (show) Tj ( ) Tj (much) Tj ( ) Tj (as) Tj ( ) Tj (the) Tj ( ) Tj (model) Tj ( ) Tj (depends) Tj ( ) Tj (on) Tj ( ) Tj (the) Tj ( ) Tj (other) Tj  T* (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (tree) Tj ( ) Tj (Cisco-IOS-XE-native.yang) Tj ( ) Tj (--tree-path) Tj (=) Tj (/native/dot1x) Tj  T*  T* (#) Tj ( ) Tj (Augmentation) Tj ( ) Tj (will) Tj ( ) Tj (add) Tj ( ) Tj (the) Tj ( ) Tj (added) Tj ( ) Tj (stuff) Tj ( ) Tj (to) Tj ( ) Tj (the) Tj ( ) Tj (original) Tj ( ) Tj (module) Tj ( ) Tj (\(marking) Tj ( ) Tj (them) Tj ( ) Tj (with) Tj ( ) Tj (a) Tj ( ) Tj (prefix) Tj ( ) Tj (as) Tj ( ) Tj (given) Tj ( ) Tj (in) Tj ( ) Tj (the) Tj ( ) Tj (added) Tj ( ) Tj (\(dot1x\)) Tj ( ) Tj (module\)) Tj  T* (##) Tj ( ) Tj (E.g.) Tj ( ) Tj (prefix) Tj ( ) Tj (defined) Tj ( ) Tj (in) Tj ( ) Tj (dot1x.yang) Tj ( ) Tj (is) Tj ( ) Tj (") Tj (ios-dot1x) Tj (") Tj ( ) Tj (and) Tj ( ) Tj (container) Tj ( ) Tj (") Tj (guest-vlan) Tj (") Tj ( ) Tj (then) Tj ( ) Tj (becomes) Tj ( ) Tj (ios-dot1x:guest-vlan) Tj  T* (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (tree) Tj ( ) Tj (Cisco-IOS-XE-native.yang) Tj ( ) Tj (Cisco-IOS-XE-dot1x.yang) Tj ( ) Tj (--tree-path) Tj (=) Tj (/native/dot1x) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 474.7471 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Use Yang to generate Skeleton) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 450.5344 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Probably the most important usage of pyang here is the generation of template-xml, called ) Tj /F5 5.25 Tf (skeletons) Tj /F1 5.25 Tf (. Either configure the device using regular CLI and extract the generated configuration using) Tj T* (netconf-console or generate the stub/skeleton directly using pyang. For the skeleton generation, all needed modules must be available in the search path.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 293.6594 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 148.3228 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (netconf-console) Tj ( ) Tj (--host) Tj ( ) Tj (10) Tj (.10.10.200) Tj ( ) Tj (--port) Tj ( ) Tj (830) Tj ( ) Tj (--user) Tj ( ) Tj (admin) Tj ( ) Tj (--password) Tj ( ) Tj (xy) Tj ( ) Tj (--db) Tj ( ) Tj (running) Tj ( ) Tj (--get-config) Tj ( ) Tj (--xpath) Tj ( ) Tj (/native/dot1x) Tj  T*  T* (#) Tj ( ) Tj (Sample) Tj ( ) Tj (using) Tj ( ) Tj (Augmentatoin) Tj ( ) Tj (to) Tj ( ) Tj (generate) Tj ( ) Tj (sample) Tj ( ) Tj (xml) Tj ( ) Tj (skeleton) Tj ( ) Tj (for) Tj ( ) Tj (dot1x) Tj  T* (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (sample-xml-skeleton) Tj ( ) Tj (Cisco-IOS-XE-native.yang) Tj ( ) Tj (--sample-xml-skeleton-path) Tj (=) Tj (/native/dot1x) Tj  T*  T* (#) Tj ( ) Tj (Sample) Tj ( ) Tj (using) Tj ( ) Tj (augmentation) Tj ( ) Tj (to) Tj ( ) Tj (generate) Tj ( ) Tj (sample) Tj ( ) Tj (xml) Tj ( ) Tj (skeleton) Tj ( ) Tj (for) Tj ( ) Tj (logging) Tj  T* (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (sample-xml-skeleton) Tj ( ) Tj (Cisco-IOS-XE-native.yang) Tj ( ) Tj (Cisco-IOS-XE-logging.yang) Tj ( ) Tj (--sample-xml-skeleton-path) Tj (=) Tj (/native/logging) Tj  T*  T* (#) Tj ( ) Tj (See) Tj ( ) Tj (what) Tj ( ) Tj (is) Tj ( ) Tj (needed) Tj ( ) Tj (and) Tj ( ) Tj (the) Tj ( ) Tj (associated) Tj ( ) Tj (values) Tj ( ) Tj (\(e.g.) Tj ( ) Tj (here) Tj ( ) Tj (uint16\)) Tj  T* (##) Tj ( ) Tj (Other) Tj ( ) Tj (useful) Tj ( ) Tj (option,) Tj ( ) Tj (--tree-depth=4,) Tj ( ) Tj (--tree-path=) Tj  T* (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (tree) Tj ( ) Tj (--tree-help) Tj  T* (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (tree) Tj ( ) Tj (Cisco-IOS-XE-native.yang) Tj ( ) Tj (Cisco-IOS-XE-logging.yang) Tj ( ) Tj (--tree-path) Tj (=) Tj (/native/logging) Tj  T* (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (tree) Tj ( ) Tj (Cisco-IOS-XE-native.yang) Tj ( ) Tj (Cisco-IOS-XE-logging.yang) Tj ( ) Tj (--tree-path) Tj (=) Tj (/native/logging/history) Tj  T*  T* (#) Tj ( ) Tj (Generate) Tj ( ) Tj (stub) Tj ( ) Tj (for) Tj ( ) Tj (data) Tj ( ) Tj (retrieval) Tj ( ) Tj (\(default\)) Tj  T* (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (sample-xml-skeleton) Tj ( ) Tj (Cisco-IOS-XE-native.yang) Tj ( ) Tj (Cisco-IOS-XE-logging.yang) Tj ( ) Tj (--sample-xml-skeleton-path) Tj (=) Tj (/native/logging/history) Tj  T*  T* (#) Tj ( ) Tj (Generate) Tj ( ) Tj (stub) Tj ( ) Tj (for) Tj ( ) Tj (Config) Tj ( ) Tj (object) Tj ( ) Tj (and) Tj ( ) Tj (adding) Tj ( ) Tj (type) Tj ( ) Tj (annotations) Tj  T* (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (sample-xml-skeleton) Tj ( ) Tj (Cisco-IOS-XE-native.yang) Tj ( ) Tj (Cisco-IOS-XE-logging.yang) Tj ( ) Tj (--sample-xml-skeleton-path) Tj (=) Tj (/native/logging/history) Tj ( ) Tj (--sample-xml-skeleton-annotations) Tj ( ) Tj (--sample-xml-skeleton-doctype) Tj (=) Tj (config) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 275.5025 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Note on Cisco Models) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 251.2897 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Some versions of the YANG models are not really stable, or better said don't pass yang validation/linting and therefore cannot be used to generate skeletons. E.g. with CSR and 17.3.4a we get the following) Tj T* (errors if we try to generate an xml skeleton:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 212.5397 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 30.19775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (Cisco-IOS-XE-ip.yang:3546:) Tj ( ) Tj (error:) Tj ( ) Tj (") Tj (Cisco-IOS-XE-native:interface) Tj (") Tj ( ) Tj (in) Tj ( ) Tj (the) Tj ( ) Tj (path) Tj ( ) Tj (for) Tj ( ) Tj (Tunnel) Tj ( ) Tj (at) Tj ( ) Tj (Cisco-IOS-XE-native.yang:2269) Tj ( ) Tj (\() Tj (at) Tj ( ) Tj (Cisco-IOS-XE-ip.yang:3542) Tj (\)) Tj ( ) Tj (is) Tj ( ) Tj (not) Tj ( ) Tj (found) Tj  T* (Cisco-IOS-XE-native.yang:2291) Tj ( ) Tj (\() Tj (at) Tj ( ) Tj (Cisco-IOS-XE-ipv6.yang:369) Tj (\)) Tj (:) Tj ( ) Tj (warning:) Tj ( ) Tj (node) Tj ( ) Tj (") Tj (Cisco-IOS-XE-native::native) Tj (") Tj ( ) Tj (is) Tj ( ) Tj (not) Tj ( ) Tj (found) Tj ( ) Tj (in) Tj ( ) Tj (module) Tj ( ) Tj (") Tj (Cisco-IOS-XE-ipv6) Tj (") Tj  T* (Cisco-IOS-XE-native.yang:2588) Tj ( ) Tj (\() Tj (at) Tj ( ) Tj (Cisco-IOS-XE-logging.yang:1144) Tj (\)) Tj (:) Tj ( ) Tj (warning:) Tj ( ) Tj (node) Tj ( ) Tj (") Tj (Cisco-IOS-XE-native::native) Tj (") Tj ( ) Tj (is) Tj ( ) Tj (not) Tj ( ) Tj (found) Tj ( ) Tj (in) Tj ( ) Tj (module) Tj ( ) Tj (") Tj (Cisco-IOS-XE-logging) Tj (") Tj  T* (sample-xml-skeleton) Tj ( ) Tj (plugin) Tj ( ) Tj (needs) Tj ( ) Tj (a) Tj ( ) Tj (valid) Tj ( ) Tj (module) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 197.4147 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (When we do a lint of the corresponding module, we see that it contains many errors.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 182.2897 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (pyang) Tj ( ) Tj (--lint) Tj ( ) Tj (Cisco-IOS-XE-native.yang) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 167.1647 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In order to generate skeleton xmls, a stable version, like 17.1.1 should be used.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 146.9866 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 129.8404 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 70.90125 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Cisco Live YANG Lab) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 119.9654 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 51.9435 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Yang Catalog) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 110.0904 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 86.6565 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Netcommon.Netconf module) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 100.2154 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 112.0507 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Ansible.cfg library, log_path, roles_path) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 90.34037 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 84.903 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Ansible Galaxy Netcommon) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 80.46537 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 83.1705 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Stable 17.1.1 Yang models) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 70.59037 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 56.3115 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (YANG to JSON) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+57 0 obj
+<<
+/Length 2422
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.7165 5.121125 m 44.34675 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (SEe: ) Tj 0 0 1 rg (Tail-f Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 745.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 79.3695 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Validation with yang2dsdl) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 735.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 201.0645 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Good Blog explaining Yang step-by-step, Union, typedef, leafs, deref, etc. etc.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 725.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 68.2815 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Stability issue 17.2.1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 715.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 101.5455 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Arista Manual Restconf, pyang etc.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 705.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 46.389 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Pyang Wiki) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 695.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 110.8748 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (Show commands for Netconf on switch) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 695.8986 cm
+Q
+ 
+endstream
+endobj
+58 0 obj
+<<
+/Nums [ 0 59 0 R 1 60 0 R 2 61 0 R 3 62 0 R 4 63 0 R 
+  5 64 0 R 6 65 0 R ]
+>>
+endobj
+59 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+60 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+61 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+62 0 obj
+<<
+/S /D /St 4
+>>
+endobj
+63 0 obj
+<<
+/S /D /St 5
+>>
+endobj
+64 0 obj
+<<
+/S /D /St 6
+>>
+endobj
+65 0 obj
+<<
+/S /D /St 7
+>>
+endobj
+xref
+0 66
+0000000000 65535 f 
+0000000073 00000 n 
+0000000144 00000 n 
+0000000251 00000 n 
+0000000360 00000 n 
+0000000472 00000 n 
+0000000577 00000 n 
+0000000782 00000 n 
+0000000987 00000 n 
+0000001106 00000 n 
+0000001311 00000 n 
+0000001517 00000 n 
+0000001723 00000 n 
+0000001938 00000 n 
+0000002119 00000 n 
+0000002387 00000 n 
+0000002638 00000 n 
+0000002835 00000 n 
+0000003063 00000 n 
+0000003283 00000 n 
+0000003550 00000 n 
+0000003786 00000 n 
+0000004010 00000 n 
+0000004210 00000 n 
+0000004436 00000 n 
+0000004646 00000 n 
+0000004856 00000 n 
+0000005188 00000 n 
+0000005455 00000 n 
+0000005561 00000 n 
+0000005862 00000 n 
+0000005937 00000 n 
+0000006053 00000 n 
+0000006205 00000 n 
+0000006312 00000 n 
+0000006461 00000 n 
+0000006602 00000 n 
+0000006678 00000 n 
+0000006816 00000 n 
+0000006940 00000 n 
+0000007061 00000 n 
+0000007180 00000 n 
+0000007327 00000 n 
+0000007419 00000 n 
+0000007512 00000 n 
+0000007672 00000 n 
+0000007773 00000 n 
+0000007880 00000 n 
+0000008004 00000 n 
+0000008106 00000 n 
+0000008198 00000 n 
+0000008298 00000 n 
+0000018730 00000 n 
+0000027071 00000 n 
+0000036469 00000 n 
+0000048697 00000 n 
+0000060259 00000 n 
+0000073676 00000 n 
+0000076150 00000 n 
+0000076248 00000 n 
+0000076282 00000 n 
+0000076316 00000 n 
+0000076350 00000 n 
+0000076384 00000 n 
+0000076418 00000 n 
+0000076452 00000 n 
+trailer
+<<
+/ID 
+[<779793285133e95c04d2a1c6aa4b1282><779793285133e95c04d2a1c6aa4b1282>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 29 0 R
+/Root 28 0 R
+/Size 66
+>>
+startxref
+76486
+%%EOF

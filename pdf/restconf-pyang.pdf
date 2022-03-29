@@ -1,0 +1,1247 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 6 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
+endobj
+7 0 obj
+<<
+/Contents 26 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 25 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Contents 27 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 25 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/CiscoDevNet/BRKDEV-1368)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 69.24975 109.6679 77.12475 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/Annots [ 9 0 R ] /Contents 28 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 25 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://developer.cisco.com/docs/yangsuite)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 759.5979 102.3809 767.4729 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/Annots [ 11 0 R ] /Contents 29 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 25 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+13 0 obj
+<<
+/Outlines 15 0 R /PageLabels 30 0 R /PageMode /UseNone /Pages 25 0 R /Type /Catalog
+>>
+endobj
+14 0 obj
+<<
+/Author () /CreationDate (D:20220329112136-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220329112136-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Restconf, pyang) /Trapped /False
+>>
+endobj
+15 0 obj
+<<
+/Count 9 /First 16 0 R /Last 24 0 R /Type /Outlines
+>>
+endobj
+16 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 17 0 R /Parent 15 0 R /Title (Intro)
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 18 0 R /Parent 15 0 R /Prev 16 0 R /Title (How to setup the Switch for Restconf)
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 19 0 R /Parent 15 0 R /Prev 17 0 R /Title (URL Creation Revisioned)
+>>
+endobj
+19 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 20 0 R /Parent 15 0 R /Prev 18 0 R /Title (Important URLs)
+>>
+endobj
+20 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 21 0 R /Parent 15 0 R /Prev 19 0 R /Title (Querying)
+>>
+endobj
+21 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 22 0 R /Parent 15 0 R /Prev 20 0 R /Title (Pyang to view and find structure for UPDATE/PUT)
+>>
+endobj
+22 0 obj
+<<
+/Dest [ 10 0 R /Fit ] /Next 23 0 R /Parent 15 0 R /Prev 21 0 R /Title (Simple script for CREATION/POST)
+>>
+endobj
+23 0 obj
+<<
+/Dest [ 10 0 R /Fit ] /Next 24 0 R /Parent 15 0 R /Prev 22 0 R /Title (More realistic example)
+>>
+endobj
+24 0 obj
+<<
+/Dest [ 10 0 R /Fit ] /Parent 15 0 R /Prev 23 0 R /Title (References)
+>>
+endobj
+25 0 obj
+<<
+/Count 4 /Kids [ 7 0 R 8 0 R 10 0 R 12 0 R ] /Type /Pages
+>>
+endobj
+26 0 obj
+<<
+/Length 10726
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 741.0236 cm
+q
+BT 1 0 0 1 0 4 Tm 175.6242 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Restconf, pyang) Tj T* -175.6242 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2022-02-02 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 680.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 670.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.38025 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 660.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 93.954 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (How to setup the Switch for Restconf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 650.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 67.10025 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (URL Creation Revisioned) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 640.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 44.6355 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Important URLs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 630.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 29.17425 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Querying) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 620.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 124.8765 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Pyang to view and find structure for UPDATE/PUT) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 611.0236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 89.8485 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Simple script for CREATION/POST) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 601.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 60.3855 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (More realistic example) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 591.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 34.71825 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 591.2736 cm
+Q
+q
+1 0 0 1 57.02362 571.0955 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 553.9492 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Restconf is often easier to read than netconf. However it lacks the possiblity to use datastores and therefore transactional bevhavior and rollback on errors.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 533.7711 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (How to setup the Switch for Restconf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 477.2499 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 45.94775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (aaa) Tj ( ) Tj (new-model) Tj  T* (aaa) Tj ( ) Tj (authentication) Tj ( ) Tj (login) Tj ( ) Tj (default) Tj ( ) Tj (local) Tj  T* (aaa) Tj ( ) Tj (authorization) Tj ( ) Tj (exec) Tj ( ) Tj (default) Tj ( ) Tj (local) Tj  T* (username) Tj ( ) Tj (admin) Tj ( ) Tj (password) Tj ( ) Tj (cisco) Tj  T* (ip) Tj ( ) Tj (http) Tj ( ) Tj (server) Tj  T* (restconf) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 457.0717 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (URL Creation Revisioned) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 432.0505 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Under the hood, Restconf also maps to YANG datamodels. Therefore the same tooling can be used as with Netconf. The following image from CiscoLive shows a good mapping of YANG data-model into) Tj T* (restconf URL.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 416.9255 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (So Remember: - https://) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 401.8005 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (/) Tj (/data/[) Tj (]) Tj (/) Tj ([?) Tj (] - https://1.1.1.1/restconf/data/ietf-interfaces:interface/interface=GigabithEthernet1?depth=unbounded) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 381.6224 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Important URLs) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 356.6011 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Some important URLs are listed as a reference below. Remember that the HTTP Headers for ) Tj /F5 5.25 Tf (Content-Type) Tj /F1 5.25 Tf ( and ) Tj /F5 5.25 Tf (Accept) Tj /F1 5.25 Tf ( both should contain ) Tj /F4 5.25 Tf (application/yang-data+json) Tj /F1 5.25 Tf ( when working with) Tj T* (Restconf and JSON.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 311.9761 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 114.9127 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (URL) Tj T* -114.9127 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 108.639 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (comment) Tj T* -108.639 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (/restconf/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See if restconf is working) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (/restconf/data/ietf-yang-library:modules-state) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (List all Yang Modules, deviations, features etc.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (/restconf/operations/cisco-ia:save-config/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Cisco Native, save config) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (/restconf/data/ietf-interfaces:interfaces/interface=GigabitEthernet2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Get interface cfg) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 291.798 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Querying) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 274.6518 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (A little bit more complex example with limiting the Leafs that are returned looks like this.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 259.5268 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (https://) Tj ({{) Tj (host) Tj (}}) Tj (/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet) Tj (=) Tj (2) Tj (?fields) Tj (=) Tj (Cisco-IOS-XE-native:GigabitEthernet) Tj (\() Tj (name) Tj (;) Tj (description) Tj (;) Tj (ip) Tj (\)) Tj (&) Tj (depth) Tj (=) Tj (unbounded) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 244.4018 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (A simple python script for quing this would look as follows:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 63.90175 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 171.9478 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (import) Tj ( ) Tj (requests) Tj ( ) Tj T* (import) Tj ( ) Tj (urllib3) Tj ( ) Tj T* (import) Tj ( ) Tj (json) Tj ( ) Tj T* (import) Tj ( ) Tj (http) Tj ( ) Tj T* (from) Tj ( ) Tj (requests.auth) Tj ( ) Tj (import) Tj ( ) Tj (HTTPBasicAuth) Tj ( ) Tj T* (from) Tj ( ) Tj (urllib3.exceptions) Tj ( ) Tj (import) Tj ( ) Tj (InsecureRequestWarning) Tj ( ) Tj T* ( ) Tj T* ( ) Tj T* (urllib3) Tj (.) Tj (disable_warnings) Tj (\() Tj (InsecureRequestWarning) Tj (\)) Tj ( ) Tj T* ( ) Tj T* (HOST) Tj ( ) Tj (=) Tj (') Tj (10.10.10.200) Tj (') Tj ( ) Tj T* (USER) Tj ( ) Tj (=) Tj (') Tj (admin) Tj (') Tj ( ) Tj T* (PASS) Tj ( ) Tj (=) Tj (') Tj (xy.) Tj (') Tj ( ) Tj T* (HEADERS) Tj ( ) Tj (=) Tj ( ) Tj ({) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (') Tj (Content-Type) Tj (') Tj (:) Tj ( ) Tj (') Tj (application/yang-data+json) Tj (') Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (') Tj (Accept) Tj (') Tj (:) Tj ( ) Tj (') Tj (application/yang-data+json) Tj (') Tj ( ) Tj T* (}) Tj ( ) Tj T* (VERIFY) Tj ( ) Tj (=) Tj ( ) Tj (False) Tj ( ) Tj T* (AUTH) Tj ( ) Tj (=) Tj ( ) Tj (HTTPBasicAuth) Tj (\() Tj (USER) Tj (,) Tj ( ) Tj (PASS) Tj (\)) Tj ( ) Tj T* ( ) Tj T* (def) Tj ( ) Tj (get_restconf_interface_oper_state) Tj (\() Tj (interface) Tj (,) Tj ( ) Tj (filter) Tj (\):) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (url) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (https://) Tj (') Tj ( ) Tj (+) Tj ( ) Tj (HOST) Tj ( ) Tj (+) Tj ( ) Tj (') Tj (/restconf/data/interfaces-state/interface=) Tj (') Tj ( ) Tj (+) Tj ( ) Tj (interface) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+27 0 obj
+<<
+/Length 11818
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 684.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 77.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (filter) Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (url) Tj ( ) Tj (=) Tj ( ) Tj (url) Tj ( ) Tj (+) Tj ( ) Tj (') Tj (?) Tj (') Tj ( ) Tj (+) Tj ( ) Tj (filter) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (resp) Tj ( ) Tj (=) Tj ( ) Tj (requests) Tj (.) Tj (get) Tj (\() Tj (url) Tj (,) Tj ( ) Tj (headers) Tj (=) Tj (HEADERS) Tj (,) Tj ( ) Tj (verify) Tj (=) Tj (VERIFY) Tj (,) Tj ( ) Tj (auth) Tj (=) Tj (AUTH) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (resp) Tj (.) Tj (status_code) Tj ( ) Tj (==) Tj ( ) Tj (http) Tj (.) Tj (HTTPStatus) Tj (.) Tj (OK) Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (interface_info) Tj ( ) Tj (=) Tj ( ) Tj (resp) Tj (.) Tj (json) Tj (\(\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (operational_data) Tj ( ) Tj (=) Tj ( ) Tj (interface_info) Tj ([) Tj (') Tj (ietf-interfaces:interface) Tj (') Tj (]) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (json) Tj (.) Tj (dumps) Tj (\() Tj (operational_data) Tj (,) Tj ( ) Tj (indent) Tj (=) Tj (4) Tj (\)\)) Tj ( ) Tj T* ( ) Tj T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (get_restconf_interface_oper_state) Tj (\() Tj (') Tj (GigabitEthernet1) Tj (') Tj (,) Tj ( ) Tj (') Tj (content=all) Tj (') Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 669.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (A similar call using the native model \(and only showing difference\) would like the folowing.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 559.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 101.0727 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (def) Tj ( ) Tj (get_restconf_interface_oper_state) Tj (\() Tj (interface) Tj (,) Tj ( ) Tj (filter) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Cisco-IOS-XE-native:native/interface/GigabitEthernet=2?fields=Cisco-IOS-XE-native:GigabitEthernet\(name;description;ip\)) Tj (&) Tj (depth=unbounded) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (url) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (https://) Tj (') Tj ( ) Tj (+) Tj ( ) Tj (HOST) Tj ( ) Tj (+) Tj ( ) Tj (') Tj (/restconf/data/Cisco-IOS-XE-native:native/interface/) Tj (') Tj ( ) Tj (+) Tj ( ) Tj (interface) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (url) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (https://) Tj (') Tj ( ) Tj (+) Tj ( ) Tj (HOST) Tj ( ) Tj (+) Tj ( ) Tj (') Tj (/restconf/data/interfaces-state/interface=) Tj (') Tj ( ) Tj (+) Tj ( ) Tj (interface) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (...) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (resp) Tj (.) Tj (status_code) Tj ( ) Tj (==) Tj ( ) Tj (http) Tj (.) Tj (HTTPStatus) Tj (.) Tj (OK) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (...) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (operational_data) Tj ( ) Tj (=) Tj ( ) Tj (interface_info[) Tj (') Tj (ietf-interfaces:interface) Tj (') Tj (]) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (operational_data) Tj ( ) Tj (=) Tj ( ) Tj (interface_info) Tj ([) Tj (') Tj (Cisco-IOS-XE-native:GigabitEthernet) Tj (') Tj (]) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (...) Tj  T*  T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (get_restconf_interface_oper_state) Tj (\() Tj (') Tj (GigabitEthernet=1) Tj (') Tj (,) Tj ( ) Tj (') Tj (content=config) Tj (') Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 544.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (A sidenote here has to be made on the content keyword, which only includes configuratonal data, which shows the usage of another filter.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 524.2205 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Pyang to view and find structure for UPDATE/PUT) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 499.1992 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (As mentioned the known toolchain can be used if something should be configured on top. An example of this would be to set a different load interval. In order to find the required paraemter, we can either) Tj T* (configure it in the CLI and do another GET or we use pyang to find the correct place in the structure.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 484.0742 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (tree) Tj ( ) Tj (Cisco-IOS-XE-native.yang) Tj ( ) Tj (--tree-path) Tj (=) Tj (/native/interface/GigabitEthernet) Tj ( ) Tj (--tree-depth) Tj (=) Tj (5) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 468.9492 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (We determine where load-interval is sitting in the hierarchy and use this to construct the json.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 406.5742 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 53.82275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (module:) Tj ( ) Tj (Cisco-IOS-XE-native) Tj  T*  ( ) Tj (+--rw) Tj ( ) Tj (native) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (interface) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (GigabitEthernet*) Tj ( ) Tj ([) Tj (name) Tj (]) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (name) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (string) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (...) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (load-interval?) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (uint16) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 375.6992 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 21.8555 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (By knowing the exact path, an Update in the form of a PUT request, is as easy as placing the needed json data at the right level. This can be much easier for certain use cases than with netconf, where the) Tj T* (whole path to structure would have to be included. Remember the key must always be specified, with the key being the name here, and in particular for IOS-XE the name only being the number, so e.g.) Tj T* (GigabitEthernet=2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 187.3242 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 179.8228 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (PUT) Tj ( ) Tj (to) Tj ( ) Tj  T* (##) Tj ( ) Tj (https://{{host}}/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet=2/load-interval) Tj  T*  T* (#) Tj ( ) Tj (With) Tj ( ) Tj (Content) Tj  T* (##) Tj ( ) Tj ({) Tj  T* (##) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (load-interval) Tj (") Tj (:) Tj ( ) Tj (30) Tj  T* (##) Tj ( ) Tj (}) Tj  T*  T* (#) Tj ( ) Tj (...) Tj  T* (def) Tj ( ) Tj (update_restconf_native_interval) Tj (\() Tj (interface) Tj (,) Tj ( ) Tj (param) Tj (,) Tj ( ) Tj (value) Tj (\):) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (update_dict) Tj ( ) Tj (=) Tj ( ) Tj ({) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (param) Tj (:) Tj ( ) Tj (value) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (}) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (url) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (https://) Tj (') Tj ( ) Tj (+) Tj ( ) Tj (HOST) Tj ( ) Tj (+) Tj ( ) Tj (') Tj (/restconf/data/Cisco-IOS-XE-native:native/interface/) Tj (') Tj ( ) Tj (+) Tj ( ) Tj (interface) Tj ( ) Tj (+) Tj ( ) Tj (') Tj (/) Tj (') Tj ( ) Tj (+) Tj ( ) Tj (param) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (url) Tj (,) Tj ( ) Tj (json) Tj (.) Tj (dumps) Tj (\() Tj (update_dict) Tj (\)\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (resp) Tj ( ) Tj (=) Tj ( ) Tj (requests) Tj (.) Tj (put) Tj (\() Tj (url) Tj (,) Tj ( ) Tj (headers) Tj (=) Tj (HEADERS) Tj (,) Tj ( ) Tj (verify) Tj (=) Tj (VERIFY) Tj (,) Tj ( ) Tj (auth) Tj (=) Tj (AUTH) Tj (,) Tj ( ) Tj (data) Tj (=) Tj (json) Tj (.) Tj (dumps) Tj (\() Tj (update_dict) Tj (\)\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (if) Tj ( ) Tj (resp) Tj (.) Tj (status_code) Tj ( ) Tj (in) Tj ( ) Tj ([) Tj (http) Tj (.) Tj (HTTPStatus) Tj (.) Tj (CREATED) Tj (,) Tj ( ) Tj (http) Tj (.) Tj (HTTPStatus) Tj (.) Tj (NO_CONTENT) Tj (]:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (') Tj (Success) Tj (') Tj (\)) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (else) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (print) Tj (\() Tj (f) Tj (') Tj (Error:) Tj ( ) Tj ({) Tj (resp) Tj (}) Tj (') Tj (\)) Tj  T*  T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (') Tj (__main__) Tj (') Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (update_restconf_native_interval) Tj (\() Tj (') Tj (GigabitEthernet=2) Tj (') Tj (,) Tj ( ) Tj (') Tj (load-interval) Tj (') Tj (,) Tj ( ) Tj (30) Tj (\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 164.3242 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Another option would be to update the whole interface, which would mean PUT to URL: ) Tj /F4 5.25 Tf (https://{{host}}/restconf/data/Cisco-IOS-XE-native:native/interface/Loopback=104) Tj /F1 5.25 Tf ( in json.) Tj T* (The Path needs to include the interface to update referenced by its key.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 70.44925 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 85.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ({) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (") Tj (Loopback) Tj (") Tj (:{) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (name) Tj (") Tj (:) Tj ( ) Tj (") Tj (104) Tj (") Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (description) Tj (") Tj (:) Tj ( ) Tj (") Tj (TEST) Tj (") Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (ip) Tj (") Tj (:) Tj ( ) Tj ({) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (address) Tj (") Tj (:) Tj ( ) Tj ({) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (primary) Tj (") Tj (:) Tj ( ) Tj ({) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (address) Tj (") Tj (:) Tj ( ) Tj (") Tj (192.168.4.1) Tj (") Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (mask) Tj (") Tj (:) Tj ( ) Tj (") Tj (255.255.255.248) Tj (") Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (}) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (}) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+28 0 obj
+<<
+/Length 9592
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 739.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 22.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (}) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (}) Tj ( ) Tj T* (}) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 724.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (We could also use this knowledge to create a sample XML skeleton using pyang and even convert it to json using xmltojson \(or jxmlease\):) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 693.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 22.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (pyang) Tj ( ) Tj (-f) Tj ( ) Tj (sample-xml-skeleton) Tj ( ) Tj (Cisco-IOS-XE-native.yang) Tj ( ) Tj (--sample-xml-skeleton-path) Tj (=) Tj (/native/interface/GigabitEthernet/load-interval) Tj ( ) Tj (--sample-xml-skeleton-doctype) Tj (=) Tj (config) Tj ( ) Tj (>) Tj ( ) Tj (skeleton_load_interval) Tj ( ) Tj (>) Tj ( ) Tj (skeleton_load_interval.xml) Tj  T*  T* (xmltojson) Tj ( ) Tj (skeleton_load_interval) Tj ( ) Tj (|) Tj ( ) Tj (jq) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 673.2205 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Simple script for CREATION/POST) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 656.0742 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (A post must always be on the enclosing container, for example: in the native Model the enclosing container is the ) Tj /F4 5.25 Tf (interface) Tj /F1 5.25 Tf ( whereas in the ietf-interface model it is the ) Tj /F4 5.25 Tf (interfaces) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 570.0742 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 77.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (module:) Tj ( ) Tj (Cisco-IOS-XE-native) Tj  T*  ( ) Tj (+--rw) Tj ( ) Tj (native) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (interface) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (Loopback*) Tj ( ) Tj ([) Tj (name) Tj (]) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (|) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (...) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (GigabitEthernet*) Tj ( ) Tj ([) Tj (name) Tj (]) Tj  T*  T* (module:) Tj ( ) Tj (ietf-interfaces) Tj  T*  ( ) Tj (+--rw) Tj ( ) Tj (interfaces) Tj  T*  ( ) Tj (|) Tj ( ) Tj ( ) Tj (+--rw) Tj ( ) Tj (interface*) Tj ( ) Tj ([) Tj (name) Tj (]) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 554.9492 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The important part is that the Restcall JSON includes the module, but NOT the enclosing container. So again as an example:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 193.3242 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 353.0727 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ({) Tj  T* (") Tj (_comment_start) Tj (") Tj (:) Tj ( ) Tj (") Tj (############################) Tj (") Tj (,) Tj  T* (") Tj (post_to) Tj (") Tj (:) Tj ( ) Tj (") Tj (https://{{host}}/restconf/data/Cisco-IOS-XE-native:native/interface/) Tj (") Tj (,) Tj ( ) Tj  T* (") Tj (_comment) Tj (") Tj (:) Tj ( ) Tj (") Tj (Could) Tj ( ) Tj (also) Tj ( ) Tj (use) Tj ( ) Tj (just) Tj ( ) Tj (Loopback,) Tj ( ) Tj (good) Tj ( ) Tj (practice) Tj ( ) Tj (to) Tj ( ) Tj (include) Tj ( ) Tj (module:container/list/...) Tj (") Tj (,) Tj ( ) Tj  T* (") Tj (_comment_end) Tj (") Tj (:) Tj ( ) Tj (") Tj (##############################) Tj (") Tj  T* (}) Tj  T*  T* ({) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (") Tj (Cisco-IOS-XE-native:Loopback) Tj (") Tj (:) Tj ( ) Tj ({) Tj  T*  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (name) Tj (") Tj (:) Tj ( ) Tj (") Tj (101) Tj (") Tj (,) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (description) Tj (") Tj (:) Tj ( ) Tj (") Tj (TEST) Tj (") Tj (,) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (ip) Tj (") Tj (:) Tj ( ) Tj ({) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (address) Tj (") Tj (:) Tj ( ) Tj ({) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (primary) Tj (") Tj (:) Tj ( ) Tj ({) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (address) Tj (") Tj (:) Tj ( ) Tj (") Tj (192.168.2.1) Tj (") Tj (,) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (mask) Tj (") Tj (:) Tj ( ) Tj (") Tj (255.255.255.248) Tj (") Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (}) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (}) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (}) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (}) Tj ( ) Tj  T* (}) Tj  T*  T* ({) Tj  T* (") Tj (_comment_start) Tj (") Tj (:) Tj ( ) Tj (") Tj (############################) Tj (") Tj (,) Tj  T* (") Tj (post_to) Tj (") Tj (:) Tj ( ) Tj (") Tj (https://{{host}}/restconf/data/ietf-interfaces:interfaces) Tj (") Tj (,) Tj  T* (") Tj (_comment_end) Tj (") Tj (:) Tj ( ) Tj (") Tj (##############################) Tj (") Tj  T* (}) Tj  T*  T* ({) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (") Tj (ietf-interfaces:interface) Tj (") Tj (:) Tj ( ) Tj ({) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (name) Tj (") Tj (:) Tj ( ) Tj (") Tj (Loopback102) Tj (") Tj (,) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (description) Tj (") Tj (:) Tj ( ) Tj (") Tj (Configured) Tj ( ) Tj (by) Tj ( ) Tj (RESTCONF) Tj (") Tj (,) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (type) Tj (") Tj (:) Tj ( ) Tj (") Tj (iana-if-type:softwareLoopback) Tj (") Tj (,) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (enabled) Tj (") Tj (:) Tj ( ) Tj (true) Tj (,) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (ietf-ip:ipv4) Tj (") Tj (:) Tj ( ) Tj ({) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (address) Tj (") Tj (:) Tj ( ) Tj ([) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ({) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (ip) Tj (") Tj (:) Tj ( ) Tj (") Tj (172.16.100.1) Tj (") Tj (,) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (") Tj (netmask) Tj (") Tj (:) Tj ( ) Tj (") Tj (255.255.255.0) Tj (") Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (}) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (]) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (}) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (}) Tj  T* (}) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 154.5742 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 29.7305 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Common errors: - POST to a nonexistent list resource \(If element does not exist, e.g. /restconf/data/Cisco-IOS-XE-native:native/interface/Loopback=102\) - ) Tj /F5 5.25 Tf (POST on list must be on list element) Tj /F1 5.25 Tf ( \(e.g Post to) Tj T* (restconf/data/Cisco-IOS-XE-native:native/interface/Loopback instead of restconf/data/Cisco-IOS-XE-native:native/interface, which is the enclosing container for the list itself. - Post to) Tj T* (https://{{host}}/restconf/data/Cisco-IOS-XE-native:native/ with the json containing the whole tree "{"interface":... } as this would mean creating all interfaces \(which cannot be done\). Correct would be to post to) Tj T* (...native/interface) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 134.3961 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (More realistic example) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 117.2499 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In a real world script it might be useful to construct the json content dynamically.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 102.1249 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Pydantic + Dict.update) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 81.94675 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 64.8005 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 51.64425 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (RKDEV-1368) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+29 0 obj
+<<
+/Length 389
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 20.13375 5.121125 m 44.35725 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See: ) Tj 0 0 1 rg (YangSuite) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 755.1486 cm
+Q
+ 
+endstream
+endobj
+30 0 obj
+<<
+/Nums [ 0 31 0 R 1 32 0 R 2 33 0 R 3 34 0 R ]
+>>
+endobj
+31 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+32 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+33 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+34 0 obj
+<<
+/S /D /St 4
+>>
+endobj
+xref
+0 35
+0000000000 65535 f 
+0000000073 00000 n 
+0000000144 00000 n 
+0000000251 00000 n 
+0000000360 00000 n 
+0000000472 00000 n 
+0000000577 00000 n 
+0000000696 00000 n 
+0000000901 00000 n 
+0000001106 00000 n 
+0000001300 00000 n 
+0000001524 00000 n 
+0000001719 00000 n 
+0000001944 00000 n 
+0000002050 00000 n 
+0000002323 00000 n 
+0000002397 00000 n 
+0000002483 00000 n 
+0000002613 00000 n 
+0000002730 00000 n 
+0000002838 00000 n 
+0000002940 00000 n 
+0000003081 00000 n 
+0000003207 00000 n 
+0000003324 00000 n 
+0000003416 00000 n 
+0000003496 00000 n 
+0000014275 00000 n 
+0000026146 00000 n 
+0000035790 00000 n 
+0000036230 00000 n 
+0000036298 00000 n 
+0000036332 00000 n 
+0000036366 00000 n 
+0000036400 00000 n 
+trailer
+<<
+/ID 
+[<9e5215e7910e165eb4bb791398f6ee4e><9e5215e7910e165eb4bb791398f6ee4e>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 14 0 R
+/Root 13 0 R
+/Size 35
+>>
+startxref
+36434
+%%EOF

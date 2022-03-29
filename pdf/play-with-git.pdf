@@ -69,42 +69,42 @@ endobj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://gist.github.com/karenyyng/f19ff75c60f18b4b8149)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 517.4253 104.1239 525.3003 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 491.2125 104.1239 499.0875 ] /Subtype /Link /Type /Annot
 >>
 endobj
 11 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://www.youtube.com/watch?v=f1wnYdLEpgI)
->> /Border [ 0 0 0 ] /Rect [ 65.89862 497.6753 111.4161 505.5503 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 65.89862 471.4625 111.4161 479.3375 ] /Subtype /Link /Type /Annot
 >>
 endobj
 12 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://www.themoderncoder.com/a-better-git-workflow-with-rebase/)
->> /Border [ 0 0 0 ] /Rect [ 65.89862 487.8003 111.4161 495.6753 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 65.89862 461.5875 111.4161 469.4625 ] /Subtype /Link /Type /Annot
 >>
 endobj
 13 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing)
->> /Border [ 0 0 0 ] /Rect [ 65.89862 477.9253 111.4161 485.8003 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 65.89862 451.7125 111.4161 459.5875 ] /Subtype /Link /Type /Annot
 >>
 endobj
 14 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://www.youtube.com/watch?v=7Mh259hfxJg)
->> /Border [ 0 0 0 ] /Rect [ 65.89862 468.0503 97.70312 475.9253 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 65.89862 441.8375 97.70312 449.7125 ] /Subtype /Link /Type /Annot
 >>
 endobj
 15 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://www.atlassian.com/git/tutorials/comparing-workflows)
->> /Border [ 0 0 0 ] /Rect [ 65.89862 448.3003 137.3826 456.1753 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 65.89862 422.0875 137.3826 429.9625 ] /Subtype /Link /Type /Annot
 >>
 endobj
 16 0 obj
@@ -124,7 +124,7 @@ endobj
 endobj
 18 0 obj
 <<
-/Author () /CreationDate (D:20220202154557-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202154557-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20220329112140-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220329112140-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (Play with Git) /Trapped /False
 >>
 endobj
@@ -217,7 +217,7 @@ endobj
 endobj
 36 0 obj
 <<
-/Dest [ 16 0 R /Fit ] /Next 37 0 R /Parent 32 0 R /Prev 35 0 R /Title (Git xy)
+/Dest [ 16 0 R /Fit ] /Next 37 0 R /Parent 32 0 R /Prev 35 0 R /Title (Graphical Git Tools)
 >>
 endobj
 37 0 obj
@@ -237,7 +237,7 @@ endobj
 endobj
 40 0 obj
 <<
-/Length 16037
+/Length 16051
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -514,8 +514,8 @@ q
 BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
 .492188 w
 0 0 1 RG
-n 15.75 5.121125 m 29.169 5.121125 l S
-BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Git xy) Tj T* ET
+n 15.75 5.121125 m 60.6795 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Graphical Git Tools) Tj T* ET
 Q
 Q
 q
@@ -3115,7 +3115,7 @@ endstream
 endobj
 44 0 obj
 <<
-/Length 8364
+/Length 8905
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -3521,14 +3521,43 @@ q
 1 0 0 1 1 -1 cm
 q
 .605883 w
-BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Git xy) Tj T* ET
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Graphical Git Tools) Tj T* ET
 Q
 Q
 q
 Q
 Q
 q
-1 0 0 1 57.02362 547.4706 cm
+1 0 0 1 57.02362 549.2898 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Git Kraken) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 539.4148 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Git Sourceree) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 539.4148 cm
+Q
+q
+1 0 0 1 57.02362 521.2579 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -3540,7 +3569,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 529.3138 cm
+1 0 0 1 57.02362 503.101 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -3552,7 +3581,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 512.976 cm
+1 0 0 1 57.02362 486.7633 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -3567,7 +3596,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 503.101 cm
+1 0 0 1 57.02362 476.8883 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -3580,7 +3609,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 493.226 cm
+1 0 0 1 57.02362 467.0133 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -3595,7 +3624,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 483.351 cm
+1 0 0 1 57.02362 457.1383 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -3610,7 +3639,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 473.476 cm
+1 0 0 1 57.02362 447.2633 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -3625,7 +3654,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 463.601 cm
+1 0 0 1 57.02362 437.3883 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -3640,7 +3669,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 453.726 cm
+1 0 0 1 57.02362 427.5133 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -3653,7 +3682,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 443.851 cm
+1 0 0 1 57.02362 417.6383 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -3668,7 +3697,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 443.851 cm
+1 0 0 1 57.02362 417.6383 cm
 Q
  
 endstream
@@ -3742,24 +3771,24 @@ xref
 0000004904 00000 n 
 0000005009 00000 n 
 0000005114 00000 n 
-0000005215 00000 n 
-0000005312 00000 n 
-0000005398 00000 n 
-0000005483 00000 n 
-0000021573 00000 n 
-0000035629 00000 n 
-0000051126 00000 n 
-0000063100 00000 n 
-0000071516 00000 n 
-0000071593 00000 n 
-0000071627 00000 n 
-0000071661 00000 n 
-0000071695 00000 n 
-0000071729 00000 n 
+0000005228 00000 n 
+0000005325 00000 n 
+0000005411 00000 n 
+0000005496 00000 n 
+0000021600 00000 n 
+0000035656 00000 n 
+0000051153 00000 n 
+0000063127 00000 n 
+0000072084 00000 n 
+0000072161 00000 n 
+0000072195 00000 n 
+0000072229 00000 n 
+0000072263 00000 n 
+0000072297 00000 n 
 trailer
 <<
 /ID 
-[<a1e5194c0096901cffe4803525a7072d><a1e5194c0096901cffe4803525a7072d>]
+[<ee2de3af284d211bad22eb52a6332486><ee2de3af284d211bad22eb52a6332486>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 18 0 R
@@ -3767,5 +3796,5 @@ trailer
 /Size 51
 >>
 startxref
-71763
+72331
 %%EOF

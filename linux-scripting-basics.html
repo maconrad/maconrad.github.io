@@ -143,11 +143,11 @@ jQuery(document).ready(function($) {
 <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
 <meta content="Mario" name="author"/>
-<meta content="Table of contents: Basics Regex Grep Awk Sed Bashscripts Expect Basics Shell parses and interprets cmds and passes it to kernel for execution, usually in interactive mode, but can be scripted. Regex Definition Pattern: Sequence of Characters, can use [], {} or () Literal: String that represents itself, e.g. Hello matches Hello …" name="description"/>
+<meta content="Table of contents: Basics Regex Grep Awk Sed Bashscripts Expect Unsorted Basics Shell parses and interprets cmds and passes it to kernel for execution, usually in interactive mode, but can be scripted. Regex Definition Pattern: Sequence of Characters, can use [], {} or () Literal: String that represents itself, e.g. Hello matches …" name="description"/>
 <meta content="linux" name="keywords"/>
 <meta content="PeliBlog" property="og:site_name">
 <meta content="Linux Scripting Basics" property="og:title"/>
-<meta content="Table of contents: Basics Regex Grep Awk Sed Bashscripts Expect Basics Shell parses and interprets cmds and passes it to kernel for execution, usually in interactive mode, but can be scripted. Regex Definition Pattern: Sequence of Characters, can use [], {} or () Literal: String that represents itself, e.g. Hello matches Hello …" property="og:description"/>
+<meta content="Table of contents: Basics Regex Grep Awk Sed Bashscripts Expect Unsorted Basics Shell parses and interprets cmds and passes it to kernel for execution, usually in interactive mode, but can be scripted. Regex Definition Pattern: Sequence of Characters, can use [], {} or () Literal: String that represents itself, e.g. Hello matches …" property="og:description"/>
 <meta content="en_US" property="og:locale"/>
 <meta content="https://maconrad.github.io/linux-scripting-basics.html" property="og:url"/>
 <meta content="article" property="og:type"/>
@@ -214,6 +214,7 @@ jQuery(document).ready(function($) {
 <li><a href="#sed">Sed</a></li>
 <li><a href="#bashscripts">Bashscripts</a></li>
 <li><a href="#expect">Expect</a></li>
+<li><a href="#unsorted">Unsorted</a></li>
 </ul>
 </li>
 </ul>
@@ -497,6 +498,22 @@ grep access-list router.cfg <span class="p">|</span> sed -e <span class="s1">'s/
 <div class="highlight"><pre><span></span><code>brew install pyenv 
 </code></pre></div>
 <p>asdf</p>
+<h3 id="unsorted">Unsorted</h3>
+<div class="highlight"><pre><span></span><code>pip3 list --outdated --format<span class="o">=</span>freeze <span class="p">|</span> grep -v <span class="s1">'^\-e'</span> <span class="p">|</span> cut -d <span class="o">=</span> -f <span class="m">1</span> <span class="p">|</span> xargs -n1 pip3 install -U 
+
+ls -al <span class="p">|</span> awk <span class="s1">'{print $9}'</span>
+du -hs --apparent-size ./*
+find . -type f -size +1M 
+find . -type d -print0 <span class="p">|</span> xargs -0 ls
+find . -maxdepth <span class="m">1</span> -type d -print0
+find . -maxdepth <span class="m">1</span> -type d -print0 <span class="p">|</span> xargs -0 du -hs <span class="o">(</span>all together<span class="o">)</span>
+
+ls -Ahl <span class="o">(</span>everthing without .<span class="o">(</span>dot<span class="o">)</span> and ..<span class="o">(</span>dotdot<span class="o">))</span>
+
+ls -Ahl <span class="p">|</span> awk <span class="s1">'{print $9}'</span> <span class="p">|</span> xargs du -hs <span class="o">(</span>size per directory<span class="o">)</span>
+
+ls -1ad .* <span class="p">|</span>  tail -n +3 <span class="o">(</span>list <span class="m">1</span> entry per row, all and only directory, <span class="k">then</span> pipe to tail and start at line <span class="m">3</span> <span class="o">(</span>exclude . and ..<span class="o">)</span>
+</code></pre></div>
 </div>
 <div class="tag-cloud">
 <p>
@@ -507,6 +524,7 @@ grep access-list router.cfg <span class="p">|</span> sed -e <span class="s1">'s/
 <h4>You might enjoy</h4>
 <ul class="related-posts">
 <li><a href="https://maconrad.github.io/cgroups-namespaces.html">Cgroups, Namespaces</a></li>
+<li><a href="https://maconrad.github.io/rhel-rocky-linux-centos-specifics.html">RHEL, Rocky Linux, Centos specifics</a></li>
 <li><a href="https://maconrad.github.io/selinux.html">SELinux</a></li>
 <li><a href="https://maconrad.github.io/linux-basics-reminder.html">Linux Basics Reminder</a></li>
 </ul>

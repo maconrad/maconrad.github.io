@@ -237,7 +237,119 @@ jQuery(document).ready(function($) {
 
 <article>
   <header>
-    <h2><a href="https://maconrad.github.io/single-responsibility-separation-of-concern.html#single-responsibility-separation-of-concern">Single Responsibility, Separation of Concern</a></h2>
+    <h2><a href="https://maconrad.github.io/rhel-rocky-linux-centos-specifics.html#rhel-rocky-linux-centos-specifics">RHEL, Rocky Linux, Centos specifics</a></h2>
+    <p>
+      Posted on Sa 06 November 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/linux.html">linux</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#terminology">Terminology</a></li>
+<li><a href="#software-management">Software Management</a></li>
+<li><a href="#headless-management">Headless Management</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#firewall">Firewall</a></li>
+<li><a href="#selinux">SELinux</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#container">Container</a></li>
+<li><a href="#other-useful">Other Useful</a></li>
+<li><a href="#refs">Refs</a></li>
+</ul>
+</div>
+<h2 id="terminology">Terminology</h2>
+<ul>
+<li>YUM: Package Manager for variate of Linux systems, has been replaced by DNF. YUM is a front-end for RPM.</li>
+<li>DNF: Improved Dependeny resolution over YUM</li>
+<li>Snaps: Snaps are applications packaged with all …</li></ul></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/rhel-rocky-linux-centos-specifics.html#rhel-rocky-linux-centos-specifics">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/selinux.html#selinux">SELinux</a></h2>
+    <p>
+      Posted on Sa 06 November 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/linux.html">linux</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#-if-bool-or-re-labeling-does-not-fix-a-problem-might-need-a-policy">- If bool or re-labeling does NOT fix a problem, might need a policy</a><ul>
+<li><a href="#key-points">Key Points</a></li>
+<li><a href="#files">Files</a></li>
+<li><a href="#cli">CLI</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h2 id="basics">Basics</h2>
+<p>Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year …</p></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/selinux.html#selinux">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/linux-basics-reminder.html#linux-basics-reminder">Linux Basics Reminder</a></h2>
+    <p>
+      Posted on Do 04 November 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/linux.html">linux</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#basics">Basics</a><ul>
+<li><a href="#basic-terminology">Basic Terminology</a></li>
+<li><a href="#boot-process">Boot Process</a></li>
+<li><a href="#general">General</a></li>
+<li><a href="#files-dirs">Files &amp; Dirs</a></li>
+<li><a href="#21">2&gt;&amp;1</a></li>
+<li><a href="#bzip-co">bzip &amp; co</a></li>
+<li><a href="#proc-co">/proc &amp; co</a></li>
+<li><a href="#logfiles">Logfiles</a></li>
+<li><a href="#yum-and-friends">yum and friends</a></li>
+<li><a href="#devsda-lvm">/dev/sda &amp; LVM</a></li>
+<li><a href="#chmod-chown-and-acls">Chmod, chown and ACLs</a></li>
+<li><a href="#ifconfig-vs-ip-networkmanager">ifconfig vs ip, NetworkManager</a></li>
+<li><a href="#ref-images">Ref Images</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="basics">Basics</h2>
+<h3 id="basic-terminology">Basic Terminology</h3>
+<ul>
+<li>Kernel: Interface between HW and OS, e.g. Webbrowsing opens network socket done …</li></ul></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/linux-basics-reminder.html#linux-basics-reminder">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/interface-segregation-principle.html#interface-segregation-principle">Interface Segregation Principle</a></h2>
     <p>
       Posted on So 31 Oktober 2021 in <a href="https://maconrad.github.io/category/patterns.html">Patterns</a>
 
@@ -253,13 +365,13 @@ jQuery(document).ready(function($) {
 </ul>
 </div>
 <h2 id="intro">Intro</h2>
-<p>The single responsibility principle principle defines that a Class has a single main goal it achieves and should not implement any side responsibilities. DO NOT overload objects with too many responsibilities.</p>
-<p>Benefit:</p>
+<p>Interface segregation principle states that you should not put to much into an interface, but split into multiple interfaces instead. Why? The Client/Implementer should not have to deal with interfaces he does not need. </p>
+<p>Benefits:</p>
 <ul>
-<li>Assures that a change in functionality is made centrally (at a …</li></ul></div>
+<li>Cleaner code: Avoid implementing functionality that is …</li></ul></div>
         <br>
         <a class="btn"
-           href="https://maconrad.github.io/single-responsibility-separation-of-concern.html#single-responsibility-separation-of-concern">
+           href="https://maconrad.github.io/interface-segregation-principle.html#interface-segregation-principle">
           Continue reading
         </a>
   </div>
@@ -267,7 +379,7 @@ jQuery(document).ready(function($) {
 </article>
 <article>
   <header>
-    <h2><a href="https://maconrad.github.io/template.html#template">template</a></h2>
+    <h2><a href="https://maconrad.github.io/namedtuple-to-the-rescue.html#namedtuple-to-the-rescue">NamedTuple to the rescue</a></h2>
     <p>
       Posted on So 31 Oktober 2021 in <a href="https://maconrad.github.io/category/python.html">Python</a>
 
@@ -277,150 +389,22 @@ jQuery(document).ready(function($) {
   </header>
   <div>
       <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
-<li><a href="#chap1">Chap1</a></li>
+<li><a href="#a-working-approach-the-problem">A working approach - the problem</a></li>
+<li><a href="#improving">Improving</a></li>
+<li><a href="#improving-further">Improving further...</a></li>
 <li><a href="#references">References</a></li>
 </ul>
 </div>
-<h2 id="chap1">Chap1</h2>
-<p>Installation </p>
-<p>In addition, what happens </p>
-<p>In addition if w</p>
-<div class="highlight"><pre><span></span><code>brew install pyenv 
-</code></pre></div>
+<h2 id="a-working-approach-the-problem">A working approach - the problem</h2>
+<p>If you are not an experienced python programmer. You might right something like this: </p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
 
-<p>Then adding the following to <code>~/.zprofile</code></p>
-<div class="highlight"><pre><span></span><code><span class="c1"># pyenv specific config</span>
-<span class="nb">eval</span> <span class="s2">&quot;</span><span class="k">$(</span>pyenv init --path<span class="k">)</span><span class="s2">&quot;</span>
-</code></pre></div>
-
-<p>That's it. For more details see links below.</p>
-<h2 id="references">References</h2>
-<ul>
-<li>See: <a href="https://opensource.com/article/19/5/python-3-default-mac">Pyenv on Opensource.com</a> </li>
-</ul></div>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="https://maconrad.github.io/hilfe.html#hilfe">Hilfe</a></h2>
-    <p>
-      Posted on Di 26 Oktober 2021 in <a href="https://maconrad.github.io/category/articles.html">articles</a>
-
-          &#8226; Tagged with
-              <a href="https://maconrad.github.io/tag/meta.html">meta</a>
-    </p>
-  </header>
-  <div>
-      <div><h1 id="blockquotes">Blockquotes</h1>
-<h1 id="blockquotestabset">Blockquotes{.tabset}</h1>
-<h2 id="beispiel">Beispiel</h2>
-<blockquote>
-<p>a</p>
-<p class="is-info">b</p>
-<p class="is-success">c</p>
-<p class="is-warning">d</p>
-<p class="is-danger">e</p>
-</blockquote>
-<h2 id="code">Code</h2>
-<div class="highlight"><pre><span></span><code>&gt; a
-
-&gt; b
-{.is-info}
-
-&gt; c
-{.is-success}
-
-&gt; d
-{.is-warning}
-
-&gt; e
-{.is-danger}
-</code></pre></div>
-
-<h1 id="collapsible-ausklappen">Collapsible / Ausklappen</h1>
-<h1 id="collapsible-ausklappentabset">Collapsible / Ausklappen{.tabset}</h1>
-<h2 id="beispiel-1">Beispiel 1</h2>
-<details>
-<summary>Ein/Ausblenden</summary>
-Hello, here is collapsed text!
-
-* Nice
-* Nice 2
-</details>
-
-<h2 id="code-1">Code 1</h2>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;details&gt;</span>
-<span class="nt">&lt;summary&gt;</span>Ausklappen<span class="nt">&lt;/summary&gt;</span>
-Hello, here is collapsed text!
-
-* Nice
-* Nice 2 …</code></pre></div></div>
+<span class="k">def</span> <span class="nf">apiCallGitHub</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;https://api.github.com/users/</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code …</span></code></pre></div></div>
         <br>
         <a class="btn"
-           href="https://maconrad.github.io/hilfe.html#hilfe">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="https://maconrad.github.io/pelican-blogging.html#pelican-blogging">Pelican Blogging</a></h2>
-    <p>
-      Posted on So 24 Oktober 2021 in <a href="https://maconrad.github.io/category/random.html">Random</a>
-
-          &#8226; Tagged with
-              <a href="https://maconrad.github.io/tag/pelican.html">Pelican</a>
-    </p>
-  </header>
-  <div>
-      <div><h2 id="installing-and-using-pelican-for-blogging">Installing and using pelican for blogging</h2>
-<p>Easy, nice and minimalistic approach for blog based on static content and capable of RST as well as markdown including support for pygments for code highlighting. </p>
-<p>Can it get any more perfect for a simple blog like mine? </p>
-<div class="highlight"><pre><span></span><code><span class="c1"># pelican specific commands</span>
-pip install pelican …</code></pre></div></div>
-        <br>
-        <a class="btn"
-           href="https://maconrad.github.io/pelican-blogging.html#pelican-blogging">
-          Continue reading
-        </a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="https://maconrad.github.io/linux-scripting-basics.html#linux-scripting-basics">Linux Scripting Basics</a></h2>
-    <p>
-      Posted on So 24 Oktober 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
-
-          &#8226; Tagged with
-              <a href="https://maconrad.github.io/tag/linux.html">linux</a>
-    </p>
-  </header>
-  <div>
-      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
-<li><a href="#basics">Basics</a><ul>
-<li><a href="#regex">Regex</a></li>
-<li><a href="#grep">Grep</a></li>
-<li><a href="#awk">Awk</a></li>
-<li><a href="#sed">Sed</a></li>
-<li><a href="#bashscripts">Bashscripts</a></li>
-<li><a href="#expect">Expect</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h2 id="basics">Basics</h2>
-<p>Shell parses and interprets cmds and passes it to kernel for execution, usually in interactive mode, but can be scripted.</p>
-<h3 id="regex">Regex</h3>
-<ul>
-<li>Definition<ul>
-<li>Pattern: Sequence of Characters, can use [], {} or ()</li>
-<li>Literal: String that represents itself, e.g. Hello matches Hello …</li></ul></li></ul></div>
-        <br>
-        <a class="btn"
-           href="https://maconrad.github.io/linux-scripting-basics.html#linux-scripting-basics">
+           href="https://maconrad.github.io/namedtuple-to-the-rescue.html#namedtuple-to-the-rescue">
           Continue reading
         </a>
   </div>

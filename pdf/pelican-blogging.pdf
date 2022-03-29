@@ -29,26 +29,19 @@ endobj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://www.thedigitalcatonline.com/blog/2019/06/07/run-a-pelican-blog/)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 93.31425 110.5499 101.1892 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 85.43925 110.5499 93.31425 ] /Subtype /Link /Type /Annot
 >>
 endobj
 7 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://antonellocalamea.medium.com/step-by-step-guide-to-setup-a-web-site-using-pelican-and-gitpages-5de976ae44cb)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 83.43925 142.0709 91.31425 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 75.56425 142.0709 83.43925 ] /Subtype /Link /Type /Annot
 >>
 endobj
 8 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/alexandrevicenzi/Flex/tree/master/docs/content)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 73.56425 124.5464 81.43925 ] /Subtype /Link /Type /Annot
->>
-endobj
-9 0 obj
-<<
-/Annots [ 6 0 R 7 0 R 8 0 R ] /Contents 23 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 22 0 R /Resources <<
+/Annots [ 6 0 R 7 0 R ] /Contents 23 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 22 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -56,23 +49,30 @@ endobj
 >> /Type /Page
 >>
 endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/alexandrevicenzi/Flex/tree/master/docs/content)
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 759.5979 124.5464 767.4729 ] /Subtype /Link /Type /Annot
+>>
+endobj
 10 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (http://www.pelicanthemes.com/)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 759.5979 111.1274 767.4729 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 749.7229 111.1274 757.5979 ] /Subtype /Link /Type /Annot
 >>
 endobj
 11 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://docs.getpelican.com/)
->> /Border [ 0 0 0 ] /Rect [ 78.15737 749.7229 107.6204 757.5979 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 78.15737 739.8479 107.6204 747.7229 ] /Subtype /Link /Type /Annot
 >>
 endobj
 12 0 obj
 <<
-/Annots [ 10 0 R 11 0 R ] /Contents 24 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 22 0 R /Resources <<
+/Annots [ 9 0 R 10 0 R 11 0 R ] /Contents 24 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 22 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -87,7 +87,7 @@ endobj
 endobj
 14 0 obj
 <<
-/Author () /CreationDate (D:20220202154602-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202154602-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20220329112144-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220329112144-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (Pelican Blogging) /Trapped /False
 >>
 endobj
@@ -98,44 +98,44 @@ endobj
 endobj
 16 0 obj
 <<
-/Count -2 /Dest [ 9 0 R /Fit ] /First 17 0 R /Last 18 0 R /Next 19 0 R /Parent 15 0 R 
+/Count -2 /Dest [ 8 0 R /Fit ] /First 17 0 R /Last 18 0 R /Next 19 0 R /Parent 15 0 R 
   /Title (Installing and using pelican for blogging)
 >>
 endobj
 17 0 obj
 <<
-/Dest [ 9 0 R /Fit ] /Next 18 0 R /Parent 16 0 R /Title (Installing and using pelican for blogging)
+/Dest [ 8 0 R /Fit ] /Next 18 0 R /Parent 16 0 R /Title (Installing and using pelican for blogging)
 >>
 endobj
 18 0 obj
 <<
-/Dest [ 9 0 R /Fit ] /Parent 16 0 R /Prev 17 0 R /Title (Plugin Playground)
+/Dest [ 8 0 R /Fit ] /Parent 16 0 R /Prev 17 0 R /Title (Plugin Playground)
 >>
 endobj
 19 0 obj
 <<
-/Count -1 /Dest [ 9 0 R /Fit ] /First 20 0 R /Last 20 0 R /Parent 15 0 R /Prev 16 0 R 
+/Count -1 /Dest [ 8 0 R /Fit ] /First 20 0 R /Last 20 0 R /Parent 15 0 R /Prev 16 0 R 
   /Title (Markdown Test\266)
 >>
 endobj
 20 0 obj
 <<
-/Count -1 /Dest [ 9 0 R /Fit ] /First 21 0 R /Last 21 0 R /Parent 19 0 R /Title (References)
+/Count -1 /Dest [ 8 0 R /Fit ] /First 21 0 R /Last 21 0 R /Parent 19 0 R /Title (References)
 >>
 endobj
 21 0 obj
 <<
-/Dest [ 9 0 R /Fit ] /Parent 20 0 R /Title (References)
+/Dest [ 8 0 R /Fit ] /Parent 20 0 R /Title (References)
 >>
 endobj
 22 0 obj
 <<
-/Count 2 /Kids [ 9 0 R 12 0 R ] /Type /Pages
+/Count 2 /Kids [ 8 0 R 12 0 R ] /Type /Pages
 >>
 endobj
 23 0 obj
 <<
-/Length 7634
+/Length 7361
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -252,7 +252,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 430.279 cm
+1 0 0 1 57.02362 422.404 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -265,14 +265,15 @@ q
 .492188 w
 .492188 w
 .492188 w
-BT 1 0 0 1 0 69.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (cd) Tj ( ) Tj (output) Tj  T* (make) Tj ( ) Tj (clean) Tj  T* (make) Tj ( ) Tj (html) Tj  T* (git) Tj ( ) Tj (init) Tj  T* (git) Tj ( ) Tj (add) Tj ( ) Tj (.) Tj  T* (git) Tj ( ) Tj (commit) Tj ( ) Tj (-m) Tj ( ) Tj (") Tj (msg) Tj (") Tj  T* (git) Tj ( ) Tj (branch) Tj ( ) Tj (-M) Tj ( ) Tj (main) Tj  T* (git) Tj ( ) Tj (remote) Tj ( ) Tj (add) Tj ( ) Tj (origin) Tj ( ) Tj (https://github.com/maconrad/pelicanblog.git) Tj  T* (git) Tj ( ) Tj (push) Tj ( ) Tj (-u) Tj ( ) Tj (origin) Tj ( ) Tj (main) Tj  T* ET
+.492188 w
+BT 1 0 0 1 0 77.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (workon) Tj ( ) Tj (pelicanblog) Tj  T* (cd) Tj ( ) Tj (output) Tj  T* (make) Tj ( ) Tj (clean) Tj  T* (make) Tj ( ) Tj (html) Tj  T* (git) Tj ( ) Tj (init) Tj  T* (git) Tj ( ) Tj (add) Tj ( ) Tj (.) Tj  T* (git) Tj ( ) Tj (commit) Tj ( ) Tj (-m) Tj ( ) Tj (") Tj (msg) Tj (") Tj  T* (git) Tj ( ) Tj (branch) Tj ( ) Tj (-M) Tj ( ) Tj (main) Tj  T* (git) Tj ( ) Tj (remote) Tj ( ) Tj (add) Tj ( ) Tj (origin) Tj ( ) Tj (https://github.com/maconrad/pelicanblog.git) Tj  T* (git) Tj ( ) Tj (push) Tj ( ) Tj (-u) Tj ( ) Tj (origin) Tj ( ) Tj (main) Tj  T* ET
 Q
 Q
 q
 Q
 Q
 q
-1 0 0 1 57.02362 412.1221 cm
+1 0 0 1 57.02362 404.2471 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -284,7 +285,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 395.7844 cm
+1 0 0 1 57.02362 387.9094 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -298,7 +299,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 309.7844 cm
+1 0 0 1 57.02362 301.9094 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -319,7 +320,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 289.6062 cm
+1 0 0 1 57.02362 281.7312 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -333,7 +334,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 272.46 cm
+1 0 0 1 57.02362 264.585 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -345,7 +346,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 257.335 cm
+1 0 0 1 57.02362 249.46 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -357,7 +358,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 242.21 cm
+1 0 0 1 57.02362 234.335 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -369,7 +370,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 227.085 cm
+1 0 0 1 57.02362 219.21 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -381,7 +382,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 204.085 cm
+1 0 0 1 57.02362 196.21 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -394,7 +395,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 188.96 cm
+1 0 0 1 57.02362 181.085 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -406,7 +407,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 173.835 cm
+1 0 0 1 57.02362 165.96 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -418,7 +419,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 150.835 cm
+1 0 0 1 57.02362 142.96 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -431,7 +432,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 135.71 cm
+1 0 0 1 57.02362 127.835 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -443,7 +444,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 120.585 cm
+1 0 0 1 57.02362 112.71 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -455,7 +456,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 104.41 cm
+1 0 0 1 57.02362 96.535 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -467,7 +468,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 88.865 cm
+1 0 0 1 57.02362 80.99 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -482,7 +483,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 78.99 cm
+1 0 0 1 57.02362 71.115 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -496,8 +497,17 @@ Q
 q
 Q
 Q
+ 
+endstream
+endobj
+24 0 obj
+<<
+/Length 1030
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 57.02362 69.115 cm
+1 0 0 1 57.02362 755.1486 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -511,17 +521,8 @@ Q
 q
 Q
 Q
- 
-endstream
-endobj
-24 0 obj
-<<
-/Length 707
->>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 57.02362 755.1486 cm
+1 0 0 1 57.02362 745.2736 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -536,7 +537,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 745.2736 cm
+1 0 0 1 57.02362 735.3986 cm
 q
 1 0 0 1 1 -1 cm
 q
@@ -551,7 +552,7 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 745.2736 cm
+1 0 0 1 57.02362 735.3986 cm
 Q
  
 endstream
@@ -582,10 +583,10 @@ xref
 0000000567 00000 n 
 0000000790 00000 n 
 0000001056 00000 n 
-0000001273 00000 n 
-0000001508 00000 n 
-0000001690 00000 n 
-0000001871 00000 n 
+0000001285 00000 n 
+0000001502 00000 n 
+0000001684 00000 n 
+0000001865 00000 n 
 0000002103 00000 n 
 0000002209 00000 n 
 0000002483 00000 n 
@@ -597,14 +598,14 @@ xref
 0000003192 00000 n 
 0000003270 00000 n 
 0000003337 00000 n 
-0000011023 00000 n 
-0000011781 00000 n 
-0000011831 00000 n 
-0000011865 00000 n 
+0000010750 00000 n 
+0000011832 00000 n 
+0000011882 00000 n 
+0000011916 00000 n 
 trailer
 <<
 /ID 
-[<2e0b6d627dda6af5689dea7f6b2ea940><2e0b6d627dda6af5689dea7f6b2ea940>]
+[<a06fff6443af35243aa3eacafda5ac48><a06fff6443af35243aa3eacafda5ac48>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 14 0 R
@@ -612,5 +613,5 @@ trailer
 /Size 28
 >>
 startxref
-11899
+11950
 %%EOF

@@ -1,0 +1,2125 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 10 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 44 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/Contents 45 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/Contents 46 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/Contents 47 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
+endobj
+11 0 obj
+<<
+/Contents 48 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://cloudinit.readthedocs.io/en/latest/topics/network-config-format-v2.html#network-config-v2)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 378.0343 137.6714 385.9093 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://cloudinit.readthedocs.io/en/latest/topics/examples.html)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 368.1593 129.5076 376.0343 ] /Subtype /Link /Type /Annot
+>>
+endobj
+14 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://cloudinit.readthedocs.io/en/latest/topics/debugging.html)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 358.2843 125.7224 366.1593 ] /Subtype /Link /Type /Annot
+>>
+endobj
+15 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://linuxhint.com/install_netplan_ubuntu/)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 348.4093 113.1749 356.2843 ] /Subtype /Link /Type /Annot
+>>
+endobj
+16 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.thomas-krenn.com/de/wiki/Linux_ip_Kommando)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 338.5343 110.8334 346.4093 ] /Subtype /Link /Type /Annot
+>>
+endobj
+17 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/CiscoDevNet/cml-community/blob/master/lab-topologies/sandbox-multiplatform-network/multi-platform-network.yaml)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 328.6593 125.4179 336.5343 ] /Subtype /Link /Type /Annot
+>>
+endobj
+18 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.cisco.com/c/en/us/support/docs/ip/generic-routing-encapsulation-gre/25885-pmtud-ipfrag.html)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 318.7843 137.3774 326.6593 ] /Subtype /Link /Type /Annot
+>>
+endobj
+19 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://ce.sc.edu/cyberinfra/workshops/Material/perfSONAR/Lab%206.pdf)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 308.9093 136.2171 316.7843 ] /Subtype /Link /Type /Annot
+>>
+endobj
+20 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.switch.ch/network/tools/tcp_throughput/)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 299.0343 129.2136 306.9093 ] /Subtype /Link /Type /Annot
+>>
+endobj
+21 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://iperf.fr/iperf-doc.php)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 289.1593 130.9724 297.0343 ] /Subtype /Link /Type /Annot
+>>
+endobj
+22 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://learningnetwork.cisco.com/s/question/0D53i00000KswwkCAB/ipsec-over-gre-vs-ipsec-vti)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 279.2843 125.4231 287.1593 ] /Subtype /Link /Type /Annot
+>>
+endobj
+23 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://learning.oreilly.com/library/view/deploying-cisco-wide/9781587059285)
+>> /Border [ 0 0 0 ] /Rect [ 76.69787 269.4093 195.7364 277.2843 ] /Subtype /Link /Type /Annot
+>>
+endobj
+24 0 obj
+<<
+/Annots [ 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 
+  22 0 R 23 0 R ] /Contents 49 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 43 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+25 0 obj
+<<
+/Outlines 27 0 R /PageLabels 50 0 R /PageMode /UseNone /Pages 43 0 R /Type /Catalog
+>>
+endobj
+26 0 obj
+<<
+/Author () /CreationDate (D:20220329112134-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220329112134-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Cisco Modeling Labs 1 - Basic FVRF IKEv1/IPSec connectivity) /Trapped /False
+>>
+endobj
+27 0 obj
+<<
+/Count 7 /First 28 0 R /Last 42 0 R /Type /Outlines
+>>
+endobj
+28 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 29 0 R /Parent 27 0 R /Title (Intro)
+>>
+endobj
+29 0 obj
+<<
+/Dest [ 6 0 R /Fit ] /Next 30 0 R /Parent 27 0 R /Prev 28 0 R /Title (Topology)
+>>
+endobj
+30 0 obj
+<<
+/Count -4 /Dest [ 6 0 R /Fit ] /First 31 0 R /Last 34 0 R /Next 35 0 R /Parent 27 0 R 
+  /Prev 29 0 R /Title (Setup via virl2_client)
+>>
+endobj
+31 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 32 0 R /Parent 30 0 R /Title (Special Note on CML Endpoint)
+>>
+endobj
+32 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 33 0 R /Parent 30 0 R /Prev 31 0 R /Title (Special note on Alpine clients)
+>>
+endobj
+33 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 34 0 R /Parent 30 0 R /Prev 32 0 R /Title (Speical note on Ubuntu clients)
+>>
+endobj
+34 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Parent 30 0 R /Prev 33 0 R /Title (Special note on Catalyst 8000 Routers)
+>>
+endobj
+35 0 obj
+<<
+/Count -6 /Dest [ 8 0 R /Fit ] /First 36 0 R /Last 41 0 R /Next 42 0 R /Parent 27 0 R 
+  /Prev 30 0 R /Title (IPSec Configuration)
+>>
+endobj
+36 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 37 0 R /Parent 35 0 R /Title (HQ Office)
+>>
+endobj
+37 0 obj
+<<
+/Dest [ 9 0 R /Fit ] /Next 38 0 R /Parent 35 0 R /Prev 36 0 R /Title (Branch Office)
+>>
+endobj
+38 0 obj
+<<
+/Dest [ 11 0 R /Fit ] /Next 39 0 R /Parent 35 0 R /Prev 37 0 R /Title (Testing with DF-Bit)
+>>
+endobj
+39 0 obj
+<<
+/Dest [ 11 0 R /Fit ] /Next 40 0 R /Parent 35 0 R /Prev 38 0 R /Title (Testing with Iperf)
+>>
+endobj
+40 0 obj
+<<
+/Dest [ 24 0 R /Fit ] /Next 41 0 R /Parent 35 0 R /Prev 39 0 R /Title (Testing with CML Packet Capture)
+>>
+endobj
+41 0 obj
+<<
+/Dest [ 24 0 R /Fit ] /Parent 35 0 R /Prev 40 0 R /Title (IPSec Calculation)
+>>
+endobj
+42 0 obj
+<<
+/Dest [ 24 0 R /Fit ] /Parent 27 0 R /Prev 35 0 R /Title (References)
+>>
+endobj
+43 0 obj
+<<
+/Count 6 /Kids [ 6 0 R 7 0 R 8 0 R 9 0 R 11 0 R 24 0 R ] /Type /Pages
+>>
+endobj
+44 0 obj
+<<
+/Length 10287
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 717.0236 cm
+q
+BT 1 0 0 1 0 28 Tm 33.67417 0 Td 24 TL /F2 20 Tf .133333 .133333 .133333 rg (Cisco Modeling Labs 1 - Basic FVRF IKEv1/IPSec) Tj T* 157.5 0 Td (connectivity) Tj T* -191.1742 0 Td ET
+Q
+Q
+q
+1 0 0 1 57.02362 666.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F3 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2022-02-02 11:51:00) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 656.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Table of contents:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 646.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 18.38025 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 636.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 29.46825 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Topology) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 626.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 56.0175 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Setup via virl2_client) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 616.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 87.53325 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Special Note on CML Endpoint) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 606.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 84.3255 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Special note on Alpine clients) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 596.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 86.66175 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Speical note on Ubuntu clients) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 587.0236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 105.336 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Special note on Catalyst 8000 Routers) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 587.0236 cm
+Q
+q
+1 0 0 1 57.02362 577.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 54.56325 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (IPSec Configuration) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 567.2736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 38.7975 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (HQ Office) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 557.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 47.5545 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Branch Office) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 547.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 60.0915 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Testing with DF-Bit) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 537.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 55.7235 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Testing with Iperf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 527.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 93.9435 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (Testing with CML Packet Capture) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 517.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 7.875 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 15.75 5.121125 m 57.183 5.121125 l S
+BT 1 0 0 1 15.75 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (IPSec Calculation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 517.8986 cm
+Q
+q
+1 0 0 1 57.02362 508.0236 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 7.875 5.121125 m 34.71825 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 1 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 508.0236 cm
+Q
+q
+1 0 0 1 57.02362 487.8455 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Intro) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 462.8242 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Cisco Modeling Labs \(CML\) is the sucessor of VIRL. It allows for setting up labs, testing configurations, testing changes etc. etc. Its a very nice tool which also integrates pyATS and other things. This) Tj T* (blog-post is about provisioning a very basic IPSec Lab with IKEv1 and doing it in an automated fashion.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 442.6461 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Topology) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 425.4999 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The following topology will be created:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 405.3217 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (Setup via virl2_client) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 388.1755 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The CML topology can be uploaded using YAML files or can also be uploaded via API calls. To get starting using the API only the following library has to be installed:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 373.0505 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.57275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (pip) Tj ( ) Tj (install) Tj ( ) Tj (virl2-client) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 357.9255 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Here is a very basic example on how to use the API to do the following steps: - Create Devices from Images provided by CML - Load Configuration for devices from Files - Create links between devices) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 67.1755 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 282.1977 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (from) Tj ( ) Tj (virl2_client) Tj ( ) Tj (import) Tj ( ) Tj (ClientLibrary) Tj ( ) Tj T* (from) Tj ( ) Tj (loguru) Tj ( ) Tj (import) Tj ( ) Tj (logger) Tj ( ) Tj T* (from) Tj ( ) Tj (types) Tj ( ) Tj (import) Tj ( ) Tj (SimpleNamespace) Tj ( ) Tj T* (import) Tj ( ) Tj (pathlib) Tj ( ) Tj T* (import) Tj ( ) Tj (urllib3) Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Must) Tj ( ) Tj (be) Tj ( ) Tj (run) Tj ( ) Tj (against) Tj ( ) Tj (2.1.2-b39) Tj ( ) Tj (or) Tj ( ) Tj (newer) Tj ( ) Tj T* (#) Tj ( ) Tj (Must) Tj ( ) Tj (be) Tj ( ) Tj (connected) Tj ( ) Tj (via) Tj ( ) Tj (anyconnect) Tj ( ) Tj (VPN!) Tj ( ) Tj T* (CML_END_POINT) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (https://198.18.134.1/) Tj (') Tj ( ) Tj T* ( ) Tj T* (#) Tj ( ) Tj (Always) Tj ( ) Tj (guest) Tj ( ) Tj (&) Tj ( ) Tj (C1sco12345) Tj ( ) Tj (on) Tj ( ) Tj (Dcloud) Tj ( ) Tj T* (CML_USER) Tj ( ) Tj (=) Tj (') Tj (guest) Tj (') Tj ( ) Tj T* (CML_PW) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (C1sco12345) Tj (') Tj ( ) Tj T* ( ) Tj T* (CFG_FOLDER) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (cfgs) Tj (') Tj ( ) Tj T* ( ) Tj T* ( ) Tj T* (CUSTOMER) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (XY) Tj (') Tj ( ) Tj T* (device_types) Tj ( ) Tj (=) Tj ( ) Tj ({) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (') Tj (router) Tj (') Tj (:) Tj (') Tj (csr1000v) Tj (') Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (') Tj (asa) Tj (') Tj (:) Tj (') Tj (asav) Tj (') Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (') Tj (ubuntu) Tj (') Tj (:) Tj (') Tj (ubuntu) Tj (') Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (') Tj (nxos) Tj (') Tj (:) Tj ( ) Tj (') Tj (nxosv9000) Tj (') Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (') Tj (cat8k) Tj (') Tj (:) Tj ( ) Tj (') Tj (cat8000v) Tj (') Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (') Tj (wan) Tj (') Tj (:) Tj ( ) Tj (') Tj (wan_emulator) Tj (') Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (') Tj (switch) Tj (') Tj (:) Tj ( ) Tj (') Tj (unmanaged_switch) Tj (') Tj (,) Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (') Tj (alpine) Tj (') Tj (:) Tj ( ) Tj (') Tj (alpine) Tj (') Tj ( ) Tj T*  ( ) Tj ( ) Tj ( ) Tj (}) Tj ( ) Tj T* (DEVICETYPE) Tj ( ) Tj (=) Tj ( ) Tj (SimpleNamespace) Tj (\() Tj (**) Tj (device_types) Tj (\)) Tj ( ) Tj T* (WORKDIR) Tj ( ) Tj (=) Tj ( ) Tj (pathlib) Tj (.) Tj (Path) Tj (\() Tj (__file__) Tj (\)) Tj (.) Tj (parent) Tj (.) Tj (absolute) Tj (\(\)) Tj ( ) Tj T* ( ) Tj T* (urllib3) Tj (.) Tj (disable_warnings) Tj (\() Tj (urllib3) Tj (.) Tj (exceptions) Tj (.) Tj (InsecureRequestWarning) Tj (\)) Tj ( ) Tj T* ( ) Tj T* (#############################################################) Tj ( ) Tj T* ( ) Tj T* (def) Tj ( ) Tj (get_config) Tj (\() Tj (labname) Tj (:) Tj ( ) Tj (str) Tj (,) Tj ( ) Tj (hostname) Tj (:) Tj ( ) Tj (str) Tj (\):) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+45 0 obj
+<<
+/Length 10754
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 266.8986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 494.8227 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg ( ) Tj ( ) Tj ( ) Tj (config) Tj ( ) Tj (=) Tj ( ) Tj (') Tj (') Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (with) Tj ( ) Tj (open) Tj (\() Tj (f) Tj (") Tj ({) Tj (WORKDIR) Tj (}) Tj (/labs/) Tj ({) Tj (labname) Tj (}) Tj (/) Tj ({) Tj (hostname) Tj (}) Tj (.txt) Tj (") Tj (\)) Tj ( ) Tj (as) Tj ( ) Tj (fp) Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (lines) Tj ( ) Tj (=) Tj ( ) Tj (fp) Tj (.) Tj (readlines) Tj (\(\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (line) Tj ( ) Tj (in) Tj ( ) Tj (lines) Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (config) Tj ( ) Tj (+=) Tj ( ) Tj (line) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (return) Tj ( ) Tj (config) Tj ( ) Tj T* ( ) Tj T* ( ) Tj T* (def) Tj ( ) Tj (build_lab_mini) Tj (\() Tj (client) Tj (:) Tj ( ) Tj (ClientLibrary) Tj (\):) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (logger) Tj (.) Tj (debug) Tj (\() Tj (') Tj (...) Tj ( ) Tj (provisioning) Tj ( ) Tj (Lab) Tj ( ) Tj (3) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (lab) Tj ( ) Tj (=) Tj ( ) Tj (client) Tj (.) Tj (create_lab) Tj (\() Tj (f) Tj (") Tj (1) Tj ( ) Tj (-) Tj ( ) Tj ({) Tj (CUSTOMER) Tj (}) Tj ( ) Tj (Mini) Tj ( ) Tj (Flex) Tj ( ) Tj (Migration) Tj (") Tj (\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Create) Tj ( ) Tj (nodes) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (r1) Tj ( ) Tj (=) Tj ( ) Tj (lab) Tj (.) Tj (create_node) Tj (\() Tj (") Tj (WAN_R1) Tj (") Tj (,) Tj ( ) Tj (DEVICETYPE) Tj (.) Tj (cat8k) Tj (,) Tj ( ) Tj (0) Tj (,) Tj ( ) Tj (0) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (r2) Tj ( ) Tj (=) Tj ( ) Tj (lab) Tj (.) Tj (create_node) Tj (\() Tj (") Tj (REMOTE_R2) Tj (") Tj (,) Tj ( ) Tj (DEVICETYPE) Tj (.) Tj (cat8k) Tj (,) Tj ( ) Tj (400) Tj (,) Tj ( ) Tj (-) Tj (200) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (r3) Tj ( ) Tj (=) Tj ( ) Tj (lab) Tj (.) Tj (create_node) Tj (\() Tj (") Tj (REMOTE_R3) Tj (") Tj (,) Tj ( ) Tj (DEVICETYPE) Tj (.) Tj (cat8k) Tj (,) Tj ( ) Tj (400) Tj (,) Tj ( ) Tj (200) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (ubuntu) Tj ( ) Tj (=) Tj ( ) Tj (lab) Tj (.) Tj (create_node) Tj (\() Tj (") Tj (ubuntu) Tj (") Tj (,) Tj ( ) Tj (DEVICETYPE) Tj (.) Tj (ubuntu) Tj (,) Tj ( ) Tj (-) Tj (100) Tj (,) Tj ( ) Tj (0) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (alpine2) Tj ( ) Tj (=) Tj ( ) Tj (lab) Tj (.) Tj (create_node) Tj (\() Tj (") Tj (alpine2) Tj (") Tj (,) Tj ( ) Tj (DEVICETYPE) Tj (.) Tj (alpine) Tj (,) Tj ( ) Tj (500) Tj (,) Tj ( ) Tj (-) Tj (200) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (alpine3) Tj ( ) Tj (=) Tj ( ) Tj (lab) Tj (.) Tj (create_node) Tj (\() Tj (") Tj (alpine3) Tj (") Tj (,) Tj ( ) Tj (DEVICETYPE) Tj (.) Tj (alpine) Tj (,) Tj ( ) Tj (500) Tj (,) Tj ( ) Tj (200) Tj (\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Configure) Tj ( ) Tj (devices) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (r1) Tj (.) Tj (config) Tj ( ) Tj (=) Tj ( ) Tj (get_config) Tj (\() Tj (CFG_FOLDER) Tj (,) Tj (') Tj (R1) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (r2) Tj (.) Tj (config) Tj ( ) Tj (=) Tj ( ) Tj (get_config) Tj (\() Tj (CFG_FOLDER) Tj (,) Tj (') Tj (R2) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (r3) Tj (.) Tj (config) Tj ( ) Tj (=) Tj ( ) Tj (get_config) Tj (\() Tj (CFG_FOLDER) Tj (,) Tj (') Tj (R3) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (ubuntu) Tj (.) Tj (config) Tj ( ) Tj (=) Tj ( ) Tj (get_config) Tj (\() Tj (CFG_FOLDER) Tj (,) Tj (') Tj (ubuntu1) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (alpine2) Tj (.) Tj (config) Tj ( ) Tj (=) Tj ( ) Tj (get_config) Tj (\() Tj (CFG_FOLDER) Tj (,) Tj ( ) Tj (') Tj (alpine2) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (alpine3) Tj (.) Tj (config) Tj ( ) Tj (=) Tj ( ) Tj (get_config) Tj (\() Tj (CFG_FOLDER) Tj (,) Tj ( ) Tj (') Tj (alpine3) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (connect) Tj ( ) Tj (hosts) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (lab) Tj (.) Tj (connect_two_nodes) Tj (\() Tj (r1) Tj (,) Tj (r2) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (lab) Tj (.) Tj (connect_two_nodes) Tj (\() Tj (r1) Tj (,) Tj ( ) Tj (ubuntu) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (lab) Tj (.) Tj (connect_two_nodes) Tj (\() Tj (r2) Tj (,) Tj ( ) Tj (alpine2) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (lab) Tj (.) Tj (connect_two_nodes) Tj (\() Tj (r1) Tj (,) Tj (r3) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (lab) Tj (.) Tj (connect_two_nodes) Tj (\() Tj (r3) Tj (,) Tj ( ) Tj (alpine3) Tj (\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Starting) Tj ( ) Tj (a) Tj ( ) Tj (Lab) Tj ( ) Tj (can) Tj ( ) Tj (take) Tj ( ) Tj (some) Tj ( ) Tj (time) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (logger) Tj (.) Tj (debug) Tj (\() Tj (') Tj (...) Tj ( ) Tj (Provisioning) Tj ( ) Tj (of) Tj ( ) Tj (Lab) Tj ( ) Tj (finished) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (logger) Tj (.) Tj (debug) Tj (\() Tj (') Tj (...) Tj ( ) Tj (Starting) Tj ( ) Tj (Lab) Tj ( ) Tj (...) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (lab.start\(wait=True\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (logger) Tj (.) Tj (debug) Tj (\() Tj (') Tj (Finished) Tj ( ) Tj (Setting) Tj ( ) Tj (Up) Tj ( ) Tj (Lab) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj T* (def) Tj ( ) Tj (main) Tj (\(\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (try) Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (client) Tj ( ) Tj (=) Tj ( ) Tj (ClientLibrary) Tj (\() Tj (url) Tj (=) Tj (CML_END_POINT) Tj (,) Tj ( ) Tj (username) Tj (=) Tj (CML_USER) Tj (,) Tj ( ) Tj (password) Tj (=) Tj (CML_PW) Tj (,) Tj ( ) Tj (ssl_verify) Tj (=) Tj (False) Tj (,) Tj ( ) Tj (raise_for_auth_failure) Tj (=) Tj (True) Tj (,) Tj ( ) Tj (allow_http) Tj (=) Tj (True) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (client) Tj (.) Tj (is_system_ready) Tj (\() Tj (wait) Tj (=) Tj (True) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (logger) Tj (.) Tj (debug) Tj (\() Tj (') Tj (Connection) Tj ( ) Tj (to) Tj ( ) Tj (CML) Tj ( ) Tj (Successful,) Tj ( ) Tj (start) Tj ( ) Tj (provisioning...) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Cleanup) Tj ( ) Tj (old) Tj ( ) Tj (labs) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (for) Tj ( ) Tj (lab) Tj ( ) Tj (in) Tj ( ) Tj (client) Tj (.) Tj (all_labs) Tj (\(\):) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (logger) Tj (.) Tj (debug) Tj (\() Tj (f) Tj (') Tj (Stoping,) Tj ( ) Tj (wiping) Tj ( ) Tj (and) Tj ( ) Tj (deleting) Tj ( ) Tj (lab) Tj ( ) Tj ({) Tj (lab) Tj (}) Tj (') Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (lab) Tj (.) Tj (stop) Tj (\(\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (lab) Tj (.) Tj (wipe) Tj (\(\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (lab) Tj (.) Tj (remove) Tj (\(\)) Tj ( ) Tj T* ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (build_lab_mini) Tj (\() Tj (client) Tj (\)) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (except) Tj ( ) Tj (Exception) Tj ( ) Tj (as) Tj ( ) Tj (e) Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (logger) Tj (.) Tj (debug) Tj (\() Tj (e) Tj (\)) Tj ( ) Tj T* ( ) Tj T* (if) Tj ( ) Tj (__name__) Tj ( ) Tj (==) Tj ( ) Tj (") Tj (__main__) Tj (") Tj (:) Tj ( ) Tj T* ( ) Tj ( ) Tj ( ) Tj (main) Tj (\(\)) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 248.7417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Special Note on CML Endpoint) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 224.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (In earlier versions, the provisioning worked via DNS name without using Anyconnect VPN to CLOUD. However depending on the DCLOUD datacenter \(EMEA/London vs US\), that might or might not work.) Tj T* (The IP Based approach using AnyC connectivity works in all cases and is therefore preferred.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 206.3721 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Special note on Alpine clients) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 182.1594 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Alpine images are very ligthweight, therefore require less memory and boot up fast. However, the ping utility which comes built-in does not include options to set the DF bit. Therefore the ubuntu image is) Tj T* (used the initiate icmp requests. Configuration of the network interface can be done as follows:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 64.65937 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 108.9477 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (hostname) Tj ( ) Tj (client_rep1) Tj  T* (USERNAME) Tj (=) Tj (cisco) Tj  T* (PASSWORD) Tj (=) Tj (cisco) Tj  T*  T* (sudo) Tj ( ) Tj (ifconfig) Tj ( ) Tj (eth0) Tj ( ) Tj (up) Tj ( ) Tj (192) Tj (.168.100.2) Tj ( ) Tj (netmask) Tj ( ) Tj (255) Tj (.255.255.0) Tj  T* (sudo) Tj ( ) Tj (route) Tj ( ) Tj (add) Tj ( ) Tj (-net) Tj ( ) Tj (0) Tj (.0.0.0/0) Tj ( ) Tj (gw) Tj ( ) Tj (192) Tj (.168.100.1) Tj ( ) Tj (dev) Tj ( ) Tj (eth0) Tj  T*  T* (#) Tj ( ) Tj (Validation) Tj ( ) Tj (using) Tj ( ) Tj (regular) Tj ( ) Tj (known) Tj ( ) Tj (Linux) Tj ( ) Tj (commands) Tj  T* (#) Tj ( ) Tj (See) Tj ( ) Tj (for) Tj ( ) Tj (a) Tj ( ) Tj (good) Tj ( ) Tj (reference:) Tj ( ) Tj (https://www.thomas-krenn.com/de/wiki/Linux_ip_Kommando) Tj  T* (ifconfig) Tj  T* (ip) Tj ( ) Tj (addr) Tj ( ) Tj (show) Tj  T*  T* (route) Tj ( ) Tj (-n) Tj  T* (ip) Tj ( ) Tj (route) Tj ( ) Tj (show) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+46 0 obj
+<<
+/Length 8998
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 753.3295 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Speical note on Ubuntu clients) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 713.3667 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 29.7305 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Ubuntu since 18.04 uses Netplan to configure networking configuration. It uses a YAML based configuration file under ) Tj /F4 5.25 Tf (/etc/netplan/50-cloud-init.yaml) Tj /F1 5.25 Tf (. As CML does not have internet connectivity) Tj T* (by default the ) Tj /F4 5.25 Tf (net-tools) Tj /F1 5.25 Tf ( package cant be installed without an external connector \(but that is a topic for a separate blog post later-on.\), so configuring the IP interface via ifconfig is not an option. But) Tj T* (Ubuntu supports the usage of Cloud-Init, which then outputs/renders the configuration into a netplan configuration which in turn renders the config for supported backends \(systemd-networking and) Tj T* (NetworkManager\). For more on this see So in short: - Cloud-Init > Netplan > NetworkManager) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 698.2417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The other option is to use Cloud-Init to write to some files which are then used by Netplan. This is how how in this example the configuration for the ubuntu node is created:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 423.2417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 266.4477 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#cloud-config) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (hostname) Tj (:) Tj ( ) Tj (ubuntu1) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (manage_etc_hosts) Tj (:) Tj ( ) Tj (True) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (system_info) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (default_user) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (name) Tj (:) Tj ( ) Tj (cisco) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (password) Tj (:) Tj ( ) Tj (cisco) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (chpasswd) Tj (:) Tj ( ) Tj ({) Tj ( ) Tj (expire) Tj (:) Tj ( ) Tj (False) Tj ( ) Tj (}) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (ssh_pwauth) Tj (:) Tj ( ) Tj (True) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (users) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (default) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (gecos) Tj (:) Tj ( ) Tj (Default) Tj ( ) Tj (User) Tj ( ) Tj (with) Tj ( ) Tj (Full) Tj ( ) Tj (SUDO) Tj ( ) Tj (rights) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (lock-passwd) Tj (:) Tj ( ) Tj (false) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (name) Tj (:) Tj ( ) Tj (cisco) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (plain-text-passwd) Tj (:) Tj ( ) Tj (cisco) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (shell) Tj (:) Tj ( ) Tj (/bin/bash) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (sudo) Tj (:) Tj ( ) Tj (ALL=\(ALL\)) Tj ( ) Tj (ALL) Tj ( ) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (write_files) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (path) Tj (:) Tj ( ) Tj (/etc/netplan/50-cloud-init.yaml) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (content) Tj (:) Tj ( ) Tj (|-) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (Ubuntu) Tj ( ) Tj (20.04) Tj ( ) Tj (Configuration) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (#) Tj ( ) Tj (CML) Tj ( ) Tj (uses) Tj ( ) Tj (ens2) Tj ( ) Tj (by) Tj ( ) Tj (default) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (network:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (ethernets:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (ens2:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (addresses:) Tj ( ) Tj ([192.168.1.2/24]) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (gateway4:) Tj ( ) Tj (192.168.1.1) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (dhcp4:) Tj ( ) Tj (no) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (nameservers:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (addresses:) Tj ( ) Tj ([8.8.8.8]) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (optional:) Tj ( ) Tj (true) Tj  T*  ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (version:) Tj ( ) Tj (2) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (runcmd) Tj (:) Tj  T*  ( ) Tj ( ) Tj ( ) Tj (-) Tj ( ) Tj (sudo) Tj ( ) Tj (netplan) Tj ( ) Tj (apply) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 405.0849 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Special note on Catalyst 8000 Routers) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 380.8721 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Unfortunately they do not come with a license enabled. Therefore IPSEc configuratin does not work out of the box. In order to use crypto and many settings, the license has to be adjusted and then the) Tj T* (device needs to be rebooted before applying the IPSec configuration.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 334.2471 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 38.07275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (conf) Tj ( ) Tj (t) Tj  T* (license) Tj ( ) Tj (boot) Tj ( ) Tj (level) Tj ( ) Tj (network-advantage) Tj ( ) Tj (addon) Tj ( ) Tj (dna-advantage) Tj  T* (write) Tj  T* (exit) Tj  T* (reload) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 314.069 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (IPSec Configuration) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 289.0477 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (This section uses an IKEv1 Version with non-optimal IPSec Mode of Tunnel. Which basically means the packet is wrapped too many times within another packet without any benefit. This leads to a) Tj T* (decreased MTU size and possibilty fragmentation. In the worst case the fragmentation happens after exiting the tunnel interface leading to 2 instead of a single IPSec package.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 270.8909 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (HQ Office) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 254.5531 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The following configuration snippet is used at the Head Quaters and loaded as initial configuratoin via Script.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 66.17812 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 179.8228 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (hostname) Tj ( ) Tj (HQ-R1) Tj ( ) Tj T* (no) Tj ( ) Tj (ip) Tj ( ) Tj (domain) Tj ( ) Tj (lookup) Tj ( ) Tj T* ( ) Tj T* (license) Tj ( ) Tj (boot) Tj ( ) Tj (level) Tj ( ) Tj (network-advantage) Tj ( ) Tj (addon) Tj ( ) Tj (dna-advantage) Tj ( ) Tj T* ( ) Tj T* (vrf) Tj ( ) Tj (definition) Tj ( ) Tj (SWISSCOM) Tj ( ) Tj T*  (rd) Tj ( ) Tj (1) Tj (:1) Tj ( ) Tj T*  (address-family) Tj ( ) Tj (ipv4) Tj ( ) Tj T* ( ) Tj T* (int) Tj ( ) Tj (gig1) Tj ( ) Tj T*  (description) Tj ( ) Tj (***) Tj ( ) Tj (IPSec) Tj ( ) Tj (Underlay) Tj ( ) Tj (***) Tj ( ) Tj T*  (vrf) Tj ( ) Tj (forwarding) Tj ( ) Tj (SWISSCOM) Tj ( ) Tj T*  (ip) Tj ( ) Tj (address) Tj ( ) Tj (172) Tj (.16.1.1) Tj ( ) Tj (255) Tj (.255.255.252) Tj ( ) Tj T*  (no) Tj ( ) Tj (shutdown) Tj ( ) Tj T* ( ) Tj T* (int) Tj ( ) Tj (gig2) Tj ( ) Tj T*  (description) Tj ( ) Tj (***) Tj ( ) Tj (LAN) Tj ( ) Tj (Segment) Tj ( ) Tj (***) Tj ( ) Tj T*  (ip) Tj ( ) Tj (address) Tj ( ) Tj (192) Tj (.168.1.1) Tj ( ) Tj (255) Tj (.255.255.0) Tj ( ) Tj T*  (no) Tj ( ) Tj (shut) Tj ( ) Tj T* ( ) Tj T* (router) Tj ( ) Tj (eigrp) Tj ( ) Tj (1) Tj ( ) Tj T*  (network) Tj ( ) Tj (10) Tj (.10.10.0) Tj ( ) Tj (0) Tj (.0.0.3) Tj ( ) Tj T*  (network) Tj ( ) Tj (192) Tj (.168.1.0) Tj ( ) Tj (0) Tj (.0.0.255) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+47 0 obj
+<<
+/Length 6184
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 731.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 30.19775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (no) Tj ( ) Tj (auto-summary) Tj ( ) Tj T* (passive-interface) Tj ( ) Tj (default) Tj ( ) Tj T* ( ) Tj T* (ip) Tj ( ) Tj (tcp) Tj ( ) Tj (path-mtu-discovery) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 708.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Then the following config is added after reloading the router. Remember: These are not optimal settings as will be explained later on: - Tunnel Mode - IP MTU Value Missing - IP TCP Adjust MSS Value -) Tj T* (Shaping Missing - Various Tunnel cmds missing) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 354.7736 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 345.1977 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (crypto) Tj ( ) Tj (keyring) Tj ( ) Tj (KR-REP1) Tj ( ) Tj (vrf) Tj ( ) Tj (SWISSCOM) Tj  T*  ( ) Tj (pre-shared-key) Tj ( ) Tj (address) Tj ( ) Tj (172) Tj (.16.1.2) Tj ( ) Tj (key) Tj ( ) Tj (supersecret2) Tj  T*  T* (crypto) Tj ( ) Tj (isakmp) Tj ( ) Tj (policy) Tj ( ) Tj (5) Tj  T*  (encryption) Tj ( ) Tj (aes) Tj ( ) Tj (256) Tj  T*  (hash) Tj ( ) Tj (sha512) Tj  T*  (authentication) Tj ( ) Tj (pre-share) Tj  T*  (group) Tj ( ) Tj (20) Tj  T*  (lifetime) Tj ( ) Tj (14400) Tj  T*  T* (crypto) Tj ( ) Tj (isakmp) Tj ( ) Tj (keepalive) Tj ( ) Tj (10) Tj  T* (crypto) Tj ( ) Tj (isakmp) Tj ( ) Tj (aggressive-mode) Tj ( ) Tj (disable) Tj  T*  T* (crypto) Tj ( ) Tj (isakmp) Tj ( ) Tj (profile) Tj ( ) Tj (ISA-PROF) Tj  T*  ( ) Tj ( ) Tj (vrf) Tj ( ) Tj (SWISSCOM) Tj  T*  ( ) Tj ( ) Tj (keyring) Tj ( ) Tj (KR-REP1) Tj  T*  ( ) Tj ( ) Tj (match) Tj ( ) Tj (identity) Tj ( ) Tj (address) Tj ( ) Tj (172) Tj (.16.1.2) Tj ( ) Tj (255) Tj (.255.255.255) Tj ( ) Tj (SWISSCOM) Tj  T*  ( ) Tj ( ) Tj (keepalive) Tj ( ) Tj (10) Tj ( ) Tj (retry) Tj ( ) Tj (5) Tj  T*  T* (crypto) Tj ( ) Tj (ipsec) Tj ( ) Tj (transform-set) Tj ( ) Tj (TRANSF-SET-01) Tj ( ) Tj (esp-aes) Tj ( ) Tj (256) Tj ( ) Tj (esp-sha512-hmac) Tj  T*  (mode) Tj ( ) Tj (tunnel) Tj  T*  T* (crypto) Tj ( ) Tj (ipsec) Tj ( ) Tj (profile) Tj ( ) Tj (IPSEC-PROFILE) Tj  T*  (set) Tj ( ) Tj (transform-set) Tj ( ) Tj (TRANSF-SET-01) Tj  T*  (set) Tj ( ) Tj (pfs) Tj ( ) Tj (group20) Tj  T*  (set) Tj ( ) Tj (isakmp-profile) Tj ( ) Tj (ISA-PROF) Tj  T*  T* (interface) Tj ( ) Tj (Tunnel1) Tj  T*  (description) Tj ( ) Tj (***) Tj ( ) Tj (Swisscom) Tj ( ) Tj (10mbps) Tj ( ) Tj (***) Tj  T*  (bandwidth) Tj ( ) Tj (10000) Tj  T*  (ip) Tj ( ) Tj (address) Tj ( ) Tj (10) Tj (.10.10.1) Tj ( ) Tj (255) Tj (.255.255.252) Tj  T*  (ip) Tj ( ) Tj (hello-interval) Tj ( ) Tj (eigrp) Tj ( ) Tj (1) Tj ( ) Tj (3) Tj  T*  (ip) Tj ( ) Tj (hold-time) Tj ( ) Tj (eigrp) Tj ( ) Tj (1) Tj ( ) Tj (9) Tj  T*  (ip) Tj ( ) Tj (tcp) Tj ( ) Tj (adjust-mss) Tj ( ) Tj (1300) Tj  T*  (load-interval) Tj ( ) Tj (60) Tj  T*  (keepalive) Tj ( ) Tj (4) Tj ( ) Tj (3) Tj  T*  (tunnel) Tj ( ) Tj (source) Tj ( ) Tj (172) Tj (.16.1.1) Tj  T*  (tunnel) Tj ( ) Tj (mode) Tj ( ) Tj (ipsec) Tj ( ) Tj (ipv4) Tj  T*  (tunnel) Tj ( ) Tj (destination) Tj ( ) Tj (172) Tj (.16.1.2) Tj  T*  (tunnel) Tj ( ) Tj (vrf) Tj ( ) Tj (SWISSCOM) Tj  T*  (tunnel) Tj ( ) Tj (protection) Tj ( ) Tj (ipsec) Tj ( ) Tj (profile) Tj ( ) Tj (IPSEC-PROFILE) Tj  T*  T* (router) Tj ( ) Tj (eigrp) Tj ( ) Tj (1) Tj  T*  (no) Tj ( ) Tj (passive-interface) Tj ( ) Tj (Tunnel1) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 336.6167 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Branch Office) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 320.279 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The branch office uses a very similar configuration.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 305.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Configuration applied via API:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 69.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 227.0728 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (hostname) Tj ( ) Tj (Branch-R2) Tj  T* (no) Tj ( ) Tj (ip) Tj ( ) Tj (domain) Tj ( ) Tj (lookup) Tj  T*  T* (license) Tj ( ) Tj (boot) Tj ( ) Tj (level) Tj ( ) Tj (network-advantage) Tj ( ) Tj (addon) Tj ( ) Tj (dna-advantage) Tj  T*  T* (vrf) Tj ( ) Tj (definition) Tj ( ) Tj (SWISSCOM) Tj  T*  (rd) Tj ( ) Tj (1) Tj (:1) Tj  T*  (address-family) Tj ( ) Tj (ipv4) Tj  T*  T* (int) Tj ( ) Tj (gig1) Tj  T*  (description) Tj ( ) Tj (***) Tj ( ) Tj (IPSec) Tj ( ) Tj (Underlay) Tj ( ) Tj (***) Tj  T*  (vrf) Tj ( ) Tj (forwarding) Tj ( ) Tj (SWISSCOM) Tj  T*  (ip) Tj ( ) Tj (address) Tj ( ) Tj (172) Tj (.16.1.2) Tj ( ) Tj (255) Tj (.255.255.252) Tj  T*  (no) Tj ( ) Tj (shutdown) Tj  T*  T* (int) Tj ( ) Tj (gig2) Tj  T*  (description) Tj ( ) Tj (***) Tj ( ) Tj (LAN) Tj ( ) Tj (Segment) Tj ( ) Tj (***) Tj  T*  (ip) Tj ( ) Tj (address) Tj ( ) Tj (192) Tj (.168.100.1) Tj ( ) Tj (255) Tj (.255.255.0) Tj  T*  (no) Tj ( ) Tj (shut) Tj  T*  T*  T* (router) Tj ( ) Tj (eigrp) Tj ( ) Tj (1) Tj  T*  (network) Tj ( ) Tj (10) Tj (.10.10.0) Tj ( ) Tj (0) Tj (.0.0.3) Tj  T*  (network) Tj ( ) Tj (192) Tj (.168.100.0) Tj ( ) Tj (0) Tj (.0.0.255) Tj  T*  (no) Tj ( ) Tj (auto-summary) Tj  T*  (passive-interface) Tj ( ) Tj (default) Tj  T*  (no) Tj ( ) Tj (passive-interface) Tj ( ) Tj (Tunnel1) Tj  T*  T* (ip) Tj ( ) Tj (tcp) Tj ( ) Tj (path-mtu-discovery) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+48 0 obj
+<<
+/Length 9556
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Configuraton added after reboot:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 401.3986 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 345.1977 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (crypto) Tj ( ) Tj (keyring) Tj ( ) Tj (KR-HQ) Tj ( ) Tj (vrf) Tj ( ) Tj (SWISSCOM) Tj  T*  ( ) Tj (pre-shared-key) Tj ( ) Tj (address) Tj ( ) Tj (172) Tj (.16.1.1) Tj ( ) Tj (key) Tj ( ) Tj (supersecret2) Tj  T*  T* (crypto) Tj ( ) Tj (isakmp) Tj ( ) Tj (policy) Tj ( ) Tj (5) Tj  T*  (encryption) Tj ( ) Tj (aes) Tj ( ) Tj (256) Tj  T*  (hash) Tj ( ) Tj (sha512) Tj  T*  (authentication) Tj ( ) Tj (pre-share) Tj  T*  (group) Tj ( ) Tj (20) Tj  T*  (lifetime) Tj ( ) Tj (14400) Tj  T*  T* (crypto) Tj ( ) Tj (isakmp) Tj ( ) Tj (keepalive) Tj ( ) Tj (10) Tj  T* (crypto) Tj ( ) Tj (isakmp) Tj ( ) Tj (aggressive-mode) Tj ( ) Tj (disable) Tj  T*  T* (crypto) Tj ( ) Tj (isakmp) Tj ( ) Tj (profile) Tj ( ) Tj (ISA-PROF) Tj  T*  ( ) Tj ( ) Tj (vrf) Tj ( ) Tj (SWISSCOM) Tj  T*  ( ) Tj ( ) Tj (keyring) Tj ( ) Tj (KR-HQ) Tj  T*  ( ) Tj ( ) Tj (match) Tj ( ) Tj (identity) Tj ( ) Tj (address) Tj ( ) Tj (172) Tj (.16.1.1) Tj ( ) Tj (255) Tj (.255.255.255) Tj ( ) Tj (SWISSCOM) Tj  T*  ( ) Tj ( ) Tj (keepalive) Tj ( ) Tj (10) Tj ( ) Tj (retry) Tj ( ) Tj (5) Tj  T*  T* (crypto) Tj ( ) Tj (ipsec) Tj ( ) Tj (transform-set) Tj ( ) Tj (TRANSF-SET-01) Tj ( ) Tj (esp-aes) Tj ( ) Tj (256) Tj ( ) Tj (esp-sha512-hmac) Tj  T*  (mode) Tj ( ) Tj (tunnel) Tj  T*  T* (crypto) Tj ( ) Tj (ipsec) Tj ( ) Tj (profile) Tj ( ) Tj (IPSEC-PROFILE) Tj  T*  (set) Tj ( ) Tj (transform-set) Tj ( ) Tj (TRANSF-SET-01) Tj  T*  (set) Tj ( ) Tj (pfs) Tj ( ) Tj (group20) Tj  T*  (set) Tj ( ) Tj (isakmp-profile) Tj ( ) Tj (ISA-PROF) Tj  T*  T* (interface) Tj ( ) Tj (Tunnel1) Tj  T*  (description) Tj ( ) Tj (***) Tj ( ) Tj (To) Tj ( ) Tj (HQ) Tj ( ) Tj (10mbps) Tj ( ) Tj (***) Tj  T*  (bandwidth) Tj ( ) Tj (10000) Tj  T*  (ip) Tj ( ) Tj (address) Tj ( ) Tj (10) Tj (.10.10.2) Tj ( ) Tj (255) Tj (.255.255.252) Tj  T*  (ip) Tj ( ) Tj (hello-interval) Tj ( ) Tj (eigrp) Tj ( ) Tj (1) Tj ( ) Tj (3) Tj  T*  (ip) Tj ( ) Tj (hold-time) Tj ( ) Tj (eigrp) Tj ( ) Tj (1) Tj ( ) Tj (9) Tj  T*  (ip) Tj ( ) Tj (tcp) Tj ( ) Tj (adjust-mss) Tj ( ) Tj (1300) Tj  T*  (load-interval) Tj ( ) Tj (60) Tj  T*  (keepalive) Tj ( ) Tj (4) Tj ( ) Tj (3) Tj  T*  (tunnel) Tj ( ) Tj (source) Tj ( ) Tj (172) Tj (.16.1.2) Tj  T*  (tunnel) Tj ( ) Tj (mode) Tj ( ) Tj (ipsec) Tj ( ) Tj (ipv4) Tj  T*  (tunnel) Tj ( ) Tj (destination) Tj ( ) Tj (172) Tj (.16.1.1) Tj  T*  (tunnel) Tj ( ) Tj (vrf) Tj ( ) Tj (COLT) Tj  T*  (tunnel) Tj ( ) Tj (protection) Tj ( ) Tj (ipsec) Tj ( ) Tj (profile) Tj ( ) Tj (IPSEC-PROFILE-HK) Tj  T*  T* (router) Tj ( ) Tj (eigrp) Tj ( ) Tj (1) Tj  T*  (no) Tj ( ) Tj (passive-interface) Tj ( ) Tj (Tunnel1) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 383.2417 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Testing with DF-Bit) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 366.904 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Testing with the Don't Fragment bit set helps in determining the maximum packet size. On Windows this can be done as follows:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 328.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 30.19775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#-f) Tj ( ) Tj (=) Tj ( ) Tj (Dont) Tj ( ) Tj (Fragment) Tj  T* (#-l) Tj ( ) Tj (=) Tj ( ) Tj (Size) Tj ( ) Tj (of) Tj ( ) Tj (payload,) Tj ( ) Tj (remember) Tj ( ) Tj (8byte) Tj ( ) Tj (ICMP) Tj ( ) Tj (and) Tj ( ) Tj (20byte) Tj ( ) Tj (IP) Tj ( ) Tj (Header) Tj  T* (#) Tj ( ) Tj (1472) Tj ( ) Tj (should) Tj ( ) Tj (work) Tj ( ) Tj (in) Tj ( ) Tj (a) Tj ( ) Tj (regular) Tj ( ) Tj (1500byte) Tj ( ) Tj (mtu) Tj ( ) Tj (network) Tj ( ) Tj (whereas) Tj ( ) Tj (1473) Tj ( ) Tj (fails) Tj ( ) Tj (with) Tj ( ) Tj (DF) Tj ( ) Tj (bit.) Tj  T* (ping) Tj ( ) Tj (-f) Tj ( ) Tj (-l) Tj ( ) Tj (1472) Tj ( ) Tj (8) Tj (.8.8.8) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 313.029 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (As CML does not have a windows client, the following can be done. Remember an Ubuntu image is needed, this option is not supported on Alpine.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 219.154 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 85.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#-M) Tj ( ) Tj (=) Tj ( ) Tj (PMTU) Tj ( ) Tj (Discovery) Tj ( ) Tj (option) Tj  T* (#) Tj ( ) Tj ( ) Tj ( ) Tj (do) Tj ( ) Tj (=) Tj ( ) Tj (Prohibit) Tj ( ) Tj (Fragmenation) Tj ( ) Tj (\(also) Tj ( ) Tj (local!\)) Tj  T* (#) Tj ( ) Tj ( ) Tj ( ) Tj (want) Tj ( ) Tj (=) Tj ( ) Tj (to) Tj ( ) Tj (PMTU,) Tj ( ) Tj (fragment) Tj ( ) Tj (locally) Tj ( ) Tj (if) Tj ( ) Tj (needed) Tj  T* (#) Tj ( ) Tj ( ) Tj ( ) Tj (dont) Tj ( ) Tj (=) Tj ( ) Tj (do) Tj ( ) Tj (NOT) Tj ( ) Tj (set) Tj ( ) Tj (the) Tj ( ) Tj (DF) Tj ( ) Tj (bit) Tj  T* (#-s) Tj ( ) Tj (=) Tj ( ) Tj (Packet) Tj ( ) Tj (size) Tj  T* (#) Tj ( ) Tj (+8) Tj ( ) Tj (byte) Tj ( ) Tj (icmp) Tj ( ) Tj (+) Tj ( ) Tj (20byte) Tj ( ) Tj (ip) Tj ( ) Tj (header) Tj ( ) Tj (=) Tj ( ) Tj (1422) Tj ( ) Tj  T* (#) Tj ( ) Tj (+34) Tj ( ) Tj (Byte) Tj ( ) Tj (ESP) Tj ( ) Tj (Trailer) Tj ( ) Tj (+) Tj ( ) Tj (20) Tj ( ) Tj (Byte) Tj ( ) Tj (IP-in-IP) Tj ( ) Tj (header) Tj ( ) Tj (\(IPSec\)) Tj ( ) Tj (+) Tj ( ) Tj (24) Tj ( ) Tj (byte) Tj ( ) Tj (ESP) Tj ( ) Tj (IV) Tj ( ) Tj (and) Tj ( ) Tj (header) Tj ( ) Tj (=) Tj ( ) Tj  T* (#) Tj ( ) Tj (+) Tj ( ) Tj (0) Tj ( ) Tj (byte) Tj ( ) Tj (Padding) Tj  T* (#) Tj ( ) Tj (1394) Tj ( ) Tj (works) Tj ( ) Tj (with) Tj ( ) Tj (the) Tj ( ) Tj (above) Tj ( ) Tj (defined) Tj ( ) Tj (crypto) Tj ( ) Tj (algorithms) Tj ( ) Tj (AES-256) Tj ( ) Tj (SHA-512.) Tj ( ) Tj  T* (#) Tj ( ) Tj (Note:) Tj ( ) Tj (AES-GCM) Tj ( ) Tj (ciphers) Tj ( ) Tj (would) Tj ( ) Tj (require) Tj ( ) Tj (16byte) Tj ( ) Tj (less) Tj ( ) Tj (space) Tj ( ) Tj (vs) Tj ( ) Tj (ESP-SHA-512) Tj ( ) Tj (as) Tj ( ) Tj (ESP) Tj ( ) Tj (ICV) Tj ( ) Tj (goes) Tj ( ) Tj (from) Tj ( ) Tj (32bytes) Tj ( ) Tj (to) Tj ( ) Tj (16) Tj ( ) Tj (bytes.) Tj  T* (ping) Tj ( ) Tj (-M) Tj ( ) Tj (do) Tj ( ) Tj (-s) Tj ( ) Tj (1394) Tj ( ) Tj (192) Tj (.168.1.1) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 200.9971 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Testing with Iperf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 184.6594 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Iperf in v.2 comes pre-installed on the alpine images. This is ideal for some testing with multiple TCP streams as well as a variaty of DSCP values in order to test QoS queue assignement.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 169.5344 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The server side is initialized with the ) Tj /F4 5.25 Tf (-s) Tj /F1 5.25 Tf ( option and configured to respond in a 1sec interval as follows:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 146.5344 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 14.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (Server) Tj ( ) Tj (\(-s\)) Tj ( ) Tj (and) Tj ( ) Tj (interval) Tj ( ) Tj (1sec) Tj  T* (iperf) Tj ( ) Tj (-s) Tj ( ) Tj (-i1) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 115.6594 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 21.8555 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (On the client side the interval ) Tj /F4 5.25 Tf (-i) Tj /F1 5.25 Tf (, the amount of repetitions ) Tj /F4 5.25 Tf (-t) Tj /F1 5.25 Tf ( and the number of parallel streams ) Tj /F4 5.25 Tf (-P) Tj /F1 5.25 Tf ( are configured. For slow speed WAN links, the Bandwidth-delay-product \(BDP\) is of uttermost) Tj T* (importance and can limit the throughput of a single tcp connection. To test the behavior the tcp Window Size can be configured ) Tj /F4 5.25 Tf (-w) Tj /F1 5.25 Tf (. If this is not done, then regular window scaling as per RFC1323 will be) Tj T* (used.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 92.65937 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 14.44775 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (#) Tj ( ) Tj (client) Tj ( ) Tj (\(-c\)) Tj ( ) Tj (and) Tj ( ) Tj (10) Tj ( ) Tj (times) Tj ( ) Tj (repeat) Tj ( ) Tj (\(-t10\)) Tj ( ) Tj (and) Tj ( ) Tj (10) Tj ( ) Tj (parallel) Tj ( ) Tj (streams) Tj ( ) Tj (\(-P\)) Tj  T* (iperf) Tj ( ) Tj (-c) Tj ( ) Tj (192) Tj (.168.100.2) Tj ( ) Tj (-i1) Tj ( ) Tj (-t10) Tj ( ) Tj (-P) Tj ( ) Tj (10) Tj ( ) Tj (-w) Tj ( ) Tj (64KB) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 77.53437 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Depending on the underlaying os the following warning might be displayed when using 2M window isze ) Tj /F4 5.25 Tf (-w 2M) Tj /F1 5.25 Tf (: -) Tj /F5 5.25 Tf ( TCP window size: 410 KByte \(WARNING: requested 2.00 MByte\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+endobj
+49 0 obj
+<<
+/Length 10907
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 755.1486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The underlying OS in this case prohibids the usage of higher window sizes. For linux boxes this can be adjusted as follows:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 708.5236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 38.07275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (sudo) Tj ( ) Tj (echo) Tj ( ) Tj (') Tj (net.core.wmem_max=4194304) Tj (') Tj ( ) Tj (>) Tj (>) Tj ( ) Tj (/etc/sysctl.conf) Tj  T* (sudo) Tj ( ) Tj (echo) Tj ( ) Tj (') Tj (net.core.rmem_max=12582912) Tj (') Tj ( ) Tj (>) Tj (>) Tj ( ) Tj (/etc/sysctl.conf) Tj  T* (sudo) Tj ( ) Tj (echo) Tj ( ) Tj (') Tj (net.ipv4.tcp_rmem) Tj ( ) Tj (=) Tj ( ) Tj (4096) Tj ( ) Tj (87380) Tj ( ) Tj (4194304) Tj (') Tj ( ) Tj (>) Tj (>) Tj ( ) Tj (/etc/sysctl.conf) Tj  T* (sudo) Tj ( ) Tj (echo) Tj ( ) Tj (') Tj (net.ipv4.tcp_wmem) Tj ( ) Tj (=) Tj ( ) Tj (4096) Tj ( ) Tj (87380) Tj ( ) Tj (4194304) Tj (') Tj ( ) Tj (>) Tj (>) Tj ( ) Tj (/etc/sysctl.conf) Tj  T* (sudo) Tj ( ) Tj (sysctl) Tj ( ) Tj (-p) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 677.6486 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 21.8555 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (A WAN link where limitations due to the BDP can occur can be simulated using the ) Tj /F4 5.25 Tf (wan_simulator) Tj /F1 5.25 Tf ( in CML. Jitter and latency as well as bandwidth can be set there. A single TCP stream can achieve) Tj T* (roughtly 3mbps throughput given a window size of 64KByte and a 180ms delay. However TCP algorithms dynamically adjust based on retransmissions and have slow start implemented. The following shows) Tj T* (lab-measurements are around:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 625.1486 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 104.2631 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Window Size) Tj T* -104.2631 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 39.37499 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 105.5808 0 Td 7.875 TL /F3 5.25 Tf 0 0 0 rg (Throughput) Tj T* -105.5808 0 Td ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (64KB) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 31.49999 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (1.5 mbps) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (128KB) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 23.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (2 mbps) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (256KB) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (3.2 mbps) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (2M) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (8.5 mbps) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (4M) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (10 mbps) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 610.0236 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The values have been measured in a lab and do not match 1:1 the math behind BDP. See the Calculator link below for theoretical maximums) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 591.8668 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (Testing with CML Packet Capture) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 575.529 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The CML capture reveals that that when sending 1394 bytes of payload, the packet size indeed goes up to 1514 \(L2 MTU\) / 1500 \(L3 MTU\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 557.3721 cm
+q
+1 0 0 1 1 -1 cm
+q
+.605883 w
+BT 1 0 0 1 0 7.05387 Tm 9.694125 TL /F3 6.46275 Tf 0 0 0 rg (IPSec Calculation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 541.0344 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (The following IPSec caluclation shows, that the packet is 8 Byte to big and therefore gets fragmented at the worst moment.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 518.0344 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Remember: - ICMP Header is 8 byte - TCP Header is 20 byte - IP Header is 20 byte - IPSec Padding increases packet size by numbers devidable by 8 or 16 depending on algorithm. So an increase in +1) Tj T* (byte payload can mean up to 8/16 byte packet size increase.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 495.0344 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (So for example, an ICMP packet in Tunnel mode \(tunnel mode ipsec ipv4 using AES-256 with SHA-512\) can be as big as: - 1394 Data + 8 byte ICMP + 20 byte IP = 1422 byte - Adding IPSec: 34 Byte ESP) Tj T* (Trailer + 24 byte ESP IV and header + 20 byte IPSec IP Header= 1500byte - \(Without NAT-T and GRE\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 479.9094 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (However, switching to Transport mode and using GRE still only allows for 1390 bytes of Data \(ICMP Payload\) because of the GRE Header.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 456.9094 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+BT 1 0 0 1 0 13.9805 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (These calculation where made using ESP-AES-256+SHA-512. TCP MSS and IP MTU therefore should be aligned with Tunnel/Transport mode and best practice to set the following values accounts for both) Tj T* (transport and tunnel mode and all known ciphers:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 426.0344 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+.492188 w
+.492188 w
+BT 1 0 0 1 0 22.32275 Tm 7.875 TL /F4 5.25 Tf 0 0 0 rg (interface) Tj ( ) Tj (Tunnel1) Tj  T*  (ip) Tj ( ) Tj (mtu) Tj ( ) Tj (1400) Tj  T*  (ip) Tj ( ) Tj (tcp) Tj ( ) Tj (adjust-mss) Tj ( ) Tj (1360) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 410.9094 cm
+q
+1 0 0 1 1 -1 cm
+q
+.492188 w
+BT 1 0 0 1 0 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Note: Non-TCP Traffic can still get fragmented, but this should happen before the "expensive" ipsec fragmentation thanks to adjustment of interface mtu.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 390.7313 cm
+q
+1 0 0 1 1 -1 cm
+q
+.68168 w
+BT 1 0 0 1 0 7.686117 Tm 10.90688 TL /F3 7.27125 Tf 0 0 0 rg (References) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 373.585 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 79.64775 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (Network Config v2 Format) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 363.71 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 71.484 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (Cloud Init Default User) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 353.835 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 67.69875 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (Cloud Init Debugging) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 343.96 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 55.15125 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (Ubuntu Netplan) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 334.085 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 52.80975 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (Linux IP Cmds) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 324.21 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 67.39425 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (CML Example YAML) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 314.335 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 79.35375 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (GRE MTU Considerations) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 304.46 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 78.1935 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (Linux Modify TCP Buffers) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 294.585 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 71.19 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (Online BDP Calculater) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 284.71 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 72.94875 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (Iperf options by version) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 274.835 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 67.3995 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (GRE vs VTI Up state) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 264.96 cm
+q
+1 0 0 1 1 -1 cm
+q
+BT 1 0 0 1 0 6.1055 Tm /F1 5.25 Tf 6.3 TL 0 0 0 rg /F1 5.25 Tf 6.3 TL 0 0 0 rg (\177) Tj ET
+.492188 w
+0 0 1 RG
+n 18.67425 5.121125 m 137.7127 5.121125 l S
+BT 1 0 0 1 7.875 6.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (See ) Tj 0 0 1 rg (Book: Deploying WAAS \(BDP, window scaling etc.\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 57.02362 264.96 cm
+Q
+ 
+endstream
+endobj
+50 0 obj
+<<
+/Nums [ 0 51 0 R 1 52 0 R 2 53 0 R 3 54 0 R 4 55 0 R 
+  5 56 0 R ]
+>>
+endobj
+51 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+52 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+53 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+54 0 obj
+<<
+/S /D /St 4
+>>
+endobj
+55 0 obj
+<<
+/S /D /St 5
+>>
+endobj
+56 0 obj
+<<
+/S /D /St 6
+>>
+endobj
+xref
+0 57
+0000000000 65535 f 
+0000000073 00000 n 
+0000000145 00000 n 
+0000000252 00000 n 
+0000000361 00000 n 
+0000000473 00000 n 
+0000000578 00000 n 
+0000000783 00000 n 
+0000000988 00000 n 
+0000001193 00000 n 
+0000001398 00000 n 
+0000001518 00000 n 
+0000001724 00000 n 
+0000001974 00000 n 
+0000002190 00000 n 
+0000002407 00000 n 
+0000002605 00000 n 
+0000002812 00000 n 
+0000003094 00000 n 
+0000003350 00000 n 
+0000003571 00000 n 
+0000003775 00000 n 
+0000003958 00000 n 
+0000004202 00000 n 
+0000004431 00000 n 
+0000004736 00000 n 
+0000004842 00000 n 
+0000005159 00000 n 
+0000005233 00000 n 
+0000005319 00000 n 
+0000005421 00000 n 
+0000005577 00000 n 
+0000005686 00000 n 
+0000005810 00000 n 
+0000005934 00000 n 
+0000006052 00000 n 
+0000006205 00000 n 
+0000006295 00000 n 
+0000006402 00000 n 
+0000006516 00000 n 
+0000006629 00000 n 
+0000006755 00000 n 
+0000006854 00000 n 
+0000006946 00000 n 
+0000007038 00000 n 
+0000017378 00000 n 
+0000028185 00000 n 
+0000037235 00000 n 
+0000043471 00000 n 
+0000053079 00000 n 
+0000064039 00000 n 
+0000064128 00000 n 
+0000064162 00000 n 
+0000064196 00000 n 
+0000064230 00000 n 
+0000064264 00000 n 
+0000064298 00000 n 
+trailer
+<<
+/ID 
+[<6247b8948baa9a5527fa03655d2d919b><6247b8948baa9a5527fa03655d2d919b>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 26 0 R
+/Root 25 0 R
+/Size 57
+>>
+startxref
+64332
+%%EOF

@@ -1,0 +1,544 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="True" name="HandheldFriendly"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="robots"/>
+<style type="text/css">
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: var(--jp-cell-editor-active-background) }
+.highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
+.highlight .c { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment */
+.highlight .err { color: var(--jp-mirror-editor-error-color) } /* Error */
+.highlight .k { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword */
+.highlight .o { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator */
+.highlight .p { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation */
+.highlight .ch { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Preproc */
+.highlight .cpf { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Single */
+.highlight .cs { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Special */
+.highlight .kc { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Type */
+.highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
+.highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
+.highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
+.highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
+.highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
+.highlight .mh { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Hex */
+.highlight .mi { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer */
+.highlight .mo { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Oct */
+.highlight .sa { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Affix */
+.highlight .sb { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Backtick */
+.highlight .sc { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Char */
+.highlight .dl { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Delimiter */
+.highlight .sd { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Doc */
+.highlight .s2 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Double */
+.highlight .se { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Escape */
+.highlight .sh { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Heredoc */
+.highlight .si { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Interpol */
+.highlight .sx { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Other */
+.highlight .sr { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Regex */
+.highlight .s1 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Single */
+.highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
+.highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
+</style>
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
+div.entry-content {
+  overflow: visible;
+  padding: 8px;
+}
+.input_area {
+  padding: 0.2em;
+}
+
+a.heading-anchor {
+ white-space: normal;
+}
+
+.rendered_html
+code {
+ font-size: .8em;
+}
+
+pre.ipynb {
+  color: black;
+  background: #f7f7f7;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0px;
+  font-size: 13px;
+}
+
+/* remove the prompt div from text cells */
+div.text_cell .prompt {
+    display: none;
+}
+
+/* remove horizontal padding from text cells, */
+/* so it aligns with outer body text */
+div.text_cell_render {
+    padding: 0.5em 0em;
+}
+
+img.anim_icon{padding:0; border:0; vertical-align:middle; -webkit-box-shadow:none; -box-shadow:none}
+
+div.collapseheader {
+    width=100%;
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true,
+        displayMath: [['$$','$$'], ["\\[","\\]"]]
+    }
+});
+</script>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $("div.collapseheader").click(function () {
+    $header = $(this).children("span").first();
+    $codearea = $(this).children(".input_area");
+    console.log($(this).children());
+    $codearea.slideToggle(500, function () {
+        $header.text(function () {
+            return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+        });
+    });
+});
+});
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&amp;family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://maconrad.github.io/theme/stylesheet/style.min.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/pygments/github.min.css" id="pygments-light-theme" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/brands.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/solid.css" rel="stylesheet" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<meta content="Mario" name="author"/>
+<meta content="Nice talks from PyCon" name="description"/>
+<meta content="Python, PyCon, Talks" name="keywords"/>
+<meta content="PeliBlog" property="og:site_name">
+<meta content="Pycon Talks" property="og:title"/>
+<meta content="Nice talks from PyCon" property="og:description"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="https://maconrad.github.io/pycon-talks.html" property="og:url"/>
+<meta content="article" property="og:type"/>
+<meta content="2022-02-21 11:51:00+01:00" property="article:published_time"/>
+<meta content="" property="article:modified_time"/>
+<meta content="https://maconrad.github.io/author/mario.html" property="article:author"/>
+<meta content="Python" property="article:section">
+<meta content="Python" property="article:tag"/>
+<meta content="PyCon" property="article:tag"/>
+<meta content="Talks" property="article:tag"/>
+<meta content="/images/Logo.png" property="og:image"/>
+<title>PeliBlog – Pycon Talks</title>
+</meta></meta><link href="https://maconrad.github.io/pycon-talks.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "PeliBlog", "item": "https://maconrad.github.io"}, {"@type": "ListItem", "position": 2, "name": "Pycon talks", "item": "https://maconrad.github.io/pycon-talks.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Mario"}, "publisher": {"@type": "Organization", "name": "PeliBlog"}, "headline": "Pycon Talks", "about": "Python", "datePublished": "2022-02-21 11:51"}</script></head>
+<body class="light-theme">
+<aside>
+<div>
+<a href="https://maconrad.github.io/">
+<img alt="" src="/images/Logo.png" title=""/>
+</a>
+<h1>
+<a href="https://maconrad.github.io/"></a>
+</h1>
+<nav>
+<ul class="list">
+<li>
+<a href="https://maconrad.github.io/pages/about.html#about" target="_self">
+                  About
+                </a>
+</li>
+</ul>
+</nav>
+<ul class="social">
+<li>
+<a class="sc-You can add links in your config file" href="#" target="_blank">
+<i class="fab fa-You can add links in your config file"></i>
+</a>
+</li>
+<li>
+<a class="sc-Another social link" href="#" target="_blank">
+<i class="fab fa-Another social link"></i>
+</a>
+</li>
+</ul>
+</div>
+</aside>
+<main>
+<nav>
+<a href="https://maconrad.github.io/">Home</a>
+<a href="/archives.html">Archives</a>
+<a href="/categories.html">Categories</a>
+<a href="/tags.html">Tags</a>
+</nav>
+<article class="single">
+<header>
+<h1 id="pycon-talks">Pycon Talks</h1>
+<p>
+      Posted on Mo 21 Februar 2022 in <a href="https://maconrad.github.io/category/python.html">Python</a>
+</p>
+</header>
+<div>
+<div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#pycon-de-2019">PyCon DE 2019</a></li>
+<li><a href="#pycon-de-2022">PyCon DE 2022</a></li>
+</ul>
+</div>
+<h1 id="pycon-de-2019">PyCon DE 2019</h1>
+<ul>
+<li>See: <a href="https://www.youtube.com/c/PyConDE">PyConDE Playlist Youtube</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Play</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>https://youtu.be/vTxXHx5lfv0</td>
+<td>Whats new in Python 3.8</td>
+</tr>
+<tr>
+<td></td>
+<td>6 Years of Docker, the good, the bad and python packacking</td>
+</tr>
+<tr>
+<td></td>
+<td>10 ways to debug python code</td>
+</tr>
+<tr>
+<td></td>
+<td>static typing in python</td>
+</tr>
+<tr>
+<td></td>
+<td>intro to automated testing with pytest</td>
+</tr>
+<tr>
+<td></td>
+<td>venv, pyenv,  pypi, pip, pipenv, pyWTF?</td>
+</tr>
+<tr>
+<td></td>
+<td>Whats new in Python 3.8</td>
+</tr>
+<tr>
+<td></td>
+<td>Kubernetes 101 for python developers</td>
+</tr>
+<tr>
+<td></td>
+<td>Refactoring in python, design patterns and approaches</td>
+</tr>
+<tr>
+<td></td>
+<td>What we learned from scraping over 1 billion webpages per month</td>
+</tr>
+<tr>
+<td></td>
+<td>Monitoring infrastrcture and application using django, sensu and celery</td>
+</tr>
+<tr>
+<td></td>
+<td>Abridged metaprogramming classics, pytest</td>
+</tr>
+<tr>
+<td></td>
+<td>Package and dependency management with poetry</td>
+</tr>
+<tr>
+<td></td>
+<td>Commenting code, beyond common wisdom</td>
+</tr>
+<tr>
+<td></td>
+<td>Break your api gently or not at all</td>
+</tr>
+<tr>
+<td></td>
+<td>Write your own decorator</td>
+</tr>
+<tr>
+<td></td>
+<td>paralell programming for python developers</td>
+</tr>
+<tr>
+<td></td>
+<td>Mock Hell</td>
+</tr>
+<tr>
+<td></td>
+<td>pytest, simple, rapid and fun testing</td>
+</tr>
+<tr>
+<td></td>
+<td>Docker and python, a match made in heaven</td>
+</tr>
+<tr>
+<td></td>
+<td>An introduction to concurrency and parallelism</td>
+</tr>
+</tbody>
+</table>
+<h1 id="pycon-de-2022">PyCon DE 2022</h1>
+<ul>
+<li>See: Coming</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Play</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>(Serious) Time for Time Series</td>
+</tr>
+<tr>
+<td></td>
+<td>An Introduction to Inter Process Communication and Synchronization using Python</td>
+</tr>
+<tr>
+<td></td>
+<td>Aspect-oriented Programming - Diving deep into Decorators</td>
+</tr>
+<tr>
+<td></td>
+<td>ML Communication 101: How to talk about Machine Learning with anyone</td>
+</tr>
+<tr>
+<td></td>
+<td>Practical graph neural networks in Python with TensorFlow and Spektral</td>
+</tr>
+<tr>
+<td></td>
+<td> pytest - simple, rapid and fun testing with Python</td>
+</tr>
+<tr>
+<td></td>
+<td>Refactoring</td>
+</tr>
+<tr>
+<td></td>
+<td>sktime - python toolbox for time series: advanced forecasting - probabilistic, global and hierarchical</td>
+</tr>
+<tr>
+<td> </td>
+<td>We know what your app did last summer. Do you? Observing Python applications using Prometheus.</td>
+</tr>
+<tr>
+<td></td>
+<td>"Easy Python": lies, damned lies, and metaclasses</td>
+</tr>
+<tr>
+<td></td>
+<td>Advanced Django ORM</td>
+</tr>
+<tr>
+<td></td>
+<td>Building an ORM from scratch</td>
+</tr>
+<tr>
+<td> </td>
+<td> But this is an OAuth, is it not?</td>
+</tr>
+<tr>
+<td></td>
+<td>Forget Mono vs. Multi-Repo - Building Centralized Git Workflows with Python</td>
+</tr>
+<tr>
+<td></td>
+<td>jsonargparse - Say goodbye to configuration hassles</td>
+</tr>
+<tr>
+<td></td>
+<td>Make the most of Django</td>
+</tr>
+<tr>
+<td></td>
+<td>Navigating the limitations of Python’s concurrency model in web services</td>
+</tr>
+<tr>
+<td></td>
+<td> Python 3.10: Welcome to pattern matching!</td>
+</tr>
+<tr>
+<td></td>
+<td>Quitting pip: How we use git submodules to manage internal dependencies that require fast iteration</td>
+</tr>
+<tr>
+<td></td>
+<td>Securing Django Applications</td>
+</tr>
+<tr>
+<td></td>
+<td>The Magic of Python Objects</td>
+</tr>
+<tr>
+<td> </td>
+<td> The state of DevOps for Python projects</td>
+</tr>
+<tr>
+<td></td>
+<td>Trojan Source Attacks - Can we trust open-source anymore?</td>
+</tr>
+<tr>
+<td></td>
+<td>Web based live visualisation of sensor data</td>
+</tr>
+<tr>
+<td></td>
+<td> Building a Sign-to-Speech prototype with TensorFlow, Pytorch and DeepStack: How it happened &amp; What I learned</td>
+</tr>
+<tr>
+<td> </td>
+<td>Can you Read This? (Or: how I Improved Text Readability on the Web for the Visually Impaired)</td>
+</tr>
+<tr>
+<td> </td>
+<td>Creating 3D Maps using Python</td>
+</tr>
+<tr>
+<td></td>
+<td> deepdoctection - An open source package for document intelligence</td>
+</tr>
+<tr>
+<td></td>
+<td>Easy and flexible imaging with the Core Imaging Library</td>
+</tr>
+<tr>
+<td></td>
+<td>Financial Portfolio Management with Deep Reinforcement Learning</td>
+</tr>
+<tr>
+<td></td>
+<td>Forget Mono vs. Multi-Repo - Building Centralized Git Workflows with Python</td>
+</tr>
+<tr>
+<td></td>
+<td>High Performance Pandas: Leveraging The Power Of Pandas Data Manipulation</td>
+</tr>
+<tr>
+<td></td>
+<td> How to build a Python-based Research Cloud Platform from scratch</td>
+</tr>
+<tr>
+<td></td>
+<td>JupyterLite: Jupyter ❤️ WebAssembly ❤️ Python</td>
+</tr>
+<tr>
+<td></td>
+<td>Machine Learning Testing Ecosystem of Python</td>
+</tr>
+<tr>
+<td></td>
+<td>Navigating the limitations of Python’s concurrency model in web services </td>
+</tr>
+<tr>
+<td></td>
+<td> Performing Content: Can NLP and Deep Learning algorithms predict reader preferences? </td>
+</tr>
+<tr>
+<td></td>
+<td>Processing Open Street Map Data with Python and PostgreSQL</td>
+</tr>
+<tr>
+<td></td>
+<td>Recommending Artworks </td>
+</tr>
+<tr>
+<td></td>
+<td>Slack bots 101: An introduction into slack bot-based workflow automation</td>
+</tr>
+<tr>
+<td></td>
+<td>Stupid Things I've Done With Python</td>
+</tr>
+<tr>
+<td></td>
+<td>Unclear Code Hurts</td>
+</tr>
+<tr>
+<td></td>
+<td>Upgrade your Documentation to the Next Level</td>
+</tr>
+<tr>
+<td></td>
+<td> You shall not share!</td>
+</tr>
+<tr>
+<td></td>
+<td>Your data, your insights: creating personal data projects to (re-)own the data you share</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tag-cloud">
+<p>
+<a href="https://maconrad.github.io/tag/python.html">Python</a>
+<a href="https://maconrad.github.io/tag/pycon.html">PyCon</a>
+<a href="https://maconrad.github.io/tag/talks.html">Talks</a>
+</p>
+</div>
+<div class="related-posts">
+<h4>You might enjoy</h4>
+<ul class="related-posts">
+<li><a href="https://maconrad.github.io/my-list-of-nice-python-articles.html">Nice Python Articles</a></li>
+<li><a href="https://maconrad.github.io/python-libraries.html">Python Libraries</a></li>
+<li><a href="https://maconrad.github.io/prototype.html">Prototype</a></li>
+<li><a href="https://maconrad.github.io/pattern-creational-factory.html">Factories</a></li>
+<li><a href="https://maconrad.github.io/builder.html">Builder</a></li>
+</ul>
+</div>
+</article>
+<footer>
+<p>© 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p> </footer>
+</main>
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

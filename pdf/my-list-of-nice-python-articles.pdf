@@ -37,7 +37,7 @@ endobj
 endobj
 7 0 obj
 <<
-/Author () /CreationDate (D:20220202154553-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220202154553-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20220329112135-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20220329112135-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (Nice Python Articles) /Trapped /False
 >>
 endobj
@@ -58,7 +58,7 @@ endobj
 endobj
 11 0 obj
 <<
-/Length 9336
+/Length 14241
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -134,12 +134,12 @@ q
 Q
 Q
 q
-1 0 0 1 57.02362 445.9493 cm
+1 0 0 1 57.02362 327.8243 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 0 189 cm
+1 0 0 1 0 307.125 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -151,7 +151,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 189 cm
+1 0 0 1 240.6142 307.125 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -163,7 +163,295 @@ q
 Q
 Q
 q
-1 0 0 1 0 181.125 cm
+1 0 0 1 0 299.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/installing-python/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 299.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Python 3 instalaltion and setup) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 291.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-return-statement) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 291.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Return statement) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 283.5 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-wheels/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 283.5 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Setuptools & wheels) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 275.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-zipapp/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 275.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (ZIPapp from CLI) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 267.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/pypi-publish-python-package/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 267.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Publish to pypi) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 259.875 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-git-github-intro/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 259.875 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Git Github) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 252 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python310-new-features/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 252 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Python 3.10) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 244.125 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-testing/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 244.125 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Python testing) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 236.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/testing-third-party-apis-with-mocks/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 236.25 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Mocking Part 1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 228.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/testing-third-party-apis-with-mock-servers/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 228.375 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Mocking part 2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 220.5 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-cli-testing/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 220.5 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Python CLI Testing) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 212.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/comparing-python-command-line-parsing-libraries-argparse-docopt-click/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 212.625 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Argparse, click, docopt) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 204.75 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -175,7 +463,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 181.125 cm
+1 0 0 1 240.6142 204.75 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -187,7 +475,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 173.25 cm
+1 0 0 1 0 196.875 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -199,7 +487,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 173.25 cm
+1 0 0 1 240.6142 196.875 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -211,7 +499,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 165.375 cm
+1 0 0 1 0 189 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -223,7 +511,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 165.375 cm
+1 0 0 1 240.6142 189 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -235,7 +523,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 157.5 cm
+1 0 0 1 0 181.125 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -247,7 +535,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 157.5 cm
+1 0 0 1 240.6142 181.125 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -259,7 +547,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 149.625 cm
+1 0 0 1 0 173.25 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -271,7 +559,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 149.625 cm
+1 0 0 1 240.6142 173.25 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -283,7 +571,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 141.75 cm
+1 0 0 1 0 165.375 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -295,7 +583,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 141.75 cm
+1 0 0 1 240.6142 165.375 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -307,7 +595,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 133.875 cm
+1 0 0 1 0 157.5 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -319,7 +607,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 133.875 cm
+1 0 0 1 240.6142 157.5 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -331,7 +619,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 126 cm
+1 0 0 1 0 149.625 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -343,7 +631,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 126 cm
+1 0 0 1 240.6142 149.625 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -355,7 +643,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 118.125 cm
+1 0 0 1 0 141.75 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -367,7 +655,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 118.125 cm
+1 0 0 1 240.6142 141.75 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -379,7 +667,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 110.25 cm
+1 0 0 1 0 133.875 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -391,7 +679,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 110.25 cm
+1 0 0 1 240.6142 133.875 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -403,7 +691,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 102.375 cm
+1 0 0 1 0 126 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -415,7 +703,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 102.375 cm
+1 0 0 1 240.6142 126 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -427,7 +715,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 94.49999 cm
+1 0 0 1 0 118.125 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -439,7 +727,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 94.49999 cm
+1 0 0 1 240.6142 118.125 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -451,7 +739,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 86.62499 cm
+1 0 0 1 0 110.25 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -463,7 +751,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 86.62499 cm
+1 0 0 1 240.6142 110.25 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -475,7 +763,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 78.74999 cm
+1 0 0 1 0 102.375 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -487,7 +775,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 78.74999 cm
+1 0 0 1 240.6142 102.375 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -499,7 +787,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 70.87499 cm
+1 0 0 1 0 94.49999 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -511,7 +799,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 70.87499 cm
+1 0 0 1 240.6142 94.49999 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -523,7 +811,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 62.99999 cm
+1 0 0 1 0 86.62499 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -535,7 +823,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 62.99999 cm
+1 0 0 1 240.6142 86.62499 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -547,7 +835,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 55.12499 cm
+1 0 0 1 0 78.74999 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -559,7 +847,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 55.12499 cm
+1 0 0 1 240.6142 78.74999 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -571,7 +859,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 47.24999 cm
+1 0 0 1 0 70.87499 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -583,7 +871,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 47.24999 cm
+1 0 0 1 240.6142 70.87499 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -595,7 +883,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 39.37499 cm
+1 0 0 1 0 62.99999 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -607,7 +895,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 39.37499 cm
+1 0 0 1 240.6142 62.99999 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -619,7 +907,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 31.49999 cm
+1 0 0 1 0 55.12499 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -631,7 +919,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 31.49999 cm
+1 0 0 1 240.6142 55.12499 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -643,7 +931,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 23.625 cm
+1 0 0 1 0 47.24999 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -655,7 +943,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 23.625 cm
+1 0 0 1 240.6142 47.24999 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -667,7 +955,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 15.75 cm
+1 0 0 1 0 39.37499 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -679,7 +967,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 15.75 cm
+1 0 0 1 240.6142 39.37499 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -691,7 +979,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 7.874998 cm
+1 0 0 1 0 31.49999 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -703,7 +991,7 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 7.874998 cm
+1 0 0 1 240.6142 31.49999 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -715,7 +1003,7 @@ q
 Q
 Q
 q
-1 0 0 1 0 -0.000001 cm
+1 0 0 1 0 23.625 cm
 q
 1 0 0 1 0 0 cm
 q
@@ -727,12 +1015,84 @@ q
 Q
 Q
 q
-1 0 0 1 240.6142 -0.000001 cm
+1 0 0 1 240.6142 23.625 cm
 q
 1 0 0 1 0 0 cm
 q
 .492188 w
 BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Duck Typing) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-data-classes/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 15.75 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Data classes) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/preview/python-assert-statement/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 7.874998 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (ASsert and Debug conditions) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 0 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (https://realpython.com/python-sockets/) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 240.6142 -0.000001 cm
+q
+1 0 0 1 0 0 cm
+q
+.492188 w
+BT 1 0 0 1 0 4.1055 Tm 7.875 TL /F1 5.25 Tf 0 0 0 rg (Socket Programming \(client/server\)) Tj T* ET
 Q
 Q
 q
@@ -769,12 +1129,12 @@ xref
 0000001109 00000 n 
 0000001194 00000 n 
 0000001254 00000 n 
-0000010642 00000 n 
-0000010683 00000 n 
+0000015548 00000 n 
+0000015589 00000 n 
 trailer
 <<
 /ID 
-[<26db50b4203ab619ea2697ee07834ec0><26db50b4203ab619ea2697ee07834ec0>]
+[<cbd7b1068b2b9884b9b76010d5b1e515><cbd7b1068b2b9884b9b76010d5b1e515>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 7 0 R
@@ -782,5 +1142,5 @@ trailer
 /Size 14
 >>
 startxref
-10717
+15623
 %%EOF

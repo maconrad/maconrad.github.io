@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="True" name="HandheldFriendly"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="robots"/>
+<style type="text/css">
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: var(--jp-cell-editor-active-background) }
+.highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
+.highlight .c { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment */
+.highlight .err { color: var(--jp-mirror-editor-error-color) } /* Error */
+.highlight .k { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword */
+.highlight .o { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator */
+.highlight .p { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation */
+.highlight .ch { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Preproc */
+.highlight .cpf { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Single */
+.highlight .cs { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment.Special */
+.highlight .kc { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: var(--jp-mirror-editor-keyword-color); font-weight: bold } /* Keyword.Type */
+.highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
+.highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
+.highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
+.highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
+.highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
+.highlight .mh { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Hex */
+.highlight .mi { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer */
+.highlight .mo { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Oct */
+.highlight .sa { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Affix */
+.highlight .sb { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Backtick */
+.highlight .sc { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Char */
+.highlight .dl { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Delimiter */
+.highlight .sd { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Doc */
+.highlight .s2 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Double */
+.highlight .se { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Escape */
+.highlight .sh { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Heredoc */
+.highlight .si { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Interpol */
+.highlight .sx { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Other */
+.highlight .sr { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Regex */
+.highlight .s1 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Single */
+.highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
+.highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
+</style>
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
+div.entry-content {
+  overflow: visible;
+  padding: 8px;
+}
+.input_area {
+  padding: 0.2em;
+}
+
+a.heading-anchor {
+ white-space: normal;
+}
+
+.rendered_html
+code {
+ font-size: .8em;
+}
+
+pre.ipynb {
+  color: black;
+  background: #f7f7f7;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0px;
+  font-size: 13px;
+}
+
+/* remove the prompt div from text cells */
+div.text_cell .prompt {
+    display: none;
+}
+
+/* remove horizontal padding from text cells, */
+/* so it aligns with outer body text */
+div.text_cell_render {
+    padding: 0.5em 0em;
+}
+
+img.anim_icon{padding:0; border:0; vertical-align:middle; -webkit-box-shadow:none; -box-shadow:none}
+
+div.collapseheader {
+    width=100%;
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true,
+        displayMath: [['$$','$$'], ["\\[","\\]"]]
+    }
+});
+</script>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $("div.collapseheader").click(function () {
+    $header = $(this).children("span").first();
+    $codearea = $(this).children(".input_area");
+    console.log($(this).children());
+    $codearea.slideToggle(500, function () {
+        $header.text(function () {
+            return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+        });
+    });
+});
+});
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&amp;family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://maconrad.github.io/theme/stylesheet/style.min.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/pygments/github.min.css" id="pygments-light-theme" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/brands.css" rel="stylesheet" type="text/css"/>
+<link href="https://maconrad.github.io/theme/font-awesome/css/solid.css" rel="stylesheet" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<meta content="Mario" name="author"/>
+<meta content="On Box Wireshark and FIA Tracing" name="description"/>
+<meta content="Cisco, DNA, Lisp" name="keywords"/>
+<meta content="PeliBlog" property="og:site_name">
+<meta content="Caturing and Troubleshooting" property="og:title"/>
+<meta content="On Box Wireshark and FIA Tracing" property="og:description"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="https://maconrad.github.io/caturing-and-troubleshooting.html" property="og:url"/>
+<meta content="article" property="og:type"/>
+<meta content="2022-02-02 11:51:00+01:00" property="article:published_time"/>
+<meta content="2022-02-02 14:30:00+01:00" property="article:modified_time"/>
+<meta content="https://maconrad.github.io/author/mario.html" property="article:author"/>
+<meta content="Cisco" property="article:section">
+<meta content="Cisco" property="article:tag"/>
+<meta content="DNA" property="article:tag"/>
+<meta content="Lisp" property="article:tag"/>
+<meta content="/images/Logo.png" property="og:image"/>
+<title>PeliBlog – Caturing and Troubleshooting</title>
+</meta></meta><link href="https://maconrad.github.io/caturing-and-troubleshooting.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "PeliBlog", "item": "https://maconrad.github.io"}, {"@type": "ListItem", "position": 2, "name": "Caturing and troubleshooting", "item": "https://maconrad.github.io/caturing-and-troubleshooting.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Mario"}, "publisher": {"@type": "Organization", "name": "PeliBlog"}, "headline": "Caturing and Troubleshooting", "about": "Cisco", "datePublished": "2022-02-02 11:51"}</script></head>
+<body class="light-theme">
+<aside>
+<div>
+<a href="https://maconrad.github.io/">
+<img alt="" src="/images/Logo.png" title=""/>
+</a>
+<h1>
+<a href="https://maconrad.github.io/"></a>
+</h1>
+<nav>
+<ul class="list">
+<li>
+<a href="https://maconrad.github.io/pages/about.html#about" target="_self">
+                  About
+                </a>
+</li>
+</ul>
+</nav>
+<ul class="social">
+<li>
+<a class="sc-You can add links in your config file" href="#" target="_blank">
+<i class="fab fa-You can add links in your config file"></i>
+</a>
+</li>
+<li>
+<a class="sc-Another social link" href="#" target="_blank">
+<i class="fab fa-Another social link"></i>
+</a>
+</li>
+</ul>
+</div>
+</aside>
+<main>
+<nav>
+<a href="https://maconrad.github.io/">Home</a>
+<a href="/archives.html">Archives</a>
+<a href="/categories.html">Categories</a>
+<a href="/tags.html">Tags</a>
+</nav>
+<article class="single">
+<header>
+<h1 id="caturing-and-troubleshooting">Caturing and Troubleshooting</h1>
+<p>
+      Posted on Mi 02 Februar 2022 in <a href="https://maconrad.github.io/category/cisco.html">Cisco</a>
+</p>
+</header>
+<div>
+<div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#on-box-wireshark">On Box Wireshark</a></li>
+<li><a href="#fia-tracing">FIA Tracing</a></li>
+<li><a href="#config-capture">Config Capture</a></li>
+<li><a href="#wireshark-filters">Wireshark Filters</a><ul>
+<li><a href="#refs">Refs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="on-box-wireshark">On Box Wireshark</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>monitor capture CAP_HUN interface Hu1/0/31 in</td>
+<td>Physical  iface capture</td>
+</tr>
+<tr>
+<td>monitor capture CAP_HUN control-plane both</td>
+<td>Control plane capture</td>
+</tr>
+<tr>
+<td>monitor capture CAP_HUN interface Tunnel 10 both</td>
+<td>Tunnel iface capture</td>
+</tr>
+<tr>
+<td>monitor capture CAP_HUN limit packets 10000</td>
+<td>Stop capturing after x packts</td>
+</tr>
+<tr>
+<td>monitor capture CAP_HUN match any</td>
+<td>match  everything</td>
+</tr>
+<tr>
+<td>monitor capture CAP_HUN match ipv4 protocol 88 any any</td>
+<td>match  eigrp</td>
+</tr>
+<tr>
+<td>monitor capture CAP_HUN buffer size 10</td>
+<td></td>
+</tr>
+<tr>
+<td>monitor capture CAP_HUN clear</td>
+<td></td>
+</tr>
+<tr>
+<td>monitor capture CAP_HUN stop</td>
+<td></td>
+</tr>
+<tr>
+<td>monitor capture CAP_HUN start</td>
+<td></td>
+</tr>
+<tr>
+<td>monitor capture CAP_HUN export bootflash:hun_icmp.pcap</td>
+<td></td>
+</tr>
+<tr>
+<td>show monitor capture file bootflash:hun_icmp.pcap display-filter "icmp"</td>
+<td></td>
+</tr>
+<tr>
+<td>show monitor capture file bootflash:hun_icmp.pcap display-filter "tcp.flags.syn==1"</td>
+<td></td>
+</tr>
+<tr>
+<td>show monitor capture file bootflash:hun_icmp.pcap display-filter "icmp &amp;&amp; ip.dst==1.1.1.1"</td>
+<td></td>
+</tr>
+<tr>
+<td>show monitor capture file bootflash:hun_icmp.pcap packet-number 432 detailed</td>
+<td></td>
+</tr>
+<tr>
+<td>show monitor capture CAP_HUN buffer</td>
+<td></td>
+</tr>
+<tr>
+<td>show monitor capture CAP_HUN buffer brief</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>https://www.ciscolive.com/c/dam/r/ciscolive/us/docs/2019/pdf/BRKARC-2020.pdf</p>
+<h1 id="fia-tracing">FIA Tracing</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>debug platform condition interface tun10 egress</td>
+<td></td>
+</tr>
+<tr>
+<td>debug platform condition start</td>
+<td></td>
+</tr>
+<tr>
+<td>debug platform packet-trace packet 16</td>
+<td></td>
+</tr>
+<tr>
+<td>debug platform packet-trace drop</td>
+<td></td>
+</tr>
+<tr>
+<td>debug platform packet-trace enable</td>
+<td></td>
+</tr>
+<tr>
+<td>debug platform condition stop</td>
+<td></td>
+</tr>
+<tr>
+<td>show platform packet-trace summary</td>
+<td></td>
+</tr>
+<tr>
+<td>show platform packet-trace statistics</td>
+<td></td>
+</tr>
+<tr>
+<td>show platform packet-trace packet 1</td>
+<td></td>
+</tr>
+<tr>
+<td>show platform packet-trace packet 1 decode</td>
+<td>i ID</td>
+</tr>
+<tr>
+<td>show platform hardware qfp active feature qos queue output interface Tunnel10 detail</td>
+<td>i 0x87</td>
+</tr>
+</tbody>
+</table>
+<p>https://www.ciscolive.com/c/dam/r/ciscolive/emea/docs/2019/pdf/BRKARC-3147.pdf</p>
+<h1 id="config-capture">Config Capture</h1>
+<p>Unsorted</p>
+<div class="highlight"><pre><span></span><code>event manager applet catch_all
+ event cli pattern <span class="s2">".*"</span> sync no skip no
+ action <span class="m">1</span> syslog msg <span class="s2">"</span><span class="nv">$_cli_msg</span><span class="s2">"</span>
+</code></pre></div>
+<p>snipplet2</p>
+<div class="highlight"><pre><span></span><code>archive
+ log config
+  logging <span class="nb">enable</span>
+  logging size <span class="m">500</span>
+
+show archive log config all
+</code></pre></div>
+<h1 id="wireshark-filters">Wireshark Filters</h1>
+<p>Some useful wireshark filters. </p>
+<div class="highlight"><pre><span></span><code>tcp.option_kind <span class="o">==</span> <span class="nv">3</span> <span class="o">=</span>&gt; WindowScale
+tcp.option_kind <span class="o">==</span> <span class="nv">4</span> <span class="o">=</span>&gt; SACK
+tcp.options.wscale
+tcp.options.sack_perm 
+tcp.window_size&lt;<span class="m">1460</span>
+tcp.analysis.retransmission
+tcp.analysis.flags
+tcp.flags.reset <span class="o">==</span> <span class="m">1</span>
+</code></pre></div>
+<p>Also the "Analysis &gt; TCP Stream Graph &gt; Window Scaling" and the "Bytes in Flight and Window Size" Columns are very helpful.</p>
+<p>The see a rough distribution of the available window sizes the following "I/O Graph" can be used:</p>
+<p><img alt="Window Sizes" src="../../images/wireshark/window_scaling.png" width="400"/></p>
+<h2 id="refs">Refs</h2>
+<ul>
+<li>See: <a href="https://www.networkdatapedia.com/post/how-to-use-the-window-scale-stream-graph-in-wireshark">Window Scale In Wireshark</a></li>
+<li>See: </li>
+</ul>
+</div>
+<div class="tag-cloud">
+<p>
+<a href="https://maconrad.github.io/tag/cisco.html">Cisco</a>
+<a href="https://maconrad.github.io/tag/dna.html">DNA</a>
+<a href="https://maconrad.github.io/tag/lisp.html">Lisp</a>
+</p>
+</div>
+<div class="related-posts">
+<h4>You might enjoy</h4>
+<ul class="related-posts">
+<li><a href="https://maconrad.github.io/dna-center-commands.html">DNA Center Commands</a></li>
+<li><a href="https://maconrad.github.io/cisco-modeling-labs-1-basic-fvrf-ikev1ipsec-connectivity.html">Cisco Modeling Labs 1 - Basic FVRF IKEv1/IPSec connectivity</a></li>
+<li><a href="https://maconrad.github.io/netconf-pyang-ansible-to-automate-ios-xe.html">Netconf, pyang &amp; ansible to automate IOS-XE</a></li>
+<li><a href="https://maconrad.github.io/restconf-pyang.html">Restconf, pyang</a></li>
+</ul>
+</div>
+</article>
+<footer>
+<p>© 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p> </footer>
+</main>
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>
