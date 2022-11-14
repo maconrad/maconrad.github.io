@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: Overview Setup Git - Daily Examples Git Resetting Git Log &amp; Pointers Example Git Diff Example Git Stash Example Git Conflicts &amp; Fast Forward Git Branches Git Merge vs Rebase Git Tags GitHub, GitLab and Co TODO Git config Git Syntax Graphical Git Tools XY Refs Overview 3 Stages Working …" />
+<meta name="keywords" content="Git, cicd tools">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Play with Git"/>
+  <meta property="og:description" content="Table of contents: Overview Setup Git - Daily Examples Git Resetting Git Log &amp; Pointers Example Git Diff Example Git Stash Example Git Conflicts &amp; Fast Forward Git Branches Git Merge vs Rebase Git Tags GitHub, GitLab and Co TODO Git config Git Syntax Graphical Git Tools XY Refs Overview 3 Stages Working …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/play-with-git.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-12-05 11:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="cicd"/>
+  <meta property="article:tag" content="Git"/>
+  <meta property="article:tag" content="cicd tools"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Play with Git</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="play-with-git">Play with Git</h1>
+    <p>
+      Posted on So 05 Dezember 2021 in <a href="https://maconrad.github.io/category/cicd.html">cicd</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#git-daily-examples">Git - Daily Examples</a></li>
+<li><a href="#git-resetting">Git Resetting</a></li>
+<li><a href="#git-log-pointers-example">Git Log &amp; Pointers Example</a></li>
+<li><a href="#git-diff-example">Git Diff Example</a></li>
+<li><a href="#git-stash-example">Git Stash Example</a></li>
+<li><a href="#git-conflicts-fast-forward">Git Conflicts &amp; Fast Forward</a></li>
+<li><a href="#git-branches">Git Branches</a></li>
+<li><a href="#git-merge-vs-rebase">Git Merge vs Rebase</a></li>
+<li><a href="#git-tags">Git Tags</a></li>
+<li><a href="#github-gitlab-and-co">GitHub, GitLab and Co</a><ul>
+<li><a href="#todo">TODO</a></li>
+<li><a href="#git-config">Git config</a></li>
+<li><a href="#git-syntax">Git Syntax</a></li>
+<li><a href="#graphical-git-tools">Graphical Git Tools</a></li>
+<li><a href="#xy">XY</a></li>
+<li><a href="#refs">Refs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>3 Stages</li>
+<li>Working directory</li>
+<li>Staging Area (=Index)</li>
+<li>Repo (.git directory)<ul>
+<li>Local repo</li>
+<li>remote repo</li>
+</ul>
+</li>
+<li>3 States</li>
+<li>Modified</li>
+<li>Staged</li>
+<li>Commited</li>
+<li>Pointers</li>
+<li>HEAD: Latest commit (pointer)</li>
+</ul>
+<h2 id="setup">Setup</h2>
+<ul>
+<li>1 Repo with</li>
+<li>1 remote repo (repository service GitHub)</li>
+<li>2 local repos</li>
+<li>Files in Repo</li>
+<li>a.txt</li>
+<li>b.txt</li>
+</ul>
+<div class="highlight"><pre><span></span><code>line a1
+line a2
+line a3
+line a4
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>line b1
+line b2
+line b3
+line b4
+</code></pre></div>
+
+<h2 id="git-daily-examples">Git - Daily Examples</h2>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git init .</td>
+<td>Initialize local repository (creates .git folder)</td>
+</tr>
+<tr>
+<td>git remote add origin git@github.com:...</td>
+<td>Add remote repo location</td>
+</tr>
+<tr>
+<td>git add .</td>
+<td>Add files to staging area / staging index</td>
+</tr>
+<tr>
+<td>git commit -m '1st commit'</td>
+<td>Commit to local repo</td>
+</tr>
+<tr>
+<td>git rm --cached a.txt</td>
+<td>a.txt aus Staging area wieder entfernen</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>Branch, commits, staging-area</td>
+</tr>
+<tr>
+<td>git branch -m main</td>
+<td>Rename current branch to main</td>
+</tr>
+<tr>
+<td>git push -u origin main</td>
+<td>Push to url with name origin to branch main*</td>
+</tr>
+<tr>
+<td>git remote -v</td>
+<td>List remote repos</td>
+</tr>
+<tr>
+<td>git clone git@github.com:...</td>
+<td>Clone repo into current dir, optional specify target dir</td>
+</tr>
+<tr>
+<td>git log --oneline</td>
+<td>Commit history as one-linere, including commit id</td>
+</tr>
+<tr>
+<td>git log --oneline --graph</td>
+<td>Very short graphical commit history</td>
+</tr>
+<tr>
+<td>git log --graph --abbrev-commit --decorate --date=relative --all</td>
+<td>A bit more verbose commit history</td>
+</tr>
+<tr>
+<td>git diff a.txt</td>
+<td>Compare Working-dir to last commit of local repo</td>
+</tr>
+<tr>
+<td>git diff 936281f a.txt</td>
+<td>Compare to specific commit-id</td>
+</tr>
+<tr>
+<td>git diff a.txt b.txt</td>
+<td>Compare multiple files against their last version</td>
+</tr>
+<tr>
+<td>git pull</td>
+<td>Pull changes from remote location (fast-forward or not)*, =fetch+merge</td>
+</tr>
+<tr>
+<td>git rm a.txt</td>
+<td>Removes file from working dir &amp; marks removal in stagin area</td>
+</tr>
+<tr>
+<td>git restore --staged a.txt</td>
+<td>"undeletes" file from staging area, but file still NOT in working dir</td>
+</tr>
+<tr>
+<td>git restore a.txt</td>
+<td>"undeletes" file from staging area + undelete from working dir (after --staged)</td>
+</tr>
+<tr>
+<td>git rm --cached c.txt</td>
+<td>Unstage = Remove from staging area but do NOT d elete from working dir*</td>
+</tr>
+<tr>
+<td>git config --list</td>
+<td>List all set configuration params in current repo</td>
+</tr>
+<tr>
+<td>git mergetool --tool=meld</td>
+<td>Set the git merge tool to meld for this specifc invoke of mergetool</td>
+</tr>
+<tr>
+<td>git mergetool</td>
+<td>Start the configured global merge tool</td>
+</tr>
+<tr>
+<td>git tag v2.0</td>
+<td>Tag current HEAD with a specific tag</td>
+</tr>
+<tr>
+<td>git tag -a v2.0 -m "msg"</td>
+<td>Tag plus message, should use v&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt; or v&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;-alpha/beta</td>
+</tr>
+<tr>
+<td>git push --tags</td>
+<td>Tags are not automatically pushed upstream</td>
+</tr>
+</tbody>
+</table>
+<p>Stars
+- <code>-u or --set-upstream</code>: adds upstream tracking reference
+- <code>rm --cached</code>: Usually used after git add . and then see that file should be part of .gitignore
+- <code>pull</code> can also be used to integrate local working directory with non-parent brancht</p>
+<h2 id="git-resetting">Git Resetting</h2>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git reset --hard &lt;commit-id&gt;</td>
+<td>Work-dir &amp;</td>
+</tr>
+<tr>
+<td>git reset --mixed &lt;commit-id&gt;</td>
+<td>Defautl behaviour (without --mixed),</td>
+</tr>
+</tbody>
+</table>
+<h2 id="git-log-pointers-example">Git Log &amp; Pointers Example</h2>
+<ul>
+<li>Before pushing a local commit to the remote repository</li>
+<li>Local HEAD Pointer already points to latest commit of branch main a6225db</li>
+<li>Remote HEAD Pointer as well as main branch pointer (url xy named origin) point to commit with id 936281f</li>
+<li>After pushing</li>
+<li>All pointers point to the same commit</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># git log --oneline</span>
+<span class="c1"># before git push to remote </span>
+a6225db <span class="o">(</span>HEAD -&gt; main<span class="o">)</span> 2nd commit
+936281f <span class="o">(</span>origin/main, origin/HEAD<span class="o">)</span> 1st commit
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># git log --oneline</span>
+<span class="c1"># After git pusht to remote</span>
+1f44873 <span class="o">(</span>HEAD -&gt; main, origin/main, origin/HEAD<span class="o">)</span> 3rd commit
+a6225db 2nd commit
+936281f 1st commit
+</code></pre></div>
+
+<h2 id="git-diff-example">Git Diff Example</h2>
+<ul>
+<li>Diff can be used against various commits</li>
+<li>Between @@ </li>
+<li>Part -1,/+1, denote starting point for both is line 1</li>
+<li>Part -1,5 denotes 5 lines are part of it (neutral (no +/-) and minus lines)</li>
+<li>Part +1,6 denotes 6 lines are part of it (neutral and plus-lines)</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="w"># Example diff working dir to last commit</span>
+<span class="w"># git diff a.txt</span>
+<span class="w"># Here local copy (version 3) vs commit 2</span>
+<span class="gh">diff --git a/a.txt b/a.txt</span><span class="w"></span>
+<span class="gh">index b07545f..86324cd 100644</span><span class="w"></span>
+<span class="gd">--- a/a.txt</span><span class="w"></span>
+<span class="gi">+++ b/a.txt</span><span class="w"></span>
+<span class="gu">@@ -1,5 +1,6 @@</span><span class="w"></span>
+<span class="w"> </span>line a1<span class="w"></span>
+<span class="w"> </span>line a2 - modified commit 2<span class="w"></span>
+<span class="gd">-line a3</span><span class="w"></span>
+<span class="gi">+line a3 - modified commit 3</span><span class="w"></span>
+<span class="w"> </span>line a4<span class="w"></span>
+<span class="w"> </span>line a5 - added commit 2<span class="w"></span>
+<span class="gi">+line a6 - added commit 3</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="w"># Example diff to specific commit (&quot;2&quot; commits back)</span>
+<span class="w"># git diff 936281f a.txt</span>
+<span class="w"># Here local copy (version 3) vs commit 1</span>
+<span class="gh">diff --git a/a.txt b/a.txt</span><span class="w"></span>
+<span class="gh">index 610c16c..86324cd 100644</span><span class="w"></span>
+<span class="gd">--- a/a.txt</span><span class="w"></span>
+<span class="gi">+++ b/a.txt</span><span class="w"></span>
+<span class="gu">@@ -1,4 +1,6 @@</span><span class="w"></span>
+<span class="w"> </span>line a1<span class="w"></span>
+<span class="gd">-line a2</span><span class="w"></span>
+<span class="gd">-line a3</span><span class="w"></span>
+<span class="gi">+line a2 - modified commit 2</span><span class="w"></span>
+<span class="gi">+line a3 - modified commit 3</span><span class="w"></span>
+<span class="w"> </span>line a4<span class="w"></span>
+<span class="gi">+line a5 - added commit 2</span><span class="w"></span>
+<span class="gi">+line a6 - added commit 3</span><span class="w"></span>
+</code></pre></div>
+
+<h2 id="git-stash-example">Git Stash Example</h2>
+<ul>
+<li>Diff can be used</li>
+</ul>
+<h2 id="git-conflicts-fast-forward">Git Conflicts &amp; Fast Forward</h2>
+<ul>
+<li>If two developers have their repo pointing to the same commit-id and both change stuff locally conflicts can happen</li>
+<li>Example same file, different line</li>
+<li>Developer a changes a.txt line 1 and commits locally + pushes</li>
+<li>Developer b changes a.txt line 4 and commits locally + pushes (wihtout pull) &gt; Result: conflict</li>
+<li>Developer b will have to do a pull first, which results in another fetch+merge that can be commited</li>
+<li>Automatic merge will work<ul>
+<li>Merge strategy used: recursive = integrates both changes</li>
+</ul>
+</li>
+<li>Example different files</li>
+<li>Example same file, same line</li>
+<li>Developer a changes a.txt line 5 and commits locally + pushes</li>
+<li>Developer b changes a.txt line 5 and commits locally + pushes</li>
+<li>Developer b will have to do a pull first, which results in another fetch+merge that can be commited</li>
+<li>Automatic merge will FAIL<ul>
+<li>Manual merge has to be done</li>
+<li>HEAD is the local version (local HEAD)</li>
+</ul>
+</li>
+<li>Mergetools can help</li>
+<li><code>git mergetool --tool-help</code></li>
+<li><code>git config --list</code></li>
+<li><code>git mergetool --tool=meld</code> (brew install meld)</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example same file, different line</span>
+<span class="c1">## Developer A</span>
+786ea20 <span class="o">(</span>HEAD -&gt; main, origin/main<span class="o">)</span> 4th commit from developer A
+1f44873 3rd commit
+a6225db 2nd commit
+936281f 1st commit
+
+<span class="c1">## Developer B - after pull &amp; merge</span>
+ine a2 - modified commit <span class="m">2</span>
+4e520a7 <span class="o">(</span>HEAD -&gt; main<span class="o">)</span> Merge branch <span class="s1">&#39;main&#39;</span> of github.com:maconrad/playwithgit merge commit-msg
+c1a5c96 4th commig from developer B
+786ea20 <span class="o">(</span>origin/main, origin/HEAD<span class="o">)</span> 4th commit from left
+1f44873 3rd commit
+a6225db 2nd commit
+936281f 1st commit
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Merge conflict</span>
+line a1 - modified commit <span class="m">4</span>
+line a2 - modified commit <span class="m">2</span>
+line a3 - modified commit <span class="m">3</span>
+line a4 - modified commit <span class="m">4</span>
+<span class="o">&lt;&lt;&lt;&lt;&lt;&lt;</span>&lt; HEAD
+line a5 - added commit <span class="m">2</span> - modified 6th commit <span class="nv">righ</span>
+<span class="o">=======</span>
+line a5 - added commit <span class="m">2</span> - modified 6th commit left
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 98c0972c79dd3f2b4cccedbeea96879b35f1692d
+line a6 - added commit <span class="m">3</span>
+line a7 - added commit <span class="m">3</span>
+line a8 - added commit <span class="m">3</span>
+line a9 - added commit <span class="m">3</span>
+</code></pre></div>
+
+<h2 id="git-branches">Git Branches</h2>
+<ul>
+<li>Allow to work on features independently</li>
+<li>Allow to work on multiple features concurrently</li>
+<li>Allow stability (play around without destroying main codebase)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git checkout -b feature1</td>
+<td>Create a new branch</td>
+</tr>
+<tr>
+<td>git add . &amp;&amp; git commit -m 'msg'</td>
+<td>commit on feature branch</td>
+</tr>
+<tr>
+<td>git checkout main</td>
+<td>Checkout local main branch</td>
+</tr>
+<tr>
+<td>git pull</td>
+<td>Bring main up2date</td>
+</tr>
+<tr>
+<td>git merge feature1</td>
+<td>Merge feature1 into master</td>
+</tr>
+<tr>
+<td>git merge --squash feature2</td>
+<td>Merge all commits from feature2 into a single commit</td>
+</tr>
+</tbody>
+</table>
+<p>| | |
+| git checkout -b develop                           | Create new develop branch |
+| git switch -c develop                             | Newer version of checkout, -c==create |
+| git push --set-upstream origin develop            | Push branch upstream |
+| git checkout -b dev-feature4A develop             | Developer A |
+| git checkout -b dev-feature4B develop             | Developer B |</p>
+<h2 id="git-merge-vs-rebase">Git Merge vs Rebase</h2>
+<ul>
+<li>Merge shows different branches and creates a new <code>Merge Commit</code></li>
+<li>Forward Based behaviour, history of both (e.g. main &amp; feature1) are still visible = history is cluttered</li>
+<li>Rebase shows a linear commit history</li>
+<li>Rebase has issues with pull requests</li>
+<li>Rebase = rewrite history</li>
+<li>Rebase = ReBase, update history onto another branch</li>
+<li>Example<ul>
+<li>Common base of main and feature is Commit#M2</li>
+<li>Feature adds Commit#F1,ommit#F2,ommit#F3</li>
+<li>Main adds Commit#M3,Cmmit#M4</li>
+<li></li>
+</ul>
+</li>
+<li>Popular rebase example:</li>
+<li>Developer A&amp;B bases his wor on develop branch</li>
+<li>Developer A works on feature1</li>
+<li>Developer B works on feature2</li>
+<li>Developer A finishes early and integrates feature1 into develop branch + pushes upstream</li>
+<li>Developer B finishes his work on feature2</li>
+<li>Developer B pulls changes from developer branch</li>
+<li>Before merging his changes into develop branch, rebases his feature2 onto "current" develop branch state</li>
+<li>Rebase on local project OK, rebase on public project NoGo</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># Merging</span>
+
+*   1aa6d9b <span class="o">(</span>HEAD -&gt; main<span class="o">)</span> Merge branch <span class="s1">&#39;feature2&#39;</span>
+<span class="p">|</span><span class="se">\</span>
+<span class="p">|</span> * b68fd8e <span class="o">(</span>feature2<span class="o">)</span> feature2 1st commit
+* <span class="p">|</span> 7b4f638 <span class="o">(</span>origin/main, origin/HEAD<span class="o">)</span> 16th commit
+<span class="p">|</span>/
+* 7bde84c main 15th commit
+* 7179fdd main 14th commit
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Rebasing</span>
+
+<span class="c1"># Main branch</span>
+998244a <span class="o">(</span>HEAD -&gt; main, origin/main<span class="o">)</span> 17th commit main
+1aa6d9b Merge branch <span class="s1">&#39;feature2&#39;</span>
+b68fd8e feature2 1st commit
+7b4f638 16th commit
+
+<span class="c1"># Before rebase inside branch freature3, main had 1 additional commit after feature2</span>
+3ff4d19 <span class="o">(</span>HEAD -&gt; feature3<span class="o">)</span> feature3 <span class="c1">#2nd commit</span>
+45394d1 feature3 <span class="c1">#1st commit</span>
+1aa6d9b Merge branch <span class="s1">&#39;feature2&#39;</span>
+b68fd8e <span class="o">(</span>feature2<span class="o">)</span> feature2 1st commit
+7b4f638 16th commit
+
+<span class="c1"># After rebase in feature 3</span>
+<span class="c1"># git checkout feature3 &amp;&amp; git rebase main</span>
+<span class="c1"># Note: New commit IDs when rebasing</span>
+<span class="m">0593571</span> <span class="o">(</span>HEAD -&gt; feature3<span class="o">)</span> feature3 <span class="c1">#2nd commit</span>
+c99ec1a feature3 <span class="c1">#1st commit</span>
+998244a <span class="o">(</span>origin/main, origin/HEAD, main<span class="o">)</span> 17th commit main
+1aa6d9b Merge branch <span class="s1">&#39;feature2&#39;</span>
+b68fd8e <span class="o">(</span>feature2<span class="o">)</span> feature2 1st commit
+7b4f638 16th commit
+
+<span class="c1"># Merge into main (or rebase again)</span>
+<span class="c1">## git checkout main</span>
+<span class="c1">## git merge feature3 (OR) git rebase feature3</span>
+git merge feature3
+Aktualisiere 998244a..0593571
+Fast-forward
+ a.txt <span class="p">|</span> <span class="m">2</span> ++
+ <span class="m">1</span> file changed, <span class="m">2</span> insertions<span class="o">(</span>+<span class="o">)</span>
+
+<span class="c1"># Note: Not visible that it was actually a branch (fast fwd)</span>
+* <span class="m">0593571</span> <span class="o">(</span>HEAD -&gt; main, feature3<span class="o">)</span> feature3 <span class="c1">#2nd commit</span>
+* c99ec1a feature3 <span class="c1">#1st commit</span>
+* 998244a <span class="o">(</span>origin/main, origin/HEAD<span class="o">)</span> 17th commit main
+*   1aa6d9b Merge branch <span class="s1">&#39;feature2&#39;</span>
+<span class="p">|</span><span class="se">\</span>
+<span class="p">|</span> * b68fd8e <span class="o">(</span>feature2<span class="o">)</span> feature2 1st commit
+* <span class="p">|</span> 7b4f638 16th commit
+<span class="p">|</span>/
+* 7bde84c main 15th commit
+</code></pre></div>
+
+<h2 id="git-tags">Git Tags</h2>
+<ul>
+<li>asdf</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git tag</td>
+<td></td>
+</tr>
+<tr>
+<td>git tag -n</td>
+<td>Show tag and messages</td>
+</tr>
+<tr>
+<td>git tag v1.0</td>
+<td>Applies to HEAD</td>
+</tr>
+<tr>
+<td>git tag v1.0 HEAD</td>
+<td>Applies to HEAD</td>
+</tr>
+<tr>
+<td>git tag v1.0 HEAD~1</td>
+<td>Applies to commit before HEAD</td>
+</tr>
+<tr>
+<td>git tag v1.0 HEAD~2</td>
+<td>Applies to 2 commits before HEAD</td>
+</tr>
+</tbody>
+</table>
+<h1 id="github-gitlab-and-co">GitHub, GitLab and Co</h1>
+<ul>
+<li>Code Review / Documentation / Project mgmt / Issue Tracking / Feature requests</li>
+<li>Pull Requests</li>
+</ul>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>Git forks</li>
+<li>Git rebase</li>
+<li>Reference by number HEAD#2 or sth like that</li>
+</ul>
+<h2 id="git-config">Git config</h2>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git config --global user.name "Mario Conrad"</td>
+<td>Config git username</td>
+</tr>
+<tr>
+<td>git config --global user.email "mario.conrad@gmail.com"</td>
+<td>Config git email</td>
+</tr>
+<tr>
+<td>git config --global merge.tool meld</td>
+<td>Set meld as the standard git merge tool</td>
+</tr>
+<tr>
+<td>git config --global mergetool.keepBackup false</td>
+<td>Do not keep backup files after merge</td>
+</tr>
+<tr>
+<td>git config pull.rebase false</td>
+<td>Standard Merge Strategy</td>
+</tr>
+<tr>
+<td>git config pull.rebase true</td>
+<td>Set merge strategy to rebase = true</td>
+</tr>
+<tr>
+<td>git config pull.ff only</td>
+<td>Set merge strategy to fast forward only</td>
+</tr>
+</tbody>
+</table>
+<h2 id="git-syntax">Git Syntax</h2>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git remote add &lt;name&gt; &lt;url&gt;</td>
+<td>Syntax: Add remote repo location</td>
+</tr>
+<tr>
+<td>git branch (-m</td>
+<td>-M) [&lt;oldbranch&gt;] &lt;newbranch&gt;</td>
+</tr>
+<tr>
+<td>git clone &lt;repo&gt; [&lt;targetdir&gt;]</td>
+<td>Clone repo into target directory</td>
+</tr>
+<tr>
+<td>git pull [<url>] [<branch>]</td>
+<td>Fetch &amp; merge from url/branch into local working copy</td>
+</tr>
+</tbody>
+</table>
+<h2 id="graphical-git-tools">Graphical Git Tools</h2>
+<ul>
+<li>Git Kraken</li>
+<li>Git Sourceree</li>
+</ul>
+<h2 id="xy">XY</h2>
+<p><img src="../../images/docker/2_ContainerVsVM.png" alt="Container vs VM" width="500"/></p>
+<h2 id="refs">Refs</h2>
+<ul>
+<li>See: <a href="https://gist.github.com/karenyyng/f19ff75c60f18b4b8149">Mergetools</a></li>
+<li>See:  Rebase</li>
+<li><a href="https://www.youtube.com/watch?v=f1wnYdLEpgI">Rebase vs merge 1</a></li>
+<li><a href="https://www.themoderncoder.com/a-better-git-workflow-with-rebase/">Rebase vs merge 2</a></li>
+<li><a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing">Rebase vs merge 3</a></li>
+<li><a href="https://www.youtube.com/watch?v=7Mh259hfxJg">Good Tutorial</a></li>
+<li>See: Workflows</li>
+<li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Atlassian Bitbucket Git Tutorial</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/git.html">Git</a>
+      <a href="https://maconrad.github.io/tag/cicd-tools.html">cicd tools</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Intro to using Restconf to automate switch provisioning." />
+<meta name="keywords" content="Cisco, IOS-XE, Automation, Pyang, Restconf">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Restconf, pyang"/>
+  <meta property="og:description" content="Intro to using Restconf to automate switch provisioning."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/restconf-pyang.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-03-27 11:51:00+02:00"/>
+  <meta property="article:modified_time" content="2022-03-27 14:30:00+02:00"/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Cisco"/>
+  <meta property="article:tag" content="Cisco"/>
+  <meta property="article:tag" content="IOS-XE"/>
+  <meta property="article:tag" content="Automation"/>
+  <meta property="article:tag" content="Pyang"/>
+  <meta property="article:tag" content="Restconf"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Restconf, pyang</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="restconf-pyang">Restconf, pyang</h1>
+    <p>
+      Posted on So 27 März 2022 in <a href="https://maconrad.github.io/category/cisco.html">Cisco</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#how-to-setup-the-switch-for-restconf">How to setup the Switch for Restconf</a></li>
+<li><a href="#url-creation-revisioned">URL Creation Revisioned</a></li>
+<li><a href="#important-urls">Important URLs</a></li>
+<li><a href="#querying">Querying</a></li>
+<li><a href="#pyang-to-view-and-find-structure-for-updateput">Pyang to view and find structure for UPDATE/PUT</a></li>
+<li><a href="#simple-script-for-creationpost">Simple script for CREATION/POST</a></li>
+<li><a href="#more-realistic-example">More realistic example</a></li>
+<li><a href="#nested-model">Nested Model</a></li>
+<li><a href="#ydk-py">YDK-Py</a></li>
+<li><a href="#jina2-templates">Jina2 Templates</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h1 id="intro">Intro</h1>
+<p>Restconf is often easier to read than netconf. However it lacks the possiblity to use datastores and therefore transactional bevhavior and rollback on errors.</p>
+<h1 id="how-to-setup-the-switch-for-restconf">How to setup the Switch for Restconf</h1>
+<div class="highlight"><pre><span></span><code>aaa new-model
+aaa authentication login default <span class="nb">local</span>
+aaa authorization <span class="nb">exec</span> default <span class="nb">local</span>
+username admin password cisco
+ip http server
+restconf
+</code></pre></div>
+
+<h1 id="url-creation-revisioned">URL Creation Revisioned</h1>
+<p>Under the hood, Restconf also maps to YANG datamodels. Therefore the same tooling can be used as with Netconf. The following image from CiscoLive shows a good mapping of YANG data-model into restconf URL.</p>
+<p><img src="../../images/cisco/mdp_yang_restconf/1_restconf_url_parts.png" alt="Restconf URL Parts" width="400"/>
+<img src="../../images/cisco/mdp_yang_restconf/1_restconf_url_construction.png" alt="Restconf URL Construction" width="400"/></p>
+<p>So Remember:</p>
+<div class="highlight"><pre><span></span><code>https://&lt;ADDRESS&gt;/&lt;ROOT&gt;/data/<span class="o">[</span>&lt;YANG MODULE:&gt;<span class="o">]</span>&lt;CONTAINER&gt;/&lt;LEAF&gt;<span class="o">[</span>?&lt;OPTIONS&gt;<span class="o">]</span>
+https://1.1.1.1/restconf/data/ietf-interfaces:interface/interface<span class="o">=</span>GigabithEthernet1?depth<span class="o">=</span>unbounded
+</code></pre></div>
+
+<h1 id="important-urls">Important URLs</h1>
+<p>Some important URLs are listed as a reference below. Remember that the HTTP Headers for <strong><em>Content-Type</em></strong> and <strong><em>Accept</em></strong> both should contain <code>application/yang-data+json</code> when working with Restconf and JSON.</p>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/restconf/</td>
+<td>See if restconf is working</td>
+</tr>
+<tr>
+<td>/restconf/data/ietf-yang-library:modules-state</td>
+<td>List all Yang Modules, deviations, features etc.</td>
+</tr>
+<tr>
+<td>/restconf/operations/cisco-ia:save-config/</td>
+<td>Cisco Native, save config</td>
+</tr>
+<tr>
+<td>/restconf/data/ietf-interfaces:interfaces/interface=GigabitEthernet2</td>
+<td>Get interface cfg</td>
+</tr>
+</tbody>
+</table>
+<h1 id="querying">Querying</h1>
+<p>A little bit more complex example with limiting the Leafs that are returned looks like this.</p>
+<div class="highlight"><pre><span></span><code>https://<span class="o">{{</span>host<span class="o">}}</span>/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet<span class="o">=</span><span class="m">2</span>?fields<span class="o">=</span>Cisco-IOS-XE-native:GigabitEthernet<span class="o">(</span>name<span class="p">;</span>description<span class="p">;</span>ip<span class="o">)</span><span class="p">&amp;</span><span class="nv">depth</span><span class="o">=</span>unbounded
+</code></pre></div>
+
+<p>A simple python script for quing this would look as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">urllib3</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">http</span>
+<span class="kn">from</span> <span class="nn">requests.auth</span> <span class="kn">import</span> <span class="n">HTTPBasicAuth</span>
+<span class="kn">from</span> <span class="nn">urllib3.exceptions</span> <span class="kn">import</span> <span class="n">InsecureRequestWarning</span>
+
+
+<span class="n">urllib3</span><span class="o">.</span><span class="n">disable_warnings</span><span class="p">(</span><span class="n">InsecureRequestWarning</span><span class="p">)</span>
+
+<span class="n">HOST</span> <span class="o">=</span><span class="s1">&#39;10.10.10.200&#39;</span>
+<span class="n">USER</span> <span class="o">=</span><span class="s1">&#39;admin&#39;</span>
+<span class="n">PASS</span> <span class="o">=</span><span class="s1">&#39;xy.&#39;</span>
+<span class="n">HEADERS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/yang-data+json&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Accept&#39;</span><span class="p">:</span> <span class="s1">&#39;application/yang-data+json&#39;</span>
+<span class="p">}</span>
+<span class="n">VERIFY</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">AUTH</span> <span class="o">=</span> <span class="n">HTTPBasicAuth</span><span class="p">(</span><span class="n">USER</span><span class="p">,</span> <span class="n">PASS</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_restconf_interface_oper_state</span><span class="p">(</span><span class="n">interface</span><span class="p">,</span> <span class="nb">filter</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://&#39;</span> <span class="o">+</span> <span class="n">HOST</span> <span class="o">+</span> <span class="s1">&#39;/restconf/data/interfaces-state/interface=&#39;</span> <span class="o">+</span> <span class="n">interface</span>
+    <span class="k">if</span> <span class="nb">filter</span><span class="p">:</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="n">url</span> <span class="o">+</span> <span class="s1">&#39;?&#39;</span> <span class="o">+</span> <span class="nb">filter</span>
+    <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">HEADERS</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="n">VERIFY</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="n">AUTH</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">http</span><span class="o">.</span><span class="n">HTTPStatus</span><span class="o">.</span><span class="n">OK</span><span class="p">:</span>
+        <span class="n">interface_info</span> <span class="o">=</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="n">operational_data</span> <span class="o">=</span> <span class="n">interface_info</span><span class="p">[</span><span class="s1">&#39;ietf-interfaces:interface&#39;</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">operational_data</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">get_restconf_interface_oper_state</span><span class="p">(</span><span class="s1">&#39;GigabitEthernet1&#39;</span><span class="p">,</span> <span class="s1">&#39;content=all&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>A similar call using the native model (and only showing difference) would like the folowing.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_restconf_interface_oper_state</span><span class="p">(</span><span class="n">interface</span><span class="p">,</span> <span class="nb">filter</span><span class="p">):</span>
+    <span class="c1"># Cisco-IOS-XE-native:native/interface/GigabitEthernet=2?fields=Cisco-IOS-XE-native:GigabitEthernet(name;description;ip)&amp;depth=unbounded</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://&#39;</span> <span class="o">+</span> <span class="n">HOST</span> <span class="o">+</span> <span class="s1">&#39;/restconf/data/Cisco-IOS-XE-native:native/interface/&#39;</span> <span class="o">+</span> <span class="n">interface</span>
+    <span class="c1"># url = &#39;https://&#39; + HOST + &#39;/restconf/data/interfaces-state/interface=&#39; + interface</span>
+    <span class="c1"># ...</span>
+    <span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">http</span><span class="o">.</span><span class="n">HTTPStatus</span><span class="o">.</span><span class="n">OK</span><span class="p">:</span>
+        <span class="c1"># ...</span>
+        <span class="c1"># operational_data = interface_info[&#39;ietf-interfaces:interface&#39;]</span>
+        <span class="n">operational_data</span> <span class="o">=</span> <span class="n">interface_info</span><span class="p">[</span><span class="s1">&#39;Cisco-IOS-XE-native:GigabitEthernet&#39;</span><span class="p">]</span>
+        <span class="c1"># ...</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">get_restconf_interface_oper_state</span><span class="p">(</span><span class="s1">&#39;GigabitEthernet=1&#39;</span><span class="p">,</span> <span class="s1">&#39;content=config&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>A sidenote here has to be made on the content keyword, which only includes configuratonal data, which shows the usage of another filter.</p>
+<h1 id="pyang-to-view-and-find-structure-for-updateput">Pyang to view and find structure for UPDATE/PUT</h1>
+<p>As mentioned the known toolchain can be used if something should be configured on top. An example of this would be to set a different load interval.
+In order to find the required paraemter, we can either configure it in the CLI and do another GET or we use pyang to find the correct place in the structure.</p>
+<div class="highlight"><pre><span></span><code>pyang -f tree Cisco-IOS-XE-native.yang --tree-path<span class="o">=</span>/native/interface/GigabitEthernet --tree-depth<span class="o">=</span><span class="m">5</span>
+</code></pre></div>
+
+<p>We determine where load-interval is sitting in the hierarchy and use this to construct the json.</p>
+<div class="highlight"><pre><span></span><code>module: Cisco-IOS-XE-native
+  +--rw native
+     +--rw interface
+        +--rw GigabitEthernet* <span class="o">[</span>name<span class="o">]</span>
+           +--rw name                        string
+           ...
+           +--rw load-interval?              uint16
+</code></pre></div>
+
+<p>By knowing the exact path, an Update in the form of a PUT request, is as easy as placing the needed json data at the right level.
+This can be much easier for certain use cases than with netconf, where the whole path to structure would have to be included.
+Remember the key must always be specified, with the key being the name here, and in particular for IOS-XE the name only being the number, so e.g. GigabitEthernet=2</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># PUT to </span>
+<span class="c1">## https://{{host}}/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet=2/load-interval</span>
+
+<span class="c1"># With Content</span>
+<span class="c1">## {</span>
+<span class="c1">##    &quot;load-interval&quot;: 30</span>
+<span class="c1">## }</span>
+
+<span class="c1"># ...</span>
+<span class="k">def</span> <span class="nf">update_restconf_native_interval</span><span class="p">(</span><span class="n">interface</span><span class="p">,</span> <span class="n">param</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="n">update_dict</span> <span class="o">=</span> <span class="p">{</span> 
+        <span class="n">param</span><span class="p">:</span> <span class="n">value</span>
+    <span class="p">}</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://&#39;</span> <span class="o">+</span> <span class="n">HOST</span> <span class="o">+</span> <span class="s1">&#39;/restconf/data/Cisco-IOS-XE-native:native/interface/&#39;</span> <span class="o">+</span> <span class="n">interface</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">param</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">update_dict</span><span class="p">))</span>
+    <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">HEADERS</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="n">VERIFY</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="n">AUTH</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">update_dict</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">status_code</span> <span class="ow">in</span> <span class="p">[</span><span class="n">http</span><span class="o">.</span><span class="n">HTTPStatus</span><span class="o">.</span><span class="n">CREATED</span><span class="p">,</span> <span class="n">http</span><span class="o">.</span><span class="n">HTTPStatus</span><span class="o">.</span><span class="n">NO_CONTENT</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Success&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Error: </span><span class="si">{</span><span class="n">resp</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> 
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">update_restconf_native_interval</span><span class="p">(</span><span class="s1">&#39;GigabitEthernet=2&#39;</span><span class="p">,</span> <span class="s1">&#39;load-interval&#39;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Another option would be to update the whole interface, which would mean PUT to URL: <code>https://{{host}}/restconf/data/Cisco-IOS-XE-native:native/interface/Loopback=104</code> in json. The Path needs to include the interface to update referenced by its key.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;Loopback&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;104&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TEST&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;ip&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;primary&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;192.168.4.1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">&quot;mask&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;255.255.255.248&quot;</span><span class="w"></span>
+<span class="w">                </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<p>We could also use this knowledge to create a sample XML skeleton using pyang and even convert it to json using xmltojson (or jxmlease):</p>
+<div class="highlight"><pre><span></span><code>pyang -f sample-xml-skeleton Cisco-IOS-XE-native.yang --sample-xml-skeleton-path<span class="o">=</span>/native/interface/GigabitEthernet/load-interval --sample-xml-skeleton-doctype<span class="o">=</span>config &gt; skeleton_load_interval &gt; skeleton_load_interval.xml
+
+xmltojson skeleton_load_interval <span class="p">|</span> jq
+</code></pre></div>
+
+<p>But Remember: The JSON sent to the device via restconf only needs to include the dict part needed, not the whole path (containing config etc.) as with Netconf. So there is no 1:1 conversion. Just a tool to see the structure.</p>
+<h1 id="simple-script-for-creationpost">Simple script for CREATION/POST</h1>
+<p>A post must always be on the enclosing container, for example: in the native Model the enclosing container is the <code>interface</code> whereas in the ietf-interface model it is the <code>interfaces</code></p>
+<div class="highlight"><pre><span></span><code>module: Cisco-IOS-XE-native
+  +--rw native
+     +--rw interface
+        +--rw Loopback* <span class="o">[</span>name<span class="o">]</span>
+        <span class="p">|</span>     ...
+        +--rw GigabitEthernet* <span class="o">[</span>name<span class="o">]</span>
+
+module: ietf-interfaces
+  +--rw interfaces
+  <span class="p">|</span>  +--rw interface* <span class="o">[</span>name<span class="o">]</span>
+</code></pre></div>
+
+<p>The important part is that the Restcall JSON includes the module, but NOT the enclosing container. So again as an example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="nt">&quot;_comment_start&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;############################&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="nt">&quot;post_to&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://{{host}}/restconf/data/Cisco-IOS-XE-native:native/interface/&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="nt">&quot;_comment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Could also use just Loopback, good practice to include module:container/list/...&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="nt">&quot;_comment_end&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;##############################&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;Cisco-IOS-XE-native:Loopback&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;101&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TEST&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;ip&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;primary&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;192.168.2.1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">&quot;mask&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;255.255.255.248&quot;</span><span class="w"></span>
+<span class="w">                </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">{</span><span class="w"></span>
+<span class="nt">&quot;_comment_start&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;############################&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="nt">&quot;post_to&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://{{host}}/restconf/data/ietf-interfaces:interfaces&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="nt">&quot;_comment_end&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;##############################&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;ietf-interfaces:interface&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Loopback102&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Configured by RESTCONF&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;iana-if-type:softwareLoopback&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;ietf-ip:ipv4&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">                </span><span class="p">{</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">&quot;ip&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;172.16.100.1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">&quot;netmask&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;255.255.255.0&quot;</span><span class="w"></span>
+<span class="w">                </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<p>in Python it would look as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">create_restconf_native_loopback_interface</span><span class="p">(</span><span class="n">interface_num</span><span class="p">,</span> <span class="n">ip</span><span class="p">,</span> <span class="n">netmask</span><span class="p">,</span> <span class="n">description</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://&#39;</span> <span class="o">+</span> <span class="n">HOST</span> <span class="o">+</span> <span class="s1">&#39;/restconf/data/Cisco-IOS-XE-native:native/interface/&#39;</span>
+    <span class="c1"># BUild interface_dict JSON</span>
+
+    <span class="n">interface_dict</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;Cisco-IOS-XE-native:Loopback&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">interface_num</span><span class="p">),</span>
+            <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="n">description</span><span class="p">,</span>
+            <span class="s2">&quot;ip&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;primary&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">ip</span><span class="p">),</span>
+                        <span class="s2">&quot;mask&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">netmask</span><span class="p">)</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span> 
+    <span class="p">}</span>
+
+    <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">HEADERS</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="n">VERIFY</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="n">AUTH</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">interface_dict</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">status_code</span> <span class="ow">in</span> <span class="p">[</span><span class="n">http</span><span class="o">.</span><span class="n">HTTPStatus</span><span class="o">.</span><span class="n">CREATED</span><span class="p">,</span> <span class="n">http</span><span class="o">.</span><span class="n">HTTPStatus</span><span class="o">.</span><span class="n">NO_CONTENT</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Success&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Error: </span><span class="si">{</span><span class="n">resp</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> 
+</code></pre></div>
+
+<p>Common errors:
+    - POST to a nonexistent list resource (If element does not exist, e.g. /restconf/data/Cisco-IOS-XE-native:native/interface/Loopback=102)
+    - <strong><em>POST on list must be on list element</em></strong> (e.g Post to restconf/data/Cisco-IOS-XE-native:native/interface/Loopback instead of restconf/data/Cisco-IOS-XE-native:native/interface, which is the enclosing container for the list itself.
+    - Post to https://{{host}}/restconf/data/Cisco-IOS-XE-native:native/ with the json containing the whole tree "{"interface":... } as this would mean creating all interfaces (which cannot be done). Correct would be to post to ...native/interface</p>
+<h1 id="more-realistic-example">More realistic example</h1>
+<p>In a real world script it might be useful to construct the json content dynamically, and in addition add some type checking.
+Dataclasses are great for storing data in a simple way. However they do NOT enforce type hints at runtime. <code>Pydantic</code> library is a great way of defining json models similar to dataclasses but enforcing type hints at runtime.
+In addition the python <strong><em>defaultdict</em></strong> class comes in handy when nested datastructures need to be defined instead of manually creating every level of a dictionary.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">List</span>
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+<span class="kn">from</span> <span class="nn">ipaddress</span> <span class="kn">import</span> <span class="n">IPv4Interface</span>
+
+<span class="k">def</span> <span class="nf">recursive_defaultdict</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">defaultdict</span><span class="p">(</span><span class="n">recursive_defaultdict</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">IP</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">address</span><span class="p">:</span> <span class="n">IPv4Interface</span>
+    <span class="n">proxy_arp</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">redirects</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="n">pim</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="nf">as_json</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">ret_data</span> <span class="o">=</span> <span class="n">recursive_defaultdict</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">address</span><span class="p">:</span>
+            <span class="n">ret_data</span><span class="p">[</span><span class="s2">&quot;ip&quot;</span><span class="p">][</span><span class="s2">&quot;address&quot;</span><span class="p">][</span><span class="s2">&quot;primary&quot;</span><span class="p">][</span><span class="s2">&quot;address&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">address</span><span class="o">.</span><span class="n">ip</span><span class="p">)</span>
+            <span class="n">ret_data</span><span class="p">[</span><span class="s2">&quot;ip&quot;</span><span class="p">][</span><span class="s2">&quot;address&quot;</span><span class="p">][</span><span class="s2">&quot;primary&quot;</span><span class="p">][</span><span class="s2">&quot;mask&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">address</span><span class="o">.</span><span class="n">netmask</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">proxy_arp</span><span class="p">:</span>
+            <span class="n">ret_data</span><span class="p">[</span><span class="s2">&quot;ip&quot;</span><span class="p">][</span><span class="s2">&quot;proxy-arp&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">proxy_arp</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">redirects</span><span class="p">:</span>
+            <span class="n">ret_data</span><span class="p">[</span><span class="s2">&quot;ip&quot;</span><span class="p">][</span><span class="s2">&quot;redirects&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">redirects</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">pim</span><span class="p">:</span>
+            <span class="n">ret_data</span><span class="p">[</span><span class="s2">&quot;ip&quot;</span><span class="p">][</span><span class="s2">&quot;pim&quot;</span><span class="p">][</span><span class="s2">&quot;Cisco-IOS-XE-multicast:pim-mode-choice-cfg&quot;</span><span class="p">][</span><span class="s2">&quot;sparse-mode&quot;</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">ret_data</span><span class="p">)</span>
+</code></pre></div>
+
+<p>This would then be sent as a PUT to the url <strong><em>/...native/interface/GigabitEthernet=2/ip</em></strong> URL or nested within another pydantic model, e.g. the Interface model containing IP data. Output would look as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># IF address is changed to a non Valid address (e.g. 192.168.1.333) pydantic will throw an error.</span>
+<span class="nv">ip1</span> <span class="o">=</span> IP<span class="o">(</span><span class="nv">address</span><span class="o">=</span><span class="s2">&quot;192.168.1.144/24&quot;</span>, <span class="nv">proxy_arp</span><span class="o">=</span>False, <span class="nv">redirects</span><span class="o">=</span>True, <span class="nv">pim</span><span class="o">=</span>True<span class="o">)</span>
+ip.as_json<span class="o">()</span>
+---
+<span class="o">{</span><span class="s2">&quot;ip&quot;</span>: <span class="o">{</span><span class="s2">&quot;address&quot;</span>: <span class="o">{</span><span class="s2">&quot;primary&quot;</span>: <span class="o">{</span><span class="s2">&quot;address&quot;</span>: <span class="s2">&quot;192.168.1.144&quot;</span>, <span class="s2">&quot;mask&quot;</span>: <span class="s2">&quot;255.255.255.0&quot;</span><span class="o">}}</span>, <span class="s2">&quot;proxy-arp&quot;</span>: false, <span class="s2">&quot;redirects&quot;</span>: true, <span class="s2">&quot;pim&quot;</span>: <span class="o">{</span><span class="s2">&quot;Cisco-IOS-XE-multicast:pim-mode-choice-cfg&quot;</span>: <span class="o">{</span><span class="s2">&quot;sparse-mode&quot;</span>: <span class="o">{}}}}}</span>
+</code></pre></div>
+
+<h1 id="nested-model">Nested Model</h1>
+<p>This also showed a nested model example. In pure json sample the output how we would update a nested model (Cisco-IOS-XE-multicast within Cisco-IOS-XE-native) by using a PUT request to the URL <strong><em>https://{{host}}/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet=2/ip/pim</em></strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;pim&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;Cisco-IOS-XE-multicast:pim-mode-choice-cfg&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;sparse-mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<p>To display the modul structure <code>pyang</code> can be used as usual, but remember that both models have to give on the CLI, otherwise starting from PIM onwards nothing is displayed.</p>
+<div class="highlight"><pre><span></span><code>pyang -f tree Cisco-IOS-XE-native.yang Cisco-IOS-XE-multicast.yang  --tree-path<span class="o">=</span>/native/interface/GigabitEthernet/ip/pim --tree-depth<span class="o">=</span><span class="m">8</span>
+</code></pre></div>
+
+<h1 id="ydk-py">YDK-Py</h1>
+<p>Another Option would be to use YDK-Py to building the models.
+But this is for another blogpost.</p>
+<h1 id="jina2-templates">Jina2 Templates</h1>
+<p>TODO: BRKDEV-1368 (Netconf exmaples (push config))
+TODO: BRKDEV-1368 (Restconf example ietf-interface)</p>
+<h1 id="references">References</h1>
+<ul>
+<li>See: <a href="https://github.com/CiscoDevNet/BRKDEV-1368">BRKDEV-1368</a></li>
+<li>See: <a href="https://developer.cisco.com/docs/yangsuite">YangSuite</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/cisco.html">Cisco</a>
+      <a href="https://maconrad.github.io/tag/ios-xe.html">IOS-XE</a>
+      <a href="https://maconrad.github.io/tag/automation.html">Automation</a>
+      <a href="https://maconrad.github.io/tag/pyang.html">Pyang</a>
+      <a href="https://maconrad.github.io/tag/restconf.html">Restconf</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

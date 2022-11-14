@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: Intro Before After Intro The single responsibility principle principle defines that a Class has a single main goal it achieves and should not implement any side responsibilities. DO NOT overload objects with too many responsibilities. Benefit: Assures that a change in functionality is made centrally (at a …" />
+<meta name="keywords" content="python, patterns, SOLID">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Single Responsibility, Separation of Concern"/>
+  <meta property="og:description" content="Table of contents: Intro Before After Intro The single responsibility principle principle defines that a Class has a single main goal it achieves and should not implement any side responsibilities. DO NOT overload objects with too many responsibilities. Benefit: Assures that a change in functionality is made centrally (at a …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/single-responsibility-separation-of-concern.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-10-31 11:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Patterns"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="article:tag" content="patterns"/>
+  <meta property="article:tag" content="SOLID"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Single Responsibility, Separation of Concern</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="single-responsibility-separation-of-concern">Single Responsibility, Separation of Concern</h1>
+    <p>
+      Posted on So 31 Oktober 2021 in <a href="https://maconrad.github.io/category/patterns.html">Patterns</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#before">Before</a></li>
+<li><a href="#after">After</a></li>
+</ul>
+</div>
+<h2 id="intro">Intro</h2>
+<p>The single responsibility principle principle defines that a Class has a single main goal it achieves and should not implement any side responsibilities. DO NOT overload objects with too many responsibilities.</p>
+<p>Benefit:</p>
+<ul>
+<li>Assures that a change in functionality is made centrally (at a single place), instead of searching through 20 classes that all implement the same behaviour for there own class.</li>
+</ul>
+<p>Antipattern:</p>
+<ul>
+<li>God Object = stick it all into single class</li>
+</ul>
+<p>Example:</p>
+<ul>
+<li>Saving to file is offloaded to a FileManager instead of each class impelemting a save_to_file() method.</li>
+</ul>
+<p>Short Forms:</p>
+<ul>
+<li><code>SRP</code>: Single Responsibility Principle</li>
+<li><code>SoC</code>: Separation of Concerns</li>
+</ul>
+<h2 id="before">Before</h2>
+<ul>
+<li>Multiple responsibilities (tasks) </li>
+<li>Note: No error handling is on purpose to keep code as lean as possible and still understand pattern. </li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Garage</span><span class="p">:</span>
+    <span class="c1"># Primary responsibility</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cars</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">park_car</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">car</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cars</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">count</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">car</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Leave the garage</span>
+    <span class="k">def</span> <span class="nf">checkout</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">cars</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">-=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cars</span><span class="p">)</span>
+
+    <span class="c1"># Secondary responsibility! Persistency</span>
+    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">close</span>
+
+    <span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">load_from_api</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uri</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">Garage</span><span class="p">()</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">park_car</span><span class="p">(</span><span class="s1">&#39;Volvo&#39;</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">park_car</span><span class="p">(</span><span class="s1">&#39;Fiat&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Garage parked cars:</span><span class="se">\n</span><span class="si">{</span><span class="n">g</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>What if there is not just a single type of garage? You have to go into every single class and change the safe to file and load from file mechanisms if something changes. </p>
+<h2 id="after">After</h2>
+<ul>
+<li>Single responsibility per class</li>
+<li>Centrally change each responsibility.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Garage</span><span class="p">:</span>
+    <span class="c1"># Primary responsibility</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cars</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">park_car</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">car</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cars</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">count</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">car</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Leave the garage</span>
+    <span class="k">def</span> <span class="nf">checkout</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">cars</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">-=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cars</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">PersistenceManager</span><span class="p">:</span>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">save_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">garage</span><span class="p">):</span>
+        <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">garage</span><span class="p">))</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">close</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">load_from_api</span><span class="p">(</span><span class="n">uri</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">Garage</span><span class="p">()</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">park_car</span><span class="p">(</span><span class="s1">&#39;Volvo&#39;</span><span class="p">)</span>
+    <span class="n">g</span><span class="o">.</span><span class="n">park_car</span><span class="p">(</span><span class="s1">&#39;Fiat&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Garage parked cars:</span><span class="se">\n</span><span class="si">{</span><span class="n">g</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;./garage-state.txt&quot;</span>
+    <span class="n">PersistenceManager</span><span class="o">.</span><span class="n">save_to_file</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">g</span><span class="p">)</span>
+</code></pre></div>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/python.html">python</a>
+      <a href="https://maconrad.github.io/tag/patterns.html">patterns</a>
+      <a href="https://maconrad.github.io/tag/solid.html">SOLID</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

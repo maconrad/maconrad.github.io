@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: Overview Mini Learnings Installation React Native Project Setup Expo Ignite CLI Styling NativeBase ReactNativeElements Overview Starting an App React Native (access to native code, swift/java) Expo (simplifies getting started, own sdk, client app, run expo project in borwser for testing, react native api + expo sdk only …" />
+<meta name="keywords" content="development, web, mobile, react, react-native">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="React Native Intro"/>
+  <meta property="og:description" content="Table of contents: Overview Mini Learnings Installation React Native Project Setup Expo Ignite CLI Styling NativeBase ReactNativeElements Overview Starting an App React Native (access to native code, swift/java) Expo (simplifies getting started, own sdk, client app, run expo project in borwser for testing, react native api + expo sdk only …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/react-native-intro.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-01-03 11:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="React"/>
+  <meta property="article:tag" content="development"/>
+  <meta property="article:tag" content="web"/>
+  <meta property="article:tag" content="mobile"/>
+  <meta property="article:tag" content="react"/>
+  <meta property="article:tag" content="react-native"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; React Native Intro</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="react-native-intro">React Native Intro</h1>
+    <p>
+      Posted on Mo 03 Januar 2022 in <a href="https://maconrad.github.io/category/react.html">React</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#mini-learnings">Mini Learnings</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#react-native">React Native</a><ul>
+<li><a href="#project-setup">Project Setup</a></li>
+</ul>
+</li>
+<li><a href="#expo">Expo</a></li>
+<li><a href="#ignite-cli">Ignite CLI</a></li>
+<li><a href="#styling">Styling</a><ul>
+<li><a href="#nativebase">NativeBase</a></li>
+<li><a href="#reactnativeelements">ReactNativeElements</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>Starting an App<ul>
+<li>React Native (access to native code, swift/java)</li>
+<li>Expo (simplifies getting started, own sdk, client app, run expo project in borwser for testing, react native api + expo sdk only, eject if want to include native code)</li>
+<li>IGNITE CLI (https://github.com/infinitered/ignite)</li>
+</ul>
+</li>
+<li>Styling, recommended to use a UI Toolkit, Options:<ul>
+<li>NativeBase</li>
+<li>ReactNativeElements</li>
+</ul>
+</li>
+<li>Routing<ul>
+<li>React Navigation (move from screen to screen)<ul>
+<li>Keeps recored of navigation history</li>
+<li>Examples: Stack (Deck of cards), TabNavigator (commonly at top or bottom), Drawer (Pulls out from side of screen)</li>
+</ul>
+</li>
+<li>React Native Router FLux</li>
+</ul>
+</li>
+<li>DataStorage<ul>
+<li>AsyncStorage: Key-value storage, unencrypted, asynchronous, persistent on device</li>
+<li>DB Backend: REST</li>
+</ul>
+</li>
+</ul>
+<h2 id="mini-learnings">Mini Learnings</h2>
+<ul>
+<li>NPX = Tool to execute NPM packages from NPM Registry (not installed)</li>
+<li>NPM = Manages packages but does NOT execute them</li>
+<li>Hooks = Functions that encapsulate stateful behaviour and side effects (distributed state)<ul>
+<li>Common ones: <code>useState</code>, <code>useEffect</code>, <code>useContext</code></li>
+</ul>
+</li>
+<li>Metro = Returns single JS File that includes all code and dependencies</li>
+</ul>
+<p><img src="../../images/..." alt="Django Overview" width="500"/></p>
+<h2 id="installation">Installation</h2>
+<ul>
+<li>Tools Below + Android SDK + XCode (on MAC): <ul>
+<li><code>~./zshrc</code>: For Android SDK Path Vars</li>
+</ul>
+</li>
+<li>XCode<ul>
+<li>Settings &gt; Locations &gt; Select XCode Version otherwise <code>pod install</code>below will fail</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>brew install --cask temurin</td>
+<td>Install OpenJDK Variant</td>
+</tr>
+<tr>
+<td>brew install watchman</td>
+<td>FileWatch on Mac</td>
+</tr>
+<tr>
+<td>brew install node</td>
+<td>Install Node on MAC</td>
+</tr>
+<tr>
+<td>sudo gem install cocoapods</td>
+<td>IOS Dev on Mac</td>
+</tr>
+<tr>
+<td>xcode-select --install</td>
+<td>Coding Utils on MAC</td>
+</tr>
+<tr>
+<td>npm install native-base</td>
+<td>NativeBase Styling Components</td>
+</tr>
+<tr>
+<td>npm install @react-native-async-storage/async-storage</td>
+<td>Key-value offline storage that can be used for android/ios</td>
+</tr>
+<tr>
+<td>npm install react-navigation</td>
+<td>Navigation on the phones (multiple sreens in app)</td>
+</tr>
+<tr>
+<td>npm install react-native-gesture-handler</td>
+<td></td>
+</tr>
+<tr>
+<td>npm install react-native-reanimated</td>
+<td></td>
+</tr>
+<tr>
+<td>npm install react-native-screens</td>
+<td></td>
+</tr>
+<tr>
+<td>npm install react-navigation-stack</td>
+<td></td>
+</tr>
+<tr>
+<td>react-native-safe-area-context</td>
+<td></td>
+</tr>
+<tr>
+<td>npx pod-install ios <or> cd ios &amp;&amp; pod install</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><span class="c1"># ~/.zshrc</span>
+
+<span class="nb">export</span> <span class="nv">ANDROID_HOME</span><span class="o">=</span><span class="nv">$HOME</span>/Library/Android/sdk
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$ANDROID_HOME</span>/emulator
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$ANDROID_HOME</span>/tools
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$ANDROID_HOME</span>/tools-bin
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$ANDROID_HOME</span>/platform-tools
+</code></pre></div>
+
+<ul>
+<li>See: <a href="https://reactnative.dev/docs/environment-setup">React Native Setup</a></li>
+<li>See: <a href="https://amanhimself.dev/blog/rctbridge-required-dispatch-sync-to-load-warning/">Warning Message IOS Emulator</a></li>
+</ul>
+<h2 id="react-native">React Native</h2>
+<h3 id="project-setup">Project Setup</h3>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>node --version</td>
+<td>Node</td>
+</tr>
+<tr>
+<td>npm --version</td>
+<td>Node Package manager</td>
+</tr>
+<tr>
+<td>npx react-native init reactnativenotes</td>
+<td>Start a project</td>
+</tr>
+<tr>
+<td>npx react-native start</td>
+<td>Starts Metro</td>
+</tr>
+<tr>
+<td>npx react-native run-ios</td>
+<td>Starts IOS emulator</td>
+</tr>
+<tr>
+<td>CTRL+R</td>
+<td>Reload App in IOS emulator</td>
+</tr>
+<tr>
+<td>CTRL+D</td>
+<td>Debug App in IOS emulator</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="expo">Expo</h2>
+<ul>
+<li>TODO</li>
+</ul>
+<h2 id="ignite-cli">Ignite CLI</h2>
+<ul>
+<li>TODO</li>
+</ul>
+<p>ignite new PizzaApp
+cd PizzaApp
+ignite add maps
+ignite add vector-icons
+ignite generate screen PizzaLocationList
+ignite generate component PizzaLocation
+ignite generate map StoreLocator
+ignite add i18n
+ignite remove i18n
+iginite --help</p>
+<h2 id="styling">Styling</h2>
+<h3 id="nativebase">NativeBase</h3>
+<ul>
+<li>Card: <a href="https://docs.nativebase.io/migration/card">Migration Card Component</a></li>
+<li>Header: <a href="https://docs.nativebase.io/3.0.0-next.40/migration/Header">Migration Header Component</a></li>
+<li>Footer: <a href="https://docs.nativebase.io/building-footer-tabs">Migration Footer Tab</a></li>
+</ul>
+<h3 id="reactnativeelements">ReactNativeElements</h3>
+<ul>
+<li>todo</li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/development.html">development</a>
+      <a href="https://maconrad.github.io/tag/web.html">web</a>
+      <a href="https://maconrad.github.io/tag/mobile.html">mobile</a>
+      <a href="https://maconrad.github.io/tag/react.html">react</a>
+      <a href="https://maconrad.github.io/tag/react-native.html">react-native</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

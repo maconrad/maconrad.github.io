@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: Intro Prototype Factory Intro Sometimes easier to start with a copy (fully or partially initialized) of an object than to create a new one. Can be combined with factories to have templates of predefined objects (for the most typical use cases of objects that are neede during …" />
+<meta name="keywords" content="python, patterns, CREATIONAL">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Prototype"/>
+  <meta property="og:description" content="Table of contents: Intro Prototype Factory Intro Sometimes easier to start with a copy (fully or partially initialized) of an object than to create a new one. Can be combined with factories to have templates of predefined objects (for the most typical use cases of objects that are neede during …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/prototype.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-11-21 11:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Patterns"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="article:tag" content="patterns"/>
+  <meta property="article:tag" content="CREATIONAL"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Prototype</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="prototype">Prototype</h1>
+    <p>
+      Posted on So 21 November 2021 in <a href="https://maconrad.github.io/category/patterns.html">Patterns</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#prototype-factory">Prototype Factory</a></li>
+</ul>
+</div>
+<h2 id="intro">Intro</h2>
+<p>Sometimes easier to start with a copy (fully or partially initialized) of an object than to create a new one.
+Can be combined with factories to have templates of predefined objects (for the most typical use cases of objects that are neede during the runtime of the application).</p>
+<p>Benefits:</p>
+<ul>
+<li>Easy to consume</li>
+<li>Templates for the main use cases</li>
+</ul>
+<p>Use Cases / Examples:</p>
+<ul>
+<li>Anywhere where we have objects that we want to take as a base for creating new objects</li>
+</ul>
+<p>Key:</p>
+<ul>
+<li>Requires <code>deep copy</code> support (not by reference)</li>
+<li>Partially or fully initialized object that is copied/cloned</li>
+<li>Customize the resulting instance</li>
+<li>Combine with factory to have a convenient API</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
+
+<span class="k">class</span> <span class="nc">Address</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">street</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span> <span class="n">country</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">street</span> <span class="o">=</span> <span class="n">street</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">city</span> <span class="o">=</span> <span class="n">city</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">country</span> <span class="o">=</span> <span class="n">country</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">street</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">country</span><span class="si">}</span><span class="s1">&#39;</span>
+
+<span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">address</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">address</span> <span class="o">=</span> <span class="n">address</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1"> lives at </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">address</span><span class="si">}</span><span class="s1">&#39;</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">mario</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s1">&#39;Mario&#39;</span><span class="p">,</span> <span class="n">Address</span><span class="p">(</span><span class="s1">&#39;Schulgasse 30&#39;</span><span class="p">,</span> <span class="s1">&#39;Aarau&#39;</span><span class="p">,</span> <span class="s1">&#39;Switzerland&#39;</span><span class="p">))</span>
+    <span class="n">hans</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s1">&#39;Hans&#39;</span><span class="p">,</span> <span class="n">Address</span><span class="p">(</span><span class="s1">&#39;Pipapostrasse 34&#39;</span><span class="p">,</span> <span class="s1">&#39;Baden&#39;</span><span class="p">,</span> <span class="s1">&#39;Switzerland&#39;</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">mario</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">hans</span><span class="p">)</span>
+
+    <span class="n">mario2</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">mario</span><span class="p">)</span>
+    <span class="n">mario2</span><span class="o">.</span><span class="n">address</span><span class="o">.</span><span class="n">street</span> <span class="o">=</span> <span class="s1">&#39;Volggasse 4&#39;</span>
+    <span class="n">mario2</span><span class="o">.</span><span class="n">address</span><span class="o">.</span><span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;Schinznach Bad&#39;</span>
+</code></pre></div>
+
+<h2 id="prototype-factory">Prototype Factory</h2>
+<ul>
+<li>Inconvenient making copy manually</li>
+<li>Wrapping copy process into its own module</li>
+<li>Fixed number of prototypes that are used in the system then good idea to put them into a factory and factory methods for usage</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">copy</span>
+
+<span class="k">class</span> <span class="nc">Address</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">street</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span> <span class="n">office</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">street</span> <span class="o">=</span> <span class="n">street</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">city</span> <span class="o">=</span> <span class="n">city</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">office</span> <span class="o">=</span> <span class="n">office</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">street</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">city</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">office</span><span class="si">}</span><span class="s1">&#39;</span>
+
+<span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">address</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">address</span> <span class="o">=</span> <span class="n">address</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1"> works at </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">address</span><span class="si">}</span><span class="s1">&#39;</span>
+
+<span class="k">class</span> <span class="nc">EmployeeFactory</span><span class="p">:</span>
+    <span class="c1"># 2 Offices, main and auxilary</span>
+    <span class="n">main_office_employee</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">Address</span><span class="p">(</span><span class="s1">&#39;Badstrasse&#39;</span><span class="p">,</span> <span class="s1">&#39;Baden&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="n">aux_office_employee</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">Address</span><span class="p">(</span><span class="s1">&#39;Zuerichstrasse&#39;</span><span class="p">,</span> <span class="s1">&#39;Baden&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">__new_employee</span><span class="p">(</span><span class="n">proto</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">office</span><span class="p">):</span>
+        <span class="n">employee</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">proto</span><span class="p">)</span>
+        <span class="n">employee</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="n">employee</span><span class="o">.</span><span class="n">address</span><span class="o">.</span><span class="n">office</span> <span class="o">=</span> <span class="n">office</span>
+        <span class="k">return</span> <span class="n">employee</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">new_main_office_employee</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">office</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">EmployeeFactory</span><span class="o">.</span><span class="n">__new_employee</span><span class="p">(</span><span class="n">EmployeeFactory</span><span class="o">.</span><span class="n">main_office_employee</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">office</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">new_aux_office_employee</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">office</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">EmployeeFactory</span><span class="o">.</span><span class="n">__new_employee</span><span class="p">(</span><span class="n">EmployeeFactory</span><span class="o">.</span><span class="n">aux_office_employee</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">office</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">john</span> <span class="o">=</span> <span class="n">EmployeeFactory</span><span class="o">.</span><span class="n">new_aux_office_employee</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;#100&#39;</span><span class="p">)</span>
+    <span class="n">jane</span> <span class="o">=</span> <span class="n">EmployeeFactory</span><span class="o">.</span><span class="n">new_main_office_employee</span><span class="p">(</span><span class="s1">&#39;Jane&#39;</span><span class="p">,</span> <span class="s1">&#39;#140&#39;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">john</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">jane</span><span class="p">)</span>
+</code></pre></div>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/python.html">python</a>
+      <a href="https://maconrad.github.io/tag/patterns.html">patterns</a>
+      <a href="https://maconrad.github.io/tag/creational.html">CREATIONAL</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

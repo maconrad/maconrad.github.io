@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: Intro Before After After #2.1 After #2.2 Reference Intro Builder pattern is mainly used if the objects to be build are not that simple anymore. Builder is a separate component/class/set of classes for building an object. The builder can have an initializer itself …" />
+<meta name="keywords" content="python, patterns, CREATIONAL">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Builder"/>
+  <meta property="og:description" content="Table of contents: Intro Before After After #2.1 After #2.2 Reference Intro Builder pattern is mainly used if the objects to be build are not that simple anymore. Builder is a separate component/class/set of classes for building an object. The builder can have an initializer itself …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/builder.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-11-14 11:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Patterns"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="article:tag" content="patterns"/>
+  <meta property="article:tag" content="CREATIONAL"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Builder</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="builder">Builder</h1>
+    <p>
+      Posted on So 14 November 2021 in <a href="https://maconrad.github.io/category/patterns.html">Patterns</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#before">Before</a></li>
+<li><a href="#after">After</a></li>
+<li><a href="#after-21">After #2.1</a></li>
+<li><a href="#after-22">After #2.2</a></li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+</div>
+<h2 id="intro">Intro</h2>
+<p>Builder pattern is mainly used if the objects to be build are not that simple anymore. Builder is a separate component/class/set of classes for building an object. The builder can have an initializer itself or use a static method on the object that is being built (that returns the builder). E.g. make()/build()/create()/new().  </p>
+<p>Benefits:</p>
+<ul>
+<li>Try to avoid having an object with X different initializer arguments.</li>
+</ul>
+<p>Antipattern:</p>
+<ul>
+<li>Constructor with many Null</li>
+</ul>
+<p>Example:</p>
+<ul>
+<li>House with optional (Swimming Pool, Garage, Garden etc.)<ul>
+<li>Instead of House(num_windows, num_doors, num_rooms, has_garden, has_pool, has garage) make a HouseBuilder with buildWalls(), buildRooms(), addGarden() etc.</li>
+</ul>
+</li>
+<li>Firewall Policy set<ul>
+<li>Optional src, dst, port, application, zone, sgt etc. etc.</li>
+</ul>
+</li>
+</ul>
+<p>Key:</p>
+<ul>
+<li>Piecewise/step-by-step construction of an object</li>
+<li>Builder takes care of constructing the object, instead of the object itself</li>
+<li>A builder can be made fluid/chainable by making each method return self</li>
+<li>Base Class and inheritance allow for co-work of multiple builders (facade)<ul>
+<li>jumping from one builder to another via base class</li>
+<li>using "deep" inheritance B(A), C(B), D(C) etc</li>
+</ul>
+</li>
+<li>Director often used with builder, director knows the steps (step-1 until X) to create certain pre-defined Objects that are often used, instead of individual builder steps.</li>
+</ul>
+<h2 id="before">Before</h2>
+<ul>
+<li>
+<p>Problems:</p>
+<ul>
+<li>What if anyone forgets the closing tag?</li>
+<li>What if element needs to change from child to sth? Need sth more generic</li>
+<li>What if element should have an optional attribute?</li>
+<li>Very manual process for each of the use cases</li>
+</ul>
+</li>
+<li>
+<p>Note: No error handling is on purpose to keep code as lean as possible and still understand pattern. </p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;XML&#39;</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="s1">&#39;great&#39;</span><span class="p">]</span>
+<span class="n">parts</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&lt;root&gt;&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+    <span class="n">parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;   &lt;child&gt;</span><span class="si">{</span><span class="n">w</span><span class="si">}</span><span class="s1">&lt;/child&gt;&#39;</span><span class="p">)</span>
+
+<span class="n">parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&lt;/root&gt;&#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">parts</span><span class="p">))</span>
+</code></pre></div>
+
+<h2 id="after">After</h2>
+<ul>
+<li>Outsources the construction of building an Element</li>
+<li>returning the builder via <code>self</code> allows for chaining (fluent/fluidity)</li>
+<li>Note: Exposing builder from element itself via <code>staticmethod</code> breaks the Open-Close principle. But depending on how tight they are coupled is okey (cyclic referency)</li>
+<li>Note: No error handling is on purpose to keep code as lean as possible and still understand pattern. </li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">XMLElement</span><span class="p">:</span>
+    <span class="n">indent_size</span> <span class="o">=</span> <span class="mi">2</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">text</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">children</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">__str</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">indent</span><span class="p">):</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span> <span class="o">*</span> <span class="p">(</span><span class="n">indent</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">indent_size</span><span class="p">)</span>
+        <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&lt;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">&gt;&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
+            <span class="n">i1</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span> <span class="o">*</span> <span class="p">((</span><span class="n">indent</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">indent_size</span><span class="p">)</span>
+            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i1</span><span class="si">}{</span><span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">children</span><span class="p">:</span>
+            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">child</span><span class="o">.</span><span class="n">__str</span><span class="p">(</span><span class="n">indent</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+
+        <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&lt;/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">&gt;&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__str</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1"># Expose builder from element itself</span>
+    <span class="c1"># Breaks Open-Close principle </span>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">XMLBuilder</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">XMLBuilder</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root_name</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">root_name</span> <span class="o">=</span> <span class="n">root_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__root</span> <span class="o">=</span> <span class="n">XMLElement</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">root_name</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">add_child</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">child_name</span><span class="p">,</span> <span class="n">child_text</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__root</span><span class="o">.</span><span class="n">children</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">XMLElement</span><span class="p">(</span><span class="n">child_name</span><span class="p">,</span> <span class="n">child_text</span><span class="p">))</span>
+
+    <span class="c1"># Fluent interface (= can be chained)</span>
+    <span class="k">def</span> <span class="nf">add_child_fluent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">child_name</span><span class="p">,</span> <span class="n">child_text</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__root</span><span class="o">.</span><span class="n">children</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">XMLElement</span><span class="p">(</span><span class="n">child_name</span><span class="p">,</span> <span class="n">child_text</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__root</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">builder</span> <span class="o">=</span> <span class="n">XMLBuilder</span><span class="p">(</span><span class="s1">&#39;root&#39;</span><span class="p">)</span>
+    <span class="n">builder</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="s1">&#39;child&#39;</span><span class="p">,</span> <span class="s1">&#39;XML&#39;</span><span class="p">)</span>
+    <span class="n">builder</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="s1">&#39;child&#39;</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">)</span>
+    <span class="n">builder</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="s1">&#39;child&#39;</span><span class="p">,</span> <span class="s1">&#39;great&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ordinary builder: &#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">builder</span><span class="p">)</span>
+
+    <span class="n">builder2</span> <span class="o">=</span> <span class="n">XMLBuilder</span><span class="p">(</span><span class="s1">&#39;root&#39;</span><span class="p">)</span>
+    <span class="n">builder2</span><span class="o">.</span><span class="n">add_child_fluent</span><span class="p">(</span><span class="s1">&#39;child&#39;</span><span class="p">,</span> <span class="s1">&#39;Chaining&#39;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">add_child_fluent</span><span class="p">(</span><span class="s1">&#39;child&#39;</span><span class="p">,</span> <span class="s1">&#39;together&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Fluent builder: &#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">builder2</span><span class="p">)</span>
+
+    <span class="n">builder3</span> <span class="o">=</span> <span class="n">XMLElement</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;root&#39;</span><span class="p">)</span>
+    <span class="n">builder3</span><span class="o">.</span><span class="n">add_child_fluent</span><span class="p">(</span><span class="s1">&#39;child&#39;</span><span class="p">,</span> <span class="s1">&#39;static&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">add_child_fluent</span><span class="p">(</span><span class="s1">&#39;child&#39;</span><span class="p">,</span> <span class="s1">&#39;method&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Expose builder from element builder: &#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">builder3</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="after-21">After #2.1</h2>
+<p>What if the object is even more compolex? If the object is so complicated to build that more than 1 builder is needed, several builder can work together. A little trick in the fluent interface through inheritance can help to switch between the different builders seamlessly.</p>
+<p>Key Points:</p>
+<ul>
+<li>NGFWRuleBuilder holds references to multiple sub-builders (BasicRuleBuilder &amp; NextGenRuleBuilder). At the same time, these classes inherit from NGFWRuleBuilder which allows for hopping between the different builders. Key point here is that a handle to the Rule-Object is given from one builder to the next, so that no merging has to happen.</li>
+<li>If multiple instances should be built with the same builder, the reset() method has to propagate to the parent, as the sub-builders hold their own instance variables (inherit from class, but hold their own reference to the rule, as they are individual objects).</li>
+<li>Chaining via <code>self</code>still works and hopping from one builder to the next works thanks to inheritance.</li>
+<li>Note: Instantiating via <code>def __init__(self, rule=NGFWRule())</code> does not work in python, same problem as with <code>def any_func(xy=[])</code>. Each function gets created when the module loads! Default params are then evaluated. Default list [] for xy only gets created once! All calls will refer to the same array. Default Params SHALL not be provided if they are MUTABLE objects!</li>
+</ul>
+<p>Problems:</p>
+<ul>
+<li>Break Open-Closed principle as each change in the subbuilders requires a change in the NGFWRuleBuilder. Can be sovled via hierarcical inheritance (with its own downsides)</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">NGFWRule</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># Basic 5 Tuple</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">seq_number</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">src</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dst</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">protocol</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">src_port</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dst_port</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="c1"># NextGen Stuff</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">antivirus_policy</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">intrusion_policy</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">file_policy</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ssl_policy</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;ACL# </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">seq_number</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span> <span class="o">+</span>\
+            <span class="sa">f</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Basic: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">src</span><span class="si">}</span><span class="s1"> | </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">dst</span><span class="si">}</span><span class="s1"> | </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">protocol</span><span class="si">}</span><span class="s1"> | </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">src_port</span><span class="si">}</span><span class="s1"> | </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">dst_port</span><span class="si">}</span><span class="s1"> &#39;</span> <span class="o">+</span>\
+            <span class="sa">f</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">NextGen: AV: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">antivirus_policy</span><span class="si">}</span><span class="s1"> | IDS </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">intrusion_policy</span><span class="si">}</span><span class="s1"> | File: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">file_policy</span><span class="si">}</span><span class="s1">&#39;</span> <span class="o">+</span>\
+            <span class="sa">f</span><span class="s1">&#39;SSL: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">ssl_policy</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span>
+
+
+<span class="k">class</span> <span class="nc">NGFWRuleBuilder</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rule</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">rule</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">rule</span> <span class="o">=</span> <span class="n">rule</span>
+
+    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span> <span class="o">=</span> <span class="n">NGFWRule</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Calling reset() - My Type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="c1"># print(f&#39;Rule id {id(self.rule)}&#39;)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">basic</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">BasicRuleBuilder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">next_gen</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">NextGenRuleBuilder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">ret_rule</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rule</span>
+        <span class="c1"># Clean up for next rule</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">ret_rule</span>
+
+<span class="k">class</span> <span class="nc">BasicRuleBuilder</span><span class="p">(</span><span class="n">NGFWRuleBuilder</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">rule</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">rule</span><span class="o">=</span><span class="n">rule</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;My Type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="si">}</span><span class="s1"> Parent type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">parent</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">l1_l4_common</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">seq</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">dst</span><span class="p">,</span> <span class="n">protocol</span><span class="p">,</span> <span class="n">dst_port</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">seq_number</span> <span class="o">=</span> <span class="n">seq</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">src</span> <span class="o">=</span> <span class="n">src</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">dst</span> <span class="o">=</span> <span class="n">dst</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">protocol</span> <span class="o">=</span> <span class="n">protocol</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">dst_port</span> <span class="o">=</span> <span class="n">dst_port</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="c1"># Build individual</span>
+    <span class="k">def</span> <span class="nf">source</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">src</span> <span class="o">=</span> <span class="n">source</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">destination</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dst</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">dst</span> <span class="o">=</span> <span class="n">dst</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="c1"># It inherits its methods from parent</span>
+    <span class="c1"># but at same time is its own instance</span>
+    <span class="c1"># so a reset needs to propagate up to the parent</span>
+    <span class="c1"># as otherwise rule object in parent remains the same</span>
+
+    <span class="c1"># Only a problem if i want to reuse the same</span>
+    <span class="c1"># rulebuilder for multiple objects</span>
+
+    <span class="c1"># Otherwise: if reset() inherited and therefore reference </span>
+    <span class="c1"># to self.rule changed. Only the reference in the child</span>
+    <span class="c1"># is changed, not in the parent! </span>
+    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+
+    <span class="c1"># ...</span>
+
+<span class="k">class</span> <span class="nc">NextGenRuleBuilder</span><span class="p">(</span><span class="n">NGFWRuleBuilder</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">rule</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">rule</span><span class="o">=</span><span class="n">rule</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;My Type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="si">}</span><span class="s1"> Parent type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">parent</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">av_policy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">antivirus_policy</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">ids_policy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">intrusion_policy</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">file_policy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">file_policy</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">ssl_policy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rule</span><span class="o">.</span><span class="n">ssl_policy</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">ngfwbuilder</span> <span class="o">=</span> <span class="n">NGFWRuleBuilder</span><span class="p">()</span>
+    <span class="n">fwrule1</span> <span class="o">=</span> <span class="n">ngfwbuilder</span>\
+        <span class="o">.</span><span class="n">basic</span>\
+            <span class="o">.</span><span class="n">l1_l4_common</span><span class="p">(</span><span class="s2">&quot;Rule1&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;1.1.1.1&quot;</span><span class="p">,</span> <span class="s2">&quot;2.2.2.2&quot;</span><span class="p">,</span> <span class="s2">&quot;tcp&quot;</span><span class="p">,</span> <span class="s2">&quot;443&quot;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">next_gen</span>\
+            <span class="o">.</span><span class="n">file_policy</span><span class="p">(</span><span class="s2">&quot;PDF Only&quot;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">fwrule1</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fwrule1</span><span class="p">)</span>
+
+    <span class="c1">#ngfwbuilder2 = NGFWRuleBuilder()</span>
+    <span class="n">fwrule2</span> <span class="o">=</span> <span class="n">ngfwbuilder</span>\
+        <span class="o">.</span><span class="n">basic</span>\
+            <span class="o">.</span><span class="n">l1_l4_common</span><span class="p">(</span><span class="s2">&quot;Rule2&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;3.3.3.3&quot;</span><span class="p">,</span> <span class="s2">&quot;2.2.2.2&quot;</span><span class="p">,</span> <span class="s2">&quot;tcp&quot;</span><span class="p">,</span> <span class="s2">&quot;80&quot;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">next_gen</span>\
+            <span class="o">.</span><span class="n">ssl_policy</span><span class="p">(</span><span class="s2">&quot;Decrypt&quot;</span><span class="p">)</span>\
+            <span class="o">.</span><span class="n">av_policy</span><span class="p">(</span><span class="s2">&quot;Scan all&quot;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">fwrule1</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fwrule1</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">fwrule2</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fwrule2</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="after-22">After #2.2</h2>
+<p>Something similar can be achieved through hierarchical inheritance. Only problem here is, that one needs to know the tree depending on which attributes he wants to set. For example, if in the main Function <code>PersonJobBuilder</code> was used, then that would through an <code>AttributeError</code>, as it does not know about the <code>born()</code> method.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># Adress</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">date_of_birth</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1"> was born on </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">date_of_birth</span><span class="si">}</span><span class="s1">&#39;</span> <span class="o">+</span>\
+            <span class="sa">f</span><span class="s1">&#39; and works as: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="si">}</span><span class="s1">&#39;</span>
+
+<span class="c1"># Does not violate Open-Close Principle</span>
+<span class="c1"># BUT need to know which one is the most specific/last Builder</span>
+
+<span class="k">class</span> <span class="nc">PersonBuilder</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">person</span> <span class="o">=</span> <span class="n">Person</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">person</span>
+
+<span class="k">class</span> <span class="nc">PersonInfoBuilder</span><span class="p">(</span><span class="n">PersonBuilder</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">called</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">person</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<span class="k">class</span> <span class="nc">PersonJobBuilder</span><span class="p">(</span><span class="n">PersonInfoBuilder</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">works_as_a</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">position</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">person</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">position</span>
+        <span class="k">return</span> <span class="bp">self</span>  
+
+<span class="k">class</span> <span class="nc">PersonBirthdateBuilder</span><span class="p">(</span><span class="n">PersonJobBuilder</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">born</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">date</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">person</span><span class="o">.</span><span class="n">date_of_birth</span> <span class="o">=</span> <span class="n">date</span>
+        <span class="k">return</span> <span class="bp">self</span>      
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">pb</span> <span class="o">=</span> <span class="n">PersonBirthdateBuilder</span><span class="p">()</span>
+    <span class="c1"># pb = PersonJobBuilder() -&gt; AttributeError</span>
+    <span class="n">person</span> <span class="o">=</span> <span class="n">pb</span>\
+        <span class="o">.</span><span class="n">called</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">works_as_a</span><span class="p">(</span><span class="s1">&#39;Programmer&#39;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">born</span><span class="p">(</span><span class="s1">&#39;21/04/1991&#39;</span><span class="p">)</span>\
+        <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="reference">Reference</h2>
+<ul>
+<li>See: <a href="https://refactoring.guru/design-patterns/builder">Refactoring Guru - Builder</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/python.html">python</a>
+      <a href="https://maconrad.github.io/tag/patterns.html">patterns</a>
+      <a href="https://maconrad.github.io/tag/creational.html">CREATIONAL</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: A working approach - the problem Improving Improving further... References A working approach - the problem If you are not an experienced python programmer. You might right something like this: import requests def apiCallGitHub(name): response = requests.get(f&#39;https://api.github.com/users/{name}&#39;) if response.status_code == 200 …" />
+<meta name="keywords" content="python, IDE, smart, stdlib">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="NamedTuple to the rescue"/>
+  <meta property="og:description" content="Table of contents: A working approach - the problem Improving Improving further... References A working approach - the problem If you are not an experienced python programmer. You might right something like this: import requests def apiCallGitHub(name): response = requests.get(f&#39;https://api.github.com/users/{name}&#39;) if response.status_code == 200 …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/namedtuple-to-the-rescue.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-10-31 11:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Python"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="article:tag" content="IDE"/>
+  <meta property="article:tag" content="smart"/>
+  <meta property="article:tag" content="stdlib"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; NamedTuple to the rescue</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="namedtuple-to-the-rescue">NamedTuple to the rescue</h1>
+    <p>
+      Posted on So 31 Oktober 2021 in <a href="https://maconrad.github.io/category/python.html">Python</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#a-working-approach-the-problem">A working approach - the problem</a></li>
+<li><a href="#improving">Improving</a></li>
+<li><a href="#improving-further">Improving further...</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h2 id="a-working-approach-the-problem">A working approach - the problem</h2>
+<p>If you are not an experienced python programmer. You might right something like this: </p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">apiCallGitHub</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;https://api.github.com/users/</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">return</span> <span class="kc">False</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="c1"># Some other part of the program</span>
+    <span class="n">userinfo</span> <span class="o">=</span> <span class="n">apiCallGitHub</span><span class="p">(</span><span class="s1">&#39;maconrad&#39;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">userinfo</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Username: </span><span class="si">{</span><span class="n">userinfo</span><span class="p">[</span><span class="s1">&#39;login&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> of Type: </span><span class="si">{</span><span class="n">userinfo</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>So whats the problem, I mean it works? There are actually quite a few. What if the API backend changes from GitHub to something else? Even though we separated the call to the API out into a function, we have some heavy coupling between the API call and where we access the data, which might be in a completly other module. </p>
+<h2 id="improving">Improving</h2>
+<p>So lets try to improve on these problems:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">getUserInfo</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;https://api.github.com/users/</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="k">return</span> <span class="kc">True</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;login&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="kc">False</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="n">getUserInfo</span><span class="p">(</span><span class="s1">&#39;maconrad&#39;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">val</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Username: </span><span class="si">{</span><span class="n">val</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2"> of Type: </span><span class="si">{</span><span class="n">val</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Call to API not sucessful&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>So lets look at the improvements: </p>
+<ul>
+<li>Parameter is annotated indicating what kind of input is assumed</li>
+<li>Function now does not show anymore that the backend is GitHub but rather describes the problem it solves</li>
+<li>It uses the requests <code>codes.ok</code> instead of HTTP 200.</li>
+<li>We got rid of using dict access method by using square brackets and strings, which our IDE cannot validate nor auto-complete. </li>
+<li>It uses tuples to return not only a single value but multiple, indicating wheter the request was successful or not. </li>
+<li>Tuple can now be used to access the values decoupling the API call from the consumer application part. A change from the github API to e.g. Gitlab API works as long as the same tuple is returned.</li>
+</ul>
+<p>We still have some issues. Let's look at those in the next section. </p>
+<h2 id="improving-further">Improving further...</h2>
+<p>You might say well, i get the decoupling part but would about readability. You are absolutely right. Reading <code>{userinfo['login']}</code> vs <code>{val[1]}</code> is a lot easier for the programmer. But what if we had both? A clear interface that decouples the API call and still get readability. There are various approaches:</p>
+<ul>
+<li>We can implement our own class </li>
+<li>We can make use of dataClasses</li>
+<li>We can use NamedTuples</li>
+</ul>
+<p>The problem with the own class is that it does not implement several operators (e.g. equality <code>==</code>) or methods (e.g. <code>repr()</code>) by default. The approach we are going to take here is NamedTuples, which have the advantage (or disadvantage) of being immutable and add several functionality out of the box like <code>repr()</code> and equality testing. They are part of the std-lib, lightweight and are available in python versions earlier than 3.6/3.7 (unlike data Classes). On top of that they support intellisense in IDEs. </p>
+<p>So let's look at the code.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">User</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;User&#39;</span><span class="p">,</span> <span class="s1">&#39;error errorinfo loginname type&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">getUserInfo</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;https://api.github.com/users/</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">User</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;login&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">User</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">getUserInfo</span><span class="p">(</span><span class="s1">&#39;maconrad&#39;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">user</span><span class="o">.</span><span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Username: </span><span class="si">{</span><span class="n">user</span><span class="o">.</span><span class="n">loginname</span><span class="si">}</span><span class="s2"> of Type: </span><span class="si">{</span><span class="n">user</span><span class="o">.</span><span class="n">type</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">errorinfo</span><span class="p">)</span>
+</code></pre></div>
+
+<p>That's it. It could be even more generic depending on the use case, implementing a return object instead of a user object. Or multiple backends could be queried like GitHub and GitLab, abstracting that away from the user. Still, the information is very consumable and typing is supported. Just keep in mind the immutabability.</p>
+<p>If that is required, looking at DataClasses might be a good choice.</p>
+<h2 id="references">References</h2>
+<ul>
+<li>See: <a href="https://realpython.com/python-data-classes/">Dataclasses on realpython.com</a> </li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/python.html">python</a>
+      <a href="https://maconrad.github.io/tag/ide.html">IDE</a>
+      <a href="https://maconrad.github.io/tag/smart.html">smart</a>
+      <a href="https://maconrad.github.io/tag/stdlib.html">stdlib</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

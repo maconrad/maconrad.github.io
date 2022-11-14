@@ -1,0 +1,1052 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Troubleshooting commands for various aspects of Firepower." />
+<meta name="keywords" content="Cisco, FMC, FTD, SFR">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="FMC and FTD Rerference"/>
+  <meta property="og:description" content="Troubleshooting commands for various aspects of Firepower."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/fmc-and-ftd-rerference.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-02-02 11:51:00+01:00"/>
+  <meta property="article:modified_time" content="2022-02-02 14:30:00+01:00"/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Cisco"/>
+  <meta property="article:tag" content="Cisco"/>
+  <meta property="article:tag" content="FMC"/>
+  <meta property="article:tag" content="FTD"/>
+  <meta property="article:tag" content="SFR"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; FMC and FTD Rerference</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="fmc-and-ftd-rerference">FMC and FTD Rerference</h1>
+    <p>
+      Posted on Mi 02 Februar 2022 in <a href="https://maconrad.github.io/category/cisco.html">Cisco</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#good-reference-slides">Good Reference Slides</a></li>
+<li><a href="#snort-rules">Snort Rules</a></li>
+<li><a href="#snort-2-vs-snort-3">SNort 2 vs Snort 3</a></li>
+<li><a href="#url-filtering">URL Filtering</a></li>
+<li><a href="#device-registration-and-sftunnel">Device Registration and SFTunnel</a></li>
+<li><a href="#target-nap">Target NAP</a></li>
+<li><a href="#packet-captures">Packet Captures</a></li>
+<li><a href="#amp-integration">AMP Integration</a></li>
+<li><a href="#troubleshooting-deployment">Troubleshooting Deployment</a></li>
+<li><a href="#debug-ldap-ad-integration">Debug LDAP / AD Integration</a></li>
+<li><a href="#upgrades">Upgrades</a></li>
+<li><a href="#identity-cmds">Identity CMDs</a></li>
+<li><a href="#unsorted-cmds">Unsorted Cmds</a></li>
+<li><a href="#cisco-lives">Cisco Lives</a><ul>
+<li><a href="#learning-map">Learning Map</a></li>
+<li><a href="#varia">Varia</a></li>
+</ul>
+</li>
+<li><a href="#releases">Releases</a><ul>
+<li><a href="#63">6.3</a></li>
+<li><a href="#64">6.4</a></li>
+<li><a href="#65">6.5</a></li>
+<li><a href="#66">6.6</a></li>
+<li><a href="#67">6.7</a></li>
+<li><a href="#70">7.0</a></li>
+<li><a href="#70-new-featurs">7.0 New Featurs</a></li>
+<li><a href="#71">7.1</a></li>
+<li><a href="#71-new-features">7.1 New Features</a></li>
+<li><a href="#72">7.2</a></li>
+<li><a href="#72-new-features">7.2 New Features</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="good-reference-slides">Good Reference Slides</h1>
+<p><img src="../../images/cisco/snort/1_lina_vs_snort_capture.png" alt="Lina vs Snort Capture Options" width="400"/>
+<img src="../../images/cisco/snort/1_lina_vs_snort_capture_2.png" alt="Lina vs Snort Capture Options2" width="400"/>
+<img src="../../images/cisco/snort/2_packet_flow_high_level.png" alt="Pkt high level flow" width="400"/>
+<img src="../../images/cisco/snort/3_tools_layers.png" alt="Tools per OSI Layer" width="400"/>
+<img src="../../images/cisco/snort/4_DAQ_Snort.png" alt="DAQ Details" width="400"/>
+<img src="../../images/cisco/snort/5_Mgmt_Agent_sftunnel_Cloud_etc.png" alt="Agents" width="400"/>
+<img src="../../images/cisco/snort/6_lina_daq.png" alt="DAQ2" width="400"/>
+<img src="../../images/cisco/snort/7_ftd_debug_tools.png" alt="FTD Debug Tools" width="400"/>
+<img src="../../images/cisco/snort/9_pmtool_processes.png" alt="PMTool Processes" width="400"/></p>
+<h1 id="snort-rules">Snort Rules</h1>
+<p>An important note is, that a packet data has to match ALL the conditions specified in a rule for the rule to be triggerd. In short, if multiple content statements are defined, ALL of them must hit for the rule to trigger.
+Some of the important keywords are:
+- classtype: Descriptive name for rule classification / Also sets priority for event / e.g. classtype:attempted-admin;
+- reference: Documentation, displayed in Firepower GUI / ref to vulnerability description / e.g. reference:url,technet.mircrosoft.com/en-us/security/bulletin/ms14-064;
+- sid: Snort-ID, custom rule start at 1'000'000 / import auto triggers generation if not present / e.g. sid:1000001;
+- rev: rule Revision / existing rule will NOT be updated unless revision increased / e.g. rev:5;
+- content: search for specific strings or bytes / modifiers available, these come after the “content” keyword. / e.g. content:”Test”; nocase; http_uri;
+- content: by default search in ASCII text / to search for hexadecimal code, enclose the byte value with the pipe character / content:”|0A FF E7|”;
+- content: A single content keyword can combine ASCII and hex syntax / e.g. content:”|0A|test|FF E7|”; nocase; 
+- content: By default the content keyword starts searching at the beginning of the packet payload (offset zero)
+- content: modifiers: e.g. http_method, http_uri, http_header, http_stat_code, http_stat_msg etc.
+- metadata: Feed snort with additional info / some options affect detection, some not / Format: metadata:key1 value1, key2 value2; (comma separated key-value pairs). Allows Snort to match packets based on the application protocol regardless of src/dst port
+- metadata: MOST Important is the <strong><em>Service</em></strong> which is used to identify application protocol, Service is ignored with Snort, Service is required with Firepower. Simply writing a rule for port 80 without using the metadata service keyword will NOT trigger on HTTP traffic
+- metadata: Metadata <strong><em>service must be used</em></strong> if writing rules for any of the “well-known” application protocols
+- metadata: E.g. metadata:service http; (Match http traffic), metadata:impact_flag red; (RED impact in event), metadata:service http, service smtp; (HTTP and SMTP)
+- file_data: detection pointer set to the beginning of one of the following buffers / sticky keyword = stays in effect throughout the rest of the rule
+    - HTTP – HTTP response (everything after the HTTP Header)
+        - Important: Searches the “normalized” HTTP response, Nearly all webservers/clients today support GZIP compression of server data, file_data tells Snort to search in the uncompressed (unzipped) buffer for the data. Rules with content or pcre keywords looking in the HTTP response but not using file_data are searching compressed data and will NEVER work
+    - SMTP/POP/IMAP – beginning of the message body
+    - Bottom line: Any rules you write for server responses should probably use file_data. Important WHEN SET!
+- pkt_data: Unstick the file_data / Causes Snort to revert back to searching the raw transport payload of the packet
+- pcre: Full regex /  when content match is not enough / Performs badly! / Syntax: pcre:”/<regular expression>/<pcre options>”;
+- fast_pattern: Load this part of the rule into the Fast Pattern Matcher engine. Can only be used once per rule. fast_pattern option is a modifier for the content keyword.
+    - only modifier menas that the content should only be used for FP, not for rule result.</p>
+<p>Preprocessors are used to ensure network packet data is presented in a single and reassembles datagrams into continuous stream + used for anomaly detection. So the normalized buffers created by preprocessors (e.g. http_uri, http_header) should be used together with content instead of using raw content.</p>
+<p>Fast Pattern Matcher: The fast pattern matcher is used to determine which packets qualify for further inspection. The Fast Pattern Engine constrains packets to related Snort rules, saves CPU and makes snort faster. Engine is enabled by default and cannot be disabled. If multiple content keywords exist in a rule, Snort will automatically load the first or longest one into the FP. For Rule witers, which part of the rule is loaded into FP can be controlled using the fast_pattern rule option.</p>
+<p>Rule processing order: Snort processes keywords in rules in the order they were written – you DO control this, "flow dsize isdataat flags" are fast.</p>
+<p>See: BRKSEC-3352 and BRKSEC-3300 for more details</p>
+<p><img src="../../images/cisco/snort/10_rule_anatomy.png" alt="Rule Anatomy" width="400"/>
+<img src="../../images/cisco/snort/11_snort_architecture.png" alt="Snort Architecture" width="400"/>
+<img src="../../images/cisco/snort/12_metadata.png" alt="Metadata" width="400"/>
+<img src="../../images/cisco/snort/12_metadata_why.png" alt="Why Metadata1" width="400"/>
+<img src="../../images/cisco/snort/12_metadata_why2.png" alt="Why Metadata2" width="400"/>
+<img src="../../images/cisco/snort/13_file_data.png" alt="File Data Filter" width="400"/>
+<img src="../../images/cisco/snort/14_pkt_data.png" alt="Pkt Data Filter" width="400"/>
+<img src="../../images/cisco/snort/15_http_preproc_1.png" alt="HTTP Preprocessor 1" width="400"/>
+<img src="../../images/cisco/snort/15_http_preproc_2.png" alt="HTTP Preprocessor 2" width="400"/>
+<img src="../../images/cisco/snort/16_fpm.png" alt="Fast Pattern Matching" width="400"/>
+<img src="../../images/cisco/snort/16_fpm_fast_pattern_own_rules.png" alt="FPM on Rules1" width="400"/>
+<img src="../../images/cisco/snort/16_fpm_fast_pattern_own_rules_2.png" alt="FPM on Rules 2" width="400"/>
+<img src="../../images/cisco/snort/16_fpm_fast_pattern_own_rules_3.png" alt="FPM on rules 3" width="400"/>
+<img src="../../images/cisco/snort/18_rule_optimization.png" alt="Rule Optimization" width="400"/></p>
+<div class="highlight"><pre><span></span><code>expert
+sudo su
+<span class="nb">cd</span> /var/sf/detection_engines/...
+<span class="c1"># Snort 3 saves custom rules here</span>
+ls /var/sf/detection_engines/&lt;id&gt;/custom_rules.rules
+
+<span class="c1"># Snort 2 saves custom rules here</span>
+ ls /var/sf/detection_engines/&lt;id&gt;/snort
+
+<span class="c1"># Find all files that were modified in the last 5min</span>
+find . -maxdepth <span class="m">1</span> -mmin -5 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Shows Snort Rule Block</span>
+system support trace
+
+<span class="c1"># Does NOT show Snort rule block</span>
+system support firewall-engine-debug
+
+<span class="c1"># Display snort instances</span>
+show asp inspect-dp snort
+</code></pre></div>
+
+<p>An example rule would look as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Note fast_pattern should be defined</span>
+<span class="c1"># Note2: Not a good rule as it matches a lot of traffic!, be more specific</span>
+<span class="c1"># Note3: service http overrides HTTP_PORTS as soon as service http is detected</span>
+alert tcp any any -&gt; any <span class="nv">$HTTP_PORTS</span> <span class="o">(</span> sid:1000000<span class="p">;</span> file_data<span class="p">;</span> http_method<span class="p">;</span> content:!<span class="s2">&quot;HEAD&quot;</span><span class="p">;</span> metadata:policy max-detect-ips drop,policy security-ips drop<span class="p">;</span> service:http<span class="p">;</span> reference:bugtraq,39813<span class="p">;</span> reference:cve,2010-1663<span class="p">;</span> msg:<span class="s2">&quot;HTTP Method NOT HEAD&quot;</span><span class="p">;</span> classtype:attempted-user<span class="p">;</span> rev:4<span class="p">;</span> <span class="o">)</span>
+</code></pre></div>
+
+<p>Following files can be helpful in case of troubleshooting:</p>
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">tail</span><span class="w"> </span><span class="o">-</span><span class="n">f</span><span class="w"> </span><span class="o">/</span><span class="n">ngfw</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">sf</span><span class="o">/</span><span class="n">policy_deployment</span><span class="o">.</span><span class="n">log</span><span class="w"></span>
+</code></pre></div>
+
+<p>See also: <a href="https://www.cisco.com/c/en/us/support/docs/security/firepower-ngfw/214609-firepower-data-path-troubleshooting-phas.html">Data Path Troubleshooting IPS</a></p>
+<h1 id="snort-2-vs-snort-3">SNort 2 vs Snort 3</h1>
+<p>todo</p>
+<p><img src="../../images/cisco/snort/19_snort2_snort3.png" alt="Snort2 vs Snrot3" width="400"/></p>
+<p>See also: <a href="https://www.cisco.com/c/en/us/support/docs/security/firepower-ngfw/217617-comparing-snort-2-and-snort-3-on-firepow.html">Snort2 vs Snort 3</a></p>
+<h1 id="url-filtering">URL Filtering</h1>
+<p>todo</p>
+<p>Important for encrypted Traffic:</p>
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">Does</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="n">use</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="n">lists</span><span class="p">.</span><span class="w"> </span><span class="n">You</span><span class="w"> </span><span class="n">must</span><span class="w"> </span><span class="n">use</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="n">objects</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">groups</span><span class="w"> </span><span class="n">instead</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">HTTPS</span><span class="w"> </span><span class="n">traffic</span><span class="w"> </span><span class="n">based</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">subject</span><span class="w"> </span><span class="n">common</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">public</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">certificate</span><span class="w"> </span><span class="p">(</span><span class="o">=</span><span class="n">Check</span><span class="w"> </span><span class="n">common</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">SNI</span><span class="w"> </span><span class="n">used</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">Pre</span><span class="o">-</span><span class="n">classificatoin</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Disregards</span><span class="w"> </span><span class="n">subdomains</span><span class="w"> </span><span class="n">within</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">subject</span><span class="w"> </span><span class="n">common</span><span class="w"> </span><span class="n">name</span><span class="p">.</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">TLS</span><span class="w"> </span><span class="mf">1.3</span><span class="o">:</span><span class="w"> </span><span class="n">TLS</span><span class="w"> </span><span class="mf">1.3</span><span class="w"> </span><span class="n">protocol</span><span class="w"> </span><span class="n">encrypts</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">server</span><span class="p">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">certificate</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">additional</span><span class="w"> </span><span class="n">security</span><span class="p">.</span><span class="w"></span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">advanced</span><span class="w"> </span><span class="n">settings</span><span class="w"> </span><span class="n">offer</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">Early</span><span class="w"> </span><span class="n">application</span><span class="w"> </span><span class="n">detection</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="n">categorization</span><span class="w"> </span><span class="n">option</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">TLS</span><span class="w"> </span><span class="n">Server</span><span class="w"> </span><span class="n">Identity</span><span class="w"> </span><span class="n">Discovery</span><span class="w"></span>
+</code></pre></div>
+
+<p>Older versions (until 6.4) use service.brightcloud.com &amp; database.brightcloud.com
+Newer versions (6.5+) see: <a href="https://www.cisco.com/c/en/us/td/docs/security/firepower/70/configuration/guide/fpmc-config-guide-v70/security_internet_access_and_communication_ports.html">Security, Internet Access and Communication Protocols</a>
+    - New daemon (beakerd)
+    - New database format (uridb)
+    - var/sf/cloud_download/cisco/
+    - OVerride reputation: Analysis &gt; Advanced &gt; Lookup &gt; URL
+    - Check: System &gt; Integration &gt; Cloud Services (URL Filtering)</p>
+<p>Newer versions (7.0+) see: <a href=""></a>
+    - Enable Reputation enforcement on DNS Traffic (ACP &gt; Advanced) changes behavior!
+        - DNS filtering cannot determine the URL of encrypted traffic, that traffic is processed using your configurations for encrypted traffic (DNS_over_UDP, DNS_over_TCP might be required before those rules if blocked in the end)</p>
+<p>See also: <a href="https://www.cisco.com/c/en/us/support/docs/security/firesight-management-center/118852-technote-firesight-00.html">URL Filtering OLD</a>
+See also: <a href="https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/management-center/device-config/710/management-center-device-config-71/access-policies.html#ID-2176-00000314">Advanced Settings</a></p>
+<h1 id="device-registration-and-sftunnel">Device Registration and SFTunnel</h1>
+<p>Following is exchanged via SFTunnel (2 channels: control (Channel-A) and event (Channel-B)) running on tcp/8305:</p>
+<div class="highlight"><pre><span></span><code>- Keepalives / NTP / Events (Connection, Intrusion/IPS, File, SSL etc) / Malware Lookups
+- Health
+- User and Group ID
+- HA State
+- Security Intelligence (SI) and TID (Threat intelligence director)
+- Software Updates
+- Software patches
+- VDBs
+- SRUs
+</code></pre></div>
+
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>configure network management-port 8306</td>
+<td>Change SFTunnel Port</td>
+</tr>
+<tr>
+<td>configure manager add <FMC Host> <Registration Key> <NAT ID></td>
+<td>Add manager</td>
+</tr>
+<tr>
+<td>show managers</td>
+<td>Show configured manager and registration status</td>
+</tr>
+<tr>
+<td>netstat -na</td>
+<td>grep 8305</td>
+</tr>
+<tr>
+<td>sftunnel-status</td>
+<td>SFTunnel status</td>
+</tr>
+<tr>
+<td>system support view-files  (followed by messages)</td>
+<td>Can view var/log/messages in CLI directly</td>
+</tr>
+<tr>
+<td>capture-traffic (followed by -n host 1.1.1.1)</td>
+<td>Capture packets going to fmc</td>
+</tr>
+<tr>
+<td>tcpdump -i eth0 host 2.2.2.2 -n -w sftunnel.pcap</td>
+<td>on fmc going to FTD</td>
+</tr>
+<tr>
+<td>pmtool status</td>
+<td>E.g. SFTunnel process down issue</td>
+</tr>
+<tr>
+<td>configure network mtu 1300</td>
+<td>Set MTU if needed, SFTUnnel pkts have DF-Bit set</td>
+</tr>
+<tr>
+<td>show network</td>
+<td>Verify MTU</td>
+</tr>
+<tr>
+<td>ping -M do -s 1500 11.1.1.1</td>
+<td>Verify packet is not fragmented along the path do=DF bit</td>
+</tr>
+<tr>
+<td>system file secure-copy hostname username destination_directory pcap_file</td>
+<td>SCP to remote host</td>
+</tr>
+</tbody>
+</table>
+<p>Following files can be helpful in case of troubleshooting:</p>
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">tail</span><span class="w"> </span><span class="o">-</span><span class="n">f</span><span class="w"> </span><span class="o">/</span><span class="n">ngfw</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">messages</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">cat</span><span class="w"> </span><span class="o">/</span><span class="n">ngfw</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">messages</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">grep</span><span class="w"> </span><span class="n">sftunneld</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">cat</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">sf</span><span class="o">/</span><span class="n">sftunnel</span><span class="o">.</span><span class="n">conf</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">grep</span><span class="w"> </span><span class="n">reg_key</span><span class="w"></span>
+</code></pre></div>
+
+<p>Important Notes:</p>
+<div class="highlight"><pre><span></span><code>- SFTunnel packets have the DF-Bit set (so make sure MTU is correct)
+- SFTunnel to HA FMC is created automatically after joining primary FMC (10min+)
+</code></pre></div>
+
+<p>See Links below.</p>
+<h1 id="target-nap">Target NAP</h1>
+<p>See: https://www.cisco.com/c/en/us/support/docs/security/firepower-ngfw/214610-firepower-data-path-troubleshooting-phas.html</p>
+<h1 id="packet-captures">Packet Captures</h1>
+<p>3 Types:</p>
+<div class="highlight"><pre><span></span><code>- x
+</code></pre></div>
+
+<p><img src="../../images/cisco/firepower/8_capture_points.png" alt="Capture Points" width="400"/></p>
+<p>See: https://www.cisco.com/c/en/us/support/docs/security/firepower-ngfw/212474-working-with-firepower-threat-defense-f.html</p>
+<h1 id="amp-integration">AMP Integration</h1>
+<p>todo</p>
+<p><img src="../../images/cisco/firepower/6_malware_file_policy_fp.png" alt="Malware and File Policy" width="400"/>
+<img src="../../images/cisco/firepower/7_malware_file_policy2_tg_fp.png" alt="Malware and File Policy2" width="400"/>
+<img src="../../images/cisco/firepower/7_malware_file_pre_classification.png" alt="Malware and File Preclassification" width="400"/></p>
+<h1 id="troubleshooting-deployment">Troubleshooting Deployment</h1>
+<p>TransactionID via GUI (Deployment &gt; History &gt; Transcript). 6 Phases exist, </p>
+<p>Following files can be helpful in case of troubleshooting:</p>
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">tail</span><span class="w"> </span><span class="o">-</span><span class="n">f</span><span class="w"> </span><span class="o">/</span><span class="n">ngfw</span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">ngfwManager</span><span class="o">.</span><span class="n">log</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">CSCOpx</span><span class="o">/</span><span class="n">MDC</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">operation</span><span class="o">/</span><span class="n">usmsharedsvcs</span><span class="o">.</span><span class="n">log</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">sf</span><span class="o">/</span><span class="n">policy_deployment</span><span class="o">.</span><span class="n">log</span><span class="w"> </span><span class="p">(</span><span class="n">INFO</span><span class="w"> </span><span class="n">Starting</span><span class="w"> </span><span class="o">....</span><span class="w"> </span><span class="n">marks</span><span class="w"> </span><span class="n">begin</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">new</span><span class="w"> </span><span class="n">phase</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+<p>See: https://www.cisco.com/c/en/us/support/docs/security/firepower-ngfw-virtual/215258-troubleshooting-firepower-threat-defense.html</p>
+<h1 id="debug-ldap-ad-integration">Debug LDAP / AD Integration</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>adi_cli setLogMode DEBUG_LOGS ON</td>
+<td>Debug for AD integration</td>
+</tr>
+<tr>
+<td>pigtail MSGS</td>
+<td>Debug written to /var/log/messages (=msgs)</td>
+</tr>
+<tr>
+<td>pigtail --help</td>
+<td>See pigtail channels</td>
+</tr>
+<tr>
+<td>pigtail | grep xy</td>
+<td>General usage</td>
+</tr>
+<tr>
+<td>pigtail ACTQ -n 100</td>
+<td>Monitor User/Group download</td>
+</tr>
+<tr>
+<td>tail -f /var/log/action_queue.log -n 100</td>
+<td>On FMC, expert mode</td>
+</tr>
+<tr>
+<td>tail-logs action_queue.log</td>
+<td>On FTD, no expert mode</td>
+</tr>
+<tr>
+<td>user_map_query.pl -u usernamexy</td>
+<td>User and Group mapping</td>
+</tr>
+<tr>
+<td>pigtail SERR -n 100</td>
+<td>Error Log monitoring</td>
+</tr>
+<tr>
+<td>manage_procs.pl</td>
+<td>Process mgr</td>
+</tr>
+</tbody>
+</table>
+<h1 id="upgrades">Upgrades</h1>
+<p>Pre-Update Checks:</p>
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">FXOS</span><span class="w"> </span><span class="n">Update</span><span class="w"> </span><span class="n">required</span><span class="err">?</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">VMWare</span><span class="w"> </span><span class="n">minial</span><span class="w"> </span><span class="n">version</span><span class="err">?</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">VM</span><span class="w"> </span><span class="n">Resources</span><span class="err">?</span><span class="w"> </span><span class="p">(</span><span class="n">FMCv</span><span class="w"> </span><span class="n">recommended</span><span class="w"> </span><span class="mi">32</span><span class="n">GB</span><span class="p">,</span><span class="w"> </span><span class="nb">min</span><span class="w"> </span><span class="mi">28</span><span class="n">GB</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nb">min</span><span class="w"> </span><span class="mi">4</span><span class="n">vCPU</span><span class="p">,</span><span class="w"> </span><span class="n">rec</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="n">vCPU</span><span class="p">)</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">NTP</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Disk</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Memory</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">CPU</span><span class="err">?</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Deployment</span><span class="w"> </span><span class="n">pending</span><span class="err">?</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">HA</span><span class="w"> </span><span class="n">Status</span><span class="err">?</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Backup</span><span class="w"> </span><span class="n">available</span><span class="err">?</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">NTP</span><span class="w"> </span><span class="n">ok</span><span class="err">?</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Upgrade</span><span class="w"> </span><span class="n">packages</span><span class="w"> </span><span class="n">uploaded</span><span class="err">?</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Readiness</span><span class="w"> </span><span class="n">check</span><span class="w"> </span><span class="n">ok</span><span class="err">?</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Direct</span><span class="w"> </span><span class="n">upgrade</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">multiple</span><span class="w"> </span><span class="p">(</span><span class="n">time</span><span class="w"> </span><span class="n">estimate</span><span class="p">)</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Self</span><span class="w"> </span><span class="n">signed</span><span class="w"> </span><span class="n">Cert</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">slow</span><span class="w"> </span><span class="n">WAN</span><span class="w"> </span><span class="n">Links</span><span class="w"> </span><span class="p">(</span><span class="n">cannot</span><span class="w"> </span><span class="n">cache</span><span class="w"> </span><span class="n">javascript</span><span class="w"> </span><span class="n">etc</span><span class="p">)</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Might</span><span class="w"> </span><span class="n">need</span><span class="w"> </span><span class="n">Accept</span><span class="w"> </span><span class="n">EULA</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">CLI</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Validation</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">CLI</span><span class="w"> </span><span class="p">(</span><span class="n">pmtool</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">pigtail</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">)</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Snort</span><span class="w"> </span><span class="n">Rule</span><span class="w"> </span><span class="n">Update</span><span class="w"> </span><span class="p">(</span><span class="n">SRU</span><span class="w"> </span><span class="n">und</span><span class="w"> </span><span class="n">VFB</span><span class="p">)</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Geolocation</span><span class="w"> </span><span class="n">Rule</span><span class="w"> </span><span class="n">Update</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Vulnerability</span><span class="w"> </span><span class="n">DB</span><span class="w"> </span><span class="n">Update</span><span class="w"> </span><span class="p">(</span><span class="n">VDB</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tail -f /var/log/sf/update.status</td>
+<td>Upgrade Monitoring</td>
+</tr>
+<tr>
+<td>tail -f /var/log/sf/Cisco_Firepower_Mgmt_Center_Upgrade-7.1.0/status.log</td>
+<td>Upgrade Monitoring</td>
+</tr>
+<tr>
+<td>tail -f /var/log/action_queue.log -n 100</td>
+<td>Monitor Action queue</td>
+</tr>
+<tr>
+<td>tail-logs action_queue.log</td>
+<td>Monitor Action queue</td>
+</tr>
+<tr>
+<td>pigtail ACTQ -n 100</td>
+<td>Monitor Action queue</td>
+</tr>
+<tr>
+<td>pigtail --help</td>
+<td>Pigtail cmd to Log file mapping</td>
+</tr>
+<tr>
+<td>pigtail SERR -n 100</td>
+<td>Monitor Errors</td>
+</tr>
+<tr>
+<td>pigtail MSGS -n 100</td>
+<td>Monitor MSGS (details)</td>
+</tr>
+<tr>
+<td>manage_procs.pl</td>
+<td>Restart etc</td>
+</tr>
+<tr>
+<td>sftunnel_status.pl</td>
+<td>SFTunnel status after upgrade</td>
+</tr>
+<tr>
+<td>pigtail \ grep xy</td>
+<td>whatever we search for</td>
+</tr>
+<tr>
+<td>ls /var/tmp/user_download/2/invalid_groups</td>
+<td>Check first</td>
+</tr>
+</tbody>
+</table>
+<h1 id="identity-cmds">Identity CMDs</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tail -f /var/log/sf/update.status</td>
+<td>Upgrade Monitoring</td>
+</tr>
+<tr>
+<td>adi_cli setLogMode DEBUG_LOGS ON</td>
+<td>followed by pigtail MSGS</td>
+</tr>
+<tr>
+<td>adi_cli setLogMode DEBUG_LOGS OFF</td>
+<td>Turn off again</td>
+</tr>
+<tr>
+<td>user_map_query.pl -u username</td>
+<td>See user and group info</td>
+</tr>
+</tbody>
+</table>
+<h1 id="unsorted-cmds">Unsorted Cmds</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>expert</td>
+<td>Expert Mode</td>
+</tr>
+<tr>
+<td>expert &amp;&amp; sudo su &amp;&amp; LinaConfigTool "policy-map global_policy" "class class_snmp" "no inspect snmp"</td>
+<td>Lina Cfg anpassen</td>
+</tr>
+<tr>
+<td>tail -f /var/log/messages | grep Streamer</td>
+<td>EventStreamer (estreamer) Debug</td>
+</tr>
+<tr>
+<td>./manage_estreamer.pl</td>
+<td>Option 2 to terminate eStreamer service</td>
+</tr>
+<tr>
+<td>./usr/local/sf/bin/sfestreamer --nodaemon --debug  --nohostcheck</td>
+<td>Start eStreamer in Debug mode</td>
+</tr>
+<tr>
+<td>pigtail</td>
+<td>Pigtail</td>
+</tr>
+<tr>
+<td>system support firewall-endinge-debug</td>
+<td>Which ACP</td>
+</tr>
+<tr>
+<td>system support trace</td>
+<td>Trace e.g. of IPS</td>
+</tr>
+<tr>
+<td>expert &amp;&amp; cd /var/sf/detection_engines/UUID/ngfw.rules</td>
+<td>See Rules</td>
+</tr>
+<tr>
+<td>egrep "Initializing Snort</td>
+<td>Reloading Snort</td>
+</tr>
+<tr>
+<td>pmtool status</td>
+<td>grep " - "</td>
+</tr>
+<tr>
+<td>pmtool disablebyid sftunnel</td>
+<td>Disable Process</td>
+</tr>
+<tr>
+<td>pmtool enablebyid sftunnel</td>
+<td>Enable Process</td>
+</tr>
+<tr>
+<td>pmtool restartbytype snort</td>
+<td>Restart snort</td>
+</tr>
+<tr>
+<td>pmtool show affinity</td>
+<td>Show performance</td>
+</tr>
+<tr>
+<td>capture-traffic</td>
+<td></td>
+</tr>
+<tr>
+<td>file secure-copy <server><user><location> capture.pcap</td>
+<td>Copy off</td>
+</tr>
+<tr>
+<td>watch ´/usr/local/sf/bin/sfcli.pl show firewall</td>
+<td>grep "ciscolive| Rule\:|Rule Hits "´</td>
+</tr>
+<tr>
+<td>backupcli.pl -n <name></td>
+<td>Backup via cli if does not work</td>
+</tr>
+<tr>
+<td>user_map_query.pl -u <username></td>
+<td>On FMC</td>
+</tr>
+<tr>
+<td>user_map_query.pl -i <ipaddr></td>
+<td>On FMC</td>
+</tr>
+<tr>
+<td>system support run-rule-profiling</td>
+<td>Identify slow rules</td>
+</tr>
+<tr>
+<td>debug config-cli  </td>
+<td>See what gets pushed from FMC</td>
+</tr>
+<tr>
+<td>sysetm support run-rule-profiling 15</td>
+<td>Run rule profiling for 15min (alternative ips_profile.pl), /ngfw/var/common, /ngfw/var/log/messages</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>URLs</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>https://www.cisco.com/c/en/us/support/docs/security/firepower-ngfw/215631-understand-estreamer-and-troubleshoot-en.html</td>
+<td>eStreamer</td>
+</tr>
+<tr>
+<td>https://www.cisco.com/c/en/us/td/docs/security/firepower/60/api/eStreamer/EventStreamerIntegrationGuide/ConfiguringEstreamer.html</td>
+<td>eStreamer*</td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/emea/docs/2019/pdf/BRKSEC-3300.pdf</td>
+<td>Own Snort Rules</td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/emea/docs/2019/pdf/BRKSEC-3352.pdf</td>
+<td>Snort Rule Deep Dive</td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/us/docs/2018/pdf/BRKSEC-3455.pdf</td>
+<td>FTD Dissection, Data path tracing</td>
+</tr>
+<tr>
+<td>https://popravak.wordpress.com/2018/08/30/a-little-bit-about-firepower-network-analysis-policy-nap/</td>
+<td>Firepower Network Analysis Policy (NAP)</td>
+</tr>
+<tr>
+<td>https://www.cisco.com/c/en/us/td/docs/security/firepower/640/configuration/guide/fpmc-config-guide-v64/overview_of_network_analysis_and_intrusion_policies.html</td>
+<td>Network Analysis Policy and preprocessors</td>
+</tr>
+<tr>
+<td>https://www.cisco.com/c/en/us/support/docs/security/firepower-ngfw/212321-clarify-the-firepower-threat-defense-acc.html</td>
+<td>Capture Options details</td>
+</tr>
+<tr>
+<td>https://www.cisco.com/c/en/us/support/docs/security/sourcefire-defense-center/117663-technote-SourceFire-00.html#anc5</td>
+<td>Generate Troubleshooting files</td>
+</tr>
+<tr>
+<td>https://resources.infosecinstitute.com/topic/snort-rules-workshop-part-one/</td>
+<td>Snort Rules Workshop</td>
+</tr>
+<tr>
+<td>http://manual-snort-org.s3-website-us-east-1.amazonaws.com/node36.html</td>
+<td>Snort Writing Good Rules</td>
+</tr>
+<tr>
+<td>https://www.snort.org/faq/why-are-rules-commented-out-by-default</td>
+<td>Snort Rulesets Defaults</td>
+</tr>
+<tr>
+<td>https://www.cisco.com/c/en/us/support/docs/security/firepower-ngfw/217617-comparing-snort-2-and-snort-3-on-firepow.html</td>
+<td>Snort 2 vs Snort 3</td>
+</tr>
+<tr>
+<td>https://www.cisco.com/c/en/us/td/docs/security/firepower/60/configuration/guide/fpmc-config-guide-v60/fpmc-config-guide-v60_chapter_01100001.pdf</td>
+<td>URL Filtering Details</td>
+</tr>
+<tr>
+<td>http://manual-snort-org.s3-website-us-east-1.amazonaws.com/node17.html#sub:http-inspect</td>
+<td>HTTP Inspec and other preprocessors, extended_response_inspection for status code, status message, headers, cookie</td>
+</tr>
+<tr>
+<td>http://manual-snort-org.s3-website-us-east-1.amazonaws.com/node32.html#SECTION004519000000000000000</td>
+<td>http_stat_code, http_method, http_uri and others</td>
+</tr>
+<tr>
+<td>http://manual-snort-org.s3-website-us-east-1.amazonaws.com/node33.html#SECTION00469000000000000000</td>
+<td>Flow and others</td>
+</tr>
+<tr>
+<td>https://blog.snort.org/2011/08/snort-291-where-does-filedata-point.html</td>
+<td>file_Data</td>
+</tr>
+<tr>
+<td>http://www.cyb3rs3c.net/ </td>
+<td>Web-Based Snort rule creator</td>
+</tr>
+<tr>
+<td>https://www.cisco.com/c/en/us/support/docs/security/firepower-ngfw/215540-configure-verify-and-troubleshoot-firep.html#anc12</td>
+<td>Device Registration Tshoot</td>
+</tr>
+<tr>
+<td>https://www.cisco.com/c/en/us/support/security/firepower-ngfw/products-tech-notes-list.html</td>
+<td>Many FTD,FMC Technotes</td>
+</tr>
+<tr>
+<td>https://www.cisco.com/c/en/us/support/docs/security/firepower-ngfw/215351-configure-verify-and-troubleshoot-port.html</td>
+<td>Port channels on 2100,4k, 9k</td>
+</tr>
+<tr>
+<td>https://developer.cisco.com/codeexchange/github/repo/kaisero/fireREST/</td>
+<td>FireRest API by Kaisero</td>
+</tr>
+<tr>
+<td>https://www.linkedin.com/pulse/how-work-variable-sets-why-so-important-snort-nikolaj-pabst-nielsen</td>
+<td>Snort Example Rule ICMP</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>EventStreamerSDK.zip </li>
+</ul>
+<h1 id="cisco-lives">Cisco Lives</h1>
+<table>
+<thead>
+<tr>
+<th>URLs</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/emea/docs/2020/pdf/BRKSEC-3063.pdf</td>
+<td>Decrypting with FP, TLS 1.3, Handshake details, SNI,</td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/emea/docs/2020/pdf/BRKSEC-2348.pdf</td>
+<td>Anyconnect with FP, + Duo MFA + authproxy</td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/emea/docs/2019/pdf/BRKSEC-3035.pdf</td>
+<td>FP Platform deep dive, +Trust vs Allow, Fastpath prefilter, Multi Instance CPU Allocation, Multi instance details</td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/apjc/docs/2016/pdf/TECSEC-2666%20Part%202.pdf</td>
+<td>Snort &amp; AMP Details, Impact flag deetails, DAQ, app_id, file_type, AmP details, retrospection, dispositions, file policies, what does FMC what does FTD, ports</td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/emea/docs/2020/pdf/R6BGArNQ/TECSEC-2600.pdf</td>
+<td>RestAPI, Packet FLow Details, Office365 Integration, Details on Modes (routed, briged, ips), AVC, Lua, Preprocessors, NAP, Default IPS Policies,</td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/us/docs/2018/pdf/BRKSEC-3002.pdf</td>
+<td>Content filtering in general</td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/emea/docs/2020/pdf/R6BGArNQ/TECSEC-2600.pdf</td>
+<td>CTID, Snort, AmP, Flags, SGT Integration, DNS Sinkhole, Talos 6.5 URL Filtering (not anymore brightcloud), TLS Decryption, RA-VPN with Duo, CTR, Integrations, metasploit basics</td>
+</tr>
+<tr>
+<td>https://securefirewallessentials.github.io/securefirewallessentials/docs/intrusion-policy/</td>
+<td>Firepower best practices</td>
+</tr>
+</tbody>
+</table>
+<h2 id="learning-map">Learning Map</h2>
+<p><img src="../../images/cisco/firepower/1_learning_map.png" alt="Firepower Learning Map 2020" width="400"/></p>
+<h2 id="varia">Varia</h2>
+<p><img src="../../images/cisco/firepower/9_packet_flow_details_TECSEC2600.png" alt="TECHSEC 2600 Packet Flow details" width="400"/></p>
+<h1 id="releases">Releases</h1>
+<h2 id="63">6.3</h2>
+<h2 id="64">6.4</h2>
+<h2 id="65">6.5</h2>
+<h2 id="66">6.6</h2>
+<h2 id="67">6.7</h2>
+<h2 id="70">7.0</h2>
+<h2 id="70-new-featurs">7.0 New Featurs</h2>
+<ul>
+<li>SNort<ul>
+<li>block rate-based attacks for a specific length of time</li>
+<li>SNort 3: <ul>
+<li>https://snort.org/snort3</li>
+<li>https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/snort3-inspectors/snort-3-inspector-reference/intro.html</li>
+<li>https://www.cisco.com/c/en/us/td/docs/security/firepower/710/snort3/config-guide/snort3-configuration-guide-v71.html</li>
+<li>https://www.cisco.com/c/en/us/td/docs/security/firepower/710/snort3/config-guide/snort3-configuration-guide-v71/migrating.html</li>
+<li>Inspectors instead of preprocessors</li>
+<li>Performance / SMB2 inspection / HTTP/2 isnpection / less snort restarts</li>
+<li>Upgrade = Snort 2 by default</li>
+<li>Snort3 rule update is called LSP (Lightweight Security Package) rather than an SRU</li>
+<li>Switch snort 2 snort3 (back and forth possible)<ul>
+<li>Devices &gt; Device Management.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>LIcensing<ul>
+<li>FTDv performance tiered Smart Licensing</li>
+</ul>
+</li>
+<li>S2S VPN<ul>
+<li>Backup VTI Tunnel (e.g. 2 ISPs)</li>
+</ul>
+</li>
+<li>RA VPN<ul>
+<li>Load Balancing</li>
+<li>Local authentication</li>
+<li>DAP and HOstScan (anyconnect posture support) &amp; ISE Posture<ul>
+<li>See: https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/anyconnect45/administration/guide/b_AnyConnect_Administrator_Guide_4-5/configure-posture.html</li>
+</ul>
+</li>
+<li>Multi-Cert Auth (Device &amp; USer) using IKEv2 EAP </li>
+</ul>
+</li>
+<li>Dynamic Objects in ACP<ul>
+<li>No need for redeploy as with change in network object (virtual &amp; cloud)</li>
+<li>Secure dynamic attribute connector<ul>
+<li>Managable via REST ApI (add/delete etc)</li>
+<li>(Azure / AWS / VMware)</li>
+<li>https://www.cisco.com/c/en/us/td/docs/security/secure-firewall/integrations/dynamic-attributes-connector/1-0/cisco-secure-dynamic-attributes-connector.html</li>
+<li>Dynamic Attriubte connector Runs on Ubuntu</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cross domain trust for AD for User identities</li>
+<li>DNS Filtering for URLs! Changes URL filtering behavior</li>
+<li>Logging<ul>
+<li>Analysis &gt; Unified Events (stored locally or remotely on SAL)</li>
+<li>Secure Analytics (stealthwatch) to offload events</li>
+<li>SAL-SUB / SAL-OP-LT-1GB / SAL-OP-LT-10GB, 90day free trial on-prem, 5-10GB/day = 2500-5000/y List price</li>
+<li>https://www.cisco.com/c/en/us/td/docs/security/sal-on-prem/integration/deployment_guide/csal_op_for_fmc_7_0_deploy_guide/m_csal_op_deploy_intro.html</li>
+<li>https://info.securexanalytics.com/sal-trial.html</li>
+<li>https://ngfwpe.cisco.com/ftd-logging-estimator</li>
+<li>https://www.cisco.com/c/en/us/td/docs/security/sal-on-prem/getting_started/csal_op_getting_started_firepower/m_csal_op_getting_started.html</li>
+<li>https://www.cisco.com/c/en/us/products/collateral/security/security-analytics-logging/guide-c07-742707.html</li>
+</ul>
+</li>
+<li>SecureX<ul>
+<li>Ribbon (Analysis &gt; SecureX.)</li>
+</ul>
+</li>
+<li>Upgrade<ul>
+<li>Upgrade Wizard (Devices &gt; Upgrade)</li>
+</ul>
+</li>
+<li>Health Modules<ul>
+<li>ASP Drop / AMP Connection / FTD HA / Event Streams / File System Integrity Check / NTP Status FTD / </li>
+</ul>
+</li>
+<li>API <ul>
+<li>many new endpoints</li>
+</ul>
+</li>
+</ul>
+<h2 id="71">7.1</h2>
+<h2 id="71-new-features">7.1 New Features</h2>
+<ul>
+<li>7.1+ supports snapshot (revert after successful update / nicht auf 4100/9300)</li>
+<li>HA Upgrade copy ein device zu anderem</li>
+<li>Snort 3 (Reject = Flow rejected), SMB2 inspection</li>
+<li>VPN Monitoring Dashboard (Beta)</li>
+<li>ENcrypted visibility (TLS / QUIC) (ACP Advanced Tab / Experimental Features)</li>
+<li>
+<p>Snort3 Elephant Flow discovery (by default detect larter 1GB/10sec)</p>
+<ul>
+<li>Search connection event, Reason = Elephant Flow</li>
+<li>show elephant-flow status</li>
+<li>show elephant-flow detection-config</li>
+<li>system support elepahant-flow-detection</li>
+<li>Firepower recommendations</li>
+</ul>
+</li>
+<li>
+<p>3100 Appliance Support</p>
+</li>
+<li>Geneve FTDv</li>
+<li>SR-IOV on FTDv on OCI</li>
+<li>1000er Series LLDP Support</li>
+<li>Auto-negotiation on HW (uplink switch) change</li>
+<li>Trusted DNS Servers for DNS Snooping</li>
+<li>BGP Route Leaking</li>
+<li>ECMP Routing</li>
+<li>PBR for Direct internet Access (DIA)</li>
+<li>Copy RA VPN Policies</li>
+<li>SAML (cookie persistence) &amp; external browser</li>
+<li>Multiple RA VPN Trustpoints for SAML</li>
+<li>S2S VPN Filters (applied to post decrypted pacets)</li>
+<li>Umbrella SIG with FTD</li>
+<li>Export / Import Device config (FMC move)</li>
+<li>TLS certificate feeds</li>
+<li>DIsable Quic (HTTP/3) advertisement</li>
+<li>Block ESNI (Encrypted server name identification)</li>
+<li>MSS for Embryonic connections</li>
+<li>INtrustion / malware events to Stealthwatch cloud</li>
+<li>Packet tracer (Devices &gt; Troubleshoot &gt; Packet Tracer., packet-tracer input)<ul>
+<li>Replay, Snort3 Details</li>
+</ul>
+</li>
+<li>Preview deployment changes to Geolocation, File List, and Security Intelligence objects<ul>
+<li>Deploy &gt; Deployment. In the Preview column, click the Preview icon</li>
+</ul>
+</li>
+<li>ACI<ul>
+<li>new Cisco ACI Endpoint remediation module</li>
+<li>Update interval 10 sec</li>
+</ul>
+</li>
+<li>Deployment notes: edit the deployment notes for a job</li>
+<li>show snort statistics (start of flow, end-of flow events)</li>
+<li>API<ul>
+<li>Routing / Packet Tracer / Interface / Applications in policies</li>
+<li>Hosts and vulnerabilities API (Network Map)</li>
+</ul>
+</li>
+</ul>
+<h2 id="72">7.2</h2>
+<h2 id="72-new-features">7.2 New Features</h2>
+<ul>
+<li>Policy Locking</li>
+<li>Umbrella DNS Connector</li>
+<li>EVE (Encrypted Visibility Engine)<ul>
+<li>App identified in client hello (with fidelity &amp; risk)</li>
+<li>7.2 adds OS identification</li>
+<li>Threat license required</li>
+</ul>
+</li>
+<li>Javascript normalization</li>
+<li>Visual Basic Macro decompression<ul>
+<li>Emotet in Office documents known by snort</li>
+</ul>
+</li>
+<li>PBR WAN Monitoring<ul>
+<li>RTT/Jitter/Packet Los/MOS</li>
+<li>SImilar to IP SLA but not </li>
+<li>PBR enhanced to adaptively steer traffic based on this</li>
+<li>PBR certain traffic (e.g. Office 365 via different link)</li>
+</ul>
+</li>
+<li>TLS 1.3 Decryption</li>
+<li>SecureX Integration workflow improvents</li>
+<li>VXLAN FTDv Clustering support</li>
+<li>Elephant flow throttling (EFT)<ul>
+<li>Prefilter for Elefant Flow = Not sent to snow</li>
+<li>IAB enaled and hitting = Flow bypassed in snort</li>
+<li>THen throttling takes place</li>
+</ul>
+</li>
+<li>VTI in user defined VRF</li>
+<li>dVTI<ul>
+<li>Route based Hub and spoke / s2s vpn / virtual template</li>
+<li>Loopback iface as source for s2s</li>
+<li>spoke dynamic address on VTI!</li>
+</ul>
+</li>
+<li>EIGRP UI Support</li>
+<li>App-BAsed PBR</li>
+<li>Umbrella SIG (per tunnel IKE support)</li>
+<li>RA VPN (Cert + SAML auth)</li>
+<li>S2S VPN Monitoring</li>
+<li>FQDN NAT</li>
+<li>Auto Rollback</li>
+<li>FMCv subscription license</li>
+<li>VRF SUpport on 1010s</li>
+<li>Outscale in Public CLoud</li>
+<li>AWS and Azure Snapshot support (autoscal faster, no DB setup)</li>
+<li>API<ul>
+<li>Assign Health policy API</li>
+<li>Deployment tasks</li>
+<li>ACP patch</li>
+<li>NAT policy patch</li>
+<li>patch Network object</li>
+</ul>
+</li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/cisco.html">Cisco</a>
+      <a href="https://maconrad.github.io/tag/fmc.html">FMC</a>
+      <a href="https://maconrad.github.io/tag/ftd.html">FTD</a>
+      <a href="https://maconrad.github.io/tag/sfr.html">SFR</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

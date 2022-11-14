@@ -1,0 +1,575 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="pyATS intro" />
+<meta name="keywords" content="Cisco, DEVNET">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="pyATS"/>
+  <meta property="og:description" content="pyATS intro"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/pyats.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-06-27 11:51:00+02:00"/>
+  <meta property="article:modified_time" content="2022-06-27 14:30:00+02:00"/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="DEVNET_EXPERT"/>
+  <meta property="article:tag" content="Cisco"/>
+  <meta property="article:tag" content="DEVNET"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; pyATS</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="pyats">pyATS</h1>
+    <p>
+      Posted on Mo 27 Juni 2022 in <a href="https://maconrad.github.io/category/devnet_expert.html">DEVNET_EXPERT</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#theory">Theory</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#pyats-cli">pyATS CLI</a><ul>
+<li><a href="#testbeds">Testbeds</a></li>
+<li><a href="#mocking-devices">Mocking Devices</a></li>
+</ul>
+</li>
+<li><a href="#python-scripts">Python Scripts</a><ul>
+<li><a href="#pyats-api-intro">pyATS API intro</a></li>
+<li><a href="#interface-up-script">Interface UP script</a></li>
+<li><a href="#crc-error-script">CRC error script</a></li>
+<li><a href="#number-bgp-routes-per-neighbor">Number BGP Routes per Neighbor</a></li>
+</ul>
+</li>
+<li><a href="#ae-test-automation-easy-testing">AE Test (Automation Easy Testing)</a></li>
+<li><a href="#see-also">See also</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul>
+</div>
+<h1 id="intro">Intro</h1>
+<p>pyATS Framework consists of pyATS and Genie. pyATS was designed for data-driven and reusable testing.
+Genie provides device connectivity, parsers and models (e.g. bgp, ospf) for network devices (network device library).
+XPRESSO UI Dashboard to run tests on demand and organize them visually and provides Test suite and test enviornment management, testbed, test execution and analytics.</p>
+<p>pyATS Framework supports IOS, IOSXE, IOSXR, NXOS and ASA and uses CLI, Netconf and Restconf.</p>
+<p>Apache License 2.0 = Free for everyone.</p>
+<p>Main focus is stateful validation and not configuration management (like ansible.)</p>
+<p>Example use cases:
+    - Monitor (profile) system before and after configuration change
+    - Make sure that we did not loose any routes or neighbors
+    - linecard swap validate status before / after</p>
+<h1 id="theory">Theory</h1>
+<p>Netdevops often focused on Configuration Management but lacked the statful validation part.
+This gap is being filled by pyATS, where we can define and validate state.</p>
+<p><img src="../../images/cisco/pyats/1_devops_toolbox.png" alt="PyATS part of Netdevops Toolbox" width="400"/></p>
+<p>It is built in a layered fashion with a core framework (pyATS), parsing (genie) and higher level blocks like integrating into CICD pipeline.</p>
+<p><img src="../../images/cisco/pyats/2_pyats_framework.png" alt="PyATS Framework overview" width="400"/></p>
+<p>PyATS also provides the ability to work with structured (or parsed) data instead of unstructured data.
+Genie parsers and models (features) provide this ability.</p>
+<p><img src="../../images/cisco/pyats/3_data_parsing.png" alt="Need for Data Parsing" width="400"/>
+<img src="../../images/cisco/pyats/4_models_features.png" alt="Genie Models" width="400"/></p>
+<h1 id="installation">Installation</h1>
+<p>pyATS requires python3.8 or above. </p>
+<div class="highlight"><pre><span></span><code>python -V
+pyats version check
+</code></pre></div>
+
+<p>The XPresso framework provides a UI Dashboard to work with the tests and organize testbeds etc.
+It is installed via</p>
+<div class="highlight"><pre><span></span><code>pip3 install pyats genie rich
+pip3 install --upgrade pyats genie rich
+</code></pre></div>
+
+<h1 id="pyats-cli">pyATS CLI</h1>
+<p>pyATS CLI allows for interaction with pyats without writing python code. It allows for:
+    - Parsing (raw data into structed data)
+    - Diffing (same output on different times)
+    - Learning (models / features, different commands are executed for different platforms)
+    - etc.</p>
+<div class="highlight"><pre><span></span><code>pyats --help
+pyats secret encode
+pyats learn ospf bgp interface platform --testbed-file working-tb.yaml
+
+ssh-keyscan <span class="m">1</span>.1.1.1 &gt;&gt; 
+
+<span class="c1"># Contains raw (_console.txt), connection (connection) and parsed (_ops.txt) output</span>
+pyats learn interface ospf platform <span class="se">\</span>
+            --testbed-file working-tb.yaml <span class="se">\</span>
+            --output working_snapshot
+
+pyats diff working_snapshot broken_snapshot <span class="se">\</span>
+           --output diff_snapshot
+
+pyats diff yesterday today
+</code></pre></div>
+
+<p>Diff and learn commands were already covered in the intro. Another option is to use and parse individual commands using the genie parsers.</p>
+<div class="highlight"><pre><span></span><code>pyats parse <span class="s2">&quot;show interface&quot;</span> <span class="se">\</span>
+            --testbed-file working-tb.yaml <span class="se">\</span>
+            --output timestamp1_snapshot <span class="se">\</span>
+            --device nx-osv-1
+
+pyats parse <span class="s2">&quot;show interface&quot;</span> <span class="se">\</span>
+            --testbed-file working-tb.yaml <span class="se">\</span>
+            --output timestamp2_snapshot <span class="se">\</span>
+            --device nx-osv-1
+
+pyats diff timestamp1_snapshot timestamp2_snapshot <span class="se">\</span>
+           --output diff_show_interface
+</code></pre></div>
+
+<p>Another example finding new interfaces:</p>
+<div class="highlight"><pre><span></span><code>pyats parse <span class="s2">&quot;show interfaces status&quot;</span> --testbed-file files/border_testbed.yaml --device ST02-EDGE01P --output 20220627_1440_int_status
+pyats parse <span class="s2">&quot;show interfaces status&quot;</span> --testbed-file files/border_testbed.yaml --device ST02-EDGE01P --output 20220627_1442_int_status
+pyats diff 20220627_1440_int_status 20220627_1442_int_status
+</code></pre></div>
+
+<p>Or for dot1x</p>
+<div class="highlight"><pre><span></span><code>pyats parse <span class="s2">&quot;show authentication session interface Gi9/0/19 details&quot;</span> --testbed-file files/border_testbed.yaml --device ST02-EDGE01P
+pyats learn dot1x --testbed-file files/border_testbed.yaml --device ST02-EDGE01P
+</code></pre></div>
+
+<h2 id="testbeds">Testbeds</h2>
+<p>Defines devices, types, connectivity and passwords to access devices.
+The device-name in the testbed must match the hostname of the device (case sensitive)!!</p>
+<p>It can also be created interactively using the following command:</p>
+<div class="highlight"><pre><span></span><code>pyats create testbed interactive --output my_own_testbed.yaml
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nt">devices</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">csr1000v-1</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">router</span><span class="w"></span>
+<span class="w">        </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">iosxe</span><span class="w"></span>
+<span class="w">        </span><span class="nt">credentials</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="nt">default</span><span class="p">:</span><span class="w"></span>
+<span class="w">                </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cisco123</span><span class="w"></span>
+<span class="w">                </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admin</span><span class="w"></span>
+<span class="w">            </span><span class="nt">enable</span><span class="p">:</span><span class="w"></span>
+<span class="w">                </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cisco123</span><span class="w"></span>
+<span class="w">        </span><span class="nt">connections</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="nt">cli</span><span class="p">:</span><span class="w"></span>
+<span class="w">                </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssh</span><span class="w"></span>
+<span class="w">                </span><span class="nt">ip</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">192.168.1.1</span><span class="w"></span>
+</code></pre></div>
+
+<p>The following is a testbed for mock devices</p>
+<div class="highlight"><pre><span></span><code><span class="nt">testbed</span><span class="p">:</span><span class="w"> </span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CL-DEVWKS-2595-WORKSHOP-TESTBED</span><span class="w"></span>
+<span class="nt">devices</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">nx-osv-1</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">alias</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;uut&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Nexus&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;nxos&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">credentials</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">default</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admin</span><span class="w"></span>
+<span class="w">        </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cisc0123</span><span class="w"></span>
+<span class="w">      </span><span class="nt">enable</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cisc0123</span><span class="w"></span>
+<span class="w">    </span><span class="nt">connections</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">console</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mock_device_cli --os nxos --mock_data_dir mock_devices/working/nxos --state execute</span><span class="w"></span>
+<span class="w">        </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mock</span><span class="w"></span>
+
+<span class="w">  </span><span class="nt">csr1000v-1</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">router</span><span class="w"></span>
+<span class="w">    </span><span class="nt">os</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;iosxe&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">alias</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;helper&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">credentials</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">default</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cisco</span><span class="w"></span>
+<span class="w">        </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cisco</span><span class="w"></span>
+<span class="w">      </span><span class="nt">enable</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cisco</span><span class="w"></span>
+<span class="w">    </span><span class="nt">connections</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">console</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mock_device_cli --os iosxe --mock_data_dir mock_devices/working/csr --state execute</span><span class="w"></span>
+<span class="w">        </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mock</span><span class="w"></span>
+</code></pre></div>
+
+<p>And the following shows some other options like not storing or encrypting the password.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">extends</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">base_tb_config.yaml</span><span class="w"></span>
+
+<span class="nt">testbed</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sampleTestbed</span><span class="w"></span>
+<span class="w">    </span><span class="nt">alias</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">topologySampleTestbed</span><span class="w"></span>
+<span class="w">    </span><span class="nt">credentials</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">default</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admin</span><span class="w"></span>
+<span class="w">            </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CSCO12345^</span><span class="w"></span>
+<span class="w">        </span><span class="nt">enable</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;%ASK{user</span><span class="nv"> </span><span class="s">specified</span><span class="nv"> </span><span class="s">prompt}&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">servers</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">filesvr</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ott2lab-tftp1</span><span class="w"></span>
+<span class="w">            </span><span class="nt">address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">223.255.254.254</span><span class="w"></span>
+<span class="w">            </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="nt">credentials</span><span class="p">:</span><span class="w"></span>
+<span class="w">                </span><span class="nt">default</span><span class="p">:</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rcpuser</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">123rcp!</span><span class="w"></span>
+<span class="w">                </span><span class="nt">sftp</span><span class="p">:</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sftpuser</span><span class="w"></span>
+<span class="w">                    </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;%ENC{w6DDmsOUw6fDqsOOw5bDiQ==}&quot;</span><span class="w"></span>
+</code></pre></div>
+
+<p>To create a testbed file from CSV, the following can be done.</p>
+<div class="highlight"><pre><span></span><code>cat &gt; devices.csv <span class="s">&lt;&lt;END</span>
+<span class="s">hostname,ip,username,password,protocol,os</span>
+<span class="s">nx-osv-1,172.25.192.90,admin,admin,telnet,nxos</span>
+<span class="s">END</span>
+
+pyats create testbed file --path devices.csv --output testbed.yaml
+</code></pre></div>
+
+<h2 id="mocking-devices">Mocking Devices</h2>
+<p>Can be useful to test without having real devices available.</p>
+<div class="highlight"><pre><span></span><code>mock_device_cli --os nxos <span class="se">\</span>
+                --mock_data_dir mock_devices/working/nxos <span class="se">\</span>
+                --state execute
+</code></pre></div>
+
+<h1 id="python-scripts">Python Scripts</h1>
+<p>Following is an example script on how to use pyATS using the followng pyATS methods/apis:
+    - execute (raw execution)
+    - parse (single cmd parsing into structet4ed data)
+    - configure (plain text or lists)
+    - learn (modules using genie.libs.ops) (Per Feature operational state)</p>
+<h2 id="pyats-api-intro">pyATS API intro</h2>
+<p>Following can be used in an interactive python shell to get started with using pyATS from python.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">genie.testbed</span> <span class="kn">import</span> <span class="n">load</span>
+<span class="n">testbed</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s1">&#39;working-tb.yaml&#39;</span><span class="p">)</span>
+
+<span class="n">device</span> <span class="o">=</span> <span class="n">testbed</span><span class="o">.</span><span class="n">devices</span><span class="p">[</span><span class="s1">&#39;nx-osv-1&#39;</span><span class="p">]</span>
+<span class="n">device</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+
+<span class="c1"># Better to use genie parsers than raw output</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;show version&#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="s1">&#39;7.3&#39;</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;7.3&#39; was found in the output!&quot;</span><span class="p">)</span>
+
+<span class="c1"># Structed python dict via pyATS (genie) parsers</span>
+<span class="n">parsed</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;show version&#39;</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">parsed</span><span class="p">)</span>
+
+<span class="n">parsed2</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;show vrf&#39;</span><span class="p">)</span>
+<span class="err">​</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">parsed2</span><span class="p">)</span>
+<span class="err">​</span>
+<span class="n">parsed2</span><span class="p">[</span><span class="s1">&#39;vrfs&#39;</span><span class="p">][</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;vrf_id&#39;</span><span class="p">]</span>
+<span class="n">parsed2</span><span class="p">[</span><span class="s1">&#39;vrfs&#39;</span><span class="p">][</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;vrf_state&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">vrf</span> <span class="ow">in</span> <span class="n">parsed2</span><span class="p">[</span><span class="s1">&#39;vrfs&#39;</span><span class="p">]:</span>
+    <span class="n">vrf_id</span> <span class="o">=</span> <span class="n">parsed2</span><span class="p">[</span><span class="s1">&#39;vrfs&#39;</span><span class="p">][</span><span class="n">vrf</span><span class="p">][</span><span class="s1">&#39;vrf_id&#39;</span><span class="p">]</span>
+    <span class="n">vrf_state</span> <span class="o">=</span> <span class="n">parsed2</span><span class="p">[</span><span class="s1">&#39;vrfs&#39;</span><span class="p">][</span><span class="n">vrf</span><span class="p">][</span><span class="s1">&#39;vrf_state&#39;</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vrf </span><span class="si">{vrf}</span><span class="s1"> is </span><span class="si">{state}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vrf</span><span class="o">=</span><span class="n">vrf_id</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="n">vrf_state</span><span class="p">))</span>
+
+<span class="c1"># Configuration</span>
+<span class="n">configuration</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span><span class="se">\</span>
+<span class="s1">interface ethernet2/1</span>
+<span class="s1">shutdown&#39;&#39;&#39;</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">configuration</span><span class="p">)</span>
+
+<span class="c1"># Configuration via List of items</span>
+<span class="n">configuration</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;interface ethernet2/1&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;shutdown&#39;</span>
+<span class="p">]</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">configuration</span><span class="p">)</span>
+
+<span class="c1"># Learn </span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="s1">&#39;interface&#39;</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">info</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="interface-up-script">Interface UP script</h2>
+<p>Following scipts shows interaction with interfaces (displays up interaces).</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">genie.testbed</span> <span class="kn">import</span> <span class="n">load</span>
+
+<span class="c1"># Load Testbed</span>
+<span class="n">testbed</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s1">&#39;working-tb.yaml&#39;</span><span class="p">)</span>
+
+<span class="c1"># Connect to devices</span>
+<span class="n">device</span> <span class="o">=</span> <span class="n">testbed</span><span class="o">.</span><span class="n">devices</span><span class="p">[</span><span class="s1">&#39;nx-osv-1&#39;</span><span class="p">]</span>
+<span class="n">device</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+
+<span class="c1"># Use pyATS parser</span>
+<span class="n">parsed_output</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;show interface&#39;</span><span class="p">)</span>
+
+<span class="c1"># Parse parsed data</span>
+<span class="k">for</span> <span class="n">interface</span> <span class="ow">in</span> <span class="n">parsed_output</span><span class="p">:</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">parsed_output</span><span class="p">[</span><span class="n">interface</span><span class="p">][</span><span class="s1">&#39;admin_state&#39;</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">state</span> <span class="o">==</span> <span class="s1">&#39;up&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Interface </span><span class="si">{intf}</span><span class="s1"> is </span><span class="si">{state}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">intf</span><span class="o">=</span><span class="n">interface</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="n">state</span><span class="p">))</span>
+</code></pre></div>
+
+<h2 id="crc-error-script">CRC error script</h2>
+<p>Similar to the script above, showcasing get and displaying all interfaces having CRC errors.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">genie.testbed</span> <span class="kn">import</span> <span class="n">load</span>
+<span class="n">testbed</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s1">&#39;working-tb.yaml&#39;</span><span class="p">)</span>
+
+<span class="n">device</span> <span class="o">=</span> <span class="n">testbed</span><span class="o">.</span><span class="n">devices</span><span class="p">[</span><span class="s1">&#39;nx-osv-1&#39;</span><span class="p">]</span>
+<span class="n">device</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+
+<span class="n">parsed_output</span> <span class="o">=</span> <span class="n">device</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">&#39;show interface&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">interface</span> <span class="ow">in</span> <span class="n">parsed_output</span><span class="p">:</span>
+    <span class="n">crc_error</span> <span class="o">=</span> <span class="n">parsed_output</span><span class="p">[</span><span class="n">interface</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;counters&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;in_crc_errors&#39;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">crc_error</span> <span class="ow">and</span> <span class="n">crc_error</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Interface </span><span class="si">{intf}</span><span class="s1"> has crc_error of value </span><span class="si">{crc_error}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">intf</span><span class="o">=</span><span class="n">interface</span><span class="p">,</span> <span class="n">crc_error</span><span class="o">=</span><span class="n">crc_error</span><span class="p">))</span>
+</code></pre></div>
+
+<h2 id="number-bgp-routes-per-neighbor">Number BGP Routes per Neighbor</h2>
+<p>Following script uses the Genie.libs.ops module to learn about the BGP table and BGP neighbors and displays this via
+rich table. UUT means Unit under Test.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">genie.testbed</span> <span class="kn">import</span> <span class="n">load</span>
+<span class="kn">from</span> <span class="nn">genie.ops.utils</span> <span class="kn">import</span> <span class="n">get_ops</span>
+<span class="kn">from</span> <span class="nn">genie.libs</span> <span class="kn">import</span> <span class="n">ops</span>
+
+<span class="c1"># Import Abstract library</span>
+<span class="kn">from</span> <span class="nn">genie.abstract</span> <span class="kn">import</span> <span class="n">Lookup</span>
+<span class="kn">from</span> <span class="nn">genie</span> <span class="kn">import</span> <span class="n">parsergen</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="kn">from</span> <span class="nn">rich</span> <span class="kn">import</span> <span class="nb">print</span>
+<span class="kn">from</span> <span class="nn">rich.console</span> <span class="kn">import</span> <span class="n">Console</span>
+<span class="kn">from</span> <span class="nn">rich.table</span> <span class="kn">import</span> <span class="n">Table</span>
+<span class="kn">from</span> <span class="nn">devtools</span> <span class="kn">import</span> <span class="n">debug</span>
+<span class="kn">from</span> <span class="nn">loguru</span> <span class="kn">import</span> <span class="n">logger</span>
+
+<span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">generate_bgp_table</span><span class="p">(</span><span class="n">bgpinfo</span><span class="p">,</span> <span class="n">table</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Generates the Table Header &quot;&quot;&quot;</span>
+    <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">&quot;VRF&quot;</span><span class="p">)</span>
+    <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">&quot;Neighbor&quot;</span><span class="p">)</span>
+    <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">&quot;Session State&quot;</span><span class="p">)</span>
+    <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">&quot;Prefixes&quot;</span><span class="p">)</span>
+    <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">&quot;Paths&quot;</span><span class="p">)</span>
+
+
+    <span class="k">for</span> <span class="n">vrf</span> <span class="ow">in</span> <span class="n">bgpinfo</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">][</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;vrf&#39;</span><span class="p">]:</span>
+        <span class="k">for</span> <span class="n">neighbor</span> <span class="ow">in</span> <span class="n">bgpinfo</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">][</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;vrf&#39;</span><span class="p">][</span><span class="n">vrf</span><span class="p">][</span><span class="s1">&#39;neighbor&#39;</span><span class="p">]:</span>
+            <span class="n">session_state</span> <span class="o">=</span> <span class="s2">&quot;NaN&quot;</span>
+            <span class="n">prefixes</span> <span class="o">=</span> <span class="s2">&quot;NaN&quot;</span>
+            <span class="n">paths</span> <span class="o">=</span> <span class="s2">&quot;NaN&quot;</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">session_state</span> <span class="o">=</span> <span class="n">bgpinfo</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">][</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;vrf&#39;</span><span class="p">][</span><span class="n">vrf</span><span class="p">][</span><span class="s1">&#39;neighbor&#39;</span><span class="p">][</span><span class="n">neighbor</span><span class="p">][</span><span class="s1">&#39;session_state&#39;</span><span class="p">]</span>
+            <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">pass</span>
+                <span class="c1">#logger.debug(f&quot;{neighbor} has no session_state in vrf {vrf}&quot;)</span>
+
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">fam</span> <span class="ow">in</span> <span class="n">bgpinfo</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">][</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;vrf&#39;</span><span class="p">][</span><span class="n">vrf</span><span class="p">][</span><span class="s1">&#39;neighbor&#39;</span><span class="p">][</span><span class="n">neighbor</span><span class="p">][</span><span class="s1">&#39;address_family&#39;</span><span class="p">]:</span>
+                    <span class="n">prefixes</span> <span class="o">=</span> <span class="n">bgpinfo</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">][</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;vrf&#39;</span><span class="p">][</span><span class="n">vrf</span><span class="p">][</span><span class="s1">&#39;neighbor&#39;</span><span class="p">][</span><span class="n">neighbor</span><span class="p">][</span><span class="s1">&#39;address_family&#39;</span><span class="p">][</span><span class="n">fam</span><span class="p">][</span><span class="s1">&#39;prefixes&#39;</span><span class="p">][</span><span class="s1">&#39;total_entries&#39;</span><span class="p">]</span>
+                    <span class="n">paths</span> <span class="o">=</span> <span class="n">bgpinfo</span><span class="p">[</span><span class="s1">&#39;instance&#39;</span><span class="p">][</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;vrf&#39;</span><span class="p">][</span><span class="n">vrf</span><span class="p">][</span><span class="s1">&#39;neighbor&#39;</span><span class="p">][</span><span class="n">neighbor</span><span class="p">][</span><span class="s1">&#39;address_family&#39;</span><span class="p">][</span><span class="n">fam</span><span class="p">][</span><span class="s1">&#39;path&#39;</span><span class="p">][</span><span class="s1">&#39;total_entries&#39;</span><span class="p">]</span>
+            <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">pass</span>
+                <span class="c1"># logger.debug(f&quot;{neighbor} has no address_family in vrf {vrf}&quot;)</span>
+            <span class="c1">#pprint(session_state)</span>
+
+            <span class="n">table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="n">vrf</span><span class="p">,</span><span class="n">neighbor</span><span class="p">,</span><span class="n">session_state</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">prefixes</span><span class="p">),</span><span class="nb">str</span><span class="p">(</span><span class="n">paths</span><span class="p">))</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+    <span class="c1">#parsed_output[&#39;mod&#39;][module_num]</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="c1"># load the testbed file</span>
+    <span class="n">testbed</span> <span class="o">=</span> <span class="n">load</span><span class="p">(</span><span class="s1">&#39;files/border_testbed.yaml&#39;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">testbed</span><span class="o">.</span><span class="n">devices</span><span class="p">:</span>
+        <span class="n">table_bgp</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">show_header</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">header_style</span><span class="o">=</span><span class="s2">&quot;bold magenta&quot;</span><span class="p">)</span>
+
+        <span class="n">uut</span> <span class="o">=</span> <span class="n">testbed</span><span class="o">.</span><span class="n">devices</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+
+        <span class="c1">#uut.connect(via = &#39;cli&#39;, log_stdout=True)</span>
+        <span class="n">uut</span><span class="o">.</span><span class="n">start_pool</span><span class="p">(</span><span class="n">alias</span><span class="o">=</span><span class="s1">&#39;vty&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">log_stdout</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+        <span class="c1"># Bgp is now -&gt; &lt;class &#39;genie.libs.ops.bgp.nxos.xml.bgp.bgp&#39;&gt;</span>
+        <span class="c1"># Get the Ops objecet</span>
+        <span class="n">lookup</span> <span class="o">=</span> <span class="n">Lookup</span><span class="o">.</span><span class="n">from_device</span><span class="p">(</span><span class="n">uut</span><span class="p">)</span>
+        <span class="n">Interface</span> <span class="o">=</span> <span class="n">get_ops</span><span class="p">(</span><span class="s1">&#39;interface&#39;</span><span class="p">,</span> <span class="n">uut</span><span class="p">)</span>
+        <span class="n">Bgp</span> <span class="o">=</span> <span class="n">get_ops</span><span class="p">(</span><span class="s1">&#39;bgp&#39;</span><span class="p">,</span> <span class="n">uut</span><span class="p">)</span>
+
+        <span class="n">bgp</span> <span class="o">=</span> <span class="n">Bgp</span><span class="p">(</span><span class="n">uut</span><span class="p">)</span>
+        <span class="n">bgp</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+
+        <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[bold cyan] ---------------------------------------------------------------------------&quot;</span><span class="p">)</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[bold cyan] </span><span class="si">{</span><span class="n">uut</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">generate_bgp_table</span><span class="p">(</span><span class="n">bgp</span><span class="o">.</span><span class="n">info</span><span class="p">,</span> <span class="n">table_bgp</span><span class="p">)</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[bold cyan] ---------------------------------------------------------------------------&quot;</span><span class="p">)</span>
+
+
+    <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="s2">&quot;[bold cyan]  ---------------------------------------Done! :thumbs_up: --------------------------&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h1 id="ae-test-automation-easy-testing">AE Test (Automation Easy Testing)</h1>
+<p>Define, execute and debug testcases. Several (optional) sections:
+    - CommonSetup - Inherit from aetest.CommonSetup with (@aetest.subsection) - optional
+    - Tests - Inherit from aetest.Testcase and use @aetest.test and optionally @aetest.setup, @aetest.cleanup for individual test
+    - CommonCleanup - Inherit from aetest.CommonCleanup with (@aetest.subsection) - optional</p>
+<p><img src="../../images/cisco/pyats/6_aetest_structure.png" alt="AETest Structure" width="400"/>
+<img src="../../images/cisco/pyats/7_aetest_structure2.png" alt="AETest Structure2" width="400"/></p>
+<h1 id="see-also">See also</h1>
+<p>RobotFramework Integration (Testcases in markdown)
+<img src="../../images/cisco/pyats/5_robot_framework.png" alt="Robot Framework Integration" width="400"/></p>
+<p>Kleenex Integration
+Easypy Integration
+Logging
+TCL Integration</p>
+<h1 id="resources">Resources</h1>
+<p>aasdf
+- See: <a href="https://developer.cisco.com/learning/search/labs/">DevNet Learning Labs</a>
+- See: <a href="https://pubhub.devnetcloud.com/media/genie-feature-browser/docs/#/models">Genie Models</a>
+- See: <a href="https://pubhub.devnetcloud.com/media/genie-feature-browser/docs/#/parsers">Genie Parsers</a>
+- See: <a href="https://pubhub.devnetcloud.com/media/pyats/docs/topology/schema.html">Testbed Details</a>
+- See: <a href="https://pubhub.devnetcloud.com/media/pyats/docs/topology/example.html">Testbed example</a>
+- See: <a href="https://pubhub.devnetcloud.com/media/unicon/docs/user_guide/services/index.html">pyATS APIs (execute, configure, learn, etc.)</a>
+- See: <a href="https://developer.cisco.com/learning/labs/devwks-3280b/creating-new-apis/">Extending pyATS</a>
+- See: <a href="https://developer.cisco.com/learning/labs/devwks-1749/introduction-to-netdevops-using-pyats-for-non-programmers/">PyATS Learning Lab 1749</a>
+- See: <a href="https://developer.cisco.com/learning/labs/devwks-2155/introduction/">Robots Framework</a>
+- See: <a href="https://devnetdan.com/2021/05/04/pyats-and-genie-part-1/">PyATS Overview</a>
+- See: <a href="hhttps://devnetdan.com/2021/06/14/pyats-and-genie-part-2/">PyATS Overview Part 2</a>
+- See: <a href="hhttps://devnetdan.com/2021/07/12/pyats-and-genie-part-3/">PyATS Overview Part 3</a>
+- See: <a href="hhttps://devnetdan.com/2021/08/08/pyats-and-genie-part-4/">PyATS Overview Part 4</a>
+- See: <a href=""></a></p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/cisco.html">Cisco</a>
+      <a href="https://maconrad.github.io/tag/devnet.html">DEVNET</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

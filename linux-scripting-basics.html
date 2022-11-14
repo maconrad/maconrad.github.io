@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: Basics Regex Grep Awk Sed Bashscripts Expect Unsorted Basics Shell parses and interprets cmds and passes it to kernel for execution, usually in interactive mode, but can be scripted. Regex Definition Pattern: Sequence of Characters, can use [], {} or () Literal: String that represents itself, e.g. Hello matches …" />
+<meta name="keywords" content="linux">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Linux Scripting Basics"/>
+  <meta property="og:description" content="Table of contents: Basics Regex Grep Awk Sed Bashscripts Expect Unsorted Basics Shell parses and interprets cmds and passes it to kernel for execution, usually in interactive mode, but can be scripted. Regex Definition Pattern: Sequence of Characters, can use [], {} or () Literal: String that represents itself, e.g. Hello matches …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/linux-scripting-basics.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-10-24 11:51:00+02:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Linux"/>
+  <meta property="article:tag" content="linux"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Linux Scripting Basics</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="linux-scripting-basics">Linux Scripting Basics</h1>
+    <p>
+      Posted on So 24 Oktober 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#basics">Basics</a><ul>
+<li><a href="#regex">Regex</a></li>
+<li><a href="#grep">Grep</a></li>
+<li><a href="#awk">Awk</a></li>
+<li><a href="#sed">Sed</a></li>
+<li><a href="#bashscripts">Bashscripts</a></li>
+<li><a href="#expect">Expect</a></li>
+<li><a href="#unsorted">Unsorted</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="basics">Basics</h2>
+<p>Shell parses and interprets cmds and passes it to kernel for execution, usually in interactive mode, but can be scripted.</p>
+<h3 id="regex">Regex</h3>
+<ul>
+<li>Definition<ul>
+<li>Pattern: Sequence of Characters, can use [], {} or ()</li>
+<li>Literal: String that represents itself, e.g. Hello matches Hello ;)</li>
+<li>Metacharacter: Speical chars<ul>
+<li>Repetiton meta-chars: e.g. + (one or more occurrences of preceding char)</li>
+<li><code>\</code> Escape Char</li>
+<li><code>{2,}</code> leaving out upper range means infinity</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Standard Regex (GNU)</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Meaning</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>^</code></td>
+<td>Beginning of Line</td>
+<td></td>
+</tr>
+<tr>
+<td><code>$</code></td>
+<td>End of Line</td>
+<td></td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>Any single char EXCEPT new line</td>
+<td><code>.*</code> anything</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Zero or more</td>
+<td></td>
+</tr>
+<tr>
+<td><code>[lit]</code></td>
+<td>Any of the literals, char class</td>
+<td>[zZ] match z or Z</td>
+</tr>
+<tr>
+<td><code>[1-5]</code></td>
+<td>Range</td>
+<td>[a-x] match a,f but not z</td>
+</tr>
+<tr>
+<td><code>\b</code>, <code>\&lt;</code></td>
+<td>Beginning of a word</td>
+<td></td>
+</tr>
+<tr>
+<td><code>\b</code>, <code>\&gt;</code></td>
+<td>end of a word</td>
+<td></td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td>Escape char</td>
+<td><code>\.</code> match on dot</td>
+</tr>
+<tr>
+<td>- Extended Regex</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Meaning</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>?</code></td>
+<td>Zero or one occurences</td>
+<td 0_1="0,1">Same as</td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>One or more occurences</td>
+<td 1_="1,">Same as</td>
+</tr>
+<tr>
+<td><code>{N}, {N,M}</code></td>
+<td>N or N-M occurences</td>
+<td></td>
+</tr>
+<tr>
+<td><code>|</code></td>
+<td>OR operator</td>
+<td></td>
+</tr>
+<tr>
+<td><code>()</code></td>
+<td>Group operator (capture group)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h3 id="grep">Grep</h3>
+<ul>
+<li>Prints the whole line</li>
+<li>Matching pattern can be worked on separately by using groups</li>
+<li>Grep Case sensitive by default</li>
+<li>Single quotation marks called expansion</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># grep {options} {File}, # grep {options}</span>
+<span class="c1"># -G=GNU/standard regex, -E=Extended Regex, -P=Perl Regex </span>
+<span class="c1"># -i=Case insensitive, -c=Number of lines matching, nothing else</span>
+<span class="c1"># -v=Reverse, -n=add line number from original file</span>
+<span class="c1"># -r, -R=recursive</span>
+<span class="c1"># -A{num}=Num trailing lines after match</span>
+<span class="c1"># -B{num}=Num leading lines before match</span>
+<span class="c1"># -C{num}=Num leading and trailing lines</span>
+
+grep <span class="s1">&#39;line&#39;</span> router.cfg     <span class="c1"># line aux, line vty</span>
+
+grep <span class="s1">&#39;acc&#39;</span> router.cfg      <span class="c1"># ACL but also Radius cfg</span>
+grep -E <span class="s1">&#39;^acc&#39;</span> router.cfg  <span class="c1"># Only ACL</span>
+
+grep <span class="s1">&#39;isakmp&#39;</span> router.cfg   <span class="c1"># Crypto isakmp as well as ACL permit isakmp</span>
+grep -E <span class="s1">&#39;isakmp$&#39;</span> router.cfg  <span class="c1"># Only ACL part</span>
+
+grep -i <span class="s1">&#39;username&#39;</span> router.cfg <span class="c1"># Username AMER, Amer as well as amer</span>
+grep -E <span class="s1">&#39;[Aa]mer&#39;</span> router.cfg <span class="c1"># Username Amer and amer but NOT AMER</span>
+
+grep -E <span class="s1">&#39;[a-zA-Z0-9].*&#39;</span> router.cfg <span class="c1"># Any Line not containing !</span>
+
+grep -E <span class="s1">&#39;\&lt;acce&#39;</span> router.cfg   <span class="c1"># access-list and access-group but not acct</span>
+grep -E <span class="s1">&#39;\&lt;access\&gt;.\&lt;list&#39;</span> router.cfg    <span class="c1"># access-list but no access-group</span>
+grep -E <span class="s1">&#39;^access.*deny.*$&#39;</span> router.cfg     <span class="c1"># any acl with a deny in it </span>
+grep -E -v <span class="s1">&#39;^access.*deny.*$&#39;</span> router.cfg  <span class="c1"># Any line that does NOT not start with access and contain deny</span>
+
+grep -E -A5 <span class="s1">&#39;line vty&#39;</span> router.cfg <span class="c1"># Line vty &quot;section&quot; </span>
+</code></pre></div>
+
+<h3 id="awk">Awk</h3>
+<ul>
+<li>Programming Language, but mostly used for text processing</li>
+<li>Find pattern, then perform action</li>
+<li>Supports spreadsheet styles (rows and columns) and value extraction<ul>
+<li>Typical use case: Grep used to match, awk used to print a certain row.</li>
+</ul>
+</li>
+<li>Default field separator/delimitir = Whitespace</li>
+<li>Column numbers need to be identical, otherwise different output</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># awk &#39;/ search-pattern /{ action }&#39;  filename</span>
+<span class="c1"># -F Delimiter (e.g. awk -F , &#39;/search/{action}&#39; filename)</span>
+
+<span class="c1"># Basics</span>
+awk <span class="s1">&#39;/sdc1/&#39;</span> proc-content.txt       <span class="c1"># Print line with sdc1 in it</span>
+awk <span class="s1">&#39;/^l/&#39;</span> folder-content-ls-l.txt  <span class="c1"># Print symlinks only </span>
+
+<span class="c1"># Can do operations, such as multiplications on data</span>
+awk <span class="s1">&#39;/^l/ {print $5,&quot;----&quot;,$5*512}&#39;</span> awk-data-ls
+
+<span class="c1"># Typical use case, grep and awk together, e.g. get PID</span>
+ps -aux <span class="p">|</span> grep bash <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span>
+
+<span class="c1"># Number fields per column, should be identical</span>
+awk <span class="s1">&#39;{print NF}&#39;</span> show-ip-int-brief.txt
+
+<span class="c1"># Cisco example</span>
+cat show-ip-int-brief.txt
+
+Interface   IP-Address  OK?     Method  Status  Protocol
+FastEthernet0/0 <span class="m">192</span>.168.254.254 YES     NVRAM   up   up
+FastEthernet0/1/0   unassigned  YES     <span class="nb">unset</span>   down     down
+Serial0/0/0 <span class="m">172</span>.16.0.254    YES     NVRAM   up   up
+Serial0/0/1 unassigned  YES     <span class="nb">unset</span>   administratively down   down
+
+<span class="c1"># Print IP address for interfaces starting with Fast</span>
+awk <span class="s1">&#39;/^Fast/ { print $2 }&#39;</span> show-ip-int-brief.txt 
+
+<span class="c1"># Print Multiple rows</span>
+awk <span class="s1">&#39;/^Fast/ { print $5,$6 }&#39;</span> show-ip-int-brief.txt 
+</code></pre></div>
+
+<h3 id="sed">Sed</h3>
+<ul>
+<li>Stream editor<ul>
+<li>Stream -&gt; reads, buffers and operates on a <code>line-by-line</code> base</li>
+<li>Each line is safed in a pattern buffer. Emptied when processed</li>
+<li>By default pattern buffer is emptied = printed out</li>
+<li><code>-n</code>to NOT print content of pattern buffer, only the action done</li>
+</ul>
+</li>
+<li>Regex, specify line or range of lines<ul>
+<li>E.g. $ for Last line of file</li>
+</ul>
+</li>
+<li>Sed also procceses whole line (like grep and awk) that matches!</li>
+<li>No {} for action as with awk</li>
+</ul>
+<p>asdf</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># sed options &#39;line_identifier action&#39; filename OR</span>
+<span class="c1"># Actions: p=printing, s=substitute, d=delete, w=write to file </span>
+<span class="c1">#          a=append, c=change, i=insert</span>
+<span class="c1"># -e = Multiple actions</span>
+
+<span class="c1"># sed &#39;/pattern/action&#39; filename format</span>
+
+<span class="c1"># Substituion</span>
+<span class="c1"># sed s/regex/replacement/flags</span>
+<span class="c1"># flags: g=global</span>
+
+<span class="c1"># Line identifier = 1, action = print</span>
+<span class="c1"># Output, all lines outputted and line #1 outputted twice</span>
+sed <span class="s1">&#39;1p&#39;</span> router.cfg
+
+<span class="c1"># do NOT print content of pattern buffer</span>
+<span class="c1"># Only match is printed = 1st line</span>
+sed -n <span class="s1">&#39;1p&#39;</span> router.cfg
+
+<span class="c1"># Prints whole file, as no line selection done and </span>
+<span class="c1"># all lines are stored in pattern buffer and then emptied to stdout</span>
+sed <span class="s1">&#39; &#39;</span> router.cfg
+
+<span class="c1"># 3rd line only, 3rd and 4th line</span>
+sed -n <span class="s1">&#39;3p&#39;</span> router.cfg
+sed -n <span class="s1">&#39;3,4p&#39;</span> router.cfg
+
+<span class="c1"># last line only</span>
+sed -n <span class="s1">&#39;$p&#39;</span> router.cfg
+
+<span class="c1"># 230 until last line</span>
+sed -n <span class="s1">&#39;230,$p&#39;</span> router.cfg
+
+<span class="c1"># 230-232 until last line</span>
+sed -n <span class="s1">&#39;230,+2p&#39;</span> router.cfg
+
+<span class="c1"># Delete lines 10 to end of file</span>
+<span class="c1"># =Print first 10 lines</span>
+sed <span class="s1">&#39;10,$d&#39;</span> router.cfg
+
+<span class="c1"># Send output to new file using redirection</span>
+sed -n <span class="s1">&#39;230,$p&#39;</span> router.cfg &gt; router_new.cfg
+sed -n <span class="s1">&#39;230,$ w router_new2.cfg&#39;</span> router.cfg
+
+
+<span class="c1"># Pattenr matching using regex</span>
+sed -n <span class="s1">&#39;/[12]\.23\./ p&#39;</span> bgp-routes-misc
+
+<span class="c1"># Multiple action with -e</span>
+sed -n -e <span class="s1">&#39;/3356 i/ w 3356.txt&#39;</span> -e <span class="s1">&#39;/16625 i/ w 16625.txt&#39;</span> bgp-routes-misc
+
+<span class="c1"># Substitution</span>
+<span class="c1"># s/regex/replacement/flags</span>
+
+<span class="c1"># g = global, otherwise only 1st occurence</span>
+grep access-list router.cfg <span class="p">|</span> sed -e <span class="s1">&#39;s/200.1.1.1/200.1.1.2/g&#39;</span> &gt; new-acl.txt
+</code></pre></div>
+
+<p>asdf</p>
+<h3 id="bashscripts">Bashscripts</h3>
+<p>asdf</p>
+<div class="highlight"><pre><span></span><code>brew install pyenv 
+</code></pre></div>
+
+<p>asdf</p>
+<h3 id="expect">Expect</h3>
+<p>asdf</p>
+<div class="highlight"><pre><span></span><code>brew install pyenv 
+</code></pre></div>
+
+<p>asdf</p>
+<h3 id="unsorted">Unsorted</h3>
+<div class="highlight"><pre><span></span><code>pip3 list --outdated --format<span class="o">=</span>freeze <span class="p">|</span> grep -v <span class="s1">&#39;^\-e&#39;</span> <span class="p">|</span> cut -d <span class="o">=</span> -f <span class="m">1</span> <span class="p">|</span> xargs -n1 pip3 install -U 
+
+ls -al <span class="p">|</span> awk <span class="s1">&#39;{print $9}&#39;</span>
+du -hs --apparent-size ./*
+find . -type f -size +1M 
+find . -type d -print0 <span class="p">|</span> xargs -0 ls
+find . -maxdepth <span class="m">1</span> -type d -print0
+find . -maxdepth <span class="m">1</span> -type d -print0 <span class="p">|</span> xargs -0 du -hs <span class="o">(</span>all together<span class="o">)</span>
+
+ls -Ahl <span class="o">(</span>everthing without .<span class="o">(</span>dot<span class="o">)</span> and ..<span class="o">(</span>dotdot<span class="o">))</span>
+
+ls -Ahl <span class="p">|</span> awk <span class="s1">&#39;{print $9}&#39;</span> <span class="p">|</span> xargs du -hs <span class="o">(</span>size per directory<span class="o">)</span>
+
+ls -1ad .* <span class="p">|</span>  tail -n +3 <span class="o">(</span>list <span class="m">1</span> entry per row, all and only directory, <span class="k">then</span> pipe to tail and start at line <span class="m">3</span> <span class="o">(</span>exclude . and ..<span class="o">)</span>
+</code></pre></div>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/linux.html">linux</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: Intro Demo Env Control Groups (Cgroups) Namespaces UFS (Union Filesystem) References Intro Control Group: Limit what a resource can use. Resource mgmt for individual processes (prioritize, enforce, account) Limits: CPU,I/O,Memory,Network Access control to Devices: /dev/* Namespace: Limits what resources a process can see …" />
+<meta name="keywords" content="linux">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Cgroups, Namespaces"/>
+  <meta property="og:description" content="Table of contents: Intro Demo Env Control Groups (Cgroups) Namespaces UFS (Union Filesystem) References Intro Control Group: Limit what a resource can use. Resource mgmt for individual processes (prioritize, enforce, account) Limits: CPU,I/O,Memory,Network Access control to Devices: /dev/* Namespace: Limits what resources a process can see …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/cgroups-namespaces.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-11-06 18:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Linux"/>
+  <meta property="article:tag" content="linux"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Cgroups, Namespaces</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="cgroups-namespaces">Cgroups, Namespaces</h1>
+    <p>
+      Posted on Sa 06 November 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#demo-env">Demo Env</a></li>
+<li><a href="#control-groups-cgroups">Control Groups (Cgroups)</a></li>
+<li><a href="#namespaces">Namespaces</a></li>
+<li><a href="#ufs-union-filesystem">UFS (Union Filesystem)</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h2 id="intro">Intro</h2>
+<ul>
+<li>Control Group: Limit what a resource can use. Resource mgmt for individual processes (prioritize, enforce, account)<ul>
+<li>Limits: CPU,I/O,Memory,Network</li>
+<li>Access control to Devices: /dev/*</li>
+</ul>
+</li>
+<li>Namespace: Limits what resources a process can see. And therfore access (process isolation)<ul>
+<li>Provide processes with own view of the system</li>
+<li>net, pid, mnt, utc and ipc most important</li>
+<li>Each process is in ONE namespace of each type! not more</li>
+</ul>
+</li>
+<li>Both constructs especially useful for example with containers.</li>
+</ul>
+<h2 id="demo-env">Demo Env</h2>
+<div class="highlight"><pre><span></span><code>sudo dnf install httpd
+sudo firewall-cmd --permanent --add-service<span class="o">=</span>http
+sudo firewall-cmd --permanent --add-service<span class="o">=</span>https
+sudo firewall-cmd --reload
+sudo systemctl start httpd
+sudo systemctl status httpd
+
+sudo systemctl <span class="nb">enable</span> httpd
+sudo systemctl disable httpd
+sudo systemctl reload httpd
+</code></pre></div>
+
+<h2 id="control-groups-cgroups">Control Groups (Cgroups)</h2>
+<p>With cgroups, processes run in their own kernel space and memory space. </p>
+<ul>
+<li>One cgroup per process by default</li>
+<li>Features of cgroups<ul>
+<li>Set resource limits (e.g. CPU, I/O, mem) - none by default</li>
+<li>Accounting</li>
+<li>Prioritize</li>
+<li>Freeze, Checkpoint (snapshot) &amp; restart</li>
+</ul>
+</li>
+<li>Files<ul>
+<li><code>/etc/systemd/system.control</code></li>
+</ul>
+</li>
+<li>Example Docker<ul>
+<li>Limit resources that container can use on the host</li>
+</ul>
+</li>
+</ul>
+<p><img src="../../images/cgroups.png" alt="cgroups" width="400"/></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Enable Accounting</span>
+sudo systemctl set-property httpd.service <span class="nv">MemoryAccounting</span><span class="o">=</span><span class="m">1</span> <span class="nv">CPUAccounting</span><span class="o">=</span><span class="m">1</span> <span class="nv">BlockIOAccounting</span><span class="o">=</span><span class="m">1</span>
+
+<span class="c1"># Set limits for procs</span>
+sudo systemctl set-property httpd.service <span class="nv">CPUQuota</span><span class="o">=</span><span class="m">40</span>% <span class="nv">MemoryLimit</span><span class="o">=</span>500M
+
+<span class="c1"># Set limits for users</span>
+id mario
+sudo systemctl set-property user-1001.slice <span class="nv">MemoryAccounting</span><span class="o">=</span><span class="m">1</span> <span class="nv">CPUAccounting</span><span class="o">=</span><span class="m">1</span> <span class="nv">BlockIOAccounting</span><span class="o">=</span><span class="m">1</span>
+sudo systemctl set-property user-1001.slice <span class="nv">CPUQuota</span><span class="o">=</span><span class="m">20</span>% <span class="nv">MemoryLimit</span><span class="o">=</span>500M
+</code></pre></div>
+
+<h2 id="namespaces">Namespaces</h2>
+<p>A namespace allows a process to have its own set of resources that other processes can't see. A namespace limits what resources a process can see and access
+Main Types:
+    - Mount (mnt): each process to have its own root filesystem that no other processes can see
+    - UTS: each process to have its own unique hostname and domain name.
+    - PID: Every running process can have its own set of PID number (childs cant see parents). Node = Group of processes.
+    - Network (net): virtual network for each process. Each virtual network can have its own subnets, virtual network interfaces, routing tables, and firewalls
+    - Interprocess Communication (ipc): This also prevents data leakage by preventing two processes from sharing the same memory space
+    - control group (cgroup): This namespace hides the identity of the cgroup that a process is a member of
+    - User: The User namespace allows a user to have different levels of privilege on different processes. For example, a user could have root-level privileges on one process, but only normal-user privileges on another process.
+- Examples
+    - Docker uses namespaces to isolate containers from each other and from host os
+        - PID: E.g. each container could have the same PID (or different). Each Process only sees the other processes it launches. So container cannot see any other processes of the system.
+        - NET: give different network access to different containers
+        - mnt: Give different file access to differetn containers
+        - uts: each container has individual name &amp; domai name system
+        - ipc: define which container can talk to whom
+        - user: isolate user &amp; group id
+    - Firejail uses namespace per Tab</p>
+<p><img src="../../images/namespaces.png" alt="Containers using Namespaces" width="400"/></p>
+<p>```bash
+  ls -al /proc/{pid}/ns
+  top -c -p $(pgrep -d',' -f brave)</p>
+<p>```</p>
+<h2 id="ufs-union-filesystem">UFS (Union Filesystem)</h2>
+<ul>
+<li>Way to combine multiple directories into a new virtual one</li>
+<li>Different parts of the new FS can be either read-only or read/write f. Writes to the new virtual are then directed to specific location on the real file system. This allows a file system to appear as writable, but without actually allowing writes to change the some part of the file system, also known as copy-on-write. E.g. r/o CDROM + /home/user/cdrom-write combined into /media/cdrom that is writable for container.</li>
+<li>When mounting different locations, last mounted has priority</li>
+<li>Example applictions<ul>
+<li>Knoppix Live-CD + USB Drive saves changes to USB</li>
+<li>Docker layers with same /path/to/file + Top level writable container, + only layer updates populated for different images</li>
+<li>Base layer can be read-only. Next-layer read-write. If file from base-layer (read-only) changed inside container it will be saved to write-layer. Write-layer only keeps diff. Different containers can share same base-layers and still have individual changes. Even kept among start &amp; stop of container.</li>
+</ul>
+</li>
+</ul>
+<p><img src="../../images/docker-layers.png" alt="Docker Layers" width="400"/></p>
+<h2 id="references">References</h2>
+<ul>
+<li>See: <a href="https://techviewleo.com/install-brave-browser-on-rocky-almalinux-centos-linux/">Brave on Rocky Linux</a></li>
+<li>See: <a href="https://www.youtube.com/watch?v=el7768BNUPw">UFS</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/linux.html">linux</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

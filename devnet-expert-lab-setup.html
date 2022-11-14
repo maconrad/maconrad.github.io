@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="LAB Setup and Resources" />
+<meta name="keywords" content="Cisco, DEVNET">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Devnet Expert Lab-Setup"/>
+  <meta property="og:description" content="LAB Setup and Resources"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/devnet-expert-lab-setup.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-03-27 11:51:00+02:00"/>
+  <meta property="article:modified_time" content="2022-03-27 14:30:00+02:00"/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="DEVNET_EXPERT"/>
+  <meta property="article:tag" content="Cisco"/>
+  <meta property="article:tag" content="DEVNET"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Devnet Expert Lab-Setup</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="devnet-expert-lab-setup">Devnet Expert Lab-Setup</h1>
+    <p>
+      Posted on So 27 März 2022 in <a href="https://maconrad.github.io/category/devnet_expert.html">DEVNET_EXPERT</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#lab-setup">Lab Setup</a></li>
+<li><a href="#exam-topics">Exam Topics</a></li>
+<li><a href="#devnet-sandbox-and-learning-labs">DevNet Sandbox and Learning Labs</a></li>
+<li><a href="#devnet-workstation">DevNet Workstation</a><ul>
+<li><a href="#nso-installation">NSO Installation</a></li>
+<li><a href="#yang-suite">Yang Suite</a></li>
+</ul>
+</li>
+<li><a href="#devnet-learning-labs">DevNet learning Labs</a></li>
+<li><a href="#cisco-live-presentations">Cisco Live Presentations</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul>
+</div>
+<h1 id="intro">Intro</h1>
+<p>Restconf is often easier to read than netconf. However it lacks the possiblity to use datastores and therefore transactional bevhavior and rollback on errors.</p>
+<h1 id="lab-setup">Lab Setup</h1>
+<div class="highlight"><pre><span></span><code>xxx
+</code></pre></div>
+
+<h1 id="exam-topics">Exam Topics</h1>
+<p>The DEVNet Lab exam consists of the following high level topics:
+    - Design
+    - IaC
+    - Network Programmability (REST APIs)
+    - Network Automation
+    - Containers
+    - Security</p>
+<p>The DEVNet Lab exam consists of the following high level technologies:
+    - Git
+    - Python
+    - Ansible 
+    - Terraform
+    - Docker
+    - NSO
+    - pyATS
+    - Telemetry
+    - Kubernetes</p>
+<p>In addition the following should be familiar:
+    - TIG Stack: Telegraf (1.19), InfluxDB 1.8, Grafana 8.1
+    - GitLab &amp; Gitlab Runner 14
+    - HashiCorp Vault 1.8
+    - K8s 1.23</p>
+<p>Following software will be used:
+    - Nexus 9k 9.3(9)
+    - ACI Simulator 5.2
+    - Cat8000V: 17.5
+    - IOSv: 15.9
+    - IOSvL2: 15.2</p>
+<ul>
+<li>See: <a href="https://learningnetwork.cisco.com/s/devnet-expert-exam-topics-lab">Exam Topic Details</a></li>
+</ul>
+<h1 id="devnet-sandbox-and-learning-labs">DevNet Sandbox and Learning Labs</h1>
+<p>aasdf</p>
+<h1 id="devnet-workstation">DevNet Workstation</h1>
+<div class="highlight"><pre><span></span><code>ip add show dev ens160
+</code></pre></div>
+
+<p>Root is disabled (also sudo su not working). </p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Password: 1234QWer!</span>
+ssh root@localhost
+vi /etc/netplan/00-cws-dhcp-config.yaml
+netplan apply
+init <span class="m">6</span>
+
+<span class="c1"># RDP now possible</span>
+</code></pre></div>
+
+<p>Different vEnvs available:</p>
+<div class="highlight"><pre><span></span><code>venv-main
+venv-ansible
+venv-yangsuite
+</code></pre></div>
+
+<h2 id="nso-installation">NSO Installation</h2>
+<p>NSO is NOT installed on CWS by default! In the real lab it is installed. See NSO.md file.</p>
+<h2 id="yang-suite">Yang Suite</h2>
+<p>Installed: http://localhost:8480</p>
+<h1 id="devnet-learning-labs">DevNet learning Labs</h1>
+<p>Many tracks available <a href="https://developer.cisco.com/learning/search/tracks/">DevNet Learning Tracks</a></p>
+<ul>
+<li>NSO<ul>
+<li><a href="https://developer.cisco.com/learning/search/products/NSO/?contentType=track,module,lab&amp;keyword=nso&amp;page=1&amp;sortBy=luceneScore">Overview</a></li>
+<li><a href="https://developer.cisco.com/learning/tracks/get_started_with_nso/">NSO Learning Track</a></li>
+</ul>
+</li>
+<li>Cloud and Containers<ul>
+<li><a href="https://developer.cisco.com/learning/tracks/Cloud-Containers-v0/">Cloud and Containers Track</a></li>
+<li><a href="https://developer.cisco.com/learning/tracks/containers/">Containers Track</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="cisco-live-presentations">Cisco Live Presentations</h1>
+<h1 id="resources">Resources</h1>
+<p>Other Resources that might be helpful.</p>
+<ul>
+<li>See: <a href="https://cs.co/DevExCWS">Candidate Workstation</a><ul>
+<li>Ubuntu 20.04</li>
+<li>Username: expert,root / 1234QWer!</li>
+</ul>
+</li>
+<li>See: <a href="https://learningnetwork.cisco.com/s/article/devnet-expert-equipment-and-software-list">Equipment List</a></li>
+<li>See: <a href="https://developer.cisco.com/docs/sandbox/">DevNet Sandbox</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/cisco.html">Cisco</a>
+      <a href="https://maconrad.github.io/tag/devnet.html">DEVNET</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

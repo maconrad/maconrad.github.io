@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Some useful SSL Commands" />
+<meta name="keywords" content="Linux, SSL, Openssl">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Openssl Commands and Templates"/>
+  <meta property="og:description" content="Some useful SSL Commands"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/openssl-commands-and-templates.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-10-31 11:51:00+01:00"/>
+  <meta property="article:modified_time" content="2022-10-31 14:30:00+01:00"/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Linux, Generic"/>
+  <meta property="article:tag" content="Linux"/>
+  <meta property="article:tag" content="SSL"/>
+  <meta property="article:tag" content="Openssl"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Openssl Commands and Templates</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="openssl-commands-and-templates">Openssl Commands and Templates</h1>
+    <p>
+      Posted on Mo 31 Oktober 2022 in <a href="https://maconrad.github.io/category/linux-generic.html">Linux, Generic</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <h1 id="step1-generate-privat-key">Step1: Generate Privat key</h1>
+<p>openssl genrsa -out key2.key 2048</p>
+<h1 id="step2-generate">Step2: Generate</h1>
+<p>openssl req -new -out vpn.maconrad.csr -key key2.key -config req.cnf</p>
+<h1 id="step3-verify-csr">Step3: Verify CSR</h1>
+<p>openssl req -in vpn.maconrad.csr -noout -text</p>
+<h1 id="step4-get-csr-signed-by-ca-cer">Step4: Get CSR signed by CA -&gt; cer</h1>
+<h1 id="human-readable-pem">Human readable = PEM</h1>
+<h1 id="binary-pkcs12pfx-or-der">Binary = PKCS12/pfx or DER</h1>
+<p>openssl x509 -in vpn.maconrad.base64.ch.cer -text
+openssl x509 -in vpn.maconrad.ch.cer -inform DER -text</p>
+<h1 id="step5-move-dercer-to-pembase64-format">Step5: Move DER/CER to PEM(Base64 format)</h1>
+<p>openssl x509 -inform der -in vpn.corp.ch.cer -out vpn.maconrad.pem</p>
+<h1 id="step6-merge-to-pfx-pkcs12-for-asa">Step6: Merge to Pfx (PKCS12) for ASA</h1>
+<p>openssl pkcs12 -export -in vpn.maconrad.pem -inkey key2.key -out cert2.pfx -certfile QuovadisBoth.cer
+openssl pkcs12 -export -in nxy.domain.local_Base64.cer -inkey xy.key -out xy.pfx</p>
+<p>! Note recommended to have own Trustpoint for Root and Subordinate
+openssl pkcs12 -export -in vpn_corp_ch.cer -inkey key_vpn_corp.key -out ASA_new.pfx</p>
+<p>! Alternative Subordinate in the Chain
+! Remember Root CA must be own trustpoint on ASA
+openssl pkcs12 -export -inkey key_vpn_corp.key -in vpn_corp_ch.cer -certfile subordinate_ca.pem -out ASA_new.pfx</p>
+<h1 id="step-7-verify">Step 7: Verify</h1>
+<p>openssl pkcs12 -in cert2.pfx -info</p>
+<h1 id="step-8-verify-via-curl-eg-if-browser-redirects">Step 8: Verify via Curl (e.g. if browser redirects)</h1>
+<p>curl -vvI https://vpn1.corp.ch </p>
+<p>! Test for Old TLS Versions
+curl --tls-max 1.1 https://vpn1.corp.ch 
+curl -vvI --tlsv1.1 --tls-max 1.2 https://vpn1.corp.ch</p>
+<p>openssl.cnf</p>
+<div class="highlight"><pre><span></span><code><span class="nv">req_extensions</span> <span class="o">=</span> v3_req
+<span class="nv">distinguished_name</span> <span class="o">=</span> req_distinguished_name
+<span class="nv">default_bits</span> <span class="o">=</span> <span class="m">2048</span>
+<span class="nv">default_md</span> <span class="o">=</span> sha512
+<span class="nv">prompt</span> <span class="o">=</span> no
+
+<span class="o">[</span>req_distinguished_name<span class="o">]</span>
+
+<span class="nv">C</span> <span class="o">=</span> CH
+<span class="nv">ST</span> <span class="o">=</span> Aargau
+<span class="nv">L</span> <span class="o">=</span> Schinznach 
+<span class="nv">O</span> <span class="o">=</span> Conrad Local
+<span class="nv">OU</span> <span class="o">=</span> Corporate IT
+<span class="nv">CN</span> <span class="o">=</span> vpn.maconrad.ch
+<span class="nv">emailAddress</span> <span class="o">=</span> noc@maconrad.ch
+
+<span class="o">[</span> v3_req <span class="o">]</span>
+<span class="nv">basicConstraints</span> <span class="o">=</span> CA:FALSE
+<span class="nv">keyUsage</span> <span class="o">=</span> digitalSignature, keyEncipherment
+<span class="nv">extendedKeyUsage</span><span class="o">=</span>serverAuth,clientAuth
+<span class="nv">subjectAltName</span> <span class="o">=</span> @alt_names
+
+<span class="o">[</span>alt_names<span class="o">]</span>
+DNS.1 <span class="o">=</span> vpn.corp.ch
+DNS.2 <span class="o">=</span> vpn1.corp.ch
+DNS.3 <span class="o">=</span> vpn2.corp.ch
+DNS.4 <span class="o">=</span> vpn3.corp.ch
+IP.1 <span class="o">=</span> <span class="m">185</span>.1.2.3
+IP.2 <span class="o">=</span> <span class="m">185</span>.1.2.4
+</code></pre></div>
+
+<p>Note: ASA supports .pfx and Passphrase</p>
+<h2 id="get-alt-names">Get Alt Names</h2>
+<div class="highlight"><pre><span></span><code>openssl s_client -connect a.b.c.de:443 &lt;/dev/null <span class="m">2</span>&gt;/dev/null <span class="p">|</span> <span class="se">\</span>
+    openssl x509 -inform pem -text <span class="p">|</span> grep -A1 <span class="s2">&quot;Subject Alternative Name&quot;</span>
+</code></pre></div>
+
+<h2 id="valaidate-crl-lifetime">Valaidate CRL Lifetime</h2>
+<div class="highlight"><pre><span></span><code>openssl crl -inform DER -text -noout -in mycrl.crl
+
+<span class="c1">#See: https://levelup.gitconnected.com/deep-dive-into-tls-handshake-e029e28e2eb3#80d8</span>
+</code></pre></div>
+
+<h2 id="reference">Reference</h2>
+<ul>
+<li>See: <a href="https://knowledge.digicert.com/solution/SO26449.html">Digicert</a></li>
+<li>See: <a href="https://www.sslshopper.com/article-most-common-openssl-commands.html">SSLShopper</a></li>
+<li>See: <a href="https://www.cisco.com/c/en/us/td/docs/cloud-systems-management/network-automation-and-management/dna-center/hardening_guide/b_dnac_security_best_practices_guide.html">DNA Center</a></li>
+<li>See: <a href="https://stackoverflow.com/questions/3468127/x509-whats-the-difference-between-digital-signature-and-non-repudiation">Non-Repudiation</a></li>
+<li>See: <a href="https://www.cisco.com/c/en/us/support/docs/security-vpn/public-key-infrastructure-pki/200339-Configure-ASA-SSL-Digital-Certificate-I.html">ASA Instructions</a></li>
+<li>See: <a href="https://www.hardenize.com/">Hardenize</a></li>
+<li>See: [SSL Labs]https://www.ssllabs.com/ssltest/analyze.html?d=vpn1.corp.ch&amp;latest</li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/linux.html">Linux</a>
+      <a href="https://maconrad.github.io/tag/ssl.html">SSL</a>
+      <a href="https://maconrad.github.io/tag/openssl.html">Openssl</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

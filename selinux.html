@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: Basics - If bool or re-labeling does NOT fix a problem, might need a policy Key Points Files CLI References Basics Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year …" />
+<meta name="keywords" content="linux">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="SELinux"/>
+  <meta property="og:description" content="Table of contents: Basics - If bool or re-labeling does NOT fix a problem, might need a policy Key Points Files CLI References Basics Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/selinux.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-11-06 18:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Linux"/>
+  <meta property="article:tag" content="linux"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; SELinux</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="selinux">SELinux</h1>
+    <p>
+      Posted on Sa 06 November 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#-if-bool-or-re-labeling-does-not-fix-a-problem-might-need-a-policy">- If bool or re-labeling does NOT fix a problem, might need a policy</a><ul>
+<li><a href="#key-points">Key Points</a></li>
+<li><a href="#files">Files</a></li>
+<li><a href="#cli">CLI</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h2 id="basics">Basics</h2>
+<p>Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year 2000 by NSA to open source community. While talking to one of my fellow engineers about some customer projects, he mentioned SELinux several times. Not knowing how stuff actually works, sucks... So time to get my hands on at least the basics of SELinux.</p>
+<ul>
+<li>Runs a module in the linux kernel</li>
+<li>MAC vs. AC
+        - DAC: Discretionary access control
+            - Ownership (user, group, other) + permissions (rwx)
+            - Users have ability (discretion) to change permissions
+            - User can do chmod +rwx on his home directory, no way to stop that
+              - Problem: Execute anything he wants in his home dir!
+        - MAC: Mandatory access control
+            - Policy that is administratively set and fixed
+            - Even if DAC is changed on home dir, nothing happens, as if there is a policy that prevents users and processes from accessing it</li>
+<li>Policy very precise and can protect all types of communication between:<ul>
+<li>users / files / dirs / memories / sockets / tcp,udp ports / etc.</li>
+<li><code>targeted</code> (default policy type) vs <code>mls</code> (multi-layer)</li>
+<li>targeted: Policy for targeted processes (hundreds defined by default), everything else unrestricted/unconfied. Examples of targed procceses are httpd &amp; network, but also web-browser and email-client.<ul>
+<li>remember that <code>targeted</code> does NOT use user or role!</li>
+</ul>
+</li>
+<li>mls: Multi-level, multi-category, can get very complex</li>
+</ul>
+</li>
+<li>Two major concepts<ul>
+<li><code>Label</code> (also referrred to as context)<ul>
+<li>Files, procs, ports etc. are all labeled with a SELinux <code>context</code><ul>
+<li>Files &amp; dirs store them as extended attributes on the filesystem</li>
+<li>proccesses, ports etc, the kernel manages the labels</li>
+</ul>
+</li>
+<li>Remember: Context set when files created (based on parent dir unless file transition policy). RPM can set context as part of installation. Login process sets default context (e.g. targeted)</li>
+<li>Format: <code>user:role:type:level(optional)</code><ul>
+<li>MLS uses user &amp; role </li>
+<li>level refers to multi-level, multi-category</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Type Enforcement (remember type part of the label)<ul>
+<li>2 Modes<ul>
+<li><code>enforced</code> or <code>permissive</code> (still monitoring)</li>
+</ul>
+</li>
+<li>Example <ul>
+<li>process running in httpd_t context to interact with a file in httpd_config_t context/label = OK</li>
+<li>process running in httpd_t context to interact with shadow_t label = NOK. </li>
+</ul>
+</li>
+<li>Policy (SELinux policy) defined on system defines interaction between types even if e.g. chmod 777 on file /etc/shadow</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>-Z</code> for many commands to view context</li>
+<li>Other similar tools:<ul>
+<li>Ubuntu uses AppArmor as an alternative. SELinux installation probably breaks ubuntu if not configured</li>
+</ul>
+</li>
+<li>Exception to inheritance for context from parent dir: File transitions policy<ul>
+<li>Example:<ul>
+<li>Real Behaviour: dhclient (dhclient_t) creates a file /etc/resolv.conf (net_conf_t) in director /etc (etc_t). </li>
+<li>Without file transition policy: /etc/resolv.conf would have inherited (etc_t)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>semanage</code> to manage SELinux settings for nodes, file context, boolean, permissive state, dontaudit</li>
+<li>Booleans Examples, defaults <ul>
+<li>"Allow ftp server to access users home-dir"</li>
+<li>"Allow httpd to to use mod_auth_ntlm_winbind"</li>
+</ul>
+</li>
+<li>Tips &amp; Tricks<ul>
+<li>Install <code>setroubleshoot</code> and <code>setroubleshoot-server</code> in dev environment = lots of tools for debugging. Restart auditd after that</li>
+</ul>
+</li>
+<li>Moving &amp; Copying<ul>
+<li>Remember: Moving file keeps context! Copy copies context over from parent dir.</li>
+<li>Example: <code>move /home/maconrad/content/* /var/www/html/</code> &amp; <code>chown httpd:httpd /var/www/html/*</code></li>
+<li><code>journalctl</code> for error and <code>ls -ldZ /var/www/html/</code> for target type and <code>chcon</code> to change the context of the file</li>
+<li>Can use <code>chcon</code> to set manually or reference known good or use <code>restorecon</code> that relies on predefined defintions. See files.</li>
+</ul>
+</li>
+<li>Policy Module<h2 id="-if-bool-or-re-labeling-does-not-fix-a-problem-might-need-a-policy">- If bool or re-labeling does NOT fix a problem, might need a policy</h2>
+</li>
+<li>Example<ul>
+<li>User fred with home-dir /home/fred/public_html, UserDir public_html in /etc/httpd/conf.d/userdir.conf is enabled &amp; systemctl restart httpd</li>
+<li>Nothing works and /var/log/httpd/access_log &amp; /var/log/httpd/error_log only show forbidden (http 403)</li>
+<li><code>journalctl</code> shows systemlogs including SELinux stuff</li>
+</ul>
+</li>
+</ul>
+<h3 id="key-points">Key Points</h3>
+<ul>
+<li>Tag/Label/Context/Type</li>
+<li>User &amp; Role only used in MLS mode (not targeted)</li>
+<li>Permissive mode still logs but allows everything, enforced mode enforces ;)</li>
+<li>Moving keeps context, copying inhertis context, exception transition policy</li>
+<li><code>sestatus</code>, <code>getenforce</code>, <code>xy -Z</code> for info</li>
+<li><code>getsebool</code> &amp; <code>setsebool</code></li>
+<li><code>journalctl</code> &amp; <code>sealert</code> for tshoot</li>
+<li><code>restorecon</code> &amp; <code>chcon</code> to change label</li>
+<li><code>semanage</code> to tell SELinux what it should be (does NOT relabel)</li>
+</ul>
+<h3 id="files">Files</h3>
+<ul>
+<li>What policy: <code>/etc/selinux/config</code> or <code>/etc/sysconfig/selinux</code></li>
+<li>What booleans: <code>/etc/selinux/targeted/modules/active/booleans.local</code></li>
+<li>Restorecon default contexts: <code>/etc/selinux/targeted/contexts/files/file_contexts</code><ul>
+<li>Good reference for REGEX of files</li>
+</ul>
+</li>
+</ul>
+<h3 id="cli">CLI</h3>
+<div class="highlight"><pre><span></span><code>dnf provides /usr/sbin/semanage
+dnf install policycoreutils-python-utils
+<span class="c1"># setup via gui if needed</span>
+dnf install policycoreutils-gui<span class="p">;</span> system-config-selinux
+
+<span class="c1"># What policy</span>
+sudo sestatus
+sudo getenforce
+<span class="c1"># temporary turn off selinux</span>
+<span class="c1"># permissive mode = still see errors</span>
+sudo setenforce <span class="m">0</span>
+
+<span class="c1"># Get context/label</span>
+ps -Z
+ls -Z
+id -Z
+netstat -Z
+
+<span class="c1"># Example</span>
+ls -lZ /usr/sbin/httpd  <span class="c1"># httpd_exec_t type (executable file)</span>
+ls -dZ /etc/httpd       <span class="c1"># httpd_config_t type (config files)</span>
+ls -dZ /var/log/httpd   <span class="c1"># httpd_log_t type (log files)</span>
+ls -dZ /var/www/html    <span class="c1"># httpd_sys_content_t type (conent dir&amp;files)</span>
+ls -lz /usr/lib/systemd/system/httpd.service <span class="c1"># httpd_unit_file_t (startup script)</span>
+ps -axZ <span class="p">|</span> grep <span class="o">[</span>h<span class="o">]</span>ttpd          <span class="c1"># httpd_t (Proc)</span>
+netstat -tnlpZ <span class="p">|</span> grep <span class="o">[</span>h<span class="o">]</span>ttpd   <span class="c1"># httpd_t (Ports)</span>
+semanage port -l <span class="p">|</span> grep <span class="o">[</span>h<span class="o">]</span>ttp
+ls -lZ /etc/shadow              <span class="c1"># shadow_t</span>
+
+<span class="c1"># Booleans, e.g. httpd_can_connect_ftp, httpd_can_sendmail</span>
+getsebool -a
+
+<span class="c1"># -P=Persistent across reboots 1=on</span>
+setsebool httpd_enable_homedirs <span class="m">1</span> -P
+
+<span class="c1"># Setroubleshoot for dev</span>
+yum install setroubleshoot setroubleshoot-server
+systemctl restart auditd.service
+service auditd restart
+
+<span class="c1"># Troubleshoot, -b=boot, -0=last boot, 1=1st boot found in file, 2nd boot found in file </span>
+journalctl -b -0 <span class="c1"># replacement for tail -f /var/log/messages</span>
+sealert -l <span class="o">{</span>uuid<span class="o">}</span>
+
+<span class="c1"># Change context/label of a file</span>
+<span class="c1"># -u=user, -r=role, -t=type</span>
+chcon -u system_u -r object_r -t httpd_sys_content_t /var/www/html/index.html
+<span class="c1"># targeted environment user &amp; role not taken into consideration</span>
+chcon -t httpd_sys_content_t /var/www/html/index.html
+<span class="c1"># Reference some known good file</span>
+chcon --reference /var/www/html /var/www/html/index.html
+
+<span class="c1"># Restore directory to default context</span>
+<span class="c1"># -R=recursive, -v=verbose=show changes</span>
+restorecon -vR /var/www/html
+
+<span class="c1"># Semanage does NOT make any changes to the file system, only tells it what it is supposed to be, restorecon can be used to set it</span>
+<span class="c1"># fcontext=filecontext, -a=add, -t=type</span>
+semanage fcontext -a -t httpd_sys_content_t <span class="s2">&quot;/foo(/.*)?&quot;</span> 
+
+<span class="c1"># -e=equivalent</span>
+semanage fcontext -a -e /var/www/html /foo
+restorecon -vR /foo
+
+<span class="c1"># Find files newer than</span>
+touch marker
+setsebool -P <span class="nv">httpd_enable_homedirs</span><span class="o">=</span><span class="m">1</span>
+find /etc/selinux/ -newer marker
+
+<span class="c1"># SELinux policy (if boleans and labels fail)</span>
+<span class="c1"># -M=module</span>
+grep httpd /var/log/audit/audit.log <span class="p">|</span> audit2allow -M myapp
+semodule -i myapp.pp
+</code></pre></div>
+
+<h2 id="references">References</h2>
+<ul>
+<li>See: <a href="https://www.youtube.com/watch?v=_WOKRaM-HI4&amp;t=1921s">RedHat Summit - SELinux for mere mortals</a> </li>
+<li>See: <a href="https://www.thegeekdiary.com/understanding-selinux-file-labelling-and-selinux-context/">GiakDiary - Understanding SELinux</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/linux.html">linux</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

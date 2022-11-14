@@ -1,0 +1,950 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Libs that I use or have used in the past." />
+<meta name="keywords" content="Python, Libraries">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Python Libraries"/>
+  <meta property="og:description" content="Libs that I use or have used in the past."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/python-libraries.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-02-02 11:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Python"/>
+  <meta property="article:tag" content="Python"/>
+  <meta property="article:tag" content="Libraries"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Python Libraries</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="python-libraries">Python Libraries</h1>
+    <p>
+      Posted on Mi 02 Februar 2022 in <a href="https://maconrad.github.io/category/python.html">Python</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#unsorted">Unsorted</a></li>
+<li><a href="#data-format-libs">Data Format Libs</a></li>
+<li><a href="#stdlib">StdLib</a></li>
+<li><a href="#stdlib-concurrency">StdLib Concurrency</a></li>
+<li><a href="#ciscostuff">CiscoStuff</a></li>
+<li><a href="#web">Web</a></li>
+<li><a href="#linting">Linting</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#venv-and-packaging">VENV and Packaging</a></li>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#django-specific">Django Specific</a></li>
+</ul>
+</div>
+<h1 id="unsorted">Unsorted</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>loguru</td>
+<td>Simple Logging</td>
+</tr>
+<tr>
+<td>retry</td>
+<td>Retry decorator</td>
+</tr>
+<tr>
+<td>devtools</td>
+<td>Debug func</td>
+</tr>
+<tr>
+<td>pandas</td>
+<td>CSV,Excel,Dataframes, read_excel, ffill, iloc, iterrows, head, drop, dropna, head, idxmax, isnull</td>
+</tr>
+<tr>
+<td>openpyxl</td>
+<td>Excel Writer for Pandas</td>
+</tr>
+<tr>
+<td>rich</td>
+<td>rich.console, rich.table</td>
+</tr>
+<tr>
+<td>python-dotenv</td>
+<td>load-dotenv from .env files</td>
+</tr>
+<tr>
+<td>dynaconf</td>
+<td>Alternative to dotenv</td>
+</tr>
+<tr>
+<td>click</td>
+<td>Simple cli interface (better than argparse)</td>
+</tr>
+<tr>
+<td>cement</td>
+<td>Advanced cli interface</td>
+</tr>
+<tr>
+<td>multidict</td>
+<td>Dict that can contain key multiple times</td>
+</tr>
+<tr>
+<td>six</td>
+<td>Python 2 and 3 compatibility library</td>
+</tr>
+<tr>
+<td>mypy-extensions</td>
+<td>Extenstion to std lib typing</td>
+</tr>
+<tr>
+<td>colorama</td>
+<td>COlored terminal text output</td>
+</tr>
+<tr>
+<td>tqdm</td>
+<td>Progress bar for cli tqdm(iterable)</td>
+</tr>
+<tr>
+<td>Pygments</td>
+<td>Python syntax highlighter</td>
+</tr>
+<tr>
+<td>netaddr</td>
+<td>Layer3 and Layer2 like OUI and IPv4 and IPV6</td>
+</tr>
+<tr>
+<td>ipaddress</td>
+<td>check for ip address</td>
+</tr>
+<tr>
+<td>uuid</td>
+<td>UUID</td>
+</tr>
+<tr>
+<td>gettext</td>
+<td>i10n</td>
+</tr>
+<tr>
+<td>locale</td>
+<td>i10n</td>
+</tr>
+<tr>
+<td>opencv</td>
+<td>Image analysis etc. </td>
+</tr>
+<tr>
+<td>mathplotlib</td>
+<td>Plotting</td>
+</tr>
+<tr>
+<td>notebook</td>
+<td>Jupyter Notebook Web app, interactive python</td>
+</tr>
+</tbody>
+</table>
+<h1 id="data-format-libs">Data Format Libs</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xmltodict</td>
+<td>Simple parsing of xmls, namespace support</td>
+</tr>
+<tr>
+<td>Jinja2</td>
+<td>Work with Jinja tempalts in python</td>
+</tr>
+<tr>
+<td>ujson</td>
+<td>Ultra fast json encoder &amp; decoder</td>
+</tr>
+<tr>
+<td>jsonpickle</td>
+<td>Data serialization with pickle, not binary but json</td>
+</tr>
+<tr>
+<td>PyYAML</td>
+<td>YAML parser 1.1</td>
+</tr>
+<tr>
+<td>ruamel.yaml</td>
+<td>YAML loader/dumper 1.2</td>
+</tr>
+<tr>
+<td>toml</td>
+<td>Toml file format handling (similar to ini)</td>
+</tr>
+<tr>
+<td>generateDS</td>
+<td>XML Schema from xsd files</td>
+</tr>
+<tr>
+<td>pydantic</td>
+<td>Data validation using type annotation</td>
+</tr>
+<tr>
+<td>fastjsonschema</td>
+<td>Validates json against a schema</td>
+</tr>
+<tr>
+<td>dataclasses-json</td>
+<td>Dataclass</td>
+</tr>
+<tr>
+<td>binhex</td>
+<td>Binary to hex</td>
+</tr>
+<tr>
+<td>binascii</td>
+<td>Binary to ascii</td>
+</tr>
+<tr>
+<td>base64</td>
+<td>Base64</td>
+</tr>
+</tbody>
+</table>
+<h1 id="stdlib">StdLib</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td>Formatting, aligning etc.</td>
+</tr>
+<tr>
+<td>dataclass</td>
+<td>Decorator for dataclass</td>
+</tr>
+<tr>
+<td>re</td>
+<td>Regex</td>
+</tr>
+<tr>
+<td>functools</td>
+<td>wraps decorator, lru_cache, reduce, total_ordering, cache, singledispatch</td>
+</tr>
+<tr>
+<td>itertools</td>
+<td>groupby, iter, next, compress, count, cycle, repeat, starmap, combination, permutation, product, islice, accumulate, filterfalse, tee</td>
+</tr>
+<tr>
+<td>http</td>
+<td>HTTP Status codes to names</td>
+</tr>
+<tr>
+<td>collections</td>
+<td>namedTuple, Counter, defaultDict, deque, ChainMap</td>
+</tr>
+<tr>
+<td>traceback</td>
+<td>extract, format and print stack traces</td>
+</tr>
+<tr>
+<td>datetime</td>
+<td>Datetime</td>
+</tr>
+<tr>
+<td>copy</td>
+<td>copy, deepcopy</td>
+</tr>
+<tr>
+<td>types</td>
+<td>Typing</td>
+</tr>
+<tr>
+<td>math</td>
+<td>random</td>
+</tr>
+<tr>
+<td>pathlib</td>
+<td>Path</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Environment</td>
+</tr>
+<tr>
+<td>sys</td>
+<td>exit, argv, flags, windowsversion, path, platform, stdout,stderr,stdin, version, modules, meta_path</td>
+</tr>
+<tr>
+<td>abc</td>
+<td>metaclass, abstract base class</td>
+</tr>
+<tr>
+<td>dataclasses</td>
+<td>Dataclasses</td>
+</tr>
+<tr>
+<td>contextlib</td>
+<td>contextmanager</td>
+</tr>
+<tr>
+<td>timeit</td>
+<td>Time measuring</td>
+</tr>
+<tr>
+<td>math</td>
+<td>basic math functions</td>
+</tr>
+<tr>
+<td>random</td>
+<td>random funcs</td>
+</tr>
+<tr>
+<td>csv</td>
+<td>CSV interaction</td>
+</tr>
+<tr>
+<td>pickle</td>
+<td>Encode/decode object to/from binary</td>
+</tr>
+<tr>
+<td>configparser</td>
+<td>Parse configuration files</td>
+</tr>
+<tr>
+<td>argparse</td>
+<td>Argument parser, ArgumentParser, parse_args()</td>
+</tr>
+<tr>
+<td>logging</td>
+<td>Logging</td>
+</tr>
+<tr>
+<td>errno</td>
+<td>Error codes</td>
+</tr>
+<tr>
+<td>email</td>
+<td>Email and mime type</td>
+</tr>
+<tr>
+<td>html</td>
+<td>html interaction</td>
+</tr>
+<tr>
+<td>socket</td>
+<td>Low level network interface</td>
+</tr>
+<tr>
+<td>io</td>
+<td>Work with streams, text io, binary io, raw io</td>
+</tr>
+<tr>
+<td>distutils</td>
+<td>deprecated, use setuptools instead</td>
+</tr>
+<tr>
+<td>importlib</td>
+<td>import_module('math'), util.find_spec('math'), .reload('my_changed_module')</td>
+</tr>
+<tr>
+<td>site</td>
+<td>.pth files, lines get added to sys.path on load</td>
+</tr>
+<tr>
+<td>zipfile</td>
+<td>python -m zipfile -l xy.zip or python -m zipfile -c ab.zip a.py b.py</td>
+</tr>
+<tr>
+<td>zipfile</td>
+<td>Cerate executable: python -m zipfile -c app.zip *.py (if it contains a <strong>main</strong>.py file)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="stdlib-concurrency">StdLib Concurrency</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>threading</td>
+<td>Threading (os switches = pre-emptive)</td>
+</tr>
+<tr>
+<td>multiprocessing</td>
+<td>Multiprocessing</td>
+</tr>
+<tr>
+<td>concurrent</td>
+<td>ThreadPoolExecutor</td>
+</tr>
+<tr>
+<td>asyncio</td>
+<td>Threading async await (announce when switch threads, cooperative)</td>
+</tr>
+<tr>
+<td>queue</td>
+<td>Queue, FIFO, LIFO, PQ, ThreadSafe</td>
+</tr>
+<tr>
+<td>sched</td>
+<td>Generic purpose event scheduler</td>
+</tr>
+</tbody>
+</table>
+<h1 id="ciscostuff">CiscoStuff</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pyats &amp; genie</td>
+<td>Testing &amp; validation including yang models</td>
+</tr>
+<tr>
+<td>napalm</td>
+<td>Multivendor network automation</td>
+</tr>
+<tr>
+<td>ciscoconfparse</td>
+<td>Parsing cisco cfg</td>
+</tr>
+<tr>
+<td>dnacentersdk</td>
+<td>DNA Center SDK</td>
+</tr>
+<tr>
+<td>unicon</td>
+<td>Wrap underlying session (telnet, ssh, serial)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="web">Web</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>django</td>
+<td>Web Framework</td>
+</tr>
+<tr>
+<td>flask</td>
+<td>Web Framework</td>
+</tr>
+<tr>
+<td>fastapi</td>
+<td>Web Framework</td>
+</tr>
+<tr>
+<td>falcon</td>
+<td>Web Framework specialiced on speed</td>
+</tr>
+<tr>
+<td>urllib3</td>
+<td>user friendly http client for python</td>
+</tr>
+<tr>
+<td>rfc3986</td>
+<td>URL Parsing and validation</td>
+</tr>
+<tr>
+<td>yarl</td>
+<td>URL parsing  scheme, user, password, host, port, path, query and fragment</td>
+</tr>
+<tr>
+<td>asyncio &amp; async_lru</td>
+<td>Async HTTP requests &amp; caching</td>
+</tr>
+<tr>
+<td>aiohttp</td>
+<td>Websockts</td>
+</tr>
+<tr>
+<td>requests</td>
+<td>Requests Lib</td>
+</tr>
+<tr>
+<td>responses</td>
+<td>add, add_callback to Mock requests library</td>
+</tr>
+<tr>
+<td>requests-toolbelt</td>
+<td>Don't store cookies, user agent, ssl etc.</td>
+</tr>
+<tr>
+<td>swagger-codegen</td>
+<td>Swagger stub generation</td>
+</tr>
+<tr>
+<td>BeautifulSoup4</td>
+<td>Scrape information from web pages (HTML, XML) tree parsing</td>
+</tr>
+<tr>
+<td>Selenium</td>
+<td>Automate web browser interaction</td>
+</tr>
+</tbody>
+</table>
+<h1 id="linting">Linting</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flake8</td>
+<td>PEP8 validation (integrates pyflakes checks) via .flake8 or setup.cfg</td>
+</tr>
+<tr>
+<td>pycodestyle</td>
+<td>PEP8 validation</td>
+</tr>
+<tr>
+<td>pre-commit</td>
+<td>Pre-commit git hook, re-commit install, pre-commit run --all-files</td>
+</tr>
+<tr>
+<td>mccabe</td>
+<td>Complexity checker</td>
+</tr>
+<tr>
+<td>black</td>
+<td>Opinionted formatter</td>
+</tr>
+<tr>
+<td>mypy</td>
+<td>static Type check based on typehints (from typing import Union, Any, Type, SupportsFloat, Dict)</td>
+</tr>
+<tr>
+<td>autopep8</td>
+<td>Auto format arccording to PEP8</td>
+</tr>
+<tr>
+<td>pyflakes</td>
+<td>Check for source file errors</td>
+</tr>
+<tr>
+<td>pylint</td>
+<td>Check for source file errors</td>
+</tr>
+<tr>
+<td>isort</td>
+<td>Sorts imports according to PEP8</td>
+</tr>
+</tbody>
+</table>
+<h1 id="testing">Testing</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pytest</td>
+<td>python -m pytest -vv --durations=3 -m dummymarking , @pytest.fixture, @pytest.mark.name, @pytest.mark.parametrize (+skip, skipif, parametrization), monkeypatch, No need to inherit from a base class as with unittest, compatible with unittest, marking tests, durations, plugins like pytest-django, pytest-randomly, pytest-cov</td>
+</tr>
+<tr>
+<td>pytest-cov</td>
+<td>Pytest coverage</td>
+</tr>
+<tr>
+<td>coverage</td>
+<td>Coverage of tests</td>
+</tr>
+<tr>
+<td>unittest</td>
+<td>setup, tearDown, patch, skipIf, unittest.mock</td>
+</tr>
+<tr>
+<td>pydoc</td>
+<td>generate HTML from python code</td>
+</tr>
+<tr>
+<td>doctest</td>
+<td>Code testing based on documentation</td>
+</tr>
+<tr>
+<td>pytest-randomly</td>
+<td>Randomize testing, pytest -p no:randomly, pytest --randomly-seed=123</td>
+</tr>
+<tr>
+<td>nose, nose2</td>
+<td>Alternative to pytest</td>
+</tr>
+<tr>
+<td>tox</td>
+<td>tox.ini, tock-quickstart, tox -e py38, tox -e py38 -- tests -k unit, automate, test build and release workflow, Testing in different python versions</td>
+</tr>
+</tbody>
+</table>
+<h1 id="venv-and-packaging">VENV and Packaging</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>venv</td>
+<td>Stdlib</td>
+</tr>
+<tr>
+<td>virtualenvwrapper</td>
+<td>Manage venv</td>
+</tr>
+<tr>
+<td>pip-tools</td>
+<td>Manage venv and hierarchy (requirements.in) pip-compile for req.txt</td>
+</tr>
+<tr>
+<td>pipenv</td>
+<td>Manage venv and generate lock (Pipfile.lock)</td>
+</tr>
+<tr>
+<td>poetry</td>
+<td>Manage venv and dependenies</td>
+</tr>
+<tr>
+<td>setuptools</td>
+<td>Setuptools</td>
+</tr>
+<tr>
+<td>wheel</td>
+<td>Generate sdist (source) and bdist (binary dist)</td>
+</tr>
+<tr>
+<td>pipx</td>
+<td>Install and run python app in ISOLATED environment, like apt, npx</td>
+</tr>
+</tbody>
+</table>
+<h1 id="windows">Windows</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>msilib</td>
+<td>Microsoft Installer Files</td>
+</tr>
+<tr>
+<td>winreg</td>
+<td>Windows Registry Access</td>
+</tr>
+<tr>
+<td>winrm or pywinrm</td>
+<td>Windows access via VMI, Powershell, cmd, for Kereberos see documentatoin on pypi</td>
+</tr>
+</tbody>
+</table>
+<h1 id="machine-learning">Machine Learning</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tensorflow</td>
+<td>high performance numerical computation CPUs, GPUs, TPUs</td>
+</tr>
+<tr>
+<td>keras</td>
+<td>Keras API with tensorflow as backend</td>
+</tr>
+<tr>
+<td>PyTorch</td>
+<td>Tensor computation with GPU acceleration, Deep neural networks</td>
+</tr>
+<tr>
+<td>scikit-learn</td>
+<td>Machine learning on top of scipy</td>
+</tr>
+<tr>
+<td>numpy</td>
+<td>n-dimensional array, linear algebra, Fourier transform, and random number</td>
+</tr>
+</tbody>
+</table>
+<h1 id="django-specific">Django Specific</h1>
+<table>
+<thead>
+<tr>
+<th>Library</th>
+<th>function / Class etc.</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fernet_fields</td>
+<td>EncryptedTextField</td>
+<td>Encrypts field in DB</td>
+</tr>
+<tr>
+<td>django.contrib.postgres.fields</td>
+<td>JSONField</td>
+<td>JSON Field - deprecated 3.1</td>
+</tr>
+<tr>
+<td>django.db.models.JSONField</td>
+<td>JSONField</td>
+<td>JSON Field*</td>
+</tr>
+<tr>
+<td>django.urls.reverse</td>
+<td>reverse()</td>
+<td>Returns relative URI</td>
+</tr>
+<tr>
+<td>rest_framework.reverse</td>
+<td>reverse()</td>
+<td>Return absolute URI from WebAPI</td>
+</tr>
+<tr>
+<td>uuid</td>
+<td>models.UUIDField()</td>
+<td>E.g. default=uuid.uuid4</td>
+</tr>
+<tr>
+<td>channels.generic.websocket</td>
+<td>AsyncWebsocketConsumer</td>
+<td>Websocket implementation</td>
+</tr>
+<tr>
+<td>channels.layers</td>
+<td>get_channel_layer</td>
+<td>Websocket implementation helper</td>
+</tr>
+<tr>
+<td>asgiref.sync</td>
+<td>async_to_sync</td>
+<td>Websocket implementation helper</td>
+</tr>
+<tr>
+<td>responses</td>
+<td>add(), add_callback()</td>
+<td>Mock requests library</td>
+</tr>
+<tr>
+<td>whitenoise</td>
+<td>Middleware</td>
+<td>Serves static files for production</td>
+</tr>
+<tr>
+<td>nginx</td>
+<td>Reverse Proxy and an alternative to whitenoise for static</td>
+<td></td>
+</tr>
+<tr>
+<td>gunicorn</td>
+<td>WSGI Compatible webserver for django</td>
+<td></td>
+</tr>
+<tr>
+<td>djangorestframework</td>
+<td>DRF</td>
+<td></td>
+</tr>
+<tr>
+<td>drf-yasg (pyyaml, uritemplate)</td>
+<td>Swagger and Redoc API Documentaton for DRF projects</td>
+<td></td>
+</tr>
+<tr>
+<td>dj-rest-auth</td>
+<td>Login, Logout, PW Reset, + Registration Endpoint</td>
+<td></td>
+</tr>
+<tr>
+<td>django-allauth</td>
+<td>User Registration FLow + Social Auth (combine with dj-rest-auth)</td>
+<td></td>
+</tr>
+<tr>
+<td>django-cors-headers</td>
+<td>CorsMiddleware for CORS HTTP Header</td>
+<td></td>
+</tr>
+<tr>
+<td>psycopg2-binary</td>
+<td>Database Adapter for PostgreSQL</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>MariaDB 10.2.7+, MySQL 5.7.8+, Oracle, PostgreSQL, and SQLite 3.9.0+ (with the JSON1 extension enabled).</li>
+<li>ResponseLib - https://github.com/getsentry/responses#basics</li>
+<li>DRF.reverse - https://www.django-rest-framework.org/api-guide/reverse/</li>
+<li>Awesome Django curated list - https://realpython.com/python-return-statement</li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/python.html">Python</a>
+      <a href="https://maconrad.github.io/tag/libraries.html">Libraries</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

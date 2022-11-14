@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Troubleshooting with EEM Scripts for various Technologies" />
+<meta name="keywords" content="Cisco, EEM">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="EEM Scripts"/>
+  <meta property="og:description" content="Troubleshooting with EEM Scripts for various Technologies"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/eem-scripts.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-06-27 11:51:00+02:00"/>
+  <meta property="article:modified_time" content="2022-06-27 14:30:00+02:00"/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Cisco"/>
+  <meta property="article:tag" content="Cisco"/>
+  <meta property="article:tag" content="EEM"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; EEM Scripts</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="eem-scripts">EEM Scripts</h1>
+    <p>
+      Posted on Mo 27 Juni 2022 in <a href="https://maconrad.github.io/category/cisco.html">Cisco</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#most-common">Most Common</a></li>
+<li><a href="#other-usefule">Other usefule</a><ul>
+<li><a href="#example-collect-ipsec-debug-output-event-correlation-syslog-authorization-bypass">Example: Collect IPSec Debug Output (event correlation, syslog, authorization bypass)</a></li>
+<li><a href="#example-neat-port-config-cdp-if-else-regex-usage">Example: NEAT Port config (CDP, if, else, regex usage)</a></li>
+</ul>
+</li>
+<li><a href="#ip-sla-with-eem">IP SLA with EEM</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h1 id="most-common">Most Common</h1>
+<p>Most commonly used are:
+    - Watchdog
+    - event syslog pattern (watch syslog)</p>
+<p>But could also use things like IP SLA, Netflow, route monitoring or write syslog, trigger python script etc. etc.
+Do loops, do regex, write to files etc. etc.</p>
+<h1 id="other-usefule">Other usefule</h1>
+<p>Unsorted list:
+    - $_cli_result
+    - $_regexp_result
+    - $match
+    - $_string_result</p>
+<h2 id="example-collect-ipsec-debug-output-event-correlation-syslog-authorization-bypass">Example: Collect IPSec Debug Output (event correlation, syslog, authorization bypass)</h2>
+<p>Here a showcase how to trigger same set of commands on multiple different events.
+Events can be correlated via and, andnot and or boolean logic. They need to be assigned a tag for this.</p>
+<div class="highlight"><pre><span></span><code>event manager applet Debug_Invalid_SPI authorization bypass
+ event tag cryptodown syslog pattern <span class="s2">&quot;%CRYPTO-5-IKEV2_SESSION_STATUS: Crypto tunnel v2 is DOWN&quot;</span>
+ event tag invalidspi syslog pattern <span class="s2">&quot;%CRYPTO-4-RECVD_PKT_INV_SPI: decaps: rec&#39;d IPSEC packet has invalid spi for&quot;</span> maxrun <span class="m">180</span>
+ event tag lineprotodown syslog pattern <span class="s2">&quot;%LINEPROTO-5-UPDOWN: Line protocol on Interface Tunnel20, changed state to down&quot;</span>
+ event tag peertermination syslog pattern <span class="s2">&quot;%DUAL-5-NBRCHANGE: EIGRP-IPv4 1: Neighbor 10\.3\.41\.81 (Tunnel20) is down: Interface PEER-TERMINATION received&quot;</span>
+ event tag tunneldown syslog pattern <span class="s2">&quot;%DUAL-5-NBRCHANGE: EIGRP-IPv4 1: Neighbor 10\.3\.41\.81 (Tunnel20) is down: interface down&quot;</span>
+ trigger
+  correlate event invalidspi or event cryptodown or event tunneldown or event peertermination or event lineprotodown
+ action <span class="m">010</span>.2 cli <span class="nb">command</span> <span class="s2">&quot;enable&quot;</span>
+ action <span class="m">010</span>.6 cli <span class="nb">command</span> <span class="s2">&quot;debug crypto condition peer ipv4 10.3.41.85&quot;</span>
+ action <span class="m">020</span>.2 cli <span class="nb">command</span> <span class="s2">&quot;debug crypto ikev2&quot;</span>
+ action <span class="m">020</span>.4 cli <span class="nb">command</span> <span class="s2">&quot;debug crypto ikev2 internal&quot;</span>
+ action <span class="m">030</span>.6 cli <span class="nb">command</span> <span class="s2">&quot;debug crypto ikev2 error&quot;</span>
+ action <span class="m">040</span>.2 cli <span class="nb">command</span> <span class="s2">&quot;debug crypto ikev2 packet&quot;</span>
+ action <span class="m">040</span>.4 cli <span class="nb">command</span> <span class="s2">&quot;terminal monitor&quot;</span>
+ action <span class="m">040</span>.5 <span class="nb">wait</span> <span class="m">120</span>
+ action <span class="m">040</span>.6 cli <span class="nb">command</span> <span class="s2">&quot;undebug all&quot;</span>
+ action <span class="m">040</span>.8 cli <span class="nb">command</span> <span class="s2">&quot;show logging | append bootflash:/EEM1_Debug_tunnel20.txt&quot;</span> 
+</code></pre></div>
+
+<h2 id="example-neat-port-config-cdp-if-else-regex-usage">Example: NEAT Port config (CDP, if, else, regex usage)</h2>
+<p>Here is an example how to monitor what kind of network device is connected based on neighbor discovery (CDP) event.
++ Defining a username for authorization.</p>
+<div class="highlight"><pre><span></span><code>vent manager session cli username <span class="s2">&quot;EEMScript&quot;</span>
+
+event manager applet auto-update-neat-port
+  description <span class="s2">&quot;Auto-update port settings for NEAT based on CDP neighbors info&quot;</span>
+  event neighbor-discovery interface regexp GigabitEthernet.* cdp add
+  action <span class="m">100</span> regexp <span class="s2">&quot;(Switch|Router)&quot;</span> <span class="s2">&quot;</span><span class="nv">$_nd_cdp_capabilities_string</span><span class="s2">&quot;</span>
+  action <span class="m">110</span> <span class="k">if</span> <span class="nv">$_regexp_result</span> eq <span class="s2">&quot;1&quot;</span>
+  action <span class="m">200</span>  regexp <span class="s2">&quot;.*C3560CX.*&quot;</span> <span class="s2">&quot;</span><span class="nv">$_nd_cdp_platform</span><span class="s2">&quot;</span>
+  action <span class="m">210</span>  <span class="k">if</span> <span class="nv">$_regexp_result</span> eq <span class="s2">&quot;1&quot;</span>
+  action <span class="m">220</span>   cli <span class="nb">command</span> <span class="s2">&quot;enable&quot;</span>
+  action <span class="m">230</span>   cli <span class="nb">command</span> <span class="s2">&quot;config t&quot;</span>
+  action <span class="m">240</span>   cli <span class="nb">command</span> <span class="s2">&quot;interface </span><span class="nv">$_nd_local_intf_name</span><span class="s2">&quot;</span>
+  action <span class="m">250</span>   cli <span class="nb">command</span> <span class="s2">&quot;description 802.1x NEAT: </span><span class="nv">$_nd_cdp_entry_name</span><span class="s2">&quot;</span>
+  action <span class="m">260</span>   cli <span class="nb">command</span> <span class="s2">&quot;ip device tracking maximum 30&quot;</span>
+  action <span class="m">270</span>   cli <span class="nb">command</span> <span class="s2">&quot;authentication host-mode multi-auth&quot;</span>
+  action <span class="m">299</span>  end
+  action <span class="m">399</span> end
+
+event manager applet auto-update-non-neat-port
+  description <span class="s2">&quot;Auto-update port settings for port where a NEAT switch was connected based on CDP neighbors info&quot;</span>
+  event neighbor-discovery interface regexp GigabitEthernet.* cdp delete
+  action <span class="m">100</span> regexp <span class="s2">&quot;(Switch|Router)&quot;</span> <span class="s2">&quot;</span><span class="nv">$_nd_cdp_capabilities_string</span><span class="s2">&quot;</span>
+  action <span class="m">110</span> <span class="k">if</span> <span class="nv">$_regexp_result</span> eq <span class="s2">&quot;1&quot;</span>
+  action <span class="m">200</span>  regexp <span class="s2">&quot;.*C3560CX.*&quot;</span> <span class="s2">&quot;</span><span class="nv">$_nd_cdp_platform</span><span class="s2">&quot;</span>
+  action <span class="m">210</span>  <span class="k">if</span> <span class="nv">$_regexp_result</span> eq <span class="s2">&quot;1&quot;</span>
+  action <span class="m">220</span>   cli <span class="nb">command</span> <span class="s2">&quot;enable&quot;</span>
+  action <span class="m">230</span>   cli <span class="nb">command</span> <span class="s2">&quot;config t&quot;</span>
+  action <span class="m">240</span>   cli <span class="nb">command</span> <span class="s2">&quot;interface </span><span class="nv">$_nd_local_intf_name</span><span class="s2">&quot;</span>
+  action <span class="m">250</span>   cli <span class="nb">command</span> <span class="s2">&quot;description *** 802.1X CLIENT ***&quot;</span>
+  action <span class="m">260</span>   cli <span class="nb">command</span> <span class="s2">&quot;ip device tracking maximum 6&quot;</span>
+  action <span class="m">270</span>   cli <span class="nb">command</span> <span class="s2">&quot;authentication host-mode multi-domain&quot;</span>
+  action <span class="m">299</span>  end
+  action <span class="m">399</span> end 
+</code></pre></div>
+
+<h1 id="ip-sla-with-eem">IP SLA with EEM</h1>
+<p>Combining IP SLA with EEM can be used to monitor e.g. VPN Tunnel Underlay and Overlay and help in isolating root cause.
+UDP Echo could be used if ICMP Echo fails.</p>
+<p>IP SLA for physical and tunnel:</p>
+<div class="highlight"><pre><span></span><code>ip sla <span class="m">5</span>
+ tcp-connect <span class="m">10</span>.3.41.81 <span class="m">1025</span> source-ip <span class="m">10</span>.3.41.82
+  tag IPSec_Monitor_Tunnel
+  threshold <span class="m">3000</span>
+  timeout <span class="m">3000</span>
+  frequency <span class="m">5</span>
+ip sla schedule <span class="m">5</span> life forever start-time now
+ip sla <span class="m">6</span>
+ icmp-echo <span class="m">10</span>.3.41.85 source-interface GigabitEthernet0/0/1
+  vrf COLT
+  tag IPSec_Monitor_COLT_Line
+  threshold <span class="m">3000</span>
+  timeout <span class="m">3000</span>
+  frequency <span class="m">5</span>
+ip sla schedule <span class="m">6</span> life forever start-time now
+ip sla responder 
+</code></pre></div>
+
+<p>Track objects:</p>
+<div class="highlight"><pre><span></span><code>track <span class="m">5</span> ip sla <span class="m">5</span> state
+ delay down <span class="m">5</span> up <span class="m">5</span>
+track <span class="m">6</span> ip sla <span class="m">6</span> state
+ delay down <span class="m">5</span> up <span class="m">5</span>
+</code></pre></div>
+
+<p>EEM Reaction on Track:</p>
+<div class="highlight"><pre><span></span><code>event manager applet ipsla6down authorization bypass
+ event track <span class="m">6</span> state down
+ action <span class="m">1</span>.0 syslog msg <span class="s2">&quot;=====Underlay SLA probe FAILED!=====&quot;</span>
+event manager applet ipsla6up authorization bypass
+ event track <span class="m">6</span> state up
+ action <span class="m">1</span>.0 syslog msg <span class="s2">&quot;=====Underlay SLA probe UP!=====&quot;</span>
+event manager applet ipsla5down authorization bypass
+ event track <span class="m">5</span> state down
+ action <span class="m">1</span>.0 syslog msg <span class="s2">&quot;=====Overlay SLA probe FAILED!=====&quot;</span>
+event manager applet ipsla5up authorization bypass
+ event track <span class="m">5</span> state up
+ action <span class="m">1</span>.0 syslog msg <span class="s2">&quot;=====Overlay SLA probe UP!=====&quot;</span> 
+</code></pre></div>
+
+<p>Verify using</p>
+<div class="highlight"><pre><span></span><code>show ip sla statistics aggregated <span class="m">5</span> details
+</code></pre></div>
+
+<p>Advanced features of IPSLA would be to enable 
+  - distribution of statistics (<strong><em>distributions-of-statistics-kept</em></strong>) under the udp-echo interval.
+      - E.g. useful with udp-echo 
+  - collect history (<strong><em>history enhanced interval 900 buckets 96</em></strong> =&gt; 96 = 24hours * (60/15 minutes)) under the udp-echo interval
+  - configure thresholds and notifications
+      - Can be notification based on connectionLoss, jitter, MOS, packetLoss, RTT, timeout
+      - CISCO-RTTMON-MIB (rttMonNotification)
+  - chaining (e.g. RTT every 5min, if below/above threshold, trigger UDP jitter operation)</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Chaining example - debug congestion!!</span>
+ip sla <span class="m">10</span>
+ icmp-echo <span class="m">1</span>.1.1.1
+
+<span class="c1"># Upper 100ms, lower 20ms</span>
+ip sla reaction-configuration <span class="m">10</span> react rtt threshold-value <span class="m">100</span> <span class="m">20</span>  threshold-type conse
+
+<span class="c1"># Trigger (source = IP SLA 10, trigger ip SLA 11)</span>
+ip sla reaction-trigger <span class="m">10</span> <span class="m">11</span>
+
+<span class="c1"># Operation 11 started/triggered only if IP SLA 10 exceeds threshold 3 times (measure RTT for each hop of the path)</span>
+ip sla <span class="m">11</span>
+ path-echo <span class="m">1</span>.1.1.1
+
+<span class="c1"># RTR = old name for IP SLA</span>
+snmp-server <span class="nb">enable</span> traps rtr
+snmp-server <span class="nb">enable</span> traps ipsla
+</code></pre></div>
+
+<h1 id="references">References</h1>
+<ul>
+<li>See: <a href="https://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/ios-embedded-event-manager-eem/116176-technote-eemscripts-00.html">EEM Script Technote</a> </li>
+<li>See: <a href="https://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/ios-xe-16/216091-best-practices-and-useful-scripts-for-ee.html">EEM Script Examples</a></li>
+<li>See: <a href="https://www.ciscolive.com/c/dam/r/ciscolive/emea/docs/2018/pdf/BRKNMS-3021.pdf">EEM With Python or TCL and EEM Version overview</a></li>
+<li>See: <a href="https://community.cisco.com/t5/networking-documents/cisco-eem-best-practices/ta-p/3127596">EEM Best Practices</a></li>
+<li>See: <a href="https://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/ios-embedded-event-manager-eem/113696-eem-tshoot-igp-00.html">IP SLA with EEM triggering Syslog</a></li>
+<li>See: <a href="https://www.ciscolive.com/c/dam/r/ciscolive/us/docs/2018/pdf/BRKNMS-3043.pdf">IP SLA Examples</a></li>
+<li>See: <a href="https://www.ciscolive.com/c/dam/r/ciscolive/us/docs/2018/pdf/BRKNMS-3043.pdf">IP SLA Overview slide</a></li>
+<li>See: <a href="http://etutorials.org/Networking/network+management/Part+II+Implementations+on+the+Cisco+Devices/Chapter+11.+IP+SLA/Advanced+Features/">IP SLA History etc.</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/cisco.html">Cisco</a>
+      <a href="https://maconrad.github.io/tag/eem.html">EEM</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

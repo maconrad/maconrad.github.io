@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+    <meta name="author" content="Mario Conrad" />
+    <meta name="description" content="" />
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:type" content="blog"/>
+  <meta property="og:title" content="PeliBlog"/>
+  <meta property="og:description" content=""/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Posts by Mario:</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+
+
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/rhel-rocky-linux-centos-specifics.html#rhel-rocky-linux-centos-specifics">RHEL, Rocky Linux, Centos specifics</a></h2>
+    <p>
+      Posted on Sa 06 November 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/linux.html">linux</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#terminology">Terminology</a></li>
+<li><a href="#software-management">Software Management</a></li>
+<li><a href="#headless-management">Headless Management</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#firewall">Firewall</a></li>
+<li><a href="#selinux">SELinux</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#container">Container</a></li>
+<li><a href="#other-useful">Other Useful</a></li>
+<li><a href="#refs">Refs</a></li>
+</ul>
+</div>
+<h2 id="terminology">Terminology</h2>
+<ul>
+<li>YUM: Package Manager for variate of Linux systems, has been replaced by DNF. YUM is a front-end for RPM.</li>
+<li>DNF: Improved Dependeny resolution over YUM</li>
+<li>Snaps: Snaps are applications packaged with all …</li></ul></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/rhel-rocky-linux-centos-specifics.html#rhel-rocky-linux-centos-specifics">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/selinux.html#selinux">SELinux</a></h2>
+    <p>
+      Posted on Sa 06 November 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/linux.html">linux</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#-if-bool-or-re-labeling-does-not-fix-a-problem-might-need-a-policy">- If bool or re-labeling does NOT fix a problem, might need a policy</a><ul>
+<li><a href="#key-points">Key Points</a></li>
+<li><a href="#files">Files</a></li>
+<li><a href="#cli">CLI</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h2 id="basics">Basics</h2>
+<p>Even though I use unix like systems on a daily basis, I never really touched on the topic of SELinux even though it was released in year …</p></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/selinux.html#selinux">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/linux-basics-reminder.html#linux-basics-reminder">Linux Basics Reminder</a></h2>
+    <p>
+      Posted on Do 04 November 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/linux.html">linux</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#basics">Basics</a><ul>
+<li><a href="#basic-terminology">Basic Terminology</a></li>
+<li><a href="#boot-process">Boot Process</a></li>
+<li><a href="#general">General</a></li>
+<li><a href="#files-dirs">Files &amp; Dirs</a></li>
+<li><a href="#21">2&gt;&amp;1</a></li>
+<li><a href="#bzip-co">bzip &amp; co</a></li>
+<li><a href="#proc-co">/proc &amp; co</a></li>
+<li><a href="#logfiles">Logfiles</a></li>
+<li><a href="#yum-and-friends">yum and friends</a></li>
+<li><a href="#devsda-lvm">/dev/sda &amp; LVM</a></li>
+<li><a href="#chmod-chown-and-acls">Chmod, chown and ACLs</a></li>
+<li><a href="#ifconfig-vs-ip-networkmanager">ifconfig vs ip, NetworkManager</a></li>
+<li><a href="#ref-images">Ref Images</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="basics">Basics</h2>
+<h3 id="basic-terminology">Basic Terminology</h3>
+<ul>
+<li>Kernel: Interface between HW and OS, e.g. Webbrowsing opens network socket done …</li></ul></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/linux-basics-reminder.html#linux-basics-reminder">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/interface-segregation-principle.html#interface-segregation-principle">Interface Segregation Principle</a></h2>
+    <p>
+      Posted on So 31 Oktober 2021 in <a href="https://maconrad.github.io/category/patterns.html">Patterns</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/python.html">python</a>,              <a href="https://maconrad.github.io/tag/patterns.html">patterns</a>,              <a href="https://maconrad.github.io/tag/solid.html">SOLID</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#before">Before</a></li>
+<li><a href="#after">After</a></li>
+</ul>
+</div>
+<h2 id="intro">Intro</h2>
+<p>Interface segregation principle states that you should not put to much into an interface, but split into multiple interfaces instead. Why? The Client/Implementer should not have to deal with interfaces he does not need. </p>
+<p>Benefits:</p>
+<ul>
+<li>Cleaner code: Avoid implementing functionality that is …</li></ul></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/interface-segregation-principle.html#interface-segregation-principle">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/namedtuple-to-the-rescue.html#namedtuple-to-the-rescue">NamedTuple to the rescue</a></h2>
+    <p>
+      Posted on So 31 Oktober 2021 in <a href="https://maconrad.github.io/category/python.html">Python</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/python.html">python</a>,              <a href="https://maconrad.github.io/tag/ide.html">IDE</a>,              <a href="https://maconrad.github.io/tag/smart.html">smart</a>,              <a href="https://maconrad.github.io/tag/stdlib.html">stdlib</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#a-working-approach-the-problem">A working approach - the problem</a></li>
+<li><a href="#improving">Improving</a></li>
+<li><a href="#improving-further">Improving further...</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h2 id="a-working-approach-the-problem">A working approach - the problem</h2>
+<p>If you are not an experienced python programmer. You might right something like this: </p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">apiCallGitHub</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;https://api.github.com/users/</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200 …</span></code></pre></div></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/namedtuple-to-the-rescue.html#namedtuple-to-the-rescue">
+          Continue reading
+        </a>
+  </div>
+</article>
+
+  <div class="pagination">
+    <a class="btn float-left" href="https://maconrad.github.io/author/mario8.html">
+      <i class="fa fa-angle-left"></i> Older Posts
+    </a>
+    <a class="btn float-right" href="https://maconrad.github.io/author/mario6.html">
+      Newer Posts <i class="fa fa-angle-right"></i>
+    </a>
+  </div>
+
+
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

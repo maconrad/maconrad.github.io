@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="On DCloud Modeling Labs to validate IPSec MTU" />
+<meta name="keywords" content="Cisco, CML, CML API, IPerf, Cloud-Init, IPSec, FVRF, BDP, IKEv1">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Cisco Modeling Labs 1 - Basic FVRF IKEv1/IPSec connectivity"/>
+  <meta property="og:description" content="On DCloud Modeling Labs to validate IPSec MTU"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/cisco-modeling-labs-1-basic-fvrf-ikev1ipsec-connectivity.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-02-02 11:51:00+01:00"/>
+  <meta property="article:modified_time" content="2022-02-02 14:30:00+01:00"/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Cisco"/>
+  <meta property="article:tag" content="Cisco"/>
+  <meta property="article:tag" content="CML"/>
+  <meta property="article:tag" content="CML API"/>
+  <meta property="article:tag" content="IPerf"/>
+  <meta property="article:tag" content="Cloud-Init"/>
+  <meta property="article:tag" content="IPSec"/>
+  <meta property="article:tag" content="FVRF"/>
+  <meta property="article:tag" content="BDP"/>
+  <meta property="article:tag" content="IKEv1"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Cisco Modeling Labs 1 - Basic FVRF IKEv1/IPSec connectivity</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="cisco-modeling-labs-1-basic-fvrf-ikev1ipsec-connectivity">Cisco Modeling Labs 1 - Basic FVRF IKEv1/IPSec connectivity</h1>
+    <p>
+      Posted on Mi 02 Februar 2022 in <a href="https://maconrad.github.io/category/cisco.html">Cisco</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#topology">Topology</a></li>
+<li><a href="#setup-via-virl2_client">Setup via virl2_client</a><ul>
+<li><a href="#special-note-on-cml-endpoint">Special Note on CML Endpoint</a></li>
+<li><a href="#special-note-on-alpine-clients">Special note on Alpine clients</a></li>
+<li><a href="#speical-note-on-ubuntu-clients">Speical note on Ubuntu clients</a></li>
+<li><a href="#special-note-on-catalyst-8000-routers">Special note on Catalyst 8000 Routers</a></li>
+</ul>
+</li>
+<li><a href="#ipsec-configuration">IPSec Configuration</a><ul>
+<li><a href="#hq-office">HQ Office</a></li>
+<li><a href="#branch-office">Branch Office</a></li>
+<li><a href="#testing-with-df-bit">Testing with DF-Bit</a></li>
+<li><a href="#testing-with-iperf">Testing with Iperf</a></li>
+<li><a href="#testing-with-cml-packet-capture">Testing with CML Packet Capture</a></li>
+<li><a href="#ipsec-calculation">IPSec Calculation</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h1 id="intro">Intro</h1>
+<p>Cisco Modeling Labs (CML) is the sucessor of VIRL. It allows for setting up labs, testing configurations, testing changes etc. etc.
+Its a very nice tool which also integrates pyATS and other things. This blog-post is about provisioning a very basic IPSec Lab
+with IKEv1 and doing it in an automated fashion.</p>
+<h1 id="topology">Topology</h1>
+<p>The following topology will be created:</p>
+<p><img src="../../images/cisco/cml/cml_basic_1.png" alt="Topology" width="400"/></p>
+<h1 id="setup-via-virl2_client">Setup via virl2_client</h1>
+<p>The CML topology can be uploaded using YAML files or can also be uploaded via API calls. 
+To get starting using the API only the following library has to be installed:</p>
+<div class="highlight"><pre><span></span><code>pip install virl2-client
+</code></pre></div>
+
+<p>Here is a very basic example on how to use the API to do the following steps:
+    - Create Devices from Images provided by CML
+    - Load Configuration for devices from Files
+    - Create links between devices</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">virl2_client</span> <span class="kn">import</span> <span class="n">ClientLibrary</span>
+<span class="kn">from</span> <span class="nn">loguru</span> <span class="kn">import</span> <span class="n">logger</span>
+<span class="kn">from</span> <span class="nn">types</span> <span class="kn">import</span> <span class="n">SimpleNamespace</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="kn">import</span> <span class="nn">urllib3</span>
+
+<span class="c1"># Must be run against 2.1.2-b39 or newer</span>
+<span class="c1"># Must be connected via anyconnect VPN!</span>
+<span class="n">CML_END_POINT</span> <span class="o">=</span> <span class="s1">&#39;https://198.18.134.1/&#39;</span>
+
+<span class="c1"># Always guest &amp; C1sco12345 on Dcloud</span>
+<span class="n">CML_USER</span> <span class="o">=</span><span class="s1">&#39;guest&#39;</span>
+<span class="n">CML_PW</span> <span class="o">=</span> <span class="s1">&#39;C1sco12345&#39;</span>
+
+<span class="n">CFG_FOLDER</span> <span class="o">=</span> <span class="s1">&#39;cfgs&#39;</span>
+
+
+<span class="n">CUSTOMER</span> <span class="o">=</span> <span class="s1">&#39;XY&#39;</span>
+<span class="n">device_types</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;router&#39;</span><span class="p">:</span><span class="s1">&#39;csr1000v&#39;</span><span class="p">,</span> 
+    <span class="s1">&#39;asa&#39;</span><span class="p">:</span><span class="s1">&#39;asav&#39;</span><span class="p">,</span> 
+    <span class="s1">&#39;ubuntu&#39;</span><span class="p">:</span><span class="s1">&#39;ubuntu&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nxos&#39;</span><span class="p">:</span> <span class="s1">&#39;nxosv9000&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;cat8k&#39;</span><span class="p">:</span> <span class="s1">&#39;cat8000v&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;wan&#39;</span><span class="p">:</span> <span class="s1">&#39;wan_emulator&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;switch&#39;</span><span class="p">:</span> <span class="s1">&#39;unmanaged_switch&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;alpine&#39;</span><span class="p">:</span> <span class="s1">&#39;alpine&#39;</span>
+    <span class="p">}</span>
+<span class="n">DEVICETYPE</span> <span class="o">=</span> <span class="n">SimpleNamespace</span><span class="p">(</span><span class="o">**</span><span class="n">device_types</span><span class="p">)</span>
+<span class="n">WORKDIR</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">absolute</span><span class="p">()</span>
+
+<span class="n">urllib3</span><span class="o">.</span><span class="n">disable_warnings</span><span class="p">(</span><span class="n">urllib3</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">InsecureRequestWarning</span><span class="p">)</span>
+
+<span class="c1">#############################################################</span>
+
+<span class="k">def</span> <span class="nf">get_config</span><span class="p">(</span><span class="n">labname</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">hostname</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="n">config</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">WORKDIR</span><span class="si">}</span><span class="s2">/labs/</span><span class="si">{</span><span class="n">labname</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">hostname</span><span class="si">}</span><span class="s2">.txt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span> 
+        <span class="n">lines</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span> 
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span> 
+            <span class="n">config</span> <span class="o">+=</span> <span class="n">line</span>
+    <span class="k">return</span> <span class="n">config</span>
+
+
+<span class="k">def</span> <span class="nf">build_lab_mini</span><span class="p">(</span><span class="n">client</span><span class="p">:</span> <span class="n">ClientLibrary</span><span class="p">):</span>
+
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;... provisioning Lab 3&#39;</span><span class="p">)</span>
+    <span class="n">lab</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_lab</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;1 - </span><span class="si">{</span><span class="n">CUSTOMER</span><span class="si">}</span><span class="s2"> Mini Flex Migration&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Create nodes</span>
+    <span class="n">r1</span> <span class="o">=</span> <span class="n">lab</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;WAN_R1&quot;</span><span class="p">,</span> <span class="n">DEVICETYPE</span><span class="o">.</span><span class="n">cat8k</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">r2</span> <span class="o">=</span> <span class="n">lab</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;REMOTE_R2&quot;</span><span class="p">,</span> <span class="n">DEVICETYPE</span><span class="o">.</span><span class="n">cat8k</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="o">-</span><span class="mi">200</span><span class="p">)</span>
+    <span class="n">r3</span> <span class="o">=</span> <span class="n">lab</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;REMOTE_R3&quot;</span><span class="p">,</span> <span class="n">DEVICETYPE</span><span class="o">.</span><span class="n">cat8k</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+    <span class="n">ubuntu</span> <span class="o">=</span> <span class="n">lab</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;ubuntu&quot;</span><span class="p">,</span> <span class="n">DEVICETYPE</span><span class="o">.</span><span class="n">ubuntu</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">alpine2</span> <span class="o">=</span> <span class="n">lab</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;alpine2&quot;</span><span class="p">,</span> <span class="n">DEVICETYPE</span><span class="o">.</span><span class="n">alpine</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="o">-</span><span class="mi">200</span><span class="p">)</span>
+    <span class="n">alpine3</span> <span class="o">=</span> <span class="n">lab</span><span class="o">.</span><span class="n">create_node</span><span class="p">(</span><span class="s2">&quot;alpine3&quot;</span><span class="p">,</span> <span class="n">DEVICETYPE</span><span class="o">.</span><span class="n">alpine</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+
+    <span class="c1"># Configure devices</span>
+    <span class="n">r1</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">get_config</span><span class="p">(</span><span class="n">CFG_FOLDER</span><span class="p">,</span><span class="s1">&#39;R1&#39;</span><span class="p">)</span>
+    <span class="n">r2</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">get_config</span><span class="p">(</span><span class="n">CFG_FOLDER</span><span class="p">,</span><span class="s1">&#39;R2&#39;</span><span class="p">)</span>
+    <span class="n">r3</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">get_config</span><span class="p">(</span><span class="n">CFG_FOLDER</span><span class="p">,</span><span class="s1">&#39;R3&#39;</span><span class="p">)</span>
+    <span class="n">ubuntu</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">get_config</span><span class="p">(</span><span class="n">CFG_FOLDER</span><span class="p">,</span><span class="s1">&#39;ubuntu1&#39;</span><span class="p">)</span>
+    <span class="n">alpine2</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">get_config</span><span class="p">(</span><span class="n">CFG_FOLDER</span><span class="p">,</span> <span class="s1">&#39;alpine2&#39;</span><span class="p">)</span>
+    <span class="n">alpine3</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">get_config</span><span class="p">(</span><span class="n">CFG_FOLDER</span><span class="p">,</span> <span class="s1">&#39;alpine3&#39;</span><span class="p">)</span>
+
+    <span class="c1"># connect hosts</span>
+    <span class="n">lab</span><span class="o">.</span><span class="n">connect_two_nodes</span><span class="p">(</span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span><span class="p">)</span>
+    <span class="n">lab</span><span class="o">.</span><span class="n">connect_two_nodes</span><span class="p">(</span><span class="n">r1</span><span class="p">,</span> <span class="n">ubuntu</span><span class="p">)</span>
+    <span class="n">lab</span><span class="o">.</span><span class="n">connect_two_nodes</span><span class="p">(</span><span class="n">r2</span><span class="p">,</span> <span class="n">alpine2</span><span class="p">)</span>
+    <span class="n">lab</span><span class="o">.</span><span class="n">connect_two_nodes</span><span class="p">(</span><span class="n">r1</span><span class="p">,</span><span class="n">r3</span><span class="p">)</span>
+    <span class="n">lab</span><span class="o">.</span><span class="n">connect_two_nodes</span><span class="p">(</span><span class="n">r3</span><span class="p">,</span> <span class="n">alpine3</span><span class="p">)</span>
+
+
+    <span class="c1"># Starting a Lab can take some time</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;... Provisioning of Lab finished&#39;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;... Starting Lab ...&#39;</span><span class="p">)</span>
+    <span class="c1"># lab.start(wait=True)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Finished Setting Up Lab&#39;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span> 
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">client</span> <span class="o">=</span> <span class="n">ClientLibrary</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">CML_END_POINT</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="n">CML_USER</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">CML_PW</span><span class="p">,</span> <span class="n">ssl_verify</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">raise_for_auth_failure</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">allow_http</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">client</span><span class="o">.</span><span class="n">is_system_ready</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Connection to CML Successful, start provisioning...&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Cleanup old labs</span>
+        <span class="k">for</span> <span class="n">lab</span> <span class="ow">in</span> <span class="n">client</span><span class="o">.</span><span class="n">all_labs</span><span class="p">():</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Stoping, wiping and deleting lab </span><span class="si">{</span><span class="n">lab</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">lab</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+            <span class="n">lab</span><span class="o">.</span><span class="n">wipe</span><span class="p">()</span>
+            <span class="n">lab</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+
+        <span class="n">build_lab_mini</span><span class="p">(</span><span class="n">client</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+
+<h2 id="special-note-on-cml-endpoint">Special Note on CML Endpoint</h2>
+<p>In earlier versions, the provisioning worked via DNS name without using Anyconnect VPN to CLOUD. However depending on the DCLOUD datacenter (EMEA/London vs US), that might or might not work. The IP Based approach using AnyC connectivity works in all cases and is therefore preferred.</p>
+<h2 id="special-note-on-alpine-clients">Special note on Alpine clients</h2>
+<p>Alpine images are very ligthweight, therefore require less memory and boot up fast. However, the ping utility which comes built-in does not include options to set the DF bit. Therefore the ubuntu image is used the initiate icmp requests. Configuration of the network interface can be done as follows:</p>
+<div class="highlight"><pre><span></span><code>hostname client_rep1
+<span class="nv">USERNAME</span><span class="o">=</span>cisco
+<span class="nv">PASSWORD</span><span class="o">=</span>cisco
+
+sudo ifconfig eth0 up <span class="m">192</span>.168.100.2 netmask <span class="m">255</span>.255.255.0
+sudo route add -net <span class="m">0</span>.0.0.0/0 gw <span class="m">192</span>.168.100.1 dev eth0
+
+<span class="c1"># Validation using regular known Linux commands</span>
+<span class="c1"># See for a good reference: https://www.thomas-krenn.com/de/wiki/Linux_ip_Kommando</span>
+ifconfig
+ip addr show
+
+route -n
+ip route show
+</code></pre></div>
+
+<h2 id="speical-note-on-ubuntu-clients">Speical note on Ubuntu clients</h2>
+<p>Ubuntu since 18.04 uses Netplan to configure networking configuration. It uses a YAML based configuration file under <code>/etc/netplan/50-cloud-init.yaml</code>. As CML does not have internet connectivity by default the <code>net-tools</code> package cant be installed without an external connector (but that is a topic for a separate blog post later-on.), so configuring the IP interface via ifconfig is not an option. But Ubuntu supports the usage of Cloud-Init, which then outputs/renders the configuration into a netplan configuration which in turn renders the config for supported backends (systemd-networking and NetworkManager). For more on this see <img alt="here" src="https://cloudinit.readthedocs.io/en/latest/topics/network-config-format-v2.html#network-config-v2"> So in short:
+    - Cloud-Init &gt; Netplan &gt; NetworkManager</p>
+<p>The other option is to use Cloud-Init to write to some files which are then used by Netplan. This is how how in this example the configuration for the ubuntu node is created:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#cloud-config</span><span class="w"></span>
+<span class="w">    </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu1</span><span class="w"></span>
+<span class="w">    </span><span class="nt">manage_etc_hosts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span><span class="w"></span>
+<span class="w">    </span><span class="nt">system_info</span><span class="p">:</span><span class="w"></span>
+<span class="w">       </span><span class="nt">default_user</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cisco</span><span class="w"></span>
+<span class="w">    </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cisco</span><span class="w"></span>
+<span class="w">    </span><span class="nt">chpasswd</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> expire</span><span class="p">:</span><span class="w"> </span><span class="nv">False</span><span class="w"> </span><span class="p p-Indicator">}</span><span class="w"></span>
+<span class="w">    </span><span class="nt">ssh_pwauth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span><span class="w"></span>
+<span class="w">    </span><span class="nt">users</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">gecos</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Default User with Full SUDO rights</span><span class="w"></span>
+<span class="w">      </span><span class="nt">lock-passwd</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
+<span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cisco</span><span class="w"></span>
+<span class="w">      </span><span class="nt">plain-text-passwd</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cisco</span><span class="w"></span>
+<span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/bin/bash</span><span class="w"></span>
+<span class="w">      </span><span class="nt">sudo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ALL=(ALL) ALL</span><span class="w"> </span>
+<span class="w">    </span><span class="nt">write_files</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/netplan/50-cloud-init.yaml</span><span class="w"></span>
+<span class="w">      </span><span class="nt">content</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|-</span><span class="w"></span>
+<span class="w">        </span><span class="no"># Ubuntu 20.04 Configuration</span><span class="w"></span>
+<span class="w">        </span><span class="no"># CML uses ens2 by default</span><span class="w"></span>
+<span class="w">        </span><span class="no">network:</span><span class="w"></span>
+<span class="w">            </span><span class="no">ethernets:</span><span class="w"></span>
+<span class="w">                </span><span class="no">ens2:</span><span class="w"></span>
+<span class="w">                    </span><span class="no">addresses: [192.168.1.2/24]</span><span class="w"></span>
+<span class="w">                    </span><span class="no">gateway4: 192.168.1.1</span><span class="w"></span>
+<span class="w">                    </span><span class="no">dhcp4: no</span><span class="w"></span>
+<span class="w">                    </span><span class="no">nameservers:</span><span class="w"></span>
+<span class="w">                        </span><span class="no">addresses: [8.8.8.8]</span><span class="w"></span>
+<span class="w">                    </span><span class="no">optional: true</span><span class="w"></span>
+<span class="w">            </span><span class="no">version: 2</span><span class="w"></span>
+<span class="w">    </span><span class="nt">runcmd</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sudo netplan apply</span><span class="w"></span>
+</code></pre></div>
+
+<h2 id="special-note-on-catalyst-8000-routers">Special note on Catalyst 8000 Routers</h2>
+<p>Unfortunately they do not come with a license enabled. Therefore IPSEc configuratin does not work out of the box.
+In order to use crypto and many settings, the license has to be adjusted and then the device needs to be rebooted before applying the IPSec configuration.</p>
+<div class="highlight"><pre><span></span><code>conf t
+license boot level network-advantage addon dna-advantage
+write
+<span class="nb">exit</span>
+reload
+</code></pre></div>
+
+<h1 id="ipsec-configuration">IPSec Configuration</h1>
+<p>This section uses an IKEv1 Version with non-optimal IPSec Mode of Tunnel. Which basically means the packet is wrapped too many times within another packet without any benefit. This leads to a decreased MTU size and possibilty fragmentation. In the worst case the fragmentation happens after exiting the tunnel interface leading to 2 instead of a single IPSec package.</p>
+<h2 id="hq-office">HQ Office</h2>
+<p>The following configuration snippet is used at the Head Quaters and loaded as initial configuratoin via Script.</p>
+<div class="highlight"><pre><span></span><code>hostname HQ-R1
+no ip domain lookup
+
+license boot level network-advantage addon dna-advantage
+
+vrf definition SWISSCOM
+ rd <span class="m">1</span>:1
+ address-family ipv4
+
+int gig1
+ description *** IPSec Underlay ***
+ vrf forwarding SWISSCOM
+ ip address <span class="m">172</span>.16.1.1 <span class="m">255</span>.255.255.252
+ no shutdown
+
+int gig2
+ description *** LAN Segment ***
+ ip address <span class="m">192</span>.168.1.1 <span class="m">255</span>.255.255.0
+ no shut
+
+router eigrp <span class="m">1</span>
+ network <span class="m">10</span>.10.10.0 <span class="m">0</span>.0.0.3
+ network <span class="m">192</span>.168.1.0 <span class="m">0</span>.0.0.255
+ no auto-summary
+ passive-interface default
+
+ip tcp path-mtu-discovery
+</code></pre></div>
+
+<p>Then the following config is added after reloading the router.
+Remember: These are not optimal settings as will be explained later on:
+ - Tunnel Mode
+ - IP MTU Value Missing
+ - IP TCP Adjust MSS Value
+ - Shaping Missing
+ - Various Tunnel cmds missing</p>
+<div class="highlight"><pre><span></span><code>crypto keyring KR-REP1 vrf SWISSCOM 
+  pre-shared-key address <span class="m">172</span>.16.1.2 key supersecret2
+
+crypto isakmp policy <span class="m">5</span>
+ encryption aes <span class="m">256</span>
+ <span class="nb">hash</span> sha512
+ authentication pre-share
+ group <span class="m">20</span>
+ lifetime <span class="m">14400</span>
+
+crypto isakmp keepalive <span class="m">10</span>
+crypto isakmp aggressive-mode disable
+
+crypto isakmp profile ISA-PROF
+   vrf SWISSCOM
+   keyring KR-REP1
+   match identity address <span class="m">172</span>.16.1.2 <span class="m">255</span>.255.255.255 SWISSCOM
+   keepalive <span class="m">10</span> retry <span class="m">5</span>
+
+crypto ipsec transform-set TRANSF-SET-01 esp-aes <span class="m">256</span> esp-sha512-hmac 
+ mode tunnel
+
+crypto ipsec profile IPSEC-PROFILE
+ <span class="nb">set</span> transform-set TRANSF-SET-01 
+ <span class="nb">set</span> pfs group20
+ <span class="nb">set</span> isakmp-profile ISA-PROF
+
+interface Tunnel1
+ description *** Swisscom 10mbps ***
+ bandwidth <span class="m">10000</span>
+ ip address <span class="m">10</span>.10.10.1 <span class="m">255</span>.255.255.252
+ ip hello-interval eigrp <span class="m">1</span> <span class="m">3</span>
+ ip hold-time eigrp <span class="m">1</span> <span class="m">9</span>
+ ip tcp adjust-mss <span class="m">1300</span>
+ load-interval <span class="m">60</span>
+ keepalive <span class="m">4</span> <span class="m">3</span>
+ tunnel <span class="nb">source</span> <span class="m">172</span>.16.1.1
+ tunnel mode ipsec ipv4
+ tunnel destination <span class="m">172</span>.16.1.2
+ tunnel vrf SWISSCOM
+ tunnel protection ipsec profile IPSEC-PROFILE
+
+router eigrp <span class="m">1</span>
+ no passive-interface Tunnel1
+</code></pre></div>
+
+<h2 id="branch-office">Branch Office</h2>
+<p>The branch office uses a very similar configuration.</p>
+<p>Configuration applied via API:</p>
+<div class="highlight"><pre><span></span><code>hostname Branch-R2
+no ip domain lookup
+
+license boot level network-advantage addon dna-advantage
+
+vrf definition SWISSCOM
+ rd <span class="m">1</span>:1
+ address-family ipv4
+
+int gig1
+ description *** IPSec Underlay ***
+ vrf forwarding SWISSCOM
+ ip address <span class="m">172</span>.16.1.2 <span class="m">255</span>.255.255.252
+ no shutdown
+
+int gig2
+ description *** LAN Segment ***
+ ip address <span class="m">192</span>.168.100.1 <span class="m">255</span>.255.255.0
+ no shut
+
+
+router eigrp <span class="m">1</span>
+ network <span class="m">10</span>.10.10.0 <span class="m">0</span>.0.0.3
+ network <span class="m">192</span>.168.100.0 <span class="m">0</span>.0.0.255
+ no auto-summary
+ passive-interface default
+ no passive-interface Tunnel1
+
+ip tcp path-mtu-discovery
+</code></pre></div>
+
+<p>Configuraton added after reboot:</p>
+<div class="highlight"><pre><span></span><code>crypto keyring KR-HQ vrf SWISSCOM 
+  pre-shared-key address <span class="m">172</span>.16.1.1 key supersecret2
+
+crypto isakmp policy <span class="m">5</span>
+ encryption aes <span class="m">256</span>
+ <span class="nb">hash</span> sha512
+ authentication pre-share
+ group <span class="m">20</span>
+ lifetime <span class="m">14400</span>
+
+crypto isakmp keepalive <span class="m">10</span>
+crypto isakmp aggressive-mode disable
+
+crypto isakmp profile ISA-PROF
+   vrf SWISSCOM
+   keyring KR-HQ
+   match identity address <span class="m">172</span>.16.1.1 <span class="m">255</span>.255.255.255 SWISSCOM
+   keepalive <span class="m">10</span> retry <span class="m">5</span>
+
+crypto ipsec transform-set TRANSF-SET-01 esp-aes <span class="m">256</span> esp-sha512-hmac 
+ mode tunnel
+
+crypto ipsec profile IPSEC-PROFILE
+ <span class="nb">set</span> transform-set TRANSF-SET-01 
+ <span class="nb">set</span> pfs group20
+ <span class="nb">set</span> isakmp-profile ISA-PROF
+
+interface Tunnel1
+ description *** To HQ 10mbps ***
+ bandwidth <span class="m">10000</span>
+ ip address <span class="m">10</span>.10.10.2 <span class="m">255</span>.255.255.252
+ ip hello-interval eigrp <span class="m">1</span> <span class="m">3</span>
+ ip hold-time eigrp <span class="m">1</span> <span class="m">9</span>
+ ip tcp adjust-mss <span class="m">1300</span>
+ load-interval <span class="m">60</span>
+ keepalive <span class="m">4</span> <span class="m">3</span>
+ tunnel <span class="nb">source</span> <span class="m">172</span>.16.1.2
+ tunnel mode ipsec ipv4
+ tunnel destination <span class="m">172</span>.16.1.1
+ tunnel vrf COLT
+ tunnel protection ipsec profile IPSEC-PROFILE-HK
+
+router eigrp <span class="m">1</span>
+ no passive-interface Tunnel1
+</code></pre></div>
+
+<h2 id="testing-with-df-bit">Testing with DF-Bit</h2>
+<p>Testing with the Don't Fragment bit set helps in determining the maximum packet size. On Windows this can be done as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#-f = Dont Fragment</span>
+<span class="c1">#-l = Size of payload, remember 8byte ICMP and 20byte IP Header</span>
+<span class="c1"># 1472 should work in a regular 1500byte mtu network whereas 1473 fails with DF bit.</span>
+ping -f -l <span class="m">1472</span> <span class="m">8</span>.8.8.8
+</code></pre></div>
+
+<p>As CML does not have a windows client, the following can be done. Remember an Ubuntu image is needed, this option is not supported on Alpine.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#-M = PMTU Discovery option</span>
+<span class="c1">#   do = Prohibit Fragmenation (also local!)</span>
+<span class="c1">#   want = to PMTU, fragment locally if needed</span>
+<span class="c1">#   dont = do NOT set the DF bit</span>
+<span class="c1">#-s = Packet size</span>
+<span class="c1"># +8 byte icmp + 20byte ip header = 1422 </span>
+<span class="c1"># +34 Byte ESP Trailer + 20 Byte IP-in-IP header (IPSec) + 24 byte ESP IV and header = </span>
+<span class="c1"># + 0 byte Padding</span>
+<span class="c1"># 1394 works with the above defined crypto algorithms AES-256 SHA-512. </span>
+<span class="c1"># Note: AES-GCM ciphers would require 16byte less space vs ESP-SHA-512 as ESP ICV goes from 32bytes to 16 bytes.</span>
+ping -M <span class="k">do</span> -s <span class="m">1394</span> <span class="m">192</span>.168.1.1
+</code></pre></div>
+
+<h2 id="testing-with-iperf">Testing with Iperf</h2>
+<p>Iperf in v.2 comes pre-installed on the alpine images. This is ideal for some testing with multiple TCP streams as well as a variaty of DSCP values in order to test QoS queue assignement.</p>
+<p>The server side is initialized with the <code>-s</code> option and configured to respond in a 1sec interval as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Server (-s) and interval 1sec</span>
+iperf -s -i1
+</code></pre></div>
+
+<p>On the client side the interval <code>-i</code>, the amount of repetitions <code>-t</code> and the number of parallel streams <code>-P</code> are configured.
+For slow speed WAN links, the Bandwidth-delay-product (BDP) is of uttermost importance and can limit the throughput of a single tcp connection. To test the behavior the tcp Window Size can be configured <code>-w</code>. If this is not done, then regular window scaling as per RFC1323 will be used.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># client (-c) and 10 times repeat (-t10) and 10 parallel streams (-P)</span>
+iperf -c <span class="m">192</span>.168.100.2 -i1 -t10 -P <span class="m">10</span> -w 64KB
+</code></pre></div>
+
+<p>Depending on the underlaying os the following warning might be displayed when using 2M window isze <code>-w 2M</code>:
+    - <strong><em> TCP window size: 410 KByte (WARNING: requested 2.00 MByte) </em></strong></p>
+<p>The underlying OS in this case prohibids the usage of higher window sizes. For linux boxes this can be adjusted as follows:</p>
+<div class="highlight"><pre><span></span><code>sudo <span class="nb">echo</span> <span class="s1">&#39;net.core.wmem_max=4194304&#39;</span> &gt;&gt; /etc/sysctl.conf
+sudo <span class="nb">echo</span> <span class="s1">&#39;net.core.rmem_max=12582912&#39;</span> &gt;&gt; /etc/sysctl.conf
+sudo <span class="nb">echo</span> <span class="s1">&#39;net.ipv4.tcp_rmem = 4096 87380 4194304&#39;</span> &gt;&gt; /etc/sysctl.conf
+sudo <span class="nb">echo</span> <span class="s1">&#39;net.ipv4.tcp_wmem = 4096 87380 4194304&#39;</span> &gt;&gt; /etc/sysctl.conf
+sudo sysctl -p
+</code></pre></div>
+
+<p>A WAN link where limitations due to the BDP can occur can be simulated using the <code>wan_simulator</code> in CML. Jitter and latency as well as bandwidth can be set there.
+A single TCP stream can achieve roughtly 3mbps throughput given a window size of 64KByte and a 180ms delay. However TCP algorithms dynamically adjust based on retransmissions and have slow start implemented. The following shows lab-measurements are around:</p>
+<table>
+<thead>
+<tr>
+<th>Window Size</th>
+<th>Throughput</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>64KB</td>
+<td>1.5 mbps</td>
+</tr>
+<tr>
+<td>128KB</td>
+<td>2   mbps</td>
+</tr>
+<tr>
+<td>256KB</td>
+<td>3.2 mbps</td>
+</tr>
+<tr>
+<td>2M</td>
+<td>8.5 mbps</td>
+</tr>
+<tr>
+<td>4M</td>
+<td>10  mbps</td>
+</tr>
+</tbody>
+</table>
+<p>The values have been measured in a lab and do not match 1:1 the math behind BDP. See the Calculator link below for theoretical maximums</p>
+<h2 id="testing-with-cml-packet-capture">Testing with CML Packet Capture</h2>
+<p>The CML capture reveals that that when sending 1394 bytes of payload, the packet size indeed goes up to 1514 (L2 MTU) / 1500 (L3 MTU).</p>
+<p><img src="../../images/cisco/cml/cml_capture_1.png" alt="Capture" width="400"/></p>
+<h2 id="ipsec-calculation">IPSec Calculation</h2>
+<p>The following IPSec caluclation shows, that the packet is 8 Byte to big and therefore gets fragmented at the worst moment.</p>
+<p>Remember:
+- ICMP Header is 8 byte
+- TCP Header is 20 byte
+- IP Header is 20 byte
+- IPSec Padding increases packet size by numbers devidable by 8 or 16 depending on algorithm. So an increase in +1 byte payload can mean up to 8/16 byte packet size increase.</p>
+<p>So for example, an ICMP packet in Tunnel mode (tunnel mode ipsec ipv4 using AES-256 with SHA-512) can be as big as:
+- 1394 Data + 8 byte ICMP + 20 byte IP = 1422 byte
+    - Adding IPSec: 34 Byte ESP Trailer + 24 byte ESP IV and header + 20 byte IPSec IP Header= 1500byte
+    - (Without NAT-T and GRE)</p>
+<p>However, switching to Transport mode and using GRE still only allows for 1390 bytes of Data (ICMP Payload) because of the GRE Header.</p>
+<p>These calculation where made using ESP-AES-256+SHA-512. TCP MSS and IP MTU therefore should be aligned with Tunnel/Transport mode and best practice to set the following values accounts for both transport and tunnel mode and all known ciphers:</p>
+<div class="highlight"><pre><span></span><code>interface Tunnel1
+ ip mtu <span class="m">1400</span>
+ ip tcp adjust-mss <span class="m">1360</span>
+</code></pre></div>
+
+<p>Note: Non-TCP Traffic can still get fragmented, but this should happen before the "expensive" ipsec fragmentation thanks to adjustment of interface mtu.</p>
+<p><img src="../../images/cisco/cml/cml_ipsec_calculation_1.png" alt="Topology" width="400"/></p>
+<h1 id="references">References</h1>
+<ul>
+<li>See <a href="https://cloudinit.readthedocs.io/en/latest/topics/network-config-format-v2.html#network-config-v2">Network Config v2 Format</a></li>
+<li>See <a href="https://cloudinit.readthedocs.io/en/latest/topics/examples.html">Cloud Init Default User</a></li>
+<li>See <a href="https://cloudinit.readthedocs.io/en/latest/topics/debugging.html">Cloud Init Debugging</a></li>
+<li>See <a href="https://linuxhint.com/install_netplan_ubuntu/">Ubuntu Netplan</a></li>
+<li>See <a href="https://www.thomas-krenn.com/de/wiki/Linux_ip_Kommando">Linux IP Cmds</a></li>
+<li>See <a href="https://github.com/CiscoDevNet/cml-community/blob/master/lab-topologies/sandbox-multiplatform-network/multi-platform-network.yaml">CML Example YAML</a></li>
+<li>See <a href="https://www.cisco.com/c/en/us/support/docs/ip/generic-routing-encapsulation-gre/25885-pmtud-ipfrag.html">GRE MTU Considerations</a></li>
+<li>See <a href="http://ce.sc.edu/cyberinfra/workshops/Material/perfSONAR/Lab%206.pdf">Linux Modify TCP Buffers</a></li>
+<li>See <a href="https://www.switch.ch/network/tools/tcp_throughput/">Online BDP Calculater</a></li>
+<li>See <a href="https://iperf.fr/iperf-doc.php">Iperf options by version</a></li>
+<li>See <a href="https://learningnetwork.cisco.com/s/question/0D53i00000KswwkCAB/ipsec-over-gre-vs-ipsec-vti">GRE vs VTI Up state</a></li>
+<li>See <a href="https://learning.oreilly.com/library/view/deploying-cisco-wide/9781587059285">Book: Deploying WAAS (BDP, window scaling etc.)</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/cisco.html">Cisco</a>
+      <a href="https://maconrad.github.io/tag/cml.html">CML</a>
+      <a href="https://maconrad.github.io/tag/cml-api.html">CML API</a>
+      <a href="https://maconrad.github.io/tag/iperf.html">IPerf</a>
+      <a href="https://maconrad.github.io/tag/cloud-init.html">Cloud-Init</a>
+      <a href="https://maconrad.github.io/tag/ipsec.html">IPSec</a>
+      <a href="https://maconrad.github.io/tag/fvrf.html">FVRF</a>
+      <a href="https://maconrad.github.io/tag/bdp.html">BDP</a>
+      <a href="https://maconrad.github.io/tag/ikev1.html">IKEv1</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

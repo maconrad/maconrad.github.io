@@ -1,0 +1,1370 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Extensive Git Tutorial from Head to Toe." />
+<meta name="keywords" content="Git, 4-star">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Git Beginner Tutorial"/>
+  <meta property="og:description" content="Extensive Git Tutorial from Head to Toe."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/git-beginner-tutorial.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-12-05 11:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="cicd"/>
+  <meta property="article:tag" content="Git"/>
+  <meta property="article:tag" content="4-star"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Git Beginner Tutorial</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="git-beginner-tutorial">Git Beginner Tutorial</h1>
+    <p>
+      Posted on So 05 Dezember 2021 in <a href="https://maconrad.github.io/category/cicd.html">cicd</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#git">Git</a><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#install-and-config">Install and config</a></li>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#commit-details">Commit Details</a></li>
+<li><a href="#branching">Branching</a></li>
+<li><a href="#merging">Merging</a></li>
+<li><a href="#diff">Diff</a></li>
+<li><a href="#stashing">Stashing</a></li>
+<li><a href="#undoing">Undoing</a></li>
+</ul>
+</li>
+<li><a href="#github">GitHub</a><ul>
+<li><a href="#ssh-config">SSH Config</a></li>
+<li><a href="#general">General</a></li>
+<li><a href="#this-and-that">This and that</a></li>
+</ul>
+</li>
+<li><a href="#collaboration-workflows">Collaboration Workflows</a><ul>
+<li><a href="#centralized">Centralized</a></li>
+<li><a href="#feature-branch">Feature Branch</a></li>
+<li><a href="#forking">Forking</a></li>
+<li><a href="#refs">Refs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>Important cmds<ul>
+<li>git <code>init / commit / status / add</code></li>
+</ul>
+</li>
+<li>Important files<ul>
+<li><code>.git</code> folder<ul>
+<li><code>.git/HEAD</code> file just points to whatever is active (e.g. ref: refs/heads/master)</li>
+<li><code>.git/refs/heads/develop</code> just a pointer to a particular commitid</li>
+</ul>
+</li>
+<li><code>.gitignore</code> file (.DS_Store, Secrets, API Keys, credentials, log files, dependencies &amp; pkgs)</li>
+</ul>
+</li>
+<li>Reflog Notation<ul>
+<li><code>HEAD~</code> = Parent of Head = ??<code>HEAD@{1}</code>??</li>
+</ul>
+</li>
+</ul>
+<h1 id="git">Git</h1>
+<h2 id="intro">Intro</h2>
+<ul>
+<li>VCS (Version Control System)<ul>
+<li>Software that tracks and maanges changes to files over time</li>
+<li>Compare / Undo / Share / Track changes / time-travel / Revert / combine changes / etc.</li>
+<li>Git, Subversion, CVS, Mercurial</li>
+</ul>
+</li>
+<li>Git vs. Github<ul>
+<li>Git: VCS that runs locally (no account etc.), git repo local</li>
+<li>Github: Account, internet, git repo in the cloud</li>
+</ul>
+</li>
+<li>Repo<ul>
+<li>= Workspace which tracks and manages files within a folder</li>
+<li>Git tracks files in folders and subfolders </li>
+</ul>
+</li>
+<li>Commit<ul>
+<li>Snapshot / Checkpoint in time</li>
+<li>Grouping of saved changes (changes to file1, file2 ... filen)</li>
+<li>Intermediate step (add to staging area) before commiting to repo (.git folder updated)</li>
+<li>Atomic: Keep each commit focused on a single thing (supports undo/rollback, easier to review)</li>
+<li>Present tesne (imperative) recommended (not past tense)</li>
+</ul>
+</li>
+</ul>
+<p><img src="../../images/git/1_GitOverview.png" alt="Git Overview" width="500"/>
+<img src="../../images/git/2_before_git.png" alt="Before Git" width="500"/>
+<img src="../../images/git/3_checkpoints.png" alt="Checkpoints" width="500"/>
+<img src="../../images/git/4_revert.png" alt="Revert and Branch off" width="500"/>
+<img src="../../images/git/5_combine.png" alt="Combine work" width="500"/>
+<img src="../../images/git/6_differentRepos.png" alt="Different Repos" width="500"/>
+<img src="../../images/git/7_save_vs_commit.png" alt="Save vs Commit" width="500"/>
+<img src="../../images/git/8_staging_area.png" alt="Staging Area" width="500"/></p>
+<h2 id="install-and-config">Install and config</h2>
+<ul>
+<li>Install Git-SCM<ul>
+<li>Edit Default Editor to VSCode</li>
+<li>Override default branch name</li>
+<li>Checkout windows style, commit linux-style</li>
+</ul>
+</li>
+<li>Git GUI<ul>
+<li>GitKraken &amp; GitGraph (VSCode Plugin)</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git --version</td>
+<td>Git version</td>
+</tr>
+<tr>
+<td>git config --global user.name "Mario Conrad"</td>
+<td>Set username</td>
+</tr>
+<tr>
+<td>git config --global user.email "xy@gmail.com"</td>
+<td>Set username</td>
+</tr>
+<tr>
+<td>git config --global credential.helper "osxkeychain"</td>
+<td>Set osxkeychain as credential tool</td>
+</tr>
+<tr>
+<td>git config user.name</td>
+<td>Get configured valued</td>
+</tr>
+<tr>
+<td>git config -l</td>
+<td>List all cfg params</td>
+</tr>
+<tr>
+<td>git config --global core.editor "code --wait"</td>
+<td>VS Code as commit editor*</td>
+</tr>
+<tr>
+<td>git config --global init.defaultBranch main</td>
+<td>Align with GitHub (main instead of master)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>See GitBook Appendix A3.1 Setup and Config </li>
+</ul>
+<h2 id="basics">Basics</h2>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git init .</td>
+<td>Initialize local repository (creates .git folder)</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>status of repo</td>
+</tr>
+<tr>
+<td>git add .</td>
+<td>Add all changes to staging area</td>
+</tr>
+<tr>
+<td>git add file1 file2</td>
+<td>Add file1 and file2 to staging area</td>
+</tr>
+<tr>
+<td>git commit -m 'xy'</td>
+<td>Snapshot / Checkpoint / Commit from staging area to repo</td>
+</tr>
+<tr>
+<td>git commit -am 'xy'</td>
+<td>Add &amp; commit at same time</td>
+</tr>
+<tr>
+<td>git log --oneline</td>
+<td>Git log of commits etc.</td>
+</tr>
+<tr>
+<td>git log --oneline --graph</td>
+<td>Git log of commits etc.</td>
+</tr>
+<tr>
+<td>git log HEAD ^origin</td>
+<td>Start from HEAD backwards and show all commtis, except commits that can be reached by origin</td>
+</tr>
+<tr>
+<td>git log origin..HEAD</td>
+<td>special notation for above, show only commits where origin pointer points up to Head excluding origin</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>status of repo</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>git commit -m 'msg xy'</td>
+<td>regular commit</td>
+</tr>
+<tr>
+<td>git add forgotten_file</td>
+<td>stage</td>
+</tr>
+<tr>
+<td>git commit --amend</td>
+<td>"redo/improve" previous commit (only works on last commit)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>See <a href="https://git-scm.com/docs/git-log">Git Log Documentation</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">#.gitignore</span>
+.DS_Store
+m.txt
+.vscode/
+*.log
+</code></pre></div>
+
+<h2 id="commit-details">Commit Details</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># git log --oneline</span>
+<span class="c1"># before git push to remote </span>
+a6225db <span class="o">(</span>HEAD -&gt; main<span class="o">)</span> 2nd commit
+936281f <span class="o">(</span>origin/main, origin/HEAD<span class="o">)</span> 1st commit
+</code></pre></div>
+
+<h2 id="branching">Branching</h2>
+<ul>
+<li>General<ul>
+<li>Alternative timelines</li>
+<li>Separate contexts (try new things, work in parallel)</li>
+</ul>
+</li>
+<li>HEAD &amp; Refs<ul>
+<li>HEAD: Pointer that refers to <strong>current location</strong>. <ul>
+<li>HEAD is a reference to a branch pointer = Points to a particular branch</li>
+</ul>
+</li>
+<li>Branch = Reference to some commit xy</li>
+<li>Analogy: Many bookmarks in a book, but only one of them can be active (head pointer) at a time</li>
+</ul>
+</li>
+<li><code>git branch</code>, <code>git switch</code>, <code>git checkout</code></li>
+<li>Master &amp; Main<ul>
+<li>default branch is master</li>
+<li>Github switched from master to main in 2020</li>
+</ul>
+</li>
+<li>Switching with uncommited work<ul>
+<li>Requires stashing</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git branch</td>
+<td>Show list of branches</td>
+</tr>
+<tr>
+<td>git branch &lt;branch-name&gt;</td>
+<td>Create branch but do not switch (based upon current HEAD)</td>
+</tr>
+<tr>
+<td>git switch &lt;branch-name&gt;</td>
+<td>Swtich to branch (older cmd checkout)</td>
+</tr>
+<tr>
+<td>git switch -c &lt;branch-name&gt;</td>
+<td>Create and swtich to branch (older cmd checkout -b)</td>
+</tr>
+<tr>
+<td>git checkout &lt;branch-name&gt;</td>
+<td>Swtich to branch</td>
+</tr>
+<tr>
+<td>git checkout -b &lt;branch-name&gt;</td>
+<td>Creates a branch and switche to it</td>
+</tr>
+<tr>
+<td>git branch -d &lt;branch-name&gt;</td>
+<td>Delete branch xy if fully merged (-D otherwise)</td>
+</tr>
+<tr>
+<td>git branch -m &lt;branch-name&gt;</td>
+<td>Move/rename branch xy (need to be in that branch)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>git stash</td>
+<td>Stash away WIP</td>
+</tr>
+<tr>
+<td>git stash pop</td>
+<td>Unstash away WIP</td>
+</tr>
+<tr>
+<td>git stash list</td>
+<td>List all stashes</td>
+</tr>
+<tr>
+<td>git stash show</td>
+<td>Show stash diff</td>
+</tr>
+<tr>
+<td>git stash show stash@{0}</td>
+<td>Show particular stash (most recent) (if multiple)</td>
+</tr>
+<tr>
+<td>git stash show stash@{1}</td>
+<td>Show particular stash (2nd most recent) (if multiple)</td>
+</tr>
+</tbody>
+</table>
+<p>*WIP = Work in Progress</p>
+<p><img src="../../images/git/9_commit_hash_parent.png" alt="Commit hashes" width="500"/>
+<img src="../../images/git/10_branching.png" alt="Branching" width="500"/>
+<img src="../../images/git/11_merging.png" alt="Merging" width="500"/>
+<img src="../../images/git/12_featureBranching.png" alt="Feature Branching" width="500"/>
+<img src="../../images/git/13_head_pointer.png" alt="HEAD Pointer" width="500"/></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Common Base for develop, feat/2 (and also feat/1) is 662eb4d</span>
+<span class="c1"># feat/1 pointer remains at 662eb4d</span>
+<span class="c1"># After 662eb4d, 1 commit on develop branch and 2 commits ond feat2</span>
+<span class="c1">#  Branches have diverged (no linear commit history)</span>
+*   4c6780e <span class="o">(</span>HEAD -&gt; develop<span class="o">)</span> Merge-commit feature2
+<span class="p">|</span><span class="se">\</span>
+<span class="p">|</span> * e8b9479 <span class="o">(</span>feat/2<span class="o">)</span> feat2 - 2nd commit
+<span class="p">|</span> * d2f2d79 feat2 - 1st commit
+* <span class="p">|</span> 2601f11 develop - 3rd commit
+<span class="p">|</span>/
+* 662eb4d <span class="o">(</span>feat/1<span class="o">)</span> feat1 - 2nd commit
+* 0ea80c0 feat1 - 1st commit
+* 7bc9c6b dev - 2st commit
+* 0ed9e4a dev - 1st commit
+* 4fa082c <span class="o">(</span>master<span class="o">)</span> master - 2nd commit
+* <span class="m">1765596</span> iniital commit
+</code></pre></div>
+
+<h2 id="merging">Merging</h2>
+<ul>
+<li>General<ul>
+<li>Remember: branches defined by a branch pointer</li>
+<li>Always merge to where HEAD is = to which branch we are on currently</li>
+<li>Merge can causes a <strong>merge-commit</strong>, which means <strong>commit has 2 parents</strong> (FF does NOT show this)</li>
+</ul>
+</li>
+<li>Merging Strategies<ul>
+<li>Fast Forward (FF) Merge (no additional work, could just move trunk fwd)</li>
+</ul>
+</li>
+<li>Merge Conflicts<ul>
+<li>Multi step process (manual resolve, commit)</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git branch -v</td>
+<td>Brnach names and last commit + commit msg</td>
+</tr>
+<tr>
+<td>git switch master</td>
+<td>Switch to receiving branch</td>
+</tr>
+<tr>
+<td>git merge bugfix</td>
+<td>Incorporate changes</td>
+</tr>
+<tr>
+<td>git branch -d bugfix</td>
+<td>Delete a merged branch</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../../images/git/15_ff_merge.png" alt="Fast Fwd merge" width="500"/>
+<img src="../../images/git/16_merge_commit.png" alt="Merge commit" width="500"/>
+<img src="../../images/git/17_conflict.png" alt="Conflict commit" width="180"/></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Merge commit shows the two parents!</span>
+commit 2a4d4567ccd2dd7502590add59b758fd0f740bc5 <span class="o">(</span>HEAD -&gt; master<span class="o">)</span>
+Merge: ccd0f35 f6356f7
+Author: Mario Conrad &lt;mario.conrad@gmail.com&gt;
+Date:   Fri Dec <span class="m">24</span> <span class="m">09</span>:28:38 <span class="m">2021</span> +0100
+
+    Merge commit message
+</code></pre></div>
+
+<h2 id="diff">Diff</h2>
+<ul>
+<li>General<ul>
+<li>Diffing Working Dir &lt;&gt; Staging Area</li>
+<li>Diffing Branches</li>
+<li>Diffing to common Ancestor Branch</li>
+<li>Diffing Commits</li>
+<li>Diffing specific files</li>
+<li><code>git diff --staged</code></li>
+</ul>
+</li>
+<li>Default: List all changes in working dir that are NOT staged for next commit (Workdir &lt;&gt; Staging Area/Index)</li>
+<li>Chunkg Header Format: <strong>@@ -start,count +start,count @@</strong><ul>
+<li>Example: @@ -122,7 +123,7 @@ (start at line 122, remove 7 lines, start at line 123, add 7 lines)</li>
+<li>Example: Also read as, @@ - part correspond to file A + part corresponds to file B@@</li>
+<li>By default includes 3 lines of before &amp; after to give some context</li>
+</ul>
+</li>
+<li><code>--</code> Operator used to separate paths from revisions/tree/branch<ul>
+<li>The -- separates the tree you want to check out from the files you want to check out.</li>
+<li>Used for disambiguity, does not have to be used in all cases</li>
+<li>Example: <code>git diff master..feature -- master</code> if there is a file called master in the repo (see links below)</li>
+<li>Example: <code>git diff master..feature somefile.txt</code> works as no branch is called somefile.txt</li>
+</ul>
+</li>
+<li>Note: <code>HEAD~1</code> means the parent of HEAD </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git diff</td>
+<td>Staging Area (index) and Working Dir diff = what is not staged for next commit</td>
+</tr>
+<tr>
+<td>git diff HEAD</td>
+<td>All changes in the working dir since last commit (staged and unstaged changes)</td>
+</tr>
+<tr>
+<td>git diff HEAD path/to/a.txt</td>
+<td>Same as above, but only for a specific file</td>
+</tr>
+<tr>
+<td>git diff --staged | git diff --cached</td>
+<td>All Changes between staging area and last commit = what will be included if commited now</td>
+</tr>
+<tr>
+<td>git diff --staged a.txt</td>
+<td>Same as above, but only for a specific file</td>
+</tr>
+<tr>
+<td>git diff -U0</td>
+<td>NO context (default 3 lines), more readable</td>
+</tr>
+<tr>
+<td>git diff master..feature</td>
+<td>Compare 2 branches (their commit) (not working dir)</td>
+</tr>
+<tr>
+<td>git diff feat/1..feat/2 path/to/file</td>
+<td>Compare specific file of 2 branches</td>
+</tr>
+<tr>
+<td>git diff feat/1..feat/2 -- path/to/file</td>
+<td>Same as above - Compare specific file of 2 branches</td>
+</tr>
+<tr>
+<td>git diff master...feature</td>
+<td>Diff feature to common ancestor with master (if both have moved fwd)*</td>
+</tr>
+<tr>
+<td>git diff master~2..HEAD</td>
+<td>Compare HEAD to master (not latest, but two revisions ago)</td>
+</tr>
+<tr>
+<td>git diff master~2</td>
+<td>Same as above</td>
+</tr>
+<tr>
+<td>git diff commit_id_1..commit_id_2</td>
+<td>Comparing changes using commit ids</td>
+</tr>
+<tr>
+<td>git diff HEAD HEAD~1</td>
+<td>New commit to the parent</td>
+</tr>
+<tr>
+<td>git diff HEAD~1 HEAD</td>
+<td>Compare parent to the child</td>
+</tr>
+</tbody>
+</table>
+<p>*three dots compares the top of the right branch (the HEAD) with the common ancestor of the two branches</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Line numbers do not work in pelican...</span>
+diff --git a/bootstrap/templates/bootstrap/macros.html b/bootstrap/templates/bootstrap/macros.html
+index 54ca763..a130563 <span class="m">100644</span>
+--- a/bootstrap/templates/bootstrap/macros.html
++++ b/bootstrap/templates/bootstrap/macros.html
+@@ -24,6 +24,7 @@
+     &lt;/div&gt;
+ <span class="o">{</span>%- endmacro %<span class="o">}</span>
+
++<span class="o">{</span><span class="c1"># Some comment line 27#}</span>
+ <span class="o">{</span>% macro label<span class="o">(</span>content, <span class="nv">type</span><span class="o">=</span><span class="s1">&#39;warning&#39;</span><span class="o">)</span> -%<span class="o">}</span>
+     &lt;span <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;label label-{{ type }}&quot;</span>&gt;<span class="o">{{</span> content<span class="p">|</span>safe <span class="o">}}</span>&lt;/span&gt;
+ <span class="o">{</span>%- endmacro %<span class="o">}</span>
+@@ -122,7 +123,7 @@
+            <span class="o">{{</span> include_if<span class="o">(</span><span class="s1">&#39;data-src=&quot;%s&quot;&#39;</span><span class="p">|</span>format<span class="o">(</span>data_src<span class="o">)</span>,data_src<span class="o">)</span> <span class="o">}}</span>
+            <span class="o">{{</span> include_if<span class="o">(</span><span class="s1">&#39;src=&quot;%s&quot;&#39;</span><span class="p">|</span>format<span class="o">(</span>src<span class="o">)</span>,src<span class="o">)</span> <span class="o">}}</span>&gt;
+          &lt;/a&gt;
+-         &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;media-body&quot;</span>&gt;
++         &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;media-body-new&quot;</span>&gt;
+            &lt;h4 <span class="nv">class</span><span class="o">=</span><span class="s2">&quot;media-heading&quot;</span>&gt;<span class="o">{{</span> heading <span class="o">}}</span>&lt;/h4&gt;
+            <span class="o">{{</span> description <span class="o">}}</span>
+          &lt;/div&gt;
+</code></pre></div>
+
+<p>Comments:</p>
+<ul>
+<li>Line#1: Shows which files are being compared</li>
+<li>Line#2: Metadata, Hashes of the files being compares followed by a mode</li>
+<li>Line#3-4: Markers for file A (usually old version) and B (usually new version)<ul>
+<li>Can be differnt version if e.g. working on 2 branches with same parent (then A/B, not old/new or added/deleted)</li>
+</ul>
+</li>
+<li>Line#x-y: Chunks/Portions of changes, each chunk separated by @@, + context (3 lines before and after by default)</li>
+<li>Line#x-y: @@-24,6 = From file A, 6 lines are extracted starting from line 24 (does NOT mean negative 24, - just refers to file A)</li>
+<li>Line#x-y: +24,7@@ = From file B, 7 lines are extracted starting from line 24 (does NOT mean plus 24, + just refers to file B)<ul>
+<li>Note: Skip the line(s) marked with - for counting number of lines for second part</li>
+</ul>
+</li>
+<li>Ling#17: Line that begins with - comes from File A (red color does NOT equal deleted in all situations)</li>
+<li>Line#18: Line that begins with + comes from File B (green color does NOT equal added in all situations)</li>
+</ul>
+<p><img src="../../images/git/18_diff_1.png" alt="Diff files" width="500"/>
+<img src="../../images/git/19_diff_2.png" alt="Diff simplified output" width="500"/>
+<img src="../../images/git/20_diff_3.png" alt="Diff at at read" width="500"/>
+<img src="../../images/git/21_diff_branches.png" alt="Diff branches" width="500"/>
+<img src="../../images/git/22_diff_common_ancestor.png" alt="Diff branches to common ancestor" width="500"/></p>
+<h2 id="stashing">Stashing</h2>
+<ul>
+<li>General<ul>
+<li>Usage Example: Swtich to Branch XY and have some uncommited/unfinished work, need to switch back to e.g. master for some reason.</li>
+<li>In General, uncommited changes on one branch and switching to another branch. 2 Options for a result<ul>
+<li>Uncommited changes get moved to destination branch (assuming they do NOT conflict)</li>
+<li>Git does NOT let one switch to destination branch if it detects a conflict (e.g. same lines modified)</li>
+</ul>
+</li>
+<li>Save, Pop, Apply</li>
+<li>Similar like a Pause: Save changes without commiting them == stash uncommited changes avoids unnessary commits<ul>
+<li>Stashing helps in not destroying commit history.</li>
+</ul>
+</li>
+<li>Git stash will take <strong>ALL uncommited changes (staged &amp; unstaged = Working Dir &amp; Staging Area)</strong>, save them <strong>and revert changes in working copy</strong></li>
+</ul>
+</li>
+<li>Multiple Stashes Possible</li>
+<li>WIP = Work in Progress</li>
+<li>Other Options<ul>
+<li>Can also stash in one branch, and reapply to another branch.</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git stash [save]</td>
+<td>Save ALL uncommited changes and stash them</td>
+</tr>
+<tr>
+<td>git stash pop</td>
+<td>Reapply changes to working copy</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>Shows that working tree is clean after stashing</td>
+</tr>
+<tr>
+<td>git stash list</td>
+<td>Show all different stashes</td>
+</tr>
+<tr>
+<td>git stash show</td>
+<td>Shows stash at top = git stash show stash@{0}</td>
+</tr>
+<tr>
+<td>git stash show stash@{1}</td>
+<td>Show a particular stash</td>
+</tr>
+<tr>
+<td>git stash pop stash@{1}</td>
+<td>Reapply changes from different stash id to working copy</td>
+</tr>
+<tr>
+<td>git stash apply</td>
+<td>Reapply changes wihtout removing from stash*</td>
+</tr>
+<tr>
+<td>git stash drop</td>
+<td>Deletes last stash (=reference stash@{0})</td>
+</tr>
+<tr>
+<td>git stash drop stash@{2}</td>
+<td>Deletes stash with particular stash ref</td>
+</tr>
+<tr>
+<td>git stash clear</td>
+<td>Delete all stored stashes</td>
+</tr>
+</tbody>
+</table>
+<p>*useful when applying to multiple branches</p>
+<p><img src="../../images/git/23_stashing_1.png" alt="Before Stashing" width="500"/>
+<img src="../../images/git/24_stashing_2.png" alt="Stashing away before switching branch" width="500"/>
+<img src="../../images/git/25_stashing_pop.png" alt="Undo stashes after swtiching back" width="500"/></p>
+<h2 id="undoing">Undoing</h2>
+<ul>
+<li>General<ul>
+<li>Reset undos commit = moves the branch pointer (not the HEAD pointer) to a different commit (.e.g .git/refs/heads/develop)<ul>
+<li>= Modify git history and decide whether to keep the changes locally in working dir (soft/mixed) or discard the diff (hard)</li>
+<li><strong>per branch</strong> basis = if reset on feature = no impact on master, even if shared history</li>
+</ul>
+</li>
+<li>Restore restores file content (without moving HEAD) to a particular state (=content at a certain commit), default is restore to HEAD<ul>
+<li>Restore unstages changes from staging area/index (e.g. passwords.txt was added to staging area which should not ahve been done)</li>
+</ul>
+</li>
+<li>Checkout can do many things (create branch, switch to branch, restore files, undo history)<ul>
+<li>Checkout kind of overloaded, then git switch and git restore cmds where added. Whit these commands its clearer when HEAD pointer is moved (git switch) or not (git restore). With git checkout it sometimes is moved (checkout whole branch or commit-id) and sometimes not (checkout particular file)</li>
+</ul>
+</li>
+<li>revert creates a new commit which undos/reverses the changes from a commit<ul>
+<li>Can be helpful because can time-travel back and forth! With reset commit is lost forever.</li>
+<li>Better when <strong>team colaboration</strong> because of commit history on other machines</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Detached HEAD</strong><ul>
+<li>Normally HEAD points to a branch reference (not a particular commmit). Branch reference then points to commit.</li>
+<li>If new commit, branch reference gets updated to point to new commit. HEAD still points to branch reference.</li>
+<li>Detached Head state results from time traveling back to a particular commit-id (git checkout <commit-id/>), does NOT happen e.g. if checking out a particular file at a certain commit ID, as only content of that file is changed. </li>
+<li>Options if in detached HEAD state:<ul>
+<li>Stay in detached HEAD to view content of old commit, do experimantel changes</li>
+<li>Go back to last branch (git switch -)</li>
+<li>Create a new branch to make changes and save them (git switch -c &lt;new_branch_name&gt;)<ul>
+<li>Remember: Branch is based upon HEAD Pointer. So branch gets created at where HEAD points at that moment.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>See state: <code>cat .git/HEAD</code> usually points to sth like refs/heads/master, if detached then commit-id</li>
+</ul>
+</li>
+<li>Restore, reset, revert, discarding changes, checking out particular commits</li>
+<li>Reset options<ul>
+<li><code>--soft</code>: Moves only the HEAD, Working dir remains intact, example: <code>git reset --soft HEAD~</code> <ul>
+<li>= Delete last/n commit(s) but keep changes in working dir &amp; staging area</li>
+</ul>
+</li>
+<li><code>--mixed</code>: Default, resets HEAD + moves everything to unstaged, Working dir remains intact, example: <code>git reset [--mixed] HEAD~</code><ul>
+<li>= Delete last/n commit(s) but keep changes in working dir</li>
+<li>Example: Made some commits, but on the wrong branch, but keep the work! <code>git reset 1234567 &amp;&amp; git switch -c feat/test &amp;&amp; git add . &amp;&amp; git commit -m 'on other branch'</code></li>
+</ul>
+</li>
+<li><code>--hard</code>: resets HEAD + Index (staging area) + Working dir, example: <code>git reset --hard HEAD~</code><ul>
+<li>= Delete last/n commit(s) + associated changes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Checkout a particular file or restoring it do NOT move the HEAD pointer! </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git reset --soft HEAD~</td>
+<td>Reset HEAD to last commit (parent of head)</td>
+</tr>
+<tr>
+<td>git reset HEAD~</td>
+<td>Default option, Reset commit+staging area to last commit (parent)</td>
+</tr>
+<tr>
+<td>git reset --mixed HEAD~</td>
+<td>Default option, same as above</td>
+</tr>
+<tr>
+<td>git reset --hard HEAD~</td>
+<td>Reset commit+staging area+working dir to last commit (=HEAD~1) (=parent)</td>
+</tr>
+<tr>
+<td>git reset --hard HEAD~2</td>
+<td>Reset commit+staging area+working dir to head-2 commits (=grandparent)</td>
+</tr>
+<tr>
+<td>git reset --hard HEAD@{1}</td>
+<td>DONT USE, Reset commit+staging area+working dir to last commit (reflog?)</td>
+</tr>
+<tr>
+<td>git reset --hard 37b92be</td>
+<td>Reset commit+staging area+working dir to specific commit (commitid)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>git revert 37b92be</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>git checkout 123a567</td>
+<td>Checkout different commit by using its commit-id (first 7 digits or long variant)*</td>
+</tr>
+<tr>
+<td>git checkout HEAD~1</td>
+<td>Parent/Grandparent etc. also works with checkout</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>Shows that HEAD is detached</td>
+</tr>
+<tr>
+<td>git switch -</td>
+<td>Switch back to whatever branch i was on before checkout speicifc commit id = reattach head</td>
+</tr>
+<tr>
+<td>git switch master</td>
+<td>Switch back to master branch = reattach head</td>
+</tr>
+<tr>
+<td>git switch -c new_feature_branch</td>
+<td>Create a new branch based on HEAD location (=what was checked out) = reattach HEAD to that new branch </td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>git checkout HEAD file1</td>
+<td>Discard changes to a file = revert back to HEAD status for a particular file (staged or unstaged)</td>
+</tr>
+<tr>
+<td>git checkout -- file1 file2</td>
+<td>Same as above, shorter version, showing multiple files</td>
+</tr>
+<tr>
+<td>git restore file1</td>
+<td>New command to do the same thing (=restore content to HEAD) (only unstaged)</td>
+</tr>
+<tr>
+<td>git restore --staged file1</td>
+<td>Remove file from staging area (=unstage), working dir still as before (!= HEAD)</td>
+</tr>
+<tr>
+<td>git restore --staged file1 &amp;&amp; git restore file1</td>
+<td>Equals git checkout HEAD file1</td>
+</tr>
+<tr>
+<td>git restore --source=HEAD~1 file1</td>
+<td>By default points to HEAD, if different commit, then source has to mentioned</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>git checkout master</td>
+<td>Checkout master branch</td>
+</tr>
+<tr>
+<td>git diff master..master~2</td>
+<td>Made some error, want to revert back to a specific version, find that one by using diff</td>
+</tr>
+<tr>
+<td>git checkout master~2 Makefile</td>
+<td>Reverts the Makefile to two revisions back</td>
+</tr>
+<tr>
+<td>rm -f hello.c</td>
+<td>Deleted some file by mistake</td>
+</tr>
+<tr>
+<td>git checkout hello.c</td>
+<td>Reverts hello.c from index (staging area)</td>
+</tr>
+</tbody>
+</table>
+<p>*Results in detached HEAD state.</p>
+<p><img src="../../images/git/14_reset_options.png" alt="Reset options" width="500"/>
+<img src="../../images/git/26_no_detached_head.png" alt="Regular1" width="500"/>
+<img src="../../images/git/27_no_detached_head_2.png" alt="Regular2" width="500"/>
+<img src="../../images/git/28_no_detached_head_3.png" alt="Regular3" width="500"/>
+<img src="../../images/git/29_no_detached_head_4.png" alt="Regular4" width="500"/>
+<img src="../../images/git/30_detached_head_1.png" alt="Detached Head" width="500"/>
+<img src="../../images/git/31_head_parent.png" alt="Head Parent Grandparent" width="500"/>
+<img src="../../images/git/32_git_reset_mixed.png" alt="Git reset mixed" width="500"/>
+<img src="../../images/git/33_git_reset_mixed_after.png" alt="HGit reset mixed after" width="500"/>
+<img src="../../images/git/33_git_reset_hard.png" alt="Git reset hard" width="500"/>
+<img src="../../images/git/34_reset_vs_rever_1.png" alt="Reset vs Revert1" width="500"/>
+<img src="../../images/git/35_reset_vs_revert_2.png" alt="Reset vs Revert2" width="500"/></p>
+<h1 id="github">GitHub</h1>
+<ul>
+<li>Used for Collaboration / Open Source Projects / Backup / etc.</li>
+<li>Cloning anyone can do if repo is public (not pushing though)</li>
+</ul>
+<h2 id="ssh-config">SSH Config</h2>
+<ul>
+<li>Setup SSH Keys</li>
+<li>Add to github</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ssh-keygen -t ed25519 -C <span class="s2">&quot;id_github&quot;</span>
+
+<span class="c1">#~/.ssh/config</span>
+Host git.netcloud.local
+ UseKeychain yes
+ AddKeysToAgent yes
+ IdentityFile ~/.ssh/id_ed25519
+
+Host github.com
+ UseKeychain yes
+ AddKeysToAgent yes
+ IdentityFile ~/.ssh/id_github
+</code></pre></div>
+
+<h2 id="general">General</h2>
+<ul>
+<li><code>git clone</code>, <code>git fetch</code>, <code>git pull</code>, remote Tracking Branches</li>
+<li>Remote = fancy name for destination URL + a label</li>
+<li>Remote names<ul>
+<li><code>origin</code> = convention, but does not need to be that at all<ul>
+<li>When repo cloned, default remote name given by clone command is called origin, but nothing special</li>
+<li>No hidden meansings, abilities, similar to master/main for branches</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Git push will create branch on remote if it does not exist</li>
+<li>Upstream = "Link" that connects the local branch to a branch on e.g. GitHub (upstream)<ul>
+<li>Enables tracking of the upstream branch</li>
+<li>Enables <code>git push</code> without having to specify</li>
+<li>Git shall "remember" that local master branch is connected to master branch on origin</li>
+<li>If not "connected" and doing <code>git push</code>, tells me branch xy has no upstream branch</li>
+</ul>
+</li>
+<li>Main vs Master<ul>
+<li>Renamed from master to main because term might offend (slavery), no technical background</li>
+</ul>
+</li>
+<li>Remotes and References<ul>
+<li>When cloning a Github/Gitlab (etc.) repo, an additional branch reference is created called Remote Tracking Branch<ul>
+<li>See <code>ls .git/refs/remotes/origin/</code> in addition to</li>
+<li>See <code>ls .git/refs/heads/</code></li>
+</ul>
+</li>
+<li>Local Branch Pointer (can be moved via local commit etc) and</li>
+<li>Remote Tracking Branch (cannot be moved locally directly)<ul>
+<li>Last time communication to remote repo happend, branch x on remote was pointint to that reference</li>
+<li>Follows the syntax <strong>remote/branch</strong>, e.g. origin/master, upstream/master</li>
+<li>Can be checked out/diffed like any other branch</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Clonging a remote repo does not sync all branches, only main/master by default, even though content and pointers are synced<ul>
+<li>Git folder is synced and therefore <code>git branch -r</code> for remote knows all the branches, but not syned</li>
+<li>Master/main automatically tracks remote/upstream branch, other branches do NOT</li>
+<li><code>git switch &lt;remote_branch_name/&gt;</code> locally, if this is detected by git switch, remote tracking is setup automatically<ul>
+<li>Condition: Same name on remote, e.g. origin/develop and then git switch develop will create local branch develop and set it up for tracking</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Fetching and Pulling<ul>
+<li><code>git fetch</code>: Downloads changes from remote repo but not integrated into workdir (see what others have doen, but don't mess with own work)</li>
+<li><code>git pull</code>: Downloads changes from remote repo and integrates into workdir (integrate others work) (updates HEAD)<ul>
+<li><code>git pull</code>= <code>git fetch</code> (get latest changes from remote repo) + <code>git merge</code> (merge into workdir of current branch)</li>
+<li>Where it is run from is important! Run on local branch develop but do git pull origin/main will incorporate main changes into develop</li>
+<li>Can result in mege conflict</li>
+</ul>
+</li>
+<li>Fetch and pull will default to origin if not specified</li>
+<li>Git pull branch will default to tracking branch of current branch</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git clone <url/></td>
+<td>Copy repo to local machine including git history</td>
+</tr>
+<tr>
+<td>git remote -v</td>
+<td>Verbose, list remotes</td>
+</tr>
+<tr>
+<td>git remote add <name/> <url/></td>
+<td>Create/add new remote</td>
+</tr>
+<tr>
+<td>git remote add origin https://github.com/.../repot.git</td>
+<td>Name origin refers to repo xy</td>
+</tr>
+<tr>
+<td>git remote rename origin new_name</td>
+<td>Rename reference to remote url</td>
+</tr>
+<tr>
+<td>git remote remove origin</td>
+<td>Remove the remote</td>
+</tr>
+<tr>
+<td>git push <remote/> <local-branch/></td>
+<td>Remote and LOCAL branch</td>
+</tr>
+<tr>
+<td>git branch -M main</td>
+<td>Rename branch XY to main</td>
+</tr>
+<tr>
+<td>git push -u origin main</td>
+<td>Push content of main branch to origin/main (and setup tracking) ==--set-upstream</td>
+</tr>
+<tr>
+<td>git push --set-upstream origin develop</td>
+<td>Link a local branch with an upstream branch or create it upstream if not exists</td>
+</tr>
+<tr>
+<td>git push</td>
+<td>Shortcut if single upstream, pushes active branch to e.g. origin</td>
+</tr>
+<tr>
+<td>git push <remote/> <local-branch/>:<remote-branch/></td>
+<td>Push local branch to different remote branch</td>
+</tr>
+<tr>
+<td>git push origin feature3_sso:feat/3_sso</td>
+<td>Example: Push to remote branch 3_sso</td>
+</tr>
+<tr>
+<td>git remote show origin</td>
+<td>Shows local references configured for git push (=tracking)</td>
+</tr>
+<tr>
+<td>git branch -r</td>
+<td>Shows remote branches that exist</td>
+</tr>
+<tr>
+<td>git branch -vv</td>
+<td>Shows tracking - Upstream branch displayed in blue</td>
+</tr>
+<tr>
+<td>cat .git/config</td>
+<td>Shows tracking for each branch</td>
+</tr>
+<tr>
+<td>git config --get-regex branch</td>
+<td>Shows tracking for each branch</td>
+</tr>
+<tr>
+<td>git for-each-ref --format='%(refname:short) &lt;- %(upstream:short)' refs/heads</td>
+<td>Shows tracking for each branch</td>
+</tr>
+<tr>
+<td>git diff origin/develop..develop</td>
+<td>Difference between local develop and remote develop branch</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>Branch xy is z commits ahead of....</td>
+</tr>
+<tr>
+<td>git branch -r &amp;&amp; git branch</td>
+<td>Some remote branches might not exist locally</td>
+</tr>
+<tr>
+<td>git checkout origin/develop</td>
+<td>Remember detached head, can look at the state, but no branch</td>
+</tr>
+<tr>
+<td>git switch develop</td>
+<td>If remote branch origin/develop exists, git switch creates local branch and sets it up for tracking</td>
+</tr>
+<tr>
+<td>git checkout --track origin/develop</td>
+<td>Old command that created a new branch and did setup tracking</td>
+</tr>
+<tr>
+<td>git fetch <remote/></td>
+<td>Fetch branches and history, but dont integrate into workdir</td>
+</tr>
+<tr>
+<td>git fetch <remote/> <branch/></td>
+<td>Fetch udpates for a specific branch</td>
+</tr>
+<tr>
+<td>git fetch</td>
+<td>defaults to origin, so can just use git fetch, unless multiple remotes and want to be specific</td>
+</tr>
+<tr>
+<td>git fetch origin/develop</td>
+<td>Example with local branch develop and remote branch origin/develop</td>
+</tr>
+<tr>
+<td>git checkout origin/develop</td>
+<td>See what has changed remotely without messing up local workdir</td>
+</tr>
+<tr>
+<td>git pull <remote/> <branch/></td>
+<td>Get + Merge changes from branch xy into current branch</td>
+</tr>
+<tr>
+<td>git pull</td>
+<td>remote defaults to origin, branch defaults to tracking connection, so can just use git pull if on same branch</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../../images/git/36_github_clone.png" alt="Github Local Branch" width="500"/>
+<img src="../../images/git/37_github_remote_tracking_branch.png" alt="Github Remote tracking Branch" width="500"/>
+<img src="../../images/git/37_github_remote_branch_not_updated_by_local_commit.png" alt="Github Remote tracking Branch2" width="500"/>
+<img src="../../images/git/38_remote_tracking_default.png" alt="Main tracked by default on clone" width="500"/>
+<img src="../../images/git/39_remote_tracking_switch.png" alt="Git switch to create local from remote and track" width="500"/>
+<img src="../../images/git/39_git_fetch_pull.png" alt="Git fetch pull overview" width="500"/>
+<img src="../../images/git/40_git_fetch_remote_changes.png" alt="Git fetch" width="500"/>
+<img src="../../images/git/41_git_pull_ff_merge.png" alt="Git fetch fast forward merge" width="500"/>
+<img src="../../images/git/42_git_pull_vs_fetch.png" alt="Git fetch vs pull" width="500"/></p>
+<h2 id="this-and-that">This and that</h2>
+<ul>
+<li>Public and Private<ul>
+<li>Public: Anybody can access, no push (collaborators only)</li>
+<li>Private: Only owner and added collaborators<ul>
+<li>No base for github pages</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Collaborators<ul>
+<li>only the owner has access to settings, collaborators not</li>
+<li>Collaborators have to be invited and then they have to accept</li>
+<li>Organization and Enterprise tiers can have multiple owners</li>
+</ul>
+</li>
+<li>Github and Markdown<ul>
+<li>Follows the GFM dialect, based on CommonMark Spec</li>
+<li>Certain things not supported (e.g. )</li>
+</ul>
+</li>
+<li>README.md<ul>
+<li>Github renders this by default (in project root)</li>
+</ul>
+</li>
+<li>Gists<ul>
+<li>Share Code Snippets/Fragments (Profile &gt; Gists)</li>
+<li>See: <a href="https://gist.github.com/">Gists</a></li>
+</ul>
+</li>
+<li>GH Pages<ul>
+<li>Static sites, no server side code (python/node etc)</li>
+<li>Html, css, js</li>
+<li>User sites (maconrad.github.io)</li>
+<li>Project sites (maconrad.github.io/repo-name) (which branch contains web content)<ul>
+<li>Settings &gt; GitHub Pages &gt; Select Branch (needs an index.html file, thats it)</li>
+<li>(/docs makes sense)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Gitlab References to Issues and Pull Requests<ul>
+<li>With Gitlab, a single <code>-m</code>does not work, example:<ul>
+<li><code>git commit -m "Message" -m "Closes #123"</code></li>
+</ul>
+</li>
+<li>Can use <code>Ref</code>, <code>Close</code>, <code>Fixes</code></li>
+<li><code>#xxx</code> for issue, <code>!xy</code> for Merge Request, <code>$xxx</code> for snippets, <code>@username</code> to mention</li>
+<li>Other useful features are <strong>labels</strong>, <strong>milestones</strong> and <strong>tasklists</strong></li>
+</ul>
+</li>
+<li>Github References to Issues and Pull Requests<ul>
+<li>Very similar to gitlab (see links below)</li>
+</ul>
+</li>
+</ul>
+<p><img src="../../images/git/42_gitlab_patterns.png" alt="Gitlab Referencing Pattenrns" width="500"/></p>
+<h1 id="collaboration-workflows">Collaboration Workflows</h1>
+<ul>
+<li>Pull Request (PR)<ul>
+<li>Not a feature of git, but GitHub, Bickbucket, Gitlab etc.</li>
+<li>Review &amp; discuss, approve, reject work to be merged into master/main</li>
+<li>Request changes on review, approve</li>
+<li>Together with branch protection rule powerful</li>
+</ul>
+</li>
+<li>Branch Protection Rules<ul>
+<li>Settings &gt; Branches &gt; Branch protection rules</li>
+<li>Often used together with Pull requests to protect master/main</li>
+</ul>
+</li>
+</ul>
+<h2 id="centralized">Centralized</h2>
+<ul>
+<li>Everybody works on single branch (master/main)</li>
+<li>Good for single user, tiny team</li>
+<li>Not a recommended workflow</li>
+<li>Multiple collaborators: <strong>failed to push</strong> because tip of current branch is behind remote<ul>
+<li>Other collaborator pushed to remote repo since we last pulled</li>
+<li>Pull changes down, merge (possible with conflict), then push up</li>
+</ul>
+</li>
+<li>Other problems<ul>
+<li>Collaborator XY cannot push up to share stuff if he is behind branch on remote</li>
+<li>If code is incomplete/broken -&gt; breaks the whole code base for everybode</li>
+<li>Collaboration on feature with teammates only via incomplete code push to remote</li>
+<li>Experiments/bug fixes always on "stable" code</li>
+</ul>
+</li>
+</ul>
+<h2 id="feature-branch">Feature Branch</h2>
+<ul>
+<li>Nobody works on master/main</li>
+<li>Master/main = project history with only stable code</li>
+<li>Multiple teammates can collaborate on feature and share code without breaking master</li>
+<li>Patterns<ul>
+<li><strong>feat/xy</strong>, <strong>feat.xy</strong>, <strong>bug.xy</strong>, <strong>refactor.xy</strong>, etc.</li>
+</ul>
+</li>
+<li>Integrate via Pull Request or local merge into master/main and push back up<ul>
+<li>Pull requests prefereed for collaboration</li>
+</ul>
+</li>
+<li>Merge with conflict (either in online editor for simple merge or locally)<ul>
+<li>go into feature branch locally, merge in main, resolve conflict<ul>
+<li><code>git fetch origin</code>, <code>git switch feat/xy</code>, <code>git merge main</code> and fix conflicts</li>
+</ul>
+</li>
+<li>go into main branch, merge in feature branch (we know no conflict can occur now that it was resolved on feature branch)<ul>
+<li>Merge with <code>--no-ff</code> to preserve history and create a new merge commit (not just move Head pointer to different commit)</li>
+<li><code>git switch main</code>, <code>git merge --no-ff feat/xy</code>, <code>git push origin main</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="forking">Forking</h2>
+<ul>
+<li>Common pattern for open source project where user is not a collaborator and does NOT have permission to push anything into project</li>
+</ul>
+<h2 id="refs">Refs</h2>
+<ul>
+<li>See: <a href="http://ndpsoftware.com/git-cheatsheet.html#loc=index;">Interactive GIT Cheatsheet - NICE</a></li>
+<li>See: <a href="https://onlywei.github.io/explain-git-with-d3/#rebase">Interactive Git what happens - NICE</a></li>
+<li>See: <a href="https://www.udemy.com/course/git-and-github-bootcamp">Udemy Git Course - Graphics</a></li>
+<li>See: <a href="https://gist.github.com/karenyyng/f19ff75c60f18b4b8149">Mergetools</a></li>
+<li>See: <a href="https://git-scm.com/docs/gitcredentials">Git Credential Helper</a></li>
+<li>See: <a href="https://git-scm.com/docs/">Git Docs</a></li>
+<li>See: <a href="https://git-scm.com/book/en/v2">Git Book</a></li>
+<li>See: <a href="https://gitignore.io">Git Ignore Creator</a></li>
+<li>See: <a href="https://git-scm.com/docs/gitignore">Git ignore file regex</a></li>
+<li>See: <a href="https://www.cloudsavvyit.com/12962/how-does-git-reset-actually-work-soft-hard-and-mixed-resets-explained/">Git Reset Graph</a></li>
+<li>See: <a href="https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified">Git Reset step-by-step</a></li>
+<li>See: <a href="https://git-scm.com/docs/git-diff">Git Diff DOcs</a></li>
+<li>See: <a href="https://stackoverflow.com/questions/13321458/meaning-of-git-checkout-double-dashes">Git Double Dash Stackoverflow</a></li>
+<li>See: <a href="https://git-scm.com/docs/git-checkout#_argument_disambiguation">Git Double Dash Git Doku</a></li>
+<li>See: <a href="https://github.github.com/gfm/#:~:text=GitHub%20Flavored%20Markdown%2C%20often%20shortened,a%20strict%20superset%20of%20CommonMark.">Github GFM</a></li>
+<li>See: <a href="https://daringfireball.net/projects/markdown/">Markdown Official Site</a></li>
+<li>See: <a href="https://about.gitlab.com/blog/2016/03/08/gitlab-tutorial-its-all-connected/">Gitlab Tags</a></li>
+<li>See: <a href="https://docs.gitlab.com/ee/user/project/issues/managing_issues.html">Gitlaub default Closing pattern</a></li>
+<li>See: <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue">Github Closing patterns</a></li>
+<li>See: <a href="https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab">Collapsible MD in Github</a></li>
+<li>See: <a href="https://markdown-it.github.io/">Mardown Ref Github.io</a></li>
+<li>See: <a href="https://bfh.science/OLD/software/git/ressources.html">Git BFH</a></li>
+<li>See: <a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/">Git Stanford</a></li>
+<li>See: <a href="https://digital.ai/periodic-table-of-devops-tools">Periodic Table of Devop Tools</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/git.html">Git</a>
+      <a href="https://maconrad.github.io/tag/4-star.html">4-star</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

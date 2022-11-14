@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: Intro Before Factory Method With Factory Method Factory Class Abstract Factory Class Reference Intro Factory basically is any entity that takes care of creating objects. Similar to builder, but with the difference that it is not piecewise/step-by-step but wholesale. Why and when is that needed? When …" />
+<meta name="keywords" content="python, patterns, CREATIONAL">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Factories"/>
+  <meta property="og:description" content="Table of contents: Intro Before Factory Method With Factory Method Factory Class Abstract Factory Class Reference Intro Factory basically is any entity that takes care of creating objects. Similar to builder, but with the difference that it is not piecewise/step-by-step but wholesale. Why and when is that needed? When …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/pattern-creational-factory.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-11-20 11:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Patterns"/>
+  <meta property="article:tag" content="python"/>
+  <meta property="article:tag" content="patterns"/>
+  <meta property="article:tag" content="CREATIONAL"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Factories</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="pattern-creational-factory">Factories</h1>
+    <p>
+      Posted on Sa 20 November 2021 in <a href="https://maconrad.github.io/category/patterns.html">Patterns</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#before-factory-method">Before Factory Method</a></li>
+<li><a href="#with-factory-method">With Factory Method</a></li>
+<li><a href="#factory-class">Factory Class</a></li>
+<li><a href="#abstract-factory-class">Abstract Factory Class</a></li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+</div>
+<h2 id="intro">Intro</h2>
+<p>Factory basically is any entity that takes care of creating objects. Similar to builder, but with the difference that it is not piecewise/step-by-step but wholesale. Why and when is that needed? When the <code>__init__()</code> gets longer and more sophisticated, plus the init method is not really descriptive (name always init). init() cannot be overloaded. E.g. I want to create </p>
+<p>Types:</p>
+<ul>
+<li>Factory method(s): Separate &amp; central component with repsonsibility to decide which concrete implementation to use<ul>
+<li>typically <code>@staticmethod</code></li>
+<li>Factory method = Alternative to <code>__init__()</code> with good naming and not overloaded/convoluted with many unneeded params</li>
+</ul>
+</li>
+<li>Factory class: Class XYZ has a Class XYZFactory which is used to create objects of type XYZ<ul>
+<li>Adheres to <code>Single Repsonsibility Principle</code> in that its sole responsibility is to create objects</li>
+<li>If we have too many Fatory methods within a class, might make sense to move them out of a class / group them</li>
+</ul>
+</li>
+<li>Abstract Factory: Used for Type Hierarchies, type hierarchy for factory classes correspond with type hierarchy for concrete classes. Example:<ul>
+<li>Concret type hirarchy Car(abstract), SUV(Car), Race(Car)</li>
+<li>Corresponding Factory CarFactory(Abstract), SUVFactory(CarFactory), RaceFactory(CarFactory) </li>
+<li>Abstract base class defines interface for concrete Factories (not mandatory in python due to ducktyping)</li>
+</ul>
+</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li>More descriptive (not init), more userfriendly (only params that are needed)</li>
+<li>Can use prototypes to template certain objects that are often used (easier to consume)</li>
+</ul>
+<p>Use Cases / Examples:</p>
+<ul>
+<li>Replace complex code logic</li>
+<li>Construct related objects from external data</li>
+<li>support multiple implementations of same feature</li>
+<li>combine similar features</li>
+</ul>
+<p>Antipattern:</p>
+<ul>
+<li>Constructor with Enum or sth similar that decides which can of object is built</li>
+<li>Init() with optional parameter hell</li>
+<li>Godobject for Initializers</li>
+<li>Long and complex if/elif/else statements to determine concrete objects</li>
+</ul>
+<p>Key:</p>
+<ul>
+<li>Difference to Builder: not piecewise/stepwise but whole object created<ul>
+<li>Menas fully initialized object!</li>
+</ul>
+</li>
+<li>Really anything that manufactures objects. Could also be a lambda</li>
+<li>Look for a common interface/goal of multiple methods/implementations</li>
+<li><code>Client, Product and Creator</code> terminology often used with this pattern<ul>
+<li>client = depends on an interface</li>
+<li>product = implements the interface</li>
+<li>creator = factory that returns concrete product (that implements interface)</li>
+</ul>
+</li>
+</ul>
+<h2 id="before-factory-method">Before Factory Method</h2>
+<ul>
+<li>Problems:<ul>
+<li>Breaks Open-Close Prinicple</li>
+<li>Have to figure out that a matches R, b matches G, c matches B in case of RGB</li>
+<li>Have to figure out that a matches C, b matches M, c matches Y and d matches K in case of CMYK</li>
+<li>Inconvenient, non descriptive!</li>
+</ul>
+</li>
+<li>Can be inner class, can be static</li>
+<li>Note: No error handling is on purpose to keep code as lean as possible and still understand pattern. </li>
+</ul>
+<details>
+  <summary>Before Factory Method Code...</summary>
+
+  ```python
+
+  from enum import Enum
+
+  class ColorType(Enum):
+      CMYK = 1
+      RGB = 2
+
+  class Color:
+      def __init__(self, a, b, c, d=None, type=ColorType.RGB) -> None:
+
+          if type == ColorType.RGB:
+              self.r = a
+              self.g = b
+              self.b = c
+          elif type == ColorType.CMYK:
+              self.r = 255 * (1-a) * (1-d)
+              self.g = 255 * (1-b) * (1-d)
+              self.b = 255 * (1-c) * (1-d)
+          else:
+              raise NotImplementedError
+
+      def __str__(self) -> str:
+          return f'Colorcode RGB: {self.r}/{self.g}/{self.b}'
+
+  if __name__ == '__main__':
+      red1 = Color(255, 0, 0)
+      red2 = Color(0, 1, 1, 0, ColorType.CMYK)
+      print(red1, ' -- ', red2)
+
+  ```
+</details>
+
+<h2 id="with-factory-method">With Factory Method</h2>
+<ul>
+<li>Initializer can be like here where object ist just initiliazed with "nothing/all zeros/some default"</li>
+<li>Initializer could also be just the RGB one</li>
+<li>More descriptive, more user friendly / convenient</li>
+<li>Factory method = Alternative to <code>__init__()</code> with good naming</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+
+<span class="k">class</span> <span class="nc">ColorType</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="n">CMYK</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">RGB</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="k">class</span> <span class="nc">Color</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Colorcode RGB: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="si">}</span><span class="s1">&#39;</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">make_RGB_color</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="n">Color</span><span class="p">()</span>
+        <span class="n">color</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="n">r</span>
+        <span class="n">color</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">g</span>
+        <span class="n">color</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
+        <span class="k">return</span> <span class="n">color</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">make_CMYK_color</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="n">Color</span><span class="p">()</span>
+        <span class="n">color</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">k</span><span class="p">)</span>
+        <span class="n">color</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">k</span><span class="p">)</span>
+        <span class="n">color</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">k</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">color</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">red1</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">make_RGB_color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">red2</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">make_CMYK_color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">red1</span><span class="p">,</span> <span class="s1">&#39; -- &#39;</span><span class="p">,</span> <span class="n">red2</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="factory-class">Factory Class</h2>
+<ul>
+<li>Single Responsibility<ul>
+<li>Once we have many FactoriesMethods might make sense to outsource them to a separate entity</li>
+<li>Grouping of same repsonsibility functions</li>
+</ul>
+</li>
+<li>Not static anymore</li>
+<li>Can be inner Class of Color with an instance, a class member or a separate class with static methods<ul>
+<li>Here inner class as example</li>
+</ul>
+</li>
+<li>Intrinsic relationship between Factory and Class</li>
+<li>Client has to know that there is a factory, nothing prevents him from assining values or using init()<ul>
+<li>Can only give a hint by making init unparameterized.</li>
+<li>No such concept as private constructor as with other languages</li>
+<li>Therefore inner class not very often used in python</li>
+</ul>
+</li>
+<li>Factory Static or Not Static does not really matter usually<ul>
+<li>But if factory wants to store some state, than helpful not to make it static</li>
+<li>E.g. randomization or so.</li>
+</ul>
+</li>
+<li>Combination with singleton<ul>
+<li>use a single static factory inside the XYClass for convenience (that can also store state)</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+
+<span class="k">class</span> <span class="nc">ColorType</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="n">CMYK</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">RGB</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="k">class</span> <span class="nc">Color</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Use ColorFactory to intantiate object&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Colorcode RGB: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">g</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="si">}</span><span class="s1">&#39;</span>
+
+
+    <span class="k">class</span> <span class="nc">ColorFactory</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">make_RGB_color</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+            <span class="n">color</span> <span class="o">=</span> <span class="n">Color</span><span class="p">()</span>
+            <span class="n">color</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="n">r</span>
+            <span class="n">color</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">g</span>
+            <span class="n">color</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
+            <span class="k">return</span> <span class="n">color</span>
+
+        <span class="k">def</span> <span class="nf">make_CMYK_color</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+            <span class="n">color</span> <span class="o">=</span> <span class="n">Color</span><span class="p">()</span>
+            <span class="n">color</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">k</span><span class="p">)</span>
+            <span class="n">color</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">k</span><span class="p">)</span>
+            <span class="n">color</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">k</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">color</span>
+
+    <span class="n">colorfactory</span> <span class="o">=</span> <span class="n">ColorFactory</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">red1</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">colorfactory</span><span class="o">.</span><span class="n">make_RGB_color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">red2</span> <span class="o">=</span> <span class="n">Color</span><span class="o">.</span><span class="n">colorfactory</span><span class="o">.</span><span class="n">make_CMYK_color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">red1</span><span class="p">,</span> <span class="s1">&#39; -- &#39;</span><span class="p">,</span> <span class="n">red2</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="abstract-factory-class">Abstract Factory Class</h2>
+<ul>
+<li>Abstract Factory is its own pattern</li>
+<li>If there is an inheritance hierarchy with polymorphism a polymorphic creation capability (via static factory method) in the base class might be useful</li>
+<li>Maybe combine with Prototype to store an internal object pool that can be reused to create objects instead of creating them from scratch</li>
+<li>Abstract base class can be used just for mandating a particular API or it can be used </li>
+<li>Abstract base class NOT needed in python due to DuckTyping. But still good practice</li>
+<li>Option 2 shows dynamic factory instantiation based on strings through usage of <code>eval()</code> expression</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span>
+<span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span><span class="p">,</span> <span class="n">auto</span>
+
+<span class="k">class</span> <span class="nc">HotDrink</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">consume</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">Tea</span><span class="p">(</span><span class="n">HotDrink</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">consume</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This tea is delicious&#39;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Coffee</span><span class="p">(</span><span class="n">HotDrink</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">consume</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This coffee is delicious&#39;</span><span class="p">)</span>
+
+<span class="c1"># Not needed due to DuckTyping</span>
+<span class="k">class</span> <span class="nc">HotDrinkFactory</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+    <span class="c1"># prepare = factory meathod, often called make(), create()</span>
+    <span class="k">def</span> <span class="nf">prepare</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">TeaFactory</span><span class="p">(</span><span class="n">HotDrinkFactory</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">prepare</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Put in tea bag, boil water, pour </span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s1">ml, enjoy!&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Tea</span><span class="p">()</span>
+
+<span class="k">class</span> <span class="nc">CoffeeFactory</span><span class="p">(</span><span class="n">HotDrinkFactory</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">prepare</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Grind beans, boil water, pour </span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s1">ml, enjoy!&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Coffee</span><span class="p">()</span>
+
+<span class="c1"># Option 1</span>
+<span class="k">def</span> <span class="nf">make_drink</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="s1">&#39;tea&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">TeaFactory</span><span class="p">()</span><span class="o">.</span><span class="n">prepare</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">type</span> <span class="o">==</span> <span class="s1">&#39;coffee&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">CoffeeFactory</span><span class="p">()</span><span class="o">.</span><span class="n">prepare</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+<span class="c1"># Option 2</span>
+<span class="k">class</span> <span class="nc">HotDrinkMachine</span><span class="p">:</span>
+    <span class="k">class</span> <span class="nc">AvailableDrink</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+        <span class="n">COFFEE</span> <span class="o">=</span> <span class="n">auto</span><span class="p">()</span>
+        <span class="n">TEA</span> <span class="o">=</span> <span class="n">auto</span><span class="p">()</span>
+
+    <span class="n">factories</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">#stores tuple (name, factoryinstance)</span>
+    <span class="n">initialized</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">initialized</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">initialized</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">AvailableDrink</span><span class="p">:</span>
+                <span class="n">name</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">d</span><span class="o">.</span><span class="n">name</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+                <span class="n">factory_name</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;Factory&#39;</span>
+                <span class="c1"># evaluates sring as a python expression!</span>
+                <span class="c1"># string into code</span>
+                <span class="n">factory_instance</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">factory_name</span><span class="p">)()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">factories</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">name</span><span class="p">,</span> <span class="n">factory_instance</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">make_drink</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Available drinks:&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">factories</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Please pick drink (0-</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">factories</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Specify amount: &#39;</span><span class="p">)</span>
+        <span class="n">amount</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">factories</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">prepare</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="c1"># Option 1</span>
+    <span class="c1"># entry = input(&#39;What kind of drink would you like?&#39;)</span>
+    <span class="c1"># drink = make_drink(entry)</span>
+
+    <span class="c1"># Option 2</span>
+    <span class="n">drink</span> <span class="o">=</span> <span class="n">HotDrinkMachine</span><span class="p">()</span><span class="o">.</span><span class="n">make_drink</span><span class="p">()</span>
+    <span class="n">drink</span><span class="o">.</span><span class="n">consume</span><span class="p">()</span>
+</code></pre></div>
+
+<h2 id="reference">Reference</h2>
+<ul>
+<li>See: <a href="https://refactoring.guru/design-patterns/abstract-factory">Refactoring Guru Example Furniture</a></li>
+<li>See: <a href="https://sourcemaking.com/design_patterns/factory_method#:~:text=Example,molds%20of%20the%20desired%20shapes.">Source Making</a></li>
+<li>See: <a href="https://realpython.com/factory-method-python/">Real Python</a><ul>
+<li>Very good example</li>
+</ul>
+</li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/python.html">python</a>
+      <a href="https://maconrad.github.io/tag/patterns.html">patterns</a>
+      <a href="https://maconrad.github.io/tag/creational.html">CREATIONAL</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

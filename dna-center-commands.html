@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Troubleshooting commands for various aspects of the fabric." />
+<meta name="keywords" content="Cisco, DNA, Lisp">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="DNA Center Commands"/>
+  <meta property="og:description" content="Troubleshooting commands for various aspects of the fabric."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/dna-center-commands.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-02-02 11:51:00+01:00"/>
+  <meta property="article:modified_time" content="2022-02-02 14:30:00+01:00"/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Cisco"/>
+  <meta property="article:tag" content="Cisco"/>
+  <meta property="article:tag" content="DNA"/>
+  <meta property="article:tag" content="Lisp"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; DNA Center Commands</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="dna-center-commands">DNA Center Commands</h1>
+    <p>
+      Posted on Mi 02 Februar 2022 in <a href="https://maconrad.github.io/category/cisco.html">Cisco</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#maglev">Maglev</a></li>
+<li><a href="#l3-instance-tshoot">L3 Instance Tshoot</a></li>
+<li><a href="#l2-instance-tshoot">L2 Instance Tshoot</a></li>
+<li><a href="#8021x-tshoot">802.1x Tshoot</a></li>
+<li><a href="#trustsec-cts">TrustSec - CTS</a></li>
+<li><a href="#other-related">Other - Related</a></li>
+<li><a href="#service-name-mapping">Service Name mapping</a></li>
+<li><a href="#kibana">Kibana</a><ul>
+<li><a href="#pcap-dnac">PCAP DNAC</a></li>
+<li><a href="#refs">Refs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="maglev">Maglev</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>magctl appstack status fusion | grep swim</td>
+<td>Search for a specific container</td>
+</tr>
+<tr>
+<td>magctl service kill &lt;containerid&gt;</td>
+<td>Kill container based on id</td>
+</tr>
+<tr>
+<td>magctl service logs -rf swim-service</td>
+<td>Read container logs in cli</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><span class="c1"># Unsorted list</span>
+$ ssh -p <span class="m">2222</span> maglev@1.1.1.1
+$ rca <span class="o">(</span>copies tshoot files to /data/rca/maglev-xy<span class="o">)</span>
+$ sudo tail -f /var/log/pods/xy
+$ maglev catalog settings display
+$ maglev packet status
+$ magctl appstack status maglev-system
+$ magctl appstack status <span class="p">|</span> grep kong
+$ magctl service status 7dffc8db8c-hl48s <span class="p">|</span> egrep <span class="s2">&quot;Container ID&quot;</span>
+$ magctl service logs -r kong <span class="p">|</span> lql
+$ magctl service logs -rf kong <span class="p">|</span> lql <span class="o">(</span>f <span class="k">for</span> follow<span class="o">)</span>
+$ magctl api routes <span class="p">|</span> grep -B <span class="m">4</span> /api/assurance/v1
+$ magctl api routes <span class="p">|</span> grep -B <span class="m">4</span> /business/sda/border-device
+$ kubernetes get services –n &lt;appstackname&gt;
+$ docker logs k8s_proxy_postgres-0_app-hosting_358c6df6-4683-4744-99eb-2979f17e9f22_3
+$ docker inspect k8s_proxy_postgres-0_app-hosting_358c6df6-4683-4744-99eb-2979f17e9f22_3
+</code></pre></div>
+
+<h1 id="l3-instance-tshoot">L3 Instance Tshoot</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show ip vrf</td>
+<td>find lisp id</td>
+</tr>
+<tr>
+<td>show lisp vrf GUEST_VN</td>
+<td>find IID (instance id) of vrf</td>
+</tr>
+<tr>
+<td>show lisp instance-id 4099</td>
+<td>Show instance id</td>
+</tr>
+<tr>
+<td>show ip lisp eid-table vrf GUEST_VN database x.x.x.x/32</td>
+<td>ID Table local on switch</td>
+</tr>
+<tr>
+<td>show ip lisp eid-table vrf GUEST_VN map-cache</td>
+<td>cache (EID sapce = VLAN,SVI with subnet)</td>
+</tr>
+<tr>
+<td>show ip lisp eid-table vrf GUEST_VN map-cache x.x.x.x</td>
+<td>Deails for an eid</td>
+</tr>
+<tr>
+<td>show lisp instance-id 4099 ipv4 server</td>
+<td>on control plane node</td>
+</tr>
+<tr>
+<td>show lisp instance-id 4099 dynamic-eid summary</td>
+<td></td>
+</tr>
+<tr>
+<td>sh ip cef vrf GUEST_VN 10.1.1.253/32 detail</td>
+<td>CEF next hop to CPU (local) or VXLAN TEP/RLOC (remote)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="l2-instance-tshoot">L2 Instance Tshoot</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show lisp instance-id 16201 ethernet database</td>
+<td>Local MAC Address</td>
+</tr>
+<tr>
+<td>show lisp instance-id 16201 ethernet server address-resolution</td>
+<td>IP Address Mapping</td>
+</tr>
+<tr>
+<td>show lisp instance-id 16201 ethernet server 8c16.4516.87ff</td>
+<td>Control Plane registration</td>
+</tr>
+<tr>
+<td>show ip mroute</td>
+<td>VXLAN Tunnel if using MSRB</td>
+</tr>
+<tr>
+<td>show ip pim vrf INFRA neighbo</td>
+<td>Draft rosen Tunnel established if running over MPLS core?</td>
+</tr>
+<tr>
+<td>show mac add | inc <vlan></td>
+<td>Search a specifc mac</td>
+</tr>
+</tbody>
+</table>
+<h1 id="8021x-tshoot">802.1x Tshoot</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>set platform software trace smd switch &lt;switch&gt; R0 &lt;facility&gt;</td>
+<td>Generic Format for Debug on Cat9k</td>
+</tr>
+<tr>
+<td>set platform software trace smd switch active R0 radius verbos</td>
+<td>Radius, other would be dot1x-all, aaa, etc., old: debug dot1x, radius etc.</td>
+</tr>
+<tr>
+<td>set platform software trace smd switch active R0 mab verbos</td>
+<td>MAB Debug, old: debug mab all</td>
+</tr>
+<tr>
+<td>show platform software trace message smd switch active R0 | i radius|dot1|mab|aaa</td>
+<td>View messages</td>
+</tr>
+<tr>
+<td>show access-session interface gigabitEthernet 2/0/1 details</td>
+<td>Applied Cfg</td>
+</tr>
+<tr>
+<td>sh derived-config interface gi2/0/1</td>
+<td>Applied Cfg</td>
+</tr>
+<tr>
+<td>show aaa server</td>
+<td>Show server state</td>
+</tr>
+</tbody>
+</table>
+<h1 id="trustsec-cts">TrustSec - CTS</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sh cts environment-data</td>
+<td>Env data, ip to sgt mapping etc.</td>
+</tr>
+<tr>
+<td>show cts role-based permissions</td>
+<td>Permission matrix</td>
+</tr>
+<tr>
+<td>show cts role-based sgt-map vrf XY all</td>
+<td>SGT mapping vor a VRF</td>
+</tr>
+<tr>
+<td>show cts rbacl</td>
+<td>RBAC</td>
+</tr>
+<tr>
+<td>show cts role-based counters</td>
+<td>SGACL Hitcount</td>
+</tr>
+</tbody>
+</table>
+<h1 id="other-related">Other - Related</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show device-tracking database</td>
+<td>SISF a.k.a IP Device Tracking</td>
+</tr>
+<tr>
+<td>debug ip dhcp snooping</td>
+<td>DHCP Snooping debug</td>
+</tr>
+<tr>
+<td>debug ip dhcp server packet</td>
+<td>DHCP Packet debug</td>
+</tr>
+<tr>
+<td>debug dhcp detail</td>
+<td>DHCP Req details</td>
+</tr>
+</tbody>
+</table>
+<h1 id="service-name-mapping">Service Name mapping</h1>
+<p>PnP -- called onboarding-service</p>
+<h1 id="kibana">Kibana</h1>
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kubernetes.labels.service-type    assurance</td>
+<td>template-programmer-service, swim-service etc.</td>
+</tr>
+<tr>
+<td>kubernetes.labels.serviceName    nsa-webapp</td>
+<td></td>
+</tr>
+<tr>
+<td>kubernetes.labels.serviceName:nsa-webapp and log:switch.domain.org</td>
+<td></td>
+</tr>
+<tr>
+<td>kubernetes.labels.serviceName:nsa-webapp and log:switch.domain.org and log:POLICY_UPDATE</td>
+<td></td>
+</tr>
+<tr>
+<td>log:error AND kubernetes.labels.serviceName:onboarding-service</td>
+<td>AND combine</td>
+</tr>
+<tr>
+<td>log:error and (kubernetes.labels.serviceName:onboarding-service OR kubernetes.labels.serviceName:telemetry-agent)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pcap-dnac">PCAP DNAC</h3>
+<div class="highlight"><pre><span></span><code>$ ifconfig <span class="p">|</span> egrep enp -A1
+$ sudo tcpdump -vvv -i enterprise host <span class="m">1</span>.1.1.1 -w /data/xxy.pcap
+$ tcpdump -r /data/xxy.pcap
+</code></pre></div>
+
+<h2 id="refs">Refs</h2>
+<table>
+<thead>
+<tr>
+<th>Cisco Live</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/us/docs/2019/pdf/BRKARC-2020.pdf</td>
+<td>Many good Tshoot commands</td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/us/docs/2019/pdf/BRKSEC-3018.pdf</td>
+<td>TCAM Monitoring via YANG Models</td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/emea/docs/2020/pdf/R6BGArNQ/TECOPS-3692.pdf</td>
+<td></td>
+</tr>
+<tr>
+<td>https://www.ciscolive.com/c/dam/r/ciscolive/us/docs/2018/pdf/BRKARC-2016.pdf</td>
+<td>E.g. Page 17 service list</td>
+</tr>
+<tr>
+<td>https://www.cisco.com/c/en/us/support/docs/cloud-systems-management/dna-center/213928-how-to-use-kibana-in-digital-network-arc.html</td>
+<td>Kibana</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Bugs</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>https://bst.cloudapps.cisco.com/bugsearch/bug/CSCvo13640</td>
+<td>Unauth even though no dot1x</td>
+</tr>
+</tbody>
+</table>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/cisco.html">Cisco</a>
+      <a href="https://maconrad.github.io/tag/dna.html">DNA</a>
+      <a href="https://maconrad.github.io/tag/lisp.html">Lisp</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Use NBAR to Improve QoS." />
+<meta name="keywords" content="Cisco, QoS, HQoS, NBAR2">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="NBAR Based WAN QoS"/>
+  <meta property="og:description" content="Use NBAR to Improve QoS."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/nbar-based-wan-qos.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-02-22 11:51:00+01:00"/>
+  <meta property="article:modified_time" content="2022-02-22 14:30:00+01:00"/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Cisco"/>
+  <meta property="article:tag" content="Cisco"/>
+  <meta property="article:tag" content="QoS"/>
+  <meta property="article:tag" content="HQoS"/>
+  <meta property="article:tag" content="NBAR2"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; NBAR Based WAN QoS</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="nbar-based-wan-qos">NBAR Based WAN QoS</h1>
+    <p>
+      Posted on Di 22 Februar 2022 in <a href="https://maconrad.github.io/category/cisco.html">Cisco</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#nbar2-based-hqos">NBAR2 Based HQoS</a></li>
+<li><a href="#notes-varia">Notes Varia</a><ul>
+<li><a href="#qos-ipsec">QoS, IPSec</a><ul>
+<li><a href="#pre-classify">Pre-classify</a></li>
+<li><a href="#anti-replay-attack-tuning">Anti-Replay Attack tuning</a></li>
+<li><a href="#qos-ipsec-and-mtu">QoS, IPSec and MTU</a></li>
+</ul>
+</li>
+<li><a href="#qos-and-delay">QoS and Delay</a><ul>
+<li><a href="#bdp-bandwidth-delay-product-bytes-in-flight">BDP - Bandwidth Delay Product - Bytes in flight</a><ul>
+<li><a href="#client-site">Client site</a></li>
+</ul>
+</li>
+<li><a href="#jitter-voice-and-video">Jitter - Voice and Video</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#verification-commands">Verification Commands</a></li>
+<li><a href="#referenced-cisco-live-slides">Referenced Cisco Live Slides</a></li>
+<li><a href="#refs">Refs</a></li>
+</ul>
+</div>
+<h1 id="nbar2-based-hqos">NBAR2 Based HQoS</h1>
+<div class="highlight"><pre><span></span><code>copy scp://1.1.1.1/pp-adv-cat8k-173.2-40-58.0.0.pack bootflash:/
+
+! Activate the new protocol pack
+ip nbar protocol-pack bootflash:/pp-adv-cat8k-173.2-40-58.0.0.pack
+
+
+ip nbar classification tunneled-traffic capwap
+
+class-map match-all WAN-MARKING_IN#MM_STREAM
+ match protocol attribute traffic-class multimedia-streaming
+ match protocol attribute business-relevance business-relevant
+class-map match-all WAN-MARKING_IN#OAM
+ match protocol attribute traffic-class ops-admin-mgmt
+ match protocol attribute business-relevance business-relevant
+class-map match-all WAN-MARKING_IN#CONTROL
+ match protocol attribute traffic-class network-control
+ match protocol attribute business-relevance business-relevant
+class-map match-all WAN-MARKING_IN#MM_CONF
+ match protocol attribute traffic-class multimedia-conferencing
+ match protocol attribute business-relevance business-relevant
+class-map match-all WAN-MARKING_IN#SCAVENGER
+ match protocol attribute business-relevance business-irrelevant
+class-map match-all WAN-MARKING_IN#SIGNALING
+ match protocol attribute traffic-class signaling
+ match protocol attribute business-relevance business-relevant
+class-map match-all WAN-MARKING_IN#BROADCAST
+ match protocol attribute traffic-class broadcast-video
+ match protocol attribute business-relevance business-relevant
+class-map match-all WAN-MARKING_IN#BULK_DATA
+ match protocol attribute traffic-class bulk-data
+ match protocol attribute business-relevance business-relevant
+class-map match-all WAN-MARKING_IN#VOICE
+ match protocol attribute traffic-class voip-telephony
+ match protocol attribute business-relevance business-relevant
+class-map match-all WAN-MARKING_IN#REALTIME
+ match protocol attribute traffic-class real-time-interactive
+ match protocol attribute business-relevance business-relevant
+class-map match-all WAN-MARKING_IN#TRANS_DATA
+ match protocol attribute traffic-class transactional-data
+ match protocol attribute business-relevance business-relevant
+class-map match-any WAN-MARKING_IN#TUNNELED-NBAR
+ match access-group name WAN-MARKING_IN#TUNNELED-NBAR__acl
+
+ip access-list extended WAN-MARKING_IN#TUNNELED-NBAR__acl
+ <span class="m">10</span> remark capwap-data
+ <span class="m">10</span> permit udp any any eq <span class="m">5246</span>
+ <span class="m">20</span> permit udp any any eq <span class="m">5247</span>
+ <span class="m">30</span> remark vxlan
+ <span class="m">30</span> permit udp any any eq <span class="m">4789</span>
+
+
+policy-map WAN-MARKING_IN
+ class WAN-MARKING_IN#TUNNELED-NBAR
+ class WAN-MARKING_IN#VOICE
+  <span class="nb">set</span> dscp ef
+ class WAN-MARKING_IN#BROADCAST
+  <span class="nb">set</span> dscp cs5
+ class WAN-MARKING_IN#REALTIME
+  <span class="nb">set</span> dscp cs4
+ class WAN-MARKING_IN#MM_CONF
+  <span class="nb">set</span> dscp af41
+ class WAN-MARKING_IN#MM_STREAM
+  <span class="nb">set</span> dscp af31
+ class WAN-MARKING_IN#CONTROL
+  <span class="nb">set</span> dscp cs6
+ class WAN-MARKING_IN#SIGNALING
+  <span class="nb">set</span> dscp cs3
+ class WAN-MARKING_IN#OAM
+  <span class="nb">set</span> dscp cs2
+ class WAN-MARKING_IN#TRANS_DATA
+  <span class="nb">set</span> dscp af21
+ class WAN-MARKING_IN#BULK_DATA
+  <span class="nb">set</span> dscp af11
+ class WAN-MARKING_IN#SCAVENGER
+  <span class="nb">set</span> dscp cs1
+ class class-default
+  <span class="nb">set</span> dscp default
+
+
+
+class-map match-any WAN_QOS_2P6Q3T_9K#VOICE-PQ1
+ match dscp ef 
+class-map match-any WAN_QOS_2P6Q3T_9K#VIDEO-PQ2
+ match dscp cs5 
+ match dscp cs4
+class-map match-any WAN_QOS_2P6Q3T_9K#BULK-DATA
+ match dscp cs1 
+ match dscp af12 
+ match dscp af13 
+ match dscp af11 
+class-map match-any WAN_QOS_2P6Q3T_9K#CONTROL-PLANE
+ match dscp cs3 
+ match dscp cs2 
+ match dscp cs7 
+ match dscp cs6 
+class-map match-any WAN_QOS_2P6Q3T_9K#MULTIMEDIA-CONFERENCING
+ match dscp af43 
+ match dscp af41 
+ match dscp af42 
+class-map match-any WAN_QOS_2P6Q3T_9K#TRANSACTIONAL-DATA
+ match dscp af23 
+ match dscp af21 
+ match dscp af22 
+class-map match-any WAN_QOS_2P6Q3T_9K#MULTIMEDIA-STREAMING
+ match dscp af32 
+ match dscp af33 
+ match dscp af31 
+
+
+
+policy-map LLQ_CBWFQ_WAN_INNER
+ class WAN_QOS_2P6Q3T_9K#VOICE-PQ1
+  priority level <span class="m">1</span>
+  police rate percent <span class="m">10</span>
+class WAN_QOS_2P6Q3T_9K#VIDEO-PQ2
+  priority level <span class="m">2</span>
+  police rate percent <span class="m">23</span>
+class WAN_QOS_2P6Q3T_9K#CONTROL-PLANE
+  bandwidth remaining percent <span class="m">10</span> 
+class WAN_QOS_2P6Q3T_9K#MULTIMEDIA-CONFERENCING
+  bandwidth remaining percent <span class="m">15</span> 
+class WAN_QOS_2P6Q3T_9K#MULTIMEDIA-STREAMING
+  bandwidth remaining percent <span class="m">15</span> 
+class WAN_QOS_2P6Q3T_9K#TRANSACTIONAL-DATA
+  bandwidth remaining percent <span class="m">15</span> 
+  random-detect dscp-based
+class WAN_QOS_2P6Q3T_9K#BULK-DATA
+  bandwidth remaining percent <span class="m">7</span> 
+  random-detect dscp-based
+class class-default
+  bandwidth remaining percent <span class="m">38</span> 
+  random-detect dscp-based
+  fair-queue
+  ! Default 16Queues with 16pkts/queue <span class="o">(</span><span class="m">0</span>.25*default queue-limit<span class="o">)</span>
+  ! Adjust to <span class="m">256</span> pkts per queue
+  fair-queue limit <span class="m">256</span>
+  ! Raise overall queue limit to align with fair-queue limit, default 64pkts
+  queue-limit <span class="m">1024</span> packets
+
+
+policy-map HQoS-10MBPS
+ class class-default
+  ! Adjust tc to 10ms
+  shape average 10m 100k
+  service-policy LLQ_CBWFQ_WAN_INNER
+
+
+interface Tunnel1
+ ...
+ service-policy input WAN-MARKING_IN
+ service-policy output HQoS-10MBPS
+ ip nbar protocol-discovery
+!
+
+interface Gig0/0/1
+ !LAN Interface
+ ...
+ ! QoS Preclassify not needed thanks to marking here
+ service-policy input WAN-MARKING_IN
+ ip nbar protocol-discovery
+!
+</code></pre></div>
+
+<p>Note about <code>shape average 10m 100k</code>, which relies on <strong>Tc = Bc/CIR</strong> = <strong> 10_000_000 / 100_000 = 0.01s = 10ms </strong>.
+Remember: By default (depending on platform) the Tc Interval is 125ms, which can introduce a lot of jitter &amp; delay, therefore
+it is best practice to configure a Tc Value of 10ms if Realtime traffic is on the link.</p>
+<p><img src="../../images/cisco/qos/qos_tcp_sync_waves.jpg" alt="TCP Synchronization Waves" width="500"/>
+<img src="../../images/cisco/qos/shape_vs_police.jpg" alt="Shape vs Policing" width="500"/>
+<img src="../../images/cisco/qos/qos_tc_bc_cir.jpg" alt="Tc Interval, Burst Count bc, Commited information Rate CIR" width="500"/>
+<img src="../../images/cisco/qos/queuing_scheduling.jpg" alt="Queuing Scheduling Overview" width="500"/>
+<img src="../../images/cisco/qos/cbwfq_detail_presorter.jpg" alt="CBWFQ and Presorter" width="500"/>
+<img src="../../images/cisco/qos/cbwfq_llq.jpg" alt="CBWFQ and LLQ" width="500"/></p>
+<p><TODO: mapping SRND></TODO:></p>
+<h1 id="notes-varia">Notes Varia</h1>
+<h2 id="qos-ipsec">QoS, IPSec</h2>
+<h3 id="pre-classify">Pre-classify</h3>
+<p>An important note here is that GRE as well as IPSEC specification state that ToS field form the original IP Header gets copied to the outer/new header. However, no matching can occur on other values as the inner packet is not visibile. For example, a match on original source and destination IP is not possible. To achieve this, the command <code>qos pre-classify</code> can be used. By adding it to the tunnel, it allows for classification using the inner packet by storing a <strong><em>temporary copy of the header</em></strong> fields that are used for classification. One important thing to remember though is, that only the header is stored, so no additional policy, e,g, based on deep packet inspection, can be used. Therefore it is recommended to use a two-step model and classify inbound, e.g. on the LAN interface, using deep packet inspection and then only use the ToS field to match on DSCP values. In that case, qos pre-classify is not even needed.</p>
+<h3 id="anti-replay-attack-tuning">Anti-Replay Attack tuning</h3>
+<p>Anti-Replay window size defaults to 64 pkts. If QoS is used heavily, that means the link has a high % of ussage, this can lead to significant reordering of packets which in turn can lead to false-positive Anti-Replay error messages. For example, voice packets get moved to the top of the queue while data packets have to wait for another slot.</p>
+<p>The anti-replay window size should therefore be tuned. This can be achieved using the following commands:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Increase from 64 to 1024</span>
+crypto ipsec security-association replay window-size <span class="m">1024</span>
+
+<span class="c1"># Or turn off completly</span>
+crypto ipsec security-association replay disable
+</code></pre></div>
+
+<p>In general packets can be received out of order without a problem as long as they remain inside the same window.</p>
+<h3 id="qos-ipsec-and-mtu">QoS, IPSec and MTU</h3>
+<p>Less of a QoS and more of an IPSec overhead issue. See Article <strong><em>Cisco Modeling Labs 1</em></strong> for more details. Remember:</p>
+<div class="highlight"><pre><span></span><code>interface Tunnel1
+ ip mtu <span class="m">1400</span>
+ ip tcp adjust-mss <span class="m">1360</span>
+</code></pre></div>
+
+<h2 id="qos-and-delay">QoS and Delay</h2>
+<h3 id="bdp-bandwidth-delay-product-bytes-in-flight">BDP - Bandwidth Delay Product - Bytes in flight</h3>
+<p>Delay plays a cricital role on the WAN. To better understand this, the Bandwidth-Delay-Product (BDP) has to be understood. In short, the BDP determines how much data is <strong><em>in-flight</em></strong> due to latency and speed. BDP is caluclated as <strong><em> BDP = Bandwith * Delay </em></strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example for a 200ms RTT and 10mbps WAN link</span>
+<span class="nv">BDP</span> <span class="o">=</span> <span class="o">(</span><span class="m">10</span>*10^6<span class="o">)(</span><span class="m">200</span>*10^-3<span class="o">)</span> <span class="o">=</span> 10_000_000bps * <span class="o">(</span><span class="nv">200ms</span> <span class="o">=</span> <span class="m">0</span>.2s<span class="o">)</span> <span class="o">=</span> <span class="nv">2_000_000bits</span> <span class="o">=</span> <span class="nv">250_000byte</span> <span class="o">=</span> 250kbyte
+</code></pre></div>
+
+<p>The router therefore should be able to keep this pipe filled and provide enough buffers for that. It follows a similir formula as BDP, although multiple formulas to calculate the optimum exist:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># B = Required Buffer, C = Capacity, RTT = Round Trip Time, N = Number of TCP Flows</span>
+<span class="nv">B</span> <span class="o">=</span> C * RTT 
+<span class="nv">B</span> <span class="o">=</span> C * RTT / sqrt<span class="o">(</span>N<span class="o">)</span>
+</code></pre></div>
+
+<p>The number of packets required depends on the traffic MIX, or better said the packet sizes, so it is very use-case/network specific. A good starting point usually is the IMIX, which an average packet size of 350byte. 
+For a regular queue and the example above this would mean around </p>
+<div class="highlight"><pre><span></span><code><span class="nv">B</span> <span class="o">=</span> 250kb
+250_000bb / <span class="nv">350b</span> <span class="o">=</span> <span class="m">715</span> pkts
+</code></pre></div>
+
+<p>And for fair queue-presortor on cisco platforms with 16 queues this would mean around*:</p>
+<div class="highlight"><pre><span></span><code>250_000b / 350b / sqrt<span class="o">(</span><span class="m">16</span><span class="o">)</span> <span class="o">=</span> 179pkts
+</code></pre></div>
+
+<p><em>Note: The number of flows is irrelevant as long as the flows get evenly distributed to all 16 available queus.
+Using regular network 2^x reservation, this means that the closest matches are </em><strong>256 pkts / 1024 pkts</strong>* as noted in the example above. </p>
+<h4 id="client-site">Client site</h4>
+<p>Remember that the client side also needs to be able to <strong><em>fill the pipe</em></strong>. This was a problem in the past as the TCP Window size (2byte in the pkt header) had a maximum of 64kb and the TCP Slow Start algorithm did not help. WAN Optimizer where introduced with different TCP Algorithms not being susceptibale to Slow start and doing TFO, SACK, deduplication and compression. Todays clients fortunately also use some of these techniques like RFC1323 (Client side window Scaling) and SACKs to keep the pipe filled. Remember to keep checking the window size and scaling factor that is negotiated in TCP 3 Way handshake if there are poor performance problems over WAN lines. E.g. Cisco Switches acting as clients still by default have a TPC Window Size of 64kb. Window Scaling factor can be found in the TCP Option (Window Scale).</p>
+<p>Note Wireshark can help to analyze this:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Graphical: Statistics &gt; TCP Stream Graph &gt; Window Scaling</span>
+<span class="c1"># Graphical: Graph Window size via I/0 Graph </span>
+<span class="c1">## tcp.window_size &lt; 1400 and Dot and AVG(Y Field) and Y Field = tcp.window_size</span>
+<span class="c1">## tcp.window_size &lt; 25000 and Dot and AVG(Y Field) and Y Field = tcp.window_size</span>
+<span class="c1">## tcp.window_size &gt; 25000 and Dot and AVG(Y Field) and Y Field = tcp.window_size</span>
+
+tcp.analysis.bytes_in_flight &gt;<span class="o">=</span> xy
+tcp.flags.syn <span class="o">==</span> <span class="m">1</span>
+tcp.window_size &gt;<span class="o">=</span> xy
+tcp.analysis.zero_window 
+tcp.analysis.retransmission
+</code></pre></div>
+
+<h3 id="jitter-voice-and-video">Jitter - Voice and Video</h3>
+<p>If a shaper is used, the Tc (Time Slice) Interval determines, how often the router releases a specific amount of packets. The smaller the Tc interval, the smaller the commited Burst (Bc), which defines the amount of data being released in each interval. </p>
+<p>By default the Tc interval on older platforms is set to 1/8 or 125ms on a Gigabit Ethernet interface. That means that during the first 12.5ms of each interval the router is sending data, and then pausing for 112.5ms. If there is a high latency link like a WAN line across the globe with e.g. 200ms delay, the shaper should add the least possible amount of delay. In that case it added an additional 112.5ms of delay which is not acceptable for real time traffic.</p>
+<p>Remember: Real-time traffic like Voice should be no higher than 150-200ms.</p>
+<p>The Tc interval on cisco router is adjusted indirectly using the Bc (commited burst) and CIR (Commited access rate). </p>
+<div class="highlight"><pre><span></span><code><span class="nv">Bc</span> <span class="o">=</span> Tc * CIR
+<span class="nv">Tc</span> <span class="o">=</span> Bc / CIR
+
+<span class="c1">#Settoing Tc to 10ms or less is good practice</span>
+policy-map OUTER_SHAPER
+ class class-default
+   shape average 10_000_000 100_000
+   service-policy INNER_QOS
+</code></pre></div>
+
+<h1 id="verification-commands">Verification Commands</h1>
+<p>Following verification commands can be used.</p>
+<div class="highlight"><pre><span></span><code>show policy-map interface Tunnel1
+
+show ip nbar attribute category &lt;category&gt;
+show ip nbar protocol-attribute citrix
+show ip nbar protocol-pack active
+show ip nbar protocol-pack active taxonomy
+show ip nbar protocol-discovery top-n <span class="m">5</span>
+
+show ip nbar protocol-discovery interface tunnel1
+
+
+show platform hardware qfp active feature qos queue output interface Tunnel10 detail <span class="p">|</span> i 0x87
+show platform hardware qfp active feature qos interface tunnel10 output
+show platform hardware qfp active statistics drop
+show platform hardware qfp active interface <span class="k">if</span>-name Tunnel10 statistics
+</code></pre></div>
+
+<h1 id="referenced-cisco-live-slides">Referenced Cisco Live Slides</h1>
+<table>
+<thead>
+<tr>
+<th>Cisco Live</th>
+<th>comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BRKRST-2504</td>
+<td>Hierarchical QoS and Policies Aggregation</td>
+</tr>
+</tbody>
+</table>
+<h1 id="refs">Refs</h1>
+<ul>
+<li>See: <a href="https://www.cisco.com/c/en/us/support/docs/routers/7200-series-routers/110850-queue-limit-output-drops-ios.html">Detail on Queuing Behavior</a><ul>
+<li>E.g. Pre-HQF “bandwidth” + “random-detect” + “fair-queue” behavior vs HQF “bandwidth” + “random-detect” + “fair-queue” behavior</li>
+</ul>
+</li>
+<li>See: <a href="https://www.cisco.com/c/en/us/support/docs/ip/generic-routing-encapsulation-gre/25885-pmtud-ipfrag.html">PMTUD Tshoot Technot Details</a></li>
+<li>See: <a href="https://cway.cisco.com/ipsec-overhead-calculator/">IPSec Overhead Calculator</a></li>
+<li>See: <a href="https://learning.oreilly.com/library/view/cisco-qos-exam/1587201240">Book: Cisco QoS (queue-limit, wred)</a></li>
+<li>See: <a href="https://learning.oreilly.com/library/view/end-to-end-qos-network/9780133116137">Book: End-to-End QoS (SRND, platforms etc)</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/cisco.html">Cisco</a>
+      <a href="https://maconrad.github.io/tag/qos.html">QoS</a>
+      <a href="https://maconrad.github.io/tag/hqos.html">HQoS</a>
+      <a href="https://maconrad.github.io/tag/nbar2.html">NBAR2</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

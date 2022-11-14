@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: Basics Basic Terminology Boot Process General Files &amp; Dirs 2&gt;&amp;1 bzip &amp; co /proc &amp; co Logfiles yum and friends /dev/sda &amp; LVM Chmod, chown and ACLs ifconfig vs ip, NetworkManager Ref Images Basics Basic Terminology Kernel: Interface between HW and OS, e.g. Webbrowsing opens network socket done …" />
+<meta name="keywords" content="linux">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Linux Basics Reminder"/>
+  <meta property="og:description" content="Table of contents: Basics Basic Terminology Boot Process General Files &amp; Dirs 2&gt;&amp;1 bzip &amp; co /proc &amp; co Logfiles yum and friends /dev/sda &amp; LVM Chmod, chown and ACLs ifconfig vs ip, NetworkManager Ref Images Basics Basic Terminology Kernel: Interface between HW and OS, e.g. Webbrowsing opens network socket done …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/linux-basics-reminder.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-11-04 18:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Linux"/>
+  <meta property="article:tag" content="linux"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Linux Basics Reminder</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="linux-basics-reminder">Linux Basics Reminder</h1>
+    <p>
+      Posted on Do 04 November 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#basics">Basics</a><ul>
+<li><a href="#basic-terminology">Basic Terminology</a></li>
+<li><a href="#boot-process">Boot Process</a></li>
+<li><a href="#general">General</a></li>
+<li><a href="#files-dirs">Files &amp; Dirs</a></li>
+<li><a href="#21">2&gt;&amp;1</a></li>
+<li><a href="#bzip-co">bzip &amp; co</a></li>
+<li><a href="#proc-co">/proc &amp; co</a></li>
+<li><a href="#logfiles">Logfiles</a></li>
+<li><a href="#yum-and-friends">yum and friends</a></li>
+<li><a href="#devsda-lvm">/dev/sda &amp; LVM</a></li>
+<li><a href="#chmod-chown-and-acls">Chmod, chown and ACLs</a></li>
+<li><a href="#ifconfig-vs-ip-networkmanager">ifconfig vs ip, NetworkManager</a></li>
+<li><a href="#ref-images">Ref Images</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="basics">Basics</h2>
+<h3 id="basic-terminology">Basic Terminology</h3>
+<ul>
+<li>Kernel: Interface between HW and OS, e.g. Webbrowsing opens network socket done via kernel, kernel translates instruction to device driver. Application and kernel run in different memory spaces (kernel-space, user-space). Apps and Deamons make system calls to the kernel to access HW (memory, network etc.)</li>
+<li>Kernel modules: Implement functionality of kernel, e.g. process scheduling, memory mgmt, IPC, network, device drivers, file system, security. etc.</li>
+<li>LKM: Loadable kernel modules. Modules that are not part of monolithic kernel but can be loaded if needed to extend functionality.</li>
+<li>Linux OS: Kernel + GNU Utilities (Deamons, Window System) </li>
+<li>Distro: Linux OS + Other SW (e.g. word processing, browsers) + optionally support. 300+ available</li>
+<li>Distro Family: Base OS (Debian, RedHat, Android). Debian E.g. parent for ubuntu. RedHat parent for RHEL, Centos &amp; Rocky Linux etc.</li>
+<li>Deamon: Application that provides specific service (e.g. httpd) and runs in background</li>
+<li>Glibc: GNU C Library. System calls are made through this lib. Subroutines access the kernel through SCI (system call interface). See image below.</li>
+</ul>
+<p><img src="../../images/LinuxArchitecture.png" alt="Linux Architecture" width="400"/>
+<img src="../../images/Userspace-Kernelspace.png" alt="Linux Architecture" width="400"/></p>
+<h3 id="boot-process">Boot Process</h3>
+<ul>
+<li>Load OS components into memory</li>
+<li>Step 1: Firmware/BIOS loaded from NVRAM <ul>
+<li>POST</li>
+<li>Searches boot sector on devices (marked with boot sector signature)</li>
+</ul>
+</li>
+<li>Step 2: BIOS hands over control to software sitting in boot sector<ul>
+<li>Called boot loader (e.g. GRUB/SYSLINUX)</li>
+</ul>
+</li>
+<li>Step 3: Boot Loader loads kernel image into memory (compressed) + load init RAM disk (initrd/initramfs) which provides temporary file system in memory + pass control to kernel</li>
+<li>Step 4: Kernel creates root file system in memory and decompresses into RAM</li>
+<li>Step 5: Kernel loads device drivers, mounts physical device + unloads initramfs</li>
+<li>Step 6: Kernel starts 1st user-space program (/usr/sbin/init or /lib/systemd/systemd)</li>
+<li>Step 7: Init/systemd invokes all other programs (e.g. cmd shell / GUI)</li>
+<li>Note: MBR (Master Boot Record) located before the first partition on the disk.</li>
+</ul>
+<p><img src="../../images/Bootprocess.png" alt="Linux Architecture" width="400"/></p>
+<h3 id="general">General</h3>
+<p>Basic Commands</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#Present working directory</span>
+<span class="nb">pwd</span>
+
+<span class="c1"># Add a user, -m to create a homedir</span>
+useradd -m mario
+passwd mario
+
+<span class="c1"># Add user to sudoers</span>
+visudo <span class="c1"># check if wheel group allowed</span>
+<span class="c1"># append wheel group</span>
+su -
+usermod -aG wheel mario
+
+<span class="c1"># Switch user - su {username}, - switches to homedir of that user</span>
+su -
+
+<span class="c1"># sudo {command}, sudoers/wheel group</span>
+sudo cp a.txt b.txt
+
+<span class="c1"># SSH X Forwarding</span>
+ssh -Y user@machine
+
+<span class="nb">history</span>
+<span class="c1"># / to search, n=fwd, N=back, g=top, G=end</span>
+<span class="c1"># Sections  1-9 (1=exec(default), 2=sys-calls, 5=file formats, 9=kernel etc...)</span>
+man man
+man ls
+info ls
+man tar
+man <span class="m">5</span> tar
+man -k tar
+man -k <span class="s2">&quot;^tar</span>$<span class="s2">&quot;</span>
+
+<span class="c1"># Info more detailed, hypertext docs named nodes, n=next, p=previous</span>
+info ls
+pinfo ls
+</code></pre></div>
+
+<h3 id="files-dirs">Files &amp; Dirs</h3>
+<ul>
+<li>General: Disk - Partition - Filesystem on Partition</li>
+<li>Filesystem defines how data is stored and retrieved. Defines Block of data (which has a name, start and stop) called file, allocation unit (=minimum size of a block), defines mapping of files to dirs, defines naming schemes, manages metadata</li>
+<li>Ext3/4 and XFS support ACLs</li>
+<li>Linux has FHS (Filesystem Hierarchy Standard) &amp; everything is a file</li>
+<li>Inode: Uniquely identfifies file within a filesystem</li>
+<li>Filetypes: - (regular), d (directory), l (link)</li>
+<li>Hardlinks: link to same inode, Number after file permissions (within partition only because inode number only unique within filesystem). File attrubte changes (.e.g permissions) are reflected. Files only. Inode deleted after last hard link deleted. E.g. used to distribut data/file-access!</li>
+<li>Softlink: link to other file, not inode (across partitions). Files or directories.</li>
+<li>Utilitities like cat, more, less, ls, rm, mkdir etc. groupted together in packages. Core-utils and util-linux are examples</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># -n for line number, -b for line number of non-emtpy lines, -s squeeze multiple non empty lines onto one</span>
+cat 
+<span class="c1"># Enter/Space to scroll, /{pattern}, b=back, g=begin, G=end</span>
+more
+less
+<span class="c1"># -n {num}, f = follow</span>
+head -n15 a.txt
+tail -fn10 /var/log/syslog
+
+<span class="c1"># create, copy, move, delete, shred (overwrite multiple times, no recovery)</span>
+touch a.txt
+cp src dst
+cp -r srcdir dstdir
+mv src dst
+rm a.txt
+shred a.txt
+
+<span class="c1"># -p = parent (make parent if needed), {multiple dirs at same level ,-separted}</span>
+mkdir -p /home/mario/dir1/dir2
+mkdir -p /home/mario/dir1/dir2/<span class="o">{</span>dir3,dir4<span class="o">}</span>
+rmdir /path/to/empty/dir
+rm -r /path/to/nonempty/dir
+
+<span class="c1"># Add inode</span>
+mario@vbox:~$ ls -lai
+total <span class="m">132</span>
+ <span class="m">920630</span> drwxr-xr-x <span class="m">16</span> mario mario  <span class="m">4096</span> Nov  <span class="m">1</span> <span class="m">11</span>:48 .
+ <span class="m">915713</span> drwxr-xr-x  <span class="m">3</span> root  root   <span class="m">4096</span> Nov  <span class="m">1</span> <span class="m">09</span>:11 ..
+ <span class="m">922050</span> -rw-------  <span class="m">1</span> mario mario   <span class="m">500</span> Nov  <span class="m">1</span> <span class="m">11</span>:47 .bash_history
+ <span class="m">927160</span> -rw-r--r--  <span class="m">1</span> mario mario   <span class="m">220</span> Nov  <span class="m">1</span> <span class="m">09</span>:11 .bash_logout
+ <span class="m">930761</span> -rw-r--r--  <span class="m">1</span> mario mario  <span class="m">3869</span> Nov  <span class="m">1</span> <span class="m">10</span>:06 .bashrc
+ <span class="m">928057</span> drwx------ <span class="m">17</span> mario mario  <span class="m">4096</span> Nov  <span class="m">1</span> <span class="m">11</span>:47 .cache
+ <span class="m">928060</span> drwxr-xr-x <span class="m">21</span> mario mario  <span class="m">4096</span> Nov  <span class="m">1</span> <span class="m">11</span>:49 .config
+<span class="m">1056707</span> drwxr-xr-x  <span class="m">2</span> mario mario  <span class="m">4096</span> Nov  <span class="m">1</span> <span class="m">10</span>:45 Desktop
+
+<span class="c1"># Hardlink, ln {existing} {new}, permissions reflected</span>
+ls -ali
+ln a.txt a2.txt
+<span class="c1"># number hardlinks now 2</span>
+ls -ali
+
+chmod g+w a2.txt
+chmod o+w a2.xt
+
+<span class="c1"># Softlink, permission always 777, can be broken (if original file deleted)</span>
+ln -s exist new_link
+
+<span class="c1"># Info about file, permission size etc.</span>
+stat a2.xt
+
+<span class="c1"># Mounting, find UUID of device</span>
+blkid
+mkdir /media/iso
+mount /dev/sr0 /media/iso
+
+vi /etc/fstab
+<span class="nv">UUID</span><span class="o">={</span>uuid<span class="o">}</span>  /media/iso  iso9660 ro,user,auto  <span class="m">0</span> <span class="m">0</span>
+</code></pre></div>
+
+<h3 id="21">2&gt;&amp;1</h3>
+<ul>
+<li>Goal: filter input/output of programs/utils and apply control </li>
+<li>File handle: Number assigned to a file by the OS when that file is opened, usually dynamic, static for certain files. Remember everything is a file in linux. Also called FD (File descriptor)</li>
+<li>Stdin: file handle #0 (keyboard by default), FD0<ul>
+<li>Input redirection:  { command }  &lt; { file }</li>
+</ul>
+</li>
+<li>Stdout: file handle #1 (default screen), FD1</li>
+<li>Stderr: file handle #2 (default screen), FD2<ul>
+<li>/dev/null can be used if not wanted</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># Input redirection (default to keyboard) -  {command} &lt; {file}</span>
+sort &lt; abc.txt
+
+<span class="c1"># Output redirection (default to screen) - {command} &gt; {file}</span>
+sort inputfile. &gt; file.txt 
+
+<span class="c1"># Input and output redirection</span>
+sort &lt; input.txt &gt; sorted.txt
+
+<span class="c1"># Error redirection (default to screen) - {command}  2&gt; {file}</span>
+<span class="c1"># Example: All permission denied goes into error.log</span>
+find /* -name <span class="s1">&#39;xy*&#39;</span> <span class="m">2</span>&gt;error.log
+
+<span class="c1"># Stdout and stderr {command} &amp;&gt; {file}</span>
+find /* -name <span class="s1">&#39;xy*&#39;</span> <span class="p">&amp;</span>&gt; errandout.xt
+find /* -name <span class="s1">&#39;xy*&#39;</span> &gt; errandoutoption2.xt <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+
+<span class="c1"># Split out and error into separate files {command} &gt; {output_file} 2&gt; {error_file}</span>
+find /* -name <span class="s1">&#39;*prf*&#39;</span> &gt; out2.txt <span class="m">2</span>&gt; err2.xt
+
+<span class="c1"># Append</span>
+cat a.txt &gt;&gt; existing.txt
+find /* -name <span class="s1">&#39;*prf*&#39;</span> &gt;&gt; existing.txt <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+find /* -name <span class="s1">&#39;*prf*&#39;</span> &gt;&gt; existing.txt <span class="m">2</span>&gt; /dev/null
+
+<span class="c1"># Pipe, redirect output to input of other</span>
+stat xy.txt <span class="p">|</span> sort <span class="p">|</span> head -n <span class="m">1</span>
+
+<span class="c1"># Ping default GW (awk filter second column)</span>
+netstat -nr <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span> <span class="p">|</span> egrep <span class="s2">&quot;([0-9]{1,3}.){3}([0-9]{1,3})&quot;</span> <span class="p">|</span> xargs -n1 ping -c <span class="m">1</span>
+
+<span class="c1"># Redirect and output to file at same time using tee, -a to append</span>
+ls -l <span class="p">|</span> tee lsoutput.txt
+</code></pre></div>
+
+<h3 id="bzip-co">bzip &amp; co</h3>
+<p>Vary in compression ratio and speed. Often used together with archiving utility like tar.
+- xz: best compression, slowest
+- bzip2: middle
+- gzip: worst compresstion, fastest</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Removes uncrompessed file by default, -k =keep, -v=verbose</span>
+gzip -k a.txt
+gunzip a.txt.gz
+
+bzip2 -kv a.txt
+bunzip2 a.txt.bz2
+
+xz -v a.txt
+xz -d a.txt.xz
+
+<span class="c1"># tar tar -cvf {Archive_File.tar} {file1} {file2}  .. {fileX}</span>
+tar -cvf errs.tar prf*
+<span class="c1"># -t = table = view content, not extracted</span>
+tar -tf errs.tar
+<span class="c1"># -x = extract</span>
+tar -xvf errs.tar
+
+<span class="c1"># tar and compression</span>
+<span class="c1"># tar -zcvf { archive-file.tar.gz } { file1 } { file2 }  .. { fileX }</span>
+<span class="c1"># tar -jcvf { archive-file.tar.bz2 } { file1 } { file2 }  .. { fileX }</span>
+<span class="c1"># tar -Jcvf { archive-file.tar.xz } { file1 } { file2 }  .. { fileX }</span>
+tar -Jcvf xy.tar.xz a.txt b.txt c.txt
+tar -Jxvf xy.tar.xz 
+</code></pre></div>
+
+<h3 id="proc-co">/proc &amp; co</h3>
+<ul>
+<li>Thread: Seq of instructions that are executed by the CPU. Cannot be broken up.</li>
+<li>Process: Group of threads. Has its own address space in memory.<ul>
+<li>PID: Process ID<ul>
+<li>PID 0 = kernel</li>
+<li>PID 1 = systemd (init)</li>
+</ul>
+</li>
+<li>Signal: Numb 1-64<ul>
+<li>SIGTERM</li>
+<li>SIGKILL</li>
+<li>SIGCONT</li>
+<li>SIGSTOP </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Job: 2+ processes.<ul>
+<li>Example: Piping creats jobs, ls | less</li>
+</ul>
+</li>
+<li>Service: 1+ process to achieve a function. If runs in background called daemon</li>
+<li>TTY: Terminal number, e.g. pts/0 = Terminal 0, pts/1 = Terminal 1<ul>
+<li>? in ps output = not associated with a terminal</li>
+</ul>
+</li>
+<li>VSZ: Virtual memory</li>
+<li>RSS: Main Memory (RAM)</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># -A, -e for all, -a for all except session leaders</span>
+<span class="c1"># -u = current user, -u {name}</span>
+<span class="c1"># -f = parent process id</span>
+<span class="c1"># -C = select by cmd name</span>
+<span class="c1"># -p = specifc PID</span>
+
+<span class="c1"># Nice tree</span>
+ps -uf
+
+<span class="c1"># PPID (remember: PID0=kernel, PID1=init)</span>
+ps -ef
+
+<span class="c1"># -C</span>
+ps -C bash
+ps -up <span class="m">3040</span>
+
+pstree -p
+pidof bash
+
+<span class="c1"># Process grep, -u=user, -l=list name</span>
+pgrep -u mario -l bash
+pkill bash --ns <span class="m">11730</span>
+pkill bash --ns <span class="m">11730</span> --signal SIGSTOp
+
+<span class="c1"># List all signals</span>
+<span class="nb">kill</span> -l
+<span class="nb">kill</span> -SIGSTOP <span class="m">11730</span>
+<span class="nb">kill</span> -SIGCONT <span class="m">11730</span>
+
+<span class="c1"># jobs, bring to front, send to back</span>
+<span class="nb">jobs</span>
+vi a.txt <span class="p">&amp;</span>
+<span class="nb">jobs</span>
+<span class="nb">fg</span> <span class="m">1</span>
+<span class="nb">bg</span> <span class="m">1</span>
+
+<span class="c1"># systemctl { options } { service_name }</span>
+<span class="c1"># Options: start, stop, enable (auto-start on boot), disable, status</span>
+systemctl status
+systemctl status rsyslog
+sudo systemctl <span class="nb">enable</span> httpd
+
+<span class="c1"># Keys: m=memory, t=cpu%,shift+m=sort by memory, shirt+p=sort by cpu</span>
+<span class="c1"># Keys: k &gt; PID &gt; Signal, 1=all processes of system</span>
+top
+<span class="c1"># Referesh rate every 5sec</span>
+top -d <span class="m">5</span>
+
+<span class="c1"># -R = RFC2822</span>
+date
+date -R
+<span class="c1"># NTP and timezone</span>
+timedatectl
+
+<span class="c1"># Load average 1,5,15min, depends on num-cpu</span>
+uptime
+
+<span class="c1"># Processer info</span>
+cat /proc/cpuinfo <span class="p">|</span> grep processor
+dmidecode -t
+dmidecode -t memory
+dmesg <span class="p">|</span> grep -i usb
+lspci -tv
+</code></pre></div>
+
+<h3 id="logfiles">Logfiles</h3>
+<ul>
+<li><code>/var/log/lastlog</code>: Last successful login</li>
+<li><code>/var/log/messages</code>: General system info</li>
+<li><code>/var/log/secure</code>: Failed user logon attempts</li>
+<li><code>/var/log/yum.log</code>: YUM Logs</li>
+<li>rsyslogd and journald<ul>
+<li>Syslog: Define which facility msg goes where</li>
+<li>Jounal: Single binary file <code>/run/log/journal/system.journal</code></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># Interprets binary file</span>
+lastlog
+
+<span class="c1"># $IncludeConfig /etc/rsyslog.d/*.conf</span>
+<span class="c1"># RULES Section which facility goes where</span>
+vi /etc/rsyslog.conf
+
+<span class="c1"># Interprets journal file</span>
+<span class="c1"># -n=last n lines, -p=severity, --since=today|yesterday </span>
+<span class="c1"># --since date --until, -f=follow</span>
+journalctl
+journalctl -n <span class="m">10</span>
+<span class="c1"># E.g. ERROR level</span>
+journalctl -p3 --since<span class="o">=</span>today
+
+<span class="c1"># -b=boot, -0=since last boot</span>
+journalctl -b -0
+</code></pre></div>
+
+<h3 id="yum-and-friends">yum and friends</h3>
+<ul>
+<li>Manual compilation<ul>
+<li>Process:<ul>
+<li><code>configure</code> to detect and configure HW and SW on local system. Generates make file</li>
+<li><code>make</code> compiles the src, generate new libs, link existing shared libraries (.so files)</li>
+<li><code>make install</code> move compiled bins into respective dirs</li>
+</ul>
+</li>
+<li>Problems:</li>
+</ul>
+</li>
+<li>RPM<ul>
+<li>pre-compiled (unsless src-rpm) binaries (save time)</li>
+<li>checksum to validate</li>
+<li>metadata that point out dependencies and notifies user</li>
+<li>Non Repo Based (files installed)</li>
+</ul>
+</li>
+<li>YUM Based on RPM file format but uses Repos<ul>
+<li>RPM includes dependencies, but does not resolve them</li>
+<li>YUM detects and resolved deps recursevely</li>
+</ul>
+</li>
+<li>DNS enhancements to YUM<ul>
+<li>Faster &amp; Dependenciy resolve better</li>
+</ul>
+</li>
+<li>Local Repos under <code>/etc/yum.repos.d/</code><ul>
+<li>Can be enabled oro disabled there  </li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># -q=query, -V=verify, -i install, -U=upgrade, -F=freshen, -e=uninstall</span>
+<span class="c1"># -qp=Query not installed package (rpm file), -ql=list, -qR=dependencies</span>
+<span class="c1"># 1st Mode decides: </span>
+<span class="c1">#    - rpm -qi { package_name } = Query Mode (nothing installed)</span>
+<span class="c1">#    - rpm -iV { package_name } = Install Mode</span>
+rpm -qi gedit
+rpm -qpi xy.rpm
+rpm -ql gedit
+rpm -qR gedit
+
+<span class="c1"># Install in verbose mode</span>
+rpm -iv xy.rpm
+
+<span class="c1"># YUM</span>
+yum list 
+yum list gedit
+yum list ^core<span class="o">[</span><span class="m">5</span>-9<span class="o">]</span>.$
+yum list installed
+yum list available
+
+<span class="c1"># search on name of pkg and description</span>
+yum search httpd
+yum search <span class="s1">&#39;text editor&#39;</span>
+
+<span class="c1"># search on name, desc, </span>
+yum search all apache
+
+<span class="c1"># detailed info (version, arch, size, repo etc.)</span>
+yum info gedit
+
+<span class="c1"># Repo that provides a certain file</span>
+yum provides httpd.conf
+
+<span class="c1"># Group of pkgs</span>
+yum group info xy
+
+<span class="c1"># Like bash history, but for yum</span>
+yum <span class="nb">history</span>
+yum <span class="nb">history</span> info
+
+<span class="c1"># Install, remove, update pkg</span>
+sudo yum install httpd
+sudo yum remove httpd
+sudo yum update httpd
+
+<span class="c1"># enabled repos</span>
+yum repolist
+
+<span class="c1"># all repos, enabled or disabled</span>
+yum repolist all
+yum-config-manager --enable <span class="o">{</span>repo_name<span class="o">}</span>
+yum-config-manager --disable <span class="o">{</span>repo_name<span class="o">}</span>
+
+<span class="c1"># yum-config-manager --add-repo= {repo_url}</span>
+<span class="c1"># Example add EPEL (extra packages for enterprise linux)</span>
+sudo yum-config-manager --add- <span class="nv">repo</span><span class="o">=</span><span class="s2">&quot;https://dl.fedoraproject.org/pub/epel/7/x86_64/&quot;</span>
+
+<span class="c1"># Alternative to using yum config manager for installing this specific repo (some popular repos can be installed like this)</span>
+yum install epel-release
+
+ls /etc/yum.repos.d/
+
+<span class="c1"># create local repo - createrepo { rpm_archives_directory }</span>
+mkdir /home/maconrad/MyRepo
+cp xy.rpm /hoem/maconrad/MyRepo/
+
+touch /etc/yum.repos.d/my.repo
+<span class="nb">cd</span> /etc/yum.repos.d/
+<span class="nb">echo</span> <span class="s2">&quot;[MyRepo]&quot;</span> &gt; my.repo
+<span class="nb">echo</span> <span class="s2">&quot;Name=MyRepo&quot;</span> &gt;&gt; my.repo 
+<span class="nb">echo</span> <span class="s2">&quot;Baseurl=file:///home/maconrad/MyRepo&quot;</span> &gt;&gt;  my.repo 
+<span class="nb">echo</span> <span class="s2">&quot;Enabled=1&quot;</span> &gt;&gt; my.repo 
+<span class="nb">echo</span> <span class="s2">&quot;Gpgcheck=0&quot;</span> &gt;&gt; my.repo
+
+createrepo /home/maconrad/MyRepo/
+yum clean all
+yum update
+yum repolist
+
+<span class="c1"># Search for package from myrepo</span>
+yum info pkgname*
+sudo yum install xy
+
+dnf provides /usr/sbin/semanage
+sudo dnf install lightdm-gtk
+</code></pre></div>
+
+<h3 id="devsda-lvm">/dev/sda &amp; LVM</h3>
+<p>asdf</p>
+<div class="highlight"><pre><span></span><code>brew install pyenv 
+</code></pre></div>
+
+<p>asdf</p>
+<h3 id="chmod-chown-and-acls">Chmod, chown and ACLs</h3>
+<p>asdf</p>
+<div class="highlight"><pre><span></span><code>brew install pyenv 
+</code></pre></div>
+
+<p>asdf</p>
+<h3 id="ifconfig-vs-ip-networkmanager">ifconfig vs ip, NetworkManager</h3>
+<p>asdf</p>
+<div class="highlight"><pre><span></span><code>brew install pyenv 
+</code></pre></div>
+
+<p>asdf</p>
+<h3 id="ref-images">Ref Images</h3>
+<p>Image Copyright @Cisco, if violating any policy will be removed. Please advice.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/linux.html">linux</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

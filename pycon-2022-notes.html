@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Nice talks from PyCon" />
+<meta name="keywords" content="Python, PyCon, Talks">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Pycon 2022 Notes"/>
+  <meta property="og:description" content="Nice talks from PyCon"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/pycon-2022-notes.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-04-21 11:51:00+02:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Python"/>
+  <meta property="article:tag" content="Python"/>
+  <meta property="article:tag" content="PyCon"/>
+  <meta property="article:tag" content="Talks"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Pycon 2022 Notes</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="pycon-2022-notes">Pycon 2022 Notes</h1>
+    <p>
+      Posted on Do 21 April 2022 in <a href="https://maconrad.github.io/category/python.html">Python</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#pycon-de-2022">PyCon DE 2022</a><ul>
+<li><a href="#openstreetmap-with-python">OpenStreetmap with Python</a><ul>
+<li><a href="#osm">OSM</a></li>
+<li><a href="#osm-and-postgres">OSM and Postgres</a></li>
+<li><a href="#osm-and-python">OSM and python</a></li>
+<li><a href="#links">Links</a></li>
+</ul>
+</li>
+<li><a href="#pytest">pytest</a><ul>
+<li><a href="#links_1">Links</a></li>
+</ul>
+</li>
+<li><a href="#creating-3d-maps-with-python">Creating 3D Maps with Python</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="pycon-de-2022">PyCon DE 2022</h1>
+<h2 id="openstreetmap-with-python">OpenStreetmap with Python</h2>
+<p>Posgres / OSM / python</p>
+<h3 id="osm">OSM</h3>
+<p>OSM has 3 Data Types
+    - Nodes
+        - Waste Baskets
+        - Toilets
+        - ...
+    - Way (connection of nodes)
+        - Open way (line)
+        - Closed way (starts and stops)
+            - Roundabout / parks (areas)
+    - Relations (group nodes, ways and other relations)
+        - Lakes with islands
+        - university campuses
+        - bus routes
+    - Catogorize &amp; search with tagging
+        - Key&amp;values
+        - Examples (amenity e.g. cinema, post_box, townhall, waste_basket)
+        - Examples (landuse e.g. commercial, industrial, residental, farmland, forrest)</p>
+<p>OSM data has PBF binary format (fastest to read and write).</p>
+<h3 id="osm-and-postgres">OSM and Postgres</h3>
+<p>Geospatial Potgres
+    - PostGIS Plugin (implements standards = basic geographic datatypes)
+    - Opengeospecial consortium (geospaical analysis)
+        - Simple features for SQL (SFSQL)
+        - poligon (find all points in that poligon)</p>
+<p>Geometry Objects
+    - Poligon / POint / Linestring
+    - Geometry collection (multipoint)</p>
+<p>PostGIS Introduction URL for how to write spacial queries with PostGIS</p>
+<p>Tools to get Data OSM Data into DB
+    - osmium (extract, merge commands)
+        - E.g. extract berlin
+    - osm2pgsql (not very descriptive table names)
+        - Lua scripts to modify</p>
+<h3 id="osm-and-python">OSM and python</h3>
+<p>Use CLI like click, rich for fast development cycle.
+Plotly to write chart in html, richt to write nice table.
+Poetry to deliver package</p>
+<h3 id="links">Links</h3>
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">travishathaway</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">posts</span><span class="o">/</span><span class="mi">2022</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="n">processing</span><span class="o">-</span><span class="n">osm</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">with</span><span class="o">-</span><span class="n">postgresql</span><span class="o">-</span><span class="ow">and</span><span class="o">-</span><span class="n">python</span><span class="o">/</span><span class="w"></span>
+
+<span class="o">-</span><span class="w"> </span><span class="n">travishathaway</span><span class="o">.</span><span class="n">com</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">travishathaway</span><span class="w"></span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">travishathaway</span><span class="o">/</span><span class="n">osmprj</span><span class="w"></span>
+<span class="w">    </span><span class="o">-</span><span class="w">  </span>
+<span class="o">-</span><span class="w"> </span><span class="n">download</span><span class="o">.</span><span class="n">geofabrik</span><span class="o">.</span><span class="n">de</span><span class="w"> </span><span class="p">(</span><span class="n">mirror</span><span class="p">)</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">wiki</span><span class="o">.</span><span class="n">openstreetmap</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">planet</span><span class="o">.</span><span class="n">osm</span><span class="w"> </span><span class="p">(</span><span class="n">mirror</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+<ul>
+<li>See: <a href="https://www.youtube.com/c/PyConDE">PyConDE Playlist Youtube</a></li>
+</ul>
+<h2 id="pytest">pytest</h2>
+<h3 id="links_1">Links</h3>
+<ul>
+<li>https://t.cmpl.cc/pyconde.zip (Example Code)</li>
+<li>https://www.the-compiler.org/tmp/pyconde-morning.html</li>
+</ul>
+<h2 id="creating-3d-maps-with-python">Creating 3D Maps with Python</h2>
+<ul>
+<li>opengeodata CH (10cm per pixel)</li>
+<li>martin.christen@fhnw.ch</li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/python.html">Python</a>
+      <a href="https://maconrad.github.io/tag/pycon.html">PyCon</a>
+      <a href="https://maconrad.github.io/tag/talks.html">Talks</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

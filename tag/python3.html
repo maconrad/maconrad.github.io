@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+    <meta name="author" content="Mario Conrad" />
+    <meta name="description" content="" />
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:type" content="blog"/>
+  <meta property="og:title" content="PeliBlog"/>
+  <meta property="og:description" content=""/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Tag Python</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+
+
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/namedtuple-to-the-rescue.html#namedtuple-to-the-rescue">NamedTuple to the rescue</a></h2>
+    <p>
+      Posted on So 31 Oktober 2021 in <a href="https://maconrad.github.io/category/python.html">Python</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/python.html">python</a>,              <a href="https://maconrad.github.io/tag/ide.html">IDE</a>,              <a href="https://maconrad.github.io/tag/smart.html">smart</a>,              <a href="https://maconrad.github.io/tag/stdlib.html">stdlib</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#a-working-approach-the-problem">A working approach - the problem</a></li>
+<li><a href="#improving">Improving</a></li>
+<li><a href="#improving-further">Improving further...</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h2 id="a-working-approach-the-problem">A working approach - the problem</h2>
+<p>If you are not an experienced python programmer. You might right something like this: </p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">apiCallGitHub</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;https://api.github.com/users/</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200 …</span></code></pre></div></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/namedtuple-to-the-rescue.html#namedtuple-to-the-rescue">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/open-closed-principle.html#open-closed-principle">Open Closed Principle</a></h2>
+    <p>
+      Posted on So 31 Oktober 2021 in <a href="https://maconrad.github.io/category/patterns.html">Patterns</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/python.html">python</a>,              <a href="https://maconrad.github.io/tag/patterns.html">patterns</a>,              <a href="https://maconrad.github.io/tag/solid.html">SOLID</a>,              <a href="https://maconrad.github.io/tag/4-star.html">4-star</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#before">Before</a></li>
+<li><a href="#after">After</a></li>
+</ul>
+</div>
+<h2 id="intro">Intro</h2>
+<p>Open Closed principle states that new functionality should be added via extension, ot via modification. So what does that mean?  </p>
+<p>Benefits:</p>
+<ul>
+<li>Scales well</li>
+<li>Does not change interface how class is used</li>
+<li>Prevents state/space explosion and code replication</li>
+</ul>
+<p>Key:</p>
+<ul>
+<li>New functionality is added …</li></ul></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/open-closed-principle.html#open-closed-principle">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/overview-over-pattern-types.html#overview-over-pattern-types">Overview over pattern types</a></h2>
+    <p>
+      Posted on So 31 Oktober 2021 in <a href="https://maconrad.github.io/category/patterns.html">Patterns</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/python.html">python</a>,              <a href="https://maconrad.github.io/tag/patterns.html">patterns</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#solid-design-principle">Solid Design Principle</a></li>
+<li><a href="#creational-patterns">Creational Patterns</a></li>
+<li><a href="#structural-patterns">Structural Patterns</a></li>
+<li><a href="#behavioral-patterns">Behavioral Patterns</a></li>
+<li><a href="#enterprise-patterns">Enterprise Patterns</a></li>
+</ul>
+</div>
+<h2 id="intro">Intro</h2>
+<p>GoF (Gang of Four) defined the following design patterns back in 1994 and categoriezed them into the following groups:</p>
+<ul>
+<li>Creational</li>
+<li>Structural</li>
+<li>Behavioural</li>
+</ul>
+<h2 id="solid-design-principle">Solid Design Principle</h2>
+<p>Defined by Robert C. Martin and very often used …</p></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/overview-over-pattern-types.html#overview-over-pattern-types">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/single-responsibility-separation-of-concern.html#single-responsibility-separation-of-concern">Single Responsibility, Separation of Concern</a></h2>
+    <p>
+      Posted on So 31 Oktober 2021 in <a href="https://maconrad.github.io/category/patterns.html">Patterns</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/python.html">python</a>,              <a href="https://maconrad.github.io/tag/patterns.html">patterns</a>,              <a href="https://maconrad.github.io/tag/solid.html">SOLID</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#before">Before</a></li>
+<li><a href="#after">After</a></li>
+</ul>
+</div>
+<h2 id="intro">Intro</h2>
+<p>The single responsibility principle principle defines that a Class has a single main goal it achieves and should not implement any side responsibilities. DO NOT overload objects with too many responsibilities.</p>
+<p>Benefit:</p>
+<ul>
+<li>Assures that a change in functionality is made centrally (at a …</li></ul></div>
+        <br>
+        <a class="btn"
+           href="https://maconrad.github.io/single-responsibility-separation-of-concern.html#single-responsibility-separation-of-concern">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="https://maconrad.github.io/template.html#template">template</a></h2>
+    <p>
+      Posted on So 31 Oktober 2021 in <a href="https://maconrad.github.io/category/python.html">Python</a>
+
+          &#8226; Tagged with
+              <a href="https://maconrad.github.io/tag/python.html">python</a>,              <a href="https://maconrad.github.io/tag/ide.html">IDE</a>,              <a href="https://maconrad.github.io/tag/smart.html">smart</a>,              <a href="https://maconrad.github.io/tag/stdlib.html">stdlib</a>
+    </p>
+  </header>
+  <div>
+      <div><div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#chap1">Chap1</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h2 id="chap1">Chap1</h2>
+<p>Installation </p>
+<p>In addition, what happens </p>
+<p>In addition if w</p>
+<div class="highlight"><pre><span></span><code>brew install pyenv 
+</code></pre></div>
+
+<p>Then adding the following to <code>~/.zprofile</code></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># pyenv specific config</span>
+<span class="nb">eval</span> <span class="s2">&quot;</span><span class="k">$(</span>pyenv init --path<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+
+<p>That's it. For more details see links below.</p>
+<h2 id="references">References</h2>
+<ul>
+<li>See: <a href="https://opensource.com/article/19/5/python-3-default-mac">Pyenv on Opensource.com</a> </li>
+</ul></div>
+  </div>
+</article>
+
+  <div class="pagination">
+    <a class="btn float-left" href="https://maconrad.github.io/tag/python4.html">
+      <i class="fa fa-angle-left"></i> Older Posts
+    </a>
+    <a class="btn float-right" href="https://maconrad.github.io/tag/python2.html">
+      Newer Posts <i class="fa fa-angle-right"></i>
+    </a>
+  </div>
+
+
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

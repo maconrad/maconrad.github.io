@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Intro to using Netconf to automate switch provisioning." />
+<meta name="keywords" content="Cisco, IOS-XE, Automation, Pyang, Ansible, Netconf">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="Netconf, pyang &amp; ansible to automate IOS-XE"/>
+  <meta property="og:description" content="Intro to using Netconf to automate switch provisioning."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/netconf-pyang-ansible-to-automate-ios-xe.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-03-07 11:51:00+01:00"/>
+  <meta property="article:modified_time" content="2022-03-07 14:30:00+01:00"/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Cisco"/>
+  <meta property="article:tag" content="Cisco"/>
+  <meta property="article:tag" content="IOS-XE"/>
+  <meta property="article:tag" content="Automation"/>
+  <meta property="article:tag" content="Pyang"/>
+  <meta property="article:tag" content="Ansible"/>
+  <meta property="article:tag" content="Netconf"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; Netconf, pyang &amp; ansible to automate IOS-XE</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="netconf-pyang-ansible-to-automate-ios-xe">Netconf, pyang & ansible to automate IOS-XE</h1>
+    <p>
+      Posted on Mo 07 März 2022 in <a href="https://maconrad.github.io/category/cisco.html">Cisco</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#how-to-setup-the-switch-for-netconf">How to setup the Switch for Netconf</a></li>
+<li><a href="#netconf-operations">Netconf Operations</a><ul>
+<li><a href="#validation-of-connectivity">Validation of Connectivity</a></li>
+<li><a href="#using-ansible-netconf-module">Using Ansible Netconf Module</a><ul>
+<li><a href="#ansible-installation">Ansible installation</a><ul>
+<li><a href="#note-osx">Note OSX</a></li>
+</ul>
+</li>
+<li><a href="#validate-switch-connectivity-without-netconf">Validate Switch Connectivity without Netconf</a></li>
+<li><a href="#basic-netconf-automation-ntp">Basic Netconf Automation - NTP</a></li>
+<li><a href="#automation-getting-values">Automation - Getting Values</a></li>
+<li><a href="#automation-plus-rpcs-notifications">Automation Plus - RPCs &amp; Notifications</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#using-python">Using Python</a><ul>
+<li><a href="#get-config">Get-Config</a></li>
+<li><a href="#edit-config">Edit-Config</a></li>
+</ul>
+</li>
+<li><a href="#pyang-and-netconf-console">Pyang and netconf-console</a><ul>
+<li><a href="#basic-tree-printing">Basic Tree Printing</a></li>
+<li><a href="#augmentation">Augmentation</a></li>
+<li><a href="#use-yang-to-generate-skeleton">Use Yang to generate Skeleton</a></li>
+<li><a href="#note-on-cisco-models">Note on Cisco Models</a></li>
+</ul>
+</li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<h1 id="how-to-setup-the-switch-for-netconf">How to setup the Switch for Netconf</h1>
+<p>Basic functionality of Netconf is simply achieved via using <code>netconf-yang</code> command. However the great benefit of netconf comes with using validation and rollback, which is a feature in DB world as ATOMIC operations. Either all-or-nothing. This can be achieved by netconf using the datastore. Furthermore an ACL should be applied to restrict connectivity to the management Hosts.</p>
+<div class="highlight"><pre><span></span><code>hostname SWITCH
+no service config
+username admin privilege <span class="m">15</span> algorithm-type scrypt secret Admin123
+<span class="nb">enable</span> secret Admin123
+service password-encryption
+ip domain name info.lab
+system mtu <span class="m">9100</span>
+
+line vty <span class="m">0</span> <span class="m">15</span>
+ login <span class="nb">local</span>
+ transport input ssh
+ transport preferred none
+
+crypto key generate rsa modulus <span class="m">2048</span>
+ip ssh version <span class="m">2</span>
+ip scp server <span class="nb">enable</span>
+
+vrf definition Mgmt
+ rd <span class="m">1</span>:1
+ address-family ipv4
+
+int gig0
+ vrf forwarding Mgmt
+ ip address <span class="m">10</span>.10.10.200 <span class="m">255</span>.255.255.0
+
+ip route vrf Mgmt <span class="m">0</span>.0.0.0 <span class="m">0</span>.0.0.0 <span class="m">10</span>.10.10.1
+
+ip access-list extended ACL_NETCONF_PERMIT
+ permit tcp <span class="m">10</span>.20.20.0 <span class="m">0</span>.0.0.255 host <span class="m">10</span>.10.10.200 eq <span class="m">830</span>
+
+netconf-yang
+netconf-yang feature candidate-datastore
+netconf-yang ssh ipv4 access-list name ACL_NETCONF_PERMIT
+
+event manager applet catch_all
+ event cli pattern <span class="s2">&quot;.*&quot;</span> sync no skip no
+ action <span class="m">1</span> syslog msg <span class="s2">&quot;</span><span class="nv">$_cli_msg</span><span class="s2">&quot;</span>
+</code></pre></div>
+
+<h1 id="netconf-operations">Netconf Operations</h1>
+<h2 id="validation-of-connectivity">Validation of Connectivity</h2>
+<p>Validation is easy using any standard SSH Client.</p>
+<div class="highlight"><pre><span></span><code>ssh -p <span class="m">830</span> admin@10.10.10.200
+</code></pre></div>
+
+<h2 id="using-ansible-netconf-module">Using Ansible Netconf Module</h2>
+<p>For the sake of completness and easyness of usage, installation of the module and usage is quickly summarized:
+    - Setup python venv using on of the known tools like anaconda, virtualenvwrapper or std-lib bundles venv module
+    - Installation of ansible
+    - Setup of inventory
+    - Installation of Netconf via Netcommons Ansible Galaxy Collection</p>
+<h3 id="ansible-installation">Ansible installation</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Create virtualenv using virtualenvwrapper</span>
+mkvirtualenv netconf-ansible
+workon netconf-ansible
+
+python -m venv netconf-env
+<span class="nb">source</span> netconf-env/bin/activate
+
+<span class="c1"># Install ansible (v.5.5.0 and ansible-core 2.12 in my case)</span>
+pip install ansible
+<span class="c1"># Paramiko required by ansible.netcommon.network_cli</span>
+pip install paramiko
+
+<span class="c1"># Verify python3 is used in the backend</span>
+ansible --version <span class="p">|</span> grep <span class="s2">&quot;python version&quot;</span>
+
+<span class="c1"># Quick test of ansible installation</span>
+ansible localhost -m ping
+
+<span class="c1"># Validate what Cisco enhancements are already installed</span>
+ansible-galaxy collection list <span class="p">|</span> grep cisco
+</code></pre></div>
+
+<h4 id="note-osx">Note OSX</h4>
+<p>On OSX when using pyenv, the interpreter points directly to pyenv installed version. Therefore the modules/packages search path is not correctly added.
+Therefore e.g. paramiko is not found when executing ansible. The easy way is to install the module globally, which would pollute the system. The better
+way is to adjust the python search path.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Get current search path</span>
+ansible --version <span class="p">|</span> grep <span class="s2">&quot;configured module search path&quot;</span> 
+
+<span class="c1"># Get path of venv</span>
+<span class="nb">source</span> netconf-env/bin/activate
+<span class="c1"># Start interactive shell and look for site-package path if unkown</span>
+python
+ import sys
+ print<span class="o">(</span>sys.path<span class="o">)</span>
+
+<span class="c1"># Add package path to ansible.cfg library=... using colon (:) notation for multiple</span>
+<span class="c1">## See below</span>
+</code></pre></div>
+
+<p>Note MAC: <code>ansible 127.0.0.1 -m shell -a "python -c 'import sys; print(sys.path)'" --connection=local</code></p>
+<h3 id="validate-switch-connectivity-without-netconf">Validate Switch Connectivity without Netconf</h3>
+<p>We setup ansible, an inventory containing our switch and configure a NTP server using a simple playbook.
+It is always good to first do some basic testing with a simple playbook to see everything works as expected.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># ansible.cfg</span>
+<span class="o">[</span>defaults<span class="o">]</span>
+<span class="nv">inventory</span> <span class="o">=</span> inventory
+<span class="nv">interpreter_python</span><span class="o">=</span>/Users/conrad/&lt;...&gt;/netconf_play/netconf-env/bin/python
+<span class="nv">library</span> <span class="o">=</span> /Users/conrad/.ansible/plugins/modules:/usr/share/ansible/plugins/modules:/Users/conrad/&lt;...&gt;/netconf_play/netconf-env/lib/python3.9/site-packages
+</code></pre></div>
+
+<p>Configure a basic inventory:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># inventory</span>
+<span class="o">[</span>routers<span class="o">]</span>
+<span class="m">10</span>.10.10.200
+
+<span class="o">[</span>routers:vars<span class="o">]</span>
+<span class="nv">ansible_connection</span><span class="o">=</span>ansible.netcommon.network_cli
+<span class="nv">ansible_become</span><span class="o">=</span>yes
+<span class="nv">ansible_become_method</span><span class="o">=</span><span class="nb">enable</span>
+<span class="nv">ansible_network_os</span><span class="o">=</span>cisco.ios.ios
+<span class="nv">ansible_user</span><span class="o">=</span>admin
+<span class="nv">ansible_password</span><span class="o">=</span>supersecret
+</code></pre></div>
+
+<p>Setup the playbook:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Configure the banner</span><span class="w"></span>
+<span class="w">  </span><span class="nt">gather_facts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
+<span class="w">  </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">routers</span><span class="w"></span>
+<span class="w">  </span><span class="nt">tasks</span><span class="p">:</span><span class="w"></span>
+
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Configure the login banner</span><span class="w"></span>
+<span class="w">      </span><span class="nt">cisco.ios.ios_banner</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">banner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">login</span><span class="w"></span>
+<span class="w">        </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">          </span><span class="no">---- Fully automated Box ----</span><span class="w"></span>
+<span class="w">          </span><span class="no">- Do NOT change manually.   -</span><span class="w"></span>
+<span class="w">          </span><span class="no">-----------------------------</span><span class="w"></span>
+<span class="w">        </span><span class="nt">state</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">present</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Update collection to latest version</span>
+ansible-galaxy collection install cisco.ios
+
+<span class="c1"># Syntax Check, lint and run Playbook</span>
+ansible-lint 1_play_banner.yaml
+ansible-playbook 1_play_banner.yaml --syntax-check
+ansible-playbook 1_play_banner.yaml 
+
+<span class="c1"># In case of errors</span>
+ansible-playbook 1_play_banner.yaml -vvv
+<span class="nb">export</span> <span class="nv">ANSIBLE_DEBUG</span><span class="o">=</span><span class="m">1</span>
+</code></pre></div>
+
+<h3 id="basic-netconf-automation-ntp">Basic Netconf Automation - NTP</h3>
+<p>Ansible netconf module has been moved (like many modules) to be part of a collection, namely the <code>ansible.netcommon</code> collection.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Install/update netcommon, as Netconf part of netcommon module</span>
+ansible-galaxy collection list <span class="p">|</span> grep netcommon
+
+<span class="c1"># Install netconf python library</span>
+pip install ncclient
+pip install netconf-console
+pip install netconf-console2
+ppip install jxmlease
+
+netconf-console --host <span class="m">10</span>.10.10.200 --port <span class="m">830</span> --user admin --password xy --db running --get-config --xpath /native
+</code></pre></div>
+
+<p>Adjust the Connection parameter in inventory:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># inventory</span>
+...
+<span class="o">[</span>routers:vars<span class="o">]</span>
+<span class="c1">#ansible_connection=ansible.netcommon.network_cli</span>
+<span class="nv">ansible_connection</span><span class="o">=</span>ansible.netcommon.netconf
+</code></pre></div>
+
+<p>And finally the playbook, here to set an NTP Server on a router that does not support candidate datastore.</p>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">routers</span><span class="w"></span>
+<span class="w">  </span><span class="nt">connection</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ansible.netcommon.netconf</span><span class="w"></span>
+<span class="w">  </span><span class="nt">gather_facts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">no</span><span class="w"></span>
+<span class="w">  </span><span class="nt">tasks</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ansible.netcommon.netconf_config</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">running</span><span class="w"></span>
+<span class="w">        </span><span class="nt">content</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">          </span><span class="no">&lt;config xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; xmlns:nc=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;&gt;</span><span class="w"></span>
+<span class="w">            </span><span class="no">&lt;native xmlns=&quot;http://cisco.com/ns/yang/Cisco-IOS-XE-native&quot;&gt;</span><span class="w"></span>
+<span class="w">              </span><span class="no">&lt;ntp&gt;</span><span class="w"></span>
+<span class="w">                </span><span class="no">&lt;server xmlns=&quot;http://cisco.com/ns/yang/Cisco-IOS-XE-ntp&quot; operation=&#39;replace&#39;&gt;</span><span class="w"></span>
+<span class="w">                  </span><span class="no">&lt;server-list&gt;</span><span class="w"></span>
+<span class="w">                    </span><span class="no">&lt;ip-address&gt;1.1.1.1&lt;/ip-address&gt;</span><span class="w"></span>
+<span class="w">                  </span><span class="no">&lt;/server-list&gt;</span><span class="w"></span>
+<span class="w">                </span><span class="no">&lt;/server&gt;</span><span class="w"></span>
+<span class="w">              </span><span class="no">&lt;/ntp&gt;</span><span class="w"></span>
+<span class="w">            </span><span class="no">&lt;/native&gt;</span><span class="w"></span>
+<span class="w">          </span><span class="no">&lt;/config&gt;</span><span class="w"></span>
+</code></pre></div>
+
+<p>Some of the supported operations of thet netcommons.netconf module are:</p>
+<div class="highlight"><pre><span></span><code>- format (xml or json)
+- get_filter
+- confirm, lock, save, confirm_commit, validate, commit, delete, backup 
+- content (defaults to xml)
+- source_datastore (source), target (datastore).
+</code></pre></div>
+
+<h3 id="automation-getting-values">Automation - Getting Values</h3>
+<p>The easiest one would be getting all configuraton:</p>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">routers</span><span class="w"></span>
+<span class="w">  </span><span class="nt">connection</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ansible.netcommon.netconf</span><span class="w"></span>
+<span class="w">  </span><span class="nt">gather_facts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">no</span><span class="w"></span>
+<span class="w">  </span><span class="nt">tasks</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ansible.netcommon.netconf_get</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">running</span><span class="w"></span>
+</code></pre></div>
+
+<p>Several aditioinal options exist like adding a filter (in XML or XPath style) or output in json.</p>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">routers</span><span class="w"></span>
+<span class="w">  </span><span class="nt">connection</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ansible.netcommon.netconf</span><span class="w"></span>
+<span class="w">  </span><span class="nt">gather_facts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">no</span><span class="w"></span>
+<span class="w">  </span><span class="nt">tasks</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ansible.netcommon.netconf_get</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">running</span><span class="w"></span>
+<span class="w">        </span><span class="nt">filter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/native/logging/history</span><span class="w"></span>
+<span class="w">        </span><span class="nt">display</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">json</span><span class="w"></span>
+</code></pre></div>
+
+<h3 id="automation-plus-rpcs-notifications">Automation Plus - RPCs &amp; Notifications</h3>
+<p>RPCs are the way netconf implements actions. In fact <strong><em>edit-config</em></strong> is just an rpc of the <code>ietf-netconf.yang</code> specification.
+Custom RPCs are also defined in the yang models themselfes.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Get a list of all rpcs per module</span>
+grep rpc ./*
+
+<span class="c1"># List of IOS XE rpcs</span>
+pyang -f tree Cisco-IOS-XE-rpc.yang --tree-depth<span class="o">=</span><span class="m">3</span>
+</code></pre></div>
+
+<p>Example use cases:</p>
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="n">Reload</span><span class="w"> </span><span class="n">routers</span><span class="p">,</span><span class="w"> </span><span class="n">start</span><span class="w"> </span><span class="n">traffic</span><span class="w"> </span><span class="n">captures</span><span class="p">,</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Clear</span><span class="w"> </span><span class="n">arp</span><span class="w"> </span><span class="n">caches</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">bgp</span><span class="w"> </span><span class="n">processes</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Register</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">smart</span><span class="w"> </span><span class="n">licensesing</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">Start</span><span class="w"> </span><span class="n">aguestshell</span><span class="p">,</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">debug</span><span class="w"></span>
+<span class="o">-</span><span class="w"> </span><span class="n">etc</span><span class="o">.</span><span class="w"> </span><span class="n">etc</span><span class="o">.</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">routers</span><span class="w"></span>
+<span class="w">  </span><span class="nt">connection</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ansible.netcommon.netconf</span><span class="w"></span>
+<span class="w">  </span><span class="nt">gather_facts</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">no</span><span class="w"></span>
+<span class="w">  </span><span class="nt">tasks</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ansible.netcommon.netconf_rpc</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">xmlns</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://cisco.com/ns/yang/Cisco-IOS-XE-rpc</span><span class="w"></span>
+<span class="w">        </span><span class="nt">rpc</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">clear</span><span class="w"></span>
+<span class="w">        </span><span class="nt">content</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span><span class="w"></span>
+<span class="w">          </span><span class="no">&lt;arp-cache&gt;</span><span class="w"></span>
+<span class="w">           </span><span class="no">&lt;vrf&gt;Mgmt 10.240.72.144&lt;/vrf&gt;</span><span class="w"></span>
+<span class="w">          </span><span class="no">&lt;/arp-cache&gt;</span><span class="w"></span>
+</code></pre></div>
+
+<h1 id="using-python">Using Python</h1>
+<p>The nccclient module can be used directly. The call is very similar to the ones shown above, as in the end, it is netconf format.
+Important to note are the supported device types, which are:</p>
+<div class="highlight"><pre><span></span><code>- Cisco: csr/nexus/iosxr/iosxe
+- Non-cisco: junos/huawei/alu(alcatel-lucent)/hpcomware(HP)
+- default
+</code></pre></div>
+
+<h2 id="get-config">Get-Config</h2>
+<p>A very simple example getting configuration would be:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">ncclient</span> <span class="kn">import</span> <span class="n">manager</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># Device dictionary that provides key/value connection information</span>
+    <span class="n">device</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;ip&quot;</span><span class="p">:</span> <span class="s2">&quot;10.10.10.200&quot;</span><span class="p">,</span> <span class="s2">&quot;port&quot;</span><span class="p">:</span> <span class="s2">&quot;830&quot;</span><span class="p">,</span> <span class="s2">&quot;platform&quot;</span><span class="p">:</span> <span class="s2">&quot;csr&quot;</span><span class="p">,}</span>
+
+    <span class="c1"># ncclient manager instantiation for csr</span>
+    <span class="k">with</span> <span class="n">manager</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="n">device</span><span class="p">[</span><span class="s1">&#39;ip&#39;</span><span class="p">],</span> <span class="n">port</span><span class="o">=</span><span class="n">device</span><span class="p">[</span><span class="s1">&#39;port&#39;</span><span class="p">],</span> <span class="n">username</span><span class="o">=</span><span class="s1">&#39;admin&#39;</span><span class="p">,</span>
+                         <span class="n">password</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span> <span class="n">hostkey_verify</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                         <span class="n">device_params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">device</span><span class="p">[</span><span class="s1">&#39;platform&#39;</span><span class="p">]},</span>
+                         <span class="n">look_for_keys</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">allow_agent</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">m</span><span class="p">:</span>
+
+        <span class="c1"># Filter using top-level container namespace and node matching</span>
+        <span class="n">int_filter</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">                    &lt;interfaces xmlns=&quot;urn:ietf:params:xml:ns:yang:ietf-interfaces&quot;&gt;</span>
+<span class="s1">                        &lt;interface&gt;</span>
+<span class="s1">                            &lt;name&gt;GigabitEthernet1&lt;/name&gt;</span>
+<span class="s1">                        &lt;/interface&gt;</span>
+<span class="s1">                    &lt;/interfaces&gt;</span>
+<span class="s1">                    &#39;&#39;&#39;</span>
+
+        <span class="c1"># get-config RPC against the running datastore using a subtree filter</span>
+        <span class="n">reply</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">get_config</span><span class="p">(</span><span class="s1">&#39;running&#39;</span><span class="p">,</span> <span class="nb">filter</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;subtree&#39;</span><span class="p">,</span> <span class="n">int_filter</span><span class="p">))</span>
+
+        <span class="c1"># Print RPC reply</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">reply</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+
+<h2 id="edit-config">Edit-Config</h2>
+<p>A very simple example to configure an OSPF Process would be:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">ncclient</span> <span class="kn">import</span> <span class="n">manager</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">device</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;ip&quot;</span><span class="p">:</span> <span class="s2">&quot;10.10.10.200&quot;</span><span class="p">,</span> <span class="s2">&quot;port&quot;</span><span class="p">:</span> <span class="s2">&quot;830&quot;</span><span class="p">,</span> <span class="s2">&quot;platform&quot;</span><span class="p">:</span> <span class="s2">&quot;csr&quot;</span><span class="p">,}</span>
+
+    <span class="k">with</span> <span class="n">manager</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="n">device</span><span class="p">[</span><span class="s1">&#39;ip&#39;</span><span class="p">],</span> <span class="n">port</span><span class="o">=</span><span class="n">device</span><span class="p">[</span><span class="s1">&#39;port&#39;</span><span class="p">],</span> <span class="n">username</span><span class="o">=</span><span class="s1">&#39;admin&#39;</span><span class="p">,</span>
+                         <span class="n">password</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">,</span> <span class="n">hostkey_verify</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                         <span class="n">device_params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">device</span><span class="p">[</span><span class="s1">&#39;platform&#39;</span><span class="p">]},</span>
+                         <span class="n">look_for_keys</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">allow_agent</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">m</span><span class="p">:</span>
+
+        <span class="n">rpc</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">                &lt;config xmlns=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot; xmlns:nc=&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;&gt;</span>
+<span class="s1">                    &lt;native xmlns=&quot;http://cisco.com/ns/yang/Cisco-IOS-XE-native&quot;&gt;</span>
+<span class="s1">                        &lt;router&gt;</span>
+<span class="s1">                            &lt;ospf xmlns=&quot;http://cisco.com/ns/yang/Cisco-IOS-XE-ospf&quot;&gt;</span>
+<span class="s1">                                &lt;id&gt;100&lt;/id&gt;</span>
+<span class="s1">                                &lt;router-id&gt;1.1.1.1&lt;/router-id&gt;</span>
+<span class="s1">                                &lt;network&gt;</span>
+<span class="s1">                                    &lt;ip&gt;10.1.1.0&lt;/ip&gt;</span>
+<span class="s1">                                    &lt;mask&gt;0.0.0.3&lt;/mask&gt;</span>
+<span class="s1">                                    &lt;area&gt;0&lt;/area&gt;</span>
+<span class="s1">                                &lt;/network&gt;</span>
+<span class="s1">                            &lt;/ospf&gt;</span>
+<span class="s1">                        &lt;/router&gt;</span>
+<span class="s1">                    &lt;/native&gt;</span>
+<span class="s1">                &lt;/config&gt;</span>
+<span class="s1">            &#39;&#39;&#39;</span>
+
+        <span class="n">reply</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">edit_config</span><span class="p">(</span><span class="n">rpc</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;running&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">reply</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Sometimes we want to look at the yang models directly, to understand what can be configured or to generate stub data (see next chapter).
+Instead of downloading the model from the git repository, it can be directly downloaded from the device.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">from</span> <span class="nn">ncclient</span> <span class="kn">import</span> <span class="n">manager</span>
+
+<span class="c1"># Context manager keeping ncclient connection alive for the duration of</span>
+<span class="c1"># the context.</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="s1">&#39;10.10.10.200&#39;</span><span class="p">,</span>   <span class="c1"># IP address of the device</span>
+    <span class="n">port</span><span class="o">=</span><span class="mi">830</span><span class="p">,</span>              <span class="c1"># Port to connect to</span>
+    <span class="n">username</span><span class="o">=</span><span class="s1">&#39;admin&#39;</span><span class="p">,</span>      <span class="c1"># SSH Username</span>
+    <span class="n">password</span><span class="o">=</span><span class="s1">&#39;xy.&#39;</span><span class="p">,</span>        <span class="c1"># SSH Password</span>
+    <span class="n">hostkey_verify</span><span class="o">=</span><span class="kc">False</span>   <span class="c1"># Allow unknown hostkeys not in local store</span>
+<span class="p">)</span>
+<span class="n">capabilities</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1"># Write each capability to console</span>
+<span class="k">for</span> <span class="n">capability</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">server_capabilities</span><span class="p">:</span>
+    <span class="c1"># Print the capability</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Capability: </span><span class="si">{</span><span class="n">capability</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1"># Store the capability list for later.</span>
+    <span class="n">capabilities</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">capability</span><span class="p">)</span>
+
+
+<span class="c1"># Sort the list alphabetically.</span>
+<span class="n">capabilities</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">capabilities</span><span class="p">)</span>
+
+<span class="c1"># List of modules that we store for use later</span>
+<span class="n">modules</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Iterate server capabilities and extract supported modules.</span>
+<span class="k">for</span> <span class="n">capability</span> <span class="ow">in</span> <span class="n">capabilities</span><span class="p">:</span>
+    <span class="c1"># Scan the capabilities and extract modules via this regex.</span>
+    <span class="c1"># i.e., if this was the capability string:</span>
+    <span class="c1">#   http://openconfig.net/yang/lldp/types?module=openconfig-lldp-types&amp;revision=2016-05-16</span>
+    <span class="c1"># then:</span>
+    <span class="c1">#   openconfig-lldp-types</span>
+    <span class="c1"># .. would be the module printed.</span>
+    <span class="c1"># Scan capability string for module</span>
+    <span class="n">supported_model</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;module=(.*)&amp;&#39;</span><span class="p">,</span> <span class="n">capability</span><span class="p">)</span>
+    <span class="c1"># If module found in string, store it.</span>
+    <span class="k">if</span> <span class="n">supported_model</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># Module string was found, store it.</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Supported Model: </span><span class="si">{</span><span class="n">supported_model</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="c1"># Store the module for later use.</span>
+        <span class="n">modules</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">supported_model</span><span class="o">.</span><span class="n">groups</span><span class="p">(</span><span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+
+
+<span class="c1"># List of models that we want to download.</span>
+<span class="c1"># We will get the schema for each and write it to disk.</span>
+<span class="n">models_desired</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;openconfig-extensions&#39;</span><span class="p">,</span> <span class="s1">&#39;openconfig-interfaces&#39;</span><span class="p">]</span>
+<span class="c1"># Iterate each desired model and write it to ./models/</span>
+<span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models_desired</span><span class="p">:</span>
+    <span class="c1"># Get the model schema.</span>
+    <span class="n">schema</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">get_schema</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+    <span class="c1"># Open new file handle.</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;./models/</span><span class="si">{}</span><span class="s2">.yang&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">model</span><span class="p">),</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="c1"># Write schema</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">schema</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div>
+
+<h1 id="pyang-and-netconf-console">Pyang and netconf-console</h1>
+<p>Pyang will automatically look for mentioned/related (<code>import</code>) models.</p>
+<h2 id="basic-tree-printing">Basic Tree Printing</h2>
+<div class="highlight"><pre><span></span><code>pyang -f tree models/openconfig-interfaces.yang 
+
+<span class="c1"># Openconfig-interface.yang Model excerpt</span>
+module openconfig-interfaces <span class="o">{</span>
+  yang-version <span class="s2">&quot;1&quot;</span><span class="p">;</span>
+  // namespace
+  namespace <span class="s2">&quot;http://openconfig.net/yang/interfaces&quot;</span><span class="p">;</span>
+  prefix <span class="s2">&quot;oc-if&quot;</span><span class="p">;</span>
+  // import some basic types
+  import ietf-interfaces <span class="o">{</span> prefix ietf-if<span class="p">;</span> <span class="o">}</span>
+  import openconfig-yang-types <span class="o">{</span> prefix oc-yang<span class="p">;</span> <span class="o">}</span>
+  import openconfig-types <span class="o">{</span> prefix oc-types<span class="p">;</span> <span class="o">}</span>
+  import openconfig-extensions <span class="o">{</span> prefix oc-ext<span class="p">;</span> <span class="o">}</span>
+...
+<span class="o">}</span>
+
+<span class="c1"># Output</span>
+odels/openconfig-interfaces.yang:12: error: module <span class="s2">&quot;openconfig-yang-types&quot;</span> not found <span class="k">in</span> search path
+models/openconfig-interfaces.yang:13: error: module <span class="s2">&quot;openconfig-types&quot;</span> not found <span class="k">in</span> search path
+models/openconfig-interfaces.yang:14: error: module <span class="s2">&quot;openconfig-extensions&quot;</span> not found <span class="k">in</span> search path
+module: openconfig-interfaces
+  +--rw interfaces
+     +--rw interface* <span class="o">[</span>name<span class="o">]</span>
+        +--rw name             -&gt; ../config/name
+        +--rw config
+        <span class="p">|</span>  +--rw name?            string
+</code></pre></div>
+
+<h2 id="augmentation">Augmentation</h2>
+<p>Pyang in most cases will combin the different models and augment the source.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Example with dot1x without augmentation will not show much as the model depends on the other</span>
+pyang -f tree Cisco-IOS-XE-native.yang --tree-path<span class="o">=</span>/native/dot1x
+
+<span class="c1"># Augmentation will add the added stuff to the original module (marking them with a prefix as given in the added (dot1x) module)</span>
+<span class="c1">## E.g. prefix defined in dot1x.yang is &quot;ios-dot1x&quot; and container &quot;guest-vlan&quot; then becomes ios-dot1x:guest-vlan</span>
+pyang -f tree Cisco-IOS-XE-native.yang Cisco-IOS-XE-dot1x.yang --tree-path<span class="o">=</span>/native/dot1x
+</code></pre></div>
+
+<h2 id="use-yang-to-generate-skeleton">Use Yang to generate Skeleton</h2>
+<p>Probably the most important usage of pyang here is the generation of template-xml, called <strong><em>skeletons</em></strong>.
+Either configure the device using regular CLI and extract the generated configuration using netconf-console or generate the stub/skeleton directly using pyang.
+For the skeleton generation, all needed modules must be available in the search path.</p>
+<div class="highlight"><pre><span></span><code>netconf-console --host <span class="m">10</span>.10.10.200 --port <span class="m">830</span> --user admin --password xy --db running --get-config --xpath /native/dot1x
+
+<span class="c1"># Sample using Augmentatoin to generate sample xml skeleton for dot1x</span>
+pyang -f sample-xml-skeleton Cisco-IOS-XE-native.yang --sample-xml-skeleton-path<span class="o">=</span>/native/dot1x
+
+<span class="c1"># Sample using augmentation to generate sample xml skeleton for logging</span>
+pyang -f sample-xml-skeleton Cisco-IOS-XE-native.yang Cisco-IOS-XE-logging.yang --sample-xml-skeleton-path<span class="o">=</span>/native/logging
+
+<span class="c1"># See what is needed and the associated values (e.g. here uint16)</span>
+<span class="c1">## Other useful option, --tree-depth=4, --tree-path=</span>
+pyang -f tree --tree-help
+pyang -f tree Cisco-IOS-XE-native.yang Cisco-IOS-XE-logging.yang --tree-path<span class="o">=</span>/native/logging
+pyang -f tree Cisco-IOS-XE-native.yang Cisco-IOS-XE-logging.yang --tree-path<span class="o">=</span>/native/logging/history
+
+<span class="c1"># Generate stub for data retrieval (default)</span>
+pyang -f sample-xml-skeleton Cisco-IOS-XE-native.yang Cisco-IOS-XE-logging.yang --sample-xml-skeleton-path<span class="o">=</span>/native/logging/history
+
+<span class="c1"># Generate stub for Config object and adding type annotations</span>
+pyang -f sample-xml-skeleton Cisco-IOS-XE-native.yang Cisco-IOS-XE-logging.yang --sample-xml-skeleton-path<span class="o">=</span>/native/logging/history --sample-xml-skeleton-annotations --sample-xml-skeleton-doctype<span class="o">=</span>config
+</code></pre></div>
+
+<h2 id="note-on-cisco-models">Note on Cisco Models</h2>
+<p>Some versions of the YANG models are not really stable, or better said don't pass yang validation/linting and therefore cannot be used to generate skeletons.
+E.g. with CSR and 17.3.4a we get the following errors if we try to generate an xml skeleton:</p>
+<div class="highlight"><pre><span></span><code>Cisco-IOS-XE-ip.yang:3546: error: <span class="s2">&quot;Cisco-IOS-XE-native:interface&quot;</span> <span class="k">in</span> the path <span class="k">for</span> Tunnel at Cisco-IOS-XE-native.yang:2269 <span class="o">(</span>at Cisco-IOS-XE-ip.yang:3542<span class="o">)</span> is not found
+Cisco-IOS-XE-native.yang:2291 <span class="o">(</span>at Cisco-IOS-XE-ipv6.yang:369<span class="o">)</span>: warning: node <span class="s2">&quot;Cisco-IOS-XE-native::native&quot;</span> is not found <span class="k">in</span> module <span class="s2">&quot;Cisco-IOS-XE-ipv6&quot;</span>
+Cisco-IOS-XE-native.yang:2588 <span class="o">(</span>at Cisco-IOS-XE-logging.yang:1144<span class="o">)</span>: warning: node <span class="s2">&quot;Cisco-IOS-XE-native::native&quot;</span> is not found <span class="k">in</span> module <span class="s2">&quot;Cisco-IOS-XE-logging&quot;</span>
+sample-xml-skeleton plugin needs a valid module
+</code></pre></div>
+
+<p>When we do a lint of the corresponding module, we see that it contains many errors.</p>
+<div class="highlight"><pre><span></span><code>pyang --lint Cisco-IOS-XE-native.yang
+</code></pre></div>
+
+<p>In order to generate skeleton xmls, a stable version, like 17.1.1 should be used. </p>
+<h1 id="references">References</h1>
+<ul>
+<li>See: <a href="https://yang-prog-lab.ciscolive.com/pod/1/ncclient/edit_config">Cisco Live YANG Lab</a></li>
+<li>See: <a href="https://www.yangcatalog.org/">Yang Catalog</a></li>
+<li>See: <a href="https://github.com/ansible-collections/ansible.netcommon/blob/main/docs/ansible.netcommon.netconf_config_module.rst">Netcommon.Netconf module</a></li>
+<li>See: <a href="https://stackoverflow.com/questions/52120179/how-do-i-add-several-library-path-in-ansible-cfg-file">Ansible.cfg library, log_path, roles_path</a></li>
+<li>See: <a href="https://galaxy.ansible.com/ansible/netcommon">Ansible Galaxy Netcommon</a></li>
+<li>See: <a href="https://github.com/YangModels/yang/blob/main/vendor/cisco/xe/1711/README.md">Stable 17.1.1 Yang models</a></li>
+<li>See: <a href="https://www.ietf.org/proceedings/90/slides/slides-90-edu-yang-0.pdf">YANG to JSON</a></li>
+<li>See: <a href="https://www.tail-f.com/wordpress/wp-content/uploads/2014/02/Tail-f-Instant-YANG.pdf">Tail-f Intro</a></li>
+<li>See: <a href="https://ultraconfig.com.au/blog/learn-yang-full-tutorial-for-beginners/">Validation with yang2dsdl</a></li>
+<li>See: <a href="https://blog.devopssimplified.com/Learning-YANG">Good Blog explaining Yang step-by-step, Union, typedef, leafs, deref, etc. etc.</a></li>
+<li>See: <a href="https://community.cisco.com/t5/yang-tools/ydkgenerator-error/td-p/4295247">Stability issue 17.2.1</a></li>
+<li>See: <a href="https://aristanetworks.github.io/openmgmt/examples/pyang/">Arista Manual Restconf, pyang etc.</a></li>
+<li>See: <a href="https://github-wiki-see.page/m/mbj4668/pyang/wiki/Augment">Pyang Wiki</a></li>
+<li>See: <a href="https://content.cisco.com/chapter.sjs?uri=/searchable/chapter/content/en/us/td/docs/ios-xml/ios/prog/configuration/171/b_171_programmability_cg/configuring_yang_datamodel.html.xml">Show commands for Netconf on switch</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/cisco.html">Cisco</a>
+      <a href="https://maconrad.github.io/tag/ios-xe.html">IOS-XE</a>
+      <a href="https://maconrad.github.io/tag/automation.html">Automation</a>
+      <a href="https://maconrad.github.io/tag/pyang.html">Pyang</a>
+      <a href="https://maconrad.github.io/tag/ansible.html">Ansible</a>
+      <a href="https://maconrad.github.io/tag/netconf.html">Netconf</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>

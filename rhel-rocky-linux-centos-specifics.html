@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://maconrad.github.io/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://maconrad.github.io/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+ 
+
+<meta name="author" content="Mario" />
+<meta name="description" content="Table of contents: Terminology Software Management Headless Management Network Firewall SELinux Services Logging Container Other Useful Refs Terminology YUM: Package Manager for variate of Linux systems, has been replaced by DNF. YUM is a front-end for RPM. DNF: Improved Dependeny resolution over YUM Snaps: Snaps are applications packaged with all …" />
+<meta name="keywords" content="linux">
+
+
+  <meta property="og:site_name" content="PeliBlog"/>
+  <meta property="og:title" content="RHEL, Rocky Linux, Centos specifics"/>
+  <meta property="og:description" content="Table of contents: Terminology Software Management Headless Management Network Firewall SELinux Services Logging Container Other Useful Refs Terminology YUM: Package Manager for variate of Linux systems, has been replaced by DNF. YUM is a front-end for RPM. DNF: Improved Dependeny resolution over YUM Snaps: Snaps are applications packaged with all …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="https://maconrad.github.io/rhel-rocky-linux-centos-specifics.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2021-11-06 18:51:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="https://maconrad.github.io/author/mario.html">
+  <meta property="article:section" content="Linux"/>
+  <meta property="article:tag" content="linux"/>
+  <meta property="og:image" content="/images/Logo.png">
+
+  <title>PeliBlog &ndash; RHEL, Rocky Linux, Centos specifics</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="https://maconrad.github.io/">
+      <img src="/images/Logo.png" alt="" title="">
+    </a>
+
+    <h1>
+      <a href="https://maconrad.github.io/"></a>
+    </h1>
+
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="https://maconrad.github.io/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-You can add links in your config file"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-You can add links in your config file"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Another social link"
+           href="#"
+           target="_blank">
+          <i class="fa-brands fa-Another social link"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="https://maconrad.github.io/">Home</a>
+
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="rhel-rocky-linux-centos-specifics">RHEL, Rocky Linux, Centos specifics</h1>
+    <p>
+      Posted on Sa 06 November 2021 in <a href="https://maconrad.github.io/category/linux.html">Linux</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#terminology">Terminology</a></li>
+<li><a href="#software-management">Software Management</a></li>
+<li><a href="#headless-management">Headless Management</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#firewall">Firewall</a></li>
+<li><a href="#selinux">SELinux</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#container">Container</a></li>
+<li><a href="#other-useful">Other Useful</a></li>
+<li><a href="#refs">Refs</a></li>
+</ul>
+</div>
+<h2 id="terminology">Terminology</h2>
+<ul>
+<li>YUM: Package Manager for variate of Linux systems, has been replaced by DNF. YUM is a front-end for RPM.</li>
+<li>DNF: Improved Dependeny resolution over YUM</li>
+<li>Snaps: Snaps are applications packaged with all their dependencies to run on all popular Linux distributions from a single build. <ul>
+<li>The packages for RHEL 8 and RHEL 7 are in each distribution’s respective Extra Packages for Enterprise Linux (EPEL) repository. </li>
+<li>Snap is available for CentOS 8 and CentOS 7.6+</li>
+</ul>
+</li>
+<li>Systemd: systemd is a system and service manager for Linux that has/starts individual systemd units<ul>
+<li>Successor of init (both are PID1, parent of all processes)</li>
+<li>Systemd starts other processes in parallel (faster)</li>
+<li>Systemd uses event logging with journald, supports SElinux, encrypted HDD etc.</li>
+</ul>
+</li>
+<li>Systemd &amp; Systemctl: Systemctl utility that interacts with systemd to control services.</li>
+</ul>
+<h2 id="software-management">Software Management</h2>
+<p>DNF as a successor of YUM with improved dependency management. YUM v4 used in RHEL 8 is based on DNF, so the known interface can be used.</p>
+<div class="highlight"><pre><span></span><code>yum update
+yum group list
+yum groupinstall <span class="s2">&quot;Server with GUI&quot;</span>
+yum groupinstall <span class="s2">&quot;Headless Management&quot;</span>
+</code></pre></div>
+
+<h2 id="headless-management">Headless Management</h2>
+<p>Can be SSH, VNC or Webbased administration like Cockpit</p>
+<div class="highlight"><pre><span></span><code>hostnamectl set-hostname mco-rocky-002
+sudo systemctl start cockpit.socket
+sudo systemctl <span class="nb">enable</span> --now cockpit.socket
+systemctl status cockpit.socket
+sudo ps auxf<span class="p">|</span>grep cockpit
+sudo firewall-cmd --add-service<span class="o">=</span>cockpit --permanent
+sudo firewall-cmd --reload
+
+<span class="c1"># Access via https://ip:9090</span>
+</code></pre></div>
+
+<h2 id="network">Network</h2>
+<p>Modify Network Manager settings via GUI or CLI (nmcli or nmtui).</p>
+<div class="highlight"><pre><span></span><code>nmcli device status
+nmcli connection show ens192
+ncmli connection modify ens192 ipv4.addresses <span class="s2">&quot;10.240.73.140/24&quot;</span>
+ncmli connection modify ens192 ipv4.gateway <span class="m">10</span>.240.73.1
+nmcli connection up ens192
+</code></pre></div>
+
+<p>IP command replaces ifconfig command</p>
+<div class="highlight"><pre><span></span><code><span class="c1">#Iface</span>
+ip link
+ip addr show
+ip addr show eth0
+<span class="c1"># Statistics</span>
+ip -s link 
+
+<span class="c1"># MTU and promiscuous mode</span>
+ip link <span class="nb">set</span> ens192 mtu <span class="m">9000</span>
+ip link <span class="nb">set</span> ens192 promisc on
+
+<span class="c1"># ARP table</span>
+ip neighb
+
+<span class="c1">#Routing</span>
+ip route show
+ip route add <span class="m">1</span>.1.1.0/24 via <span class="m">10</span>.10.1.1
+ip route add <span class="m">1</span>.1.120/24 dev ens192
+</code></pre></div>
+
+<h2 id="firewall">Firewall</h2>
+<p>Firewall mgmt via firwall-cmd. Uses firewalld (not iptables). Firewall uses Zones (default single public zone).
+Modifies files under <code>/etc/firewalld/services/</code>. Service templates are available under <code>/usr/lib/firewalld/services</code>.
+Also possibilites to open individual ports, create own zones etc, port forwarding or IP masquerading (source NAT, e.g. internet router), icmp, ip sets etc.</p>
+<p>Sidenote: IPTables change had to unload, reload netfilter kernel module which broke stateful connectivity for established sessions. Firewalld applies changes without restarting. firewalld uses zones and services instead of chain and rules.</p>
+<div class="highlight"><pre><span></span><code>systemctl status firewalld
+firewall-cmd --state
+
+<span class="c1"># Graphical tool for fw policy</span>
+firewall-config 
+
+firewall-cmd --list-all
+firewall-cmd --list-all --zone<span class="o">=</span>home
+firewall-cmd --list-services
+firewall-cmd --info-service custom--nginx
+
+<span class="c1"># List of predefined services that can be enabled</span>
+firewall-cmd --get-services
+firewall-cmd --add-service<span class="o">=</span>openvpn
+firewall-cmd --new-service-from-file<span class="o">=</span>xy.xml
+<span class="c1"># Persist settings</span>
+firewall-cmd --runtime-to-permanent
+
+<span class="c1"># Ports</span>
+firewall-cmd --list-ports
+firewall-cmd --add-port<span class="o">=</span><span class="m">8080</span>/tcp
+
+<span class="c1"># Disable all network traffic (e.g if got hacked)</span>
+firewall-cmd --panic-on
+firewall-cmd --query-panic
+</code></pre></div>
+
+<h2 id="selinux">SELinux</h2>
+<p>Security Enhanced LInux (SELinux) is an additional layer of security that defines which processes can access which files, directories, ports etc.
+Definions of access rights are defined in policies as a set of rules. SELinux is a Linux Security Module (LSM) that is built into the Linux kernel. If it is enabled it can run in enforcing or permissive state. Permissive is like a monitor-only mode that allows access, but still reports to <code>/var/log/audit/audit.log</code>. Permissive mode is used when troubleshooting. State is defined under <code>/etc/selinux/config</code>. SELinux uses auditd deamon for recording events.</p>
+<p>This is mainly achived through the concept of labeling (file systems, objects, processes). Main advantage, if for example process Apache is compromised, a malicious script would not be able to access any other directory because the SELinux would deny that, hence it is much harder to gain control of the system.</p>
+<p>Key terminology:
+    - Context: Label used to focus on security properties
+        - Remember: SELinux policy checked after DAC, so for example 755 checked first
+        - Context has several fields: user, role, type and security level
+            - Type is the most important, as system resource &lt;&gt; process interaction uses mostly this and not whole context
+            - Type end with _t (examples: http_port_t for ports, http_sys_content_t for /var/www/html, tmp_t for /var/tmp)
+    - AVC: SELinux Denial Event (Access Vector Cache)
+    - ausearch: Parses audit logs 
+    - sealert: RHEL, integrates with setroubleshootd to translate AVC to human readable translation
+    - audit2allow: Creates a SELinux policy that can be loaded, but should check labeling problem first
+        - Common would be using non-standard directory for a service, e.g. srv/web1 instead of /var/www/html
+        - .pp files are compiled selinux policy filed
+        - .te are uncompiled/readable selinux policies
+    - semanage: Add context (labels) to dirs/files/procs/ports
+    - restorecon: Apply changes defined via semanage
+    - matchpathcon: Check context of file path and compare to default label
+    - semodule: Manage custom policy (install module, deinstall module)
+    - sesearch: Search SELinux policy</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># SELinux enabled?</span>
+getenforce
+sestatus
+
+<span class="c1"># Show attributes</span>
+ls -alZ
+ps -efZ
+semanage fcontext --list
+
+<span class="c1"># Permissive or enforcing</span>
+setenforce Enforcing<span class="p">|</span><span class="m">1</span>
+setenforce Permissive<span class="p">|</span><span class="m">0</span>
+
+<span class="c1"># Sebools (check available booleans)</span>
+getsebool -a <span class="p">|</span> grep ftp
+setsebool -P ftpd_use_nfs on
+<span class="c1"># requires selinux-policy-devel</span>
+semanage boolean -l 
+
+<span class="c1"># Tshoot</span>
+ausearch -m AVC,USER_AVC,SELINUX_ERR,USER_SELINUX_ERR -ts today
+grep <span class="s2">&quot;SELinux is preventing&quot;</span> /var/log/messages
+dmesg <span class="p">|</span> grep -i -e <span class="nv">type</span><span class="o">=</span><span class="m">1300</span> -e <span class="nv">type</span><span class="o">=</span><span class="m">1400</span>
+journalctl -t setroubleshoot
+cat /var/log/audit/audit.log <span class="p">|</span> grep AVC
+sealert -a /var/log/audit/audit.log
+ausearch -m avc --start recent
+
+<span class="c1"># Tshoot steps</span>
+<span class="c1">## Set to permissive</span>
+setenforce <span class="m">0</span> 
+<span class="c1">## Runs cms</span>
+...
+<span class="c1">## Set back to enforce, important before analysing</span>
+setenforce <span class="m">1</span>
+<span class="c1">## Analyse logs always analyses against current state (permissive or enforcing)</span>
+sealert -a ... <span class="o">()</span>
+
+<span class="c1"># Fix labeling issue example</span>
+semanage fcontext -a -t httpd_sys_content_t <span class="s2">&quot;/srv/myweb(/.*)?&quot;</span>
+restorecon -R -v /srv/myweb
+
+<span class="c1"># Change Service behaviour via sebools (-P = Persistent)</span>
+setsebool -P httpd_can_network_connect_db on
+
+<span class="c1"># Services can be restricted to certain ports</span>
+semanage port -l <span class="p">|</span> grep http
+<span class="c1"># Assign label http_port_t to a specific port</span>
+semanage port -a -t http_port_t -p tcp <span class="m">9876</span>
+
+<span class="c1"># Generate and install custom policy/module</span>
+ausearch -m AVC -ts recent <span class="p">|</span> audit2allow -R
+semodule -i xy.pp
+</code></pre></div>
+
+<h2 id="services">Services</h2>
+<p>Can be SSH</p>
+<div class="highlight"><pre><span></span><code>systemctl start nfs-server.service
+systemctl stop nfs-server.service
+systemctl restart nfs-server.service
+systemctl restart NetworkManager
+systemctl reload nfs-server.service
+systemctl status nfs-server.service
+systemctl list-units --type service --all
+
+systemctl <span class="nb">enable</span> nfs-server.service 
+systemctl <span class="nb">enable</span> --now nfs-server.service 
+systemctl disable nfs-server.service 
+
+<span class="c1"># Systemd (reload cfg, soft reload)</span>
+systemctl daemon-reload
+
+<span class="c1"># Show aliases that can be used for nfs-server.service</span>
+systemctl show nfs-server.service -p Names
+</code></pre></div>
+
+<h2 id="logging">Logging</h2>
+<p>sd</p>
+<div class="highlight"><pre><span></span><code>lastlog
+journalctl
+<span class="c1"># Interprets journal file</span>
+<span class="c1"># -n=last n lines, -p=severity, --since=today|yesterday </span>
+<span class="c1"># --since date --until, -f=follow</span>
+journalctl
+journalctl -n <span class="m">10</span>
+<span class="c1"># E.g. ERROR level</span>
+journalctl -p3 --since<span class="o">=</span>today
+
+<span class="c1"># -b=boot, -0=since last boot</span>
+journalctl -b -0
+</code></pre></div>
+
+<h2 id="container">Container</h2>
+<ul>
+<li>Podman: Daemonless / Security / Root container without breaking out / SELinux support</li>
+<li>Docker:</li>
+</ul>
+<p><TODO></p>
+<h2 id="other-useful">Other Useful</h2>
+<p>Unsorted useful stuff</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Passwd not in history</span>
+openssl rand -base64 <span class="m">32</span> &gt; /root/password
+mysql -u root --password<span class="o">=</span><span class="k">$(</span>cat /root/password<span class="k">)</span>
+
+<span class="c1"># Search files no older than 5min</span>
+find . -maxdepth <span class="m">1</span> -mmin -5 
+
+<span class="c1"># Recursive Grep</span>
+grep -r <span class="s2">&quot;HTTP HEAD&quot;</span> .
+
+<span class="c1"># CUrl, see: https://reqbin.com/curl</span>
+<span class="c1">## Head via --head or -I</span>
+curl --head  https://1.1.1.1
+curl --head -v https://1.1.1.1
+curl --insecur -I https://202.54.1.2/
+curl --tls-max <span class="m">1</span>.1 https://vpn1.corp.ch 
+</code></pre></div>
+
+<h2 id="refs">Refs</h2>
+<ul>
+<li>See: <a href="https://developers.redhat.com/register">Register to get 16 Developer Licenses for Free</a></li>
+<li>See: <a href="https://developers.redhat.com/">Ebooks, Cheat Sheets (Podman, K8s, Linux, Containers)</a></li>
+<li>See: <a href="https://www.2daygeek.com/comparison-difference-between-dnf-vs-yum/">YUM vs DNS</a></li>
+<li>See: <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-software-packages_configuring-basic-system-settings">RedHat Documentation</a></li>
+<li>See: <a href="https://www.tecmint.com/systemd-replaces-init-in-linux/">systemd vs init</a></li>
+<li>See: <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/using_selinux/index">SELinux Manual RedHat</a></li>
+<li>See: <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-viewing_current_status_and_settings_of_firewalld">Firewall Manual Redhad</a></li>
+<li>See: <a href="https://www.unixmen.com/iptables-vs-firewalld/">IPTables vs Firewalld</a></li>
+<li>See: <a href="https://www.thomas-krenn.com/de/wiki/Linux_ip_Kommando">LInux IP Command Examples</a></li>
+<li>See: <a href="https://access.redhat.com/sites/default/files/attachments/rh_ip_command_cheatsheet_1214_jcs_print.pdf">RedHat IP Cheat Sheet</a></li>
+</ul>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://maconrad.github.io/tag/linux.html">linux</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2021 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " PeliBlog ",
+  "url" : "https://maconrad.github.io",
+  "image": "/images/Logo.png",
+  "description": ""
+}
+</script>
+</body>
+</html>
