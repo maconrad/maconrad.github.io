@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://maconrad.github.io/doc/</loc>
+         <lastmod>2023-10-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maconrad.github.io/doc/about_me/</loc>
+         <lastmod>2023-10-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maconrad.github.io/doc/automation/cicd/cicd_intro/</loc>
+         <lastmod>2023-10-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maconrad.github.io/doc/python/version/py_v309/</loc>
+         <lastmod>2023-10-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://maconrad.github.io/doc/python/version/py_v310/</loc>
+         <lastmod>2023-10-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
