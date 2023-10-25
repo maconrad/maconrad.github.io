@@ -17,6 +17,8 @@ jobs:
         run: |
           echo "${{ github.event.action }}"
 
+      - run: git clone https://github.com/maconrad/doc.git
+      
       - uses: actions/checkout@v4
       
       - uses: actions/setup-python@v4
@@ -25,8 +27,6 @@ jobs:
 
       - run: pip install mkdocs-material 
 
-      - run: git clone https://github.com/maconrad/doc.git
-      - run: cd doc
-      - run: git remote add pages https://github.com/maconrad/maconrad.github.io.git
+      # - run: git remote add pages https://github.com/maconrad/maconrad.github.io.git
 
-      - run: mkdocs gh-deploy --force -r pages -b gh-pages-test
+      - run: mkdocs gh-deploy --force --config-file ../doc/mkdocs.yml -b gh-pages-test
