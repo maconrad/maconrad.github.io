@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Verify Triggered via Other Repo
-        if: github.event.action == "TRIGGER_CI"
+        if: github.event.action == TRIGGER_CI
         run: |
           echo "repository_dispatch triggered"
 
