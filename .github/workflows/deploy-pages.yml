@@ -1,0 +1,32 @@
+name: Webhook Receiver Triggering mkdocs Deploy 
+
+
+on:
+  repository_dispatch:
+    types: [TRIGGER_CI]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify Triggered via Other Repo
+      if: github.event.action == "TRIGGER_CI"
+      run: |
+        echo "repository_dispatch triggered"
+
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - run: pip install mkdocs-material 
+
+      - run: git clone https://github.com/maconrad/doc.git
+      - run: cd doc
+      - run: git remote add pages https://github.com/maconrad/maconrad.github.io.git
+      
+      - run: mkdocs gh-deploy --force -r pages -b gh-pages-test
