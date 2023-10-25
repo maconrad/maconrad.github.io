@@ -28,5 +28,7 @@ jobs:
       - run: pip install mkdocs-material 
 
       # - run: git remote add pages https://github.com/maconrad/maconrad.github.io.git
-
+      - run: ls -alh
+      - run: ls ../ -alh
+      - run: pwd
       - run: mkdocs gh-deploy --force --config-file ../doc/mkdocs.yml -b gh-pages-test
